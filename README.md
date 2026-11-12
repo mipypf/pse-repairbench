@@ -1,5 +1,15 @@
 # PSE-RepairBench
 
+This repository contains the code and benchmark data accompanying the paper:
+
+“PSE-RepairBench: A simulator-grounded benchmark for evaluating large language model-based setpoint correction in executable chemical process flowsheets”
+Digital Discovery.
+https://doi.org/10.1039/d6dd00673f
+
+The code and benchmark data accompanying the paper are archived on Zenodo:
+- Paper-associated version: https://doi.org/10.5281/zenodo.23657528
+- All versions: https://doi.org/10.5281/zenodo.23657527
+
 PSE-RepairBench is a research benchmark for evaluating whether language models
 can diagnose and repair executable DWSIM chemical-process flowsheets from
 process-engineering observations.

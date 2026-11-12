@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-10480f7f-3284-43c8-80b3-2d8d426a6f6e",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "016_simulation_of_the_lungs_for_the_respiration_process_sep_01_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 301.15,
+      "stream": "S-06 ",
+      "stream_id": "MAT-4a38bc35-78ad-4611-a6ef-f50474126d09",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-06 ",
+      "threshold": 301.15
+    },
+    "target_stream_tag": "S-06 "
+  }
+}

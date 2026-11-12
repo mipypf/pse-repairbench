@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 116.15,
+    "target_mole_fraction": null,
+    "target_value": 109.405349778448
+  },
+  "faulty": {
+    "outlet_temperature": 96.15,
+    "target_mole_fraction": null,
+    "target_value": 298.53354407664
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-b49d1d90-9759-4239-b295-9f03180a5811",
+      "kind": "unit_operation",
+      "tag": "COOL-008"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 116.15
+  },
+  "instance_id": "021_tealarc_lng_refrigeration_cycle_for_natural_gas_cool_008_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 116.15,
+    "target_mole_fraction": null,
+    "target_value": 109.405349778448
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/021_tealarc_lng_refrigeration_cycle_for_natural_gas.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 166.1438080679056,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "NG-6",
+    "stream_id": "MAT-ed4bbbcc-2dcb-40d6-a24a-073afcc58205",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "NG-6",
+    "threshold": 166.1438080679056
+  },
+  "target_delta": -189.128194298192
+}

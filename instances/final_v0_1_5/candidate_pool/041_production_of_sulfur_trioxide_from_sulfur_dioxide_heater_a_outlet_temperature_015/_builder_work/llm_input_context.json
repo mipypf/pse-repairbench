@@ -1,0 +1,45 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "AQ-bda0664c-46b4-4fdd-a319-72ad4dfdb941",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "041_production_of_sulfur_trioxide_from_sulfur_dioxide_heater_a_outlet_temperature_015",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Sulfur trioxide",
+    "target_metric": {
+      "component": "Sulfur trioxide",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.07934257011862891,
+      "metric": "mass_fraction",
+      "stream": "S-7",
+      "stream_id": "MAT-10abdf54-a18b-4248-a76e-ed355555e14f",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-7",
+      "threshold": 0.07934257011862891
+    },
+    "target_stream_tag": "S-7"
+  }
+}

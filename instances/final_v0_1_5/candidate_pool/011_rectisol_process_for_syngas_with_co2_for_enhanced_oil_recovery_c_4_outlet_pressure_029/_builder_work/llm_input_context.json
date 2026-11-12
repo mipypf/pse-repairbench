@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-bf85fa18-0651-4c7b-8d9f-f88e03c5f81f",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "011_rectisol_process_for_syngas_with_co2_for_enhanced_oil_recovery_c_4_outlet_pressure_029",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 5100000.0,
+      "stream": "50",
+      "stream_id": "MAT-069ec16a-394f-49f0-9925-0e457917051f",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "50",
+      "threshold": 5100000.0
+    },
+    "target_stream_tag": "50"
+  }
+}

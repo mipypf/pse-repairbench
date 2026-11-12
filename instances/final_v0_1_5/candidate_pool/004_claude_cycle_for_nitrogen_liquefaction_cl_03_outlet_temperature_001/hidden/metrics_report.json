@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 123.61,
+    "target_mole_fraction": null,
+    "target_value": 77.2434997306959
+  },
+  "faulty": {
+    "outlet_temperature": 153.61,
+    "target_mole_fraction": null,
+    "target_value": 129.082200190223
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-fb8b924a-4b3e-49f7-a2a2-e79abd663936",
+      "kind": "unit_operation",
+      "tag": "CL-03"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 123.61
+  },
+  "instance_id": "004_claude_cycle_for_nitrogen_liquefaction_cl_03_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 123.61,
+    "target_mole_fraction": null,
+    "target_value": 77.2434997306959
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/004_claude_cycle_for_nitrogen_liquefaction.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 92.79510986855404,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "S-11",
+    "stream_id": "MAT-4df43a66-f1e6-4d1e-b506-f7a79dccaedb",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-11",
+    "threshold": 92.79510986855404
+  },
+  "target_delta": -51.838700459527104
+}

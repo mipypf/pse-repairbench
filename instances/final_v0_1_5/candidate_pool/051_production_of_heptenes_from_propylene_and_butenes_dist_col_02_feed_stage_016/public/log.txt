@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-22 ( HEXENES )
+Target metric: 1-heptene mass_fraction
+Observed target value: 0.0610207200473169
+Required target value: <= 0.02847395125241857

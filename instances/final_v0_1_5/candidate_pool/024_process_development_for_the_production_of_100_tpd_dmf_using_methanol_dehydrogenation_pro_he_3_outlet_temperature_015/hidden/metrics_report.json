@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 393.15,
+    "target_mole_fraction": null,
+    "target_value": 15.4875298881148
+  },
+  "faulty": {
+    "outlet_temperature": 423.15,
+    "target_mole_fraction": null,
+    "target_value": 7.54019430398796
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-0d6217fe-a461-4b46-9a9a-12dd0b45dd7d",
+      "kind": "unit_operation",
+      "tag": "HE-3"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 393.15
+  },
+  "instance_id": "024_process_development_for_the_production_of_100_tpd_dmf_using_methanol_dehydrogenation_pro_he_3_outlet_temperature_015",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 393.15,
+    "target_mole_fraction": null,
+    "target_value": 15.4875298881148
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/024_process_development_for_the_production_of_100_tpd_dmf_using_methanol_dehydrogenation_pro.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_flow",
+    "metric": "molar_flow",
+    "min": 13.103329212876748,
+    "product_mole_fraction_min": null,
+    "stream": "S19",
+    "stream_id": "MAT-e38b7663-c341-46d6-bfa7-21fe81dd21b3",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S19",
+    "threshold": 13.103329212876748
+  },
+  "target_delta": 7.94733558412684
+}

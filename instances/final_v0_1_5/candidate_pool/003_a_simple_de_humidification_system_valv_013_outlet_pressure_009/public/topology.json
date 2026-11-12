@@ -1,0 +1,337 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after outlet pressure injection.",
+  "graphic_object_count": 15,
+  "graphic_objects": [
+    {
+      "name": "MAT-9cce4842-de99-4d92-9cdb-6c37a91f10e0",
+      "object_type": "MaterialStream",
+      "tag": "Feed"
+    },
+    {
+      "name": "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c",
+      "object_type": "Compressor",
+      "tag": "compressor"
+    },
+    {
+      "name": "MAT-199b68dd-42bf-40b7-9c4f-068753b12ee2",
+      "object_type": "MaterialStream",
+      "tag": "compressed humid air"
+    },
+    {
+      "name": "EN-aeaf438a-8ecc-4608-9fe4-e50d2dbd8e04",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-003"
+    },
+    {
+      "name": "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd",
+      "object_type": "Cooler",
+      "tag": "cooler"
+    },
+    {
+      "name": "MAT-eaa4b644-d703-4bcd-9871-65999ed88cfd",
+      "object_type": "MaterialStream",
+      "tag": "cooled air"
+    },
+    {
+      "name": "EN-4c19c146-2472-4683-a9bf-9c36b14fe112",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-006"
+    },
+    {
+      "name": "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604",
+      "object_type": "Vessel",
+      "tag": "SEP-007"
+    },
+    {
+      "name": "MAT-59aee98e-86db-4c60-b2c2-5d462ce8958c",
+      "object_type": "MaterialStream",
+      "tag": "gas stream"
+    },
+    {
+      "name": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+      "object_type": "MaterialStream",
+      "tag": "removed water"
+    },
+    {
+      "name": "EN-3de91d9f-7336-46e5-af0b-fbad1b3be8be",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-010"
+    },
+    {
+      "name": "MAT-b0b3121f-16a8-481b-af4d-9a6d426994ab",
+      "object_type": "MaterialStream",
+      "tag": "heavy liquid"
+    },
+    {
+      "name": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+      "object_type": "MaterialStream",
+      "tag": "dehumidified air"
+    },
+    {
+      "name": "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6",
+      "object_type": "Valve",
+      "tag": "VALV-013"
+    },
+    {
+      "name": "MASTERTABLE-17c3eb0d-766a-4754-bdb6-f3471fd9d5b7",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "Vlvula",
+      "guid": "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6",
+      "object_class": null,
+      "tag": "VALV-013",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-eaa4b644-d703-4bcd-9871-65999ed88cfd",
+      "object_class": null,
+      "tag": "cooled air",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd",
+      "object_class": null,
+      "tag": "cooler",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-aeaf438a-8ecc-4608-9fe4-e50d2dbd8e04",
+      "object_class": null,
+      "tag": "ESTR-003",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-9cce4842-de99-4d92-9cdb-6c37a91f10e0",
+      "object_class": null,
+      "tag": "Feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CompressorAdiabtico",
+      "guid": "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c",
+      "object_class": null,
+      "tag": "compressor",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-199b68dd-42bf-40b7-9c4f-068753b12ee2",
+      "object_class": null,
+      "tag": "compressed humid air",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-4c19c146-2472-4683-a9bf-9c36b14fe112",
+      "object_class": null,
+      "tag": "ESTR-006",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "VasoSeparadorGL",
+      "guid": "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604",
+      "object_class": null,
+      "tag": "SEP-007",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-59aee98e-86db-4c60-b2c2-5d462ce8958c",
+      "object_class": null,
+      "tag": "gas stream",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+      "object_class": null,
+      "tag": "removed water",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-3de91d9f-7336-46e5-af0b-fbad1b3be8be",
+      "object_class": null,
+      "tag": "ESTR-010",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-b0b3121f-16a8-481b-af4d-9a6d426994ab",
+      "object_class": null,
+      "tag": "heavy liquid",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+      "object_class": null,
+      "tag": "dehumidified air",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 14,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-9cce4842-de99-4d92-9cdb-6c37a91f10e0",
+        "is_terminal_material_stream": false,
+        "tag": "Feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-199b68dd-42bf-40b7-9c4f-068753b12ee2",
+        "is_terminal_material_stream": false,
+        "tag": "compressed humid air",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-eaa4b644-d703-4bcd-9871-65999ed88cfd",
+        "is_terminal_material_stream": false,
+        "tag": "cooled air",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-59aee98e-86db-4c60-b2c2-5d462ce8958c",
+        "is_terminal_material_stream": false,
+        "tag": "gas stream",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+        "is_terminal_material_stream": true,
+        "tag": "removed water",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-b0b3121f-16a8-481b-af4d-9a6d426994ab",
+        "is_terminal_material_stream": true,
+        "tag": "heavy liquid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+        "is_terminal_material_stream": true,
+        "tag": "dehumidified air",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+        "tag": "removed water",
+        "upstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ]
+      },
+      {
+        "id": "MAT-b0b3121f-16a8-481b-af4d-9a6d426994ab",
+        "tag": "heavy liquid",
+        "upstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ]
+      },
+      {
+        "id": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+        "tag": "dehumidified air",
+        "upstream_unit_guids": [
+          "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": "OutletPressure",
+    "guid": "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6",
+    "kind": "unit_operation",
+    "tag": "VALV-013",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "guid": "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6",
+    "kind": "unit_operation",
+    "tag": "VALV-013",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+      "tag": "removed water",
+      "upstream_unit_guids": [
+        "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+      ]
+    },
+    {
+      "id": "MAT-b0b3121f-16a8-481b-af4d-9a6d426994ab",
+      "tag": "heavy liquid",
+      "upstream_unit_guids": [
+        "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+      ]
+    },
+    {
+      "id": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+      "tag": "dehumidified air",
+      "upstream_unit_guids": [
+        "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6"
+      ]
+    }
+  ]
+}

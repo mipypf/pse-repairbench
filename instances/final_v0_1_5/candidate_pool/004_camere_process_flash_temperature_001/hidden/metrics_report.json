@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_temperature": 276,
+    "target_mole_fraction": null,
+    "target_value": 275.999766752459
+  },
+  "faulty": {
+    "separator_temperature": 306,
+    "target_mole_fraction": null,
+    "target_value": 305.999829677603
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "temperature",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-78b22884-b240-49c2-a81f-e0912ca2a2c7",
+      "kind": "unit_operation",
+      "tag": "flash"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 276.0
+  },
+  "instance_id": "004_camere_process_flash_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "separator_temperature": 276,
+    "target_mole_fraction": null,
+    "target_value": 275.999766752459
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/004_camere_process.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 284.9997856300022,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "Water out",
+    "stream_id": "MAT-e517aaad-73bd-4965-9444-552d156b02d6",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Water out",
+    "threshold": 284.9997856300022
+  },
+  "target_delta": -30.000062925143993
+}

@@ -1,0 +1,57 @@
+{
+  "base": {
+    "reflux_ratio": 1.49999999997903,
+    "target_mole_fraction": 0.697293103568989,
+    "target_value": 0.697293103568989
+  },
+  "faulty": {
+    "reflux_ratio": 0.149999999995806,
+    "target_mole_fraction": 0.36571830927946,
+    "target_value": 0.36571830927946
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "reflux_ratio",
+      "namespace": "column_specification"
+    },
+    "target": {
+      "guid": "DC-c7e44877-4c8e-4517-b077-217903a243cc",
+      "kind": "unit_operation",
+      "tag": "DIST COL-03"
+    },
+    "type": "set_unit_parameter",
+    "unit": null,
+    "value": 1.49999999997903
+  },
+  "instance_id": "051_production_of_heptenes_from_propylene_and_butenes_dist_col_03_reflux_ratio_006",
+  "purity_drop": 0.331574794289529,
+  "repairable": true,
+  "repaired": {
+    "reflux_ratio": 1.49999999995806,
+    "target_mole_fraction": 0.697293103567937,
+    "target_value": 0.697293103567937
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/distillation/051_production_of_heptenes_from_propylene_and_butenes.zip",
+  "target": {
+    "component": "1-octene",
+    "direction": "min",
+    "family": "terminal_composition",
+    "metric": "mole_fraction",
+    "min": 0.5978206652821303,
+    "product_mole_fraction_min": null,
+    "stream": "S-33 ( C8 + HEAVIES )",
+    "stream_id": "MAT-ffe80dd4-57f5-46ca-b1ad-0e377046ed60",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-33 ( C8 + HEAVIES )",
+    "threshold": 0.5978206652821303
+  },
+  "target_delta": 0.331574794289529
+}

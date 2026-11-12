@@ -1,0 +1,148 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "VALV-002: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-8482025b-3efb-461d-867f-8ba04f2839e3",
+        "kind": "unit_operation",
+        "tag": "VALV-002",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "Propylene Heater: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-8ab45388-2721-4bff-90dd-9625acb6376c",
+        "kind": "unit_operation",
+        "tag": "Propylene Heater",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HEAT-009: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-79440953-41de-4c4a-91b4-3d294bf6eec0",
+        "kind": "unit_operation",
+        "tag": "HEAT-009",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 812000,
+      "guid": "VALV-8482025b-3efb-461d-867f-8ba04f2839e3",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 179000
+      },
+      "outlet_pressure": 179000,
+      "outlet_temperature": 298.447372979067,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-002",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 34000,
+      "guid": "AQ-8ab45388-2721-4bff-90dd-9625acb6376c",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 818.15
+      },
+      "outlet_temperature": 818.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Propylene Heater",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 180000,
+      "guid": "AQ-79440953-41de-4c4a-91b4-3d294bf6eec0",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 784.15
+      },
+      "outlet_temperature": 784.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HEAT-009",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "pressure",
+    "stream_tag": "Stream 5",
+    "threshold": 182150.0
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 182150.0,
+    "stream": "Stream 5",
+    "stream_id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Stream 5",
+    "threshold": 182150.0
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-de35bb41-2d61-4819-bc66-c5681305bbad",
+      "mass_flow": 0.333,
+      "molar_flow": 18.4845961698585,
+      "tag": "Low Pressure Steam",
+      "upstream_unit_guids": [
+        "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+      ]
+    },
+    {
+      "id": "MAT-7bf47104-9a44-4f29-ab9f-800dcff4ace6",
+      "mass_flow": 6.82,
+      "molar_flow": 123.024333157831,
+      "tag": "Cooling Water Out",
+      "upstream_unit_guids": [
+        "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+      ]
+    },
+    {
+      "id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+      "mass_flow": 1.2750713874042,
+      "molar_flow": 27.2080353812715,
+      "tag": "Stream 5",
+      "upstream_unit_guids": [
+        "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1481 @@
+{
+  "column": null,
+  "duration_sec": 2.937,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 58,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/repaired_calculated.dwxmz",
+  "simulation_path": "hidden/repaired.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COMP-8b1e130f-3a4e-4b19-9f43-fd6234ea6287"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-07df605f-27d2-4243-acdf-3d4fcfbc8bfb",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-69f06dce-b24f-4d3c-818d-dfb2533f82fb"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-efc0c017-1c52-4764-a2f8-d3d43678528f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-8b1e130f-3a4e-4b19-9f43-fd6234ea6287"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-7520e635-21c0-46e1-90c2-53ac5ea4de15"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-41f83f34-6516-4592-9526-f23c942b2ea2",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S3",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-69f06dce-b24f-4d3c-818d-dfb2533f82fb"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-dfbc9bd4-22eb-4b6d-a8c7-a208ea3265d0"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c2843c62-d91d-4568-b8ff-78e75cc83da8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S4",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-7520e635-21c0-46e1-90c2-53ac5ea4de15"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-0e3520ed-a7ee-453b-b10f-e803b7022788",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S5",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-7520e635-21c0-46e1-90c2-53ac5ea4de15"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CS-dfc9e4fe-af45-492b-87f8-9c914151e766"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-7bbf8a8d-44cb-412d-80eb-fe4be3a00fa1",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S6",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-dfbc9bd4-22eb-4b6d-a8c7-a208ea3265d0"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-5a99c796-a3d8-4e70-8c16-bb2261a20196",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S7",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-dfc9e4fe-af45-492b-87f8-9c914151e766"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-56cf4c80-5c09-45cc-aa93-192d67e2c399"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-97a5a03a-450b-4796-80e2-b0679b222144",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S8",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-dfc9e4fe-af45-492b-87f8-9c914151e766"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-56cf4c80-5c09-45cc-aa93-192d67e2c399"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-61c2b477-c29c-4445-816d-632186a72918",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S9",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "COMP-fa6d0bb1-f8bc-440d-9d23-610deb58b70d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-800ec42d-80a4-4838-874d-f68122204101",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-56cf4c80-5c09-45cc-aa93-192d67e2c399"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-0d6217fe-a461-4b46-9a9a-12dd0b45dd7d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-fc8c4f5c-75c5-448c-99f7-7fa8f04ca870",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S11",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-fa6d0bb1-f8bc-440d-9d23-610deb58b70d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-f72d1dac-fd59-4703-9d31-e43d1dbafa33"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8c3fbd41-a2af-4129-b318-790b2595d444",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S14",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RE-edb19541-e269-48d9-b292-7328d246ac81"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-ec0c658c-cd4d-48e9-ae01-1431babdc231",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S13",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RE-edb19541-e269-48d9-b292-7328d246ac81"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RE-edb19541-e269-48d9-b292-7328d246ac81"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-32aba7d0-bb43-4062-99a2-eccfd87fee18",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-0d6217fe-a461-4b46-9a9a-12dd0b45dd7d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1cd7a802-0929-44f4-bd38-99c0f3e384ea",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S16",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-c4865416-8b74-4140-8160-a78e34a31cfd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "TURB-b69430f0-ee4a-4760-8771-c63caaf10e3f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-0970798e-03c2-420f-8f63-fa251f5a225f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S17",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-c4865416-8b74-4140-8160-a78e34a31cfd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SC-735367df-8c0d-4de4-aa64-76aa26fda99c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f0130f75-ad0c-4d27-920d-abe2ee2127c4",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S21",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-4487385b-e641-4236-8c37-a088e46bb48b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SC-c4865416-8b74-4140-8160-a78e34a31cfd"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2d0e2da0-f064-43a7-b819-23553cbb2cf1",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S15",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-f72d1dac-fd59-4703-9d31-e43d1dbafa33"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SC-120cd78c-25a8-4383-b6c0-33e834539d3b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-7d77af43-0c59-4fac-84c3-d6c81ba829b8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S18",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "TURB-b69430f0-ee4a-4760-8771-c63caaf10e3f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-e38b7663-c341-46d6-bfa7-21fe81dd21b3",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S19",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-120cd78c-25a8-4383-b6c0-33e834539d3b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-4487385b-e641-4236-8c37-a088e46bb48b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6ff3d728-b380-45fe-9ffa-8dc0ea65e854",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S20",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-120cd78c-25a8-4383-b6c0-33e834539d3b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9cfd1f92-6d81-454f-9ccd-f459c3301501",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S22",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-735367df-8c0d-4de4-aa64-76aa26fda99c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-f6535491-3a9d-46db-9ede-0487a862df69"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6d5a8006-7111-410b-beeb-f711a6e9de62",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S23",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-735367df-8c0d-4de4-aa64-76aa26fda99c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-7dd5e878-41a0-4af9-a8c0-b3a2eae84533",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S24",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-f6535491-3a9d-46db-9ede-0487a862df69"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-5a99c796-a3d8-4e70-8c16-bb2261a20196",
+        "mass_flow": 0.119423174654197,
+        "molar_flow": 58.3537818194445,
+        "tag": "S7",
+        "upstream_unit_guids": [
+          "CS-dfc9e4fe-af45-492b-87f8-9c914151e766"
+        ]
+      },
+      {
+        "id": "MAT-1cd7a802-0929-44f4-bd38-99c0f3e384ea",
+        "mass_flow": 6.9568265230013,
+        "molar_flow": 203.224967635645,
+        "tag": "S16",
+        "upstream_unit_guids": [
+          "SC-c4865416-8b74-4140-8160-a78e34a31cfd"
+        ]
+      },
+      {
+        "id": "MAT-e38b7663-c341-46d6-bfa7-21fe81dd21b3",
+        "mass_flow": 0.559916655074306,
+        "molar_flow": 15.4875298881148,
+        "tag": "S19",
+        "upstream_unit_guids": [
+          "SC-120cd78c-25a8-4383-b6c0-33e834539d3b"
+        ]
+      },
+      {
+        "id": "MAT-9cfd1f92-6d81-454f-9ccd-f459c3301501",
+        "mass_flow": 0.183389992405227,
+        "molar_flow": 5.05323182835894,
+        "tag": "S22",
+        "upstream_unit_guids": [
+          "SC-735367df-8c0d-4de4-aa64-76aa26fda99c"
+        ]
+      },
+      {
+        "id": "MAT-7dd5e878-41a0-4af9-a8c0-b3a2eae84533",
+        "mass_flow": 1.19374498346186,
+        "molar_flow": 16.4661978934558,
+        "tag": "S24",
+        "upstream_unit_guids": [
+          "RESF-f6535491-3a9d-46db-9ede-0487a862df69"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 4.77019248666153e-07,
+          "mass_fraction": 3.99598955618474e-07,
+          "molar_flow": 1.05816159863832e-05,
+          "mole_fraction": 6.42626552580705e-07
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0.00685889889924728,
+          "mass_fraction": 0.00574569861592755,
+          "molar_flow": 0.214060572614925,
+          "mole_fraction": 0.013
+        },
+        "Methyl formate": {
+          "mass_flow": 2.00871563251353e-05,
+          "mass_fraction": 1.68270079484502e-05,
+          "molar_flow": 0.000334496264986776,
+          "mole_fraction": 2.03141166619719e-05
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 1.18686552038704,
+          "mass_fraction": 0.994237074777168,
+          "molar_flow": 16.2375720668303,
+          "mole_fraction": 0.986115445222705
+        }
+      },
+      "id": "MAT-7dd5e878-41a0-4af9-a8c0-b3a2eae84533",
+      "mass_flow": 1.19374498346186,
+      "molar_flow": 16.4661978934558,
+      "pressure": 101325,
+      "tag": "S24",
+      "temperature": 298.15,
+      "total_energy_flow": -3888.38849298462
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0.00018263586568802,
+          "mass_fraction": 0.000132621465252917,
+          "molar_flow": 0.00405137235332785,
+          "mole_fraction": 0.000188269044680768
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0.15169233643337,
+          "mass_fraction": 0.110151748396436,
+          "molar_flow": 4.73419259785075,
+          "mole_fraction": 0.22
+        },
+        "Methyl formate": {
+          "mass_flow": 0.00144770693145771,
+          "mass_fraction": 0.00105125580774314,
+          "molar_flow": 0.0241075717005358,
+          "mole_fraction": 0.00112028939771603
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 1.22379877949958,
+          "mass_fraction": 0.888664374330568,
+          "molar_flow": 16.7428580037806,
+          "mole_fraction": 0.778047932081162
+        }
+      },
+      "id": "MAT-f0130f75-ad0c-4d27-920d-abe2ee2127c4",
+      "mass_flow": 1.37712145873009,
+      "molar_flow": 21.519057262958,
+      "pressure": 101325,
+      "tag": "S21",
+      "temperature": 383.15,
+      "total_energy_flow": -4747.09773093748
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0.0041707167928966,
+          "mass_fraction": 0.00215311477931018,
+          "molar_flow": 0.0925181187421606,
+          "mole_fraction": 0.0025
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0.594363698285824,
+          "mass_fraction": 0.306837727568618,
+          "molar_flow": 18.5496003754409,
+          "mole_fraction": 0.501242368187817
+        },
+        "Methyl formate": {
+          "mass_flow": 0.012840659276423,
+          "mass_fraction": 0.00662893565711314,
+          "molar_flow": 0.21382581478478,
+          "mole_fraction": 0.0057779443013939
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 1.32568691275955,
+          "mass_fraction": 0.684380221994959,
+          "molar_flow": 18.1367951248321,
+          "mole_fraction": 0.490087654489
+        }
+      },
+      "id": "MAT-0970798e-03c2-420f-8f63-fa251f5a225f",
+      "mass_flow": 1.93706198711469,
+      "molar_flow": 37.0072474968642,
+      "pressure": 200000,
+      "tag": "S17",
+      "temperature": 371.626860841765,
+      "total_energy_flow": -8453.48227674793
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0.180546669350502,
+          "mass_fraction": 0.0259524466728561,
+          "molar_flow": 4.00502815773074,
+          "mole_fraction": 0.0197073627533366
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 6.03800291547491,
+          "mass_fraction": 0.867924892982672,
+          "molar_flow": 188.441086612166,
+          "mole_fraction": 0.927253618512152
+        },
+        "Methyl formate": {
+          "mass_flow": 0.233224581630406,
+          "mass_fraction": 0.0335245648082926,
+          "molar_flow": 3.88371306499248,
+          "mole_fraction": 0.0191104130076943
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.505052356545476,
+          "mass_fraction": 0.0725980955361795,
+          "molar_flow": 6.90964889961192,
+          "mole_fraction": 0.034
+        }
+      },
+      "id": "MAT-1cd7a802-0929-44f4-bd38-99c0f3e384ea",
+      "mass_flow": 6.9568265230013,
+      "molar_flow": 203.224967635645,
+      "pressure": 100000,
+      "tag": "S16",
+      "temperature": 331.847549694768,
+      "total_energy_flow": -47934.8686775337
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0.184704497065371,
+          "mass_fraction": 0.0207687347872264,
+          "molar_flow": 4.09726036081124,
+          "mole_fraction": 0.0170564460496943
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 6.63193556570547,
+          "mass_fraction": 0.745714983005332,
+          "molar_flow": 206.977234333633,
+          "mole_fraction": 0.861623553311989
+        },
+        "Methyl formate": {
+          "mass_flow": 0.246048591196029,
+          "mass_fraction": 0.0276664510962743,
+          "molar_flow": 4.09726162470016,
+          "mole_fraction": 0.0170564513111254
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 1.83070321403325,
+          "mass_fraction": 0.205849831111167,
+          "molar_flow": 25.0459507502999,
+          "mole_fraction": 0.104263549327191
+        }
+      },
+      "id": "MAT-2d0e2da0-f064-43a7-b819-23553cbb2cf1",
+      "mass_flow": 8.89339186800012,
+      "molar_flow": 240.217707069445,
+      "pressure": 300000,
+      "tag": "S15",
+      "temperature": 397.15,
+      "total_energy_flow": -46701.1335877381
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0.0041707167928966,
+          "mass_fraction": 0.00215311477931018,
+          "molar_flow": 0.0925181187421606,
+          "mole_fraction": 0.0025
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0.594363698285824,
+          "mass_fraction": 0.306837727568618,
+          "molar_flow": 18.5496003754409,
+          "mole_fraction": 0.501242368187817
+        },
+        "Methyl formate": {
+          "mass_flow": 0.012840659276423,
+          "mass_fraction": 0.00662893565711314,
+          "molar_flow": 0.21382581478478,
+          "mole_fraction": 0.0057779443013939
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 1.32568691275955,
+          "mass_fraction": 0.684380221994959,
+          "molar_flow": 18.1367951248321,
+          "mole_fraction": 0.490087654489
+        }
+      },
+      "id": "MAT-7d77af43-0c59-4fac-84c3-d6c81ba829b8",
+      "mass_flow": 1.93706198711469,
+      "molar_flow": 37.0072474968642,
+      "pressure": 100000,
+      "tag": "S18",
+      "temperature": 352.231017144976,
+      "total_energy_flow": -8456.721942767
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 1.31377595688889,
+          "mass_fraction": 0.147726490882927,
+          "molar_flow": 29.1432111111111,
+          "mole_fraction": 0.121319995376886
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 5.82941671819747,
+          "mass_fraction": 0.655484119006763,
+          "molar_flow": 181.931283583333,
+          "mole_fraction": 0.757360003984798
+        },
+        "Methyl formate": {
+          "mass_flow": 1.75010702381501,
+          "mass_fraction": 0.19678939011031,
+          "molar_flow": 29.143212375,
+          "mole_fraction": 0.121320000638317
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-32aba7d0-bb43-4062-99a2-eccfd87fee18",
+      "mass_flow": 8.89329969890136,
+      "molar_flow": 240.217707069445,
+      "pressure": 300000,
+      "tag": "S12",
+      "temperature": 393.15,
+      "total_energy_flow": -46215.9895821669
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-ec0c658c-cd4d-48e9-ae01-1431babdc231",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 300000,
+      "tag": "S13",
+      "temperature": 429.358017285242,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0.184704497065371,
+          "mass_fraction": 0.0207687347872264,
+          "molar_flow": 4.09726036081124,
+          "mole_fraction": 0.0170564460496943
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 6.63193556570547,
+          "mass_fraction": 0.745714983005332,
+          "molar_flow": 206.977234333633,
+          "mole_fraction": 0.861623553311989
+        },
+        "Methyl formate": {
+          "mass_flow": 0.246048591196029,
+          "mass_fraction": 0.0276664510962743,
+          "molar_flow": 4.09726162470016,
+          "mole_fraction": 0.0170564513111254
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 1.83070321403325,
+          "mass_fraction": 0.205849831111167,
+          "molar_flow": 25.0459507502999,
+          "mole_fraction": 0.104263549327191
+        }
+      },
+      "id": "MAT-8c3fbd41-a2af-4129-b318-790b2595d444",
+      "mass_flow": 8.89339186800012,
+      "molar_flow": 240.217707069445,
+      "pressure": 300000,
+      "tag": "S14",
+      "temperature": 429.358017285242,
+      "total_energy_flow": -46215.9897792908
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 1.31377595688889,
+          "mass_fraction": 0.147726490882927,
+          "molar_flow": 29.1432111111111,
+          "mole_fraction": 0.121319995376886
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 5.82941671819747,
+          "mass_fraction": 0.655484119006763,
+          "molar_flow": 181.931283583333,
+          "mole_fraction": 0.757360003984798
+        },
+        "Methyl formate": {
+          "mass_flow": 1.75010702381501,
+          "mass_fraction": 0.19678939011031,
+          "molar_flow": 29.143212375,
+          "mole_fraction": 0.121320000638317
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-fc8c4f5c-75c5-448c-99f7-7fa8f04ca870",
+      "mass_flow": 8.89329969890136,
+      "molar_flow": 240.217707069445,
+      "pressure": 300000,
+      "tag": "S11",
+      "temperature": 288.173250359288,
+      "total_energy_flow": -56412.3460881412
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 1.31377595688889,
+          "mass_fraction": 0.147726490882927,
+          "molar_flow": 29.1432111111111,
+          "mole_fraction": 0.121319995376886
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 5.82941671819747,
+          "mass_fraction": 0.655484119006763,
+          "molar_flow": 181.931283583333,
+          "mole_fraction": 0.757360003984798
+        },
+        "Methyl formate": {
+          "mass_flow": 1.75010702381501,
+          "mass_fraction": 0.19678939011031,
+          "molar_flow": 29.143212375,
+          "mole_fraction": 0.121320000638317
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-800ec42d-80a4-4838-874d-f68122204101",
+      "mass_flow": 8.89329969890136,
+      "molar_flow": 240.217707069445,
+      "pressure": 450000,
+      "tag": "S10",
+      "temperature": 288.219066603079,
+      "total_energy_flow": -56409.8869074723
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 1.31377595688889,
+          "mass_fraction": 1,
+          "molar_flow": 29.1432111111111,
+          "mole_fraction": 1
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-61c2b477-c29c-4445-816d-632186a72918",
+      "mass_flow": 1.31377595688889,
+      "molar_flow": 29.1432111111111,
+      "pressure": 100000,
+      "tag": "S9",
+      "temperature": 279.15,
+      "total_energy_flow": -1347.53277130973
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 5.82941671819747,
+          "mass_fraction": 0.769100660755985,
+          "molar_flow": 181.931283583333,
+          "mole_fraction": 0.861929257522648
+        },
+        "Methyl formate": {
+          "mass_flow": 1.75010702381501,
+          "mass_fraction": 0.230899339244015,
+          "molar_flow": 29.143212375,
+          "mole_fraction": 0.138070742477352
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-97a5a03a-450b-4796-80e2-b0679b222144",
+      "mass_flow": 7.57952374201248,
+      "molar_flow": 211.074495958334,
+      "pressure": 800000,
+      "tag": "S8",
+      "temperature": 293.15,
+      "total_energy_flow": -55062.3541368469
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0.11752781988,
+          "mass_fraction": 0.98412908734268,
+          "molar_flow": 58.301,
+          "mole_fraction": 0.999095485882856
+        },
+        "Methanol": {
+          "mass_flow": 0.00145771860920167,
+          "mass_fraction": 0.0122063294115456,
+          "molar_flow": 0.0454941944444445,
+          "mole_fraction": 0.000779627181408918
+        },
+        "Methyl formate": {
+          "mass_flow": 0.000437636164995,
+          "mass_fraction": 0.00366458324577474,
+          "molar_flow": 0.007287625,
+          "mole_fraction": 0.000124886935735357
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-5a99c796-a3d8-4e70-8c16-bb2261a20196",
+      "mass_flow": 0.119423174654197,
+      "molar_flow": 58.3537818194445,
+      "pressure": 800000,
+      "tag": "S7",
+      "temperature": 293.15,
+      "total_energy_flow": -20.2652687736491
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0.11752781988,
+          "mass_fraction": 0.0152654409949984,
+          "molar_flow": 58.301,
+          "mole_fraction": 0.216387828630543
+        },
+        "Methanol": {
+          "mass_flow": 5.83087443680667,
+          "mass_fraction": 0.75736,
+          "molar_flow": 181.976777777778,
+          "mole_fraction": 0.675418257054186
+        },
+        "Methyl formate": {
+          "mass_flow": 1.75054465998,
+          "mass_fraction": 0.227374559005002,
+          "molar_flow": 29.1505,
+          "mole_fraction": 0.108193914315271
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-7bbf8a8d-44cb-412d-80eb-fe4be3a00fa1",
+      "mass_flow": 7.69894691666667,
+      "molar_flow": 269.428277777778,
+      "pressure": 800000,
+      "tag": "S6",
+      "temperature": 293.15,
+      "total_energy_flow": -55023.5669689983
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-0e3520ed-a7ee-453b-b10f-e803b7022788",
+      "mass_flow": 8.5475481322502e-16,
+      "molar_flow": null,
+      "pressure": 800000,
+      "tag": "S5",
+      "temperature": 463.215443851149,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0.11752781988,
+          "mass_fraction": 0.0152654409949984,
+          "molar_flow": 58.301,
+          "mole_fraction": 0.216387828630543
+        },
+        "Methanol": {
+          "mass_flow": 5.83087443680667,
+          "mass_fraction": 0.75736,
+          "molar_flow": 181.976777777778,
+          "mole_fraction": 0.675418257054186
+        },
+        "Methyl formate": {
+          "mass_flow": 1.75054465998,
+          "mass_fraction": 0.227374559005002,
+          "molar_flow": 29.1505,
+          "mole_fraction": 0.108193914315271
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-c2843c62-d91d-4568-b8ff-78e75cc83da8",
+      "mass_flow": 7.69894691666667,
+      "molar_flow": 269.428277777778,
+      "pressure": 800000,
+      "tag": "S4",
+      "temperature": 463.215443851149,
+      "total_energy_flow": -44786.282836526
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 7.69894691666667,
+          "mass_fraction": 1,
+          "molar_flow": 240.277777777778,
+          "mole_fraction": 1
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-07df605f-27d2-4243-acdf-3d4fcfbc8bfb",
+      "mass_flow": 7.69894691666667,
+      "molar_flow": 240.277777777778,
+      "pressure": 100000,
+      "tag": "S1",
+      "temperature": 298.15,
+      "total_energy_flow": -58042.9539874164
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 7.69894691666667,
+          "mass_fraction": 1,
+          "molar_flow": 240.277777777778,
+          "mole_fraction": 1
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-efc0c017-1c52-4764-a2f8-d3d43678528f",
+      "mass_flow": 7.69894691666667,
+      "molar_flow": 240.277777777778,
+      "pressure": 800000,
+      "tag": "S2",
+      "temperature": 298.343260555544,
+      "total_energy_flow": -58032.2742795793
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 7.69894691666667,
+          "mass_fraction": 1,
+          "molar_flow": 240.277777777778,
+          "mole_fraction": 1
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-41f83f34-6516-4592-9526-f23c942b2ea2",
+      "mass_flow": 7.69894691666667,
+      "molar_flow": 240.277777777778,
+      "pressure": 800000,
+      "tag": "S3",
+      "temperature": 573.150000944486,
+      "total_energy_flow": -44786.2830941683
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0.00398791089362708,
+          "mass_fraction": 0.00712232947079927,
+          "molar_flow": 0.0884629745702547,
+          "mole_fraction": 0.00571188402600867
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0.442652488364564,
+          "mass_fraction": 0.790568532571727,
+          "molar_flow": 13.8148187516132,
+          "mole_fraction": 0.891996260954096
+        },
+        "Methyl formate": {
+          "mass_flow": 0.0113924666014394,
+          "mass_fraction": 0.0203467185664044,
+          "molar_flow": 0.189710154363645,
+          "mole_fraction": 0.0122492195807951
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.101883789214676,
+          "mass_fraction": 0.181962419391069,
+          "molar_flow": 1.39387768993033,
+          "mole_fraction": 0.09
+        }
+      },
+      "id": "MAT-e38b7663-c341-46d6-bfa7-21fe81dd21b3",
+      "mass_flow": 0.559916655074306,
+      "molar_flow": 15.4875298881148,
+      "pressure": 101325,
+      "tag": "S19",
+      "temperature": 337.443393982485,
+      "total_energy_flow": -3661.03988122906
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0.00018263586568802,
+          "mass_fraction": 0.000132621465252917,
+          "molar_flow": 0.00405137235332785,
+          "mole_fraction": 0.000188269044680768
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0.15169233643337,
+          "mass_fraction": 0.110151748396436,
+          "molar_flow": 4.73419259785075,
+          "mole_fraction": 0.22
+        },
+        "Methyl formate": {
+          "mass_flow": 0.00144770693145771,
+          "mass_fraction": 0.00105125580774314,
+          "molar_flow": 0.0241075717005358,
+          "mole_fraction": 0.00112028939771603
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 1.22379877949958,
+          "mass_fraction": 0.888664374330568,
+          "molar_flow": 16.7428580037806,
+          "mole_fraction": 0.778047932081162
+        }
+      },
+      "id": "MAT-6ff3d728-b380-45fe-9ffa-8dc0ea65e854",
+      "mass_flow": 1.37712145873009,
+      "molar_flow": 21.519057262958,
+      "pressure": 101325,
+      "tag": "S20",
+      "temperature": 372.616863858651,
+      "total_energy_flow": -4871.64829337425
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 0.000182172273821897,
+          "mass_fraction": 0.000993359950740173,
+          "molar_flow": 0.0040410885940971,
+          "mole_fraction": 0.000799703779948973
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0.144844113567755,
+          "mass_fraction": 0.789814709450995,
+          "molar_flow": 4.5204652154324,
+          "mole_fraction": 0.894569132978101
+        },
+        "Methyl formate": {
+          "mass_flow": 0.00142772500854409,
+          "mass_fraction": 0.00778518494831124,
+          "molar_flow": 0.0237748278081862,
+          "mole_fraction": 0.00470487573413137
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.0369359815551066,
+          "mass_fraction": 0.201406745649954,
+          "molar_flow": 0.505323182835894,
+          "mole_fraction": 0.1
+        }
+      },
+      "id": "MAT-9cfd1f92-6d81-454f-9ccd-f459c3301501",
+      "mass_flow": 0.183389992405227,
+      "molar_flow": 5.05323182835894,
+      "pressure": 101325,
+      "tag": "S22",
+      "temperature": 339.409737528278,
+      "total_energy_flow": -1192.39049117989
+    },
+    {
+      "compounds": {
+        "Dimethylamine": {
+          "mass_flow": 4.77019248666153e-07,
+          "mass_fraction": 3.99598955618474e-07,
+          "molar_flow": 1.05816159863832e-05,
+          "mole_fraction": 6.42626552580705e-07
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0.00685889889924728,
+          "mass_fraction": 0.00574569861592755,
+          "molar_flow": 0.214060572614925,
+          "mole_fraction": 0.013
+        },
+        "Methyl formate": {
+          "mass_flow": 2.00871563251353e-05,
+          "mass_fraction": 1.68270079484502e-05,
+          "molar_flow": 0.000334496264986776,
+          "mole_fraction": 2.03141166619719e-05
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 1.18686552038704,
+          "mass_fraction": 0.994237074777168,
+          "molar_flow": 16.2375720668303,
+          "mole_fraction": 0.986115445222705
+        }
+      },
+      "id": "MAT-6d5a8006-7111-410b-beeb-f711a6e9de62",
+      "mass_flow": 1.19374498346186,
+      "molar_flow": 16.4661978934558,
+      "pressure": 101325,
+      "tag": "S23",
+      "temperature": 418.914257076226,
+      "total_energy_flow": -3584.1589585603
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "delta_p": null,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "RESF-f72d1dac-fd59-4703-9d31-e43d1dbafa33",
+    "outlet_pressure": null,
+    "outlet_temperature": 397.15,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "HE-4",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-5a99c796-a3d8-4e70-8c16-bb2261a20196",
+      "mass_flow": 0.119423174654197,
+      "molar_flow": 58.3537818194445,
+      "tag": "S7",
+      "upstream_unit_guids": [
+        "CS-dfc9e4fe-af45-492b-87f8-9c914151e766"
+      ]
+    },
+    {
+      "id": "MAT-1cd7a802-0929-44f4-bd38-99c0f3e384ea",
+      "mass_flow": 6.9568265230013,
+      "molar_flow": 203.224967635645,
+      "tag": "S16",
+      "upstream_unit_guids": [
+        "SC-c4865416-8b74-4140-8160-a78e34a31cfd"
+      ]
+    },
+    {
+      "id": "MAT-e38b7663-c341-46d6-bfa7-21fe81dd21b3",
+      "mass_flow": 0.559916655074306,
+      "molar_flow": 15.4875298881148,
+      "tag": "S19",
+      "upstream_unit_guids": [
+        "SC-120cd78c-25a8-4383-b6c0-33e834539d3b"
+      ]
+    },
+    {
+      "id": "MAT-9cfd1f92-6d81-454f-9ccd-f459c3301501",
+      "mass_flow": 0.183389992405227,
+      "molar_flow": 5.05323182835894,
+      "tag": "S22",
+      "upstream_unit_guids": [
+        "SC-735367df-8c0d-4de4-aa64-76aa26fda99c"
+      ]
+    },
+    {
+      "id": "MAT-7dd5e878-41a0-4af9-a8c0-b3a2eae84533",
+      "mass_flow": 1.19374498346186,
+      "molar_flow": 16.4661978934558,
+      "tag": "S24",
+      "upstream_unit_guids": [
+        "RESF-f6535491-3a9d-46db-9ede-0487a862df69"
+      ]
+    }
+  ]
+}

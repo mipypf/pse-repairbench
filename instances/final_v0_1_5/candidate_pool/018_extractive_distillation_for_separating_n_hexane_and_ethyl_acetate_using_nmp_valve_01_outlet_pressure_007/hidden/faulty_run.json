@@ -1,0 +1,879 @@
+{
+  "column": null,
+  "duration_sec": 6.227,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 34,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/faulty_calculated.dwxmz",
+  "simulation_path": "public/faulty.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "HE-f29c29b8-053b-49ba-8f48-99683c31e18c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-c941a272-baba-421c-acbd-c8eb44cde9a6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-01",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-1401badd-3771-488a-8ee8-87d4e18444b0"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-a534308b-b6d0-4f6d-8d93-5e796ff32bfe",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-03",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-262bc0da-d0c6-46db-84fc-6a7baa447ac4"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-7cc13cd2-bca1-4591-b4ad-81a2eb79add6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-04",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-1401badd-3771-488a-8ee8-87d4e18444b0"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-262bc0da-d0c6-46db-84fc-6a7baa447ac4"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-df694c42-5fa5-40b7-a343-3f5ae7f70773",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-02",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-f29c29b8-053b-49ba-8f48-99683c31e18c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-1401badd-3771-488a-8ee8-87d4e18444b0"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-882b8eb2-f2be-4b0d-8d08-e93b2a62090f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-18",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-8bb36765-ae7f-4cc7-ba15-0afb32731436"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-8bb36765-ae7f-4cc7-ba15-0afb32731436"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-761910aa-1471-4890-8c94-b1386322eaa5",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-17",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-f29c29b8-053b-49ba-8f48-99683c31e18c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-79b0b6e2-b977-48e4-9d9b-1ef8e742efff"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3a18586a-694a-4425-b831-dce39ae464ae",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-05",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-262bc0da-d0c6-46db-84fc-6a7baa447ac4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COMP-eb287107-d05a-4e2e-affa-8594dd3857a3"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-72350054-4edd-4577-bef1-22c1e007ada3",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-06",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-79b0b6e2-b977-48e4-9d9b-1ef8e742efff"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-61908faf-c648-4bd2-8dce-3c5696593b8f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-53332726-ae99-4d15-acef-faabd6a837ca",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-eb287107-d05a-4e2e-affa-8594dd3857a3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-ad472bfd-7532-4aba-bddf-79a3b2fc9802"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-7f98a350-4f64-4e1d-9b8b-feebcccde054",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-79b0b6e2-b977-48e4-9d9b-1ef8e742efff"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-e41d5aab-01cf-4022-97d6-0c85931670c9"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f4ecf367-0dc5-474d-9f02-e8649eb32a38",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-08",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-61908faf-c648-4bd2-8dce-3c5696593b8f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-f854ee52-fae5-4b12-a1ca-719708f90d71"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-ae03b75a-f5ca-410d-9803-3a7f92e14a16",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-11",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-ad472bfd-7532-4aba-bddf-79a3b2fc9802"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c3c8477b-7053-46b5-864e-cd65633d0555",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-f854ee52-fae5-4b12-a1ca-719708f90d71"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-912c85c5-e989-4923-8d74-23d59dbee856"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-d74a7cd0-deec-46a3-a135-511223184088",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-13",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-262bc0da-d0c6-46db-84fc-6a7baa447ac4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-5e0889e2-2917-4efc-8cd3-c06499a934e2",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-14",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-912c85c5-e989-4923-8d74-23d59dbee856"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-039d6095-d58a-4ece-926b-07c0e9c0022f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3faeb52d-6500-4568-b4ed-e89ea265454d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-15",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-912c85c5-e989-4923-8d74-23d59dbee856"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-f29c29b8-053b-49ba-8f48-99683c31e18c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c8207350-c280-46c8-a4a9-f33e6c784436",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-16",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-039d6095-d58a-4ece-926b-07c0e9c0022f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-79b0b6e2-b977-48e4-9d9b-1ef8e742efff"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-548bbf54-2760-4f2f-80ef-9a308a64b709",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-09",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-e41d5aab-01cf-4022-97d6-0c85931670c9"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-c3c8477b-7053-46b5-864e-cd65633d0555",
+        "mass_flow": 1.47326647949983,
+        "molar_flow": 17.092758333332,
+        "tag": "S-12",
+        "upstream_unit_guids": [
+          "RESF-f854ee52-fae5-4b12-a1ca-719708f90d71"
+        ]
+      },
+      {
+        "id": "MAT-5e0889e2-2917-4efc-8cd3-c06499a934e2",
+        "mass_flow": 0.941503717056324,
+        "molar_flow": 10.6861,
+        "tag": "S-14",
+        "upstream_unit_guids": [
+          "COUO-912c85c5-e989-4923-8d74-23d59dbee856"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.954472241666668,
+          "mass_fraction": 0.395281295323193,
+          "molar_flow": 10.8333333333333,
+          "mole_fraction": 0.39
+        },
+        "N-hexane": {
+          "mass_flow": 1.4601936,
+          "mass_fraction": 0.604718704676808,
+          "molar_flow": 16.9444444444445,
+          "mole_fraction": 0.61
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-c941a272-baba-421c-acbd-c8eb44cde9a6",
+      "mass_flow": 2.41466584166667,
+      "molar_flow": 27.7777777777778,
+      "pressure": 120000,
+      "tag": "S-01",
+      "temperature": 298.15,
+      "total_energy_flow": -8547.55303386387
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-hexane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 0.000107116660833334,
+          "mass_fraction": 1,
+          "molar_flow": 0.00108055555555556,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-a534308b-b6d0-4f6d-8d93-5e796ff32bfe",
+      "mass_flow": 0.000107116660833334,
+      "molar_flow": 0.00108055555555556,
+      "pressure": 120000,
+      "tag": "S-03",
+      "temperature": 298.15,
+      "total_energy_flow": -0.286626054847665
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.00594016322979347,
+          "mass_fraction": 0.00251343677762901,
+          "molar_flow": 0.0674213094038164,
+          "mole_fraction": 0.00282709309993045
+        },
+        "N-hexane": {
+          "mass_flow": 1.46371406502422e-10,
+          "mass_fraction": 6.19335297810097e-11,
+          "molar_flow": 1.69852967834914e-09,
+          "mole_fraction": 7.12223119982319e-11
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 2.35742273584781,
+          "mass_fraction": 0.997486563160437,
+          "molar_flow": 23.7808592444532,
+          "mole_fraction": 0.997172906828847
+        }
+      },
+      "id": "MAT-7cc13cd2-bca1-4591-b4ad-81a2eb79add6",
+      "mass_flow": 2.36336289922398,
+      "molar_flow": 23.8482805555555,
+      "pressure": 33000,
+      "tag": "S-04",
+      "temperature": 373.91690439491,
+      "total_energy_flow": -6040.18788865083
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.00591805414931065,
+          "mass_fraction": 0.00250419242142128,
+          "molar_flow": 0.067170369640345,
+          "mole_fraction": 0.0028166983813758
+        },
+        "N-hexane": {
+          "mass_flow": 1.45306826436328e-10,
+          "mass_fraction": 6.14857931952201e-11,
+          "molar_flow": 1.68617603032152e-09,
+          "mole_fraction": 7.0707505716458e-11
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 2.357340495123,
+          "mass_fraction": 0.997495807517093,
+          "molar_flow": 23.7800296286736,
+          "mole_fraction": 0.99718330154792
+        }
+      },
+      "id": "MAT-c8207350-c280-46c8-a4a9-f33e6c784436",
+      "mass_flow": 2.36325854941762,
+      "molar_flow": 23.8472,
+      "pressure": 33000,
+      "tag": "S-16",
+      "temperature": 433.369520380725,
+      "total_energy_flow": -5759.12668731401
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.954472241666668,
+          "mass_fraction": 0.395281295323193,
+          "molar_flow": 10.8333333333333,
+          "mole_fraction": 0.39
+        },
+        "N-hexane": {
+          "mass_flow": 1.4601936,
+          "mass_fraction": 0.604718704676808,
+          "molar_flow": 16.9444444444445,
+          "mole_fraction": 0.61
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-df694c42-5fa5-40b7-a343-3f5ae7f70773",
+      "mass_flow": 2.41466584166667,
+      "molar_flow": 27.7777777777778,
+      "pressure": 120000,
+      "tag": "S-02",
+      "temperature": 334.452973484832,
+      "total_energy_flow": -8341.73980826657
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.00594016322979347,
+          "mass_fraction": 0.00251355070137642,
+          "molar_flow": 0.0674213094038164,
+          "mole_fraction": 0.0028272212001332
+        },
+        "N-hexane": {
+          "mass_flow": 1.46371406502422e-10,
+          "mass_fraction": 6.19363369730846e-11,
+          "molar_flow": 1.69852967834914e-09,
+          "mole_fraction": 7.1225539197438e-11
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 2.35731561918698,
+          "mass_fraction": 0.997486449236687,
+          "molar_flow": 23.7797786888976,
+          "mole_fraction": 0.99717277872864
+        }
+      },
+      "id": "MAT-882b8eb2-f2be-4b0d-8d08-e93b2a62090f",
+      "mass_flow": 2.36325578256314,
+      "molar_flow": 23.8472,
+      "pressure": 33000,
+      "tag": "S-18",
+      "temperature": 373.92,
+      "total_energy_flow": -6039.90126259682
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.0130897608399741,
+          "mass_fraction": 0.00888485624785397,
+          "molar_flow": 0.148569792019762,
+          "mole_fraction": 0.0086919728883103
+        },
+        "N-hexane": {
+          "mass_flow": 1.46013718489872,
+          "mass_fraction": 0.991088313115201,
+          "molar_flow": 16.9437897897812,
+          "mole_fraction": 0.99128469842926
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 3.95286778979365e-05,
+          "mass_fraction": 2.68306369447453e-05,
+          "molar_flow": 0.000398751531032507,
+          "mole_fraction": 2.3328682431256e-05
+        }
+      },
+      "id": "MAT-3a18586a-694a-4425-b831-dce39ae464ae",
+      "mass_flow": 1.47326647441659,
+      "molar_flow": 17.092758333332,
+      "pressure": 100000,
+      "tag": "S-05",
+      "temperature": 341.281346277356,
+      "total_energy_flow": -3274.31391043593
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.00594016322979347,
+          "mass_fraction": 0.00251355070137642,
+          "molar_flow": 0.0674213094038164,
+          "mole_fraction": 0.0028272212001332
+        },
+        "N-hexane": {
+          "mass_flow": 1.46371406502422e-10,
+          "mass_fraction": 6.19363369730846e-11,
+          "molar_flow": 1.69852967834914e-09,
+          "mole_fraction": 7.1225539197438e-11
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 2.35731561918698,
+          "mass_fraction": 0.997486449236687,
+          "molar_flow": 23.7797786888976,
+          "mole_fraction": 0.99717277872864
+        }
+      },
+      "id": "MAT-761910aa-1471-4890-8c94-b1386322eaa5",
+      "mass_flow": 2.36325578256314,
+      "molar_flow": 23.8472,
+      "pressure": 33000,
+      "tag": "S-17",
+      "temperature": 390.63,
+      "total_energy_flow": -5964.93991134362
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.0130897608399741,
+          "mass_fraction": 0.00888485624785397,
+          "molar_flow": 0.148569792019762,
+          "mole_fraction": 0.0086919728883103
+        },
+        "N-hexane": {
+          "mass_flow": 1.46013718489872,
+          "mass_fraction": 0.991088313115201,
+          "molar_flow": 16.9437897897812,
+          "mole_fraction": 0.99128469842926
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 3.95286778979365e-05,
+          "mass_fraction": 2.68306369447453e-05,
+          "molar_flow": 0.000398751531032507,
+          "mole_fraction": 2.3328682431256e-05
+        }
+      },
+      "id": "MAT-72350054-4edd-4577-bef1-22c1e007ada3",
+      "mass_flow": 1.47326647441659,
+      "molar_flow": 17.092758333332,
+      "pressure": 100000,
+      "tag": "S-06",
+      "temperature": 387.9,
+      "total_energy_flow": -2649.48736139605
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.0130897608399741,
+          "mass_fraction": 0.00888485624785397,
+          "molar_flow": 0.148569792019762,
+          "mole_fraction": 0.0086919728883103
+        },
+        "N-hexane": {
+          "mass_flow": 1.46013718489872,
+          "mass_fraction": 0.991088313115201,
+          "molar_flow": 16.9437897897812,
+          "mole_fraction": 0.99128469842926
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 3.95286778979365e-05,
+          "mass_fraction": 2.68306369447453e-05,
+          "molar_flow": 0.000398751531032507,
+          "mole_fraction": 2.3328682431256e-05
+        }
+      },
+      "id": "MAT-53332726-ae99-4d15-acef-faabd6a837ca",
+      "mass_flow": 1.47326647441659,
+      "molar_flow": 17.092758333332,
+      "pressure": 484000,
+      "tag": "S-07",
+      "temperature": 423.831628312858,
+      "total_energy_flow": -2536.78332027997
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.0130897608399741,
+          "mass_fraction": 0.00888485624785397,
+          "molar_flow": 0.148569792019762,
+          "mole_fraction": 0.0086919728883103
+        },
+        "N-hexane": {
+          "mass_flow": 1.46013718489872,
+          "mass_fraction": 0.991088313115201,
+          "molar_flow": 16.9437897897812,
+          "mole_fraction": 0.99128469842926
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 3.95286778979365e-05,
+          "mass_fraction": 2.68306369447453e-05,
+          "molar_flow": 0.000398751531032507,
+          "mole_fraction": 2.3328682431256e-05
+        }
+      },
+      "id": "MAT-548bbf54-2760-4f2f-80ef-9a308a64b709",
+      "mass_flow": 1.47326647441659,
+      "molar_flow": 17.092758333332,
+      "pressure": 484000,
+      "tag": "S-09",
+      "temperature": 402.35,
+      "total_energy_flow": -2605.14307044698
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.0130899943060857,
+          "mass_fraction": 0.00888501468555077,
+          "molar_flow": 0.14857244187808,
+          "mole_fraction": 0.0086921279164378
+        },
+        "N-hexane": {
+          "mass_flow": 1.46013695674827,
+          "mass_fraction": 0.991088154835359,
+          "molar_flow": 16.9437871422675,
+          "mole_fraction": 0.9912845435383
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 3.95284454729174e-05,
+          "mass_fraction": 2.68304790904747e-05,
+          "molar_flow": 0.00039874918640989,
+          "mole_fraction": 2.3328545260732e-05
+        }
+      },
+      "id": "MAT-7f98a350-4f64-4e1d-9b8b-feebcccde054",
+      "mass_flow": 1.47326647949983,
+      "molar_flow": 17.092758333332,
+      "pressure": 484000,
+      "tag": "S-10",
+      "temperature": 352.383395444242,
+      "total_energy_flow": -3229.96961948252
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.0130897608399741,
+          "mass_fraction": 0.00888485624785397,
+          "molar_flow": 0.148569792019762,
+          "mole_fraction": 0.0086919728883103
+        },
+        "N-hexane": {
+          "mass_flow": 1.46013718489872,
+          "mass_fraction": 0.991088313115201,
+          "molar_flow": 16.9437897897812,
+          "mole_fraction": 0.99128469842926
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 3.95286778979365e-05,
+          "mass_fraction": 2.68306369447453e-05,
+          "molar_flow": 0.000398751531032507,
+          "mole_fraction": 2.3328682431256e-05
+        }
+      },
+      "id": "MAT-f4ecf367-0dc5-474d-9f02-e8649eb32a38",
+      "mass_flow": 1.47326647441659,
+      "molar_flow": 17.092758333332,
+      "pressure": 484000,
+      "tag": "S-08",
+      "temperature": 402.35,
+      "total_energy_flow": -2605.14232467899
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.0130899943060857,
+          "mass_fraction": 0.00888501468555077,
+          "molar_flow": 0.14857244187808,
+          "mole_fraction": 0.0086921279164378
+        },
+        "N-hexane": {
+          "mass_flow": 1.46013695674827,
+          "mass_fraction": 0.991088154835359,
+          "molar_flow": 16.9437871422675,
+          "mole_fraction": 0.9912845435383
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 3.95284454729174e-05,
+          "mass_fraction": 2.68304790904747e-05,
+          "molar_flow": 0.00039874918640989,
+          "mole_fraction": 2.3328545260732e-05
+        }
+      },
+      "id": "MAT-ae03b75a-f5ca-410d-9803-3a7f92e14a16",
+      "mass_flow": 1.47326647949983,
+      "molar_flow": 17.092758333332,
+      "pressure": 50500,
+      "tag": "S-11",
+      "temperature": 321.333141763831,
+      "total_energy_flow": -3229.96961934583
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.0130899943060857,
+          "mass_fraction": 0.00888501468555077,
+          "molar_flow": 0.14857244187808,
+          "mole_fraction": 0.0086921279164378
+        },
+        "N-hexane": {
+          "mass_flow": 1.46013695674827,
+          "mass_fraction": 0.991088154835359,
+          "molar_flow": 16.9437871422675,
+          "mole_fraction": 0.9912845435383
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 3.95284454729174e-05,
+          "mass_fraction": 2.68304790904747e-05,
+          "molar_flow": 0.00039874918640989,
+          "mole_fraction": 2.3328545260732e-05
+        }
+      },
+      "id": "MAT-c3c8477b-7053-46b5-864e-cd65633d0555",
+      "mass_flow": 1.47326647949983,
+      "molar_flow": 17.092758333332,
+      "pressure": 50500,
+      "tag": "S-12",
+      "temperature": 341.87,
+      "total_energy_flow": -2781.79494893427
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.00591805414931065,
+          "mass_fraction": 0.00250419242142128,
+          "molar_flow": 0.067170369640345,
+          "mole_fraction": 0.0028166983813758
+        },
+        "N-hexane": {
+          "mass_flow": 1.45306826436328e-10,
+          "mass_fraction": 6.14857931952201e-11,
+          "molar_flow": 1.68617603032152e-09,
+          "mole_fraction": 7.0707505716458e-11
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 2.357340495123,
+          "mass_fraction": 0.997495807517093,
+          "molar_flow": 23.7800296286736,
+          "mole_fraction": 0.99718330154792
+        }
+      },
+      "id": "MAT-3faeb52d-6500-4568-b4ed-e89ea265454d",
+      "mass_flow": 2.36325854941762,
+      "molar_flow": 23.8472,
+      "pressure": 33000,
+      "tag": "S-15",
+      "temperature": 433.369520380725,
+      "total_energy_flow": -5759.02823760597
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.947322644056449,
+          "mass_fraction": 0.286653794636553,
+          "molar_flow": 10.752184850717,
+          "mole_fraction": 0.31135700470899
+        },
+        "N-hexane": {
+          "mass_flow": 5.64152475837843e-05,
+          "mass_fraction": 1.70708943744923e-05,
+          "molar_flow": 0.000654656360980497,
+          "mole_fraction": 1.8957248828826e-05
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 2.3573832071699,
+          "mass_fraction": 0.713329134469072,
+          "molar_flow": 23.780460492922,
+          "mole_fraction": 0.68862403804218
+        }
+      },
+      "id": "MAT-d74a7cd0-deec-46a3-a135-511223184088",
+      "mass_flow": 3.30476226647393,
+      "molar_flow": 34.5333,
+      "pressure": 120000,
+      "tag": "S-13",
+      "temperature": 395.131043267127,
+      "total_energy_flow": -10870.8483112315
+    },
+    {
+      "compounds": {
+        "Ethyl acetate": {
+          "mass_flow": 0.94140458990714,
+          "mass_fraction": 0.999894714011864,
+          "molar_flow": 10.6850144810766,
+          "mole_fraction": 0.99989841767124
+        },
+        "N-hexane": {
+          "mass_flow": 5.64151022769575e-05,
+          "mass_fraction": 5.99202119491819e-05,
+          "molar_flow": 0.000654654674804463,
+          "mole_fraction": 6.1262263576465e-05
+        },
+        "N-methyl-2-pyrrolidone": {
+          "mass_flow": 4.27120469067309e-05,
+          "mass_fraction": 4.53657761864957e-05,
+          "molar_flow": 0.000430864248522723,
+          "mole_fraction": 4.0320065180255e-05
+        }
+      },
+      "id": "MAT-5e0889e2-2917-4efc-8cd3-c06499a934e2",
+      "mass_flow": 0.941503717056324,
+      "molar_flow": 10.6861,
+      "pressure": 28000,
+      "tag": "S-14",
+      "temperature": 315.869812131326,
+      "total_energy_flow": -5096.67793550083
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "delta_p": 433500,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "VALV-ad472bfd-7532-4aba-bddf-79a3b2fc9802",
+    "outlet_pressure": 50500,
+    "outlet_temperature": 321.333141763832,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "VALVE-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-c3c8477b-7053-46b5-864e-cd65633d0555",
+      "mass_flow": 1.47326647949983,
+      "molar_flow": 17.092758333332,
+      "tag": "S-12",
+      "upstream_unit_guids": [
+        "RESF-f854ee52-fae5-4b12-a1ca-719708f90d71"
+      ]
+    },
+    {
+      "id": "MAT-5e0889e2-2917-4efc-8cd3-c06499a934e2",
+      "mass_flow": 0.941503717056324,
+      "molar_flow": 10.6861,
+      "tag": "S-14",
+      "upstream_unit_guids": [
+        "COUO-912c85c5-e989-4923-8d74-23d59dbee856"
+      ]
+    }
+  ]
+}

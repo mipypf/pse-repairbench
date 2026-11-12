@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_temperature": 238.15,
+    "target_mole_fraction": null,
+    "target_value": 6.74361529955164e-07
+  },
+  "faulty": {
+    "separator_temperature": 258.15,
+    "target_mole_fraction": null,
+    "target_value": 0.060373198526189
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "temperature",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-e526b085-c1b6-4412-953b-befa1a9e4ce4",
+      "kind": "unit_operation",
+      "tag": "FS-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 238.15
+  },
+  "instance_id": "051_synthesis_of_ammonia_in_cryogenic_process_fs_01_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "separator_temperature": 238.15,
+    "target_mole_fraction": null,
+    "target_value": 6.74361529955164e-07
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/051_synthesis_of_ammonia_in_cryogenic_process.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 0.018112431610927675,
+    "metric": "mass_flow",
+    "product_mole_fraction_min": null,
+    "stream": "S-10",
+    "stream_id": "MAT-fd0ef933-59a8-4ad2-a260-1f404c3a37a5",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-10",
+    "threshold": 0.018112431610927675
+  },
+  "target_delta": -0.06037252416465904
+}

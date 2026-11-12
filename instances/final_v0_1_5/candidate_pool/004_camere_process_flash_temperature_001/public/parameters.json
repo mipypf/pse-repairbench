@@ -1,0 +1,227 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "SEP-032: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-cb6dec45-9e98-47be-a0e5-9143ebd70148",
+        "kind": "unit_operation",
+        "tag": "SEP-032",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-032: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-cb6dec45-9e98-47be-a0e5-9143ebd70148",
+        "kind": "unit_operation",
+        "tag": "SEP-032",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COMPRESSOR2: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-2e7b30a2-86f2-44a4-afa1-762995e49476",
+        "kind": "unit_operation",
+        "tag": "COMPRESSOR2",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "flash: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-78b22884-b240-49c2-a81f-e0912ca2a2c7",
+        "kind": "unit_operation",
+        "tag": "flash",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "flash: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-78b22884-b240-49c2-a81f-e0912ca2a2c7",
+        "kind": "unit_operation",
+        "tag": "flash",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COMP-044: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-739c8ce9-c487-485c-b88e-637a1bcdfa6f",
+        "kind": "unit_operation",
+        "tag": "COMP-044",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "flash_pressure": 754308,
+      "flash_temperature": 285,
+      "guid": "SEP-cb6dec45-9e98-47be-a0e5-9143ebd70148",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 754308,
+        "separator_specification/temperature": 285
+      },
+      "override_p": "true",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/pressure",
+        "separator_specification/temperature"
+      ],
+      "tag": "SEP-032",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 2229150,
+      "guid": "COMP-2e7b30a2-86f2-44a4-afa1-762995e49476",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 3039750
+      },
+      "outlet_temperature": 398.471795401039,
+      "p_out": 3039750,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "COMPRESSOR2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "flash_pressure": 810600,
+      "flash_temperature": 306,
+      "guid": "SEP-78b22884-b240-49c2-a81f-e0912ca2a2c7",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 810600,
+        "separator_specification/temperature": 306
+      },
+      "override_p": "true",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/pressure",
+        "separator_specification/temperature"
+      ],
+      "tag": "flash",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 2285442,
+      "guid": "COMP-739c8ce9-c487-485c-b88e-637a1bcdfa6f",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 3039750
+      },
+      "outlet_temperature": 419.614224302553,
+      "p_out": 3039750,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "COMP-044",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    }
+  ],
+  "product_target": {
+    "direction": "max",
+    "metric": "temperature",
+    "stream_tag": "Water out",
+    "threshold": 284.9997856300022
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 284.9997856300022,
+    "metric": "temperature",
+    "stream": "Water out",
+    "stream_id": "MAT-e517aaad-73bd-4965-9444-552d156b02d6",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Water out",
+    "threshold": 284.9997856300022
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-e517aaad-73bd-4965-9444-552d156b02d6",
+      "mass_flow": 0.0243583469932344,
+      "molar_flow": 1.35140882553252,
+      "tag": "Water out",
+      "upstream_unit_guids": [
+        "SEP-78b22884-b240-49c2-a81f-e0912ca2a2c7"
+      ]
+    },
+    {
+      "id": "MAT-dcf4fff6-8562-4815-9749-db9641535809",
+      "mass_flow": 0.0387250301734047,
+      "molar_flow": 4.12015706755099,
+      "tag": "TEEout2",
+      "upstream_unit_guids": [
+        "DIV-0d6b143d-676f-45a7-9c0c-894549d8a354"
+      ]
+    },
+    {
+      "id": "MAT-931fe3c3-1033-40e3-b909-fb6be89bebb6",
+      "mass_flow": 0.0437803982077812,
+      "molar_flow": 1.3851302846757,
+      "tag": "methanol",
+      "upstream_unit_guids": [
+        "COUO-b09a4056-b8df-4a62-8d56-373cae66c5e9"
+      ]
+    },
+    {
+      "id": "MAT-2c7df717-1d43-4e8a-94e5-9c8263ec0749",
+      "mass_flow": 0.00955309799360049,
+      "molar_flow": 0.53,
+      "tag": "water",
+      "upstream_unit_guids": [
+        "COUO-b09a4056-b8df-4a62-8d56-373cae66c5e9"
+      ]
+    }
+  ]
+}

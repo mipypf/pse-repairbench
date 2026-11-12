@@ -1,0 +1,140 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Restore the unit outlet temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "RESF-350e26f4-01a4-4be1-85dd-25edca995f65",
+        "kind": "unit_operation",
+        "tag": "cooler 3"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 143.15
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet temperature is consistent with the requested process target.",
+      "target": "RESF-350e26f4-01a4-4be1-85dd-25edca995f65",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet temperature of cooler 3 to 143.15.",
+      "target": "RESF-350e26f4-01a4-4be1-85dd-25edca995f65",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "010_liquefaction_of_biogas_cooler_3_outlet_temperature_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "cbb5cae587edcb1f0956dcc2644818ff7b75b297476005f9b5b2498b33786409",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "f7b2441ffc128839b8e2b5acd11186a2fc2241db20eaec51a46dff2be122a870",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/other_candidate/010_liquefaction_of_biogas.zip",
+    "curated_source_entry": "Liquefaction_Of_Biogas_By_Mr_Gopal_Kumawat/Flowsheet.dwxmz",
+    "detected_process_category": "other_candidate",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Cooler",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp1497.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 32,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "other_candidate",
+    "source_format": "dwxmz",
+    "source_name": "Liquefaction_of_Biogas.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 161.79295390283662,
+      "stream": "Coolent out2",
+      "stream_id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Coolent out2",
+      "threshold": 161.79295390283662
+    },
+    "target_stream_tag": "Coolent out2"
+  }
+}

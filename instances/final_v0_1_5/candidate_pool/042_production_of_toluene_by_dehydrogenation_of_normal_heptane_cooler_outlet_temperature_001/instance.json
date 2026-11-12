@@ -1,0 +1,136 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Restore the unit outlet temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "RESF-1743a2d1-6118-44f2-b51c-ef8a36c22860",
+        "kind": "unit_operation",
+        "tag": "COOLER"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 291.483333333333
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet temperature is consistent with the requested process target.",
+      "target": "RESF-1743a2d1-6118-44f2-b51c-ef8a36c22860",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet temperature of COOLER to 291.483333333333.",
+      "target": "RESF-1743a2d1-6118-44f2-b51c-ef8a36c22860",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "042_production_of_toluene_by_dehydrogenation_of_normal_heptane_cooler_outlet_temperature_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "34644a1c736208118d44d0015670361fc6149d73d92dada7faea05706afa96e7",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "7c473f11b3a55fd7dd80c3f45ece02d592857817e66408626608d1b28d60837b",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/042_production_of_toluene_by_dehydrogenation_of_normal_heptane.zip",
+    "curated_source_entry": "Production_Of_Toluene_By_Dehydrogenation_Of_Normal_Heptane_By_Mr_Rounak_Gupta/flowsheet.dwxmz",
+    "detected_process_category": "reaction_recycle",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Cooler",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp99E8.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 15,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "Production_of_Toluene_by_Dehydrogenation_of_Normal_Heptane.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 282.485432881567,
+      "stream": "S-05",
+      "stream_id": "MAT-b484fea2-6c14-4381-98ba-245529808c66",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-05",
+      "threshold": 282.485432881567
+    },
+    "target_stream_tag": "S-05"
+  }
+}

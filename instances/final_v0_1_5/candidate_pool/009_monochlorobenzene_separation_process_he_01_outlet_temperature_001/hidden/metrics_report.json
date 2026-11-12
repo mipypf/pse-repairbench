@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 405.372,
+    "target_mole_fraction": null,
+    "target_value": 332.045238451469
+  },
+  "faulty": {
+    "outlet_temperature": 435.372,
+    "target_mole_fraction": null,
+    "target_value": 414.663623640985
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-18913ff6-5a98-4a54-b2d4-15354a048183",
+      "kind": "unit_operation",
+      "tag": "HE-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 405.372
+  },
+  "instance_id": "009_monochlorobenzene_separation_process_he_01_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 405.372,
+    "target_mole_fraction": null,
+    "target_value": 332.045238451469
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/009_monochlorobenzene_separation_process.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 356.8307540083238,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "S-06",
+    "stream_id": "MAT-8c76857c-a75c-4bbc-81b2-634095601e4e",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-06",
+    "threshold": 356.8307540083238
+  },
+  "target_delta": -82.618385189516
+}

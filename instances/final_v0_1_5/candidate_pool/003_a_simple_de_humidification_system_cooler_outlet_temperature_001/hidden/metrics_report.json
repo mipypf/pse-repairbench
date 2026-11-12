@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 293.15,
+    "target_mole_fraction": null,
+    "target_value": 293.15
+  },
+  "faulty": {
+    "outlet_temperature": 313.15,
+    "target_mole_fraction": null,
+    "target_value": 403.630294994614
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd",
+      "kind": "unit_operation",
+      "tag": "cooler"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 293.15
+  },
+  "instance_id": "003_a_simple_de_humidification_system_cooler_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 293.15,
+    "target_mole_fraction": null,
+    "target_value": 293.15
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/003_a_simple_de_humidification_system.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 326.2940884983842,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "removed water",
+    "stream_id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "removed water",
+    "threshold": 326.2940884983842
+  },
+  "target_delta": -110.48029499461404
+}

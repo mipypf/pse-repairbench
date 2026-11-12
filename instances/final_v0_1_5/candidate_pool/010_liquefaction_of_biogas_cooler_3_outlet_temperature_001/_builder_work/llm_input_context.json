@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-350e26f4-01a4-4be1-85dd-25edca995f65",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "010_liquefaction_of_biogas_cooler_3_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 161.79295390283662,
+      "stream": "Coolent out2",
+      "stream_id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Coolent out2",
+      "threshold": 161.79295390283662
+    },
+    "target_stream_tag": "Coolent out2"
+  }
+}

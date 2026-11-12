@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-2500ac66-eccb-4396-ae85-a4e530f08ebe",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "030_production_of_cyclohexane_compressor_outlet_pressure_010",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_flow",
+      "metric": "molar_flow",
+      "min": 0.2006175423306198,
+      "stream": "S15",
+      "stream_id": "MAT-a9c9deac-5cd1-4cf8-af86-0b3d5f91ecf4",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S15",
+      "threshold": 0.2006175423306198
+    },
+    "target_stream_tag": "S15"
+  }
+}

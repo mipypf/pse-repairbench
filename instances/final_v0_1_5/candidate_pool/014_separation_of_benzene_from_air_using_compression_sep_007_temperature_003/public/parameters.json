@@ -1,0 +1,125 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "COOL-004: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-866cd520-75ec-45e5-b3ea-a62b8e3958e1",
+        "kind": "unit_operation",
+        "tag": "COOL-004",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-007: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+        "kind": "unit_operation",
+        "tag": "SEP-007",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-007: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+        "kind": "unit_operation",
+        "tag": "SEP-007",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-866cd520-75ec-45e5-b3ea-a62b8e3958e1",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 299.15
+      },
+      "outlet_temperature": 299.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-004",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "flash_pressure": 14489475,
+      "flash_temperature": 269.15,
+      "guid": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 14489475,
+        "separator_specification/temperature": 269.15
+      },
+      "override_p": "true",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/pressure",
+        "separator_specification/temperature"
+      ],
+      "tag": "SEP-007",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "temperature",
+    "stream_tag": "liquid benzene",
+    "threshold": 290.1499681922033
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 290.1499681922033,
+    "stream": "liquid benzene",
+    "stream_id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "liquid benzene",
+    "threshold": 290.1499681922033
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+      "mass_flow": 0.050909885605146,
+      "molar_flow": 0.741542672772474,
+      "tag": "liquid benzene",
+      "upstream_unit_guids": [
+        "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+      ]
+    },
+    {
+      "id": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+      "mass_flow": 0.949090110773195,
+      "molar_flow": 32.765163292346,
+      "tag": "valve outlet",
+      "upstream_unit_guids": [
+        "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395"
+      ]
+    }
+  ]
+}

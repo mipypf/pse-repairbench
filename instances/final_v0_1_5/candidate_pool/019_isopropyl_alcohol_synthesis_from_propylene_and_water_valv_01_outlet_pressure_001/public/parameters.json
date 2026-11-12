@@ -1,0 +1,317 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "VALV-02: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-517521ac-0198-4cf6-bccc-611ebc5421c9",
+        "kind": "unit_operation",
+        "tag": "VALV-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "PUMP-04: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "BB-aae090a5-79d6-4f9a-8e04-b1fbab656521",
+        "kind": "unit_operation",
+        "tag": "PUMP-04",
+        "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "PUMP-03: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "BB-df19c7ed-077d-4161-bc62-eb304d533b3d",
+        "kind": "unit_operation",
+        "tag": "PUMP-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "Heater: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-4d995831-b631-4328-afce-107a3765afb8",
+        "kind": "unit_operation",
+        "tag": "Heater",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "PUMP-02: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "BB-6238af18-b3b1-4fae-b190-8e9039babd50",
+        "kind": "unit_operation",
+        "tag": "PUMP-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "Heater-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-c63b9468-6d60-420b-ad90-e75166aa05af",
+        "kind": "unit_operation",
+        "tag": "Heater-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "PUMP-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "BB-e07d323f-4b08-49a1-ad08-dc2444d35b29",
+        "kind": "unit_operation",
+        "tag": "PUMP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "VALV-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-209ee47b-5c38-42a7-8689-ddcd5bc53c7b",
+        "kind": "unit_operation",
+        "tag": "VALV-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 782000,
+      "guid": "VALV-517521ac-0198-4cf6-bccc-611ebc5421c9",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 120000
+      },
+      "outlet_pressure": 120000,
+      "outlet_temperature": 428.585016116683,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 7380000,
+      "guid": "BB-aae090a5-79d6-4f9a-8e04-b1fbab656521",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 7500000
+      },
+      "outlet_temperature": 365.990845770377,
+      "pout": 7500000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "PUMP-04",
+      "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 32575,
+      "guid": "BB-df19c7ed-077d-4161-bc62-eb304d533b3d",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 133900
+      },
+      "outlet_temperature": 298.153263099522,
+      "pout": 133900,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "PUMP-03",
+      "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-4d995831-b631-4328-afce-107a3765afb8",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 395.37
+      },
+      "outlet_temperature": 395.37,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Heater",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 6660000,
+      "guid": "BB-6238af18-b3b1-4fae-b190-8e9039babd50",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 7510000
+      },
+      "outlet_temperature": 298.39341073978,
+      "pout": 7510000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "PUMP-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-c63b9468-6d60-420b-ad90-e75166aa05af",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 285.95
+      },
+      "outlet_temperature": 285.95,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Heater-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 768675,
+      "guid": "BB-e07d323f-4b08-49a1-ad08-dc2444d35b29",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 870000
+      },
+      "outlet_temperature": 223.90545325943,
+      "pout": 870000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "PUMP-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 6598000,
+      "guid": "VALV-209ee47b-5c38-42a7-8689-ddcd5bc53c7b",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 1353000
+      },
+      "outlet_pressure": 1353000,
+      "outlet_temperature": 397.354435500989,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    }
+  ],
+  "product_target": {
+    "component": "Propane",
+    "direction": "min",
+    "metric": "mass_fraction",
+    "stream_tag": "Propane purge",
+    "threshold": 0.8833570848322001
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "component": "Propane",
+    "direction": "min",
+    "family": "terminal_composition",
+    "metric": "mass_fraction",
+    "min": 0.8833570848322001,
+    "stream": "Propane purge",
+    "stream_id": "MAT-304099b3-7773-47f6-abf7-b31ac4a86aed",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Propane purge",
+    "threshold": 0.8833570848322001
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-304099b3-7773-47f6-abf7-b31ac4a86aed",
+      "mass_flow": 0.28196736537721,
+      "molar_flow": 5.7797819119791,
+      "tag": "Propane purge",
+      "upstream_unit_guids": [
+        "COUO-cbd17680-29ce-4ace-9d9a-6887e9de3b20"
+      ]
+    },
+    {
+      "id": "MAT-a068caf8-eed0-4e9a-9871-7f0777067c9f",
+      "mass_flow": 0.258550181348421,
+      "molar_flow": 3.692170578014,
+      "tag": "DIPE purge",
+      "upstream_unit_guids": [
+        "COUO-d3020d09-b802-43d3-b803-d36419265cbe"
+      ]
+    },
+    {
+      "id": "MAT-a3f53298-ba26-47ee-8eb1-fe8eb1b55dd0",
+      "mass_flow": 5.9629571481494,
+      "molar_flow": 97.522103818064,
+      "tag": "Isopropanol",
+      "upstream_unit_guids": [
+        "COUO-c6161bb8-ba99-42c8-81e2-4106fc1145e9"
+      ]
+    },
+    {
+      "id": "MAT-30668304-48d9-451c-9af4-898f0e8d1c4d",
+      "mass_flow": 0.801697400181637,
+      "molar_flow": 44.499629372444,
+      "tag": "Water product",
+      "upstream_unit_guids": [
+        "COUO-cce22806-fc1d-4900-adc8-f3ee827e416f"
+      ]
+    }
+  ]
+}

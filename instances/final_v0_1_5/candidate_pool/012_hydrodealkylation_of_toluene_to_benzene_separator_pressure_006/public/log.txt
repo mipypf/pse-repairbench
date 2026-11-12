@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: METHANE
+Target metric: molar_flow
+Observed target value: 1.3761151474863
+Required target value: >= 2.374223000470311

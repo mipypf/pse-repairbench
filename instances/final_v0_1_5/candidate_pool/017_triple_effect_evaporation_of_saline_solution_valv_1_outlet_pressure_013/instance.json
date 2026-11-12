@@ -1,0 +1,141 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_pressure_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "rationale": "Restore the unit outlet pressure to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "VALV-d7046982-4e5b-45bb-8242-d7d141d955df",
+        "kind": "unit_operation",
+        "tag": "VALV-1"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 101325.0
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet pressure is consistent with the requested process target.",
+      "target": "VALV-d7046982-4e5b-45bb-8242-d7d141d955df",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet pressure of VALV-1 to 101325.0.",
+      "target": "VALV-d7046982-4e5b-45bb-8242-d7d141d955df",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "017_triple_effect_evaporation_of_saline_solution_valv_1_outlet_pressure_013",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "ee7e17235101f8a223f98b9df4d89a9939f250f384c2fca36dcf6e05658d991f",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "b89f1d0fc8f7a93abd9b32e8d1fc9a4c1e7635d103b9813754196cdec70fafe4",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/flash_separator/017_triple_effect_evaporation_of_saline_solution.zip",
+    "curated_source_entry": "Triple_Effect_Evaporation_Of_Saline_Solution_By_Ms_Yutika_Naik/Flowsheet.dwxmz",
+    "detected_process_category": "flash_separator",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Valve",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp2B86.xml",
+      "tmp305C.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 39,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "flash_separator",
+    "source_format": "dwxmz",
+    "source_name": "Triple_effect_evaporation_of_saline_solution.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 86126.25,
+      "stream": "M-20",
+      "stream_id": "MAT-7daf21d6-325a-477b-aa20-72e7da2abe85",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "M-20",
+      "threshold": 86126.25
+    },
+    "target_stream_tag": "M-20"
+  }
+}

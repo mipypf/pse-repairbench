@@ -1,0 +1,136 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Restore the unit outlet temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "AQ-e1efb515-bb7b-4a2f-9155-730e3363d364",
+        "kind": "unit_operation",
+        "tag": "Heater-A"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 338.15
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet temperature is consistent with the requested process target.",
+      "target": "AQ-e1efb515-bb7b-4a2f-9155-730e3363d364",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet temperature of Heater-A to 338.15.",
+      "target": "AQ-e1efb515-bb7b-4a2f-9155-730e3363d364",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "026_production_of_acetic_acid_from_acetaldehyde_heater_a_outlet_temperature_002",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "54f353d0060550448f668ddefd866966a4f4ce6cb4faa1f0119e60f03f6e4b0e",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "57a8bd771f6fb436439317c045cd031cd9e7840a8275220f0c04ab6b9dc685c5",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/026_production_of_acetic_acid_from_acetaldehyde.zip",
+    "curated_source_entry": "Production_Of_Acetic_Acid_From_Acetaldehyde_By_Mr_Aakash_Subramanian_S/AceticAcidProduction.dwxmz",
+    "detected_process_category": "reaction_recycle",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Heater",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmpAE5C.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 45,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "Spreadsheet",
+      "FlowsheetView",
+      "PanelLayout"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "Production_of_Acetic_Acid_from_Acetaldehyde.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "FlowsheetView",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 326.8939729848238,
+      "metric": "temperature",
+      "stream": "S-7A",
+      "stream_id": "MAT-4b975724-04b8-4428-9117-4c6f8a4507eb",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-7A",
+      "threshold": 326.8939729848238
+    },
+    "target_stream_tag": "S-7A"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-7a7cc1d3-d349-400e-a246-a3a7a7049d54",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "032_production_of_diethylene_glycol_using_ethylene_as_raw_material_gls_301_pressure_033",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 86126.25,
+      "stream": "305",
+      "stream_id": "MAT-d8140854-4cbe-4f44-9fbb-dae55c358af4",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "305",
+      "threshold": 86126.25
+    },
+    "target_stream_tag": "305"
+  }
+}

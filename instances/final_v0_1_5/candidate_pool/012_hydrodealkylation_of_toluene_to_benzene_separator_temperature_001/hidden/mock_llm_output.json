@@ -1,0 +1,20 @@
+{
+  "diagnosis": "The selected target metric is degraded by an incorrect unit temperature setting.",
+  "rationale": "Restoring the discovered scalar unit parameter to the base value recovers the selected process target.",
+  "repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+        "kind": "unit_operation",
+        "tag": "SEPARATOR"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 311.15
+    }
+  ]
+}

@@ -1,0 +1,668 @@
+{
+  "column": null,
+  "duration_sec": 3.2,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 36,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/base_calculated.dwxmz",
+  "simulation_path": "hidden/base.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1ad4f044-ff0c-4f2a-8f88-89a9708ba55c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-04",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-328eb7e3-85a0-470b-85c1-13e5e02cc492"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-82fd50e6-db5b-4785-b8ce-eaf2d138b5e4"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4857b25b-278d-444d-aa52-32d68ef029f1",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-06",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-081f084d-831b-46db-af90-0f3cfe7574cf"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-7afff729-e7d0-4c19-bd0f-fa9034b05652",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-05",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-c8c99b22-a66a-4e2b-9012-d0d3dd15168d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-a3d20636-f0a1-41c9-b0f3-b4913ae395aa",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-08",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-081f084d-831b-46db-af90-0f3cfe7574cf"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-493b8564-b1c1-4fa3-9030-e8f82a0db498",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-081f084d-831b-46db-af90-0f3cfe7574cf"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2fce608e-f39b-4502-a032-54f2ccd55fa9",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-c8c99b22-a66a-4e2b-9012-d0d3dd15168d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-11 - Glucose 60%",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-2fcce974-68ac-40f9-8d57-9ca5e4f65be6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-69859cf1-485e-4869-a772-ae55addc54d7",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-02 - Saturated Steam",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-e2281832-2984-4874-81bb-87e87ee106c6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-14",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-2fcce974-68ac-40f9-8d57-9ca5e4f65be6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-328eb7e3-85a0-470b-85c1-13e5e02cc492"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MSTR-69238da2-aad8-46a1-b815-a3f6b98080d7",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-03 - Glucose 20%",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-38297477-e096-413b-86bc-3897f94d2f4c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-13",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-82fd50e6-db5b-4785-b8ce-eaf2d138b5e4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-15",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-546ca6e9-56c1-44bc-9d7b-29fbc1923293"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-d8873d3c-f9db-4138-9bf8-344fae01eece",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-01 - Saturated Steam",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6fbc5156-701a-4822-a094-e6b203214e93",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-09",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-546ca6e9-56c1-44bc-9d7b-29fbc1923293"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65",
+        "mass_flow": 0.0701540289867011,
+        "molar_flow": 3.89414036233137,
+        "tag": "S-10",
+        "upstream_unit_guids": [
+          "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+        ]
+      },
+      {
+        "id": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+        "mass_flow": 0.113598882085858,
+        "molar_flow": 3.530174596576,
+        "tag": "S-11 - Glucose 60%",
+        "upstream_unit_guids": [
+          "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+        ]
+      },
+      {
+        "id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+        "mass_flow": 0.207915331848895,
+        "molar_flow": 11.5410546962853,
+        "tag": "S-15",
+        "upstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 0.0555573069419874,
+          "mass_fraction": 0.489065613339373,
+          "molar_flow": 0.308377591818314,
+          "mole_fraction": 0.0873547705310148
+        },
+        "Water": {
+          "mass_flow": 0.058041575143871,
+          "mass_fraction": 0.510934386660627,
+          "molar_flow": 3.22179700475768,
+          "mole_fraction": 0.912645229468985
+        }
+      },
+      "id": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+      "mass_flow": 0.113598882085858,
+      "molar_flow": 3.530174596576,
+      "pressure": 41254.2,
+      "tag": "S-11 - Glucose 60%",
+      "temperature": 353.15,
+      "total_energy_flow": -1291.14805839429
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 0.0555545071042714,
+          "mass_fraction": 0.302336809947572,
+          "molar_flow": 0.308362050978416,
+          "mole_fraction": 0.0415340745489867
+        },
+        "Water": {
+          "mass_flow": 0.128195884103154,
+          "mass_fraction": 0.697663190052428,
+          "molar_flow": 7.11595290792895,
+          "mole_fraction": 0.958465925451013
+        }
+      },
+      "id": "MAT-493b8564-b1c1-4fa3-9030-e8f82a0db498",
+      "mass_flow": 0.183750391207426,
+      "molar_flow": 7.42431495890737,
+      "pressure": 66452.3,
+      "tag": "S-07",
+      "temperature": 363.147201525663,
+      "total_energy_flow": -2386.53325845851
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 2.37665201556156e-24,
+          "mass_fraction": 3.78387500544076e-23,
+          "molar_flow": 1.31918961787387e-23,
+          "mole_fraction": 3.78372378485884e-24
+        },
+        "Water": {
+          "mass_flow": 0.0628100032940892,
+          "mass_fraction": 1,
+          "molar_flow": 3.48648498908089,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-a3d20636-f0a1-41c9-b0f3-b4913ae395aa",
+      "mass_flow": 0.0628100032940892,
+      "molar_flow": 3.48648498908089,
+      "pressure": 66452.3,
+      "tag": "S-08",
+      "temperature": 363.150000011922,
+      "total_energy_flow": -835.731337126187
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 0.0555558113854703,
+          "mass_fraction": 0.22532226638175,
+          "molar_flow": 0.308369290549902,
+          "mole_fraction": 0.0282627572698516
+        },
+        "Water": {
+          "mass_flow": 0.191005756974336,
+          "mass_fraction": 0.77467773361825,
+          "molar_flow": 10.6024306574384,
+          "mole_fraction": 0.971737242730148
+        }
+      },
+      "id": "MAT-7afff729-e7d0-4c19-bd0f-fa9034b05652",
+      "mass_flow": 0.246561568359806,
+      "molar_flow": 10.9107999479883,
+      "pressure": 101325,
+      "tag": "S-05",
+      "temperature": 374.088762908588,
+      "total_energy_flow": -3359.5623085157
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 1.0077611818962e-23,
+          "mass_fraction": 3.22830275547563e-22,
+          "molar_flow": 5.59370105404194e-23,
+          "mole_fraction": 3.22817373804757e-23
+        },
+        "Water": {
+          "mass_flow": 0.0312164396659173,
+          "mass_fraction": 1,
+          "molar_flow": 1.73277571405592,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-4857b25b-278d-444d-aa52-32d68ef029f1",
+      "mass_flow": 0.0312164396659173,
+      "molar_flow": 1.73277571405592,
+      "pressure": 101325,
+      "tag": "S-06",
+      "temperature": 374.089000009036,
+      "total_energy_flow": -414.775795249852
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 0.0555555555555555,
+          "mass_fraction": 0.2,
+          "molar_flow": 0.308367870534833,
+          "mole_fraction": 0.0243892929324217
+        },
+        "Water": {
+          "mass_flow": 0.222222222222222,
+          "mass_fraction": 0.8,
+          "molar_flow": 12.3352077915093,
+          "mole_fraction": 0.975610707067578
+        }
+      },
+      "id": "MAT-1ad4f044-ff0c-4f2a-8f88-89a9708ba55c",
+      "mass_flow": 0.277777777777778,
+      "molar_flow": 12.6435756620442,
+      "pressure": 101325,
+      "tag": "S-04",
+      "temperature": 373.15,
+      "total_energy_flow": -3849.19064264551
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 2.37665201556156e-24,
+          "mass_fraction": 3.78387500544076e-23,
+          "molar_flow": 1.31918961787387e-23,
+          "mole_fraction": 3.78372378485884e-24
+        },
+        "Water": {
+          "mass_flow": 0.0628100032940892,
+          "mass_fraction": 1,
+          "molar_flow": 3.48648498908089,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-2fce608e-f39b-4502-a032-54f2ccd55fa9",
+      "mass_flow": 0.0628100032940892,
+      "molar_flow": 3.48648498908089,
+      "pressure": 66452.3,
+      "tag": "S-12",
+      "temperature": 361.71503812389,
+      "total_energy_flow": -976.374675433131
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 7.22498800499274e-25,
+          "mass_fraction": 1.02987499212089e-23,
+          "molar_flow": 4.01031749833079e-24,
+          "mole_fraction": 1.02983383370646e-24
+        },
+        "Water": {
+          "mass_flow": 0.0701540289867011,
+          "mass_fraction": 1,
+          "molar_flow": 3.89414036233137,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65",
+      "mass_flow": 0.0701540289867011,
+      "molar_flow": 3.89414036233137,
+      "pressure": 41254.2,
+      "tag": "S-10",
+      "temperature": 353.150000012362,
+      "total_energy_flow": -934.65556278388
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.0666666666666667,
+          "mass_fraction": 1,
+          "molar_flow": 3.7005623374528,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-69859cf1-485e-4869-a772-ae55addc54d7",
+      "mass_flow": 0.0666666666666667,
+      "molar_flow": 3.7005623374528,
+      "pressure": 300000,
+      "tag": "S-02 - Saturated Steam",
+      "temperature": 406.718162848355,
+      "total_energy_flow": -882.340740626847
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.0666666666666667,
+          "mass_fraction": 1,
+          "molar_flow": 3.7005623374528,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-e2281832-2984-4874-81bb-87e87ee106c6",
+      "mass_flow": 0.0666666666666667,
+      "molar_flow": 3.7005623374528,
+      "pressure": 300000,
+      "tag": "S-14",
+      "temperature": 406.718162848355,
+      "total_energy_flow": -1029.08016781525
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.0472222222222222,
+          "mass_fraction": 1,
+          "molar_flow": 2.62123165569573,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-6fbc5156-701a-4822-a094-e6b203214e93",
+      "mass_flow": 0.0472222222222222,
+      "molar_flow": 2.62123165569573,
+      "pressure": 300000,
+      "tag": "S-09",
+      "temperature": 406.718162848355,
+      "total_energy_flow": -726.50758613317
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.0472222222222222,
+          "mass_fraction": 1,
+          "molar_flow": 2.62123165569573,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-d8873d3c-f9db-4138-9bf8-344fae01eece",
+      "mass_flow": 0.0472222222222222,
+      "molar_flow": 2.62123165569573,
+      "pressure": 300000,
+      "tag": "S-01 - Saturated Steam",
+      "temperature": 406.718162848355,
+      "total_energy_flow": -624.991357944016
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 1.24542638345235e-23,
+          "mass_fraction": 5.99006514996921e-23,
+          "molar_flow": 6.91289067191581e-23,
+          "mole_fraction": 5.98982576015416e-24
+        },
+        "Water": {
+          "mass_flow": 0.207915331848895,
+          "mass_fraction": 1,
+          "molar_flow": 11.5410546962853,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+      "mass_flow": 0.207915331848895,
+      "molar_flow": 11.5410546962853,
+      "pressure": 66452.3,
+      "tag": "S-15",
+      "temperature": 347.642419765463,
+      "total_energy_flow": -3282.91722620436
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 0.0555555555555555,
+          "mass_fraction": 0.2,
+          "molar_flow": 0.308367870534833,
+          "mole_fraction": 0.0243892929324217
+        },
+        "Water": {
+          "mass_flow": 0.222222222222222,
+          "mass_fraction": 0.8,
+          "molar_flow": 12.3352077915093,
+          "mole_fraction": 0.975610707067578
+        }
+      },
+      "id": "MSTR-69238da2-aad8-46a1-b815-a3f6b98080d7",
+      "mass_flow": 0.277777777777778,
+      "molar_flow": 12.6435756620442,
+      "pressure": 101325,
+      "tag": "S-03 - Glucose 20%",
+      "temperature": 298.15,
+      "total_energy_flow": -3950.70685541796
+    },
+    {
+      "compounds": {
+        "Glucose": {
+          "mass_flow": 1.0077611818962e-23,
+          "mass_fraction": 3.22830275547563e-22,
+          "molar_flow": 5.59370105404194e-23,
+          "mole_fraction": 3.22817373804757e-23
+        },
+        "Water": {
+          "mass_flow": 0.0312164396659173,
+          "mass_fraction": 1,
+          "molar_flow": 1.73277571405592,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-38297477-e096-413b-86bc-3897f94d2f4c",
+      "mass_flow": 0.0312164396659173,
+      "molar_flow": 1.73277571405592,
+      "pressure": 101325,
+      "tag": "S-13",
+      "temperature": 99.3440564629649,
+      "total_energy_flow": -550.954796796457
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": null,
+    "delta_p": null,
+    "flash_pressure": 41254.2,
+    "flash_temperature": 353.15,
+    "guid": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+    "outlet_pressure": null,
+    "outlet_temperature": null,
+    "override_p": "true",
+    "override_t": "true",
+    "p_out": null,
+    "pout": null,
+    "tag": "SEP-03",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65",
+      "mass_flow": 0.0701540289867011,
+      "molar_flow": 3.89414036233137,
+      "tag": "S-10",
+      "upstream_unit_guids": [
+        "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+      ]
+    },
+    {
+      "id": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+      "mass_flow": 0.113598882085858,
+      "molar_flow": 3.530174596576,
+      "tag": "S-11 - Glucose 60%",
+      "upstream_unit_guids": [
+        "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+      ]
+    },
+    {
+      "id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+      "mass_flow": 0.207915331848895,
+      "molar_flow": 11.5410546962853,
+      "tag": "S-15",
+      "upstream_unit_guids": [
+        "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+      ]
+    }
+  ]
+}

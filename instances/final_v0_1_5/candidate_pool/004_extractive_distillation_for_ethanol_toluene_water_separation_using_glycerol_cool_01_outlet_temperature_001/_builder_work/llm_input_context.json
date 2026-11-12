@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-311af607-55ff-47b1-b963-f4dd79df8c20",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "004_extractive_distillation_for_ethanol_toluene_water_separation_using_glycerol_cool_01_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 272.41,
+      "stream": "S-09",
+      "stream_id": "MAT-cfc68ff4-4aad-4d25-b4f2-595ae302c680",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-09",
+      "threshold": 272.41
+    },
+    "target_stream_tag": "S-09"
+  }
+}

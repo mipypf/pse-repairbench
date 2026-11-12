@@ -1,0 +1,1003 @@
+{
+  "column": null,
+  "duration_sec": 8.93,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 32,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/repaired_calculated.dwxmz",
+  "simulation_path": "hidden/repaired.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COUO-0cd18729-74c9-4807-b1cc-ec68526bfc2d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-6b832345-d498-435b-8d5f-f30f7262ef9a",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-01",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-1a17ee08-291e-42b2-848c-04a074e9121b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-d5454291-4b2c-45af-941e-54e4b2528b46",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-02",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3fcfdd37-247e-40e1-9f18-077eadd00d90",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-03",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-0cd18729-74c9-4807-b1cc-ec68526bfc2d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-dc793f5f-f550-4efd-b636-1fa0379d4e72"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-18b546cd-7802-4beb-9a8c-5a57199226ed",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-04",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-0cd18729-74c9-4807-b1cc-ec68526bfc2d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-0cd18729-74c9-4807-b1cc-ec68526bfc2d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-97c14aea-d527-4578-8a02-80d68a34fab3",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-18",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-1a17ee08-291e-42b2-848c-04a074e9121b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-311af607-55ff-47b1-b963-f4dd79df8c20"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-d72519d6-323c-4553-91c1-139edf1da38a",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-05",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-dc793f5f-f550-4efd-b636-1fa0379d4e72"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-0d1b93cd-b66b-4a92-84f6-702f80151abb"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-93fb8d23-e248-4dd1-bbce-77f34894e7c4",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-15",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-dc793f5f-f550-4efd-b636-1fa0379d4e72"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CS-0b518991-5ed3-4672-ad0a-027d69a97ba6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2a3ccd48-78b1-4b61-a21b-57c2ef2b06e7",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-06",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-311af607-55ff-47b1-b963-f4dd79df8c20"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-dc793f5f-f550-4efd-b636-1fa0379d4e72"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-d4f70a95-90a9-4e8e-af2c-46b45ae506c7",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-14",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-44cfb167-c52e-4410-b666-a6d71372a44f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DIV-5c792799-5f63-4869-a6be-8b411470621b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-be8cd9df-fc1a-4cf0-8d4f-82372b6f404f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-0b518991-5ed3-4672-ad0a-027d69a97ba6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DIV-6bd17216-848d-4cc7-b33c-6ad36127c4dd"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-e1cad858-5d97-47cc-87dc-e60a7aa77792",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-08",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-0b518991-5ed3-4672-ad0a-027d69a97ba6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-cfc68ff4-4aad-4d25-b4f2-595ae302c680",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-09",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-5c792799-5f63-4869-a6be-8b411470621b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-bb43c82c-5e21-481c-bace-90467f8fddc3"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-ac97de57-3818-4466-9f71-df3ae6b294d9",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-5c792799-5f63-4869-a6be-8b411470621b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8f4f03fb-e1ac-4758-99a6-ea4df867cad4",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-11",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-6bd17216-848d-4cc7-b33c-6ad36127c4dd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-bb43c82c-5e21-481c-bace-90467f8fddc3"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-31fbba9b-86f3-416c-8181-d6b2b37730dd",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-6bd17216-848d-4cc7-b33c-6ad36127c4dd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-44cfb167-c52e-4410-b666-a6d71372a44f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1e2fe9dc-f9b9-4bde-aac9-14d138bffd3b",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-13",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-bb43c82c-5e21-481c-bace-90467f8fddc3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-3baedfd3-3304-48bf-a2b5-15ab79fe0ba6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-ff923f80-00c6-4652-b927-55782dff2eb6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-16",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-0d1b93cd-b66b-4a92-84f6-702f80151abb"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-1a17ee08-291e-42b2-848c-04a074e9121b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-e3859cc4-89b2-4d88-8313-5664693ee2ec",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-17",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-3baedfd3-3304-48bf-a2b5-15ab79fe0ba6"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-3fcfdd37-247e-40e1-9f18-077eadd00d90",
+        "mass_flow": 0.171083350676628,
+        "molar_flow": 3.7191313666691,
+        "tag": "S-03",
+        "upstream_unit_guids": [
+          "COUO-0cd18729-74c9-4807-b1cc-ec68526bfc2d"
+        ]
+      },
+      {
+        "id": "MAT-cfc68ff4-4aad-4d25-b4f2-595ae302c680",
+        "mass_flow": 0.0912797343466017,
+        "molar_flow": 0.991658810867358,
+        "tag": "S-09",
+        "upstream_unit_guids": [
+          "DIV-5c792799-5f63-4869-a6be-8b411470621b"
+        ]
+      },
+      {
+        "id": "MAT-8f4f03fb-e1ac-4758-99a6-ea4df867cad4",
+        "mass_flow": 0.0252878030556729,
+        "molar_flow": 0.949480337369662,
+        "tag": "S-11",
+        "upstream_unit_guids": [
+          "DIV-6bd17216-848d-4cc7-b33c-6ad36127c4dd"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 3.04034235881172e-06,
+          "mass_fraction": 0.000491422501228002,
+          "molar_flow": 6.59962082243662e-05,
+          "mole_fraction": 0.000640578687409011
+        },
+        "Glycerol": {
+          "mass_flow": 0.000523510132901348,
+          "mass_fraction": 0.0846170031420846,
+          "molar_flow": 0.00568453054614684,
+          "mole_fraction": 0.0551757322694601
+        },
+        "Toluene": {
+          "mass_flow": 0.00485760417637449,
+          "mass_fraction": 0.785153680936947,
+          "molar_flow": 0.0527207179064641,
+          "mole_fraction": 0.51172285778859
+        },
+        "Water": {
+          "mass_flow": 0.000802664940903934,
+          "mass_fraction": 0.129737893419741,
+          "molar_flow": 0.0445546747485431,
+          "mole_fraction": 0.432460831254541
+        }
+      },
+      "id": "MAT-1e2fe9dc-f9b9-4bde-aac9-14d138bffd3b",
+      "mass_flow": 0.00618681959253859,
+      "molar_flow": 0.103025919409378,
+      "pressure": 5066.25,
+      "tag": "S-13",
+      "temperature": 273.784370440532,
+      "total_energy_flow": -16.4416795832563
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 2.11303793937415e-06,
+          "mass_fraction": 0.00157436839858881,
+          "molar_flow": 4.58673647159345e-05,
+          "mole_fraction": 0.00091018145558964
+        },
+        "Glycerol": {
+          "mass_flow": 0.000298317014132504,
+          "mass_fraction": 0.222268077188758,
+          "molar_flow": 0.00323927288641631,
+          "mole_fraction": 0.0642793875137586
+        },
+        "Toluene": {
+          "mass_flow": 0.000239965646312899,
+          "mass_fraction": 0.178792024157345,
+          "molar_flow": 0.00260440346457932,
+          "mole_fraction": 0.0516811844546628
+        },
+        "Water": {
+          "mass_flow": 0.000801753916196008,
+          "mass_fraction": 0.597365530255308,
+          "molar_flow": 0.0445041051927035,
+          "mole_fraction": 0.883129246575989
+        }
+      },
+      "id": "MAT-31fbba9b-86f3-416c-8181-d6b2b37730dd",
+      "mass_flow": 0.00134214961458079,
+      "molar_flow": 0.0503936489084151,
+      "pressure": 5066.25,
+      "tag": "S-12",
+      "temperature": 281.41,
+      "total_energy_flow": -15.1984276152471
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 3.98123180005891e-05,
+          "mass_fraction": 0.00157436839858881,
+          "molar_flow": 0.000864199395520861,
+          "mole_fraction": 0.00091018145558964
+        },
+        "Glycerol": {
+          "mass_flow": 0.00562067136151242,
+          "mass_fraction": 0.222268077188758,
+          "molar_flow": 0.0610320145424788,
+          "mole_fraction": 0.0642793875137586
+        },
+        "Toluene": {
+          "mass_flow": 0.00452125749481605,
+          "mass_fraction": 0.178792024157345,
+          "molar_flow": 0.049070268451677,
+          "mole_fraction": 0.0516811844546628
+        },
+        "Water": {
+          "mass_flow": 0.0151060618813438,
+          "mass_fraction": 0.597365530255308,
+          "molar_flow": 0.838513854979985,
+          "mole_fraction": 0.883129246575989
+        }
+      },
+      "id": "MAT-8f4f03fb-e1ac-4758-99a6-ea4df867cad4",
+      "mass_flow": 0.0252878030556729,
+      "molar_flow": 0.949480337369662,
+      "pressure": 5066.25,
+      "tag": "S-11",
+      "temperature": 281.41,
+      "total_energy_flow": -286.357675861877
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 9.27304419437574e-07,
+          "mass_fraction": 0.000191407138908658,
+          "molar_flow": 2.01288435084317e-05,
+          "mole_fraction": 0.000382443001543383
+        },
+        "Glycerol": {
+          "mass_flow": 0.000225193118768844,
+          "mass_fraction": 0.0464826540906654,
+          "molar_flow": 0.00244525765973052,
+          "mole_fraction": 0.0464592850822532
+        },
+        "Toluene": {
+          "mass_flow": 0.00461763853006159,
+          "mass_fraction": 0.953137891965985,
+          "molar_flow": 0.0501163144418848,
+          "mole_fraction": 0.952197462979818
+        },
+        "Water": {
+          "mass_flow": 9.11024707925965e-07,
+          "mass_fraction": 0.000188046804440948,
+          "molar_flow": 5.05695558395964e-05,
+          "mole_fraction": 0.000960808936385725
+        }
+      },
+      "id": "MAT-ac97de57-3818-4466-9f71-df3ae6b294d9",
+      "mass_flow": 0.0048446699779578,
+      "molar_flow": 0.0526322705009634,
+      "pressure": 5066.25,
+      "tag": "S-10",
+      "temperature": 281.41,
+      "total_energy_flow": -1.24325231784801
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 1.74715927916254e-05,
+          "mass_fraction": 0.000191407138908658,
+          "molar_flow": 0.000379252972135054,
+          "mole_fraction": 0.000382443001543383
+        },
+        "Glycerol": {
+          "mass_flow": 0.00424292431712092,
+          "mass_fraction": 0.0464826540906654,
+          "molar_flow": 0.0460717593984147,
+          "mole_fraction": 0.0464592850822532
+        },
+        "Toluene": {
+          "mass_flow": 0.0870021735743351,
+          "mass_fraction": 0.953137891965985,
+          "molar_flow": 0.944255003849481,
+          "mole_fraction": 0.952197462979818
+        },
+        "Water": {
+          "mass_flow": 1.71648623540971e-05,
+          "mass_fraction": 0.000188046804440948,
+          "molar_flow": 0.000952794647326999,
+          "mole_fraction": 0.000960808936385725
+        }
+      },
+      "id": "MAT-cfc68ff4-4aad-4d25-b4f2-595ae302c680",
+      "mass_flow": 0.0912797343466017,
+      "molar_flow": 0.991658810867358,
+      "pressure": 5066.25,
+      "tag": "S-09",
+      "temperature": 281.41,
+      "total_energy_flow": -23.4244524013586
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 4.19253559399632e-05,
+          "mass_fraction": 0.00157436839858881,
+          "molar_flow": 0.000910066760236796,
+          "mole_fraction": 0.00091018145558964
+        },
+        "Glycerol": {
+          "mass_flow": 0.00591898837564493,
+          "mass_fraction": 0.222268077188758,
+          "molar_flow": 0.0642712874288951,
+          "mole_fraction": 0.0642793875137586
+        },
+        "Toluene": {
+          "mass_flow": 0.00476122314112895,
+          "mass_fraction": 0.178792024157345,
+          "molar_flow": 0.0516746719162563,
+          "mole_fraction": 0.0516811844546628
+        },
+        "Water": {
+          "mass_flow": 0.0159078157975398,
+          "mass_fraction": 0.597365530255308,
+          "molar_flow": 0.883017960172689,
+          "mole_fraction": 0.883129246575989
+        }
+      },
+      "id": "MAT-e1cad858-5d97-47cc-87dc-e60a7aa77792",
+      "mass_flow": 0.0266299526702537,
+      "molar_flow": 0.999873986278077,
+      "pressure": 5066.25,
+      "tag": "S-08",
+      "temperature": 281.41,
+      "total_energy_flow": -301.556103477125
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 1.8398897211063e-05,
+          "mass_fraction": 0.000191407138908658,
+          "molar_flow": 0.000399381815643486,
+          "mole_fraction": 0.000382443001543383
+        },
+        "Glycerol": {
+          "mass_flow": 0.00446811743588976,
+          "mass_fraction": 0.0464826540906654,
+          "molar_flow": 0.0485170170581453,
+          "mole_fraction": 0.0464592850822532
+        },
+        "Toluene": {
+          "mass_flow": 0.0916198121043967,
+          "mass_fraction": 0.953137891965985,
+          "molar_flow": 0.994371318291366,
+          "mole_fraction": 0.952197462979818
+        },
+        "Water": {
+          "mass_flow": 1.80758870620231e-05,
+          "mass_fraction": 0.000188046804440948,
+          "molar_flow": 0.0010033642031666,
+          "mole_fraction": 0.000960808936385725
+        }
+      },
+      "id": "MAT-be8cd9df-fc1a-4cf0-8d4f-82372b6f404f",
+      "mass_flow": 0.0961244043245596,
+      "molar_flow": 1.04429108136832,
+      "pressure": 5066.25,
+      "tag": "S-07",
+      "temperature": 281.41,
+      "total_energy_flow": -24.6677047192066
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 6.03242531510262e-05,
+          "mass_fraction": 0.000491422501228002,
+          "molar_flow": 0.00130944857588028,
+          "mole_fraction": 0.00064057868740901
+        },
+        "Glycerol": {
+          "mass_flow": 0.0103871058115347,
+          "mass_fraction": 0.0846170031420846,
+          "molar_flow": 0.11278830448704,
+          "mole_fraction": 0.05517573226946
+        },
+        "Toluene": {
+          "mass_flow": 0.0963810352455257,
+          "mass_fraction": 0.785153680936947,
+          "molar_flow": 1.04604599020762,
+          "mole_fraction": 0.51172285778859
+        },
+        "Water": {
+          "mass_flow": 0.0159258916846019,
+          "mass_fraction": 0.12973789341974,
+          "molar_flow": 0.884021324375855,
+          "mole_fraction": 0.43246083125454
+        }
+      },
+      "id": "MAT-d72519d6-323c-4553-91c1-139edf1da38a",
+      "mass_flow": 0.122754356994813,
+      "molar_flow": 2.0441650676464,
+      "pressure": 5066.25,
+      "tag": "S-05",
+      "temperature": 412.835550081691,
+      "total_energy_flow": -207.223041686312
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 2.93773467860278e-09,
+          "mass_fraction": 1.3202721662993e-08,
+          "molar_flow": 6.37689202977739e-08,
+          "mole_fraction": 2.6390133837836e-08
+        },
+        "Glycerol": {
+          "mass_flow": 0.222312277007805,
+          "mass_fraction": 0.999112389889551,
+          "molar_flow": 2.41397606275649,
+          "mole_fraction": 0.999
+        },
+        "Toluene": {
+          "mass_flow": 0.000191389383309086,
+          "mass_fraction": 0.000860139200277794,
+          "molar_flow": 0.00207719388434431,
+          "mole_fraction": 0.00085962604289059
+        },
+        "Water": {
+          "mass_flow": 6.10960841482174e-06,
+          "mass_fraction": 2.74577074499919e-05,
+          "molar_flow": 0.00033913480194711,
+          "mole_fraction": 0.00014034756697558
+        }
+      },
+      "id": "MAT-93fb8d23-e248-4dd1-bbce-77f34894e7c4",
+      "mass_flow": 0.222509778937263,
+      "molar_flow": 2.4163924552117,
+      "pressure": 5066.25,
+      "tag": "S-15",
+      "temperature": 469.57170043335,
+      "total_energy_flow": -1578.75512560551
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 3.1585364908852e-09,
+          "mass_fraction": 1.35954948444211e-08,
+          "molar_flow": 6.85618286810928e-08,
+          "mole_fraction": 2.71752336960732e-08
+        },
+        "Glycerol": {
+          "mass_flow": 0.232116012734657,
+          "mass_fraction": 0.999112108898637,
+          "molar_flow": 2.52042984789486,
+          "mole_fraction": 0.999000047820917
+        },
+        "Toluene": {
+          "mass_flow": 0.000199913306297927,
+          "mass_fraction": 0.000860499897008609,
+          "molar_flow": 0.0021697060205815,
+          "mole_fraction": 0.000859986807460101
+        },
+        "Water": {
+          "mass_flow": 6.36042877468081e-06,
+          "mass_fraction": 2.73776088590466e-05,
+          "molar_flow": 0.000353057447604523,
+          "mole_fraction": 0.000139938196389413
+        }
+      },
+      "id": "MAT-97c14aea-d527-4578-8a02-80d68a34fab3",
+      "mass_flow": 0.232322289628266,
+      "molar_flow": 2.52295267992488,
+      "pressure": 111457.5,
+      "tag": "S-18",
+      "temperature": 336.136708797399,
+      "total_energy_flow": -1761.23085852057
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 5.72031670991825e-05,
+          "mass_fraction": 0.000168732585247585,
+          "molar_flow": 0.00124169967767918,
+          "mole_fraction": 0.000285
+        },
+        "Glycerol": {
+          "mass_flow": 0.232116012144385,
+          "mass_fraction": 0.684674237329801,
+          "molar_flow": 2.5204298414854,
+          "mole_fraction": 0.57849938897136
+        },
+        "Toluene": {
+          "mass_flow": 0.0917148753669162,
+          "mass_fraction": 0.270532014416052,
+          "molar_flow": 0.995403062184977,
+          "mole_fraction": 0.22846899119194
+        },
+        "Water": {
+          "mass_flow": 0.0151286263075156,
+          "mass_fraction": 0.0446250156689001,
+          "molar_flow": 0.839766370964846,
+          "mole_fraction": 0.1927466198367
+        }
+      },
+      "id": "MAT-18b546cd-7802-4beb-9a8c-5a57199226ed",
+      "mass_flow": 0.339016716985916,
+      "molar_flow": 4.3568409743129,
+      "pressure": 101325,
+      "tag": "S-04",
+      "temperature": 406.67630056041,
+      "total_energy_flow": -1851.12319708809
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 0.170831688870823,
+          "mass_fraction": 0.998529010538957,
+          "molar_flow": 3.70821518746505,
+          "mole_fraction": 0.99706485785851
+        },
+        "Glycerol": {
+          "mass_flow": 1.3347826488867e-09,
+          "mass_fraction": 7.80194357667001e-09,
+          "molar_flow": 1.44937266027916e-08,
+          "mole_fraction": 3.8970730457882e-09
+        },
+        "Toluene": {
+          "mass_flow": 6.83708543263168e-05,
+          "mass_fraction": 0.000399634763148564,
+          "molar_flow": 0.000742044924428567,
+          "mole_fraction": 0.00019952103092641
+        },
+        "Water": {
+          "mass_flow": 0.000183289616696218,
+          "mass_fraction": 0.00107134689595051,
+          "molar_flow": 0.0101741197858828,
+          "mole_fraction": 0.0027356172134879
+        }
+      },
+      "id": "MAT-3fcfdd37-247e-40e1-9f18-077eadd00d90",
+      "mass_flow": 0.171083350676628,
+      "molar_flow": 3.7191313666691,
+      "pressure": 101325,
+      "tag": "S-03",
+      "temperature": 351.788606477027,
+      "total_energy_flow": -969.152239502538
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Glycerol": {
+          "mass_flow": 1.11111111111111e-05,
+          "mass_fraction": 1,
+          "molar_flow": 0.000120649910179761,
+          "mole_fraction": 1
+        },
+        "Toluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-d5454291-4b2c-45af-941e-54e4b2528b46",
+      "mass_flow": 1.11111111111111e-05,
+      "molar_flow": 0.000120649910179761,
+      "pressure": 111457.5,
+      "tag": "S-02",
+      "temperature": 336.15,
+      "total_energy_flow": -0.0843090272580216
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 0.170888888888889,
+          "mass_fraction": 0.6152,
+          "molar_flow": 3.7094568187872,
+          "mole_fraction": 0.668007146598333
+        },
+        "Glycerol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Toluene": {
+          "mass_flow": 0.0915833333333335,
+          "mass_fraction": 0.3297,
+          "molar_flow": 0.993975405629698,
+          "mole_fraction": 0.178997278291732
+        },
+        "Water": {
+          "mass_flow": 0.0153055555555556,
+          "mass_fraction": 0.0551000000000001,
+          "molar_flow": 0.849587436640208,
+          "mole_fraction": 0.152995575109935
+        }
+      },
+      "id": "MAT-6b832345-d498-435b-8d5f-f30f7262ef9a",
+      "mass_flow": 0.277777777777778,
+      "molar_flow": 5.5530196610571,
+      "pressure": 111457.5,
+      "tag": "S-01",
+      "temperature": 336.15,
+      "total_energy_flow": -1239.80873218077
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 6.03242531510262e-05,
+          "mass_fraction": 0.000491422501228002,
+          "molar_flow": 0.00130944857588028,
+          "mole_fraction": 0.00064057868740901
+        },
+        "Glycerol": {
+          "mass_flow": 0.0103871058115347,
+          "mass_fraction": 0.0846170031420846,
+          "molar_flow": 0.11278830448704,
+          "mole_fraction": 0.05517573226946
+        },
+        "Toluene": {
+          "mass_flow": 0.0963810352455257,
+          "mass_fraction": 0.785153680936947,
+          "molar_flow": 1.04604599020762,
+          "mole_fraction": 0.51172285778859
+        },
+        "Water": {
+          "mass_flow": 0.0159258916846019,
+          "mass_fraction": 0.12973789341974,
+          "molar_flow": 0.884021324375855,
+          "mole_fraction": 0.43246083125454
+        }
+      },
+      "id": "MAT-2a3ccd48-78b1-4b61-a21b-57c2ef2b06e7",
+      "mass_flow": 0.122754356994813,
+      "molar_flow": 2.0441650676464,
+      "pressure": 5066.25,
+      "tag": "S-06",
+      "temperature": 281.41,
+      "total_energy_flow": -324.134259234855
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 3.04034235881172e-06,
+          "mass_fraction": 0.000491422501228002,
+          "molar_flow": 6.59962082243662e-05,
+          "mole_fraction": 0.000640578687409011
+        },
+        "Glycerol": {
+          "mass_flow": 0.000523510132901348,
+          "mass_fraction": 0.0846170031420846,
+          "molar_flow": 0.00568453054614684,
+          "mole_fraction": 0.0551757322694601
+        },
+        "Toluene": {
+          "mass_flow": 0.00485760417637449,
+          "mass_fraction": 0.785153680936947,
+          "molar_flow": 0.0527207179064641,
+          "mole_fraction": 0.51172285778859
+        },
+        "Water": {
+          "mass_flow": 0.000802664940903934,
+          "mass_fraction": 0.129737893419741,
+          "molar_flow": 0.0445546747485431,
+          "mole_fraction": 0.432460831254541
+        }
+      },
+      "id": "MAT-d4f70a95-90a9-4e8e-af2c-46b45ae506c7",
+      "mass_flow": 0.00618681959253859,
+      "molar_flow": 0.103025919409378,
+      "pressure": 5066.25,
+      "tag": "S-14",
+      "temperature": 273.784370440532,
+      "total_energy_flow": -16.9089419479098
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 2.93773467860278e-09,
+          "mass_fraction": 1.3202721662993e-08,
+          "molar_flow": 6.37689202977739e-08,
+          "mole_fraction": 2.6390133837836e-08
+        },
+        "Glycerol": {
+          "mass_flow": 0.222312277007805,
+          "mass_fraction": 0.999112389889551,
+          "molar_flow": 2.41397606275649,
+          "mole_fraction": 0.999
+        },
+        "Toluene": {
+          "mass_flow": 0.000191389383309086,
+          "mass_fraction": 0.000860139200277794,
+          "molar_flow": 0.00207719388434431,
+          "mole_fraction": 0.00085962604289059
+        },
+        "Water": {
+          "mass_flow": 6.10960841482174e-06,
+          "mass_fraction": 2.74577074499919e-05,
+          "molar_flow": 0.00033913480194711,
+          "mole_fraction": 0.00014034756697558
+        }
+      },
+      "id": "MAT-ff923f80-00c6-4652-b927-55782dff2eb6",
+      "mass_flow": 0.222509778937263,
+      "molar_flow": 2.4163924552117,
+      "pressure": 5066.25,
+      "tag": "S-16",
+      "temperature": 336.15,
+      "total_energy_flow": -1686.84320551257
+    },
+    {
+      "compounds": {
+        "Ethanol": {
+          "mass_flow": 2.93773467860278e-09,
+          "mass_fraction": 1.3202721662993e-08,
+          "molar_flow": 6.37689202977739e-08,
+          "mole_fraction": 2.6390133837836e-08
+        },
+        "Glycerol": {
+          "mass_flow": 0.222312277007805,
+          "mass_fraction": 0.999112389889551,
+          "molar_flow": 2.41397606275649,
+          "mole_fraction": 0.999
+        },
+        "Toluene": {
+          "mass_flow": 0.000191389383309086,
+          "mass_fraction": 0.000860139200277794,
+          "molar_flow": 0.00207719388434431,
+          "mole_fraction": 0.00085962604289059
+        },
+        "Water": {
+          "mass_flow": 6.10960841482174e-06,
+          "mass_fraction": 2.74577074499919e-05,
+          "molar_flow": 0.00033913480194711,
+          "mole_fraction": 0.00014034756697558
+        }
+      },
+      "id": "MAT-e3859cc4-89b2-4d88-8313-5664693ee2ec",
+      "mass_flow": 0.222509778937263,
+      "molar_flow": 2.4163924552117,
+      "pressure": 5066.25,
+      "tag": "S-17",
+      "temperature": 336.15,
+      "total_energy_flow": -1761.14654971844
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "delta_p": null,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "RESF-311af607-55ff-47b1-b963-f4dd79df8c20",
+    "outlet_pressure": null,
+    "outlet_temperature": 281.41,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "COOL-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-3fcfdd37-247e-40e1-9f18-077eadd00d90",
+      "mass_flow": 0.171083350676628,
+      "molar_flow": 3.7191313666691,
+      "tag": "S-03",
+      "upstream_unit_guids": [
+        "COUO-0cd18729-74c9-4807-b1cc-ec68526bfc2d"
+      ]
+    },
+    {
+      "id": "MAT-cfc68ff4-4aad-4d25-b4f2-595ae302c680",
+      "mass_flow": 0.0912797343466017,
+      "molar_flow": 0.991658810867358,
+      "tag": "S-09",
+      "upstream_unit_guids": [
+        "DIV-5c792799-5f63-4869-a6be-8b411470621b"
+      ]
+    },
+    {
+      "id": "MAT-8f4f03fb-e1ac-4758-99a6-ea4df867cad4",
+      "mass_flow": 0.0252878030556729,
+      "molar_flow": 0.949480337369662,
+      "tag": "S-11",
+      "upstream_unit_guids": [
+        "DIV-6bd17216-848d-4cc7-b33c-6ad36127c4dd"
+      ]
+    }
+  ]
+}

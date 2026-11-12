@@ -1,0 +1,369 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "HEAT-052: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-753235a3-a172-41ff-b261-17d6a452e811",
+        "kind": "unit_operation",
+        "tag": "HEAT-052",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Compressor: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-06c4eecd-8a0b-42b4-8c76-57ac5ddd5018",
+        "kind": "unit_operation",
+        "tag": "Compressor",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "Chiller-4: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-4e835ed9-46b0-4a16-9e2c-0f62ecd39a1e",
+        "kind": "unit_operation",
+        "tag": "Chiller-4",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Condenser: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-5cac4be4-ec6b-452e-9c3f-6fc8a85f8874",
+        "kind": "unit_operation",
+        "tag": "Condenser",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Pre-Chiller: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-c80874f6-aaa8-4e6a-84e1-c98c54299206",
+        "kind": "unit_operation",
+        "tag": "Pre-Chiller",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Chiller-1: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-30d5d772-5e7c-4262-b103-6879a9bce925",
+        "kind": "unit_operation",
+        "tag": "Chiller-1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HP Separator: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-aed4c65e-9d00-41b9-b553-945444ea09fd",
+        "kind": "unit_operation",
+        "tag": "HP Separator",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "LP Separator: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-b029bcc5-61d5-4408-96f5-5e1419532722",
+        "kind": "unit_operation",
+        "tag": "LP Separator",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "Chiller-2: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-d27706a8-7a85-4c5c-a0b6-bc3fd6a4e935",
+        "kind": "unit_operation",
+        "tag": "Chiller-2",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Chiller-3: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-642b427a-e071-4fa4-8f53-ad3eb8fc53b1",
+        "kind": "unit_operation",
+        "tag": "Chiller-3",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-753235a3-a172-41ff-b261-17d6a452e811",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 291.15
+      },
+      "outlet_temperature": 291.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HEAT-052",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 1234224.17893332,
+      "guid": "COMP-06c4eecd-8a0b-42b4-8c76-57ac5ddd5018",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 3000000
+      },
+      "outlet_temperature": 352.352625666603,
+      "p_out": 3000000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "Compressor",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-4e835ed9-46b0-4a16-9e2c-0f62ecd39a1e",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 303.15
+      },
+      "outlet_temperature": 303.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Chiller-4",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-5cac4be4-ec6b-452e-9c3f-6fc8a85f8874",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 293.15
+      },
+      "outlet_temperature": 293.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Condenser",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-c80874f6-aaa8-4e6a-84e1-c98c54299206",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 298.15
+      },
+      "outlet_temperature": 298.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Pre-Chiller",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-30d5d772-5e7c-4262-b103-6879a9bce925",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 243.15
+      },
+      "outlet_temperature": 243.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Chiller-1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "flash_pressure": 5218286.5,
+      "flash_temperature": 298.15,
+      "guid": "SEP-aed4c65e-9d00-41b9-b553-945444ea09fd",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 5218286.5
+      },
+      "override_p": "true",
+      "override_t": "false",
+      "supported_parameters": [
+        "separator_specification/pressure"
+      ],
+      "tag": "HP Separator",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "flash_pressure": 1235909.99,
+      "flash_temperature": 298.15,
+      "guid": "SEP-b029bcc5-61d5-4408-96f5-5e1419532722",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 1235909.99
+      },
+      "override_p": "true",
+      "override_t": "false",
+      "supported_parameters": [
+        "separator_specification/pressure"
+      ],
+      "tag": "LP Separator",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-d27706a8-7a85-4c5c-a0b6-bc3fd6a4e935",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 291.15
+      },
+      "outlet_temperature": 291.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Chiller-2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-642b427a-e071-4fa4-8f53-ad3eb8fc53b1",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 289.15
+      },
+      "outlet_temperature": 289.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Chiller-3",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    }
+  ],
+  "product_target": {
+    "direction": "max",
+    "metric": "temperature",
+    "stream_tag": "Lean Gas",
+    "threshold": 363.5007077800329
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 363.5007077800329,
+    "metric": "temperature",
+    "stream": "Lean Gas",
+    "stream_id": "MAT-37af0226-4681-429b-a1c0-ce58329b40cc",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Lean Gas",
+    "threshold": 363.5007077800329
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-37af0226-4681-429b-a1c0-ce58329b40cc",
+      "mass_flow": 1990.20792935286,
+      "molar_flow": 111743.575523697,
+      "tag": "Lean Gas",
+      "upstream_unit_guids": [
+        "COMP-06c4eecd-8a0b-42b4-8c76-57ac5ddd5018"
+      ]
+    },
+    {
+      "id": "MAT-b341ded4-f48a-4981-a26d-e6933c88f69d",
+      "mass_flow": 231.202143313879,
+      "molar_flow": 4828.9693973573,
+      "tag": "LPG",
+      "upstream_unit_guids": [
+        "COUO-3638b9c9-be8d-4681-a65b-9b1973e660dd"
+      ]
+    },
+    {
+      "id": "MAT-239a4244-c8f0-44cf-84b8-627e3ccbcf2d",
+      "mass_flow": 40.7188098077551,
+      "molar_flow": 603.62117466965,
+      "tag": "Pentane",
+      "upstream_unit_guids": [
+        "COUO-eb6a221c-2459-451e-9478-aa484c53531f"
+      ]
+    },
+    {
+      "id": "MAT-b99db877-6136-4d4f-9eb0-e2cf67154a02",
+      "mass_flow": 48.2452424091709,
+      "molar_flow": 603.62117466965,
+      "tag": "Naphtha",
+      "upstream_unit_guids": [
+        "COUO-eb6a221c-2459-451e-9478-aa484c53531f"
+      ]
+    }
+  ]
+}

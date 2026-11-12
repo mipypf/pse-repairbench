@@ -1,0 +1,37 @@
+{
+  "fault": {
+    "fault_value": 0.01,
+    "gold_value": 7.50199999999571,
+    "parameter": {
+      "name": "reflux_ratio",
+      "namespace": "column_specification"
+    },
+    "target": {
+      "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+      "kind": "unit_operation",
+      "tag": "DC-01"
+    },
+    "unit": null
+  },
+  "fault_severity": "medium",
+  "fault_type": "column_reflux_ratio_error",
+  "gold_rationale": "Restore the distillation column reflux ratio to the base setting that satisfies the selected product purity target.",
+  "instance_id": "distillation_002_reflux_ratio_single",
+  "mock_output": {
+    "diagnosis": "The product purity target is missed because the distillation column reflux ratio is too low.",
+    "rationale": "Restoring the reflux ratio to the validated base setting recovers the selected oxygen product purity target."
+  },
+  "process_category": "distillation",
+  "public_problem": {
+    "body": "The DWSIM air-liquefaction flowsheet runs headlessly, but the selected product stream misses its purity target.\n\nAdjust only the reflux ratio for column `{target_tag}` / GUID `{target_guid}`. Propose a structured repair action so that `{target_component}` mole fraction in material stream `{target_stream_tag}` is at least `{target_min}` after rerunning the flowsheet.\n\nExpected repair action type: `set_unit_parameter`.",
+    "title": "Repair Task: Distillation Column Reflux Ratio"
+  },
+  "reasoning_class": "P_parameter",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/distillation/002_air_liquefaction_using_linde_single_column_system.zip",
+  "source_name": "FOSSEE DWSIM Flowsheeting Project: Air Liquefaction using Linde Single Column System",
+  "target_metric": {
+    "min": 0.99,
+    "property": "oxygen_mole_fraction",
+    "stream": "S-08"
+  }
+}

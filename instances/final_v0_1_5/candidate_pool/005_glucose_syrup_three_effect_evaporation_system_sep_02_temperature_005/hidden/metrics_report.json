@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_temperature": 363.15,
+    "target_mole_fraction": null,
+    "target_value": 347.642419765463
+  },
+  "faulty": {
+    "separator_temperature": 373.15,
+    "target_mole_fraction": null,
+    "target_value": 361.71503812389
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "temperature",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-081f084d-831b-46db-af90-0f3cfe7574cf",
+      "kind": "unit_operation",
+      "tag": "SEP-02"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 363.15
+  },
+  "instance_id": "005_glucose_syrup_three_effect_evaporation_system_sep_02_temperature_005",
+  "repairable": true,
+  "repaired": {
+    "separator_temperature": 363.15,
+    "target_mole_fraction": null,
+    "target_value": 347.642419765463
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/005_glucose_syrup_three_effect_evaporation_system.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 351.8642052729911,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "S-15",
+    "stream_id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-15",
+    "threshold": 351.8642052729911
+  },
+  "target_delta": -14.072618358427007
+}

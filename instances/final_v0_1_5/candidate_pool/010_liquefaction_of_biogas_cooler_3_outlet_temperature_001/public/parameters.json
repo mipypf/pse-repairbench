@@ -1,0 +1,211 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "Compressor 1: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-b362cfc2-bfe6-4cab-a2f0-dd163ad5a0e6",
+        "kind": "unit_operation",
+        "tag": "Compressor 1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "Cooler 1: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-672e856b-ca14-453d-89a3-94f89d3d75f4",
+        "kind": "unit_operation",
+        "tag": "Cooler 1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Compressor2: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287",
+        "kind": "unit_operation",
+        "tag": "Compressor2",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "cooler 2: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-995c7dfb-cd32-45ce-b974-806ee098a74a",
+        "kind": "unit_operation",
+        "tag": "cooler 2",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "cooler 3: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-350e26f4-01a4-4be1-85dd-25edca995f65",
+        "kind": "unit_operation",
+        "tag": "cooler 3",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 1800000,
+      "guid": "COMP-b362cfc2-bfe6-4cab-a2f0-dd163ad5a0e6",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 2000000
+      },
+      "outlet_temperature": 549.783873425893,
+      "p_out": 2000000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "Compressor 1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 20684.2,
+      "guid": "RESF-672e856b-ca14-453d-89a3-94f89d3d75f4",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 225.15
+      },
+      "outlet_temperature": 225.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Cooler 1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 4898675,
+      "guid": "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 5000000
+      },
+      "outlet_temperature": 1060.33024437352,
+      "p_out": 5000000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "Compressor2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 20684.2,
+      "guid": "RESF-995c7dfb-cd32-45ce-b974-806ee098a74a",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 143.15
+      },
+      "outlet_temperature": 143.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "cooler 2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 34473.7,
+      "guid": "RESF-350e26f4-01a4-4be1-85dd-25edca995f65",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 113.15
+      },
+      "outlet_temperature": 113.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "cooler 3",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "temperature",
+    "stream_tag": "Coolent out2",
+    "threshold": 161.79295390283662
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 161.79295390283662,
+    "stream": "Coolent out2",
+    "stream_id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Coolent out2",
+    "threshold": 161.79295390283662
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-2deec42d-c598-41af-be16-f36dff3f102b",
+      "mass_flow": 0.575766646388224,
+      "molar_flow": 13.082921412171,
+      "tag": "Liquid CO2",
+      "upstream_unit_guids": [
+        "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+      ]
+    },
+    {
+      "id": "MAT-eb499dc5-a8b3-43ee-b9fa-0b318e4ddcfd",
+      "mass_flow": 0.314829943286053,
+      "molar_flow": 19.624382118257,
+      "tag": "Liquid BioMethane",
+      "upstream_unit_guids": [
+        "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+      ]
+    },
+    {
+      "id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+      "mass_flow": 2.08333333333333,
+      "molar_flow": 74.3691709443813,
+      "tag": "Coolent out2",
+      "upstream_unit_guids": [
+        "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+      ]
+    }
+  ]
+}

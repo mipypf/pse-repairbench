@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 78.176,
+    "target_mole_fraction": null,
+    "target_value": 78.1760000165078
+  },
+  "faulty": {
+    "outlet_temperature": 48.176,
+    "target_mole_fraction": null,
+    "target_value": 48.1759999450952
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-41d4e056-2c7e-4293-8dba-7823598a05f5",
+      "kind": "unit_operation",
+      "tag": "HT-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 78.176
+  },
+  "instance_id": "001_4_step_refrigeration_cycle_with_propylene_ethylene_methane_and_nitrogen_ht_01_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 78.176,
+    "target_mole_fraction": null,
+    "target_value": 78.1760000165078
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/001_4_step_refrigeration_cycle_with_propylene_ethylene_methane_and_nitrogen.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 69.17599999508403,
+    "product_mole_fraction_min": null,
+    "stream": "M-24",
+    "stream_id": "MAT-fac0c9c9-4dda-4df4-8258-f8434c830dc9",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "M-24",
+    "threshold": 69.17599999508403
+  },
+  "target_delta": 30.0000000714126
+}

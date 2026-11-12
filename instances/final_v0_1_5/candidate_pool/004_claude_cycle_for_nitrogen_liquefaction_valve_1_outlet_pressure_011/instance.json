@@ -1,0 +1,142 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_pressure_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "rationale": "Restore the unit outlet pressure to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "VALV-7af8423d-387f-4378-bba3-8950218c85d2",
+        "kind": "unit_operation",
+        "tag": "VALVE-1"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 100000.0
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet pressure is consistent with the requested process target.",
+      "target": "VALV-7af8423d-387f-4378-bba3-8950218c85d2",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet pressure of VALVE-1 to 100000.0.",
+      "target": "VALV-7af8423d-387f-4378-bba3-8950218c85d2",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "004_claude_cycle_for_nitrogen_liquefaction_valve_1_outlet_pressure_011",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "753280ef1cad0c14c25f6af24bf9476c628930e457aa62310ae08c8e58d835e8",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "7599a59791143cc5367311b27d48ff5ef8a5841a4e6cc341681a95a829ca3b4c",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/other_candidate/004_claude_cycle_for_nitrogen_liquefaction.zip",
+    "curated_source_entry": "Claude_Cycle_For_Nitrogen_Liquefaction_By_Mr_Sarvesh_Sandip_Gaikwad/Flowsheet.dwxmz",
+    "detected_process_category": "other_candidate",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Valve",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "8848ea30-05e0-4fc4-a745-7ea59ee19bf2.xml",
+      "c27d5c82-4e51-4e90-b0c3-e85f1a2696bb.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 36,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout",
+      "MessagesLog"
+    ],
+    "source_category": "other_candidate",
+    "source_format": "dwxmz",
+    "source_name": "Claude_Cycle_for_Nitrogen_Liquefaction.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_flow",
+      "metric": "molar_flow",
+      "min": 17.49162900611847,
+      "stream": "S-11",
+      "stream_id": "MAT-4df43a66-f1e6-4d1e-b506-f7a79dccaedb",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-11",
+      "threshold": 17.49162900611847
+    },
+    "target_stream_tag": "S-11"
+  }
+}

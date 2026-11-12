@@ -1,0 +1,107 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "C-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-fb8ff58c-e576-4599-88fc-493b82e696e4",
+        "kind": "unit_operation",
+        "tag": "C-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "C-02: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-471df95f-5dbf-4db7-950c-2746201634f2",
+        "kind": "unit_operation",
+        "tag": "C-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 6000000,
+      "guid": "RESF-fb8ff58c-e576-4599-88fc-493b82e696e4",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 287.15
+      },
+      "outlet_temperature": 287.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "C-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 4400000,
+      "guid": "RESF-471df95f-5dbf-4db7-950c-2746201634f2",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 260.15
+      },
+      "outlet_temperature": 260.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "C-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "pressure",
+    "stream_tag": "S-10",
+    "threshold": 1721017.8007183708
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 1721017.8007183708,
+    "stream": "S-10",
+    "stream_id": "MAT-9a9122e4-3919-41e7-9d62-7791314e1e7b",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-10",
+    "threshold": 1721017.8007183708
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-9a9122e4-3919-41e7-9d62-7791314e1e7b",
+      "mass_flow": 250.117466767273,
+      "molar_flow": 11445.2895509418,
+      "tag": "S-10",
+      "upstream_unit_guids": [
+        "SEP-d3dcdbf8-170c-4334-91a1-d53278ab8055"
+      ]
+    },
+    {
+      "id": "MAT-e760170e-d0a4-439f-968f-572ea643c9a9",
+      "mass_flow": 84.0446874797259,
+      "molar_flow": 1626.68841480356,
+      "tag": "S-11",
+      "upstream_unit_guids": [
+        "SEP-d3dcdbf8-170c-4334-91a1-d53278ab8055"
+      ]
+    }
+  ]
+}

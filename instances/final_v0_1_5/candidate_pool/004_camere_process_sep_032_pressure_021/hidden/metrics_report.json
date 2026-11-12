@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_pressure": 754308,
+    "target_mole_fraction": null,
+    "target_value": 754308.0
+  },
+  "faulty": {
+    "separator_pressure": 678877.2,
+    "target_mole_fraction": null,
+    "target_value": 678877.2
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "pressure",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-cb6dec45-9e98-47be-a0e5-9143ebd70148",
+      "kind": "unit_operation",
+      "tag": "SEP-032"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 754308.0
+  },
+  "instance_id": "004_camere_process_sep_032_pressure_021",
+  "repairable": true,
+  "repaired": {
+    "separator_pressure": 754308,
+    "target_mole_fraction": null,
+    "target_value": 754308.0
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/004_camere_process.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 731678.76,
+    "product_mole_fraction_min": null,
+    "stream": "TEEout2",
+    "stream_id": "MAT-dcf4fff6-8562-4815-9749-db9641535809",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "TEEout2",
+    "threshold": 731678.76
+  },
+  "target_delta": 75430.80000000005
+}

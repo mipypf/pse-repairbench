@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 233.15,
+    "target_mole_fraction": null,
+    "target_value": 233.14969280327
+  },
+  "faulty": {
+    "outlet_temperature": 253.15,
+    "target_mole_fraction": null,
+    "target_value": 394.132418845803
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-83c62885-1277-44fe-8a5c-934457ef6b02",
+      "kind": "unit_operation",
+      "tag": "B7"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 233.15
+  },
+  "instance_id": "010_production_of_liquid_carbon_dioxide_from_2_tph_of_raw_gas_b7_outlet_temperature_002",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 233.15,
+    "target_mole_fraction": null,
+    "target_value": 233.14969280327
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/010_production_of_liquid_carbon_dioxide_from_2_tph_of_raw_gas.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 281.4445106160299,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "S8",
+    "stream_id": "MAT-7637df8f-2ab0-4062-910b-b5f96ad08563",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S8",
+    "threshold": 281.4445106160299
+  },
+  "target_delta": -160.982726042533
+}

@@ -1,0 +1,174 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "SEPARATOR: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+        "kind": "unit_operation",
+        "tag": "SEPARATOR",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "SEPARATOR: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+        "kind": "unit_operation",
+        "tag": "SEPARATOR",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HEATER: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-f0a27fd7-fec7-401d-9d34-c7e4edfebb5d",
+        "kind": "unit_operation",
+        "tag": "HEATER",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COOLER: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-84c0bcaa-346c-47ba-a16f-3b656919565d",
+        "kind": "unit_operation",
+        "tag": "COOLER",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "flash_pressure": 1640000,
+      "flash_temperature": 311.15,
+      "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 1640000,
+        "separator_specification/temperature": 311.15
+      },
+      "override_p": "true",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/pressure",
+        "separator_specification/temperature"
+      ],
+      "tag": "SEPARATOR",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 110000,
+      "guid": "AQ-f0a27fd7-fec7-401d-9d34-c7e4edfebb5d",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 898.666
+      },
+      "outlet_temperature": 898.666,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HEATER",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-84c0bcaa-346c-47ba-a16f-3b656919565d",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 836.15
+      },
+      "outlet_temperature": 836.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOLER",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "molar_flow",
+    "stream_tag": "METHANE",
+    "threshold": 2.374223000470311
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_flow",
+    "metric": "molar_flow",
+    "min": 2.374223000470311,
+    "stream": "METHANE",
+    "stream_id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "METHANE",
+    "threshold": 2.374223000470311
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+      "mass_flow": 0.993345846939768,
+      "molar_flow": 93.3928634073234,
+      "tag": "PURGE STREAM",
+      "upstream_unit_guids": [
+        "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+      ]
+    },
+    {
+      "id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+      "mass_flow": 0.0208736956052738,
+      "molar_flow": 1.3761151474863,
+      "tag": "METHANE",
+      "upstream_unit_guids": [
+        "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+      ]
+    },
+    {
+      "id": "MAT-e9d26b02-2932-4013-810b-3c4d8f4b3408",
+      "mass_flow": 3.36555943801953,
+      "molar_flow": 43.0811309538787,
+      "tag": "BENZENE",
+      "upstream_unit_guids": [
+        "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+      ]
+    },
+    {
+      "id": "MAT-c95e4bd5-4e90-4959-b311-00159594b8cf",
+      "mass_flow": 0.138710436556706,
+      "molar_flow": 0.906758234427745,
+      "tag": "BIPHENYL",
+      "upstream_unit_guids": [
+        "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+      ]
+    }
+  ]
+}

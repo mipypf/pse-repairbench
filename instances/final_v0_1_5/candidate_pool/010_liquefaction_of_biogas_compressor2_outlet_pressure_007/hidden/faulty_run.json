@@ -1,0 +1,715 @@
+{
+  "column": null,
+  "duration_sec": 3.241,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 32,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/faulty_calculated.dwxmz",
+  "simulation_path": "public/faulty.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COMP-b362cfc2-bfe6-4cab-a2f0-dd163ad5a0e6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-80f0616a-240e-426e-ade2-5fefbfd0b968",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Bio Gas feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-672e856b-ca14-453d-89a3-94f89d3d75f4"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2f258861-a506-435e-b852-4d622c2d374e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Biogas Compressed ",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-b362cfc2-bfe6-4cab-a2f0-dd163ad5a0e6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-8769e32d-b1c5-4152-a8f1-c0007f2a432f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-871acf59-b459-4c99-a20c-84a62465dfd5",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "cool biogas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-672e856b-ca14-453d-89a3-94f89d3d75f4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-98e6b16c-e867-489c-a4a9-0c5a3273a589",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Cold biogas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-8769e32d-b1c5-4152-a8f1-c0007f2a432f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-860d25a8-27a9-4444-93e2-b3f01c143ac9",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Coolent(N2)In",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-350e26f4-01a4-4be1-85dd-25edca995f65"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-aee28644-dbcb-417f-9ad9-6657d0e02a38",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Coolent out",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-8769e32d-b1c5-4152-a8f1-c0007f2a432f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-995c7dfb-cd32-45ce-b974-806ee098a74a"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-94174c2d-be53-468b-b28d-0736b0aa7694",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "coolent1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-8769e32d-b1c5-4152-a8f1-c0007f2a432f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-45c08a7c-6b4e-4f33-8fb8-b5092fbc0392",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "coolent2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-995c7dfb-cd32-45ce-b974-806ee098a74a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8b570fe7-4846-4331-8cbb-6f01bfa9a950",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Biogas to cryogenic column",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-3283502e-0c27-4efb-b62b-80462f65cffb"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2deec42d-c598-41af-be16-f36dff3f102b",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Liquid CO2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-eb499dc5-a8b3-43ee-b9fa-0b318e4ddcfd",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Liquid BioMethane",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "BB-3283502e-0c27-4efb-b62b-80462f65cffb"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3b00487e-dd6f-46f9-94a6-741740f2910e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Cold Biogas2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Coolent out2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b5cc062d-5567-4693-a1a4-63dddb99e99e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "coolent 3",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-350e26f4-01a4-4be1-85dd-25edca995f65"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-2deec42d-c598-41af-be16-f36dff3f102b",
+        "mass_flow": 0.575766646388224,
+        "molar_flow": 13.082921412171,
+        "tag": "Liquid CO2",
+        "upstream_unit_guids": [
+          "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+        ]
+      },
+      {
+        "id": "MAT-eb499dc5-a8b3-43ee-b9fa-0b318e4ddcfd",
+        "mass_flow": 0.314829943286053,
+        "molar_flow": 19.624382118257,
+        "tag": "Liquid BioMethane",
+        "upstream_unit_guids": [
+          "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+        ]
+      },
+      {
+        "id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+        "mass_flow": 2.08333333333333,
+        "molar_flow": 74.3691709443813,
+        "tag": "Coolent out2",
+        "upstream_unit_guids": [
+          "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 2.08333333333333,
+          "mass_fraction": 1,
+          "molar_flow": 74.3691709443813,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-b5cc062d-5567-4693-a1a4-63dddb99e99e",
+      "mass_flow": 2.08333333333333,
+      "molar_flow": 74.3691709443813,
+      "pressure": 7394842.1,
+      "tag": "coolent 3",
+      "temperature": 143.150000029668,
+      "total_energy_flow": -549.785439026766
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.575772829888947,
+          "mass_fraction": 0.646502683361835,
+          "molar_flow": 13.0829214121712,
+          "mole_fraction": 0.4
+        },
+        "Methane": {
+          "mass_flow": 0.314823365156849,
+          "mass_fraction": 0.353497316638165,
+          "molar_flow": 19.6243821182567,
+          "mole_fraction": 0.6
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-3b00487e-dd6f-46f9-94a6-741740f2910e",
+      "mass_flow": 0.890596195045795,
+      "molar_flow": 32.7073035304279,
+      "pressure": 1879315.8,
+      "tag": "Cold Biogas2",
+      "temperature": 153.15,
+      "total_energy_flow": -7119.80910174766
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 2.08333333333333,
+          "mass_fraction": 1,
+          "molar_flow": 74.3691709443813,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-45c08a7c-6b4e-4f33-8fb8-b5092fbc0392",
+      "mass_flow": 2.08333333333333,
+      "molar_flow": 74.3691709443813,
+      "pressure": 7479315.8,
+      "tag": "coolent2",
+      "temperature": 143.150000031197,
+      "total_energy_flow": -551.340916900356
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 2.08333333333333,
+          "mass_fraction": 1,
+          "molar_flow": 74.3691709443813,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-94174c2d-be53-468b-b28d-0736b0aa7694",
+      "mass_flow": 2.08333333333333,
+      "molar_flow": 74.3691709443813,
+      "pressure": 7500000,
+      "tag": "coolent1",
+      "temperature": 1185.76205790561,
+      "total_energy_flow": 2066.60448429548
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 2.08333333333333,
+          "mass_fraction": 1,
+          "molar_flow": 74.3691709443813,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-aee28644-dbcb-417f-9ad9-6657d0e02a38",
+      "mass_flow": 2.08333333333333,
+      "molar_flow": 74.3691709443813,
+      "pressure": 7429315.8,
+      "tag": "Coolent out",
+      "temperature": 224.150000002278,
+      "total_energy_flow": -227.654048282296
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 2.08333333333333,
+          "mass_fraction": 1,
+          "molar_flow": 74.3691709443813,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-860d25a8-27a9-4444-93e2-b3f01c143ac9",
+      "mass_flow": 2.08333333333333,
+      "molar_flow": 74.3691709443813,
+      "pressure": 101325,
+      "tag": "Coolent(N2)In",
+      "temperature": 298.15,
+      "total_energy_flow": -0.579162762802102
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.575772829888947,
+          "mass_fraction": 0.646502683361835,
+          "molar_flow": 13.0829214121712,
+          "mole_fraction": 0.4
+        },
+        "Methane": {
+          "mass_flow": 0.314823365156849,
+          "mass_fraction": 0.353497316638165,
+          "molar_flow": 19.6243821182567,
+          "mole_fraction": 0.6
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-98e6b16c-e867-489c-a4a9-0c5a3273a589",
+      "mass_flow": 0.890596195045795,
+      "molar_flow": 32.7073035304279,
+      "pressure": 1929315.8,
+      "tag": "Cold biogas",
+      "temperature": 171.63285839235,
+      "total_energy_flow": -7045.92454875023
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.575772829888947,
+          "mass_fraction": 0.646502683361835,
+          "molar_flow": 13.0829214121712,
+          "mole_fraction": 0.4
+        },
+        "Methane": {
+          "mass_flow": 0.314823365156849,
+          "mass_fraction": 0.353497316638165,
+          "molar_flow": 19.6243821182567,
+          "mole_fraction": 0.6
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-871acf59-b459-4c99-a20c-84a62465dfd5",
+      "mass_flow": 0.890596195045795,
+      "molar_flow": 32.7073035304279,
+      "pressure": 1979315.8,
+      "tag": "cool biogas",
+      "temperature": 225.15,
+      "total_energy_flow": -6722.2379081404
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.575772829888947,
+          "mass_fraction": 0.646502683361835,
+          "molar_flow": 13.0829214121712,
+          "mole_fraction": 0.4
+        },
+        "Methane": {
+          "mass_flow": 0.314823365156849,
+          "mass_fraction": 0.353497316638165,
+          "molar_flow": 19.6243821182567,
+          "mole_fraction": 0.6
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-2f258861-a506-435e-b852-4d622c2d374e",
+      "mass_flow": 0.890596195045795,
+      "molar_flow": 32.7073035304279,
+      "pressure": 2000000,
+      "tag": "Biogas Compressed ",
+      "temperature": 549.783873425893,
+      "total_energy_flow": -6270.33006726798
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.575772829888947,
+          "mass_fraction": 0.646502683361835,
+          "molar_flow": 13.0829214121712,
+          "mole_fraction": 0.4
+        },
+        "Methane": {
+          "mass_flow": 0.314823365156849,
+          "mass_fraction": 0.353497316638165,
+          "molar_flow": 19.6243821182567,
+          "mole_fraction": 0.6
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-80f0616a-240e-426e-ade2-5fefbfd0b968",
+      "mass_flow": 0.890596195045795,
+      "molar_flow": 32.7073035304279,
+      "pressure": 200000,
+      "tag": "Bio Gas feed",
+      "temperature": 308.15,
+      "total_energy_flow": -6600.29990730252
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 2.08333333333333,
+          "mass_fraction": 1,
+          "molar_flow": 74.3691709443813,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+      "mass_flow": 2.08333333333333,
+      "molar_flow": 74.3691709443813,
+      "pressure": 7344842.1,
+      "tag": "Coolent out2",
+      "temperature": 154.164844430498,
+      "total_energy_flow": -475.900886032538
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.575772829888947,
+          "mass_fraction": 0.646502683361835,
+          "molar_flow": 13.0829214121712,
+          "mole_fraction": 0.4
+        },
+        "Methane": {
+          "mass_flow": 0.314823365156849,
+          "mass_fraction": 0.353497316638165,
+          "molar_flow": 19.6243821182567,
+          "mole_fraction": 0.6
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-8b570fe7-4846-4331-8cbb-6f01bfa9a950",
+      "mass_flow": 0.890596195045795,
+      "molar_flow": 32.7073035304279,
+      "pressure": 2009315.8,
+      "tag": "Biogas to cryogenic column",
+      "temperature": 153.267264059027,
+      "total_energy_flow": -7119.50376030961
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.575763099407105,
+          "mass_fraction": 0.999993839550898,
+          "molar_flow": 13.082700312594,
+          "mole_fraction": 0.99998310013719
+        },
+        "Methane": {
+          "mass_flow": 3.54698111967252e-06,
+          "mass_fraction": 6.16044910194552e-06,
+          "molar_flow": 0.00022109957697713,
+          "mole_fraction": 1.6899862806746e-05
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-2deec42d-c598-41af-be16-f36dff3f102b",
+      "mass_flow": 0.575766646388224,
+      "molar_flow": 13.082921412171,
+      "pressure": 800000,
+      "tag": "Liquid CO2",
+      "temperature": 227.353031357201,
+      "total_energy_flow": -5379.85989224504
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 1.03514772015059e-05,
+          "mass_fraction": 3.28795828422858e-05,
+          "molar_flow": 0.00023521006149822,
+          "mole_fraction": 1.1985603423376e-05
+        },
+        "Methane": {
+          "mass_flow": 0.314819591808851,
+          "mass_fraction": 0.999967120417158,
+          "molar_flow": 19.6241469081956,
+          "mole_fraction": 0.99998801439658
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-eb499dc5-a8b3-43ee-b9fa-0b318e4ddcfd",
+      "mass_flow": 0.314829943286053,
+      "molar_flow": 19.624382118257,
+      "pressure": 100000,
+      "tag": "Liquid BioMethane",
+      "temperature": 111.394500040499,
+      "total_energy_flow": -1708.93003999416
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "delta_p": 7398675,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287",
+    "outlet_pressure": null,
+    "outlet_temperature": 1185.76205790561,
+    "override_p": null,
+    "override_t": null,
+    "p_out": 7500000,
+    "pout": 7500000,
+    "tag": "Compressor2",
+    "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-2deec42d-c598-41af-be16-f36dff3f102b",
+      "mass_flow": 0.575766646388224,
+      "molar_flow": 13.082921412171,
+      "tag": "Liquid CO2",
+      "upstream_unit_guids": [
+        "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+      ]
+    },
+    {
+      "id": "MAT-eb499dc5-a8b3-43ee-b9fa-0b318e4ddcfd",
+      "mass_flow": 0.314829943286053,
+      "molar_flow": 19.624382118257,
+      "tag": "Liquid BioMethane",
+      "upstream_unit_guids": [
+        "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+      ]
+    },
+    {
+      "id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+      "mass_flow": 2.08333333333333,
+      "molar_flow": 74.3691709443813,
+      "tag": "Coolent out2",
+      "upstream_unit_guids": [
+        "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+      ]
+    }
+  ]
+}

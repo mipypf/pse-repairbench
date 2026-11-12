@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-23
+Target metric: Di ButylPhthalate mole_fraction
+Observed target value: 0.826978728954046
+Required target value: <= 0.8133960901896149

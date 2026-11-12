@@ -1,0 +1,1899 @@
+{
+  "column": {
+    "condenser_duty": 15042.069719437,
+    "condenser_pressure": null,
+    "feed_stage": 2,
+    "feed_stage_id": "bc10377c-1dab-4c7b-828a-64046fd68d02",
+    "feed_stage_name": "Stage2",
+    "feed_stream_id": "MS-76293854-baba-4342-b425-d0b1877ae2c6",
+    "guid": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+    "number_of_stages": 12,
+    "reboiler_duty": -20475.4311022134,
+    "reboiler_pressure": null,
+    "reflux_ratio": 0.999999999998899,
+    "specs": [
+      {
+        "calculated_value": 1,
+        "component_id": "Maleic anhydride",
+        "spec_unit": "mol/h",
+        "spec_value": 1,
+        "stage_number": 0,
+        "stype": "Stream_Ratio"
+      },
+      {
+        "calculated_value": 1,
+        "component_id": "Di ButylPhthalate",
+        "spec_unit": "mol/s",
+        "spec_value": 1,
+        "stage_number": -1,
+        "stype": "Product_Molar_Flow_Rate"
+      }
+    ],
+    "tag": "DC-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+  },
+  "duration_sec": 3.34,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 51,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/faulty_calculated.dwxmz",
+  "simulation_path": "public/faulty.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "HT-7d9516ac-0f88-4b70-abea-2d9df13a31fd"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MS-36d31302-0455-45a5-a169-df1e9288340b",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-01",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "VALVE-b3cdf604-b25a-4ec0-a4b2-a74df4507fd2"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-97953d73-0b32-4549-9304-4b8d8314a76d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-02",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HT-7d9516ac-0f88-4b70-abea-2d9df13a31fd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CL-aea23b3b-cb6a-4643-b147-41acc81054c7"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-0fa683a8-991d-4a89-aee0-cbaf12c60c22",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-03",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALVE-b3cdf604-b25a-4ec0-a4b2-a74df4507fd2"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-985f1438-6953-4aaa-b72e-45a2da73799e"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-126f3bf4-0ae6-42e8-bfb6-5849f0a02564",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-06",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CL-aea23b3b-cb6a-4643-b147-41acc81054c7"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "C-60f4215d-18f0-478f-89cd-52c57676bc7d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MS-6fd2edc6-dc0d-4665-be75-025487ef5e1e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-04",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-985f1438-6953-4aaa-b72e-45a2da73799e"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-734e703f-5ea5-4d9f-a6e8-f4cbfa3919d7",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-05",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "C-60f4215d-18f0-478f-89cd-52c57676bc7d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HX-a43de5a2-1eb8-4e58-a24a-0ff87fc1e8f4"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-b104fdb3-82c6-475f-8f4d-8c417a3ec746",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIX-985f1438-6953-4aaa-b72e-45a2da73799e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HT-7cdf3c8e-6c03-4d4f-b778-18955980201a"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-850aa90a-f800-4672-8033-a864a79414de",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-08",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HX-a43de5a2-1eb8-4e58-a24a-0ff87fc1e8f4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CR-d09091fb-3d6e-457a-9575-f38defb912ec"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-eab40d57-f776-4b16-b194-1935819a2f86",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-09",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HT-7cdf3c8e-6c03-4d4f-b778-18955980201a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-dbe84a8d-7b09-46ee-9cbe-77dac1215ced"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-63aa3872-5d8d-4d7c-98d1-2b231a0b9466",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CR-d09091fb-3d6e-457a-9575-f38defb912ec"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-dbe84a8d-7b09-46ee-9cbe-77dac1215ced"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MS-f43035f5-811d-4abf-b052-56206e8dbe93",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-11",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CR-d09091fb-3d6e-457a-9575-f38defb912ec"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-a5638cf3-8640-4ddb-b990-634a70903f6e"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-4d59b7d0-57a8-4b6a-9c53-a6875551beb7",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIX-dbe84a8d-7b09-46ee-9cbe-77dac1215ced"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CL-9000d0c9-dc58-4f43-b8fc-b410fa0bd6d3"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-c104afff-8cdf-477f-9c79-5d7a00800f5c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-14",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HX-a43de5a2-1eb8-4e58-a24a-0ff87fc1e8f4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HX-a43de5a2-1eb8-4e58-a24a-0ff87fc1e8f4"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-89150117-07ba-4609-83b4-a220d9d59e8c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-13",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-a5638cf3-8640-4ddb-b990-634a70903f6e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "ABS-36ccb52a-e3c6-4df2-b4f1-c09d2a0d9bef"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-4d8b4926-a66e-42bb-aba3-9e4cd163931f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-15",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CL-9000d0c9-dc58-4f43-b8fc-b410fa0bd6d3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-4e1c00c2-cc4f-4a86-b9a3-6362591c85dd"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MS-48246a61-4dda-4675-8c86-cc175c65c19d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-17",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-9a739e88-e84b-4e34-86a2-2e94e6f3a7e0",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-20",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "ABS-36ccb52a-e3c6-4df2-b4f1-c09d2a0d9bef"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HT-8a10ec1a-7da3-42cb-8207-3de8049666a9"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-dfaf52ed-f0eb-42e4-ae88-7daf1084055f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-19",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "ABS-36ccb52a-e3c6-4df2-b4f1-c09d2a0d9bef"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-76293854-baba-4342-b425-d0b1877ae2c6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-21",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HT-8a10ec1a-7da3-42cb-8207-3de8049666a9"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-23",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CL-5ce1a542-c24d-40a8-9e24-90fd9a9f15a0"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-6c3473d2-d40e-488e-bca1-7e6370ea6443",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-24",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-af431fe7-6dbb-4b25-8e27-55071d38875e"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-284d8806-f41b-435b-b4af-dffe8d30d5e3",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-22",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CL-5ce1a542-c24d-40a8-9e24-90fd9a9f15a0"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "ABS-36ccb52a-e3c6-4df2-b4f1-c09d2a0d9bef"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-610398b5-5898-4e9e-893d-c5ef9c31e93d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-18",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIX-4e1c00c2-cc4f-4a86-b9a3-6362591c85dd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-4e1c00c2-cc4f-4a86-b9a3-6362591c85dd"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-2111fc36-d4c4-42bd-ba10-69eeafac9360",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-16",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-af431fe7-6dbb-4b25-8e27-55071d38875e"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MS-9a739e88-e84b-4e34-86a2-2e94e6f3a7e0",
+        "mass_flow": 96.1245891835774,
+        "molar_flow": 2627.51575046482,
+        "tag": "S-20",
+        "upstream_unit_guids": [
+          "ABS-36ccb52a-e3c6-4df2-b4f1-c09d2a0d9bef"
+        ]
+      },
+      {
+        "id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+        "mass_flow": 22.060325079651,
+        "molar_flow": 90.8333333332335,
+        "tag": "S-23",
+        "upstream_unit_guids": [
+          "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 6.3807260779372e-60,
+          "mass_fraction": 2.29235564039878e-59,
+          "molar_flow": 1.44985198148972e-58,
+          "mole_fraction": 1.44985198148972e-58
+        },
+        "Carbon monoxide": {
+          "mass_flow": 6.97266819839056e-67,
+          "mass_fraction": 2.50501824995708e-66,
+          "molar_flow": 2.48934070152929e-65,
+          "mole_fraction": 2.48934070152929e-65
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0.278348000000001,
+          "mass_fraction": 1,
+          "molar_flow": 1,
+          "mole_fraction": 1
+        },
+        "Maleic anhydride": {
+          "mass_flow": 5.18699991977686e-23,
+          "mass_fraction": 1.86349458942649e-22,
+          "molar_flow": 5.28978682554132e-22,
+          "mole_fraction": 5.28978682554131e-22
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 8.44469935831307e-70,
+          "mass_fraction": 3.0338638532747e-69,
+          "molar_flow": 3.014521392731e-68,
+          "mole_fraction": 3.014521392731e-68
+        },
+        "Oxygen": {
+          "mass_flow": 7.13868470408292e-67,
+          "mass_fraction": 2.5646617558175e-66,
+          "molar_flow": 2.23092262962452e-65,
+          "mole_fraction": 2.23092262962452e-65
+        },
+        "Water": {
+          "mass_flow": 4.84772627923895e-31,
+          "mass_fraction": 1.74160629113158e-30,
+          "molar_flow": 2.69089699368478e-29,
+          "mole_fraction": 2.69089699368477e-29
+        }
+      },
+      "id": "MS-2111fc36-d4c4-42bd-ba10-69eeafac9360",
+      "mass_flow": 0.278348000000001,
+      "molar_flow": 1,
+      "pressure": 111325,
+      "tag": "S-16",
+      "temperature": 393.68,
+      "total_energy_flow": -858.041308769872
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 6.38073116210999e-60,
+          "mass_fraction": 2.49621502753332e-61,
+          "molar_flow": 1.44985313673411e-58,
+          "mole_fraction": 1.57878744471954e-60
+        },
+        "Carbon monoxide": {
+          "mass_flow": 6.97266686323833e-67,
+          "mass_fraction": 2.72778704568452e-68,
+          "molar_flow": 2.48934022486115e-65,
+          "mole_fraction": 2.71071530837874e-67
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 25.5616246666667,
+          "mass_fraction": 1,
+          "molar_flow": 91.8333333333335,
+          "mole_fraction": 1
+        },
+        "Maleic anhydride": {
+          "mass_flow": 5.18704680669583e-23,
+          "mass_fraction": 2.02923205169346e-24,
+          "molar_flow": 5.28983464158337e-22,
+          "mole_fraction": 5.76025550807625e-24
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 8.44470001748219e-70,
+          "mass_fraction": 3.30366325599577e-71,
+          "molar_flow": 3.01452162803594e-68,
+          "mole_fraction": 3.28260068388668e-70
+        },
+        "Oxygen": {
+          "mass_flow": 7.13868461990552e-67,
+          "mass_fraction": 2.79273509137102e-68,
+          "molar_flow": 2.2309226033181e-65,
+          "mole_fraction": 2.4293168094208e-67
+        },
+        "Water": {
+          "mass_flow": 4.84774138055955e-31,
+          "mass_fraction": 1.89649188726301e-32,
+          "molar_flow": 2.69090537619152e-29,
+          "mole_fraction": 2.93020549131562e-31
+        }
+      },
+      "id": "MS-610398b5-5898-4e9e-893d-c5ef9c31e93d",
+      "mass_flow": 25.5616246666667,
+      "molar_flow": 91.8333333333335,
+      "pressure": 101325,
+      "tag": "S-18",
+      "temperature": 713.779993635473,
+      "total_energy_flow": -53571.2659793047
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 6.3807260779372e-60,
+          "mass_fraction": 2.29235564039878e-59,
+          "molar_flow": 1.44985198148972e-58,
+          "mole_fraction": 1.44985198148972e-58
+        },
+        "Carbon monoxide": {
+          "mass_flow": 6.97266819839056e-67,
+          "mass_fraction": 2.50501824995708e-66,
+          "molar_flow": 2.48934070152929e-65,
+          "mole_fraction": 2.48934070152929e-65
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0.278348000000001,
+          "mass_fraction": 1,
+          "molar_flow": 1,
+          "mole_fraction": 1
+        },
+        "Maleic anhydride": {
+          "mass_flow": 5.18699991977686e-23,
+          "mass_fraction": 1.86349458942649e-22,
+          "molar_flow": 5.28978682554132e-22,
+          "mole_fraction": 5.28978682554131e-22
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 8.44469935831307e-70,
+          "mass_fraction": 3.0338638532747e-69,
+          "molar_flow": 3.014521392731e-68,
+          "mole_fraction": 3.014521392731e-68
+        },
+        "Oxygen": {
+          "mass_flow": 7.13868470408292e-67,
+          "mass_fraction": 2.5646617558175e-66,
+          "molar_flow": 2.23092262962452e-65,
+          "mole_fraction": 2.23092262962452e-65
+        },
+        "Water": {
+          "mass_flow": 4.84772627923895e-31,
+          "mass_fraction": 1.74160629113158e-30,
+          "molar_flow": 2.69089699368478e-29,
+          "mole_fraction": 2.69089699368477e-29
+        }
+      },
+      "id": "MS-284d8806-f41b-435b-b4af-dffe8d30d5e3",
+      "mass_flow": 0.278348000000001,
+      "molar_flow": 1,
+      "pressure": 111325,
+      "tag": "S-22",
+      "temperature": 393.68,
+      "total_energy_flow": -858.041308769872
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 6.3807260779372e-60,
+          "mass_fraction": 2.29235564039878e-59,
+          "molar_flow": 1.44985198148972e-58,
+          "mole_fraction": 1.44985198148972e-58
+        },
+        "Carbon monoxide": {
+          "mass_flow": 6.97266819839056e-67,
+          "mass_fraction": 2.50501824995708e-66,
+          "molar_flow": 2.48934070152929e-65,
+          "mole_fraction": 2.48934070152929e-65
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0.278348000000001,
+          "mass_fraction": 1,
+          "molar_flow": 1,
+          "mole_fraction": 1
+        },
+        "Maleic anhydride": {
+          "mass_flow": 5.18699991977686e-23,
+          "mass_fraction": 1.86349458942649e-22,
+          "molar_flow": 5.28978682554132e-22,
+          "mole_fraction": 5.28978682554131e-22
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 8.44469935831307e-70,
+          "mass_fraction": 3.0338638532747e-69,
+          "molar_flow": 3.014521392731e-68,
+          "mole_fraction": 3.014521392731e-68
+        },
+        "Oxygen": {
+          "mass_flow": 7.13868470408292e-67,
+          "mass_fraction": 2.5646617558175e-66,
+          "molar_flow": 2.23092262962452e-65,
+          "mole_fraction": 2.23092262962452e-65
+        },
+        "Water": {
+          "mass_flow": 4.84772627923895e-31,
+          "mass_fraction": 1.74160629113158e-30,
+          "molar_flow": 2.69089699368478e-29,
+          "mole_fraction": 2.69089699368477e-29
+        }
+      },
+      "id": "MS-6c3473d2-d40e-488e-bca1-7e6370ea6443",
+      "mass_flow": 0.278348000000001,
+      "molar_flow": 1,
+      "pressure": 101325,
+      "tag": "S-24",
+      "temperature": 710.277410364456,
+      "total_energy_flow": -649.01159487303
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.000370249791212977,
+          "mass_fraction": 1.67835147431488e-05,
+          "molar_flow": 0.00841295154939222,
+          "mole_fraction": 9.26196500851538e-05
+        },
+        "Carbon monoxide": {
+          "mass_flow": 5.88417068402e-05,
+          "mass_fraction": 2.66730914561532e-06,
+          "molar_flow": 0.00210073176604868,
+          "mole_fraction": 2.31273221950567e-05
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 20.9087320015705,
+          "mass_fraction": 0.947798000531608,
+          "molar_flow": 75.1172345465766,
+          "mole_fraction": 0.826978728954046
+        },
+        "Maleic anhydride": {
+          "mass_flow": 1.06293275192637,
+          "mass_fraction": 0.0481830049234788,
+          "molar_flow": 10.8399609688414,
+          "mole_fraction": 0.119339019840587
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0.00143067409972189,
+          "mass_fraction": 6.4852811305196e-05,
+          "molar_flow": 0.0510710624101997,
+          "mole_fraction": 0.00056225022836979
+        },
+        "Oxygen": {
+          "mass_flow": 0.000148829934305807,
+          "mass_fraction": 6.74649778588672e-06,
+          "molar_flow": 0.00465110986367635,
+          "mole_fraction": 5.12048792331904e-05
+        },
+        "Water": {
+          "mass_flow": 0.0866517306220529,
+          "mass_fraction": 0.00392794441193356,
+          "molar_flow": 4.80990196222611,
+          "mole_fraction": 0.0529530491254833
+        }
+      },
+      "id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+      "mass_flow": 22.060325079651,
+      "molar_flow": 90.8333333332335,
+      "pressure": 101325,
+      "tag": "S-23",
+      "temperature": 658.340111551423,
+      "total_energy_flow": -56232.4140822085
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.000274239170159707,
+          "mass_fraction": 1.18336979750821e-05,
+          "molar_flow": 0.00623136300479912,
+          "mole_fraction": 6.78551325386473e-05
+        },
+        "Carbon monoxide": {
+          "mass_flow": 4.35833053818153e-05,
+          "mass_fraction": 1.88066377368273e-06,
+          "molar_flow": 0.00155598535463334,
+          "mole_fraction": 1.69435791793104e-05
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 22.3214572578554,
+          "mass_fraction": 0.96319349055548,
+          "molar_flow": 80.1926267041812,
+          "mole_fraction": 0.873240944147163
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0.787300233771923,
+          "mass_fraction": 0.0339728025604176,
+          "molar_flow": 8.02901574853211,
+          "mole_fraction": 0.08743029853211
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0.00105968341058189,
+          "mass_fraction": 4.57264125424832e-05,
+          "molar_flow": 0.0378277328200749,
+          "mole_fraction": 0.000411917235790289
+        },
+        "Oxygen": {
+          "mass_flow": 0.000110236450139428,
+          "mass_fraction": 4.75681448436229e-06,
+          "molar_flow": 0.00344501825504168,
+          "mole_fraction": 3.75138103997279e-05
+        },
+        "Water": {
+          "mass_flow": 0.0641817910596766,
+          "mass_fraction": 0.00276950929532688,
+          "molar_flow": 3.56263078118556,
+          "mole_fraction": 0.0387945275628191
+        }
+      },
+      "id": "MS-76293854-baba-4342-b425-d0b1877ae2c6",
+      "mass_flow": 23.1744270250233,
+      "molar_flow": 91.8333333333335,
+      "pressure": 124325,
+      "tag": "S-21",
+      "temperature": 573.15,
+      "total_energy_flow": -64032.2573894051
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.000274239170159707,
+          "mass_fraction": 1.18336979750821e-05,
+          "molar_flow": 0.00623136300479912,
+          "mole_fraction": 6.78551325386473e-05
+        },
+        "Carbon monoxide": {
+          "mass_flow": 4.35833053818153e-05,
+          "mass_fraction": 1.88066377368273e-06,
+          "molar_flow": 0.00155598535463334,
+          "mole_fraction": 1.69435791793104e-05
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 22.3214572578554,
+          "mass_fraction": 0.96319349055548,
+          "molar_flow": 80.1926267041812,
+          "mole_fraction": 0.873240944147163
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0.787300233771923,
+          "mass_fraction": 0.0339728025604176,
+          "molar_flow": 8.02901574853211,
+          "mole_fraction": 0.08743029853211
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0.00105968341058189,
+          "mass_fraction": 4.57264125424832e-05,
+          "molar_flow": 0.0378277328200749,
+          "mole_fraction": 0.000411917235790289
+        },
+        "Oxygen": {
+          "mass_flow": 0.000110236450139428,
+          "mass_fraction": 4.75681448436229e-06,
+          "molar_flow": 0.00344501825504168,
+          "mole_fraction": 3.75138103997279e-05
+        },
+        "Water": {
+          "mass_flow": 0.0641817910596766,
+          "mass_fraction": 0.00276950929532688,
+          "molar_flow": 3.56263078118556,
+          "mole_fraction": 0.0387945275628191
+        }
+      },
+      "id": "MS-dfaf52ed-f0eb-42e4-ae88-7daf1084055f",
+      "mass_flow": 23.1744270250233,
+      "molar_flow": 91.8333333333335,
+      "pressure": 101325,
+      "tag": "S-19",
+      "temperature": 405.143878075355,
+      "total_energy_flow": -72484.9169357292
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.25580531528858,
+          "mass_fraction": 0.0338706811955335,
+          "molar_flow": 73.9796024787507,
+          "mole_fraction": 0.0281557217937374
+        },
+        "Carbon monoxide": {
+          "mass_flow": 2.07217715921868,
+          "mass_fraction": 0.021557201719336,
+          "molar_flow": 73.9796416013752,
+          "mole_fraction": 0.0281557366833245
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 23.8265169002656,
+          "mass_fraction": 0.247871196149011,
+          "molar_flow": 85.5997416912124,
+          "mole_fraction": 0.0325782030711212
+        },
+        "Maleic anhydride": {
+          "mass_flow": 3.62522639968153,
+          "mass_fraction": 0.03771382983763,
+          "molar_flow": 36.970648053268,
+          "mole_fraction": 0.0140705714311047
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 52.1620042916109,
+          "mass_fraction": 0.542649958087131,
+          "molar_flow": 1862.0376067029,
+          "mole_fraction": 0.708668485193092
+        },
+        "Oxygen": {
+          "mass_flow": 5.18584880955001,
+          "mass_fraction": 0.0539492428898307,
+          "molar_flow": 162.063852692914,
+          "mole_fraction": 0.0616794980826447
+        },
+        "Water": {
+          "mass_flow": 5.99701030796203,
+          "mass_fraction": 0.0623878901215278,
+          "molar_flow": 332.884657244407,
+          "mole_fraction": 0.126691783744976
+        }
+      },
+      "id": "MS-9a739e88-e84b-4e34-86a2-2e94e6f3a7e0",
+      "mass_flow": 96.1245891835774,
+      "molar_flow": 2627.51575046482,
+      "pressure": 101325,
+      "tag": "S-20",
+      "temperature": 713.779993635473,
+      "total_energy_flow": -147573.443163538
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 25.2832766666667,
+          "mass_fraction": 1,
+          "molar_flow": 90.8333333333334,
+          "mole_fraction": 1
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-48246a61-4dda-4675-8c86-cc175c65c19d",
+      "mass_flow": 25.2832766666667,
+      "molar_flow": 90.8333333333334,
+      "pressure": 101325,
+      "tag": "S-17",
+      "temperature": 713.779993635473,
+      "total_energy_flow": -52713.2246705348
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 4.44458333333333,
+          "mass_fraction": 1,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 1
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-36d31302-0455-45a5-a169-df1e9288340b",
+      "mass_flow": 4.44458333333333,
+      "molar_flow": 76.4696335192634,
+      "pressure": 925000,
+      "tag": "S-01",
+      "temperature": 345.15,
+      "total_energy_flow": -10582.6600019064
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 4.44458333333333,
+          "mass_fraction": 1,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 1
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-97953d73-0b32-4549-9304-4b8d8314a76d",
+      "mass_flow": 4.44458333333333,
+      "molar_flow": 76.4696335192634,
+      "pressure": 895000,
+      "tag": "S-02",
+      "temperature": 363.150000000027,
+      "total_energy_flow": -9075.08570324195
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 4.44458333333333,
+          "mass_fraction": 1,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 1
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-0fa683a8-991d-4a89-aee0-cbaf12c60c22",
+      "mass_flow": 4.44458333333333,
+      "molar_flow": 76.4696335192634,
+      "pressure": 300000,
+      "tag": "S-03",
+      "temperature": 363.150000008182,
+      "total_energy_flow": -9075.0857031687
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 4.44458333333333,
+          "mass_fraction": 1,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 1
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-126f3bf4-0ae6-42e8-bfb6-5849f0a02564",
+      "mass_flow": 4.44458333333333,
+      "molar_flow": 76.4696335192634,
+      "pressure": 285000,
+      "tag": "S-06",
+      "temperature": 312.150000000958,
+      "total_energy_flow": -9508.79291005377
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 53.91766877955,
+          "mass_fraction": 0.76708248854242,
+          "molar_flow": 1924.70991666667,
+          "mole_fraction": 0.79
+        },
+        "Oxygen": {
+          "mass_flow": 16.3716020419,
+          "mass_fraction": 0.23291751145758,
+          "molar_flow": 511.63175,
+          "mole_fraction": 0.21
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-6fd2edc6-dc0d-4665-be75-025487ef5e1e",
+      "mass_flow": 70.28927082145,
+      "molar_flow": 2436.34166666667,
+      "pressure": 101325,
+      "tag": "S-04",
+      "temperature": 298.15,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 53.91766877955,
+          "mass_fraction": 0.76708248854242,
+          "molar_flow": 1924.70991666667,
+          "mole_fraction": 0.79
+        },
+        "Oxygen": {
+          "mass_flow": 16.3716020419,
+          "mass_fraction": 0.23291751145758,
+          "molar_flow": 511.63175,
+          "mole_fraction": 0.21
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-734e703f-5ea5-4d9f-a6e8-f4cbfa3919d7",
+      "mass_flow": 70.28927082145,
+      "molar_flow": 2436.34166666667,
+      "pressure": 285000,
+      "tag": "S-05",
+      "temperature": 433.496294730776,
+      "total_energy_flow": 9681.07665213269
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 4.44458333333333,
+          "mass_fraction": 0.0594721546693956,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0304319045021826
+        },
+        "Nitrogen": {
+          "mass_flow": 53.91766877955,
+          "mass_fraction": 0.721462440139641,
+          "molar_flow": 1924.70991666667,
+          "mole_fraction": 0.765958795443276
+        },
+        "Oxygen": {
+          "mass_flow": 16.3716020419,
+          "mass_fraction": 0.219065405190964,
+          "molar_flow": 511.63175,
+          "mole_fraction": 0.203609300054542
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-b104fdb3-82c6-475f-8f4d-8c417a3ec746",
+      "mass_flow": 74.7338541547833,
+      "molar_flow": 2512.81130018593,
+      "pressure": 285000,
+      "tag": "S-07",
+      "temperature": 419.986327062869,
+      "total_energy_flow": 172.283742694412
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 4.44458333333333,
+          "mass_fraction": 0.0594721546693956,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0304319045021826
+        },
+        "Nitrogen": {
+          "mass_flow": 53.91766877955,
+          "mass_fraction": 0.721462440139641,
+          "molar_flow": 1924.70991666667,
+          "mole_fraction": 0.765958795443276
+        },
+        "Oxygen": {
+          "mass_flow": 16.3716020419,
+          "mass_fraction": 0.219065405190964,
+          "molar_flow": 511.63175,
+          "mole_fraction": 0.203609300054542
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-850aa90a-f800-4672-8033-a864a79414de",
+      "mass_flow": 74.7338541547833,
+      "molar_flow": 2512.81130018593,
+      "pressure": 285000,
+      "tag": "S-08",
+      "temperature": 426.593480925823,
+      "total_energy_flow": 714.333121401784
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 4.44458333333333,
+          "mass_fraction": 0.0594721546693956,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0304319045021826
+        },
+        "Nitrogen": {
+          "mass_flow": 53.91766877955,
+          "mass_fraction": 0.721462440139641,
+          "molar_flow": 1924.70991666667,
+          "mole_fraction": 0.765958795443276
+        },
+        "Oxygen": {
+          "mass_flow": 16.3716020419,
+          "mass_fraction": 0.219065405190964,
+          "molar_flow": 511.63175,
+          "mole_fraction": 0.203609300054542
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-eab40d57-f776-4b16-b194-1935819a2f86",
+      "mass_flow": 74.7338541547833,
+      "molar_flow": 2512.81130018593,
+      "pressure": 280000,
+      "tag": "S-09",
+      "temperature": 673.437,
+      "total_energy_flow": 21870.7665932642
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.36539033636602,
+          "mass_fraction": 0.0450316710469109,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0291033968134103
+        },
+        "Carbon monoxide": {
+          "mass_flow": 2.14192208183792,
+          "mass_fraction": 0.0286606666558602,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0291033968134103
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 3.74918683882119,
+          "mass_fraction": 0.0501671816772108,
+          "molar_flow": 38.2348167596317,
+          "mole_fraction": 0.0145516984067052
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 53.91766877955,
+          "mass_fraction": 0.721462440139641,
+          "molar_flow": 1924.70991666667,
+          "mole_fraction": 0.732520791293515
+        },
+        "Oxygen": {
+          "mass_flow": 5.36038775114707,
+          "mass_fraction": 0.0717263656715071,
+          "molar_flow": 167.518399163315,
+          "mole_fraction": 0.0637554310126132
+        },
+        "Water": {
+          "mass_flow": 6.19929836706112,
+          "mass_fraction": 0.0829516748088702,
+          "molar_flow": 344.113350836685,
+          "mole_fraction": 0.130965285660346
+        }
+      },
+      "id": "MS-63aa3872-5d8d-4d7c-98d1-2b231a0b9466",
+      "mass_flow": 74.7338541547833,
+      "molar_flow": 2627.51575046482,
+      "pressure": 270000,
+      "tag": "S-10",
+      "temperature": 968.15,
+      "total_energy_flow": -78098.5858284564
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MS-f43035f5-811d-4abf-b052-56206e8dbe93",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 270000,
+      "tag": "S-11",
+      "temperature": 968.15,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.36539033636602,
+          "mass_fraction": 0.0450316710469109,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0291033968134103
+        },
+        "Carbon monoxide": {
+          "mass_flow": 2.14192208183792,
+          "mass_fraction": 0.0286606666558602,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0291033968134103
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 3.74918683882119,
+          "mass_fraction": 0.0501671816772108,
+          "molar_flow": 38.2348167596317,
+          "mole_fraction": 0.0145516984067052
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 53.91766877955,
+          "mass_fraction": 0.721462440139641,
+          "molar_flow": 1924.70991666667,
+          "mole_fraction": 0.732520791293515
+        },
+        "Oxygen": {
+          "mass_flow": 5.36038775114707,
+          "mass_fraction": 0.0717263656715071,
+          "molar_flow": 167.518399163315,
+          "mole_fraction": 0.0637554310126132
+        },
+        "Water": {
+          "mass_flow": 6.19929836706112,
+          "mass_fraction": 0.0829516748088702,
+          "molar_flow": 344.113350836685,
+          "mole_fraction": 0.130965285660346
+        }
+      },
+      "id": "MS-4d59b7d0-57a8-4b6a-9c53-a6875551beb7",
+      "mass_flow": 74.7338541547833,
+      "molar_flow": 2627.51575046482,
+      "pressure": 270000,
+      "tag": "S-12",
+      "temperature": 968.15,
+      "total_energy_flow": -78098.5858284564
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.36539033636602,
+          "mass_fraction": 0.0450316710469109,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0291033968134103
+        },
+        "Carbon monoxide": {
+          "mass_flow": 2.14192208183792,
+          "mass_fraction": 0.0286606666558602,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0291033968134103
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 3.74918683882119,
+          "mass_fraction": 0.0501671816772108,
+          "molar_flow": 38.2348167596317,
+          "mole_fraction": 0.0145516984067052
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 53.91766877955,
+          "mass_fraction": 0.721462440139641,
+          "molar_flow": 1924.70991666667,
+          "mole_fraction": 0.732520791293515
+        },
+        "Oxygen": {
+          "mass_flow": 5.36038775114707,
+          "mass_fraction": 0.0717263656715071,
+          "molar_flow": 167.518399163315,
+          "mole_fraction": 0.0637554310126132
+        },
+        "Water": {
+          "mass_flow": 6.19929836706112,
+          "mass_fraction": 0.0829516748088702,
+          "molar_flow": 344.113350836685,
+          "mole_fraction": 0.130965285660346
+        }
+      },
+      "id": "MS-c104afff-8cdf-477f-9c79-5d7a00800f5c",
+      "mass_flow": 74.7338541547833,
+      "molar_flow": 2627.51575046482,
+      "pressure": 270000,
+      "tag": "S-14",
+      "temperature": 962.524103357957,
+      "total_energy_flow": -78640.6322561368
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.36539033636602,
+          "mass_fraction": 0.0450316710469109,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0291033968134103
+        },
+        "Carbon monoxide": {
+          "mass_flow": 2.14192208183792,
+          "mass_fraction": 0.0286606666558602,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0291033968134103
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 3.74918683882119,
+          "mass_fraction": 0.0501671816772108,
+          "molar_flow": 38.2348167596317,
+          "mole_fraction": 0.0145516984067052
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 53.91766877955,
+          "mass_fraction": 0.721462440139641,
+          "molar_flow": 1924.70991666667,
+          "mole_fraction": 0.732520791293515
+        },
+        "Oxygen": {
+          "mass_flow": 5.36038775114707,
+          "mass_fraction": 0.0717263656715071,
+          "molar_flow": 167.518399163315,
+          "mole_fraction": 0.0637554310126132
+        },
+        "Water": {
+          "mass_flow": 6.19929836706112,
+          "mass_fraction": 0.0829516748088702,
+          "molar_flow": 344.113350836685,
+          "mole_fraction": 0.130965285660346
+        }
+      },
+      "id": "MS-89150117-07ba-4609-83b4-a220d9d59e8c",
+      "mass_flow": 74.7338541547833,
+      "molar_flow": 2627.51575046482,
+      "pressure": 270000,
+      "tag": "S-13",
+      "temperature": 968.15,
+      "total_energy_flow": -78098.5858284564
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.36539033636602,
+          "mass_fraction": 0.0450316710469109,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0291033968134103
+        },
+        "Carbon monoxide": {
+          "mass_flow": 2.14192208183792,
+          "mass_fraction": 0.0286606666558602,
+          "molar_flow": 76.4696335192634,
+          "mole_fraction": 0.0291033968134103
+        },
+        "Di ButylPhthalate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Maleic anhydride": {
+          "mass_flow": 3.74918683882119,
+          "mass_fraction": 0.0501671816772108,
+          "molar_flow": 38.2348167596317,
+          "mole_fraction": 0.0145516984067052
+        },
+        "N-butane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 53.91766877955,
+          "mass_fraction": 0.721462440139641,
+          "molar_flow": 1924.70991666667,
+          "mole_fraction": 0.732520791293515
+        },
+        "Oxygen": {
+          "mass_flow": 5.36038775114707,
+          "mass_fraction": 0.0717263656715071,
+          "molar_flow": 167.518399163315,
+          "mole_fraction": 0.0637554310126132
+        },
+        "Water": {
+          "mass_flow": 6.19929836706112,
+          "mass_fraction": 0.0829516748088702,
+          "molar_flow": 344.113350836685,
+          "mole_fraction": 0.130965285660346
+        }
+      },
+      "id": "MS-4d8b4926-a66e-42bb-aba3-9e4cd163931f",
+      "mass_flow": 74.7338541547833,
+      "molar_flow": 2627.51575046482,
+      "pressure": 90000,
+      "tag": "S-15",
+      "temperature": 405.15,
+      "total_energy_flow": -128817.058903481
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": null,
+    "delta_p": null,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+    "outlet_pressure": null,
+    "outlet_temperature": null,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "DC-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MS-9a739e88-e84b-4e34-86a2-2e94e6f3a7e0",
+      "mass_flow": 96.1245891835774,
+      "molar_flow": 2627.51575046482,
+      "tag": "S-20",
+      "upstream_unit_guids": [
+        "ABS-36ccb52a-e3c6-4df2-b4f1-c09d2a0d9bef"
+      ]
+    },
+    {
+      "id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+      "mass_flow": 22.060325079651,
+      "molar_flow": 90.8333333332335,
+      "tag": "S-23",
+      "upstream_unit_guids": [
+        "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd"
+      ]
+    }
+  ]
+}

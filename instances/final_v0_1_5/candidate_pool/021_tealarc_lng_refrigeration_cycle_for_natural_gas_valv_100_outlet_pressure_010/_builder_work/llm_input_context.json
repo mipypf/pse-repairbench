@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "VALV-32cc2c07-eb8f-468e-a771-60b97413a3b7",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "021_tealarc_lng_refrigeration_cycle_for_natural_gas_valv_100_outlet_pressure_010",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_flow",
+      "max": 591.4148587405306,
+      "metric": "molar_flow",
+      "stream": "NG-6",
+      "stream_id": "MAT-ed4bbbcc-2dcb-40d6-a24a-073afcc58205",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "NG-6",
+      "threshold": 591.4148587405306
+    },
+    "target_stream_tag": "NG-6"
+  }
+}

@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-10
+Target metric: temperature
+Observed target value: 449.849116100695
+Required target value: <= 444.0200828164131

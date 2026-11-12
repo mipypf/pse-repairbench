@@ -1,0 +1,140 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "rationale": "Restore the unit separator temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072",
+        "kind": "unit_operation",
+        "tag": "SEP-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 283.15
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit separator temperature is consistent with the requested process target.",
+      "target": "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the separator temperature of SEP-01 to 283.15.",
+      "target": "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "040_production_of_methyl_ethyl_ketone_sep_01_temperature_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "4badfae3e3daa44680643118c1d177f7baacb6f54934f55cd85205e8f900a4ba",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "f15b5575148b3ed5b741435ee71f6bd2dfdd3f94cb23363ed38536035a382bc6",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/040_production_of_methyl_ethyl_ketone.zip",
+    "curated_source_entry": "Production_Of_Methyl_Ethyl_Ketone_By_Mr_Samyabrata_Bhattacharjee/FLOWSHEET.dwxmz",
+    "detected_process_category": "reaction_recycle",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Vessel",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp9076.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 27,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "Production_of_Methyl_Ethyl_Ketone.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 292.15,
+      "metric": "temperature",
+      "stream": "S-08",
+      "stream_id": "MAT-27bed7d7-b5f6-4a15-bc01-1e9665d4d83d",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-08",
+      "threshold": 292.15
+    },
+    "target_stream_tag": "S-08"
+  }
+}

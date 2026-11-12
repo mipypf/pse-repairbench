@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 607999.953225,
+    "target_mole_fraction": null,
+    "target_value": 309.309884276594
+  },
+  "faulty": {
+    "outlet_pressure": 303999.9766125,
+    "target_mole_fraction": null,
+    "target_value": 359.41371155302
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "COMP-ea3c9f7a-cd27-45e9-84f0-2b2283c7f9af",
+      "kind": "unit_operation",
+      "tag": "COMP-02"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 607999.953225
+  },
+  "instance_id": "019_separation_of_diisopropyl_ether_and_isopropanol_using_psd_with_vapor_recompression_comp_02_outlet_pressure_005",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 607999.953225,
+    "target_mole_fraction": null,
+    "target_value": 309.309884276594
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/019_separation_of_diisopropyl_ether_and_isopropanol_using_psd_with_vapor_recompression.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 324.3410324595218,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "IPA",
+    "stream_id": "MAT-742dd2e6-e885-47d6-8794-db31699a3227",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "IPA",
+    "threshold": 324.3410324595218
+  },
+  "target_delta": -50.10382727642599
+}

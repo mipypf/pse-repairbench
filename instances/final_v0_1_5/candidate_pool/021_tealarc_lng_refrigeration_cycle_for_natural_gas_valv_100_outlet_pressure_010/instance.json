@@ -1,0 +1,136 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_pressure_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "rationale": "Restore the unit outlet pressure to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "VALV-32cc2c07-eb8f-468e-a771-60b97413a3b7",
+        "kind": "unit_operation",
+        "tag": "VALV-100"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 110000.0
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet pressure is consistent with the requested process target.",
+      "target": "VALV-32cc2c07-eb8f-468e-a771-60b97413a3b7",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet pressure of VALV-100 to 110000.0.",
+      "target": "VALV-32cc2c07-eb8f-468e-a771-60b97413a3b7",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "021_tealarc_lng_refrigeration_cycle_for_natural_gas_valv_100_outlet_pressure_010",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "cf1a7218164c489927980a1f4d6197f0a079ab00b060ba6204ad0862a9673098",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "1b573dcccf92f95f372fe7834826583f4ca29093ce994bfa2ee5ea7803e9a682",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/other_candidate/021_tealarc_lng_refrigeration_cycle_for_natural_gas.zip",
+    "curated_source_entry": "Tealarc_Lng_Refrigeration_Cycle_For_Natural_Gas_By_Mr_Pragneshsinh_J_Sindha/TEALARCPLANT1.dwxmz",
+    "detected_process_category": "other_candidate",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Valve",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp4D02.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 121,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "Spreadsheet",
+      "FlowsheetView",
+      "PanelLayout"
+    ],
+    "source_category": "other_candidate",
+    "source_format": "dwxmz",
+    "source_name": "TEALARC_LNG_Refrigeration_Cycle_for_Natural_Gas.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "FlowsheetView",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_flow",
+      "max": 591.4148587405306,
+      "metric": "molar_flow",
+      "stream": "NG-6",
+      "stream_id": "MAT-ed4bbbcc-2dcb-40d6-a24a-073afcc58205",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "NG-6",
+      "threshold": 591.4148587405306
+    },
+    "target_stream_tag": "NG-6"
+  }
+}

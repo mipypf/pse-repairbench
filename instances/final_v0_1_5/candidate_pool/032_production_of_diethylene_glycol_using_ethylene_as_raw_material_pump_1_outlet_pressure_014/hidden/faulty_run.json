@@ -1,0 +1,3554 @@
+{
+  "column": null,
+  "duration_sec": 15.259,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 83,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/faulty_calculated.dwxmz",
+  "simulation_path": "public/faulty.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COMP-1c854c49-d5e3-45ba-8293-b27e173a3175"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4240db89-7a50-4f45-abbb-da078eaa1a35",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "103-1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-95d4843e-0c83-4d12-9706-e648ad72418a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-95d4843e-0c83-4d12-9706-e648ad72418a"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-dd848894-22dc-47cd-9fb2-c2be7ace34f6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "101",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-95d4843e-0c83-4d12-9706-e648ad72418a"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-cd9c1465-e95a-4784-85b4-3feb4f8681b1",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "102",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "COMP-3f036c33-abcc-4f19-b5b0-14f12f67ebe8"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-05dbf704-51f3-44d3-8684-0dfdc782fb35",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "103-2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-1c854c49-d5e3-45ba-8293-b27e173a3175"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-80bf553e-7519-4889-8aad-ce4161d628af"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-52985690-1e97-4244-b296-103341905d21",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "103-2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-3f036c33-abcc-4f19-b5b0-14f12f67ebe8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "PFR-15ea611f-cfac-4abe-ac89-74241e19942b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f70dea07-6214-4121-b49a-5149c6df0125",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "103",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-80bf553e-7519-4889-8aad-ce4161d628af"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-295131ad-af6f-48da-8b9b-5e7b8eb04758"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f842c3ec-f847-4488-8ab8-84c4874e3112",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "104",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "PFR-15ea611f-cfac-4abe-ac89-74241e19942b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COMP-cc869289-3dcc-4700-a3a4-b14cff370a8f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-20c49f83-1bce-4764-a80e-eb3e5a73d2ea",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "104-2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-295131ad-af6f-48da-8b9b-5e7b8eb04758"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CS-e6512e75-79af-4032-93db-4fcc606fbb11"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8cdbf9e8-122b-48e2-999f-038903ae1827",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "106",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-33a0924b-d427-4dc0-b0bb-2277756b4338"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DIV-9586f9f8-d64f-4843-8ff0-a50c5b8947b5"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-07429970-6fa3-4b01-a919-4ab3d130b80f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "109",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-33a0924b-d427-4dc0-b0bb-2277756b4338"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-b519d0e5-2e8a-4206-a127-0b7da7c6f660"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "1636629647_MAT-b28c5cee-894f-4c7d-ac84-b2aeec423672",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "201",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-79977e55-dc4e-450c-846a-75e987a49fa0"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-1e5921c9-1bc5-48b0-999b-ebc24bb8c67f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "1636629647_MAT-b6d72ce9-0312-43d7-be26-8f897d0dfec1",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "202-2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "1636629647_BB-f5098547-22aa-4da7-9b86-9d3cab8c5526"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-d4aad2fe-760a-4578-be1a-27176d0984e8"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "1636629647_MAT-45b0c2c0-fd66-412e-9086-6a0ea132b3f2",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "203",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "1636629647_CSTR-9b2f53ff-40d9-4378-b5f5-7aeebad8ea0f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "1636629647_MAT-7b51ef04-ec07-46eb-9cdb-bef0354c6357",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "stack-1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "1636629647_CSTR-9b2f53ff-40d9-4378-b5f5-7aeebad8ea0f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-b519d0e5-2e8a-4206-a127-0b7da7c6f660"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-553d8ab1-48fb-401d-8fef-bbab09a95fbd",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "107",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-9586f9f8-d64f-4843-8ff0-a50c5b8947b5"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "83876032_1813529158_MIST-ee7668d9-cd00-44e6-a391-5fd7fc808e01"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6ac730fd-65b2-4f9e-8cab-373e282d5f9e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "108",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-9586f9f8-d64f-4843-8ff0-a50c5b8947b5"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "1636629647_CSTR-9b2f53ff-40d9-4378-b5f5-7aeebad8ea0f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-30a9a834-54b8-4b5b-8726-8c358b032c26",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "202",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-1e5921c9-1bc5-48b0-999b-ebc24bb8c67f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "1636629647_BB-f5098547-22aa-4da7-9b86-9d3cab8c5526"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-43cb9a40-8a2b-4198-aeb6-4884b4cbba5d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "202-1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-b519d0e5-2e8a-4206-a127-0b7da7c6f660"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-a6c35a10-e122-4585-836b-a2b488089d28"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3e8adaff-2a54-4d86-a899-5a7414781978",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "104-3",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-cc869289-3dcc-4700-a3a4-b14cff370a8f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-33a0924b-d427-4dc0-b0bb-2277756b4338"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c65b099f-cfc6-4d44-becf-0988253eb23b",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "105",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-a6c35a10-e122-4585-836b-a2b488089d28"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9580a32a-723a-413a-b816-43d01c9af1d0",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "208",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-3db6691d-eb46-412e-8e9d-53f6fad1a13e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "83876032_1813529158_MIST-ee7668d9-cd00-44e6-a391-5fd7fc808e01"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-eac868a8-a14f-4bbb-bea3-0d8f4c92fec3",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "207",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-3db6691d-eb46-412e-8e9d-53f6fad1a13e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-65610833-df4b-45a3-8015-c0d0eb44582c",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "205",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-d4aad2fe-760a-4578-be1a-27176d0984e8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-3db6691d-eb46-412e-8e9d-53f6fad1a13e"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-32927ff0-4b05-4c2f-a6ea-325f7b2a1b1d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "206",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-d4aad2fe-760a-4578-be1a-27176d0984e8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "83876032_1813529158_RESF-d342a33a-b239-462a-a06a-5c77381bb377"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "83876032_1813529158_MAT-3af2af2e-0b6a-4ed2-88bd-e08a7b66226f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "301",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "83876032_1813529158_MIST-ee7668d9-cd00-44e6-a391-5fd7fc808e01"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "BB-b7ca4afe-25d3-4047-9372-07d1351b33ec"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "83876032_1813529158_MAT-965d9847-8e25-400c-a43c-f3fc1a03af00",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "301-1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "83876032_1813529158_RESF-d342a33a-b239-462a-a06a-5c77381bb377"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-a99adb5b-480a-4c95-8170-bb06f130de79"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "83876032_1813529158_MAT-6ffb2343-5401-41f6-949b-c95eeabf5e41",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "301-2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-b7ca4afe-25d3-4047-9372-07d1351b33ec"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "83876032_1813529158_MAT-fbdd6f76-3171-4f61-8900-3382d6becaf6",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "stack-2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CSTR-4fb492e4-df25-4fea-8750-9624c462a901"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-7a7cc1d3-d349-400e-a246-a3a7a7049d54"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-66cb7d4e-4d21-467e-a82e-26e3c1d57efa",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "303",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CSTR-4fb492e4-df25-4fea-8750-9624c462a901"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CSTR-4fb492e4-df25-4fea-8750-9624c462a901"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-5a66c3ed-d0b2-4fcf-8acf-974046c3c251",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "302",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-a99adb5b-480a-4c95-8170-bb06f130de79"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-d8140854-4cbe-4f44-9fbb-dae55c358af4",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "305",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-7a7cc1d3-d349-400e-a246-a3a7a7049d54"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "1585905355_COUO-bc89b3a2-33c6-497b-b160-1c81955dcb8a"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-86750bf3-edaa-417d-ab84-43a595f80857",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "306",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-7a7cc1d3-d349-400e-a246-a3a7a7049d54"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-92d49f56-f4e6-4bba-b681-7a6e81036622",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "401",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "1585905355_COUO-bc89b3a2-33c6-497b-b160-1c81955dcb8a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "1059352837_COUO-d30a6399-b6e7-49ef-ba8f-8f2997d13b5d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-a840c7cd-a0e4-41e6-b2d4-2926419b3d3f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "402",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "1585905355_COUO-bc89b3a2-33c6-497b-b160-1c81955dcb8a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9b890335-a75b-4e04-889f-ec9695439c99",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "403",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "1059352837_COUO-d30a6399-b6e7-49ef-ba8f-8f2997d13b5d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-08e5d969-b55f-48fd-997d-1b0e2cbb0f60",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "404",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "1059352837_COUO-d30a6399-b6e7-49ef-ba8f-8f2997d13b5d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-79977e55-dc4e-450c-846a-75e987a49fa0"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-0c17ed24-5e8b-442a-bc50-66cbe94724ba",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "38",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-79977e55-dc4e-450c-846a-75e987a49fa0"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8cf9e231-f6da-4c30-b672-1992065aa2ff",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "41",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-e6512e75-79af-4032-93db-4fcc606fbb11"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-83b7a4eb-8530-4248-886a-1d741f65e7f0",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "42",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-e6512e75-79af-4032-93db-4fcc606fbb11"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "1636629647_MAT-7b51ef04-ec07-46eb-9cdb-bef0354c6357",
+        "mass_flow": 0.00128771203642824,
+        "molar_flow": 0.0566572966933191,
+        "tag": "stack-1",
+        "upstream_unit_guids": [
+          "1636629647_CSTR-9b2f53ff-40d9-4378-b5f5-7aeebad8ea0f"
+        ]
+      },
+      {
+        "id": "MAT-9580a32a-723a-413a-b816-43d01c9af1d0",
+        "mass_flow": 8.9876964948661,
+        "molar_flow": 498.88603784811,
+        "tag": "208",
+        "upstream_unit_guids": [
+          "COUO-3db6691d-eb46-412e-8e9d-53f6fad1a13e"
+        ]
+      },
+      {
+        "id": "83876032_1813529158_MAT-fbdd6f76-3171-4f61-8900-3382d6becaf6",
+        "mass_flow": 0.000647605524095087,
+        "molar_flow": 0.0222896628052421,
+        "tag": "stack-2",
+        "upstream_unit_guids": [
+          "CSTR-4fb492e4-df25-4fea-8750-9624c462a901"
+        ]
+      },
+      {
+        "id": "MAT-d8140854-4cbe-4f44-9fbb-dae55c358af4",
+        "mass_flow": 0.000131906570446148,
+        "molar_flow": 0.00467775513101584,
+        "tag": "305",
+        "upstream_unit_guids": [
+          "SEP-7a7cc1d3-d349-400e-a246-a3a7a7049d54"
+        ]
+      },
+      {
+        "id": "MAT-92d49f56-f4e6-4bba-b681-7a6e81036622",
+        "mass_flow": 2.44256086146769,
+        "molar_flow": 39.423764834965,
+        "tag": "401",
+        "upstream_unit_guids": [
+          "1585905355_COUO-bc89b3a2-33c6-497b-b160-1c81955dcb8a"
+        ]
+      },
+      {
+        "id": "MAT-9b890335-a75b-4e04-889f-ec9695439c99",
+        "mass_flow": 5.03866796533463,
+        "molar_flow": 47.6197,
+        "tag": "403",
+        "upstream_unit_guids": [
+          "1059352837_COUO-d30a6399-b6e7-49ef-ba8f-8f2997d13b5d"
+        ]
+      },
+      {
+        "id": "MAT-08e5d969-b55f-48fd-997d-1b0e2cbb0f60",
+        "mass_flow": 2.3570443820075,
+        "molar_flow": 15.6956,
+        "tag": "404",
+        "upstream_unit_guids": [
+          "1059352837_COUO-d30a6399-b6e7-49ef-ba8f-8f2997d13b5d"
+        ]
+      },
+      {
+        "id": "MAT-83b7a4eb-8530-4248-886a-1d741f65e7f0",
+        "mass_flow": 10.4662698702195,
+        "molar_flow": 372.07558989243,
+        "tag": "42",
+        "upstream_unit_guids": [
+          "CS-e6512e75-79af-4032-93db-4fcc606fbb11"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 2.54740182372972e-14,
+          "mass_fraction": 2.58927737587996e-15,
+          "molar_flow": 5.78829985282659e-13,
+          "mole_fraction": 5.63398144817129e-15
+        },
+        "Diethylene glycol": {
+          "mass_flow": 5.01140926421835,
+          "mass_fraction": 0.509378948709293,
+          "molar_flow": 47.2238067724806,
+          "mole_fraction": 0.459648010699131
+        },
+        "Ethylene": {
+          "mass_flow": 5.17421695927764e-09,
+          "mass_fraction": 5.25927350202505e-10,
+          "molar_flow": 1.84443284081994e-07,
+          "mole_fraction": 1.79525951864829e-09
+        },
+        "Ethylene glycol": {
+          "mass_flow": 2.46305212422186,
+          "mass_fraction": 0.250354109094702,
+          "molar_flow": 39.683226034962,
+          "mole_fraction": 0.386252552509674
+        },
+        "Ethylene oxide": {
+          "mass_flow": 5.19465044754692e-07,
+          "mass_fraction": 5.28004288689127e-08,
+          "molar_flow": 1.17919377387986e-05,
+          "mole_fraction": 1.14775599308215e-07
+        },
+        "Nitrogen": {
+          "mass_flow": 3.21787756634556e-05,
+          "mass_fraction": 3.27077475696047e-06,
+          "molar_flow": 0.00114869225668629,
+          "mole_fraction": 1.11806765861797e-05
+        },
+        "Oxygen": {
+          "mass_flow": 3.59143826533969e-06,
+          "mass_fraction": 3.65047624630274e-07,
+          "molar_flow": 0.000112236654666415,
+          "mole_fraction": 1.09244380262471e-06
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 2.36192474742964,
+          "mass_fraction": 0.240075132830691,
+          "molar_flow": 15.7280253269872,
+          "mole_fraction": 0.153087098390976
+        },
+        "Water": {
+          "mass_flow": 0.00185077808674848,
+          "mass_fraction": 0.000188120216573288,
+          "molar_flow": 0.102733795242066,
+          "mole_fraction": 0.000999948708965692
+        }
+      },
+      "id": "MAT-86750bf3-edaa-417d-ab84-43a595f80857",
+      "mass_flow": 9.83827320880981,
+      "molar_flow": 102.739064834965,
+      "pressure": 101325,
+      "tag": "306",
+      "temperature": 298.15,
+      "total_energy_flow": -60706.8587822599
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 5.86498181305677e-17,
+          "mass_fraction": 4.44631514049652e-13,
+          "molar_flow": 1.33266267807105e-15,
+          "mole_fraction": 2.84893638240024e-13
+        },
+        "Diethylene glycol": {
+          "mass_flow": 1.84878451217481e-09,
+          "mass_fraction": 1.40158636974767e-05,
+          "molar_flow": 1.74215750428269e-08,
+          "mole_fraction": 3.72434523716584e-06
+        },
+        "Ethylene": {
+          "mass_flow": 2.18054258618371e-09,
+          "mass_fraction": 1.65309626261107e-05,
+          "molar_flow": 7.77289469772285e-08,
+          "mole_fraction": 1.66167199436856e-05
+        },
+        "Ethylene glycol": {
+          "mass_flow": 1.79931860215113e-08,
+          "mass_fraction": 0.000136408565249274,
+          "molar_flow": 2.89895476006759e-07,
+          "mole_fraction": 6.19732046435282e-05
+        },
+        "Ethylene oxide": {
+          "mass_flow": 2.97336637967305e-11,
+          "mass_fraction": 2.25414577121991e-07,
+          "molar_flow": 6.74958817302115e-10,
+          "mole_fraction": 1.44291182072957e-07
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000125014817586209,
+          "mass_fraction": 0.94775277049029,
+          "molar_flow": 0.00446267920303172,
+          "mole_fraction": 0.954021550517244
+        },
+        "Oxygen": {
+          "mass_flow": 6.86905514171466e-06,
+          "mass_fraction": 0.0520751553048606,
+          "molar_flow": 0.000214666023154451,
+          "mole_fraction": 0.0458908209476612
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 2.38390302421362e-10,
+          "mass_fraction": 1.80726632202668e-06,
+          "molar_flow": 1.58743783783611e-09,
+          "mole_fraction": 3.39358900450048e-07
+        },
+        "Water": {
+          "mass_flow": 4.07081079201138e-10,
+          "mass_fraction": 3.08613193280871e-06,
+          "molar_flow": 2.25964336497206e-08,
+          "mole_fraction": 4.83061490326738e-06
+        }
+      },
+      "id": "MAT-d8140854-4cbe-4f44-9fbb-dae55c358af4",
+      "mass_flow": 0.000131906570446148,
+      "molar_flow": 0.00467775513101584,
+      "pressure": 101325,
+      "tag": "305",
+      "temperature": 298.15,
+      "total_energy_flow": -0.000125785316077236
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.05961995671132e-14,
+          "mass_fraction": 3.10966923700288e-15,
+          "molar_flow": 6.95218068078783e-13,
+          "mole_fraction": 3.83154226170665e-15
+        },
+        "Diethylene glycol": {
+          "mass_flow": 1.1992557021831e-06,
+          "mass_fraction": 1.21887313363832e-07,
+          "molar_flow": 1.13008969263506e-05,
+          "mole_fraction": 6.22824206628594e-08
+        },
+        "Ethylene": {
+          "mass_flow": 1.37202833097361e-08,
+          "mass_fraction": 1.3944719780528e-09,
+          "molar_flow": 4.89081561925149e-07,
+          "mole_fraction": 2.69546601272358e-09
+        },
+        "Ethylene glycol": {
+          "mass_flow": 6.37036367001767,
+          "mass_fraction": 0.647457011440974,
+          "molar_flow": 102.635498029538,
+          "mole_fraction": 0.565653089739492
+        },
+        "Ethylene oxide": {
+          "mass_flow": 3.46605627349897,
+          "mass_fraction": 0.352275404132407,
+          "molar_flow": 78.6800193563999,
+          "mole_fraction": 0.433627710725408
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000753003105236173,
+          "mass_fraction": 7.65320734225261e-05,
+          "molar_flow": 0.0268801039943803,
+          "mole_fraction": 0.0001481438115355
+        },
+        "Oxygen": {
+          "mass_flow": 2.77028466699069e-05,
+          "mass_fraction": 2.81560099900163e-06,
+          "molar_flow": 0.000865746423925488,
+          "mole_fraction": 4.77137198168447e-06
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 5.51154063250175e-11,
+          "mass_fraction": 5.60169844486316e-12,
+          "molar_flow": 3.67012754123694e-10,
+          "mole_fraction": 2.02271048837432e-12
+        },
+        "Water": {
+          "mass_flow": 0.00185085829773173,
+          "mass_fraction": 0.000188113464807385,
+          "molar_flow": 0.102738247628221,
+          "mole_fraction": 0.000566219371670016
+        }
+      },
+      "id": "MAT-5a66c3ed-d0b2-4fcf-8acf-974046c3c251",
+      "mass_flow": 9.83905272079741,
+      "molar_flow": 181.44601327433,
+      "pressure": 3601325,
+      "tag": "302",
+      "temperature": 357.679661441382,
+      "total_energy_flow": -51672.6606218292
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 2.55326680748815e-14,
+          "mass_fraction": 2.5952039762262e-15,
+          "molar_flow": 5.80162648402765e-13,
+          "mole_fraction": 5.64669568946275e-15
+        },
+        "Diethylene glycol": {
+          "mass_flow": 5.01140926598992,
+          "mass_fraction": 0.509372119492226,
+          "molar_flow": 47.2238067891746,
+          "mole_fraction": 0.459627083836898
+        },
+        "Ethylene": {
+          "mass_flow": 7.35476028324362e-09,
+          "mass_fraction": 7.47556153367375e-10,
+          "molar_flow": 2.62172257358658e-07,
+          "mole_fraction": 2.55171021367807e-09
+        },
+        "Ethylene glycol": {
+          "mass_flow": 2.4630521421771,
+          "mass_fraction": 0.250350754346699,
+          "molar_flow": 39.6832263242462,
+          "mole_fraction": 0.386234969876127
+        },
+        "Ethylene oxide": {
+          "mass_flow": 5.19494778420547e-07,
+          "mass_fraction": 5.28027431614982e-08,
+          "molar_flow": 1.17926126976627e-05,
+          "mole_fraction": 1.14776943105044e-07
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000157193635552255,
+          "mass_fraction": 1.5977552632817e-05,
+          "molar_flow": 0.00561137296980214,
+          "mole_fraction": 5.46152284153124e-05
+        },
+        "Oxygen": {
+          "mass_flow": 1.04604957313814e-05,
+          "mass_fraction": 1.063230839635e-06,
+          "molar_flow": 0.00032690275045881,
+          "mole_fraction": 3.18172904955403e-06
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 2.36192474763164,
+          "mass_fraction": 0.240071914091538,
+          "molar_flow": 15.7280253283323,
+          "mole_fraction": 0.153080128598006
+        },
+        "Water": {
+          "mass_flow": 0.00185077849380118,
+          "mass_fraction": 0.00018811773576268,
+          "molar_flow": 0.102733817836924,
+          "mole_fraction": 0.00099990340284555
+        }
+      },
+      "id": "MAT-66cb7d4e-4d21-467e-a82e-26e3c1d57efa",
+      "mass_flow": 9.83840511527331,
+      "molar_flow": 102.743742590096,
+      "pressure": 3601324.9979735,
+      "tag": "303",
+      "temperature": 473.15,
+      "total_energy_flow": -56105.764542042
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.05961995671132e-14,
+          "mass_fraction": 3.10966923700288e-15,
+          "molar_flow": 6.95218068078783e-13,
+          "mole_fraction": 3.83154226170665e-15
+        },
+        "Diethylene glycol": {
+          "mass_flow": 1.1992557021831e-06,
+          "mass_fraction": 1.21887313363832e-07,
+          "molar_flow": 1.13008969263506e-05,
+          "mole_fraction": 6.22824206628594e-08
+        },
+        "Ethylene": {
+          "mass_flow": 1.37202833097361e-08,
+          "mass_fraction": 1.3944719780528e-09,
+          "molar_flow": 4.89081561925149e-07,
+          "mole_fraction": 2.69546601272358e-09
+        },
+        "Ethylene glycol": {
+          "mass_flow": 6.37036367001767,
+          "mass_fraction": 0.647457011440974,
+          "molar_flow": 102.635498029538,
+          "mole_fraction": 0.565653089739492
+        },
+        "Ethylene oxide": {
+          "mass_flow": 3.46605627349897,
+          "mass_fraction": 0.352275404132407,
+          "molar_flow": 78.6800193563999,
+          "mole_fraction": 0.433627710725408
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000753003105236173,
+          "mass_fraction": 7.65320734225261e-05,
+          "molar_flow": 0.0268801039943803,
+          "mole_fraction": 0.0001481438115355
+        },
+        "Oxygen": {
+          "mass_flow": 2.77028466699069e-05,
+          "mass_fraction": 2.81560099900163e-06,
+          "molar_flow": 0.000865746423925488,
+          "mole_fraction": 4.77137198168447e-06
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 5.51154063250175e-11,
+          "mass_fraction": 5.60169844486316e-12,
+          "molar_flow": 3.67012754123694e-10,
+          "mole_fraction": 2.02271048837432e-12
+        },
+        "Water": {
+          "mass_flow": 0.00185085829773173,
+          "mass_fraction": 0.000188113464807385,
+          "molar_flow": 0.102738247628221,
+          "mole_fraction": 0.000566219371670016
+        }
+      },
+      "id": "83876032_1813529158_MAT-6ffb2343-5401-41f6-949b-c95eeabf5e41",
+      "mass_flow": 9.83905272079741,
+      "molar_flow": 181.44601327433,
+      "pressure": 3601325,
+      "tag": "301-2",
+      "temperature": 202.521463446969,
+      "total_energy_flow": -54892.3523238933
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.05961995671132e-14,
+          "mass_fraction": 3.10966923700288e-15,
+          "molar_flow": 6.95218068078783e-13,
+          "mole_fraction": 3.83154226170665e-15
+        },
+        "Diethylene glycol": {
+          "mass_flow": 1.1992557021831e-06,
+          "mass_fraction": 1.21887313363832e-07,
+          "molar_flow": 1.13008969263506e-05,
+          "mole_fraction": 6.22824206628594e-08
+        },
+        "Ethylene": {
+          "mass_flow": 1.37202833097361e-08,
+          "mass_fraction": 1.3944719780528e-09,
+          "molar_flow": 4.89081561925149e-07,
+          "mole_fraction": 2.69546601272358e-09
+        },
+        "Ethylene glycol": {
+          "mass_flow": 6.37036367001767,
+          "mass_fraction": 0.647457011440974,
+          "molar_flow": 102.635498029538,
+          "mole_fraction": 0.565653089739492
+        },
+        "Ethylene oxide": {
+          "mass_flow": 3.46605627349897,
+          "mass_fraction": 0.352275404132407,
+          "molar_flow": 78.6800193563999,
+          "mole_fraction": 0.433627710725408
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000753003105236173,
+          "mass_fraction": 7.65320734225261e-05,
+          "molar_flow": 0.0268801039943803,
+          "mole_fraction": 0.0001481438115355
+        },
+        "Oxygen": {
+          "mass_flow": 2.77028466699069e-05,
+          "mass_fraction": 2.81560099900163e-06,
+          "molar_flow": 0.000865746423925488,
+          "mole_fraction": 4.77137198168447e-06
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 5.51154063250175e-11,
+          "mass_fraction": 5.60169844486316e-12,
+          "molar_flow": 3.67012754123694e-10,
+          "mole_fraction": 2.02271048837432e-12
+        },
+        "Water": {
+          "mass_flow": 0.00185085829773173,
+          "mass_fraction": 0.000188113464807385,
+          "molar_flow": 0.102738247628221,
+          "mole_fraction": 0.000566219371670016
+        }
+      },
+      "id": "83876032_1813529158_MAT-3af2af2e-0b6a-4ed2-88bd-e08a7b66226f",
+      "mass_flow": 9.83905272079741,
+      "molar_flow": 181.44601327433,
+      "pressure": 101325,
+      "tag": "301",
+      "temperature": 361.588801548058,
+      "total_energy_flow": -50159.1651329036
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.05961995671132e-14,
+          "mass_fraction": 3.10966923700288e-15,
+          "molar_flow": 6.95218068078783e-13,
+          "mole_fraction": 3.83154226170665e-15
+        },
+        "Diethylene glycol": {
+          "mass_flow": 1.1992557021831e-06,
+          "mass_fraction": 1.21887313363832e-07,
+          "molar_flow": 1.13008969263506e-05,
+          "mole_fraction": 6.22824206628594e-08
+        },
+        "Ethylene": {
+          "mass_flow": 1.37202833097361e-08,
+          "mass_fraction": 1.3944719780528e-09,
+          "molar_flow": 4.89081561925149e-07,
+          "mole_fraction": 2.69546601272358e-09
+        },
+        "Ethylene glycol": {
+          "mass_flow": 6.37036367001767,
+          "mass_fraction": 0.647457011440974,
+          "molar_flow": 102.635498029538,
+          "mole_fraction": 0.565653089739492
+        },
+        "Ethylene oxide": {
+          "mass_flow": 3.46605627349897,
+          "mass_fraction": 0.352275404132407,
+          "molar_flow": 78.6800193563999,
+          "mole_fraction": 0.433627710725408
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000753003105236173,
+          "mass_fraction": 7.65320734225261e-05,
+          "molar_flow": 0.0268801039943803,
+          "mole_fraction": 0.0001481438115355
+        },
+        "Oxygen": {
+          "mass_flow": 2.77028466699069e-05,
+          "mass_fraction": 2.81560099900163e-06,
+          "molar_flow": 0.000865746423925488,
+          "mole_fraction": 4.77137198168447e-06
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 5.51154063250175e-11,
+          "mass_fraction": 5.60169844486316e-12,
+          "molar_flow": 3.67012754123694e-10,
+          "mole_fraction": 2.02271048837432e-12
+        },
+        "Water": {
+          "mass_flow": 0.00185085829773173,
+          "mass_fraction": 0.000188113464807385,
+          "molar_flow": 0.102738247628221,
+          "mole_fraction": 0.000566219371670016
+        }
+      },
+      "id": "83876032_1813529158_MAT-965d9847-8e25-400c-a43c-f3fc1a03af00",
+      "mass_flow": 9.83905272079741,
+      "molar_flow": 181.44601327433,
+      "pressure": 101325,
+      "tag": "301-1",
+      "temperature": 201.883497991842,
+      "total_energy_flow": -54934.7201634916
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 5.06352953587229e-15,
+          "mass_fraction": 7.81884858525206e-12,
+          "molar_flow": 1.15055375222902e-13,
+          "mole_fraction": 5.16182663812406e-12
+        },
+        "Diethylene glycol": {
+          "mass_flow": 1.10417004145078e-05,
+          "mass_fraction": 0.0170500405010236,
+          "molar_flow": 0.000104048801309718,
+          "mole_fraction": 0.00466802940084174
+        },
+        "Ethylene": {
+          "mass_flow": 6.36552214920034e-09,
+          "mass_fraction": 9.82932033832636e-06,
+          "molar_flow": 2.26909273294001e-07,
+          "mole_fraction": 1.01800226982634e-05
+        },
+        "Ethylene glycol": {
+          "mass_flow": 2.05236211895207e-05,
+          "mass_fraction": 0.0316915474403941,
+          "molar_flow": 0.000330664337433375,
+          "mole_fraction": 0.0148348739199235
+        },
+        "Ethylene oxide": {
+          "mass_flow": 1.45872759624414e-06,
+          "mass_fraction": 0.00225249405999502,
+          "molar_flow": 3.31133445194591e-05,
+          "mole_fraction": 0.00148559198982909
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000595809421535953,
+          "mass_fraction": 0.920019053834493,
+          "molar_flow": 0.0212687293058305,
+          "mole_fraction": 0.954196996682631
+        },
+        "Oxygen": {
+          "mass_flow": 1.72423491671707e-05,
+          "mass_fraction": 0.0266247716019159,
+          "molar_flow": 0.000538843618109764,
+          "mole_fraction": 0.0241745971133776
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 1.44365308013038e-06,
+          "mass_fraction": 0.00222921674756809,
+          "molar_flow": 9.61326656676218e-06,
+          "mole_fraction": 0.000431288111029717
+        },
+        "Water": {
+          "mass_flow": 7.96855843474919e-08,
+          "mass_fraction": 0.000123046486453058,
+          "molar_flow": 4.4232220841137e-06,
+          "mole_fraction": 0.000198442754507415
+        }
+      },
+      "id": "83876032_1813529158_MAT-fbdd6f76-3171-4f61-8900-3382d6becaf6",
+      "mass_flow": 0.000647605524095087,
+      "molar_flow": 0.0222896628052421,
+      "pressure": 3601324.9979735,
+      "tag": "stack-2",
+      "temperature": 473.15,
+      "total_energy_flow": -0.0754285300879498
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 2.64037969321913e-14,
+          "mass_fraction": 1.71900701968389e-15,
+          "molar_flow": 5.99956757795278e-13,
+          "mole_fraction": 9.97228290693036e-16
+        },
+        "Diethylene glycol": {
+          "mass_flow": 1.19925570225874e-06,
+          "mass_fraction": 7.80769893009331e-08,
+          "molar_flow": 1.13008969270634e-05,
+          "mole_fraction": 1.87839773107767e-08
+        },
+        "Ethylene": {
+          "mass_flow": 8.07404938808192e-09,
+          "mass_fraction": 5.2565726100043e-10,
+          "molar_flow": 2.87812474176952e-07,
+          "mole_fraction": 4.78392380674797e-10
+        },
+        "Ethylene glycol": {
+          "mass_flow": 6.3703639374928,
+          "mass_fraction": 0.414739605618623,
+          "molar_flow": 102.635502338938,
+          "mole_fraction": 0.17059733927825
+        },
+        "Ethylene oxide": {
+          "mass_flow": 9.26250902887983e-05,
+          "mass_fraction": 6.03031377699981e-06,
+          "molar_flow": 0.0021026040322923,
+          "mole_fraction": 3.49487891899471e-06
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000181557830983462,
+          "mass_fraction": 1.18202388368865e-05,
+          "molar_flow": 0.00648110657697608,
+          "mole_fraction": 1.07726811133989e-05
+        },
+        "Oxygen": {
+          "mass_flow": 1.16641312588115e-05,
+          "mass_fraction": 7.59387885155474e-07,
+          "molar_flow": 0.000364517771254283,
+          "mole_fraction": 6.05889389913635e-07
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 5.51154063250195e-11,
+          "mass_fraction": 3.58826310506606e-12,
+          "molar_flow": 3.67012754123707e-10,
+          "mole_fraction": 6.10036467965272e-13
+        },
+        "Water": {
+          "mass_flow": 8.98926123056129,
+          "mass_fraction": 0.585241705834641,
+          "molar_flow": 498.979823270095,
+          "mole_fraction": 0.829387768009347
+        }
+      },
+      "id": "MAT-32927ff0-4b05-4c2f-a6ea-325f7b2a1b1d",
+      "mass_flow": 15.3599122224915,
+      "molar_flow": 601.624285426491,
+      "pressure": 100000,
+      "tag": "206",
+      "temperature": 323.15,
+      "total_energy_flow": -188514.555728198
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 3.21988803980514e-12,
+          "molar_flow": 0,
+          "mole_fraction": 2.008396559214e-12
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 1.25692820587867e-11,
+          "molar_flow": 0,
+          "mole_fraction": 3.25137248384616e-12
+        },
+        "Ethylene": {
+          "mass_flow": 0,
+          "mass_fraction": 5.22865176801391e-06,
+          "molar_flow": 0,
+          "mole_fraction": 5.11638317393577e-06
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0.000211085887542674,
+          "molar_flow": 0,
+          "mole_fraction": 9.33571745228221e-05
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0,
+          "mass_fraction": 1.25431190428667e-05,
+          "molar_flow": 0,
+          "mole_fraction": 7.81608952142491e-06
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0.927622652066538,
+          "molar_flow": 0,
+          "mole_fraction": 0.908993243282365
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0.0285875133457223,
+          "molar_flow": 0,
+          "mole_fraction": 0.0245243677933063
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 2.45915381345311e-20,
+          "molar_flow": 0,
+          "mole_fraction": 4.49519948217189e-21
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0.0435609769135966,
+          "molar_flow": 0,
+          "mole_fraction": 0.0663760992718506
+        }
+      },
+      "id": "MAT-65610833-df4b-45a3-8015-c0d0eb44582c",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 100000,
+      "tag": "205",
+      "temperature": 323.15,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 1.1992557021831e-06,
+          "mass_fraction": 1.88200737929193e-07,
+          "molar_flow": 1.13008969263506e-05,
+          "mole_fraction": 1.0999697963243e-07
+        },
+        "Ethylene": {
+          "mass_flow": 4.55474206566662e-25,
+          "mass_fraction": 7.1478152346923e-26,
+          "molar_flow": 1.62361105332398e-23,
+          "mole_fraction": 1.5803375e-25
+        },
+        "Ethylene glycol": {
+          "mass_flow": 6.37036367001767,
+          "mass_fraction": 0.999709354220444,
+          "molar_flow": 102.635498029538,
+          "mole_fraction": 0.99899988999945
+        },
+        "Ethylene oxide": {
+          "mass_flow": 1.87937827527181e-17,
+          "mass_fraction": 2.94933247021783e-18,
+          "molar_flow": 4.26621807057708e-16,
+          "mole_fraction": 4.1525120109941e-18
+        },
+        "Nitrogen": {
+          "mass_flow": 3.59147246016397e-23,
+          "mass_fraction": 5.63614386844115e-24,
+          "molar_flow": 1.28205518079347e-21,
+          "mole_fraction": 1.247885e-23
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 5.51154063250175e-11,
+          "mass_fraction": 8.64933151683439e-12,
+          "molar_flow": 3.67012754123694e-10,
+          "mole_fraction": 3.5723088798424e-12
+        },
+        "Water": {
+          "mass_flow": 0.00185085829683384,
+          "mass_fraction": 0.000290457570168231,
+          "molar_flow": 0.10273824757838,
+          "mole_fraction": 0.001
+        }
+      },
+      "id": "MAT-eac868a8-a14f-4bbb-bea3-0d8f4c92fec3",
+      "mass_flow": 6.37221572762532,
+      "molar_flow": 102.73824757838,
+      "pressure": 101325,
+      "tag": "207",
+      "temperature": 469.636970226979,
+      "total_energy_flow": -44129.8615332194
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 2.6403796932192e-14,
+          "mass_fraction": 2.93777131295813e-15,
+          "molar_flow": 5.99956757795294e-13,
+          "mole_fraction": 1.2025928013202e-15
+        },
+        "Diethylene glycol": {
+          "mass_flow": 7.56465252910405e-17,
+          "mass_fraction": 8.41667554464605e-18,
+          "molar_flow": 7.12836790014366e-16,
+          "mole_fraction": 1.4288569651881e-18
+        },
+        "Ethylene": {
+          "mass_flow": 8.07404938808193e-09,
+          "mass_fraction": 8.98344686282403e-10,
+          "molar_flow": 2.87812474176953e-07,
+          "mole_fraction": 5.7691026074492e-10
+        },
+        "Ethylene glycol": {
+          "mass_flow": 2.67474975439804e-07,
+          "mass_fraction": 2.97601254773779e-08,
+          "molar_flow": 4.30939719248816e-06,
+          "mole_fraction": 8.6380392826311e-09
+        },
+        "Ethylene oxide": {
+          "mass_flow": 9.26250902887796e-05,
+          "mass_fraction": 1.03057652582826e-05,
+          "molar_flow": 0.00210260403229187,
+          "mole_fraction": 4.2145978696081e-06
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000181557830983467,
+          "mass_fraction": 2.02007078328886e-05,
+          "molar_flow": 0.00648110657697628,
+          "mole_fraction": 1.299115646718e-05
+        },
+        "Oxygen": {
+          "mass_flow": 1.16641312588117e-05,
+          "mass_fraction": 1.29778873435194e-06,
+          "molar_flow": 0.000364517771254286,
+          "mole_fraction": 7.3066340526705e-07
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 8.98741037226451,
+          "mass_fraction": 0.999968165079701,
+          "molar_flow": 498.877085022521,
+          "mole_fraction": 0.99998205436731
+        }
+      },
+      "id": "MAT-9580a32a-723a-413a-b816-43d01c9af1d0",
+      "mass_flow": 8.9876964948661,
+      "molar_flow": 498.88603784811,
+      "pressure": 101325,
+      "tag": "208",
+      "temperature": 372.44869955572,
+      "total_energy_flow": -139712.366375561
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 4.40095e-12,
+          "mass_fraction": 2.38462071041405e-13,
+          "molar_flow": 1e-10,
+          "mole_fraction": 1.80684616695076e-13
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 2.09216578746865e-05,
+          "mass_fraction": 1.13362384630988e-06,
+          "molar_flow": 0.000745786138698332,
+          "mole_fraction": 1.34752082607209e-06
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 8.04351738361427,
+          "mass_fraction": 0.435831766721776,
+          "molar_flow": 182.58910228178,
+          "mole_fraction": 0.329910419584815
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2277665138989,
+          "mass_fraction": 0.554183616044777,
+          "molar_flow": 365.102647800656,
+          "mole_fraction": 0.659684319722189
+        },
+        "Oxygen": {
+          "mass_flow": 0.18425073638887,
+          "mass_fraction": 0.00998348360926478,
+          "molar_flow": 5.75805143908115,
+          "mole_fraction": 0.0104039131718091
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 1.801528e-12,
+          "mass_fraction": 9.76144009632192e-14,
+          "molar_flow": 1e-10,
+          "mole_fraction": 1.80684616695076e-13
+        }
+      },
+      "id": "MAT-c65b099f-cfc6-4d44-becf-0988253eb23b",
+      "mass_flow": 18.4555555555661,
+      "molar_flow": 553.450547307857,
+      "pressure": 3500000,
+      "tag": "105",
+      "temperature": 273.15,
+      "total_energy_flow": -14624.9385169052
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 4.40095e-12,
+          "mass_fraction": 2.38462071041405e-13,
+          "molar_flow": 1e-10,
+          "mole_fraction": 1.80684616695076e-13
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 2.09216578746865e-05,
+          "mass_fraction": 1.13362384630988e-06,
+          "molar_flow": 0.000745786138698332,
+          "mole_fraction": 1.34752082607209e-06
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 8.04351738361427,
+          "mass_fraction": 0.435831766721776,
+          "molar_flow": 182.58910228178,
+          "mole_fraction": 0.329910419584815
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2277665138989,
+          "mass_fraction": 0.554183616044777,
+          "molar_flow": 365.102647800656,
+          "mole_fraction": 0.659684319722189
+        },
+        "Oxygen": {
+          "mass_flow": 0.18425073638887,
+          "mass_fraction": 0.00998348360926478,
+          "molar_flow": 5.75805143908115,
+          "mole_fraction": 0.0104039131718091
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 1.801528e-12,
+          "mass_fraction": 9.76144009632192e-14,
+          "molar_flow": 1e-10,
+          "mole_fraction": 1.80684616695076e-13
+        }
+      },
+      "id": "MAT-3e8adaff-2a54-4d86-a899-5a7414781978",
+      "mass_flow": 18.4555555555661,
+      "molar_flow": 553.450547307857,
+      "pressure": 3500000,
+      "tag": "104-3",
+      "temperature": 543.07710233315,
+      "total_energy_flow": -4053.26889139912
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.05961995671132e-14,
+          "mass_fraction": 1.99178447631171e-15,
+          "molar_flow": 6.95218068078783e-13,
+          "mole_fraction": 9.87081265545364e-16
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 1.37202833097361e-08,
+          "mass_fraction": 8.93177835599713e-10,
+          "molar_flow": 4.89081561925149e-07,
+          "mole_fraction": 6.94405495579369e-10
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 4.52153032596593,
+          "mass_fraction": 0.294347469288692,
+          "molar_flow": 102.639445379926,
+          "mole_fraction": 0.145729057244541
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000753003105236174,
+          "mass_fraction": 4.90198102000886e-05,
+          "molar_flow": 0.0268801039943803,
+          "mole_fraction": 3.81647835219339e-05
+        },
+        "Oxygen": {
+          "mass_flow": 2.77028466699069e-05,
+          "mass_fraction": 1.80342986146793e-06,
+          "molar_flow": 0.000865746423925488,
+          "mole_fraction": 1.22920003809927e-06
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 10.8388888888898,
+          "mass_fraction": 0.705601706578066,
+          "molar_flow": 601.649760030918,
+          "mole_fraction": 0.854231548077493
+        }
+      },
+      "id": "MAT-43cb9a40-8a2b-4198-aeb6-4884b4cbba5d",
+      "mass_flow": 15.3611999345279,
+      "molar_flow": 704.316951750345,
+      "pressure": 100000,
+      "tag": "202-1",
+      "temperature": 303.46237394536,
+      "total_energy_flow": -179585.324660398
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.05961995671132e-14,
+          "mass_fraction": 8.82539318328847e-15,
+          "molar_flow": 6.95218068078783e-13,
+          "mole_fraction": 8.83290310595812e-15
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 1.37202833097361e-08,
+          "mass_fraction": 3.95757958529868e-09,
+          "molar_flow": 4.89081561925149e-07,
+          "mole_fraction": 6.21389208041403e-09
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 3.46605627349897,
+          "mass_fraction": 0.999774803466487,
+          "molar_flow": 78.6800193563999,
+          "mole_fraction": 0.999647476468109
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000753003105236173,
+          "mass_fraction": 0.000217201762505479,
+          "molar_flow": 0.0268801039943803,
+          "mole_fraction": 0.000341517812844779
+        },
+        "Oxygen": {
+          "mass_flow": 2.77028466699069e-05,
+          "mass_fraction": 7.99081316037284e-06,
+          "molar_flow": 0.000865746423925488,
+          "mole_fraction": 1.09995045122979e-05
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 8.97896691722867e-13,
+          "mass_fraction": 2.58995935918322e-13,
+          "molar_flow": 4.98408402046966e-11,
+          "mole_fraction": 6.3323916978196e-13
+        }
+      },
+      "id": "MAT-6ac730fd-65b2-4f9e-8cab-373e282d5f9e",
+      "mass_flow": 3.46683699317209,
+      "molar_flow": 78.7077656959503,
+      "pressure": 3500000,
+      "tag": "108",
+      "temperature": 303.15,
+      "total_energy_flow": -6029.3035992325
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.05961995671132e-14,
+          "mass_fraction": 8.82539318328847e-15,
+          "molar_flow": 6.95218068078783e-13,
+          "mole_fraction": 8.83290310595812e-15
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 1.37202833097361e-08,
+          "mass_fraction": 3.95757958529868e-09,
+          "molar_flow": 4.89081561925149e-07,
+          "mole_fraction": 6.21389208041403e-09
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 3.46605627349897,
+          "mass_fraction": 0.999774803466487,
+          "molar_flow": 78.6800193563999,
+          "mole_fraction": 0.999647476468109
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000753003105236173,
+          "mass_fraction": 0.000217201762505479,
+          "molar_flow": 0.0268801039943803,
+          "mole_fraction": 0.000341517812844779
+        },
+        "Oxygen": {
+          "mass_flow": 2.77028466699069e-05,
+          "mass_fraction": 7.99081316037284e-06,
+          "molar_flow": 0.000865746423925488,
+          "mole_fraction": 1.09995045122979e-05
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 8.97896691722867e-13,
+          "mass_fraction": 2.58995935918322e-13,
+          "molar_flow": 4.98408402046966e-11,
+          "mole_fraction": 6.3323916978196e-13
+        }
+      },
+      "id": "MAT-553d8ab1-48fb-401d-8fef-bbab09a95fbd",
+      "mass_flow": 3.46683699317209,
+      "molar_flow": 78.7077656959503,
+      "pressure": 3500000,
+      "tag": "107",
+      "temperature": 303.15,
+      "total_energy_flow": -6029.3035992325
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 1.05547405246696,
+          "mass_fraction": 0.0887373336151658,
+          "molar_flow": 23.9594260235264,
+          "mole_fraction": 0.0382977529064659
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 10.8388888888889,
+          "mass_fraction": 0.911262666384834,
+          "molar_flow": 601.649760030868,
+          "mole_fraction": 0.961702247093534
+        }
+      },
+      "id": "1636629647_MAT-b28c5cee-894f-4c7d-ac84-b2aeec423672",
+      "mass_flow": 11.8943629413559,
+      "molar_flow": 625.609186054395,
+      "pressure": 100000,
+      "tag": "201",
+      "temperature": 303.237492696479,
+      "total_energy_flow": -173556.021061171
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 4.19240263492194e-15,
+          "mass_fraction": 3.25569888012427e-12,
+          "molar_flow": 9.52613102835057e-14,
+          "mole_fraction": 1.6813599632038e-12
+        },
+        "Diethylene glycol": {
+          "mass_flow": 3.53007198792949e-12,
+          "mass_fraction": 2.74135201665191e-09,
+          "molar_flow": 3.32647821524371e-11,
+          "mole_fraction": 5.87122649576742e-10
+        },
+        "Ethylene": {
+          "mass_flow": 5.64623392165421e-09,
+          "mass_fraction": 4.38470229517721e-06,
+          "molar_flow": 2.01269087748197e-07,
+          "mole_fraction": 3.55239482811276e-06
+        },
+        "Ethylene glycol": {
+          "mass_flow": 3.00461265819164e-05,
+          "mass_fraction": 0.0233329546761527,
+          "molar_flow": 0.000484085261899179,
+          "mole_fraction": 0.00854409387937249
+        },
+        "Ethylene oxide": {
+          "mass_flow": 5.87550460904797e-05,
+          "mass_fraction": 0.0456274729352148,
+          "molar_flow": 0.00133374873311516,
+          "mole_fraction": 0.0235406348512289
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000571445274252713,
+          "mass_fraction": 0.443767906245364,
+          "molar_flow": 0.0203989974174043,
+          "mole_fraction": 0.360041841174001
+        },
+        "Oxygen": {
+          "mass_flow": 1.60387154110954e-05,
+          "mass_fraction": 0.0124552034596046,
+          "molar_flow": 0.000501228652671206,
+          "mole_fraction": 0.00884667433718753
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 1.68377536358151e-19,
+          "mass_fraction": 1.30757134821218e-16,
+          "molar_flow": 1.12122376431284e-18,
+          "mole_fraction": 1.97895739781218e-17
+        },
+        "Water": {
+          "mass_flow": 0.000611421224323845,
+          "mass_fraction": 0.47481207523676,
+          "molar_flow": 0.0339390353257815,
+          "mole_fraction": 0.599023202774578
+        }
+      },
+      "id": "1636629647_MAT-7b51ef04-ec07-46eb-9cdb-bef0354c6357",
+      "mass_flow": 0.00128771203642824,
+      "molar_flow": 0.0566572966933191,
+      "pressure": 1750000,
+      "tag": "stack-1",
+      "temperature": 463.15,
+      "total_energy_flow": -8.15445898406218
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.05961995671132e-14,
+          "mass_fraction": 1.99178447631171e-15,
+          "molar_flow": 6.95218068078783e-13,
+          "mole_fraction": 9.87081265545364e-16
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 1.37202833097361e-08,
+          "mass_fraction": 8.93177835599713e-10,
+          "molar_flow": 4.89081561925149e-07,
+          "mole_fraction": 6.94405495579369e-10
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 4.52153032596593,
+          "mass_fraction": 0.294347469288692,
+          "molar_flow": 102.639445379926,
+          "mole_fraction": 0.145729057244541
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000753003105236174,
+          "mass_fraction": 4.90198102000886e-05,
+          "molar_flow": 0.0268801039943803,
+          "mole_fraction": 3.81647835219339e-05
+        },
+        "Oxygen": {
+          "mass_flow": 2.77028466699069e-05,
+          "mass_fraction": 1.80342986146793e-06,
+          "molar_flow": 0.000865746423925488,
+          "mole_fraction": 1.22920003809927e-06
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 10.8388888888898,
+          "mass_fraction": 0.705601706578066,
+          "molar_flow": 601.649760030918,
+          "mole_fraction": 0.854231548077493
+        }
+      },
+      "id": "MAT-30a9a834-54b8-4b5b-8726-8c358b032c26",
+      "mass_flow": 15.3611999345279,
+      "molar_flow": 704.316951750345,
+      "pressure": 1750000,
+      "tag": "202",
+      "temperature": 413.15,
+      "total_energy_flow": -172819.489973911
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 3.05961995671132e-14,
+          "mass_fraction": 1.99178447631171e-15,
+          "molar_flow": 6.95218068078783e-13,
+          "mole_fraction": 9.87081265545364e-16
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 1.37202833097361e-08,
+          "mass_fraction": 8.93177835599712e-10,
+          "molar_flow": 4.89081561925149e-07,
+          "mole_fraction": 6.94405495579369e-10
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 4.52153032596593,
+          "mass_fraction": 0.294347469288692,
+          "molar_flow": 102.639445379926,
+          "mole_fraction": 0.145729057244541
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000753003105236173,
+          "mass_fraction": 4.90198102000886e-05,
+          "molar_flow": 0.0268801039943803,
+          "mole_fraction": 3.81647835219339e-05
+        },
+        "Oxygen": {
+          "mass_flow": 2.77028466699069e-05,
+          "mass_fraction": 1.80342986146793e-06,
+          "molar_flow": 0.000865746423925488,
+          "mole_fraction": 1.22920003809927e-06
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 10.8388888888898,
+          "mass_fraction": 0.705601706578066,
+          "molar_flow": 601.649760030918,
+          "mole_fraction": 0.854231548077493
+        }
+      },
+      "id": "1636629647_MAT-b6d72ce9-0312-43d7-be26-8f897d0dfec1",
+      "mass_flow": 15.3611999345279,
+      "molar_flow": 704.316951750345,
+      "pressure": 1750000,
+      "tag": "202-2",
+      "temperature": 303.623322379315,
+      "total_energy_flow": -179550.584139725
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 6.11923991342264e-14,
+          "mass_fraction": 8.82539318328847e-15,
+          "molar_flow": 1.39043613615757e-12,
+          "mole_fraction": 8.83290310595812e-15
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 2.74405666194722e-08,
+          "mass_fraction": 3.95757958529868e-09,
+          "molar_flow": 9.78163123850298e-07,
+          "mole_fraction": 6.21389208041403e-09
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 6.93211254699794,
+          "mass_fraction": 0.999774803466487,
+          "molar_flow": 157.3600387128,
+          "mole_fraction": 0.999647476468109
+        },
+        "Nitrogen": {
+          "mass_flow": 0.00150600621047235,
+          "mass_fraction": 0.000217201762505479,
+          "molar_flow": 0.0537602079887606,
+          "mole_fraction": 0.000341517812844779
+        },
+        "Oxygen": {
+          "mass_flow": 5.54056933398138e-05,
+          "mass_fraction": 7.99081316037284e-06,
+          "molar_flow": 0.00173149284785098,
+          "mole_fraction": 1.09995045122979e-05
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 1.79579338344573e-12,
+          "mass_fraction": 2.58995935918322e-13,
+          "molar_flow": 9.96816804093932e-11,
+          "mole_fraction": 6.3323916978196e-13
+        }
+      },
+      "id": "MAT-07429970-6fa3-4b01-a919-4ab3d130b80f",
+      "mass_flow": 6.93367398634417,
+      "molar_flow": 157.415531391901,
+      "pressure": 3500000,
+      "tag": "109",
+      "temperature": 303.15,
+      "total_energy_flow": -12058.607198465
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 4.33985488845969e-12,
+          "mass_fraction": 3.76666494029125e-13,
+          "molar_flow": 9.86117744682328e-11,
+          "mole_fraction": 2.489976151229e-13
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 2.08947013323159e-05,
+          "mass_fraction": 1.81350162549386e-06,
+          "molar_flow": 0.000744825229397183,
+          "mole_fraction": 1.88070549184784e-06
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 1.11102531838627,
+          "mass_fraction": 0.0964285724315265,
+          "molar_flow": 25.2204484458173,
+          "mole_fraction": 0.0636823700739872
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2264981010232,
+          "mass_fraction": 0.88758248487775,
+          "molar_flow": 365.057369009945,
+          "mole_fraction": 0.921780535404513
+        },
+        "Oxygen": {
+          "mass_flow": 0.184199608571344,
+          "mass_fraction": 0.0159871291887205,
+          "molar_flow": 5.7564536348658,
+          "mole_fraction": 0.0145352138157587
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 5.62974224430198e-15,
+          "mass_fraction": 4.88618934952801e-16,
+          "molar_flow": 3.12498181782463e-13,
+          "mole_fraction": 7.89067050194318e-16
+        }
+      },
+      "id": "MAT-8cdbf9e8-122b-48e2-999f-038903ae1827",
+      "mass_flow": 11.5217439226865,
+      "molar_flow": 396.035015915956,
+      "pressure": 3500000,
+      "tag": "106",
+      "temperature": 303.15,
+      "total_energy_flow": -1267.14097824406
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 4.40095e-12,
+          "mass_fraction": 2.38462071041405e-13,
+          "molar_flow": 1e-10,
+          "mole_fraction": 1.80684616695076e-13
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 2.09216578746865e-05,
+          "mass_fraction": 1.13362384630988e-06,
+          "molar_flow": 0.000745786138698332,
+          "mole_fraction": 1.34752082607209e-06
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 8.04351738361427,
+          "mass_fraction": 0.435831766721776,
+          "molar_flow": 182.58910228178,
+          "mole_fraction": 0.329910419584815
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2277665138989,
+          "mass_fraction": 0.554183616044777,
+          "molar_flow": 365.102647800656,
+          "mole_fraction": 0.659684319722189
+        },
+        "Oxygen": {
+          "mass_flow": 0.18425073638887,
+          "mass_fraction": 0.00998348360926478,
+          "molar_flow": 5.75805143908115,
+          "mole_fraction": 0.0104039131718091
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 1.801528e-12,
+          "mass_fraction": 9.76144009632192e-14,
+          "molar_flow": 1e-10,
+          "mole_fraction": 1.80684616695076e-13
+        }
+      },
+      "id": "MAT-20c49f83-1bce-4764-a80e-eb3e5a73d2ea",
+      "mass_flow": 18.4555555555661,
+      "molar_flow": 553.450547307857,
+      "pressure": 1916745.67579916,
+      "tag": "104-2",
+      "temperature": 473.15,
+      "total_energy_flow": -5788.50275725919
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 4.40095e-12,
+          "mass_fraction": 2.38462071041405e-13,
+          "molar_flow": 1e-10,
+          "mole_fraction": 1.80684616695076e-13
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 2.09216578746865e-05,
+          "mass_fraction": 1.13362384630988e-06,
+          "molar_flow": 0.000745786138698332,
+          "mole_fraction": 1.34752082607209e-06
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 8.04351738361427,
+          "mass_fraction": 0.435831766721776,
+          "molar_flow": 182.58910228178,
+          "mole_fraction": 0.329910419584815
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2277665138989,
+          "mass_fraction": 0.554183616044777,
+          "molar_flow": 365.102647800656,
+          "mole_fraction": 0.659684319722189
+        },
+        "Oxygen": {
+          "mass_flow": 0.18425073638887,
+          "mass_fraction": 0.00998348360926478,
+          "molar_flow": 5.75805143908115,
+          "mole_fraction": 0.0104039131718091
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 1.801528e-12,
+          "mass_fraction": 9.76144009632192e-14,
+          "molar_flow": 1e-10,
+          "mole_fraction": 1.80684616695076e-13
+        }
+      },
+      "id": "MAT-f842c3ec-f847-4488-8ab8-84c4874e3112",
+      "mass_flow": 18.4555555555661,
+      "molar_flow": 553.450547307857,
+      "pressure": 1916745.67579916,
+      "tag": "104",
+      "temperature": 461.254819468907,
+      "total_energy_flow": -6072.27329980626
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 5.12222222222222,
+          "mass_fraction": 0.277543648404576,
+          "molar_flow": 182.589848067819,
+          "mole_fraction": 0.283196954125325
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2277665138989,
+          "mass_fraction": 0.554183616045096,
+          "molar_flow": 365.102647800656,
+          "mole_fraction": 0.566274406240993
+        },
+        "Oxygen": {
+          "mass_flow": 3.10556681943439,
+          "mass_fraction": 0.168272735550328,
+          "molar_flow": 97.0526025799214,
+          "mole_fraction": 0.150528639633682
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-f70dea07-6214-4121-b49a-5149c6df0125",
+      "mass_flow": 18.4555555555555,
+      "molar_flow": 644.745098448397,
+      "pressure": 2000000,
+      "tag": "103",
+      "temperature": 453.15,
+      "total_energy_flow": 13125.144797582
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 5.12222222222222,
+          "mass_fraction": 0.277543648404576,
+          "molar_flow": 182.589848067819,
+          "mole_fraction": 0.283196954125325
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2277665138989,
+          "mass_fraction": 0.554183616045096,
+          "molar_flow": 365.102647800656,
+          "mole_fraction": 0.566274406240993
+        },
+        "Oxygen": {
+          "mass_flow": 3.10556681943439,
+          "mass_fraction": 0.168272735550328,
+          "molar_flow": 97.0526025799214,
+          "mole_fraction": 0.150528639633682
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-05dbf704-51f3-44d3-8684-0dfdc782fb35",
+      "mass_flow": 18.4555555555555,
+      "molar_flow": 644.745098448397,
+      "pressure": 447213.595499958,
+      "tag": "103-2",
+      "temperature": 466.53751359634,
+      "total_energy_flow": 13452.8888709638
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 5.12222222222222,
+          "mass_fraction": 0.277543648404576,
+          "molar_flow": 182.589848067819,
+          "mole_fraction": 0.283196954125325
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2277665138989,
+          "mass_fraction": 0.554183616045096,
+          "molar_flow": 365.102647800656,
+          "mole_fraction": 0.566274406240993
+        },
+        "Oxygen": {
+          "mass_flow": 3.10556681943439,
+          "mass_fraction": 0.168272735550328,
+          "molar_flow": 97.0526025799214,
+          "mole_fraction": 0.150528639633682
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-52985690-1e97-4244-b296-103341905d21",
+      "mass_flow": 18.4555555555555,
+      "molar_flow": 644.745098448397,
+      "pressure": 2000000,
+      "tag": "103-2",
+      "temperature": 686.622523879936,
+      "total_energy_flow": 19318.1750813285
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2277665138989,
+          "mass_fraction": 0.76708248854242,
+          "molar_flow": 365.102647800657,
+          "mole_fraction": 0.79
+        },
+        "Oxygen": {
+          "mass_flow": 3.10556681943439,
+          "mass_fraction": 0.23291751145758,
+          "molar_flow": 97.0526025799214,
+          "mole_fraction": 0.21
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-cd9c1465-e95a-4784-85b4-3feb4f8681b1",
+      "mass_flow": 13.3333333333333,
+      "molar_flow": 462.155250380578,
+      "pressure": 101325,
+      "tag": "102",
+      "temperature": 303.15,
+      "total_energy_flow": 67.4541593273501
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 5.12222222222222,
+          "mass_fraction": 1,
+          "molar_flow": 182.589848067819,
+          "mole_fraction": 1
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-dd848894-22dc-47cd-9fb2-c2be7ace34f6",
+      "mass_flow": 5.12222222222222,
+      "molar_flow": 182.589848067819,
+      "pressure": 101325,
+      "tag": "101",
+      "temperature": 303.15,
+      "total_energy_flow": 9627.28740579639
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 5.12222222222222,
+          "mass_fraction": 0.277543648404576,
+          "molar_flow": 182.589848067819,
+          "mole_fraction": 0.283196954125325
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2277665138989,
+          "mass_fraction": 0.554183616045096,
+          "molar_flow": 365.102647800656,
+          "mole_fraction": 0.566274406240993
+        },
+        "Oxygen": {
+          "mass_flow": 3.10556681943439,
+          "mass_fraction": 0.168272735550328,
+          "molar_flow": 97.0526025799214,
+          "mole_fraction": 0.150528639633682
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-4240db89-7a50-4f45-abbb-da078eaa1a35",
+      "mass_flow": 18.4555555555555,
+      "molar_flow": 644.745098448397,
+      "pressure": 101325,
+      "tag": "103-1",
+      "temperature": 303.15,
+      "total_energy_flow": 9694.74156512375
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 2.64037969321913e-14,
+          "mass_fraction": 1.71900701968389e-15,
+          "molar_flow": 5.99956757795278e-13,
+          "mole_fraction": 9.97228290693036e-16
+        },
+        "Diethylene glycol": {
+          "mass_flow": 1.19925570225874e-06,
+          "mass_fraction": 7.8076989300933e-08,
+          "molar_flow": 1.13008969270634e-05,
+          "mole_fraction": 1.87839773107766e-08
+        },
+        "Ethylene": {
+          "mass_flow": 8.07404938808192e-09,
+          "mass_fraction": 5.2565726100043e-10,
+          "molar_flow": 2.87812474176953e-07,
+          "mole_fraction": 4.78392380674797e-10
+        },
+        "Ethylene glycol": {
+          "mass_flow": 6.3703639374928,
+          "mass_fraction": 0.414739605618623,
+          "molar_flow": 102.635502338938,
+          "mole_fraction": 0.17059733927825
+        },
+        "Ethylene oxide": {
+          "mass_flow": 9.26250902887983e-05,
+          "mass_fraction": 6.03031377699981e-06,
+          "molar_flow": 0.0021026040322923,
+          "mole_fraction": 3.49487891899471e-06
+        },
+        "Nitrogen": {
+          "mass_flow": 0.000181557830983462,
+          "mass_fraction": 1.18202388368865e-05,
+          "molar_flow": 0.00648110657697608,
+          "mole_fraction": 1.07726811133989e-05
+        },
+        "Oxygen": {
+          "mass_flow": 1.16641312588115e-05,
+          "mass_fraction": 7.59387885155474e-07,
+          "molar_flow": 0.000364517771254283,
+          "mole_fraction": 6.05889389913634e-07
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 5.51154063250195e-11,
+          "mass_fraction": 3.58826310506606e-12,
+          "molar_flow": 3.67012754123707e-10,
+          "mole_fraction": 6.10036467965272e-13
+        },
+        "Water": {
+          "mass_flow": 8.98926123056129,
+          "mass_fraction": 0.585241705834641,
+          "molar_flow": 498.979823270095,
+          "mole_fraction": 0.829387768009347
+        }
+      },
+      "id": "1636629647_MAT-45b0c2c0-fd66-412e-9086-6a0ea132b3f2",
+      "mass_flow": 15.3599122224915,
+      "molar_flow": 601.624285426491,
+      "pressure": 1750000,
+      "tag": "203",
+      "temperature": 463.15,
+      "total_energy_flow": -180015.537075683
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 2.5474018237297e-14,
+          "mass_fraction": 1.04292255882582e-14,
+          "molar_flow": 5.78829985282654e-13,
+          "mole_fraction": 1.4682260502155e-14
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0.00043679805885095,
+          "mass_fraction": 0.000178827912025285,
+          "molar_flow": 0.00411606118004596,
+          "mole_fraction": 0.00010440558372029
+        },
+        "Ethylene": {
+          "mass_flow": 5.17421695927759e-09,
+          "mass_fraction": 2.11835743415969e-09,
+          "molar_flow": 1.84443284081993e-07,
+          "mole_fraction": 4.6784797153216e-09
+        },
+        "Ethylene glycol": {
+          "mass_flow": 2.44023697552212,
+          "mass_fraction": 0.999048586267705,
+          "molar_flow": 39.3156419737198,
+          "mole_fraction": 0.9972574191811
+        },
+        "Ethylene oxide": {
+          "mass_flow": 5.19465044754697e-07,
+          "mass_fraction": 2.12672303462097e-07,
+          "molar_flow": 1.17919377387988e-05,
+          "mole_fraction": 2.9910734776757e-07
+        },
+        "Nitrogen": {
+          "mass_flow": 3.21787756634554e-05,
+          "mass_fraction": 1.31741960542673e-05,
+          "molar_flow": 0.00114869225668628,
+          "mole_fraction": 2.913705125563e-05
+        },
+        "Oxygen": {
+          "mass_flow": 3.59143826533967e-06,
+          "mass_fraction": 1.47035773887806e-06,
+          "molar_flow": 0.000112236654666415,
+          "mole_fraction": 2.8469288799854e-06
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 1.49467520190345e-08,
+          "mass_fraction": 6.11929563550495e-09,
+          "molar_flow": 9.9530221937595e-08,
+          "mole_fraction": 2.5246249908969e-09
+        },
+        "Water": {
+          "mass_flow": 0.00185077808674849,
+          "mass_fraction": 0.000757720356509925,
+          "molar_flow": 0.102733795242066,
+          "mole_fraction": 0.0026058849445792
+        }
+      },
+      "id": "MAT-92d49f56-f4e6-4bba-b681-7a6e81036622",
+      "mass_flow": 2.44256086146769,
+      "molar_flow": 39.423764834965,
+      "pressure": 101325,
+      "tag": "401",
+      "temperature": 469.823453893829,
+      "total_energy_flow": -16922.5758291931
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 5.01097246615953,
+          "mass_fraction": 0.677551022919431,
+          "molar_flow": 47.2196907113008,
+          "mole_fraction": 0.74578641673183
+        },
+        "Ethylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0.0228151486997365,
+          "mass_fraction": 0.00308491564141698,
+          "molar_flow": 0.367584061242287,
+          "mole_fraction": 0.0058056119333287
+        },
+        "Ethylene oxide": {
+          "mass_flow": 2.00009814629761e-23,
+          "mass_fraction": 2.70440229738843e-24,
+          "molar_flow": 4.54025406536557e-22,
+          "mole_fraction": 7.1708640176475e-24
+        },
+        "Nitrogen": {
+          "mass_flow": 1.20183128117277e-24,
+          "mass_fraction": 1.62503789321212e-25,
+          "molar_flow": 4.29020140780046e-23,
+          "mole_fraction": 6.7759315802033e-25
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 2.36192473248287,
+          "mass_fraction": 0.319364061439152,
+          "molar_flow": 15.7280252274568,
+          "mole_fraction": 0.24840797133484
+        },
+        "Water": {
+          "mass_flow": 4.55399436628381e-21,
+          "mass_fraction": 6.1576142397161e-22,
+          "molar_flow": 2.52785100552631e-19,
+          "mole_fraction": 3.9924804992258e-21
+        }
+      },
+      "id": "MAT-a840c7cd-a0e4-41e6-b2d4-2926419b3d3f",
+      "mass_flow": 7.39571234734214,
+      "molar_flow": 63.3153,
+      "pressure": 101325,
+      "tag": "402",
+      "temperature": 519.739400566802,
+      "total_energy_flow": -38279.8756398616
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 5.01094607183685,
+          "mass_fraction": 0.994498170213138,
+          "molar_flow": 47.2194419907656,
+          "mole_fraction": 0.99159469695873
+        },
+        "Ethylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0.0228151486991148,
+          "mass_fraction": 0.00452801193809159,
+          "molar_flow": 0.367584061232272,
+          "mole_fraction": 0.0077191595333921
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0.00490674479866987,
+          "mass_fraction": 0.000973817848770276,
+          "molar_flow": 0.032673948037729,
+          "mole_fraction": 0.00068614350862624
+        },
+        "Water": {
+          "mass_flow": 4.40798646319349e-21,
+          "mass_fraction": 8.74831700266788e-22,
+          "molar_flow": 2.44680430345434e-19,
+          "mole_fraction": 5.1382186436587e-21
+        }
+      },
+      "id": "MAT-9b890335-a75b-4e04-889f-ec9695439c99",
+      "mass_flow": 5.03866796533463,
+      "molar_flow": 47.6197,
+      "pressure": 101325,
+      "tag": "403",
+      "temperature": 515.906983265046,
+      "total_energy_flow": -26859.9828734415
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 2.63943226585114e-05,
+          "mass_fraction": 1.11980592559022e-05,
+          "molar_flow": 0.000248720534963225,
+          "mole_fraction": 1.5846513351718e-05
+        },
+        "Ethylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene glycol": {
+          "mass_flow": 6.21470642734078e-13,
+          "mass_fraction": 2.63665227298253e-13,
+          "molar_flow": 1.00127641421721e-11,
+          "mole_fraction": 6.379344620258e-13
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 2.35701798768422,
+          "mass_fraction": 0.99998880194048,
+          "molar_flow": 15.6953512794192,
+          "mole_fraction": 0.99998415348373
+        },
+        "Water": {
+          "mass_flow": 1.46007903090318e-22,
+          "mass_fraction": 6.19453346762873e-23,
+          "molar_flow": 8.10467020719732e-21,
+          "mole_fraction": 5.1636574627267e-22
+        }
+      },
+      "id": "MAT-08e5d969-b55f-48fd-997d-1b0e2cbb0f60",
+      "mass_flow": 2.3570443820075,
+      "molar_flow": 15.6956,
+      "pressure": 101325,
+      "tag": "404",
+      "temperature": 558.96004727965,
+      "total_energy_flow": -11282.9825269954
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 10.8388888888889,
+          "mass_fraction": 1,
+          "molar_flow": 601.649760030868,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-0c17ed24-5e8b-442a-bc50-66cbe94724ba",
+      "mass_flow": 10.8388888888889,
+      "molar_flow": 601.649760030868,
+      "pressure": 100000,
+      "tag": "38",
+      "temperature": 303.15,
+      "total_energy_flow": -171719.993298913
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 1.05547405246696,
+          "mass_fraction": 1,
+          "molar_flow": 23.9594260235264,
+          "mole_fraction": 1
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-8cf9e231-f6da-4c30-b672-1992065aa2ff",
+      "mass_flow": 1.05547405246696,
+      "molar_flow": 23.9594260235264,
+      "pressure": 3500000,
+      "tag": "41",
+      "temperature": 303.150000141973,
+      "total_energy_flow": -1836.02786881168
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 4.33985488845969e-12,
+          "mass_fraction": 4.14651537011119e-13,
+          "molar_flow": 9.86117744682328e-11,
+          "mole_fraction": 2.65031561185571e-13
+        },
+        "Diethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene": {
+          "mass_flow": 2.08947013323159e-05,
+          "mass_fraction": 1.99638472840923e-06,
+          "molar_flow": 0.000744825229397183,
+          "mole_fraction": 2.00181159321018e-06
+        },
+        "Ethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethylene oxide": {
+          "mass_flow": 0.0555512659193138,
+          "mass_fraction": 0.00530764700396061,
+          "molar_flow": 1.26102242229087,
+          "mole_fraction": 0.0033891565492255
+        },
+        "Nitrogen": {
+          "mass_flow": 10.2264981010232,
+          "mass_fraction": 0.977091000693707,
+          "molar_flow": 365.057369009945,
+          "mole_fraction": 0.981137647636294
+        },
+        "Oxygen": {
+          "mass_flow": 0.184199608571344,
+          "mass_fraction": 0.0175993559171889,
+          "molar_flow": 5.7564536348658,
+          "mole_fraction": 0.015471194002622
+        },
+        "Tetraethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Triethylene glycol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 5.62974224430198e-15,
+          "mass_fraction": 5.37893854650234e-16,
+          "molar_flow": 3.12498181782463e-13,
+          "mole_fraction": 8.39878213652257e-16
+        }
+      },
+      "id": "MAT-83b7a4eb-8530-4248-886a-1d741f65e7f0",
+      "mass_flow": 10.4662698702195,
+      "molar_flow": 372.07558989243,
+      "pressure": 3500000,
+      "tag": "42",
+      "temperature": 303.15,
+      "total_energy_flow": -11.999111699836
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "delta_p": 1650000,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "1636629647_BB-f5098547-22aa-4da7-9b86-9d3cab8c5526",
+    "outlet_pressure": null,
+    "outlet_temperature": 303.623322379315,
+    "override_p": null,
+    "override_t": null,
+    "p_out": 1750000,
+    "pout": 1750000,
+    "tag": "PUMP-1",
+    "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "1636629647_MAT-7b51ef04-ec07-46eb-9cdb-bef0354c6357",
+      "mass_flow": 0.00128771203642824,
+      "molar_flow": 0.0566572966933191,
+      "tag": "stack-1",
+      "upstream_unit_guids": [
+        "1636629647_CSTR-9b2f53ff-40d9-4378-b5f5-7aeebad8ea0f"
+      ]
+    },
+    {
+      "id": "MAT-9580a32a-723a-413a-b816-43d01c9af1d0",
+      "mass_flow": 8.9876964948661,
+      "molar_flow": 498.88603784811,
+      "tag": "208",
+      "upstream_unit_guids": [
+        "COUO-3db6691d-eb46-412e-8e9d-53f6fad1a13e"
+      ]
+    },
+    {
+      "id": "83876032_1813529158_MAT-fbdd6f76-3171-4f61-8900-3382d6becaf6",
+      "mass_flow": 0.000647605524095087,
+      "molar_flow": 0.0222896628052421,
+      "tag": "stack-2",
+      "upstream_unit_guids": [
+        "CSTR-4fb492e4-df25-4fea-8750-9624c462a901"
+      ]
+    },
+    {
+      "id": "MAT-d8140854-4cbe-4f44-9fbb-dae55c358af4",
+      "mass_flow": 0.000131906570446148,
+      "molar_flow": 0.00467775513101584,
+      "tag": "305",
+      "upstream_unit_guids": [
+        "SEP-7a7cc1d3-d349-400e-a246-a3a7a7049d54"
+      ]
+    },
+    {
+      "id": "MAT-92d49f56-f4e6-4bba-b681-7a6e81036622",
+      "mass_flow": 2.44256086146769,
+      "molar_flow": 39.423764834965,
+      "tag": "401",
+      "upstream_unit_guids": [
+        "1585905355_COUO-bc89b3a2-33c6-497b-b160-1c81955dcb8a"
+      ]
+    },
+    {
+      "id": "MAT-9b890335-a75b-4e04-889f-ec9695439c99",
+      "mass_flow": 5.03866796533463,
+      "molar_flow": 47.6197,
+      "tag": "403",
+      "upstream_unit_guids": [
+        "1059352837_COUO-d30a6399-b6e7-49ef-ba8f-8f2997d13b5d"
+      ]
+    },
+    {
+      "id": "MAT-08e5d969-b55f-48fd-997d-1b0e2cbb0f60",
+      "mass_flow": 2.3570443820075,
+      "molar_flow": 15.6956,
+      "tag": "404",
+      "upstream_unit_guids": [
+        "1059352837_COUO-d30a6399-b6e7-49ef-ba8f-8f2997d13b5d"
+      ]
+    },
+    {
+      "id": "MAT-83b7a4eb-8530-4248-886a-1d741f65e7f0",
+      "mass_flow": 10.4662698702195,
+      "molar_flow": 372.07558989243,
+      "tag": "42",
+      "upstream_unit_guids": [
+        "CS-e6512e75-79af-4032-93db-4fcc606fbb11"
+      ]
+    }
+  ]
+}

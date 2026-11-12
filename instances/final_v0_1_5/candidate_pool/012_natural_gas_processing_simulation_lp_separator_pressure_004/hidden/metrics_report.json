@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_pressure": 1765585.7,
+    "target_mole_fraction": null,
+    "target_value": 353.178806293878
+  },
+  "faulty": {
+    "separator_pressure": 1235909.99,
+    "target_mole_fraction": null,
+    "target_value": 387.585144581061
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "pressure",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-b029bcc5-61d5-4408-96f5-5e1419532722",
+      "kind": "unit_operation",
+      "tag": "LP Separator"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 1765585.7
+  },
+  "instance_id": "012_natural_gas_processing_simulation_lp_separator_pressure_004",
+  "repairable": true,
+  "repaired": {
+    "separator_pressure": 1765585.7,
+    "target_mole_fraction": null,
+    "target_value": 353.178806293878
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/012_natural_gas_processing_simulation.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 363.5007077800329,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "Lean Gas",
+    "stream_id": "MAT-37af0226-4681-429b-a1c0-ce58329b40cc",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Lean Gas",
+    "threshold": 363.5007077800329
+  },
+  "target_delta": -34.40633828718302
+}

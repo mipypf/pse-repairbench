@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 248.15,
+    "target_mole_fraction": null,
+    "target_value": 0.0862140059005322
+  },
+  "faulty": {
+    "outlet_temperature": 218.15,
+    "target_mole_fraction": null,
+    "target_value": 3.24358041631259
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-316edc1b-8728-473d-8e1c-ce345c1ad644",
+      "kind": "unit_operation",
+      "tag": "HT-1"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 248.15
+  },
+  "instance_id": "011_rectisol_process_for_syngas_with_co2_for_enhanced_oil_recovery_ht_1_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 248.15,
+    "target_mole_fraction": null,
+    "target_value": 0.0862140059005322
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/011_rectisol_process_for_syngas_with_co2_for_enhanced_oil_recovery.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 1.0334239290241496,
+    "metric": "mass_flow",
+    "product_mole_fraction_min": null,
+    "stream": "38",
+    "stream_id": "MAT-e8df0a41-cf2d-4f31-85ad-05ed769d46b3",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "38",
+    "threshold": 1.0334239290241496
+  },
+  "target_delta": -3.157366410412058
+}

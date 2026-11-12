@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-09
+Target metric: Carbon monoxide mass_fraction
+Observed target value: 0.111198666764929
+Required target value: >= 0.13170751597274938

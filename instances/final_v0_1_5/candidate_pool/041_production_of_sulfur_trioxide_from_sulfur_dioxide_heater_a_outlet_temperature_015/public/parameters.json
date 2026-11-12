@@ -1,0 +1,167 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "Cooler-A: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-727d72ba-7acc-4616-aaee-ca7f542c06f9",
+        "kind": "unit_operation",
+        "tag": "Cooler-A",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Cooler-B: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-c9c04177-3117-45f9-aaa2-5ea5bb43091b",
+        "kind": "unit_operation",
+        "tag": "Cooler-B",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Heater-B: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-d4e49370-0c0b-4353-bccd-09e4dfc751c5",
+        "kind": "unit_operation",
+        "tag": "Heater-B",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Heater-A: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-bda0664c-46b4-4fdd-a319-72ad4dfdb941",
+        "kind": "unit_operation",
+        "tag": "Heater-A",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-727d72ba-7acc-4616-aaee-ca7f542c06f9",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 348.15
+      },
+      "outlet_temperature": 348.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Cooler-A",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-c9c04177-3117-45f9-aaa2-5ea5bb43091b",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 298.15
+      },
+      "outlet_temperature": 298.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Cooler-B",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-d4e49370-0c0b-4353-bccd-09e4dfc751c5",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 298.15
+      },
+      "outlet_temperature": 298.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Heater-B",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-bda0664c-46b4-4fdd-a319-72ad4dfdb941",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 803.15
+      },
+      "outlet_temperature": 803.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Heater-A",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    }
+  ],
+  "product_target": {
+    "component": "Sulfur trioxide",
+    "direction": "max",
+    "metric": "mass_fraction",
+    "stream_tag": "S-7",
+    "threshold": 0.07934257011862891
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "component": "Sulfur trioxide",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.07934257011862891,
+    "metric": "mass_fraction",
+    "stream": "S-7",
+    "stream_id": "MAT-10abdf54-a18b-4248-a76e-ed355555e14f",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-7",
+    "threshold": 0.07934257011862891
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-10abdf54-a18b-4248-a76e-ed355555e14f",
+      "mass_flow": 0.0197362058645705,
+      "molar_flow": 0.34137712704942,
+      "tag": "S-7",
+      "upstream_unit_guids": [
+        "AQ-d4e49370-0c0b-4353-bccd-09e4dfc751c5"
+      ]
+    },
+    {
+      "id": "MAT-ebf20289-cf37-4e7a-91b2-5018ba53c4eb",
+      "mass_flow": 0.119152530160385,
+      "molar_flow": 1.4912108803292,
+      "tag": "S-8",
+      "upstream_unit_guids": [
+        "RESF-c9c04177-3117-45f9-aaa2-5ea5bb43091b"
+      ]
+    }
+  ]
+}

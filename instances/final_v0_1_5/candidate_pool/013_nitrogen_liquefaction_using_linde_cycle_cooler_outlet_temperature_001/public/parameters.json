@@ -1,0 +1,169 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "Valve: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-66b69073-a1b7-4a35-a1c0-655de7a476f6",
+        "kind": "unit_operation",
+        "tag": "Valve",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "Cooler: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-cbfcb8b7-ed0a-478c-924c-060f815ed8c3",
+        "kind": "unit_operation",
+        "tag": "Cooler",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Cooler-001: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-9905f77d-baad-43f0-8566-89fd694a4aa0",
+        "kind": "unit_operation",
+        "tag": "Cooler-001",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Compressor: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-45b1e044-8e2c-4d41-8368-720d4a11aa61",
+        "kind": "unit_operation",
+        "tag": "Compressor",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 2431800,
+      "guid": "VALV-66b69073-a1b7-4a35-a1c0-655de7a476f6",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 101325
+      },
+      "outlet_pressure": 101325,
+      "outlet_temperature": 77.3547221359901,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "Valve",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-cbfcb8b7-ed0a-478c-924c-060f815ed8c3",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 55
+      },
+      "outlet_temperature": 55,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Cooler",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-9905f77d-baad-43f0-8566-89fd694a4aa0",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 300
+      },
+      "outlet_temperature": 300,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Cooler-001",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 2431800,
+      "guid": "COMP-45b1e044-8e2c-4d41-8368-720d4a11aa61",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 2533125
+      },
+      "outlet_temperature": 1131.98199622228,
+      "p_out": 2533125,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "Compressor",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "temperature",
+    "stream_tag": "Liquified-N2",
+    "threshold": 61.809898043309516
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 61.809898043309516,
+    "stream": "Liquified-N2",
+    "stream_id": "MAT-ca61f92a-5afb-4c0c-9849-776ced812743",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Liquified-N2",
+    "threshold": 61.809898043309516
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-38ae9812-c1a9-4673-b02e-77dcf0eed1f6",
+      "mass_flow": 0.225,
+      "molar_flow": 8.03169843649604,
+      "tag": "N2-Hot",
+      "upstream_unit_guids": [
+        "HE-25faa348-c84f-48f6-971e-589b9697f800"
+      ]
+    },
+    {
+      "id": "MAT-ca61f92a-5afb-4c0c-9849-776ced812743",
+      "mass_flow": 0.277777777777778,
+      "molar_flow": 9.91567708209388,
+      "tag": "Liquified-N2",
+      "upstream_unit_guids": [
+        "VALV-66b69073-a1b7-4a35-a1c0-655de7a476f6"
+      ]
+    }
+  ]
+}

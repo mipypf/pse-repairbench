@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "AQ-be301047-6e43-4cd4-ab17-5c195d9c33f1",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "007_lts_low_temperature_separator_heat_01_outlet_temperature_006",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 292.15,
+      "metric": "temperature",
+      "stream": "S-16",
+      "stream_id": "MAT-25eb1db7-1639-433f-b69b-2c634aa19d80",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-16",
+      "threshold": 292.15
+    },
+    "target_stream_tag": "S-16"
+  }
+}

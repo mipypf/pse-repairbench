@@ -1,0 +1,2700 @@
+{
+  "column": null,
+  "duration_sec": 6.297,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 83,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/base_calculated.dwxmz",
+  "simulation_path": "hidden/base.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-ebda0ea3-0cc4-4c05-bb3d-0791c19a85ba"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c35cbadf-3c95-46aa-9b36-7f9bd174fa08",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-3",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HEAT-c086d9c6-1b3f-4ecd-9637-6874131b6a8e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-75437728-02da-4deb-9e78-bb43fcd22860",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "SA-6",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RE-ccd0aef5-b905-425d-b028-1f0a907f245f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-f0ff61fc-daaa-44b4-8b39-2284605be458"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c7c11a56-6c8f-4704-8ed0-de62bbd8091f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-7",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RE-ccd0aef5-b905-425d-b028-1f0a907f245f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-ebda0ea3-0cc4-4c05-bb3d-0791c19a85ba"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8de18dbf-372c-4799-bb31-eca5cf287f57",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-4",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HEAT-970e0427-91fb-45d6-b80a-5df277f154cd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RE-ccd0aef5-b905-425d-b028-1f0a907f245f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c8bbd6cd-5c12-4aea-b06d-50b3275972ad",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-5",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-ebda0ea3-0cc4-4c05-bb3d-0791c19a85ba"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-7587e299-5096-4fe8-89f7-f4402dd618c6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f8ca29e5-8aaa-49b6-a76a-0976dfed4806",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-11",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HEAT-398454f7-5f94-45e3-b9a0-3d9abdff0806"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-26fc0388-c62f-407c-9281-55b5a5e79997"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-98dccb99-41d8-4025-821b-a1109c440fbc",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-13",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-7587e299-5096-4fe8-89f7-f4402dd618c6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-7587e299-5096-4fe8-89f7-f4402dd618c6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-5a217072-fee6-4627-9cbf-d590e4ceee61",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-f151c9fc-7c95-4e47-bfbd-9bc71dca4e22"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-3fe06fde-cfc3-4674-ae7e-568a3301f95a",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-15",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-26fc0388-c62f-407c-9281-55b5a5e79997"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-5afd958a-831a-40e0-9912-1005e375693b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f84d3338-485f-4116-9c6c-2b55959ef4b8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-16",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-2b614b4b-1f2c-4080-b441-695e8722c561"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-ee76b536-4501-4b75-a9b9-bb0dc4373eab",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-17",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-2b614b4b-1f2c-4080-b441-695e8722c561"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-6e449dc2-9a19-40d6-811c-04de5f8b1061",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-8",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-f0ff61fc-daaa-44b4-8b39-2284605be458"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-f151c9fc-7c95-4e47-bfbd-9bc71dca4e22"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4b7b409f-8222-4ec5-b5a0-38fe79bff769",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-9",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-f0ff61fc-daaa-44b4-8b39-2284605be458"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-2b614b4b-1f2c-4080-b441-695e8722c561"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-253f1e5f-94b5-4ef3-a11e-0ce345a1994e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-14",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-26fc0388-c62f-407c-9281-55b5a5e79997"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "SA-18",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-5afd958a-831a-40e0-9912-1005e375693b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-bba96f6a-8b2a-4960-a3c2-6e57070a6866"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f2562d32-78e6-47dd-900a-5b042127a6c8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-19",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-5afd958a-831a-40e0-9912-1005e375693b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3628eeb1-4e32-4ad5-85c4-4935b5f1e58f",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "SA-20",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-bba96f6a-8b2a-4960-a3c2-6e57070a6866"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "298743960_MIST-ebda0ea3-0cc4-4c05-bb3d-0791c19a85ba"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "164787835_MAT-8de18dbf-372c-4799-bb31-eca5cf287f57",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-4",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-b5cf3913-b1d5-4e30-bc6e-f7b0dc1a3a15"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "298743960_MIST-ebda0ea3-0cc4-4c05-bb3d-0791c19a85ba"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "1094728124_MAT-c35cbadf-3c95-46aa-9b36-7f9bd174fa08",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-3",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-f6a0651f-bad1-45d5-a65c-214e90669684"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "498081074_RE-ccd0aef5-b905-425d-b028-1f0a907f245f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "1289545575_MAT-c8bbd6cd-5c12-4aea-b06d-50b3275972ad",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-5",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "298743960_MIST-ebda0ea3-0cc4-4c05-bb3d-0791c19a85ba"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "328797411_SEP-f0ff61fc-daaa-44b4-8b39-2284605be458"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "2057956997_MAT-c7c11a56-6c8f-4704-8ed0-de62bbd8091f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-7",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "498081074_RE-ccd0aef5-b905-425d-b028-1f0a907f245f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "328797411_SEP-f0ff61fc-daaa-44b4-8b39-2284605be458"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "1814630231_MAT-75437728-02da-4deb-9e78-bb43fcd22860",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-6",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "498081074_RE-ccd0aef5-b905-425d-b028-1f0a907f245f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "802514831_AQ-f151c9fc-7c95-4e47-bfbd-9bc71dca4e22"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "647454020_MAT-4b7b409f-8222-4ec5-b5a0-38fe79bff769",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-9",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "328797411_SEP-f0ff61fc-daaa-44b4-8b39-2284605be458"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "768019269_MIST-7587e299-5096-4fe8-89f7-f4402dd618c6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "364657265_MAT-5a217072-fee6-4627-9cbf-d590e4ceee61",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "802514831_AQ-f151c9fc-7c95-4e47-bfbd-9bc71dca4e22"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "768019269_MIST-7587e299-5096-4fe8-89f7-f4402dd618c6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "257403130_MAT-f8ca29e5-8aaa-49b6-a76a-0976dfed4806",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-11",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HEAT-c8dd1c15-c079-42bc-a40d-63691af2b1e6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "234350051_RC-26fc0388-c62f-407c-9281-55b5a5e79997"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "2103101842_MAT-98dccb99-41d8-4025-821b-a1109c440fbc",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-13",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "768019269_MIST-7587e299-5096-4fe8-89f7-f4402dd618c6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "1571835781_MAT-3fe06fde-cfc3-4674-ae7e-568a3301f95a",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-15",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "234350051_RC-26fc0388-c62f-407c-9281-55b5a5e79997"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "1645462896_SEP-2b614b4b-1f2c-4080-b441-695e8722c561"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "1110638485_MAT-253f1e5f-94b5-4ef3-a11e-0ce345a1994e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-14",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "234350051_RC-26fc0388-c62f-407c-9281-55b5a5e79997"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-d8c8b91c-e75b-4ebf-b15a-bdd895bd048d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "682975438_MAT-ee76b536-4501-4b75-a9b9-bb0dc4373eab",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-17",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "1645462896_SEP-2b614b4b-1f2c-4080-b441-695e8722c561"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-d8c8b91c-e75b-4ebf-b15a-bdd895bd048d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "2039162697_MAT-f84d3338-485f-4116-9c6c-2b55959ef4b8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-16",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "1645462896_SEP-2b614b4b-1f2c-4080-b441-695e8722c561"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COOL-120d7b4c-5f7d-44ec-bad2-9ca5b43b4032"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "554616617_MAT-f2562d32-78e6-47dd-900a-5b042127a6c8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-20",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-f4cba791-ac65-4837-9216-d7f18eb9c21c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "2128506293_MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "SB-19",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-f4cba791-ac65-4837-9216-d7f18eb9c21c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "166514120_MAT-3628eeb1-4e32-4ad5-85c4-4935b5f1e58f",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "SB-21",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COOL-120d7b4c-5f7d-44ec-bad2-9ca5b43b4032"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-f4cba791-ac65-4837-9216-d7f18eb9c21c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-600f752f-ba5a-4556-82b9-0b39164c35d4",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-18",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-d8c8b91c-e75b-4ebf-b15a-bdd895bd048d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-edbe8fa3-6276-47a8-b8aa-9179e8eece2b",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "SB-8",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "328797411_SEP-f0ff61fc-daaa-44b4-8b39-2284605be458"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-b5cf3913-b1d5-4e30-bc6e-f7b0dc1a3a15"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MSTR-68a5c7b7-9025-4c6b-ba0e-7b27bed28ef2",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-f6a0651f-bad1-45d5-a65c-214e90669684"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MSTR-16d88b1b-0d5c-4d5e-ad36-8815e8f41bc9",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "HEAT-c086d9c6-1b3f-4ecd-9637-6874131b6a8e"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MSTR-10471919-d3dc-4c58-9035-48b1082bf180",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "HEAT-970e0427-91fb-45d6-b80a-5df277f154cd"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MSTR-bfb1a47c-8cf8-4abb-a364-1d3560c700f6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "HEAT-398454f7-5f94-45e3-b9a0-3d9abdff0806"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MSTR-c73c23fd-0805-4db3-86c8-ce8285b113b2",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SA-10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "HEAT-c8dd1c15-c079-42bc-a40d-63691af2b1e6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MSTR-c8ea1261-f59f-41f2-9859-60d558d1f452",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SB-10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-75437728-02da-4deb-9e78-bb43fcd22860",
+        "mass_flow": 5.67460567823337,
+        "molar_flow": 192.94658220495,
+        "tag": "SA-6",
+        "upstream_unit_guids": [
+          "RE-ccd0aef5-b905-425d-b028-1f0a907f245f"
+        ]
+      },
+      {
+        "id": "MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+        "mass_flow": 2.66583977942901,
+        "molar_flow": 85.83673616857,
+        "tag": "SA-18",
+        "upstream_unit_guids": [
+          "COUO-5afd958a-831a-40e0-9912-1005e375693b"
+        ]
+      },
+      {
+        "id": "MAT-3628eeb1-4e32-4ad5-85c4-4935b5f1e58f",
+        "mass_flow": 1.65955454221377,
+        "molar_flow": 49.161463608567,
+        "tag": "SA-20",
+        "upstream_unit_guids": [
+          "RESF-bba96f6a-8b2a-4960-a3c2-6e57070a6866"
+        ]
+      },
+      {
+        "id": "2128506293_MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+        "mass_flow": 2.82534619647839,
+        "molar_flow": 136.39021409311,
+        "tag": "SB-19",
+        "upstream_unit_guids": [
+          "COUO-f4cba791-ac65-4837-9216-d7f18eb9c21c"
+        ]
+      },
+      {
+        "id": "166514120_MAT-3628eeb1-4e32-4ad5-85c4-4935b5f1e58f",
+        "mass_flow": 9.07050798239562,
+        "molar_flow": 124.09567982237,
+        "tag": "SB-21",
+        "upstream_unit_guids": [
+          "COOL-120d7b4c-5f7d-44ec-bad2-9ca5b43b4032"
+        ]
+      },
+      {
+        "id": "MAT-edbe8fa3-6276-47a8-b8aa-9179e8eece2b",
+        "mass_flow": 2.10414608615931,
+        "molar_flow": 47.2744255925515,
+        "tag": "SB-8",
+        "upstream_unit_guids": [
+          "328797411_SEP-f0ff61fc-daaa-44b4-8b39-2284605be458"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 4,
+          "mass_fraction": 1,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 1
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MSTR-c8ea1261-f59f-41f2-9859-60d558d1f452",
+      "mass_flow": 4,
+      "molar_flow": 128.795025936098,
+      "pressure": 101325,
+      "tag": "SB-10",
+      "temperature": 298.15,
+      "total_energy_flow": -2958.42174575218
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 4,
+          "mass_fraction": 1,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 1
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MSTR-c73c23fd-0805-4db3-86c8-ce8285b113b2",
+      "mass_flow": 4,
+      "molar_flow": 128.795025936098,
+      "pressure": 101325,
+      "tag": "SA-10",
+      "temperature": 298.15,
+      "total_energy_flow": -2958.42174575218
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0.115615184508132,
+          "mass_fraction": 0.115615184508132,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        },
+        "Methanol": {
+          "mass_flow": 0.132256777229776,
+          "mass_fraction": 0.132256777229776,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        },
+        "Methyl formate": {
+          "mass_flow": 0.247871961737908,
+          "mass_fraction": 0.247871961737908,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        },
+        "Methylamine": {
+          "mass_flow": 0.128192057393137,
+          "mass_fraction": 0.128192057393137,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.301703701918124,
+          "mass_fraction": 0.301703701918124,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        },
+        "Water": {
+          "mass_flow": 0.0743603172129221,
+          "mass_fraction": 0.0743603172129221,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        }
+      },
+      "id": "MSTR-10471919-d3dc-4c58-9035-48b1082bf180",
+      "mass_flow": 1,
+      "molar_flow": 24.7657490351264,
+      "pressure": 101325,
+      "tag": "SA-1",
+      "temperature": 298.15,
+      "total_energy_flow": -5262.22291479946
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 2.93636865216587e-06,
+          "mass_fraction": 1.1014797944064e-06,
+          "molar_flow": 0.000104832494427577,
+          "mole_fraction": 1.2213010315502e-06
+        },
+        "Methanol": {
+          "mass_flow": 7.79218110558262e-17,
+          "mass_fraction": 2.92297427839103e-17,
+          "molar_flow": 2.43187539848892e-15,
+          "mole_fraction": 2.8331405724853e-17
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 2.66583684306036,
+          "mass_fraction": 0.999998898520206,
+          "molar_flow": 85.8366313358414,
+          "mole_fraction": 0.99999877869624
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 8.43748245390142e-20,
+          "mass_fraction": 3.16503734358282e-20,
+          "molar_flow": 1.15433658703947e-18,
+          "mole_fraction": 1.3448048452967e-20
+        },
+        "Water": {
+          "mass_flow": 6.26609756267631e-20,
+          "mass_fraction": 2.3505154402109e-20,
+          "molar_flow": 3.47821269648671e-18,
+          "mole_fraction": 4.0521259914357e-20
+        }
+      },
+      "id": "MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+      "mass_flow": 2.66583977942901,
+      "molar_flow": 85.83673616857,
+      "pressure": 101325,
+      "tag": "SA-18",
+      "temperature": 266.768461380442,
+      "total_energy_flow": -4349.33379521361
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 3.6899731711676e-20,
+          "mass_fraction": 2.22347206874282e-20,
+          "molar_flow": 1.31737236609923e-18,
+          "mole_fraction": 2.679685e-20
+        },
+        "Methanol": {
+          "mass_flow": 2.46218812984821e-05,
+          "mass_fraction": 1.48364399434788e-05,
+          "molar_flow": 0.000768428589928364,
+          "mole_fraction": 1.5630710184846e-05
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 1.32437124705102,
+          "mass_fraction": 0.798028153557624,
+          "molar_flow": 42.6431072782399,
+          "mole_fraction": 0.86740922967169
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.288962527310272,
+          "mass_fraction": 0.174120536541576,
+          "molar_flow": 3.95331213285552,
+          "mole_fraction": 0.080414858360047
+        },
+        "Water": {
+          "mass_flow": 0.0461961459711777,
+          "mass_fraction": 0.0278364734608566,
+          "molar_flow": 2.56427576874618,
+          "mole_fraction": 0.052160281255323
+        }
+      },
+      "id": "MAT-f2562d32-78e6-47dd-900a-5b042127a6c8",
+      "mass_flow": 1.65955454221377,
+      "molar_flow": 49.161463608567,
+      "pressure": 101325,
+      "tag": "SA-19",
+      "temperature": 269.941230216614,
+      "total_energy_flow": -3843.46144997888
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 5.25461996853846e-11,
+          "molar_flow": 0,
+          "mole_fraction": 7.87232826195193e-11
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 3.14324553451807e-06,
+          "molar_flow": 0,
+          "mole_fraction": 4.1165854171342e-06
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0.513622856018199,
+          "molar_flow": 0,
+          "mole_fraction": 0.694000819881984
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0.471126972446229,
+          "molar_flow": 0,
+          "mole_fraction": 0.27047933468363
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0.0152470282374906,
+          "molar_flow": 0,
+          "mole_fraction": 0.0355157287702454
+        }
+      },
+      "id": "MAT-ee76b536-4501-4b75-a9b9-bb0dc4373eab",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 101325,
+      "tag": "SA-17",
+      "temperature": 473.150000019217,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-3fe06fde-cfc3-4674-ae7e-568a3301f95a",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 101325,
+      "tag": "SA-15",
+      "temperature": 473.150000019217,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 2.93637513207119e-06,
+          "mass_fraction": 6.78868772101196e-07,
+          "molar_flow": 0.000104832725769319,
+          "mole_fraction": 7.76549064671846e-07
+        },
+        "Methanol": {
+          "mass_flow": 2.462171895632e-05,
+          "mass_fraction": 5.6923640076967e-06,
+          "molar_flow": 0.000768423523363501,
+          "mole_fraction": 5.692102003079e-06
+        },
+        "Methyl formate": {
+          "mass_flow": 0.0213555143651985,
+          "mass_fraction": 0.00493724104129222,
+          "molar_flow": 0.355617274859947,
+          "mole_fraction": 0.00263423716351048
+        },
+        "Methylamine": {
+          "mass_flow": 4.00125253148741,
+          "mass_fraction": 0.925060753733354,
+          "molar_flow": 128.83535589245,
+          "mole_fraction": 0.954348695798455
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.262969116643488,
+          "mass_fraction": 0.060796564909736,
+          "molar_flow": 3.59769486054064,
+          "mole_fraction": 0.0266499469361808
+        },
+        "Water": {
+          "mass_flow": 0.0397896011764461,
+          "mass_fraction": 0.00919906908283792,
+          "molar_flow": 2.20865849303736,
+          "mole_fraction": 0.0163606514507863
+        }
+      },
+      "id": "MAT-98dccb99-41d8-4025-821b-a1109c440fbc",
+      "mass_flow": 4.32539432176663,
+      "molar_flow": 134.998199777137,
+      "pressure": 101325,
+      "tag": "SA-13",
+      "temperature": 473.150000019217,
+      "total_energy_flow": -2850.70990170657
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 2.9363751320712e-06,
+          "mass_fraction": 6.78868772101196e-07,
+          "molar_flow": 0.000104832725769319,
+          "mole_fraction": 7.76549064671846e-07
+        },
+        "Methanol": {
+          "mass_flow": 2.462171895632e-05,
+          "mass_fraction": 5.6923640076967e-06,
+          "molar_flow": 0.000768423523363501,
+          "mole_fraction": 5.692102003079e-06
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 3.99020809022035,
+          "mass_fraction": 0.922507358494572,
+          "molar_flow": 128.47973861759,
+          "mole_fraction": 0.951714458634944
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.288962527496301,
+          "mass_fraction": 0.066806054199997,
+          "molar_flow": 3.95331213540059,
+          "mole_fraction": 0.0292841840996913
+        },
+        "Water": {
+          "mass_flow": 0.046196145955885,
+          "mass_fraction": 0.0106802160726509,
+          "molar_flow": 2.56427576789731,
+          "mole_fraction": 0.0189948886142968
+        }
+      },
+      "id": "MAT-f84d3338-485f-4116-9c6c-2b55959ef4b8",
+      "mass_flow": 4.32539432176663,
+      "molar_flow": 134.998199777137,
+      "pressure": 101325,
+      "tag": "SA-16",
+      "temperature": 473.150000019217,
+      "total_energy_flow": -2870.87380331435
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 2.93637513207119e-06,
+          "mass_fraction": 9.02405154499642e-06,
+          "molar_flow": 0.000104832725769319,
+          "mole_fraction": 1.68998529552359e-05
+        },
+        "Methanol": {
+          "mass_flow": 2.462171895632e-05,
+          "mass_fraction": 7.56673282515935e-05,
+          "molar_flow": 0.000768423523363501,
+          "mole_fraction": 0.000123875864687171
+        },
+        "Methyl formate": {
+          "mass_flow": 0.0213555143651985,
+          "mass_fraction": 0.0656296466676351,
+          "molar_flow": 0.355617274859947,
+          "mole_fraction": 0.0573282780674744
+        },
+        "Methylamine": {
+          "mass_flow": 0.00125253148740612,
+          "mass_fraction": 0.00384927272426233,
+          "molar_flow": 0.0403299563515628,
+          "mole_fraction": 0.0065015034859655
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.262969116643488,
+          "mass_fraction": 0.808155210625001,
+          "molar_flow": 3.59769486054064,
+          "mole_fraction": 0.579976468939044
+        },
+        "Water": {
+          "mass_flow": 0.0397896011764461,
+          "mass_fraction": 0.122281178603304,
+          "molar_flow": 2.20865849303736,
+          "mole_fraction": 0.356052973789873
+        }
+      },
+      "id": "MAT-5a217072-fee6-4627-9cbf-d590e4ceee61",
+      "mass_flow": 0.325394321766627,
+      "molar_flow": 6.20317384103864,
+      "pressure": 101325,
+      "tag": "SA-12",
+      "temperature": 473.15,
+      "total_energy_flow": -1259.92878760156
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0.115615184508132,
+          "mass_fraction": 0.115615184508132,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        },
+        "Methanol": {
+          "mass_flow": 0.132256777229776,
+          "mass_fraction": 0.132256777229776,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        },
+        "Methyl formate": {
+          "mass_flow": 0.247871961737908,
+          "mass_fraction": 0.247871961737908,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        },
+        "Methylamine": {
+          "mass_flow": 0.128192057393137,
+          "mass_fraction": 0.128192057393137,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.301703701918124,
+          "mass_fraction": 0.301703701918124,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        },
+        "Water": {
+          "mass_flow": 0.0743603172129221,
+          "mass_fraction": 0.0743603172129221,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.166666666666667
+        }
+      },
+      "id": "MAT-c35cbadf-3c95-46aa-9b36-7f9bd174fa08",
+      "mass_flow": 1,
+      "molar_flow": 24.7657490351264,
+      "pressure": 101325,
+      "tag": "SA-3",
+      "temperature": 323.15,
+      "total_energy_flow": -5077.57698269789
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 5.00013296241372,
+          "mass_fraction": 0.881141923498439,
+          "molar_flow": 178.511785477871,
+          "mole_fraction": 0.925187600826503
+        },
+        "Methanol": {
+          "mass_flow": 0.000115067023941858,
+          "mass_fraction": 2.02775365314337e-05,
+          "molar_flow": 0.00359114682923707,
+          "mole_fraction": 1.86121297832709e-05
+        },
+        "Methyl formate": {
+          "mass_flow": 0.474126887157723,
+          "mass_fraction": 0.0835523936009116,
+          "molar_flow": 7.89527747566812,
+          "mole_fraction": 0.0409194989900452
+        },
+        "Methylamine": {
+          "mass_flow": 0.12693981567427,
+          "mass_fraction": 0.0223698038017311,
+          "molar_flow": 4.08730421302277,
+          "mole_fraction": 0.0211836051528562
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.0387220478021827,
+          "mass_fraction": 0.0068237424761887,
+          "molar_flow": 0.529758452801082,
+          "mole_fraction": 0.00274562237250913
+        },
+        "Water": {
+          "mass_flow": 0.0345688981615382,
+          "mass_fraction": 0.00609185908619825,
+          "molar_flow": 1.91886543875744,
+          "mole_fraction": 0.00994506052830313
+        }
+      },
+      "id": "MAT-75437728-02da-4deb-9e78-bb43fcd22860",
+      "mass_flow": 5.67460567823337,
+      "molar_flow": 192.94658220495,
+      "pressure": 101325,
+      "tag": "SA-6",
+      "temperature": 296.242956028118,
+      "total_energy_flow": -23184.9047153108
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 2.93637513207119e-06,
+          "mass_fraction": 9.02405154499641e-06,
+          "molar_flow": 0.000104832725769319,
+          "mole_fraction": 1.68998529552359e-05
+        },
+        "Methanol": {
+          "mass_flow": 2.462171895632e-05,
+          "mass_fraction": 7.56673282515935e-05,
+          "molar_flow": 0.000768423523363501,
+          "mole_fraction": 0.000123875864687171
+        },
+        "Methyl formate": {
+          "mass_flow": 0.0213555143651985,
+          "mass_fraction": 0.0656296466676351,
+          "molar_flow": 0.355617274859946,
+          "mole_fraction": 0.0573282780674744
+        },
+        "Methylamine": {
+          "mass_flow": 0.00125253148740612,
+          "mass_fraction": 0.00384927272426233,
+          "molar_flow": 0.0403299563515627,
+          "mole_fraction": 0.0065015034859655
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.262969116643488,
+          "mass_fraction": 0.808155210625001,
+          "molar_flow": 3.59769486054064,
+          "mole_fraction": 0.579976468939044
+        },
+        "Water": {
+          "mass_flow": 0.0397896011764461,
+          "mass_fraction": 0.122281178603304,
+          "molar_flow": 2.20865849303736,
+          "mole_fraction": 0.356052973789873
+        }
+      },
+      "id": "MAT-c7c11a56-6c8f-4704-8ed0-de62bbd8091f",
+      "mass_flow": 0.325394321766627,
+      "molar_flow": 6.20317384103864,
+      "pressure": 101325,
+      "tag": "SA-7",
+      "temperature": 296.242956028118,
+      "total_energy_flow": -1629.35609944343
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 5,
+          "mass_fraction": 1,
+          "molar_flow": 178.507038532529,
+          "mole_fraction": 1
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-8de18dbf-372c-4799-bb31-eca5cf287f57",
+      "mass_flow": 5,
+      "molar_flow": 178.507038532529,
+      "pressure": 101325,
+      "tag": "SA-4",
+      "temperature": 323.149999998936,
+      "total_energy_flow": -19600.2293774149
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 5.11561518450813,
+          "mass_fraction": 0.852602530751356,
+          "molar_flow": 182.634663371717,
+          "mole_fraction": 0.898470796593619
+        },
+        "Methanol": {
+          "mass_flow": 0.132256777229776,
+          "mass_fraction": 0.0220427962049627,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.0203058406812763
+        },
+        "Methyl formate": {
+          "mass_flow": 0.247871961737908,
+          "mass_fraction": 0.0413119936229847,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.0203058406812763
+        },
+        "Methylamine": {
+          "mass_flow": 0.128192057393137,
+          "mass_fraction": 0.0213653428988562,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.0203058406812763
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.301703701918124,
+          "mass_fraction": 0.0502839503196873,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.0203058406812763
+        },
+        "Water": {
+          "mass_flow": 0.0743603172129221,
+          "mass_fraction": 0.0123933862021537,
+          "molar_flow": 4.12762483918774,
+          "mole_fraction": 0.0203058406812763
+        }
+      },
+      "id": "MAT-c8bbd6cd-5c12-4aea-b06d-50b3275972ad",
+      "mass_flow": 6,
+      "molar_flow": 203.272787567656,
+      "pressure": 101325,
+      "tag": "SA-5",
+      "temperature": 296.242956028118,
+      "total_energy_flow": -24677.8060374061
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 4,
+          "mass_fraction": 1,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 1
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-f8ca29e5-8aaa-49b6-a76a-0976dfed4806",
+      "mass_flow": 4,
+      "molar_flow": 128.795025936098,
+      "pressure": 101325,
+      "tag": "SA-11",
+      "temperature": 473.15000002078,
+      "total_energy_flow": -1590.78111410228
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0.881141923498439,
+          "molar_flow": 0,
+          "mole_fraction": 0.925187600826503
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 2.02775365314337e-05,
+          "molar_flow": 0,
+          "mole_fraction": 1.86121297832709e-05
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0.0835523936009116,
+          "molar_flow": 0,
+          "mole_fraction": 0.0409194989900452
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0.0223698038017311,
+          "molar_flow": 0,
+          "mole_fraction": 0.0211836051528562
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0.0068237424761887,
+          "molar_flow": 0,
+          "mole_fraction": 0.00274562237250913
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0.00609185908619825,
+          "molar_flow": 0,
+          "mole_fraction": 0.00994506052830313
+        }
+      },
+      "id": "MAT-6e449dc2-9a19-40d6-811c-04de5f8b1061",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 101325,
+      "tag": "SA-8",
+      "temperature": 296.242956028118,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 2.93637513207119e-06,
+          "mass_fraction": 9.02405154499642e-06,
+          "molar_flow": 0.000104832725769319,
+          "mole_fraction": 1.68998529552359e-05
+        },
+        "Methanol": {
+          "mass_flow": 2.462171895632e-05,
+          "mass_fraction": 7.56673282515935e-05,
+          "molar_flow": 0.000768423523363501,
+          "mole_fraction": 0.000123875864687171
+        },
+        "Methyl formate": {
+          "mass_flow": 0.0213555143651985,
+          "mass_fraction": 0.0656296466676351,
+          "molar_flow": 0.355617274859947,
+          "mole_fraction": 0.0573282780674744
+        },
+        "Methylamine": {
+          "mass_flow": 0.00125253148740612,
+          "mass_fraction": 0.00384927272426233,
+          "molar_flow": 0.0403299563515628,
+          "mole_fraction": 0.0065015034859655
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.262969116643488,
+          "mass_fraction": 0.808155210625001,
+          "molar_flow": 3.59769486054064,
+          "mole_fraction": 0.579976468939044
+        },
+        "Water": {
+          "mass_flow": 0.0397896011764461,
+          "mass_fraction": 0.122281178603304,
+          "molar_flow": 2.20865849303736,
+          "mole_fraction": 0.356052973789873
+        }
+      },
+      "id": "MAT-4b7b409f-8222-4ec5-b5a0-38fe79bff769",
+      "mass_flow": 0.325394321766627,
+      "molar_flow": 6.20317384103864,
+      "pressure": 101325,
+      "tag": "SA-9",
+      "temperature": 296.242956028118,
+      "total_energy_flow": -1629.35609944343
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 5,
+          "mass_fraction": 1,
+          "molar_flow": 156.045872493045,
+          "mole_fraction": 1
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "1094728124_MAT-c35cbadf-3c95-46aa-9b36-7f9bd174fa08",
+      "mass_flow": 5,
+      "molar_flow": 156.045872493045,
+      "pressure": 101325,
+      "tag": "SB-3",
+      "temperature": 323.149999998175,
+      "total_energy_flow": -36853.0682252421
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 2.93637513207119e-06,
+          "mass_fraction": 6.78868772101196e-07,
+          "molar_flow": 0.000104832725769319,
+          "mole_fraction": 7.76549064671846e-07
+        },
+        "Methanol": {
+          "mass_flow": 2.462171895632e-05,
+          "mass_fraction": 5.6923640076967e-06,
+          "molar_flow": 0.000768423523363501,
+          "mole_fraction": 5.692102003079e-06
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 3.99020809022035,
+          "mass_fraction": 0.922507358494572,
+          "molar_flow": 128.47973861759,
+          "mole_fraction": 0.951714458634944
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.288962527496301,
+          "mass_fraction": 0.066806054199997,
+          "molar_flow": 3.95331213540059,
+          "mole_fraction": 0.0292841840996913
+        },
+        "Water": {
+          "mass_flow": 0.046196145955885,
+          "mass_fraction": 0.0106802160726509,
+          "molar_flow": 2.56427576789731,
+          "mole_fraction": 0.0189948886142968
+        }
+      },
+      "id": "MAT-253f1e5f-94b5-4ef3-a11e-0ce345a1994e",
+      "mass_flow": 4.32539432176663,
+      "molar_flow": 134.998199777137,
+      "pressure": 101325,
+      "tag": "SA-14",
+      "temperature": 473.150000019217,
+      "total_energy_flow": -2870.87380331435
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 5,
+          "mass_fraction": 1,
+          "molar_flow": 178.507038532529,
+          "mole_fraction": 1
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "164787835_MAT-8de18dbf-372c-4799-bb31-eca5cf287f57",
+      "mass_flow": 5,
+      "molar_flow": 178.507038532529,
+      "pressure": 101325,
+      "tag": "SB-4",
+      "temperature": 323.149999998936,
+      "total_energy_flow": -19600.2293774149
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 3.6899731711676e-20,
+          "mass_fraction": 2.22347206874282e-20,
+          "molar_flow": 1.31737236609923e-18,
+          "mole_fraction": 2.679685e-20
+        },
+        "Methanol": {
+          "mass_flow": 2.46218812984821e-05,
+          "mass_fraction": 1.48364399434788e-05,
+          "molar_flow": 0.000768428589928364,
+          "mole_fraction": 1.5630710184846e-05
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 1.32437124705102,
+          "mass_fraction": 0.798028153557624,
+          "molar_flow": 42.6431072782399,
+          "mole_fraction": 0.86740922967169
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.288962527310272,
+          "mass_fraction": 0.174120536541576,
+          "molar_flow": 3.95331213285552,
+          "mole_fraction": 0.080414858360047
+        },
+        "Water": {
+          "mass_flow": 0.0461961459711777,
+          "mass_fraction": 0.0278364734608566,
+          "molar_flow": 2.56427576874618,
+          "mole_fraction": 0.052160281255323
+        }
+      },
+      "id": "MAT-3628eeb1-4e32-4ad5-85c4-4935b5f1e58f",
+      "mass_flow": 1.65955454221377,
+      "molar_flow": 49.161463608567,
+      "pressure": 101325,
+      "tag": "SA-20",
+      "temperature": 298.15,
+      "total_energy_flow": -2695.2480641179
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 5,
+          "mass_fraction": 0.5,
+          "molar_flow": 178.507038532529,
+          "mole_fraction": 0.53356892930722
+        },
+        "Methanol": {
+          "mass_flow": 5,
+          "mass_fraction": 0.5,
+          "molar_flow": 156.045872493045,
+          "mole_fraction": 0.46643107069278
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "1289545575_MAT-c8bbd6cd-5c12-4aea-b06d-50b3275972ad",
+      "mass_flow": 10,
+      "molar_flow": 334.552911025574,
+      "pressure": 101325,
+      "tag": "SB-5",
+      "temperature": 288.472581070033,
+      "total_energy_flow": -56453.2974535872
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 3.67662836748135e-05,
+          "mass_fraction": 4.65640418774378e-06,
+          "molar_flow": 0.00131260808332757,
+          "mole_fraction": 9.96734454301933e-06
+        },
+        "Methanol": {
+          "mass_flow": 0.0141831309690396,
+          "mass_fraction": 0.00179627593105899,
+          "molar_flow": 0.442643809349383,
+          "mole_fraction": 0.00336123433465009
+        },
+        "Methyl formate": {
+          "mass_flow": 7.88163325303582,
+          "mass_fraction": 0.998199067664753,
+          "molar_flow": 131.246894406708,
+          "mole_fraction": 0.996628798320807
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "2057956997_MAT-c7c11a56-6c8f-4704-8ed0-de62bbd8091f",
+      "mass_flow": 7.89585315028854,
+      "molar_flow": 131.69085082414,
+      "pressure": 101325,
+      "tag": "SB-7",
+      "temperature": 288.472581070033,
+      "total_energy_flow": -50266.3486300121
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0.641938400929649,
+          "mass_fraction": 0.305082509339915,
+          "molar_flow": 22.9181045740518,
+          "mole_fraction": 0.484788465859202
+        },
+        "Methanol": {
+          "mass_flow": 0.000500355679306747,
+          "mass_fraction": 0.000237795037630268,
+          "molar_flow": 0.0156156877068543,
+          "mole_fraction": 0.000330319868394069
+        },
+        "Methyl formate": {
+          "mass_flow": 1.46170809310251,
+          "mass_fraction": 0.694679695622455,
+          "molar_flow": 24.3407224860355,
+          "mole_fraction": 0.514881214272404
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "1814630231_MAT-75437728-02da-4deb-9e78-bb43fcd22860",
+      "mass_flow": 2.10414684971146,
+      "molar_flow": 47.2744427477942,
+      "pressure": 101325,
+      "tag": "SB-6",
+      "temperature": 288.472581070033,
+      "total_energy_flow": -11135.7937721352
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 5,
+          "mass_fraction": 1,
+          "molar_flow": 178.507038532529,
+          "mole_fraction": 1
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MSTR-68a5c7b7-9025-4c6b-ba0e-7b27bed28ef2",
+      "mass_flow": 5,
+      "molar_flow": 178.507038532529,
+      "pressure": 101325,
+      "tag": "SB-2",
+      "temperature": 298.15,
+      "total_energy_flow": -19730.3829690004
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 3.67662884629899e-05,
+          "mass_fraction": 4.65640418757505e-06,
+          "molar_flow": 0.00131260825427221,
+          "mole_fraction": 9.96734454265807e-06
+        },
+        "Methanol": {
+          "mass_flow": 0.014183132816737,
+          "mass_fraction": 0.00179627593106842,
+          "molar_flow": 0.442643867014492,
+          "mole_fraction": 0.0033612343346677
+        },
+        "Methyl formate": {
+          "mass_flow": 7.8816342797686,
+          "mass_fraction": 0.998199067664744,
+          "molar_flow": 131.246911504114,
+          "mole_fraction": 0.99662879832079
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "647454020_MAT-4b7b409f-8222-4ec5-b5a0-38fe79bff769",
+      "mass_flow": 7.8958541788738,
+      "molar_flow": 131.690867979383,
+      "pressure": 101325,
+      "tag": "SB-9",
+      "temperature": 288.472581070033,
+      "total_energy_flow": -50266.3551781615
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 3.67662884629899e-05,
+          "mass_fraction": 4.65640418757505e-06,
+          "molar_flow": 0.00131260825427221,
+          "mole_fraction": 9.96734454265807e-06
+        },
+        "Methanol": {
+          "mass_flow": 0.014183132816737,
+          "mass_fraction": 0.00179627593106842,
+          "molar_flow": 0.442643867014492,
+          "mole_fraction": 0.0033612343346677
+        },
+        "Methyl formate": {
+          "mass_flow": 7.8816342797686,
+          "mass_fraction": 0.998199067664744,
+          "molar_flow": 131.246911504114,
+          "mole_fraction": 0.99662879832079
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "364657265_MAT-5a217072-fee6-4627-9cbf-d590e4ceee61",
+      "mass_flow": 7.8958541788738,
+      "molar_flow": 131.690867979383,
+      "pressure": 101325,
+      "tag": "SB-12",
+      "temperature": 473.15,
+      "total_energy_flow": -44519.69315499
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 4,
+          "mass_fraction": 1,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 1
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "257403130_MAT-f8ca29e5-8aaa-49b6-a76a-0976dfed4806",
+      "mass_flow": 4,
+      "molar_flow": 128.795025936098,
+      "pressure": 101325,
+      "tag": "SB-11",
+      "temperature": 473.15000002078,
+      "total_energy_flow": -1590.78111410228
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 3.67662884629899e-05,
+          "mass_fraction": 3.09068082965276e-06,
+          "molar_flow": 0.00131260825427221,
+          "mole_fraction": 5.03907614551329e-06
+        },
+        "Methanol": {
+          "mass_flow": 0.014183132816737,
+          "mass_fraction": 0.00119227527535814,
+          "molar_flow": 0.442643867014492,
+          "mole_fraction": 0.0016993007197469
+        },
+        "Methyl formate": {
+          "mass_flow": 7.8816342797686,
+          "mass_fraction": 0.662553034128968,
+          "molar_flow": 131.246911504114,
+          "mole_fraction": 0.503854199286121
+        },
+        "Methylamine": {
+          "mass_flow": 4,
+          "mass_fraction": 0.336251599914844,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 0.494441460917987
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "2103101842_MAT-98dccb99-41d8-4025-821b-a1109c440fbc",
+      "mass_flow": 11.8958541788738,
+      "molar_flow": 260.485893915481,
+      "pressure": 101325,
+      "tag": "SB-13",
+      "temperature": 473.150000006987,
+      "total_energy_flow": -46110.4742691332
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        }
+      },
+      "id": "1571835781_MAT-3fe06fde-cfc3-4674-ae7e-568a3301f95a",
+      "mass_flow": -2.64141024139382e-15,
+      "molar_flow": null,
+      "pressure": 101325,
+      "tag": "SB-15",
+      "temperature": 473.150000006987,
+      "total_energy_flow": 1.09153750358603e-12
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 3.67662884629899e-05,
+          "mass_fraction": 3.09068082965276e-06,
+          "molar_flow": 0.00131260825427221,
+          "mole_fraction": 5.03907614551329e-06
+        },
+        "Methanol": {
+          "mass_flow": 0.014183132816737,
+          "mass_fraction": 0.00119227527535814,
+          "molar_flow": 0.442643867014492,
+          "mole_fraction": 0.0016993007197469
+        },
+        "Methyl formate": {
+          "mass_flow": 0.147240534055064,
+          "mass_fraction": 0.0123774662870828,
+          "molar_flow": 2.45188556801583,
+          "mole_fraction": 0.00941273836813359
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 9.41411529086747,
+          "mass_fraction": 0.791377832084246,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 0.494441460917987
+        },
+        "Water": {
+          "mass_flow": 2.32027845484607,
+          "mass_fraction": 0.195049335672484,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 0.494441460917987
+        }
+      },
+      "id": "1110638485_MAT-253f1e5f-94b5-4ef3-a11e-0ce345a1994e",
+      "mass_flow": 11.8958541788738,
+      "molar_flow": 260.485893915481,
+      "pressure": 101325,
+      "tag": "SB-14",
+      "temperature": 473.150000006987,
+      "total_energy_flow": -53413.2978779529
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 4.07835169101147e-11,
+          "molar_flow": 0,
+          "mole_fraction": 9.29093661912497e-11
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0.000112237301489874,
+          "molar_flow": 0,
+          "mole_fraction": 0.000223516187350221
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0.000977918362464267,
+          "molar_flow": 0,
+          "mole_fraction": 0.00103911807019773
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0.951439249177377,
+          "molar_flow": 0,
+          "mole_fraction": 0.830596552752922
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0.0474705951178854,
+          "molar_flow": 0,
+          "mole_fraction": 0.16814081289662
+        }
+      },
+      "id": "682975438_MAT-ee76b536-4501-4b75-a9b9-bb0dc4373eab",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 101325,
+      "tag": "SB-17",
+      "temperature": 473.150000006987,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 3.67662884629899e-05,
+          "mass_fraction": 3.09068082965276e-06,
+          "molar_flow": 0.00131260825427221,
+          "mole_fraction": 5.03907614551329e-06
+        },
+        "Methanol": {
+          "mass_flow": 0.014183132816737,
+          "mass_fraction": 0.00119227527535814,
+          "molar_flow": 0.442643867014493,
+          "mole_fraction": 0.0016993007197469
+        },
+        "Methyl formate": {
+          "mass_flow": 0.147240534055064,
+          "mass_fraction": 0.0123774662870828,
+          "molar_flow": 2.45188556801583,
+          "mole_fraction": 0.00941273836813359
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 9.41411529086747,
+          "mass_fraction": 0.791377832084246,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 0.494441460917987
+        },
+        "Water": {
+          "mass_flow": 2.32027845484607,
+          "mass_fraction": 0.195049335672484,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 0.494441460917987
+        }
+      },
+      "id": "2039162697_MAT-f84d3338-485f-4116-9c6c-2b55959ef4b8",
+      "mass_flow": 11.8958541788738,
+      "molar_flow": 260.485893915481,
+      "pressure": 101325,
+      "tag": "SB-16",
+      "temperature": 473.150000006987,
+      "total_energy_flow": -53413.2978779529
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 9.54264997449491e-25,
+          "mass_fraction": 1.05205243113348e-25,
+          "molar_flow": 3.40686037339921e-23,
+          "mole_fraction": 2.7453496997444e-25
+        },
+        "Methanol": {
+          "mass_flow": 1.7958867038351e-12,
+          "mass_fraction": 1.97991855287556e-13,
+          "molar_flow": 5.60481415197213e-11,
+          "mole_fraction": 4.5165264092955e-13
+        },
+        "Methyl formate": {
+          "mass_flow": 1.36680453624777e-13,
+          "mass_fraction": 1.50686658222507e-14,
+          "molar_flow": 2.27603651279287e-12,
+          "mole_fraction": 1.8340981056317e-14
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 9.0704705844639,
+          "mass_fraction": 0.99999587697494,
+          "molar_flow": 124.093603921755,
+          "mole_fraction": 0.9999832717737
+        },
+        "Water": {
+          "mass_flow": 3.73979297887517e-05,
+          "mass_fraction": 4.1230248472671e-06,
+          "molar_flow": 0.00207590055712438,
+          "mole_fraction": 1.6728225834258e-05
+        }
+      },
+      "id": "554616617_MAT-f2562d32-78e6-47dd-900a-5b042127a6c8",
+      "mass_flow": 9.07050798239562,
+      "molar_flow": 124.09567982237,
+      "pressure": 101325,
+      "tag": "SB-20",
+      "temperature": 426.011052207345,
+      "total_energy_flow": -27001.276545041
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 3.67662884629888e-05,
+          "mass_fraction": 1.30130206729411e-05,
+          "molar_flow": 0.00131260825427217,
+          "mole_fraction": 9.6239181307838e-06
+        },
+        "Methanol": {
+          "mass_flow": 0.0141831328149407,
+          "mass_fraction": 0.00501996280406948,
+          "molar_flow": 0.442643866958432,
+          "mole_fraction": 0.0032454224806499
+        },
+        "Methyl formate": {
+          "mass_flow": 0.147240534054933,
+          "mass_fraction": 0.0521141565725498,
+          "molar_flow": 2.45188556801365,
+          "mole_fraction": 0.017976990389793
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0.343644706403857,
+          "mass_fraction": 0.121629238509669,
+          "molar_flow": 4.70142201434728,
+          "mole_fraction": 0.034470376380066
+        },
+        "Water": {
+          "mass_flow": 2.3202410569162,
+          "mass_fraction": 0.821223629093038,
+          "molar_flow": 128.792950035536,
+          "mole_fraction": 0.94429758683136
+        }
+      },
+      "id": "2128506293_MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+      "mass_flow": 2.82534619647839,
+      "molar_flow": 136.39021409311,
+      "pressure": 101325,
+      "tag": "SB-19",
+      "temperature": 369.86484285848,
+      "total_energy_flow": -38178.1026561414
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 9.54264997449491e-25,
+          "mass_fraction": 1.05205243113348e-25,
+          "molar_flow": 3.40686037339921e-23,
+          "mole_fraction": 2.7453496997444e-25
+        },
+        "Methanol": {
+          "mass_flow": 1.7958867038351e-12,
+          "mass_fraction": 1.97991855287556e-13,
+          "molar_flow": 5.60481415197213e-11,
+          "mole_fraction": 4.5165264092955e-13
+        },
+        "Methyl formate": {
+          "mass_flow": 1.36680453624777e-13,
+          "mass_fraction": 1.50686658222507e-14,
+          "molar_flow": 2.27603651279287e-12,
+          "mole_fraction": 1.8340981056317e-14
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 9.0704705844639,
+          "mass_fraction": 0.99999587697494,
+          "molar_flow": 124.093603921755,
+          "mole_fraction": 0.9999832717737
+        },
+        "Water": {
+          "mass_flow": 3.73979297887517e-05,
+          "mass_fraction": 4.1230248472671e-06,
+          "molar_flow": 0.00207590055712438,
+          "mole_fraction": 1.6728225834258e-05
+        }
+      },
+      "id": "166514120_MAT-3628eeb1-4e32-4ad5-85c4-4935b5f1e58f",
+      "mass_flow": 9.07050798239562,
+      "molar_flow": 124.09567982237,
+      "pressure": 101325,
+      "tag": "SB-21",
+      "temperature": 298.15,
+      "total_energy_flow": -29635.7955770068
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 3.67662884629899e-05,
+          "mass_fraction": 3.09068082965276e-06,
+          "molar_flow": 0.00131260825427221,
+          "mole_fraction": 5.03907614551329e-06
+        },
+        "Methanol": {
+          "mass_flow": 0.014183132816737,
+          "mass_fraction": 0.00119227527535814,
+          "molar_flow": 0.442643867014493,
+          "mole_fraction": 0.0016993007197469
+        },
+        "Methyl formate": {
+          "mass_flow": 0.147240534055064,
+          "mass_fraction": 0.0123774662870828,
+          "molar_flow": 2.45188556801583,
+          "mole_fraction": 0.00941273836813359
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 9.41411529086747,
+          "mass_fraction": 0.791377832084246,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 0.494441460917987
+        },
+        "Water": {
+          "mass_flow": 2.32027845484607,
+          "mass_fraction": 0.195049335672484,
+          "molar_flow": 128.795025936098,
+          "mole_fraction": 0.494441460917987
+        }
+      },
+      "id": "MAT-600f752f-ba5a-4556-82b9-0b39164c35d4",
+      "mass_flow": 11.8958541788738,
+      "molar_flow": 260.485893915481,
+      "pressure": 101325,
+      "tag": "SB-18",
+      "temperature": 473.150000006987,
+      "total_energy_flow": -56787.5812890588
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methanol": {
+          "mass_flow": 5,
+          "mass_fraction": 1,
+          "molar_flow": 156.045872493045,
+          "mole_fraction": 1
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MSTR-16d88b1b-0d5c-4d5e-ad36-8815e8f41bc9",
+      "mass_flow": 5,
+      "molar_flow": 156.045872493045,
+      "pressure": 101325,
+      "tag": "SB-1",
+      "temperature": 298.15,
+      "total_energy_flow": -37266.0964532408
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 0.641938167967082,
+          "mass_fraction": 0.305082509332234,
+          "molar_flow": 22.9180962569602,
+          "mole_fraction": 0.484788465850153
+        },
+        "Methanol": {
+          "mass_flow": 0.000500355497745994,
+          "mass_fraction": 0.000237795037634146,
+          "molar_flow": 0.0156156820404931,
+          "mole_fraction": 0.000330319868401605
+        },
+        "Methyl formate": {
+          "mass_flow": 1.46170756269448,
+          "mass_fraction": 0.694679695630132,
+          "molar_flow": 24.3407136535508,
+          "mole_fraction": 0.514881214281446
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-edbe8fa3-6276-47a8-b8aa-9179e8eece2b",
+      "mass_flow": 2.10414608615931,
+      "molar_flow": 47.2744255925515,
+      "pressure": 101325,
+      "tag": "SB-8",
+      "temperature": 288.472581070033,
+      "total_energy_flow": -11135.7897312129
+    },
+    {
+      "compounds": {
+        "Carbon monoxide": {
+          "mass_flow": 5,
+          "mass_fraction": 1,
+          "molar_flow": 178.507038532529,
+          "mole_fraction": 1
+        },
+        "Methanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl formate": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methylamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "N,n-dimethylformamide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MSTR-bfb1a47c-8cf8-4abb-a364-1d3560c700f6",
+      "mass_flow": 5,
+      "molar_flow": 178.507038532529,
+      "pressure": 101325,
+      "tag": "SA-2",
+      "temperature": 298.15,
+      "total_energy_flow": -19730.3829690004
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "delta_p": null,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "HEAT-c8dd1c15-c079-42bc-a40d-63691af2b1e6",
+    "outlet_pressure": null,
+    "outlet_temperature": 473.15,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "HT-B-3",
+    "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-75437728-02da-4deb-9e78-bb43fcd22860",
+      "mass_flow": 5.67460567823337,
+      "molar_flow": 192.94658220495,
+      "tag": "SA-6",
+      "upstream_unit_guids": [
+        "RE-ccd0aef5-b905-425d-b028-1f0a907f245f"
+      ]
+    },
+    {
+      "id": "MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+      "mass_flow": 2.66583977942901,
+      "molar_flow": 85.83673616857,
+      "tag": "SA-18",
+      "upstream_unit_guids": [
+        "COUO-5afd958a-831a-40e0-9912-1005e375693b"
+      ]
+    },
+    {
+      "id": "MAT-3628eeb1-4e32-4ad5-85c4-4935b5f1e58f",
+      "mass_flow": 1.65955454221377,
+      "molar_flow": 49.161463608567,
+      "tag": "SA-20",
+      "upstream_unit_guids": [
+        "RESF-bba96f6a-8b2a-4960-a3c2-6e57070a6866"
+      ]
+    },
+    {
+      "id": "2128506293_MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+      "mass_flow": 2.82534619647839,
+      "molar_flow": 136.39021409311,
+      "tag": "SB-19",
+      "upstream_unit_guids": [
+        "COUO-f4cba791-ac65-4837-9216-d7f18eb9c21c"
+      ]
+    },
+    {
+      "id": "166514120_MAT-3628eeb1-4e32-4ad5-85c4-4935b5f1e58f",
+      "mass_flow": 9.07050798239562,
+      "molar_flow": 124.09567982237,
+      "tag": "SB-21",
+      "upstream_unit_guids": [
+        "COOL-120d7b4c-5f7d-44ec-bad2-9ca5b43b4032"
+      ]
+    },
+    {
+      "id": "MAT-edbe8fa3-6276-47a8-b8aa-9179e8eece2b",
+      "mass_flow": 2.10414608615931,
+      "molar_flow": 47.2744255925515,
+      "tag": "SB-8",
+      "upstream_unit_guids": [
+        "328797411_SEP-f0ff61fc-daaa-44b4-8b39-2284605be458"
+      ]
+    }
+  ]
+}

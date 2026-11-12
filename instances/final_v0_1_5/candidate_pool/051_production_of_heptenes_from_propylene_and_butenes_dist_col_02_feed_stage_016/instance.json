@@ -1,0 +1,142 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_feed_stage_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "rationale": "Restore the unit feed stage to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "DC-6e29fea9-223d-4eca-b1a1-e08bd9d5d274",
+        "kind": "unit_operation",
+        "tag": "DIST COL-02"
+      },
+      "type": "set_unit_parameter",
+      "unit": null,
+      "value": 14
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit feed stage is consistent with the requested process target.",
+      "target": "DC-6e29fea9-223d-4eca-b1a1-e08bd9d5d274",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the feed stage of DIST COL-02 to 14.",
+      "target": "DC-6e29fea9-223d-4eca-b1a1-e08bd9d5d274",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "051_production_of_heptenes_from_propylene_and_butenes_dist_col_02_feed_stage_016",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "9d37618d45ee23c8e6e76cbf9911ab9f80c7723ef8623f49a4b3f8dac57e335c",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "f650eb967e50d9f21d1251adb14810ca3c8bad681db44ba66397b0687cf26eaa",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/distillation/051_production_of_heptenes_from_propylene_and_butenes.zip",
+    "curated_source_entry": "Production_Of_Heptenes_From_Propylene_And_Butenes_By_Mr_Akshay_Sunil_Karandikar/FLOWSHEET.dwxmz",
+    "detected_process_category": "distillation",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.DistillationColumn",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "a325a119-4cdc-497a-a4db-090865901e84.xml",
+      "4c2938d8-9383-4163-ad5e-fdc14f6741e4.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 61,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "distillation",
+    "source_format": "dwxmz",
+    "source_name": "Production_of_Heptenes_from_Propylene_and_Butenes.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "1-heptene",
+    "target_metric": {
+      "component": "1-heptene",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.02847395125241857,
+      "metric": "mass_fraction",
+      "stream": "S-22 ( HEXENES )",
+      "stream_id": "MAT-77ae95b7-1f41-4bdd-b49f-574530cb5c83",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-22 ( HEXENES )",
+      "threshold": 0.02847395125241857
+    },
+    "target_stream_tag": "S-22 ( HEXENES )"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "compound_count": 2,
+  "extraction_note": "Unit parameters are semi-structured until category-specific schemas are induced.",
+  "property_package_count": 1,
+  "schema_version": "draft-0",
+  "settings_sections": [
+    "Type",
+    "SimulationMode",
+    "BackupFileName",
+    "FilePath",
+    "FlowsheetQuickConnect",
+    "FlowsheetShowCalculationQueue",
+    "FlowsheetShowConsoleWindow",
+    "FlowsheetShowCOReportsWindow",
+    "FlowsheetShowWatchWindow",
+    "FlowsheetMultiSelectMode",
+    "FlowsheetSnapToGrid",
+    "FlowsheetDisplayGrid",
+    "FractionNumberFormat",
+    "Key",
+    "NumberFormat",
+    "Password",
+    "SimulationAuthor",
+    "SimulationComments",
+    "SimulationName",
+    "UsePassword",
+    "SelectedUnitSystem1",
+    "SimultaneousAdjustSolverEnabled",
+    "SpreadsheetUseRegionalSeparator",
+    "EnergyBalanceCheck",
+    "MassBalanceCheck",
+    "EnergyBalanceRelativeTolerance",
+    "MassBalanceRelativeTolerance",
+    "DisplayCornerPropertyList",
+    "DisplayCornerPropertyListPosition",
+    "DisplayFloatingPropertyTables",
+    "DisplayCornerPropertyListFontColor",
+    "DisplayCornerPropertyListFontName",
+    "DisplayCornerPropertyListFontSize",
+    "DisplayCornerPropertyListPadding",
+    "DefaultFloatingTableCompoundAmountBasis",
+    "DisplayFloatingTableCompoundAmounts",
+    "SpreadsheetUnitLockingMode",
+    "CompoundOrderingMode",
+    "FlowsheetControlPanelMode",
+    "SkipEquilibriumCalculationOnDefinedStreams",
+    "ForceStreamPhase",
+    "DisplayUserDefinedPropertiesEditor",
+    "LabelFontSize",
+    "FlowsheetColorTheme",
+    "RegularFontName",
+    "BoldFontName",
+    "ItalicFontName",
+    "BoldItalicFontName",
+    "DisplayEnergyStreamPowerValue",
+    "DisplayMaterialStreamMassFlowValue",
+    "DisplayMaterialStreamMolarFlowValue",
+    "DisplayMaterialStreamVolFlowValue",
+    "DisplayMaterialStreamTemperatureValue",
+    "DisplayMaterialStreamPressureValue",
+    "DisplayMaterialStreamEnergyFlowValue",
+    "AddObjectsWithStreams",
+    "DisplayDynamicPropertyValues",
+    "CurrentWeather",
+    "CustomCalculationOrder",
+    "SpecCalculationMode",
+    "ForceObjectSolving",
+    "SaveFlowsheetMessagesInFile",
+    "RTFAnnotations",
+    "EnabledUndoRedo",
+    "EnableGHGEmissionsSubsystem",
+    "FlowsheetTransitionObject",
+    "UniqueID",
+    "RestoreUnitOperationStateAfterError",
+    "VisibleProperties"
+  ],
+  "unit_operation_summaries": [
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-62d7f6aa-4504-42fb-9b65-eb8b570bc868",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "DistillationColumn",
+      "guid": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f",
+      "object_class": "Columns",
+      "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-93398209-a3f8-448b-a4af-2596ea13332b",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-20c3dc4a-84bb-4d47-a00f-3f55331f38d5",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-251f41a3-17e2-4542-843e-28f11fd8b022",
+      "object_class": "Streams",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-5d392d44-1477-4d2d-a149-7ae3acd8b8d9",
+      "object_class": "Streams",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "HeatExchanger",
+      "guid": "HE-3dc57531-4c87-4b56-a0f0-18dec5e4bf19",
+      "object_class": "Exchangers",
+      "type": "DWSIM.UnitOperations.UnitOperations.HeatExchanger"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-885ebb93-f688-487c-8451-4c1030976d95",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-0256f50f-0094-4e9c-882f-6f77c1a49379",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Reciclo",
+      "guid": "REC-89b5ed60-4893-4b5c-9e3e-6fee0b619768",
+      "object_class": "Logical",
+      "type": "DWSIM.UnitOperations.SpecialOps.Recycle"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-ac69dd69-133f-4c9d-8faa-a586690e0f97",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    }
+  ],
+  "unsupported_sections": [
+    "DynamicProperties",
+    "StoredSolutions",
+    "DynamicsManager",
+    "OptimizationCases",
+    "SensitivityAnalysis",
+    "PetroleumAssays",
+    "WatchItems",
+    "ScriptItems",
+    "ChartItems",
+    "ParticleSizeDistributions",
+    "PanelLayout",
+    "Results"
+  ]
+}

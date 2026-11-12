@@ -1,0 +1,159 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "CL-1: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COOL-cb8be045-7787-47c1-8f6e-65adbaea6517",
+        "kind": "unit_operation",
+        "tag": "CL-1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HT-2: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-4128ebad-9bc6-4e97-b2b7-752365d632af",
+        "kind": "unit_operation",
+        "tag": "HT-2",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "C-1: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-1875d93b-00cb-45b7-b774-03852f046d04",
+        "kind": "unit_operation",
+        "tag": "C-1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 0,
+      "guid": "COOL-cb8be045-7787-47c1-8f6e-65adbaea6517",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 341.65
+      },
+      "outlet_temperature": 341.65,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "CL-1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 0,
+      "guid": "AQ-4128ebad-9bc6-4e97-b2b7-752365d632af",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 497.75
+      },
+      "outlet_temperature": 497.75,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 300000,
+      "guid": "COMP-1875d93b-00cb-45b7-b774-03852f046d04",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 1610000
+      },
+      "outlet_temperature": 329.053811108838,
+      "p_out": 1610000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "C-1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    }
+  ],
+  "product_target": {
+    "component": "Ethylene oxide",
+    "direction": "max",
+    "metric": "mole_fraction",
+    "stream_tag": "11",
+    "threshold": 0.498730876905564
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "component": "Ethylene oxide",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.498730876905564,
+    "metric": "mole_fraction",
+    "stream": "11",
+    "stream_id": "MAT-b684857b-a243-4973-8e3a-17b21ddaa695",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "11",
+    "threshold": 0.498730876905564
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-c5894624-99bb-4f16-8183-7663e2e35134",
+      "mass_flow": 1.98693634338183,
+      "molar_flow": 47.3324544602686,
+      "tag": "12",
+      "upstream_unit_guids": [
+        "CS-028aaeb3-775d-4f13-ac2e-af88c9b83f8a"
+      ]
+    },
+    {
+      "id": "MAT-7518fbb9-a3d1-42aa-8be9-581985e8ea17",
+      "mass_flow": 3.02798121129373,
+      "molar_flow": 68.900401499099,
+      "tag": "10",
+      "upstream_unit_guids": [
+        "COUO-0f4db4a3-e78d-48f1-a078-738cb17b1ef2"
+      ]
+    },
+    {
+      "id": "MAT-d3d08719-78ec-4bde-81df-9b3dfc240ac0",
+      "mass_flow": 35.7556888230743,
+      "molar_flow": 1984.6654789451,
+      "tag": "9",
+      "upstream_unit_guids": [
+        "COUO-0f4db4a3-e78d-48f1-a078-738cb17b1ef2"
+      ]
+    },
+    {
+      "id": "MAT-b684857b-a243-4973-8e3a-17b21ddaa695",
+      "mass_flow": 0.106130314366048,
+      "molar_flow": 2.78,
+      "tag": "11",
+      "upstream_unit_guids": [
+        "COUO-0f4db4a3-e78d-48f1-a078-738cb17b1ef2"
+      ]
+    }
+  ]
+}

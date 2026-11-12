@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-b49d1d90-9759-4239-b295-9f03180a5811",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "021_tealarc_lng_refrigeration_cycle_for_natural_gas_cool_008_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 166.1438080679056,
+      "metric": "temperature",
+      "stream": "NG-6",
+      "stream_id": "MAT-ed4bbbcc-2dcb-40d6-a24a-073afcc58205",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "NG-6",
+      "threshold": 166.1438080679056
+    },
+    "target_stream_tag": "NG-6"
+  }
+}

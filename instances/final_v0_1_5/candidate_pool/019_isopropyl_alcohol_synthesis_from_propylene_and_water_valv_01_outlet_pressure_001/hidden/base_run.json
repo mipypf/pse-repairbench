@@ -1,0 +1,1928 @@
+{
+  "column": null,
+  "duration_sec": 12.246,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 56,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/base_calculated.dwxmz",
+  "simulation_path": "hidden/base.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "BB-e07d323f-4b08-49a1-ad08-dc2444d35b29"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-b3edc25c-9539-459d-b71f-7dc34a6b2837",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "propylene feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-c63b9468-6d60-420b-ad90-e75166aa05af"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9ce55f7e-a1c3-48ea-a27f-7c0d0e5dfcb1",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-02",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-e07d323f-4b08-49a1-ad08-dc2444d35b29"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-9c09462b-f51c-46e9-8009-26fb4df5cb69"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-cb6bd43d-da81-4e23-9167-b250049cc877",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-03",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-c63b9468-6d60-420b-ad90-e75166aa05af"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "BB-6238af18-b3b1-4fae-b190-8e9039babd50"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-ddfead70-9149-4be8-821b-16175b68b275",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Mixed out",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-9c09462b-f51c-46e9-8009-26fb4df5cb69"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-4d995831-b631-4328-afce-107a3765afb8"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-a3cda971-1ebd-40a7-9014-b7585ca97ac9",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-06",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-6238af18-b3b1-4fae-b190-8e9039babd50"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-0ef4c924-7d85-4809-bdc3-14cb664dc50b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c922cd94-d0e3-4c3d-8d98-cffe2ecae3c9",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-4d995831-b631-4328-afce-107a3765afb8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "BB-df19c7ed-077d-4161-bc62-eb304d533b3d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-289130e2-37a4-427c-b251-db201e718238",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Water feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-71cd5a32-0b48-4c60-ac1d-0a81c919c766"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c58e6c1e-aea3-48c9-86c9-e76eb9bf9f7c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-09",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-df19c7ed-077d-4161-bc62-eb304d533b3d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "BB-aae090a5-79d6-4f9a-8e04-b1fbab656521"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1fe02923-b255-46cb-a14a-a398138be1e8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Water out",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-71cd5a32-0b48-4c60-ac1d-0a81c919c766"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-0ef4c924-7d85-4809-bdc3-14cb664dc50b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b4d6a682-81aa-4262-aa20-7fe01caacc95",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-aae090a5-79d6-4f9a-8e04-b1fbab656521"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-0ced54e2-001e-4927-80e9-d01e361c4f2f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f1fe9c46-030b-4933-aad4-6fd3df43d796",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-13",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-0ef4c924-7d85-4809-bdc3-14cb664dc50b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-209ee47b-5c38-42a7-8689-ddcd5bc53c7b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b91a3431-0c70-47c1-bb56-c1ef27fc410f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "product",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-0ced54e2-001e-4927-80e9-d01e361c4f2f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-e44e7b4a-ce69-40ad-87f5-a481a7335f0e"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-a3e972f6-328c-4dc0-9f42-1e1263623c9a",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-15",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-209ee47b-5c38-42a7-8689-ddcd5bc53c7b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-cbd17680-29ce-4ace-9d9a-6887e9de3b20"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b458858e-b464-4654-bb75-9a9383d27539",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-16",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-e44e7b4a-ce69-40ad-87f5-a481a7335f0e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-517521ac-0198-4cf6-bccc-611ebc5421c9"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-931c5860-666e-4045-ab68-f0833f8a2118",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-17",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-e44e7b4a-ce69-40ad-87f5-a481a7335f0e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-c7026ad6-d01c-4353-86da-efce730e096a"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-33fb57ad-19a5-4ab8-b653-282bdca71cf8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-18",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-cbd17680-29ce-4ace-9d9a-6887e9de3b20"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-304099b3-7773-47f6-abf7-b31ac4a86aed",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Propane purge",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-cbd17680-29ce-4ace-9d9a-6887e9de3b20"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-9c09462b-f51c-46e9-8009-26fb4df5cb69"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-fd8c802c-fd98-4972-9021-5e602b80bcb9",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "propylenerecycle",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-c7026ad6-d01c-4353-86da-efce730e096a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-8758a3ee-e301-4b19-852a-ea2a6a6adb56"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-a69044c8-2327-4026-aef2-92a77b7f9c33",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-20",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-517521ac-0198-4cf6-bccc-611ebc5421c9"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-d3020d09-b802-43d3-b803-d36419265cbe"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-5dd6551e-76d3-4f64-8b18-f17a9be9f6f6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-21",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-8758a3ee-e301-4b19-852a-ea2a6a6adb56"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-8a8ed617-5b19-4266-9551-bb70aeed857d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-66a280ac-f012-446f-abd7-5ace34abdcf8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-22",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-8758a3ee-e301-4b19-852a-ea2a6a6adb56"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-71cd5a32-0b48-4c60-ac1d-0a81c919c766"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-31119bca-7ec9-4118-b035-7bc994db3957",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Water recycle",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-8a8ed617-5b19-4266-9551-bb70aeed857d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-a068caf8-eed0-4e9a-9871-7f0777067c9f",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "DIPE purge",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-d3020d09-b802-43d3-b803-d36419265cbe"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-c6161bb8-ba99-42c8-81e2-4106fc1145e9"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6ef9c64f-ae7a-4c95-bfd8-66b86293e35e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-24",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-d3020d09-b802-43d3-b803-d36419265cbe"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-c6161bb8-ba99-42c8-81e2-4106fc1145e9"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-22f07e6c-ef74-4aba-9850-bb56b06d3f8a",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "DMSO recycle",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-72f4d835-7afc-420b-96f8-80cfe2fc8e7d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-a3f53298-ba26-47ee-8eb1-fe8eb1b55dd0",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Isopropanol",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-c6161bb8-ba99-42c8-81e2-4106fc1145e9"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-cce22806-fc1d-4900-adc8-f3ee827e416f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-bc1a61f5-9938-4fdb-9d10-bc28f3053501",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-27",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-c6161bb8-ba99-42c8-81e2-4106fc1145e9"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-30668304-48d9-451c-9af4-898f0e8d1c4d",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Water product",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-cce22806-fc1d-4900-adc8-f3ee827e416f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-72f4d835-7afc-420b-96f8-80cfe2fc8e7d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-403b45a4-242b-4758-ae76-b72533cc6952",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "DMSO ",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-cce22806-fc1d-4900-adc8-f3ee827e416f"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-304099b3-7773-47f6-abf7-b31ac4a86aed",
+        "mass_flow": 0.26909337835552,
+        "molar_flow": 5.8156860301726,
+        "tag": "Propane purge",
+        "upstream_unit_guids": [
+          "COUO-cbd17680-29ce-4ace-9d9a-6887e9de3b20"
+        ]
+      },
+      {
+        "id": "MAT-a068caf8-eed0-4e9a-9871-7f0777067c9f",
+        "mass_flow": 0.26200326443447,
+        "molar_flow": 3.7043396161542,
+        "tag": "DIPE purge",
+        "upstream_unit_guids": [
+          "COUO-d3020d09-b802-43d3-b803-d36419265cbe"
+        ]
+      },
+      {
+        "id": "MAT-a3f53298-ba26-47ee-8eb1-fe8eb1b55dd0",
+        "mass_flow": 5.98699419692647,
+        "molar_flow": 97.781862255803,
+        "tag": "Isopropanol",
+        "upstream_unit_guids": [
+          "COUO-c6161bb8-ba99-42c8-81e2-4106fc1145e9"
+        ]
+      },
+      {
+        "id": "MAT-30668304-48d9-451c-9af4-898f0e8d1c4d",
+        "mass_flow": 0.79997585268412,
+        "molar_flow": 44.404071172209,
+        "tag": "Water product",
+        "upstream_unit_guids": [
+          "COUO-cce22806-fc1d-4900-adc8-f3ee827e416f"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0.269017711290698,
+          "mass_fraction": 0.0396373804346662,
+          "molar_flow": 2.63291644603854,
+          "mole_fraction": 0.018517418691815
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 5.71801023667317,
+          "mass_fraction": 0.842498235498768,
+          "molar_flow": 95.1494855426151,
+          "mole_fraction": 0.66919057182934
+        },
+        "Propane": {
+          "mass_flow": 1.41412805487062e-23,
+          "mass_fraction": 2.08359261646054e-24,
+          "molar_flow": 3.20695809441078e-22,
+          "mole_fraction": 2.2554679185e-24
+        },
+        "Propylene": {
+          "mass_flow": 7.82335159161646e-23,
+          "mass_fraction": 1.15270166348254e-23,
+          "molar_flow": 1.85917298719442e-21,
+          "mole_fraction": 1.307564646656e-23
+        },
+        "Water": {
+          "mass_flow": 0.799942036950162,
+          "mass_fraction": 0.117864384066566,
+          "molar_flow": 44.4035306112457,
+          "mole_fraction": 0.31229200947884
+        }
+      },
+      "id": "MAT-6ef9c64f-ae7a-4c95-bfd8-66b86293e35e",
+      "mass_flow": 6.78696998491403,
+      "molar_flow": 142.1859325999,
+      "pressure": 120000,
+      "tag": "MSTR-24",
+      "temperature": 355.612910008975,
+      "total_energy_flow": -42424.2837605968
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0.269017703744463,
+          "mass_fraction": 0.0449336837310729,
+          "molar_flow": 2.6329163721824,
+          "mole_fraction": 0.026926429006788
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 6.46945113204746e-08,
+          "mass_fraction": 1.0805841661528e-08,
+          "molar_flow": 8.28000294374272e-07,
+          "mole_fraction": 8.4678311015204e-09
+        },
+        "Isopropanol": {
+          "mass_flow": 5.71797586010837,
+          "mass_fraction": 0.955066210527446,
+          "molar_flow": 95.1489135057841,
+          "mole_fraction": 0.97307323987008
+        },
+        "Propane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 5.68379125132584e-07,
+          "mass_fraction": 9.49356398949529e-08,
+          "molar_flow": 3.15498357579002e-05,
+          "mole_fraction": 3.2265529649419e-07
+        }
+      },
+      "id": "MAT-a3f53298-ba26-47ee-8eb1-fe8eb1b55dd0",
+      "mass_flow": 5.98699419692647,
+      "molar_flow": 97.781862255803,
+      "pressure": 105000,
+      "tag": "Isopropanol",
+      "temperature": 353.792081370845,
+      "total_energy_flow": -29998.8616058548
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 7.54628045308299e-09,
+          "mass_fraction": 4.19243248772614e-09,
+          "molar_flow": 7.38565718071676e-08,
+          "mole_fraction": 1.2911156718263e-09
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0.999977707084887,
+          "mass_fraction": 0.555550387008452,
+          "molar_flow": 12.7983320212816,
+          "mole_fraction": 0.22373265698083
+        },
+        "Isopropanol": {
+          "mass_flow": 3.43765648325292e-05,
+          "mass_fraction": 1.90983396543975e-05,
+          "molar_flow": 0.000572036831546594,
+          "mole_fraction": 9.9999999999999e-06
+        },
+        "Propane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.799964527431887,
+          "mass_fraction": 0.444430510459461,
+          "molar_flow": 44.40477902269,
+          "mole_fraction": 0.77625734172805
+        }
+      },
+      "id": "MAT-bc1a61f5-9938-4fdb-9d10-bc28f3053501",
+      "mass_flow": 1.79997661862789,
+      "molar_flow": 57.20368315466,
+      "pressure": 125000,
+      "tag": "MSTR-27",
+      "temperature": 389.523705961265,
+      "total_energy_flow": -15693.0234814669
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 4.85649941707293e-18,
+          "mass_fraction": 4.85649569727869e-18,
+          "molar_flow": 4.75312838104203e-17,
+          "mole_fraction": 3.7134941180708e-18
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0.999977707082631,
+          "mass_fraction": 0.999976941158247,
+          "molar_flow": 12.7983320212528,
+          "mole_fraction": 0.9999
+        },
+        "Isopropanol": {
+          "mass_flow": 5.59056811886386e-14,
+          "mass_fraction": 5.59056383681596e-14,
+          "molar_flow": 9.3028808691034e-13,
+          "mole_fraction": 7.2680960031118e-14
+        },
+        "Propane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 2.30588593587581e-05,
+          "mass_fraction": 2.30588416970217e-05,
+          "molar_flow": 0.00127996119731462,
+          "mole_fraction": 9.9999999927304e-05
+        }
+      },
+      "id": "MAT-22f07e6c-ef74-4aba-9850-bb56b06d3f8a",
+      "mass_flow": 1.00000076594205,
+      "molar_flow": 12.799611982451,
+      "pressure": 125100,
+      "tag": "DMSO recycle",
+      "temperature": 470.807563778339,
+      "total_energy_flow": -2970.42639137179
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 7.54628044821426e-09,
+          "mass_fraction": 9.43313529138985e-09,
+          "molar_flow": 7.38565717595166e-08,
+          "mole_fraction": 1.6632837892968e-09
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 1.2616690186967e-14,
+          "mass_fraction": 1.5771338778083e-14,
+          "molar_flow": 1.61476189797442e-13,
+          "mole_fraction": 3.6365176781021e-15
+        },
+        "Isopropanol": {
+          "mass_flow": 3.43765647766923e-05,
+          "mass_fraction": 4.29720030440298e-05,
+          "molar_flow": 0.000572036830617451,
+          "mole_fraction": 1.2882531162491e-05
+        },
+        "Propane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.79994146857305,
+          "mass_fraction": 0.999957018563805,
+          "molar_flow": 44.4034990615216,
+          "mole_fraction": 0.99998711580555
+        }
+      },
+      "id": "MAT-30668304-48d9-451c-9af4-898f0e8d1c4d",
+      "mass_flow": 0.79997585268412,
+      "molar_flow": 44.404071172209,
+      "pressure": 109000,
+      "tag": "Water product",
+      "temperature": 375.181886711077,
+      "total_energy_flow": -12513.4048835976
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 4.85649941707293e-18,
+          "mass_fraction": 4.85649569727869e-18,
+          "molar_flow": 4.75312838104203e-17,
+          "mole_fraction": 3.7134941180708e-18
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0.999977707082631,
+          "mass_fraction": 0.999976941158247,
+          "molar_flow": 12.7983320212528,
+          "mole_fraction": 0.9999
+        },
+        "Isopropanol": {
+          "mass_flow": 5.59056811886386e-14,
+          "mass_fraction": 5.59056383681596e-14,
+          "molar_flow": 9.3028808691034e-13,
+          "mole_fraction": 7.2680960031118e-14
+        },
+        "Propane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 2.30588593587581e-05,
+          "mass_fraction": 2.30588416970217e-05,
+          "molar_flow": 0.00127996119731462,
+          "mole_fraction": 9.9999999927304e-05
+        }
+      },
+      "id": "MAT-403b45a4-242b-4758-ae76-b72533cc6952",
+      "mass_flow": 1.00000076594205,
+      "molar_flow": 12.799611982451,
+      "pressure": 125100,
+      "tag": "DMSO ",
+      "temperature": 470.807563778339,
+      "total_energy_flow": -2988.90130794192
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 1.24328511245018e-19,
+          "mass_fraction": 6.99942776454032e-21,
+          "molar_flow": 1.21682167466947e-18,
+          "mole_fraction": 1.234451038e-21
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0.00666450408464986,
+          "mass_fraction": 0.00037519724526469,
+          "molar_flow": 0.110899440330494,
+          "mole_fraction": 0.00011250615606168
+        },
+        "Propane": {
+          "mass_flow": 6.05417871724429e-22,
+          "mass_fraction": 3.40837239830353e-23,
+          "molar_flow": 1.37296600370837e-20,
+          "mole_fraction": 1.3928575926106e-23
+        },
+        "Propylene": {
+          "mass_flow": 2.41629046783994e-21,
+          "mass_fraction": 1.36031956133238e-22,
+          "molar_flow": 5.74217062139628e-20,
+          "mole_fraction": 5.8253634295931e-23
+        },
+        "Water": {
+          "mass_flow": 17.7560034492695,
+          "mass_fraction": 0.999624802754735,
+          "molar_flow": 985.607964420731,
+          "mole_fraction": 0.99988749384394
+        }
+      },
+      "id": "MAT-31119bca-7ec9-4118-b035-7bc994db3957",
+      "mass_flow": 17.7626679533542,
+      "molar_flow": 985.71886386106,
+      "pressure": 120000,
+      "tag": "Water recycle",
+      "temperature": 377.850138124142,
+      "total_energy_flow": -277531.969409146
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 1.24328511245018e-19,
+          "mass_fraction": 6.99942776454032e-21,
+          "molar_flow": 1.21682167466947e-18,
+          "mole_fraction": 1.234451038e-21
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0.00666450408464986,
+          "mass_fraction": 0.00037519724526469,
+          "molar_flow": 0.110899440330494,
+          "mole_fraction": 0.00011250615606168
+        },
+        "Propane": {
+          "mass_flow": 6.05417871724429e-22,
+          "mass_fraction": 3.40837239830353e-23,
+          "molar_flow": 1.37296600370837e-20,
+          "mole_fraction": 1.3928575926106e-23
+        },
+        "Propylene": {
+          "mass_flow": 2.41629046783994e-21,
+          "mass_fraction": 1.36031956133238e-22,
+          "molar_flow": 5.74217062139628e-20,
+          "mole_fraction": 5.8253634295931e-23
+        },
+        "Water": {
+          "mass_flow": 17.7560034492695,
+          "mass_fraction": 0.999624802754735,
+          "molar_flow": 985.607964420731,
+          "mole_fraction": 0.99988749384394
+        }
+      },
+      "id": "MAT-66a280ac-f012-446f-abd7-5ace34abdcf8",
+      "mass_flow": 17.7626679533542,
+      "molar_flow": 985.71886386106,
+      "pressure": 120000,
+      "tag": "MSTR-22",
+      "temperature": 377.850138124142,
+      "total_energy_flow": -277531.969541742
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0.365185877271492,
+          "mass_fraction": 0.0518069602981189,
+          "molar_flow": 3.57412862341294,
+          "mole_fraction": 0.024498745318125
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 5.88359191951881,
+          "mass_fraction": 0.834673605842202,
+          "molar_flow": 97.9048167305513,
+          "mole_fraction": 0.67108529748689
+        },
+        "Propane": {
+          "mass_flow": 0.000114621666655244,
+          "mass_fraction": 1.62607606243704e-05,
+          "molar_flow": 0.00259938893375904,
+          "mole_fraction": 1.781742465947e-05
+        },
+        "Propylene": {
+          "mass_flow": 7.89872171964137e-05,
+          "mass_fraction": 1.12054925451328e-05,
+          "molar_flow": 0.00187708424996005,
+          "mole_fraction": 1.2866411320285e-05
+        },
+        "Water": {
+          "mass_flow": 0.800001843674192,
+          "mass_fraction": 0.113491967606509,
+          "molar_flow": 44.4068503889028,
+          "mole_fraction": 0.30438527335901
+        }
+      },
+      "id": "MAT-5dd6551e-76d3-4f64-8b18-f17a9be9f6f6",
+      "mass_flow": 7.04897324934835,
+      "molar_flow": 145.89027221605,
+      "pressure": 120000,
+      "tag": "MSTR-21",
+      "temperature": 351.896944302012,
+      "total_energy_flow": -43715.3430420031
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0.365185882747317,
+          "mass_fraction": 0.0147183283655715,
+          "molar_flow": 3.57412867700565,
+          "mole_fraction": 0.0031584480568935
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 5.89025644017516,
+          "mass_fraction": 0.237398904338006,
+          "molar_flow": 98.0157164466401,
+          "mole_fraction": 0.086616229333767
+        },
+        "Propane": {
+          "mass_flow": 0.000114621668415603,
+          "mass_fraction": 4.61967297546884e-06,
+          "molar_flow": 0.00259938897368046,
+          "mole_fraction": 2.297073159635e-06
+        },
+        "Propylene": {
+          "mass_flow": 7.89872184266002e-05,
+          "mass_fraction": 3.18347414949289e-06,
+          "molar_flow": 0.0018770842791947,
+          "mole_fraction": 1.658774411898e-06
+        },
+        "Water": {
+          "mass_flow": 18.5560052870089,
+          "mass_fraction": 0.747874964149297,
+          "molar_flow": 1030.0148144802,
+          "mole_fraction": 0.91022136676177
+        }
+      },
+      "id": "MAT-a69044c8-2327-4026-aef2-92a77b7f9c33",
+      "mass_flow": 24.8116412188182,
+      "molar_flow": 1131.6091360771,
+      "pressure": 120000,
+      "tag": "MSTR-20",
+      "temperature": 368.364756323451,
+      "total_energy_flow": -310377.162824011
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propane": {
+          "mass_flow": 0.000734601377768442,
+          "mass_fraction": 0.00072333039951895,
+          "molar_flow": 0.0166592822091727,
+          "mole_fraction": 0.00069028537717811
+        },
+        "Propylene": {
+          "mass_flow": 1.01484745940246,
+          "mass_fraction": 0.999276669600481,
+          "molar_flow": 24.1172464326648,
+          "mole_fraction": 0.99930971462282
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-fd8c802c-fd98-4972-9021-5e602b80bcb9",
+      "mass_flow": 1.01558206078023,
+      "molar_flow": 24.133905714874,
+      "pressure": 850000,
+      "tag": "propylenerecycle",
+      "temperature": 286.148163394757,
+      "total_energy_flow": 168.470904093249
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0.388264240000001,
+          "mass_fraction": 0.0148781241871498,
+          "molar_flow": 3.80000000000001,
+          "mole_fraction": 0.00327146609894181
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 5.8904627603262,
+          "mass_fraction": 0.225720082972139,
+          "molar_flow": 98.0191496787288,
+          "mole_fraction": 0.0843858750581746
+        },
+        "Propane": {
+          "mass_flow": 0.246293726143371,
+          "mass_fraction": 0.00943787314555917,
+          "molar_flow": 5.58544649430877,
+          "mole_fraction": 0.00480857864568012
+        },
+        "Propylene": {
+          "mass_flow": 1.01492714474968,
+          "mass_fraction": 0.0388915860510232,
+          "molar_flow": 24.1191401075596,
+          "mole_fraction": 0.0207644603151339
+        },
+        "Water": {
+          "mass_flow": 18.556368782418,
+          "mass_fraction": 0.711072333644129,
+          "molar_flow": 1030.03499154151,
+          "mole_fraction": 0.886769619882069
+        }
+      },
+      "id": "MAT-a3e972f6-328c-4dc0-9f42-1e1263623c9a",
+      "mass_flow": 26.0963166536372,
+      "molar_flow": 1161.55872782211,
+      "pressure": 902000,
+      "tag": "MSTR-15",
+      "temperature": 379.511197344582,
+      "total_energy_flow": -316590.546372598
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0.388264240000001,
+          "mass_fraction": 0.0148781241871498,
+          "molar_flow": 3.80000000000001,
+          "mole_fraction": 0.00327146609894181
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 5.8904627603262,
+          "mass_fraction": 0.225720082972139,
+          "molar_flow": 98.0191496787288,
+          "mole_fraction": 0.0843858750581746
+        },
+        "Propane": {
+          "mass_flow": 0.246293726143371,
+          "mass_fraction": 0.00943787314555917,
+          "molar_flow": 5.58544649430876,
+          "mole_fraction": 0.00480857864568012
+        },
+        "Propylene": {
+          "mass_flow": 1.01492714474968,
+          "mass_fraction": 0.0388915860510232,
+          "molar_flow": 24.1191401075596,
+          "mole_fraction": 0.0207644603151339
+        },
+        "Water": {
+          "mass_flow": 18.556368782418,
+          "mass_fraction": 0.711072333644129,
+          "molar_flow": 1030.03499154151,
+          "mole_fraction": 0.886769619882069
+        }
+      },
+      "id": "MAT-b91a3431-0c70-47c1-bb56-c1ef27fc410f",
+      "mass_flow": 26.0963166536372,
+      "molar_flow": 1161.55872782211,
+      "pressure": 7500000,
+      "tag": "product",
+      "temperature": 406.65,
+      "total_energy_flow": -316590.255171805
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 2.48657022353589e-19,
+          "mass_fraction": 9.29949967924489e-21,
+          "molar_flow": 2.43364334800351e-18,
+          "mole_fraction": 1.86817326403276e-21
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0.00666450396500934,
+          "mass_fraction": 0.000249245132505449,
+          "molar_flow": 0.110899438339639,
+          "mole_fraction": 8.51313590680106e-05
+        },
+        "Propane": {
+          "mass_flow": 0.245710268044402,
+          "mass_fraction": 0.0091892943028042,
+          "molar_flow": 5.57221483776397,
+          "mole_fraction": 0.00427748083543024
+        },
+        "Propylene": {
+          "mass_flow": 5.45659779273578,
+          "mass_fraction": 0.204070767610004,
+          "molar_flow": 129.67280198822,
+          "mole_fraction": 0.0995426309879558
+        },
+        "Water": {
+          "mass_flow": 21.0297801563882,
+          "mass_fraction": 0.786490692954686,
+          "molar_flow": 1167.33018617464,
+          "mole_fraction": 0.896094756817546
+        }
+      },
+      "id": "MAT-f1fe9c46-030b-4933-aad4-6fd3df43d796",
+      "mass_flow": 26.7387527211334,
+      "molar_flow": 1302.68610243896,
+      "pressure": 7500000,
+      "tag": "MSTR-13",
+      "temperature": 341.596170875176,
+      "total_energy_flow": -328051.352913962
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propane": {
+          "mass_flow": 0.244975666666666,
+          "mass_fraction": 0.0522701063955236,
+          "molar_flow": 5.55555555555555,
+          "mole_fraction": 0.05
+        },
+        "Propylene": {
+          "mass_flow": 4.44175033333333,
+          "mass_fraction": 0.947729893604476,
+          "molar_flow": 105.555555555555,
+          "mole_fraction": 0.95
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-b3edc25c-9539-459d-b71f-7dc34a6b2837",
+      "mass_flow": 4.68672599999999,
+      "molar_flow": 111.111111111111,
+      "pressure": 101325,
+      "tag": "propylene feed",
+      "temperature": 223.45,
+      "total_energy_flow": -1013.06502857124
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propane": {
+          "mass_flow": 0.244975666666666,
+          "mass_fraction": 0.0522701063955236,
+          "molar_flow": 5.55555555555555,
+          "mole_fraction": 0.05
+        },
+        "Propylene": {
+          "mass_flow": 4.44175033333333,
+          "mass_fraction": 0.947729893604476,
+          "molar_flow": 105.555555555555,
+          "mole_fraction": 0.95
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-9ce55f7e-a1c3-48ea-a27f-7c0d0e5dfcb1",
+      "mass_flow": 4.68672599999999,
+      "molar_flow": 111.111111111111,
+      "pressure": 870000,
+      "tag": "MSTR-02",
+      "temperature": 223.905452595949,
+      "total_energy_flow": -1005.24938834343
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propane": {
+          "mass_flow": 0.244975666666666,
+          "mass_fraction": 0.0522701063955236,
+          "molar_flow": 5.55555555555555,
+          "mole_fraction": 0.05
+        },
+        "Propylene": {
+          "mass_flow": 4.44175033333333,
+          "mass_fraction": 0.947729893604476,
+          "molar_flow": 105.555555555555,
+          "mole_fraction": 0.95
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-cb6bd43d-da81-4e23-9167-b250049cc877",
+      "mass_flow": 4.68672599999999,
+      "molar_flow": 111.111111111111,
+      "pressure": 870000,
+      "tag": "MSTR-03",
+      "temperature": 285.95,
+      "total_energy_flow": -328.972702188825
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propane": {
+          "mass_flow": 0.245710268044402,
+          "mass_fraction": 0.0430896165947906,
+          "molar_flow": 5.57221483776397,
+          "mole_fraction": 0.0412008883472105
+        },
+        "Propylene": {
+          "mass_flow": 5.45659779273578,
+          "mass_fraction": 0.956910383405209,
+          "molar_flow": 129.67280198822,
+          "mole_fraction": 0.958799111652789
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-ddfead70-9149-4be8-821b-16175b68b275",
+      "mass_flow": 5.70230806078018,
+      "molar_flow": 135.245016825984,
+      "pressure": 850000,
+      "tag": "Mixed out",
+      "temperature": 292.228836200396,
+      "total_energy_flow": -160.501798094843
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propane": {
+          "mass_flow": 0.245710268044402,
+          "mass_fraction": 0.0430896165947906,
+          "molar_flow": 5.57221483776397,
+          "mole_fraction": 0.0412008883472105
+        },
+        "Propylene": {
+          "mass_flow": 5.45659779273578,
+          "mass_fraction": 0.956910383405209,
+          "molar_flow": 129.67280198822,
+          "mole_fraction": 0.958799111652789
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-a3cda971-1ebd-40a7-9014-b7585ca97ac9",
+      "mass_flow": 5.70230806078018,
+      "molar_flow": 135.245016825984,
+      "pressure": 7510000,
+      "tag": "MSTR-06",
+      "temperature": 298.389619889561,
+      "total_energy_flow": -62.2702773555222
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propane": {
+          "mass_flow": 0.245710268044402,
+          "mass_fraction": 0.0430896165947906,
+          "molar_flow": 5.57221483776397,
+          "mole_fraction": 0.0412008883472105
+        },
+        "Propylene": {
+          "mass_flow": 5.45659779273578,
+          "mass_fraction": 0.956910383405209,
+          "molar_flow": 129.67280198822,
+          "mole_fraction": 0.958799111652789
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-c922cd94-d0e3-4c3d-8d98-cffe2ecae3c9",
+      "mass_flow": 5.70230806078018,
+      "molar_flow": 135.245016825984,
+      "pressure": 7510000,
+      "tag": "MSTR-07",
+      "temperature": 395.37,
+      "total_energy_flow": 1821.30015815275
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 3.27377671555555,
+          "mass_fraction": 1,
+          "molar_flow": 181.722222222222,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-289130e2-37a4-427c-b251-db201e718238",
+      "mass_flow": 3.27377671555555,
+      "molar_flow": 181.722222222222,
+      "pressure": 101325,
+      "tag": "Water feed",
+      "temperature": 298.15,
+      "total_energy_flow": -52555.6516829535
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 3.27377671555555,
+          "mass_fraction": 1,
+          "molar_flow": 181.722222222222,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-c58e6c1e-aea3-48c9-86c9-e76eb9bf9f7c",
+      "mass_flow": 3.27377671555555,
+      "molar_flow": 181.722222222222,
+      "pressure": 133900,
+      "tag": "MSTR-09",
+      "temperature": 298.153263452781,
+      "total_energy_flow": -52555.508967684
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 2.48657022353589e-19,
+          "mass_fraction": 1.18202969355475e-20,
+          "molar_flow": 2.43364334800351e-18,
+          "mole_fraction": 2.08459628326829e-21
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0.00666450396500935,
+          "mass_fraction": 0.000316807524874664,
+          "molar_flow": 0.110899438339639,
+          "mole_fraction": 9.49936058498486e-05
+        },
+        "Propane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 21.0297801563882,
+          "mass_fraction": 0.999683192475125,
+          "molar_flow": 1167.33018617464,
+          "mole_fraction": 0.99990500639415
+        }
+      },
+      "id": "MAT-1fe02923-b255-46cb-a14a-a398138be1e8",
+      "mass_flow": 21.0364446603532,
+      "molar_flow": 1167.44108561298,
+      "pressure": 120000,
+      "tag": "Water out",
+      "temperature": 365.428329227619,
+      "total_energy_flow": -330087.478386131
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 2.48657022353589e-19,
+          "mass_fraction": 1.18202969355475e-20,
+          "molar_flow": 2.43364334800351e-18,
+          "mole_fraction": 2.08459628326829e-21
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0.00666450396500935,
+          "mass_fraction": 0.000316807524874664,
+          "molar_flow": 0.110899438339639,
+          "mole_fraction": 9.49936058498486e-05
+        },
+        "Propane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 21.0297801563882,
+          "mass_fraction": 0.999683192475125,
+          "molar_flow": 1167.33018617464,
+          "mole_fraction": 0.99990500639415
+        }
+      },
+      "id": "MAT-b4d6a682-81aa-4262-aa20-7fe01caacc95",
+      "mass_flow": 21.0364446603532,
+      "molar_flow": 1167.44108561298,
+      "pressure": 7500000,
+      "tag": "MSTR-12",
+      "temperature": 366.351199551107,
+      "total_energy_flow": -329872.653072111
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propane": {
+          "mass_flow": 0.000734601377768442,
+          "mass_fraction": 0.00072333039951895,
+          "molar_flow": 0.0166592822091727,
+          "mole_fraction": 0.00069028537717811
+        },
+        "Propylene": {
+          "mass_flow": 1.01484745940246,
+          "mass_fraction": 0.999276669600481,
+          "molar_flow": 24.1172464326648,
+          "mole_fraction": 0.99930971462282
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-33fb57ad-19a5-4ab8-b653-282bdca71cf8",
+      "mass_flow": 1.01558206078023,
+      "molar_flow": 24.133905714874,
+      "pressure": 850000,
+      "tag": "MSTR-18",
+      "temperature": 286.148163394757,
+      "total_energy_flow": 78.590322794447
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0.023078358519648,
+          "mass_fraction": 0.085763383182017,
+          "molar_flow": 0.225871335394324,
+          "mole_fraction": 0.038838295984768
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0.00020632169296668,
+          "mass_fraction": 0.000766728985408525,
+          "molar_flow": 0.00343325774692612,
+          "mole_fraction": 0.00059034441149572
+        },
+        "Propane": {
+          "mass_flow": 0.245444503809949,
+          "mass_fraction": 0.912116475365936,
+          "molar_flow": 5.56618783928992,
+          "mole_fraction": 0.95709909551715
+        },
+        "Propylene": {
+          "mass_flow": 7.01226011073138e-07,
+          "mass_fraction": 2.60588356115807e-06,
+          "molar_flow": 1.66642191960582e-05,
+          "mole_fraction": 2.8653918230114e-06
+        },
+        "Water": {
+          "mass_flow": 0.000363493106945196,
+          "mass_fraction": 0.00135080658307748,
+          "molar_flow": 0.0201769335222764,
+          "mole_fraction": 0.0034693986947706
+        }
+      },
+      "id": "MAT-304099b3-7773-47f6-abf7-b31ac4a86aed",
+      "mass_flow": 0.26909337835552,
+      "molar_flow": 5.8156860301726,
+      "pressure": 954300,
+      "tag": "Propane purge",
+      "temperature": 299.281443942679,
+      "total_energy_flow": -758.124147113615
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0.365185882747317,
+          "mass_fraction": 0.0147183283655715,
+          "molar_flow": 3.57412867700565,
+          "mole_fraction": 0.0031584480568935
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 5.89025644017516,
+          "mass_fraction": 0.237398904338006,
+          "molar_flow": 98.01571644664,
+          "mole_fraction": 0.086616229333767
+        },
+        "Propane": {
+          "mass_flow": 0.000114621668415603,
+          "mass_fraction": 4.61967297546884e-06,
+          "molar_flow": 0.00259938897368046,
+          "mole_fraction": 2.297073159635e-06
+        },
+        "Propylene": {
+          "mass_flow": 7.89872184266002e-05,
+          "mass_fraction": 3.18347414949289e-06,
+          "molar_flow": 0.0018770842791947,
+          "mole_fraction": 1.658774411898e-06
+        },
+        "Water": {
+          "mass_flow": 18.5560052870089,
+          "mass_fraction": 0.747874964149297,
+          "molar_flow": 1030.0148144802,
+          "mole_fraction": 0.91022136676177
+        }
+      },
+      "id": "MAT-931c5860-666e-4045-ab68-f0833f8a2118",
+      "mass_flow": 24.8116412188182,
+      "molar_flow": 1131.6091360771,
+      "pressure": 902000,
+      "tag": "MSTR-17",
+      "temperature": 443.8458902073,
+      "total_energy_flow": -310260.239314571
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0.023078358519648,
+          "mass_fraction": 0.0179643494509197,
+          "molar_flow": 0.225871335394324,
+          "mole_fraction": 0.0075417166723712
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0.00020632169296668,
+          "mass_fraction": 0.000160602193115394,
+          "molar_flow": 0.00343325774692612,
+          "mole_fraction": 0.00011463454247232
+        },
+        "Propane": {
+          "mass_flow": 0.246179105187715,
+          "mass_fraction": 0.19162747079008,
+          "molar_flow": 5.58284712149903,
+          "mole_fraction": 0.18640812098624
+        },
+        "Propylene": {
+          "mass_flow": 1.01484816062845,
+          "mass_fraction": 0.789964632087306,
+          "molar_flow": 24.1172630968835,
+          "mole_fraction": 0.80526183135277
+        },
+        "Water": {
+          "mass_flow": 0.000363493106945195,
+          "mass_fraction": 0.000282945478579194,
+          "molar_flow": 0.0201769335222764,
+          "mole_fraction": 0.00067369644614985
+        }
+      },
+      "id": "MAT-b458858e-b464-4654-bb75-9a9383d27539",
+      "mass_flow": 1.28467543913573,
+      "molar_flow": 29.949591745046,
+      "pressure": 902000,
+      "tag": "MSTR-16",
+      "temperature": 306.44820902289,
+      "total_energy_flow": -616.949929788663
+    },
+    {
+      "compounds": {
+        "Diisopropyl ether": {
+          "mass_flow": 0.0961681659808089,
+          "mass_fraction": 0.367049495312154,
+          "molar_flow": 0.941212177374547,
+          "mole_fraction": 0.2540836626507
+        },
+        "Dimethyl sulfoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Isopropanol": {
+          "mass_flow": 0.165581682845766,
+          "mass_fraction": 0.631983281594493,
+          "molar_flow": 2.75533118793813,
+          "mole_fraction": 0.74381171097878
+        },
+        "Propane": {
+          "mass_flow": 0.000114621666655243,
+          "mass_fraction": 0.000437481826429347,
+          "molar_flow": 0.00259938893375902,
+          "mole_fraction": 0.00070171453028318
+        },
+        "Propylene": {
+          "mass_flow": 7.89872171964135e-05,
+          "mass_fraction": 0.00030147417196082,
+          "molar_flow": 0.00187708424996004,
+          "mole_fraction": 0.00050672574452253
+        },
+        "Water": {
+          "mass_flow": 5.98067240434223e-05,
+          "mass_fraction": 0.000228267094963547,
+          "molar_flow": 0.00331977765782282,
+          "mole_fraction": 0.00089618609572018
+        }
+      },
+      "id": "MAT-a068caf8-eed0-4e9a-9871-7f0777067c9f",
+      "mass_flow": 0.26200326443447,
+      "molar_flow": 3.7043396161542,
+      "pressure": 120000,
+      "tag": "DIPE purge",
+      "temperature": 354.000838754749,
+      "total_energy_flow": -1030.83349062352
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "delta_p": 6598000,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "VALV-209ee47b-5c38-42a7-8689-ddcd5bc53c7b",
+    "outlet_pressure": 902000,
+    "outlet_temperature": 397.389738910936,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "VALV-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-304099b3-7773-47f6-abf7-b31ac4a86aed",
+      "mass_flow": 0.26909337835552,
+      "molar_flow": 5.8156860301726,
+      "tag": "Propane purge",
+      "upstream_unit_guids": [
+        "COUO-cbd17680-29ce-4ace-9d9a-6887e9de3b20"
+      ]
+    },
+    {
+      "id": "MAT-a068caf8-eed0-4e9a-9871-7f0777067c9f",
+      "mass_flow": 0.26200326443447,
+      "molar_flow": 3.7043396161542,
+      "tag": "DIPE purge",
+      "upstream_unit_guids": [
+        "COUO-d3020d09-b802-43d3-b803-d36419265cbe"
+      ]
+    },
+    {
+      "id": "MAT-a3f53298-ba26-47ee-8eb1-fe8eb1b55dd0",
+      "mass_flow": 5.98699419692647,
+      "molar_flow": 97.781862255803,
+      "tag": "Isopropanol",
+      "upstream_unit_guids": [
+        "COUO-c6161bb8-ba99-42c8-81e2-4106fc1145e9"
+      ]
+    },
+    {
+      "id": "MAT-30668304-48d9-451c-9af4-898f0e8d1c4d",
+      "mass_flow": 0.79997585268412,
+      "molar_flow": 44.404071172209,
+      "tag": "Water product",
+      "upstream_unit_guids": [
+        "COUO-cce22806-fc1d-4900-adc8-f3ee827e416f"
+      ]
+    }
+  ]
+}

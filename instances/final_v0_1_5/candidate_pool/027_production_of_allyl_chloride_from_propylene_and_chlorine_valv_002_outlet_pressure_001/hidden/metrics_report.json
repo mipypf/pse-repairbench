@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 358000,
+    "target_mole_fraction": null,
+    "target_value": 209000.0
+  },
+  "faulty": {
+    "outlet_pressure": 179000,
+    "target_mole_fraction": null,
+    "target_value": 119500.0
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "VALV-8482025b-3efb-461d-867f-8ba04f2839e3",
+      "kind": "unit_operation",
+      "tag": "VALV-002"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 358000.0
+  },
+  "instance_id": "027_production_of_allyl_chloride_from_propylene_and_chlorine_valv_002_outlet_pressure_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 358000,
+    "target_mole_fraction": null,
+    "target_value": 209000.0
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/027_production_of_allyl_chloride_from_propylene_and_chlorine.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 182150.0,
+    "product_mole_fraction_min": null,
+    "stream": "Stream 5",
+    "stream_id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Stream 5",
+    "threshold": 182150.0
+  },
+  "target_delta": 89500.0
+}

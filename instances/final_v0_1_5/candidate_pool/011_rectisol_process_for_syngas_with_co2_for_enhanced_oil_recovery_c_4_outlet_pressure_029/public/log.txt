@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: 50
+Target metric: pressure
+Observed target value: 3000000.0
+Required target value: >= 5100000.0

@@ -1,0 +1,57 @@
+{
+  "base": {
+    "reflux_ratio": 7.50199999999571,
+    "target_mole_fraction": 0.00386635742688324,
+    "target_value": 0.00386635742688324
+  },
+  "faulty": {
+    "reflux_ratio": 0.750199999999142,
+    "target_mole_fraction": 0.0168465296460022,
+    "target_value": 0.0168465296460022
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "reflux_ratio",
+      "namespace": "column_specification"
+    },
+    "target": {
+      "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+      "kind": "unit_operation",
+      "tag": "DC-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": null,
+    "value": 7.50199999999571
+  },
+  "instance_id": "002_air_liquefaction_using_linde_single_column_system_dc_01_reflux_ratio_001",
+  "purity_drop": -0.012980172219118959,
+  "repairable": true,
+  "repaired": {
+    "reflux_ratio": 7.50199999999142,
+    "target_mole_fraction": 0.00386635742688403,
+    "target_value": 0.00386635742688403
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/distillation/002_air_liquefaction_using_linde_single_column_system.zip",
+  "target": {
+    "component": "Nitrogen",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.0077604090926189275,
+    "metric": "mole_fraction",
+    "product_mole_fraction_min": null,
+    "stream": "S-08",
+    "stream_id": "MAT-2519ae05-5427-41dd-9478-ba6dab5f5678",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-08",
+    "threshold": 0.0077604090926189275
+  },
+  "target_delta": -0.012980172219118959
+}

@@ -1,0 +1,20 @@
+{
+  "diagnosis": "The selected target metric is degraded by an incorrect unit outlet pressure setting.",
+  "rationale": "Restoring the discovered scalar unit parameter to the base value recovers the selected process target.",
+  "repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90",
+        "kind": "unit_operation",
+        "tag": "VALV-005"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 637442.0
+    }
+  ]
+}

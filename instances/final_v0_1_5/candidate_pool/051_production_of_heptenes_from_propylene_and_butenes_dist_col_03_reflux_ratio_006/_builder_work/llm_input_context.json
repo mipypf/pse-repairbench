@@ -1,0 +1,45 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "target": {
+        "guid": "DC-c7e44877-4c8e-4517-b077-217903a243cc",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "051_production_of_heptenes_from_propylene_and_butenes_dist_col_03_reflux_ratio_006",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "1-octene",
+    "target_metric": {
+      "component": "1-octene",
+      "direction": "min",
+      "family": "terminal_composition",
+      "metric": "mole_fraction",
+      "min": 0.5978206652821303,
+      "stream": "S-33 ( C8 + HEAVIES )",
+      "stream_id": "MAT-ffe80dd4-57f5-46ca-b1ad-0e377046ed60",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-33 ( C8 + HEAVIES )",
+      "threshold": 0.5978206652821303
+    },
+    "target_stream_tag": "S-33 ( C8 + HEAVIES )"
+  }
+}

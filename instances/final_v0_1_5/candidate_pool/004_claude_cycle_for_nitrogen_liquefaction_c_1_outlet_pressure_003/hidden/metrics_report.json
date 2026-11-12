@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 3000000,
+    "target_mole_fraction": null,
+    "target_value": 77.2434997306959
+  },
+  "faulty": {
+    "outlet_pressure": 1500000,
+    "target_mole_fraction": null,
+    "target_value": 105.66504711786
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "COMP-ad69457f-65f9-4aa6-9986-f7a6ffae4404",
+      "kind": "unit_operation",
+      "tag": "C-1"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 3000000.0
+  },
+  "instance_id": "004_claude_cycle_for_nitrogen_liquefaction_c_1_outlet_pressure_003",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 3000000,
+    "target_mole_fraction": null,
+    "target_value": 77.2434997306959
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/004_claude_cycle_for_nitrogen_liquefaction.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 85.76996394684514,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "S-11",
+    "stream_id": "MAT-4df43a66-f1e6-4d1e-b506-f7a79dccaedb",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-11",
+    "threshold": 85.76996394684514
+  },
+  "target_delta": -28.421547387164097
+}

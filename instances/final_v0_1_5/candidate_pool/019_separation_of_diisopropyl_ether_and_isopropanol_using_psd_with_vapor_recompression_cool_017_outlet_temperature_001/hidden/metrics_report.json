@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 363.15,
+    "target_mole_fraction": null,
+    "target_value": 371.607817126489
+  },
+  "faulty": {
+    "outlet_temperature": 393.15,
+    "target_mole_fraction": null,
+    "target_value": 708.456930316813
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-1e0499ee-3c34-4ffa-a609-11f7f9e6794a",
+      "kind": "unit_operation",
+      "tag": "COOL-017"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 363.15
+  },
+  "instance_id": "019_separation_of_diisopropyl_ether_and_isopropanol_using_psd_with_vapor_recompression_cool_017_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 363.15,
+    "target_mole_fraction": null,
+    "target_value": 371.607817126489
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/019_separation_of_diisopropyl_ether_and_isopropanol_using_psd_with_vapor_recompression.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 472.6625510835862,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "DIPE",
+    "stream_id": "MAT-4c3acf25-b369-420a-8a12-52de68754dd3",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "DIPE",
+    "threshold": 472.6625510835862
+  },
+  "target_delta": -336.849113190324
+}

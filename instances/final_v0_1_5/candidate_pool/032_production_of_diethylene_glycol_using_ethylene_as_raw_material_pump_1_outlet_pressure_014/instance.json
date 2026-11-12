@@ -1,0 +1,148 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_pressure_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "rationale": "Restore the unit outlet pressure to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "1636629647_BB-f5098547-22aa-4da7-9b86-9d3cab8c5526",
+        "kind": "unit_operation",
+        "tag": "PUMP-1"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 3500000.0
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet pressure is consistent with the requested process target.",
+      "target": "1636629647_BB-f5098547-22aa-4da7-9b86-9d3cab8c5526",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet pressure of PUMP-1 to 3500000.0.",
+      "target": "1636629647_BB-f5098547-22aa-4da7-9b86-9d3cab8c5526",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "032_production_of_diethylene_glycol_using_ethylene_as_raw_material_pump_1_outlet_pressure_014",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "6a9ef23be07a0724c016846be38901550e44b432c5144c3b5c3f8bb315ae0cf0",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "a6566fe9676c566f0f5676454146af43038604c8f79e53a2dfa96d474d8e8859",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/032_production_of_diethylene_glycol_using_ethylene_as_raw_material.zip",
+    "curated_source_entry": "Production_Of_Diethylene_Glycol_Using_Ethylene_As_Raw_Material_By_Mr_Parth_Manish_Dani/Diethylene_Glycol.dwxmz",
+    "detected_process_category": "reaction_recycle",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Pump",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "b1fdd87c-2267-44e7-97fd-39f99d70fdef.xml",
+      "fef46fac-71eb-43f4-b6d8-b76d2a745714.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 83,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "ParticleSizeDistributions",
+      "Spreadsheet",
+      "PanelLayout",
+      "MessagesLog",
+      "Results",
+      "GHGCompositions"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "Production_of_Diethylene_Glycol_using_Ethylene_as_raw_material.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "ParticleSizeDistributions",
+      "PanelLayout",
+      "Results",
+      "GHGCompositions"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_flow",
+      "max": 0.019434127761288306,
+      "metric": "molar_flow",
+      "stream": "stack-1",
+      "stream_id": "1636629647_MAT-7b51ef04-ec07-46eb-9cdb-bef0354c6357",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "stack-1",
+      "threshold": 0.019434127761288306
+    },
+    "target_stream_tag": "stack-1"
+  }
+}

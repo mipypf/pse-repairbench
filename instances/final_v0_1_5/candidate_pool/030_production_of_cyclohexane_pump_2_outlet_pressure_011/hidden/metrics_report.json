@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 2309739.51654049,
+    "target_mole_fraction": null,
+    "target_value": 0.243421237578213
+  },
+  "faulty": {
+    "outlet_pressure": 1154869.75827025,
+    "target_mole_fraction": null,
+    "target_value": 0.100742253419569
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "BB-f325117a-2129-437f-b345-961cf3ed7a21",
+      "kind": "unit_operation",
+      "tag": "Pump-2"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 2309739.51654049
+  },
+  "instance_id": "030_production_of_cyclohexane_pump_2_outlet_pressure_011",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 2309739.51654049,
+    "target_mole_fraction": null,
+    "target_value": 0.243421237578213
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/030_production_of_cyclohexane.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_flow",
+    "metric": "molar_flow",
+    "min": 0.2006175423306198,
+    "product_mole_fraction_min": null,
+    "stream": "S15",
+    "stream_id": "MAT-a9c9deac-5cd1-4cf8-af86-0b3d5f91ecf4",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S15",
+    "threshold": 0.2006175423306198
+  },
+  "target_delta": 0.142678984158644
+}

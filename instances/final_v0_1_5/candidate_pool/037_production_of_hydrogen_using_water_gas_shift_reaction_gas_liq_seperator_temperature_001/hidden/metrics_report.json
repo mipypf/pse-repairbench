@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_temperature": 298.15,
+    "target_mole_fraction": null,
+    "target_value": 298.15
+  },
+  "faulty": {
+    "separator_temperature": 268.15,
+    "target_mole_fraction": null,
+    "target_value": 268.15
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "temperature",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4",
+      "kind": "unit_operation",
+      "tag": "Gas-liq Seperator"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 298.15
+  },
+  "instance_id": "037_production_of_hydrogen_using_water_gas_shift_reaction_gas_liq_seperator_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "separator_temperature": 298.15,
+    "target_mole_fraction": null,
+    "target_value": 298.15
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/037_production_of_hydrogen_using_water_gas_shift_reaction.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 289.15,
+    "product_mole_fraction_min": null,
+    "stream": "Product Gas",
+    "stream_id": "MAT-9e3e51c1-c601-496d-9f80-b44701525e2a",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Product Gas",
+    "threshold": 289.15
+  },
+  "target_delta": 30.0
+}

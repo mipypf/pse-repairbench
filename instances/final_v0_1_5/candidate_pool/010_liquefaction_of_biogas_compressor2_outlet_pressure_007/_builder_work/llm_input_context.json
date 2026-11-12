@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "010_liquefaction_of_biogas_compressor2_outlet_pressure_007",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 168.83888946838312,
+      "stream": "Coolent out2",
+      "stream_id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Coolent out2",
+      "threshold": 168.83888946838312
+    },
+    "target_stream_tag": "Coolent out2"
+  }
+}

@@ -1,0 +1,1467 @@
+{
+  "column": null,
+  "duration_sec": 9.148,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 51,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/faulty_calculated.dwxmz",
+  "simulation_path": "public/faulty.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-4becd34f-330f-4508-b6ec-5c990d435e57"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-967d1536-36da-4b52-bbb1-e3700a118acb",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "HYDROGEN",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-4becd34f-330f-4508-b6ec-5c990d435e57"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-d0aa7796-106f-4999-8fd6-b06eccab81a9",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "TOLUENE",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-f0a27fd7-fec7-401d-9d34-c7e4edfebb5d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-cadbb4e0-49d8-49e8-ac99-4c8a99b2d2e5",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-006",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-8ebbd873-eeb3-4a4a-ba77-234539e0ffcd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-84c0bcaa-346c-47ba-a16f-3b656919565d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1a463706-386a-4f10-bac4-4f4ff47f6610",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-009",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-a058e49d-c69c-4bbb-a69c-636417010b37"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-62fe8dd7-c904-4bf5-a754-f33b5ff90b06",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-010",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-a058e49d-c69c-4bbb-a69c-636417010b37"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-a058e49d-c69c-4bbb-a69c-636417010b37"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8921e5f8-9ed4-4c8b-8e34-8b7d3ba137ab",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-013",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-f0a27fd7-fec7-401d-9d34-c7e4edfebb5d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-02061d93-b358-487b-8370-620b1513077e"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-80a791ff-aea7-46b6-b1f7-0be6da33d0b3",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-016A",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-84c0bcaa-346c-47ba-a16f-3b656919565d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c6e8aa0c-2ab6-464b-a329-783a48479492",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "SEP IP",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-8ebbd873-eeb3-4a4a-ba77-234539e0ffcd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-8ebbd873-eeb3-4a4a-ba77-234539e0ffcd"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9dd3e540-c2ba-48e0-ba3a-92b9074629dc",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-018",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-02061d93-b358-487b-8370-620b1513077e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-04ea92a1-446e-45f6-bdce-eda5faea9d4a",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "TOP",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f4ba6b55-94cd-4a3e-bea1-63327d54a2f3",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "BOTTOM",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-4becd34f-330f-4508-b6ec-5c990d435e57"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2bf528eb-f4a5-4983-b4e9-dc5124124dee",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "recycle stream toluene",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-402f5db0-1a2c-49a9-85ff-4243c1d9d8e6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-8ebbd873-eeb3-4a4a-ba77-234539e0ffcd"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-104e38e6-ca29-46eb-9d4b-1f0fac62ccb6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "mixer output",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-4becd34f-330f-4508-b6ec-5c990d435e57"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "PURGE STREAM",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COMP-2b37ab2a-93da-40e8-974c-650d7c702b39"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1f39eb67-1226-4ac5-8f62-33ac75cc3331",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-027",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-f0ef589b-3068-400f-8b18-4428f053e92c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4a316992-47e2-457d-8c89-15b6e69b347c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-030",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-2b37ab2a-93da-40e8-974c-650d7c702b39"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-4becd34f-330f-4508-b6ec-5c990d435e57"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1bffca76-0f25-479b-b1fe-96384ae53496",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "rec",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-f0ef589b-3068-400f-8b18-4428f053e92c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "METHANE",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3505383f-577e-4ec0-929e-ae12016e61be",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "BOTTOMS1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-e9d26b02-2932-4013-810b-3c4d8f4b3408",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "BENZENE",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-64dbe0d8-9e0e-4716-974c-8ac0ef563897",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "BOTTOMS2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "BB-3912dc92-0690-4f6c-9f85-7b55f1596a73"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4635b999-e568-4808-bfb3-65a9ba6034ef",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "TOLUENE REC",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c95e4bd5-4e90-4959-b311-00159594b8cf",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "BIPHENYL",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-402f5db0-1a2c-49a9-85ff-4243c1d9d8e6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-143704e1-9e0e-4ee2-bfbc-dc3e3b032c14",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-049",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-3912dc92-0690-4f6c-9f85-7b55f1596a73"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+        "mass_flow": 0.891521409801459,
+        "molar_flow": 91.4271264805525,
+        "tag": "PURGE STREAM",
+        "upstream_unit_guids": [
+          "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+        ]
+      },
+      {
+        "id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+        "mass_flow": 0.0473060101709951,
+        "molar_flow": 3.04202361299489,
+        "tag": "METHANE",
+        "upstream_unit_guids": [
+          "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+        ]
+      },
+      {
+        "id": "MAT-e9d26b02-2932-4013-810b-3c4d8f4b3408",
+        "mass_flow": 3.45785318160652,
+        "molar_flow": 44.2625448996362,
+        "tag": "BENZENE",
+        "upstream_unit_guids": [
+          "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+        ]
+      },
+      {
+        "id": "MAT-c95e4bd5-4e90-4959-b311-00159594b8cf",
+        "mass_flow": 0.139022895284233,
+        "molar_flow": 0.908850547506398,
+        "tag": "BIPHENYL",
+        "upstream_unit_guids": [
+          "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 1.01221437287852e-09,
+          "mass_fraction": 7.28091851927727e-09,
+          "molar_flow": 1.29581684829674e-08,
+          "mole_fraction": 1.42577550495189e-08
+        },
+        "Biphenyl": {
+          "mass_flow": 0.137385596397459,
+          "mass_fraction": 0.988222811189294,
+          "molar_flow": 0.890893622358064,
+          "mole_fraction": 0.980242158408109
+        },
+        "Hydrogen": {
+          "mass_flow": 8.41908989403383e-177,
+          "mass_fraction": 6.05590171088076e-176,
+          "molar_flow": 4.17638445444859e-174,
+          "mole_fraction": 4.59523787041476e-174
+        },
+        "Methane": {
+          "mass_flow": 2.23296014826872e-174,
+          "mass_fraction": 1.6061815887976e-173,
+          "molar_flow": 1.39185947034141e-172,
+          "mole_fraction": 1.5314503293861e-172
+        },
+        "Toluene": {
+          "mass_flow": 0.00163729787455901,
+          "mass_fraction": 0.0117771815297872,
+          "molar_flow": 0.0177694823646261,
+          "mole_fraction": 0.0195516
+        }
+      },
+      "id": "MAT-c95e4bd5-4e90-4959-b311-00159594b8cf",
+      "mass_flow": 0.139022895284233,
+      "molar_flow": 0.908850547506398,
+      "pressure": 101325,
+      "tag": "BIPHENYL",
+      "temperature": 513.454324975722,
+      "total_energy_flow": 161.782750535449
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.19399278220067e-06,
+          "mass_fraction": 2.64225329595905e-06,
+          "molar_flow": 4.08888647643274e-05,
+          "mole_fraction": 3.13774193181541e-06
+        },
+        "Biphenyl": {
+          "mass_flow": 0.0200957021361011,
+          "mass_fraction": 0.0166243128349025,
+          "molar_flow": 0.130313026542213,
+          "mole_fraction": 0.01
+        },
+        "Hydrogen": {
+          "mass_flow": 7.41710080050178e-165,
+          "mass_fraction": 6.13584950654877e-165,
+          "molar_flow": 3.6793364686895e-162,
+          "mole_fraction": 2.8234602221426e-163
+        },
+        "Methane": {
+          "mass_flow": 4.56462046111094e-162,
+          "mass_fraction": 3.77611481321586e-162,
+          "molar_flow": 2.84524120246272e-160,
+          "mole_fraction": 2.18338970244165e-161
+        },
+        "Toluene": {
+          "mass_flow": 1.18871510633085,
+          "mass_fraction": 0.983373044911802,
+          "molar_flow": 12.9010441207589,
+          "mole_fraction": 0.990004181706259
+        }
+      },
+      "id": "MAT-4635b999-e568-4808-bfb3-65a9ba6034ef",
+      "mass_flow": 1.20881400245973,
+      "molar_flow": 13.0313026542213,
+      "pressure": 101325,
+      "tag": "TOLUENE REC",
+      "temperature": 383.881737953411,
+      "total_energy_flow": 364.72822386485
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.19498161847997e-06,
+          "mass_fraction": 2.37046678067079e-06,
+          "molar_flow": 4.09015236510737e-05,
+          "mole_fraction": 2.9341e-06
+        },
+        "Biphenyl": {
+          "mass_flow": 0.157481151445187,
+          "mass_fraction": 0.116840684128944,
+          "molar_flow": 1.02120569508781,
+          "mole_fraction": 0.0732569196081401
+        },
+        "Hydrogen": {
+          "mass_flow": 7.41704651182253e-165,
+          "mass_fraction": 5.50296197801917e-165,
+          "molar_flow": 3.67930953817813e-162,
+          "mole_fraction": 2.63937896496554e-163
+        },
+        "Methane": {
+          "mass_flow": 4.56458705085474e-162,
+          "mass_fraction": 3.38662416990022e-162,
+          "molar_flow": 2.84522037702097e-160,
+          "mole_fraction": 2.04103915038335e-161
+        },
+        "Toluene": {
+          "mass_flow": 1.19034370353046,
+          "mass_fraction": 0.883156945404276,
+          "molar_flow": 12.9187191752907,
+          "mole_fraction": 0.926733543121326
+        }
+      },
+      "id": "MAT-64dbe0d8-9e0e-4716-974c-8ac0ef563897",
+      "mass_flow": 1.34782804995726,
+      "molar_flow": 13.9400578204812,
+      "pressure": 101325,
+      "tag": "BOTTOMS2",
+      "temperature": 386.149682499436,
+      "total_energy_flow": 495.923451380322
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.45570003367124,
+          "mass_fraction": 0.999377316553886,
+          "molar_flow": 44.2391893088465,
+          "mole_fraction": 0.999472339630661
+        },
+        "Biphenyl": {
+          "mass_flow": 2.30042749996766e-53,
+          "mass_fraction": 6.65276221733301e-54,
+          "molar_flow": 1.4917402130637e-52,
+          "mole_fraction": 3.37020886721757e-54
+        },
+        "Hydrogen": {
+          "mass_flow": 2.84286066075661e-55,
+          "mass_fraction": 8.22146144283611e-56,
+          "molar_flow": 1.41023307972529e-52,
+          "mole_fraction": 3.18606416084512e-54
+        },
+        "Methane": {
+          "mass_flow": 9.3374441797554e-51,
+          "mass_fraction": 2.70035877446284e-51,
+          "molar_flow": 5.82026066181849e-49,
+          "mole_fraction": 1.31494035759031e-50
+        },
+        "Toluene": {
+          "mass_flow": 0.00215314793527844,
+          "mass_fraction": 0.000622683446113836,
+          "molar_flow": 0.0233679679543139,
+          "mole_fraction": 0.00052794
+        }
+      },
+      "id": "MAT-e9d26b02-2932-4013-810b-3c4d8f4b3408",
+      "mass_flow": 3.45785318160652,
+      "molar_flow": 44.2625448996362,
+      "pressure": 101325,
+      "tag": "BENZENE",
+      "temperature": 353.328264244352,
+      "total_energy_flow": 2528.42933989507
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.45570226233344,
+          "mass_fraction": 0.719087012042545,
+          "molar_flow": 44.2392178397399,
+          "mole_fraction": 0.760090188066585
+        },
+        "Biphenyl": {
+          "mass_flow": 0.157481151445187,
+          "mass_fraction": 0.032769793821668,
+          "molar_flow": 1.02120569508781,
+          "mole_fraction": 0.017545708688744
+        },
+        "Hydrogen": {
+          "mass_flow": 2.84285986580583e-55,
+          "mass_fraction": 5.91562423892852e-56,
+          "molar_flow": 1.41023268538099e-52,
+          "mole_fraction": 2.42297237471951e-54
+        },
+        "Methane": {
+          "mass_flow": 9.33744156872045e-51,
+          "mass_fraction": 1.94300100183954e-51,
+          "molar_flow": 5.82025903429561e-49,
+          "mole_fraction": 1e-50
+        },
+        "Toluene": {
+          "mass_flow": 1.19249685086365,
+          "mass_fraction": 0.248143194135787,
+          "molar_flow": 12.9420871367106,
+          "mole_fraction": 0.222362734380891
+        }
+      },
+      "id": "MAT-3505383f-577e-4ec0-929e-ae12016e61be",
+      "mass_flow": 4.80568026464228,
+      "molar_flow": 58.2025903429561,
+      "pressure": 100000,
+      "tag": "BOTTOMS1",
+      "temperature": 358.49243914036,
+      "total_energy_flow": 2985.64896856317
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.00712873897516448,
+          "mass_fraction": 0.150694149631231,
+          "molar_flow": 0.0912607083898466,
+          "mole_fraction": 0.03
+        },
+        "Biphenyl": {
+          "mass_flow": 2.38155805697053e-44,
+          "mass_fraction": 5.03436677149903e-43,
+          "molar_flow": 1.54435031027004e-43,
+          "mole_fraction": 5.07672032417137e-44
+        },
+        "Hydrogen": {
+          "mass_flow": 0.00102943331218483,
+          "mass_fraction": 0.0217611527259174,
+          "molar_flow": 0.51066199981389,
+          "mole_fraction": 0.167869176830992
+        },
+        "Methane": {
+          "mass_flow": 0.039147812618611,
+          "mass_fraction": 0.827544163566216,
+          "molar_flow": 2.44018030409593,
+          "mole_fraction": 0.802156923987044
+        },
+        "Toluene": {
+          "mass_flow": 2.52650347608215e-08,
+          "mass_fraction": 5.34076635706478e-07,
+          "molar_flow": 2.74199702204464e-07,
+          "mole_fraction": 9.01372694916437e-08
+        }
+      },
+      "id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+      "mass_flow": 0.0473060101709951,
+      "molar_flow": 3.04202361299489,
+      "pressure": 1000000,
+      "tag": "METHANE",
+      "temperature": 59.8189742748169,
+      "total_energy_flow": -223.189848196289
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.56859368127306,
+          "mass_fraction": 0.342310335168823,
+          "molar_flow": 45.6844314882487,
+          "mole_fraction": 0.0722096365627579
+        },
+        "Biphenyl": {
+          "mass_flow": 0.157483250536723,
+          "mass_fraction": 0.0151062712904514,
+          "molar_flow": 1.02121930690238,
+          "mole_fraction": 0.00161415765940441
+        },
+        "Hydrogen": {
+          "mass_flow": 0.531152328916166,
+          "mass_fraction": 0.0509497432254971,
+          "molar_flow": 263.484100698537,
+          "mole_fraction": 0.416467722847782
+        },
+        "Methane": {
+          "mass_flow": 4.96382551978661,
+          "mass_fraction": 0.47614520709221,
+          "molar_flow": 309.407562163349,
+          "mole_fraction": 0.489055174503625
+        },
+        "Toluene": {
+          "mass_flow": 1.20396986711625,
+          "mass_fraction": 0.115488443223019,
+          "molar_flow": 13.066603001012,
+          "mole_fraction": 0.0206533084264302
+        }
+      },
+      "id": "MAT-80a791ff-aea7-46b6-b1f7-0be6da33d0b3",
+      "mass_flow": 10.4250246476288,
+      "molar_flow": 632.663916658049,
+      "pressure": 3450000,
+      "tag": "MSTR-016A",
+      "temperature": 836.15,
+      "total_energy_flow": -807.881339746455
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.0889870378645199,
+          "mass_fraction": 0.00853590671219758,
+          "molar_flow": 1.1391944832491,
+          "mole_fraction": 0.00180063056356404
+        },
+        "Biphenyl": {
+          "mass_flow": 0.0200959469167423,
+          "mass_fraction": 0.00192766421145231,
+          "molar_flow": 0.130314613852075,
+          "mole_fraction": 0.000205977539420531
+        },
+        "Hydrogen": {
+          "mass_flow": 0.62274641184266,
+          "mass_fraction": 0.0597357256113831,
+          "molar_flow": 308.920378119064,
+          "mole_fraction": 0.48828490896696
+        },
+        "Methane": {
+          "mass_flow": 4.22060255141763,
+          "mass_fraction": 0.404853004580436,
+          "molar_flow": 263.080630269752,
+          "mole_fraction": 0.415829808264464
+        },
+        "Toluene": {
+          "mass_flow": 5.47259269958725,
+          "mass_fraction": 0.524947698884531,
+          "molar_flow": 59.393675992091,
+          "mole_fraction": 0.0938786746655918
+        }
+      },
+      "id": "MAT-8921e5f8-9ed4-4c8b-8e34-8b7d3ba137ab",
+      "mass_flow": 10.4250246476288,
+      "molar_flow": 632.664193478008,
+      "pressure": 3720000,
+      "tag": "MSTR-013",
+      "temperature": 898.666,
+      "total_energy_flow": 4058.56326244758
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Biphenyl": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Toluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-62fe8dd7-c904-4bf5-a754-f33b5ff90b06",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 3450000,
+      "tag": "MSTR-010",
+      "temperature": 949.95,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.56859368127306,
+          "mass_fraction": 0.342310335168823,
+          "molar_flow": 45.6844314882487,
+          "mole_fraction": 0.0722096365627579
+        },
+        "Biphenyl": {
+          "mass_flow": 0.157483250536723,
+          "mass_fraction": 0.0151062712904514,
+          "molar_flow": 1.02121930690238,
+          "mole_fraction": 0.00161415765940441
+        },
+        "Hydrogen": {
+          "mass_flow": 0.531152328916166,
+          "mass_fraction": 0.0509497432254971,
+          "molar_flow": 263.484100698537,
+          "mole_fraction": 0.416467722847782
+        },
+        "Methane": {
+          "mass_flow": 4.96382551978661,
+          "mass_fraction": 0.47614520709221,
+          "molar_flow": 309.407562163349,
+          "mole_fraction": 0.489055174503625
+        },
+        "Toluene": {
+          "mass_flow": 1.20396986711625,
+          "mass_fraction": 0.115488443223019,
+          "molar_flow": 13.066603001012,
+          "mole_fraction": 0.0206533084264302
+        }
+      },
+      "id": "MAT-1a463706-386a-4f10-bac4-4f4ff47f6610",
+      "mass_flow": 10.4250246476288,
+      "molar_flow": 632.663916658049,
+      "pressure": 3450000,
+      "tag": "MSTR-009",
+      "temperature": 949.95,
+      "total_energy_flow": 3949.88745004124
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.56859335477684,
+          "mass_fraction": 0.342311141723142,
+          "molar_flow": 45.6844273085086,
+          "mole_fraction": 0.0722096119078961
+        },
+        "Biphenyl": {
+          "mass_flow": 0.15748323632214,
+          "mass_fraction": 0.0151063069025577,
+          "molar_flow": 1.02121921472618,
+          "mole_fraction": 0.00161415711026173
+        },
+        "Hydrogen": {
+          "mass_flow": 0.531156312625332,
+          "mass_fraction": 0.0509502500655757,
+          "molar_flow": 263.486076862379,
+          "mole_fraction": 0.416470742314041
+        },
+        "Methane": {
+          "mass_flow": 4.96379643469118,
+          "mass_fraction": 0.476143582615244,
+          "molar_flow": 309.405749217177,
+          "mole_fraction": 0.489052186693014
+        },
+        "Toluene": {
+          "mass_flow": 1.2039697919461,
+          "mass_fraction": 0.11548871869348,
+          "molar_flow": 13.0666021851955,
+          "mole_fraction": 0.0206533019747871
+        }
+      },
+      "id": "MAT-c6e8aa0c-2ab6-464b-a329-783a48479492",
+      "mass_flow": 10.4249991303616,
+      "molar_flow": 632.664074787986,
+      "pressure": 3340000,
+      "tag": "SEP IP",
+      "temperature": 420.038477318731,
+      "total_energy_flow": -15439.7216863487
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.0889870378645199,
+          "mass_fraction": 0.00853590671219758,
+          "molar_flow": 1.1391944832491,
+          "mole_fraction": 0.00180063056356404
+        },
+        "Biphenyl": {
+          "mass_flow": 0.0200959469167423,
+          "mass_fraction": 0.00192766421145231,
+          "molar_flow": 0.130314613852075,
+          "mole_fraction": 0.000205977539420531
+        },
+        "Hydrogen": {
+          "mass_flow": 0.62274641184266,
+          "mass_fraction": 0.0597357256113831,
+          "molar_flow": 308.920378119064,
+          "mole_fraction": 0.48828490896696
+        },
+        "Methane": {
+          "mass_flow": 4.22060255141763,
+          "mass_fraction": 0.404853004580436,
+          "molar_flow": 263.080630269752,
+          "mole_fraction": 0.415829808264464
+        },
+        "Toluene": {
+          "mass_flow": 5.47259269958725,
+          "mass_fraction": 0.524947698884531,
+          "molar_flow": 59.393675992091,
+          "mole_fraction": 0.0938786746655918
+        }
+      },
+      "id": "MAT-cadbb4e0-49d8-49e8-ac99-4c8a99b2d2e5",
+      "mass_flow": 10.4250246476288,
+      "molar_flow": 632.664193478008,
+      "pressure": 3830000,
+      "tag": "MSTR-006",
+      "temperature": 694.769,
+      "total_energy_flow": -4115.4465242804
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Biphenyl": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Toluene": {
+          "mass_flow": 4.27430555555556,
+          "mass_fraction": 1,
+          "molar_flow": 46.3887471978333,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-d0aa7796-106f-4999-8fd6-b06eccab81a9",
+      "mass_flow": 4.27430555555556,
+      "molar_flow": 46.3887471978333,
+      "pressure": 3830000,
+      "tag": "TOLUENE",
+      "temperature": 299.9519,
+      "total_energy_flow": 577.163842316309
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Biphenyl": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0.176940166666667,
+          "mass_fraction": 0.7,
+          "molar_flow": 87.7731644079344,
+          "mole_fraction": 0.948899793018323
+        },
+        "Methane": {
+          "mass_flow": 0.0758315000000001,
+          "mass_fraction": 0.3,
+          "molar_flow": 4.72676556753725,
+          "mole_fraction": 0.0511002069816772
+        },
+        "Toluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-967d1536-36da-4b52-bbb1-e3700a118acb",
+      "mass_flow": 0.252771666666667,
+      "molar_flow": 92.4999299754717,
+      "pressure": 3830000,
+      "tag": "HYDROGEN",
+      "temperature": 311.15,
+      "total_energy_flow": -316.204856448086
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.56859368127306,
+          "mass_fraction": 0.342310335168823,
+          "molar_flow": 45.6844314882487,
+          "mole_fraction": 0.0722096365627579
+        },
+        "Biphenyl": {
+          "mass_flow": 0.157483250536723,
+          "mass_fraction": 0.0151062712904514,
+          "molar_flow": 1.02121930690238,
+          "mole_fraction": 0.00161415765940441
+        },
+        "Hydrogen": {
+          "mass_flow": 0.531152328916166,
+          "mass_fraction": 0.0509497432254971,
+          "molar_flow": 263.484100698537,
+          "mole_fraction": 0.416467722847782
+        },
+        "Methane": {
+          "mass_flow": 4.96382551978661,
+          "mass_fraction": 0.47614520709221,
+          "molar_flow": 309.407562163349,
+          "mole_fraction": 0.489055174503625
+        },
+        "Toluene": {
+          "mass_flow": 1.20396986711625,
+          "mass_fraction": 0.115488443223019,
+          "molar_flow": 13.066603001012,
+          "mole_fraction": 0.0206533084264302
+        }
+      },
+      "id": "MAT-9dd3e540-c2ba-48e0-ba3a-92b9074629dc",
+      "mass_flow": 10.4250246476288,
+      "molar_flow": 632.663916658049,
+      "pressure": 3450000,
+      "tag": "MSTR-018",
+      "temperature": 836.15,
+      "total_energy_flow": -807.764637265278
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.105758255386104,
+          "mass_fraction": 0.0189802742544848,
+          "molar_flow": 1.35389629754082,
+          "mole_fraction": 0.00236935596627998
+        },
+        "Biphenyl": {
+          "mass_flow": 1.88937558673686e-06,
+          "mass_fraction": 3.3908338100957e-07,
+          "molar_flow": 1.22518859662207e-05,
+          "mole_fraction": 2.14411392992022e-08
+        },
+        "Hydrogen": {
+          "mass_flow": 0.530126975532851,
+          "mass_fraction": 0.0951410870818521,
+          "molar_flow": 262.975462593434,
+          "mole_fraction": 0.460214332820571
+        },
+        "Methane": {
+          "mass_flow": 4.92465025401998,
+          "mass_fraction": 0.883819538129399,
+          "molar_flow": 306.965670636413,
+          "mole_fraction": 0.537198413561354
+        },
+        "Toluene": {
+          "mass_flow": 0.0114714369446028,
+          "mass_fraction": 0.00205876145088338,
+          "molar_flow": 0.124498724179278,
+          "mole_fraction": 0.000217876210655287
+        }
+      },
+      "id": "MAT-04ea92a1-446e-45f6-bdce-eda5faea9d4a",
+      "mass_flow": 5.57200881125912,
+      "molar_flow": 571.419540503453,
+      "pressure": 3280000,
+      "tag": "TOP",
+      "temperature": 279.24980673018,
+      "total_energy_flow": -23223.2147210235
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.46283081460501,
+          "mass_fraction": 0.713546567529057,
+          "molar_flow": 44.3304761579872,
+          "mole_fraction": 0.723827467640366
+        },
+        "Biphenyl": {
+          "mass_flow": 0.157481151445186,
+          "mass_fraction": 0.0324503682334979,
+          "molar_flow": 1.02120569508781,
+          "mole_fraction": 0.0166742339870435
+        },
+        "Hydrogen": {
+          "mass_flow": 0.00102940635104909,
+          "mass_fraction": 0.000212118179521132,
+          "molar_flow": 0.510648625438565,
+          "mole_fraction": 0.0083378644544208
+        },
+        "Methane": {
+          "mass_flow": 0.0391467873268538,
+          "mass_fraction": 0.00806653781901634,
+          "molar_flow": 2.44011639511649,
+          "mole_fraction": 0.0398421903868199
+        },
+        "Toluene": {
+          "mass_flow": 1.19249687612802,
+          "mass_fraction": 0.245724408238908,
+          "molar_flow": 12.9420874109031,
+          "mole_fraction": 0.21131824353135
+        }
+      },
+      "id": "MAT-f4ba6b55-94cd-4a3e-bea1-63327d54a2f3",
+      "mass_flow": 4.85298503585613,
+      "molar_flow": 61.2445342845332,
+      "pressure": 3280000,
+      "tag": "BOTTOM",
+      "temperature": 288.913665250383,
+      "total_energy_flow": 2224.19244180362
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.19399278220067e-06,
+          "mass_fraction": 2.64225329595905e-06,
+          "molar_flow": 4.08888647643274e-05,
+          "mole_fraction": 3.13774193181541e-06
+        },
+        "Biphenyl": {
+          "mass_flow": 0.0200957021361011,
+          "mass_fraction": 0.0166243128349025,
+          "molar_flow": 0.130313026542213,
+          "mole_fraction": 0.01
+        },
+        "Hydrogen": {
+          "mass_flow": 7.41710080050178e-165,
+          "mass_fraction": 6.13584950654877e-165,
+          "molar_flow": 3.6793364686895e-162,
+          "mole_fraction": 2.8234602221426e-163
+        },
+        "Methane": {
+          "mass_flow": 4.56462046111094e-162,
+          "mass_fraction": 3.77611481321586e-162,
+          "molar_flow": 2.84524120246272e-160,
+          "mole_fraction": 2.18338970244165e-161
+        },
+        "Toluene": {
+          "mass_flow": 1.18871510633085,
+          "mass_fraction": 0.983373044911802,
+          "molar_flow": 12.9010441207589,
+          "mole_fraction": 0.990004181706259
+        }
+      },
+      "id": "MAT-2bf528eb-f4a5-4983-b4e9-dc5124124dee",
+      "mass_flow": 1.20881400245973,
+      "molar_flow": 13.0313026542213,
+      "pressure": 3831325,
+      "tag": "recycle stream toluene",
+      "temperature": 385.66262498445,
+      "total_energy_flow": 370.502187400871
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.0888369345243272,
+          "mass_fraction": 0.0189802742544848,
+          "molar_flow": 1.13727288993429,
+          "mole_fraction": 0.00236935596627998
+        },
+        "Biphenyl": {
+          "mass_flow": 1.58707549285896e-06,
+          "mass_fraction": 3.3908338100957e-07,
+          "molar_flow": 1.02915842116254e-05,
+          "mole_fraction": 2.14411392992022e-08
+        },
+        "Hydrogen": {
+          "mass_flow": 0.445306659447595,
+          "mass_fraction": 0.0951410870818521,
+          "molar_flow": 220.899388578484,
+          "mole_fraction": 0.460214332820571
+        },
+        "Methane": {
+          "mass_flow": 4.13670621337678,
+          "mass_fraction": 0.883819538129399,
+          "molar_flow": 257.851163334587,
+          "mole_fraction": 0.537198413561354
+        },
+        "Toluene": {
+          "mass_flow": 0.00963600703346637,
+          "mass_fraction": 0.00205876145088338,
+          "molar_flow": 0.104578928310593,
+          "mole_fraction": 0.000217876210655287
+        }
+      },
+      "id": "MAT-1bffca76-0f25-479b-b1fe-96384ae53496",
+      "mass_flow": 4.68048740145766,
+      "molar_flow": 479.992414022901,
+      "pressure": 3830000,
+      "tag": "rec",
+      "temperature": 289.668134365712,
+      "total_energy_flow": -19378.864068822
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.0889870378645199,
+          "mass_fraction": 0.00853590671219758,
+          "molar_flow": 1.1391944832491,
+          "mole_fraction": 0.00180063056356404
+        },
+        "Biphenyl": {
+          "mass_flow": 0.0200959469167423,
+          "mass_fraction": 0.00192766421145231,
+          "molar_flow": 0.130314613852075,
+          "mole_fraction": 0.000205977539420531
+        },
+        "Hydrogen": {
+          "mass_flow": 0.62274641184266,
+          "mass_fraction": 0.0597357256113831,
+          "molar_flow": 308.920378119064,
+          "mole_fraction": 0.48828490896696
+        },
+        "Methane": {
+          "mass_flow": 4.22060255141763,
+          "mass_fraction": 0.404853004580436,
+          "molar_flow": 263.080630269752,
+          "mole_fraction": 0.415829808264464
+        },
+        "Toluene": {
+          "mass_flow": 5.47259269958725,
+          "mass_fraction": 0.524947698884531,
+          "molar_flow": 59.393675992091,
+          "mole_fraction": 0.0938786746655918
+        }
+      },
+      "id": "MAT-104e38e6-ca29-46eb-9d4b-1f0fac62ccb6",
+      "mass_flow": 10.4250246476288,
+      "molar_flow": 632.664193478008,
+      "pressure": 3830000,
+      "tag": "mixer output",
+      "temperature": 301.773220718924,
+      "total_energy_flow": -18747.4028697386
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.0169213208617766,
+          "mass_fraction": 0.0189802742544848,
+          "molar_flow": 0.216623407606532,
+          "mole_fraction": 0.00236935596627998
+        },
+        "Biphenyl": {
+          "mass_flow": 3.02300093877897e-07,
+          "mass_fraction": 3.3908338100957e-07,
+          "molar_flow": 1.96030175459531e-06,
+          "mole_fraction": 2.14411392992022e-08
+        },
+        "Hydrogen": {
+          "mass_flow": 0.0848203160852562,
+          "mass_fraction": 0.0951410870818521,
+          "molar_flow": 42.0760740149494,
+          "mole_fraction": 0.460214332820571
+        },
+        "Methane": {
+          "mass_flow": 0.787944040643196,
+          "mass_fraction": 0.883819538129399,
+          "molar_flow": 49.1145073018261,
+          "mole_fraction": 0.537198413561354
+        },
+        "Toluene": {
+          "mass_flow": 0.00183542991113645,
+          "mass_fraction": 0.00205876145088338,
+          "molar_flow": 0.0199197958686844,
+          "mole_fraction": 0.000217876210655287
+        }
+      },
+      "id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+      "mass_flow": 0.891521409801459,
+      "molar_flow": 91.4271264805525,
+      "pressure": 3280000,
+      "tag": "PURGE STREAM",
+      "temperature": 279.24980673018,
+      "total_energy_flow": -3715.71435536375
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.0888369345243272,
+          "mass_fraction": 0.0189802742544848,
+          "molar_flow": 1.13727288993429,
+          "mole_fraction": 0.00236935596627998
+        },
+        "Biphenyl": {
+          "mass_flow": 1.58707549285896e-06,
+          "mass_fraction": 3.3908338100957e-07,
+          "molar_flow": 1.02915842116254e-05,
+          "mole_fraction": 2.14411392992022e-08
+        },
+        "Hydrogen": {
+          "mass_flow": 0.445306659447595,
+          "mass_fraction": 0.0951410870818521,
+          "molar_flow": 220.899388578484,
+          "mole_fraction": 0.460214332820571
+        },
+        "Methane": {
+          "mass_flow": 4.13670621337678,
+          "mass_fraction": 0.883819538129399,
+          "molar_flow": 257.851163334587,
+          "mole_fraction": 0.537198413561354
+        },
+        "Toluene": {
+          "mass_flow": 0.00963600703346637,
+          "mass_fraction": 0.00205876145088338,
+          "molar_flow": 0.104578928310593,
+          "mole_fraction": 0.000217876210655287
+        }
+      },
+      "id": "MAT-1f39eb67-1226-4ac5-8f62-33ac75cc3331",
+      "mass_flow": 4.68048740145766,
+      "molar_flow": 479.992414022901,
+      "pressure": 3280000,
+      "tag": "MSTR-027",
+      "temperature": 279.24980673018,
+      "total_energy_flow": -19507.5003656597
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.0888369345243272,
+          "mass_fraction": 0.0189802742544848,
+          "molar_flow": 1.13727288993429,
+          "mole_fraction": 0.00236935596627998
+        },
+        "Biphenyl": {
+          "mass_flow": 1.58707549285896e-06,
+          "mass_fraction": 3.3908338100957e-07,
+          "molar_flow": 1.02915842116254e-05,
+          "mole_fraction": 2.14411392992022e-08
+        },
+        "Hydrogen": {
+          "mass_flow": 0.445306659447595,
+          "mass_fraction": 0.0951410870818521,
+          "molar_flow": 220.899388578484,
+          "mole_fraction": 0.460214332820571
+        },
+        "Methane": {
+          "mass_flow": 4.13670621337678,
+          "mass_fraction": 0.883819538129399,
+          "molar_flow": 257.851163334587,
+          "mole_fraction": 0.537198413561354
+        },
+        "Toluene": {
+          "mass_flow": 0.00963600703346637,
+          "mass_fraction": 0.00205876145088338,
+          "molar_flow": 0.104578928310593,
+          "mole_fraction": 0.000217876210655287
+        }
+      },
+      "id": "MAT-4a316992-47e2-457d-8c89-15b6e69b347c",
+      "mass_flow": 4.68048740145766,
+      "molar_flow": 479.992414022901,
+      "pressure": 3830000,
+      "tag": "MSTR-030",
+      "temperature": 289.668134365712,
+      "total_energy_flow": -19341.131148861
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 3.19399278220067e-06,
+          "mass_fraction": 2.64225329595905e-06,
+          "molar_flow": 4.08888647643274e-05,
+          "mole_fraction": 3.13774193181541e-06
+        },
+        "Biphenyl": {
+          "mass_flow": 0.0200957021361011,
+          "mass_fraction": 0.0166243128349025,
+          "molar_flow": 0.130313026542213,
+          "mole_fraction": 0.01
+        },
+        "Hydrogen": {
+          "mass_flow": 7.41710080050178e-165,
+          "mass_fraction": 6.13584950654877e-165,
+          "molar_flow": 3.6793364686895e-162,
+          "mole_fraction": 2.8234602221426e-163
+        },
+        "Methane": {
+          "mass_flow": 4.56462046111094e-162,
+          "mass_fraction": 3.77611481321586e-162,
+          "molar_flow": 2.84524120246272e-160,
+          "mole_fraction": 2.18338970244165e-161
+        },
+        "Toluene": {
+          "mass_flow": 1.18871510633085,
+          "mass_fraction": 0.983373044911802,
+          "molar_flow": 12.9010441207589,
+          "mole_fraction": 0.990004181706259
+        }
+      },
+      "id": "MAT-143704e1-9e0e-4ee2-bfbc-dc3e3b032c14",
+      "mass_flow": 1.20881400245973,
+      "molar_flow": 13.0313026542213,
+      "pressure": 3831325,
+      "tag": "MSTR-049",
+      "temperature": 385.66262498445,
+      "total_energy_flow": 370.526987827132
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": null,
+    "delta_p": null,
+    "flash_pressure": 3280000,
+    "flash_temperature": 281.15,
+    "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+    "outlet_pressure": null,
+    "outlet_temperature": null,
+    "override_p": "true",
+    "override_t": "true",
+    "p_out": null,
+    "pout": null,
+    "tag": "SEPARATOR",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+      "mass_flow": 0.891521409801459,
+      "molar_flow": 91.4271264805525,
+      "tag": "PURGE STREAM",
+      "upstream_unit_guids": [
+        "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+      ]
+    },
+    {
+      "id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+      "mass_flow": 0.0473060101709951,
+      "molar_flow": 3.04202361299489,
+      "tag": "METHANE",
+      "upstream_unit_guids": [
+        "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+      ]
+    },
+    {
+      "id": "MAT-e9d26b02-2932-4013-810b-3c4d8f4b3408",
+      "mass_flow": 3.45785318160652,
+      "molar_flow": 44.2625448996362,
+      "tag": "BENZENE",
+      "upstream_unit_guids": [
+        "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+      ]
+    },
+    {
+      "id": "MAT-c95e4bd5-4e90-4959-b311-00159594b8cf",
+      "mass_flow": 0.139022895284233,
+      "molar_flow": 0.908850547506398,
+      "tag": "BIPHENYL",
+      "upstream_unit_guids": [
+        "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+      ]
+    }
+  ]
+}

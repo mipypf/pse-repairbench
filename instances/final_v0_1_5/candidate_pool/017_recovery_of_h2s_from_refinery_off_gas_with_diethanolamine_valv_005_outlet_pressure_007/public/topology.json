@@ -1,0 +1,261 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after outlet pressure injection.",
+  "graphic_object_count": 11,
+  "graphic_objects": [
+    {
+      "name": "MAT-5e81d862-d814-465d-85d0-7e9958ada890",
+      "object_type": "MaterialStream",
+      "tag": "off gas from process unit"
+    },
+    {
+      "name": "MAT-f04d8527-b255-4753-bad8-f6ad0a59913b",
+      "object_type": "MaterialStream",
+      "tag": "lean amine"
+    },
+    {
+      "name": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+      "object_type": "MaterialStream",
+      "tag": "treated off gas"
+    },
+    {
+      "name": "MAT-f1853649-ea1e-4322-bc08-8b199c0cb823",
+      "object_type": "MaterialStream",
+      "tag": "rich amine"
+    },
+    {
+      "name": "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb",
+      "object_type": "CapeOpenUO",
+      "tag": "off gas amine treater"
+    },
+    {
+      "name": "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90",
+      "object_type": "Valve",
+      "tag": "VALV-005"
+    },
+    {
+      "name": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+      "object_type": "MaterialStream",
+      "tag": "rich amine to amine regeneration unit"
+    },
+    {
+      "name": "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155",
+      "object_type": "Cooler",
+      "tag": "lean amine cooler"
+    },
+    {
+      "name": "MAT-2ad60d99-68d7-4362-b3f8-7ef8bdee1ad6",
+      "object_type": "MaterialStream",
+      "tag": "lean amine from amine regeneraion unit"
+    },
+    {
+      "name": "EN-051b2fd4-6f5a-4d81-92e8-e3dd2e529158",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-009"
+    },
+    {
+      "name": "MASTERTABLE-67d50cf7-5e71-44d0-b844-76a3655491c3",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-051b2fd4-6f5a-4d81-92e8-e3dd2e529158",
+      "object_class": "Streams",
+      "tag": "ESTR-009",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-2ad60d99-68d7-4362-b3f8-7ef8bdee1ad6",
+      "object_class": "Streams",
+      "tag": "lean amine from amine regeneraion unit",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155",
+      "object_class": "Exchangers",
+      "tag": "lean amine cooler",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+      "object_class": "Streams",
+      "tag": "rich amine to amine regeneration unit",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Vlvula",
+      "guid": "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90",
+      "object_class": "PressureChangers",
+      "tag": "VALV-005",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-5e81d862-d814-465d-85d0-7e9958ada890",
+      "object_class": "Streams",
+      "tag": "off gas from process unit",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-f04d8527-b255-4753-bad8-f6ad0a59913b",
+      "object_class": "Streams",
+      "tag": "lean amine",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+      "object_class": "Streams",
+      "tag": "treated off gas",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-f1853649-ea1e-4322-bc08-8b199c0cb823",
+      "object_class": "Streams",
+      "tag": "rich amine",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CapeOpenUnitOperation",
+      "guid": "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb",
+      "object_class": "CAPEOPEN",
+      "tag": "off gas amine treater",
+      "type": "DWSIM.UnitOperations.UnitOperations.CapeOpenUO"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 10,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-5e81d862-d814-465d-85d0-7e9958ada890",
+        "is_terminal_material_stream": false,
+        "tag": "off gas from process unit",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f04d8527-b255-4753-bad8-f6ad0a59913b",
+        "is_terminal_material_stream": false,
+        "tag": "lean amine",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+        "is_terminal_material_stream": true,
+        "tag": "treated off gas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f1853649-ea1e-4322-bc08-8b199c0cb823",
+        "is_terminal_material_stream": false,
+        "tag": "rich amine",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+        "is_terminal_material_stream": true,
+        "tag": "rich amine to amine regeneration unit",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-2ad60d99-68d7-4362-b3f8-7ef8bdee1ad6",
+        "is_terminal_material_stream": false,
+        "tag": "lean amine from amine regeneraion unit",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+        "tag": "treated off gas",
+        "upstream_unit_guids": [
+          "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+        ]
+      },
+      {
+        "id": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+        "tag": "rich amine to amine regeneration unit",
+        "upstream_unit_guids": [
+          "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": "OutletPressure",
+    "guid": "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90",
+    "kind": "unit_operation",
+    "tag": "VALV-005",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "guid": "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90",
+    "kind": "unit_operation",
+    "tag": "VALV-005",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+      "tag": "treated off gas",
+      "upstream_unit_guids": [
+        "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+      ]
+    },
+    {
+      "id": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+      "tag": "rich amine to amine regeneration unit",
+      "upstream_unit_guids": [
+        "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90"
+      ]
+    }
+  ]
+}

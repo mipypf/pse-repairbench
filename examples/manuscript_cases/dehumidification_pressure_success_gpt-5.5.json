@@ -1,0 +1,21 @@
+{
+  "diagnosis": "The removed water stream pressure is governed by the compressor outlet pressure, which is currently 412499.96028557554 Pa and propagates to the cooled air, gas stream, heavy liquid, and removed water streams. This exceeds the required maximum of 316249.969552 Pa.",
+  "rationale": "Among the allowed parameters, the compressor pressure_specification/outlet_pressure directly matches the faulty removed water pressure. Lowering the compressor outlet pressure to the target maximum should restore the removed water pressure constraint after rerunning the flowsheet.",
+  "repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "rationale": "Set the compressor outlet pressure to the required maximum pressure so downstream streams, including removed water, no longer exceed 316249.969552 Pa.",
+      "target": {
+        "guid": "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c",
+        "kind": "unit_operation",
+        "tag": "compressor"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 316249.969552
+    }
+  ]
+}

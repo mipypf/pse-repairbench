@@ -1,0 +1,199 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "DC-026: column_specification/reflux_ratio",
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-4c54c848-290b-4835-8d3d-f19fe55a2979",
+        "kind": "unit_operation",
+        "tag": "DC-026",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "number"
+    },
+    {
+      "label": "DC-026: column_configuration/feed_stage",
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-4c54c848-290b-4835-8d3d-f19fe55a2979",
+        "kind": "unit_operation",
+        "tag": "DC-026",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "integer"
+    },
+    {
+      "label": "DC-01: column_specification/reflux_ratio",
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-a97989ca-ac4b-48d2-9654-2323021b0956",
+        "kind": "unit_operation",
+        "tag": "DC-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "number"
+    },
+    {
+      "label": "DC-01: column_configuration/feed_stage",
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-a97989ca-ac4b-48d2-9654-2323021b0956",
+        "kind": "unit_operation",
+        "tag": "DC-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "integer"
+    },
+    {
+      "label": "HE-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-65f74fa1-414f-406e-8488-b97858948dce",
+        "kind": "unit_operation",
+        "tag": "HE-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "condenser_duty": 943.632708542232,
+      "feed_stage": 5,
+      "feed_stage_name": "Stage5",
+      "feed_stream_id": "MAT-99357e52-6227-4aa9-8014-1b6bf38bbba1",
+      "guid": "DC-4c54c848-290b-4835-8d3d-f19fe55a2979",
+      "kind": "unit_operation",
+      "number_of_stages": 7,
+      "observed_values": {
+        "column_specification/reflux_ratio": 1.49992826408384
+      },
+      "reboiler_duty": -940.523455848378,
+      "reflux_ratio": 1.49992826408384,
+      "supported_parameters": [
+        "column_configuration/feed_stage",
+        "column_specification/reflux_ratio"
+      ],
+      "tag": "DC-026",
+      "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+    },
+    {
+      "condenser_duty": 161.981425787715,
+      "feed_stage": 3,
+      "feed_stage_name": "Stage3",
+      "feed_stream_id": "MAT-355e8342-aea3-47dd-91ce-0d5c1af565df",
+      "guid": "DC-a97989ca-ac4b-48d2-9654-2323021b0956",
+      "kind": "unit_operation",
+      "number_of_stages": 12,
+      "observed_values": {
+        "column_specification/reflux_ratio": 1.807499999915625
+      },
+      "reboiler_duty": -378.956893973127,
+      "reflux_ratio": 1.807499999915625,
+      "supported_parameters": [
+        "column_configuration/feed_stage",
+        "column_specification/reflux_ratio"
+      ],
+      "tag": "DC-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-65f74fa1-414f-406e-8488-b97858948dce",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 313.15
+      },
+      "outlet_temperature": 313.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HE-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    }
+  ],
+  "product_target": {
+    "component": "P-dichlorobenzene",
+    "direction": "max",
+    "metric": "mass_fraction",
+    "stream_tag": "S-10",
+    "threshold": 0.5235179646638837
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "component": "P-dichlorobenzene",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.5235179646638837,
+    "metric": "mass_fraction",
+    "stream": "S-10",
+    "stream_id": "MAT-c5d3a2d6-1af4-4330-8ad7-d4b484a09ef3",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-10",
+    "threshold": 0.5235179646638837
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-290d212b-d770-40ce-88fb-2d6249bfb1fc",
+      "mass_flow": 0.593842318357565,
+      "molar_flow": 14.8696941378845,
+      "tag": "S-06",
+      "upstream_unit_guids": [
+        "RC-9e0a5944-2ec3-4d8a-897f-4443eb449b49"
+      ]
+    },
+    {
+      "id": "MAT-675ced55-ae0a-4506-9070-21c5e0edb2c3",
+      "mass_flow": 1.19676654852133,
+      "molar_flow": 10.4637736295198,
+      "tag": "S-09",
+      "upstream_unit_guids": [
+        "DC-4c54c848-290b-4835-8d3d-f19fe55a2979"
+      ]
+    },
+    {
+      "id": "MAT-c5d3a2d6-1af4-4330-8ad7-d4b484a09ef3",
+      "mass_flow": 0.209,
+      "molar_flow": 1.47622637038024,
+      "tag": "S-10",
+      "upstream_unit_guids": [
+        "DC-4c54c848-290b-4835-8d3d-f19fe55a2979"
+      ]
+    },
+    {
+      "id": "MAT-48e23d4e-2022-468e-b6ba-c03e21c2914a",
+      "mass_flow": 0.00596128207708689,
+      "molar_flow": 0.16349776163442,
+      "tag": "S-12",
+      "upstream_unit_guids": [
+        "CS-082d8d1b-653f-483a-8c51-2bb81adc83db"
+      ]
+    }
+  ]
+}

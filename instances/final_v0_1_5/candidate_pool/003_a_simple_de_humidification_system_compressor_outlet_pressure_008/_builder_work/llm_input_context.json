@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "003_a_simple_de_humidification_system_compressor_outlet_pressure_008",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_pressure",
+      "max": 316249.96955227474,
+      "metric": "pressure",
+      "stream": "removed water",
+      "stream_id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "removed water",
+      "threshold": 316249.96955227474
+    },
+    "target_stream_tag": "removed water"
+  }
+}

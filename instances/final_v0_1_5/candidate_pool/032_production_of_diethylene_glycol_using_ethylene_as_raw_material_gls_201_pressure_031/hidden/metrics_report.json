@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_pressure": 100000,
+    "target_mole_fraction": null,
+    "target_value": 100000.0
+  },
+  "faulty": {
+    "separator_pressure": 50000,
+    "target_mole_fraction": null,
+    "target_value": 50000.0
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "pressure",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-d4aad2fe-760a-4578-be1a-27176d0984e8",
+      "kind": "unit_operation",
+      "tag": "GLS 201"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 100000.0
+  },
+  "instance_id": "032_production_of_diethylene_glycol_using_ethylene_as_raw_material_gls_201_pressure_031",
+  "repairable": true,
+  "repaired": {
+    "separator_pressure": 100000,
+    "target_mole_fraction": null,
+    "target_value": 100000.0
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/032_production_of_diethylene_glycol_using_ethylene_as_raw_material.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 85000.0,
+    "product_mole_fraction_min": null,
+    "stream": "205",
+    "stream_id": "MAT-65610833-df4b-45a3-8015-c0d0eb44582c",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "205",
+    "threshold": 85000.0
+  },
+  "target_delta": 50000.0
+}

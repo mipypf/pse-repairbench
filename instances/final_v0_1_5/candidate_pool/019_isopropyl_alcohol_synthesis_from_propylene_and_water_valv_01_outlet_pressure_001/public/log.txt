@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: Propane purge
+Target metric: Propane mass_fraction
+Observed target value: 0.816251840253483
+Required target value: >= 0.8833570848322001

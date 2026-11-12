@@ -1,0 +1,57 @@
+{
+  "base": {
+    "feed_stage": 1,
+    "target_mole_fraction": 0.807574959290573,
+    "target_value": 0.807574959290573
+  },
+  "faulty": {
+    "feed_stage": 2,
+    "target_mole_fraction": 0.826978728954046,
+    "target_value": 0.826978728954046
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "feed_stage",
+      "namespace": "column_configuration"
+    },
+    "target": {
+      "guid": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+      "kind": "unit_operation",
+      "tag": "DC-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": null,
+    "value": 1
+  },
+  "instance_id": "038_production_of_maleic_anhydride_from_oxidation_of_n_butane_dc_01_feed_stage_012",
+  "purity_drop": -0.019403769663473014,
+  "repairable": true,
+  "repaired": {
+    "feed_stage": 1,
+    "target_mole_fraction": 0.807574959290573,
+    "target_value": 0.807574959290573
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/038_production_of_maleic_anhydride_from_oxidation_of_n_butane.zip",
+  "target": {
+    "component": "Di ButylPhthalate",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.8133960901896149,
+    "metric": "mole_fraction",
+    "product_mole_fraction_min": null,
+    "stream": "S-23",
+    "stream_id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-23",
+    "threshold": 0.8133960901896149
+  },
+  "target_delta": -0.019403769663473014
+}

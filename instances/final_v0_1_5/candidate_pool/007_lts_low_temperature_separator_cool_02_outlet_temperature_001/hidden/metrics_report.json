@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 258.15,
+    "target_mole_fraction": null,
+    "target_value": 292.151686916295
+  },
+  "faulty": {
+    "outlet_temperature": 238.15,
+    "target_mole_fraction": null,
+    "target_value": 243.584396085975
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-ba401b74-49d7-40c3-85b5-16fee40f6bcf",
+      "kind": "unit_operation",
+      "tag": "COOL-02"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 258.15
+  },
+  "instance_id": "007_lts_low_temperature_separator_cool_02_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 258.15,
+    "target_mole_fraction": null,
+    "target_value": 292.151686916295
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/007_lts_low_temperature_separator.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 277.58149966719895,
+    "product_mole_fraction_min": null,
+    "stream": "S-14",
+    "stream_id": "MAT-b970090b-5483-4c67-9510-7f8ce3bd8a1b",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-14",
+    "threshold": 277.58149966719895
+  },
+  "target_delta": 48.56729083031999
+}

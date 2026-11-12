@@ -1,0 +1,57 @@
+{
+  "base": {
+    "reflux_ratio": 1.49999999998566,
+    "target_mole_fraction": 0.165078279429222,
+    "target_value": 0.165078279429222
+  },
+  "faulty": {
+    "reflux_ratio": 1.04999999997991,
+    "target_mole_fraction": 0.213959306134652,
+    "target_value": 0.213959306134652
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "reflux_ratio",
+      "namespace": "column_specification"
+    },
+    "target": {
+      "guid": "DC-4c54c848-290b-4835-8d3d-f19fe55a2979",
+      "kind": "unit_operation",
+      "tag": "DC-026"
+    },
+    "type": "set_unit_parameter",
+    "unit": null,
+    "value": 1.49999999998566
+  },
+  "instance_id": "029_production_of_chlorobenzene_from_benzene_and_chlorine_dc_026_reflux_ratio_010",
+  "purity_drop": -0.048881026705429986,
+  "repairable": true,
+  "repaired": {
+    "reflux_ratio": 1.49999999997132,
+    "target_mole_fraction": 0.165078279430415,
+    "target_value": 0.165078279430415
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/029_production_of_chlorobenzene_from_benzene_and_chlorine.zip",
+  "target": {
+    "component": "Monochlorobenzene",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.179742587440851,
+    "metric": "mole_fraction",
+    "product_mole_fraction_min": null,
+    "stream": "S-10",
+    "stream_id": "MAT-c5d3a2d6-1af4-4330-8ad7-d4b484a09ef3",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-10",
+    "threshold": 0.179742587440851
+  },
+  "target_delta": -0.048881026705429986
+}

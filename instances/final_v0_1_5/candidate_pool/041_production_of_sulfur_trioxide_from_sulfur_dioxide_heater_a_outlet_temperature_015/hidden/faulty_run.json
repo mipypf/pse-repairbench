@@ -1,0 +1,474 @@
+{
+  "column": null,
+  "duration_sec": 3.111,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 22,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/faulty_calculated.dwxmz",
+  "simulation_path": "public/faulty.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "AQ-bda0664c-46b4-4fdd-a319-72ad4dfdb941"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-4c428553-3d20-466f-9f12-c3767ca0f883",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-727d72ba-7acc-4616-aaee-ca7f542c06f9"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b8de84f0-68ec-4586-9ffd-ae017a17327c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-3V",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RE-d8f2f8ab-0930-41ee-8022-8b127ce2436d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-54f84017-88a9-4d50-8890-420e817d6739",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-3L",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RE-d8f2f8ab-0930-41ee-8022-8b127ce2436d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RE-d8f2f8ab-0930-41ee-8022-8b127ce2436d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-fe0b0356-f266-4a55-91ad-16fb2926a288",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-bda0664c-46b4-4fdd-a319-72ad4dfdb941"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-d4e49370-0c0b-4353-bccd-09e4dfc751c5"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-779cb403-535e-4d24-b008-5b47987eb68e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-5",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-6c645f35-b256-4985-866c-fe35e51ea448"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-c9c04177-3117-45f9-aaa2-5ea5bb43091b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9b4d3ef7-a185-45bf-8d3c-03a6ad2ccbe6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-6",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-6c645f35-b256-4985-866c-fe35e51ea448"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-10abdf54-a18b-4248-a76e-ed355555e14f",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-7",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-d4e49370-0c0b-4353-bccd-09e4dfc751c5"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-ebf20289-cf37-4e7a-91b2-5018ba53c4eb",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-8",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-c9c04177-3117-45f9-aaa2-5ea5bb43091b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-6c645f35-b256-4985-866c-fe35e51ea448"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-561de80f-c361-4c44-831b-3ecbbd3ab627",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-4",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-727d72ba-7acc-4616-aaee-ca7f542c06f9"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-10abdf54-a18b-4248-a76e-ed355555e14f",
+        "mass_flow": 0.0197362058645705,
+        "molar_flow": 0.34137712704942,
+        "tag": "S-7",
+        "upstream_unit_guids": [
+          "AQ-d4e49370-0c0b-4353-bccd-09e4dfc751c5"
+        ]
+      },
+      {
+        "id": "MAT-ebf20289-cf37-4e7a-91b2-5018ba53c4eb",
+        "mass_flow": 0.119152530160385,
+        "molar_flow": 1.4912108803292,
+        "tag": "S-8",
+        "upstream_unit_guids": [
+          "RESF-c9c04177-3117-45f9-aaa2-5ea5bb43091b"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Oxygen": {
+          "mass_flow": 1.71454731611634e-17,
+          "mass_fraction": 1.43895166456681e-16,
+          "molar_flow": 5.35812780435744e-16,
+          "mole_fraction": 3.5931388880254e-16
+        },
+        "Sulfur dioxide": {
+          "mass_flow": 0.0009553263559523,
+          "mass_fraction": 0.00801767578637551,
+          "molar_flow": 0.0149121088032914,
+          "mole_fraction": 0.0099999999999996
+        },
+        "Sulfur trioxide": {
+          "mass_flow": 0.118197203804433,
+          "mass_fraction": 0.991982324213624,
+          "molar_flow": 1.47629877152591,
+          "mole_fraction": 0.99
+        }
+      },
+      "id": "MAT-9b4d3ef7-a185-45bf-8d3c-03a6ad2ccbe6",
+      "mass_flow": 0.119152530160385,
+      "molar_flow": 1.4912108803292,
+      "pressure": 101325,
+      "tag": "S-6",
+      "temperature": 315.78875133615,
+      "total_energy_flow": -648.115425031593
+    },
+    {
+      "compounds": {
+        "Oxygen": {
+          "mass_flow": 0.00296502611055782,
+          "mass_fraction": 0.150232832536496,
+          "molar_flow": 0.0926599615787312,
+          "mole_fraction": 0.2714299062143
+        },
+        "Sulfur dioxide": {
+          "mass_flow": 0.0125806497840965,
+          "mass_fraction": 0.637440137705528,
+          "molar_flow": 0.196376889664623,
+          "mole_fraction": 0.57524911338361
+        },
+        "Sulfur trioxide": {
+          "mass_flow": 0.00419052996991622,
+          "mass_fraction": 0.212327029757977,
+          "molar_flow": 0.0523402758060659,
+          "mole_fraction": 0.15332098040209
+        }
+      },
+      "id": "MAT-779cb403-535e-4d24-b008-5b47987eb68e",
+      "mass_flow": 0.0197362058645705,
+      "molar_flow": 0.34137712704942,
+      "pressure": 101325,
+      "tag": "S-5",
+      "temperature": 289.286075659185,
+      "total_energy_flow": -79.1214179628782
+    },
+    {
+      "compounds": {
+        "Oxygen": {
+          "mass_flow": 0.0274224865483514,
+          "mass_fraction": 0.19744190314813,
+          "molar_flow": 0.856979485244896,
+          "mole_fraction": 0.33
+        },
+        "Sulfur dioxide": {
+          "mass_flow": 0.111466402340538,
+          "mass_fraction": 0.80255809685187,
+          "molar_flow": 1.73992804580024,
+          "mole_fraction": 0.67
+        },
+        "Sulfur trioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-fe0b0356-f266-4a55-91ad-16fb2926a288",
+      "mass_flow": 0.138888888888889,
+      "molar_flow": 2.59690753104514,
+      "pressure": 101325,
+      "tag": "S-2",
+      "temperature": 803.15,
+      "total_energy_flow": -461.301634380115
+    },
+    {
+      "compounds": {
+        "Oxygen": {
+          "mass_flow": 0.0274224865483514,
+          "mass_fraction": 0.19744190314813,
+          "molar_flow": 0.856979485244896,
+          "mole_fraction": 0.33
+        },
+        "Sulfur dioxide": {
+          "mass_flow": 0.111466402340538,
+          "mass_fraction": 0.80255809685187,
+          "molar_flow": 1.73992804580024,
+          "mole_fraction": 0.67
+        },
+        "Sulfur trioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-4c428553-3d20-466f-9f12-c3767ca0f883",
+      "mass_flow": 0.138888888888889,
+      "molar_flow": 2.59690753104514,
+      "pressure": 101325,
+      "tag": "S-1",
+      "temperature": 298.15,
+      "total_energy_flow": -516.480241115345
+    },
+    {
+      "compounds": {
+        "Oxygen": {
+          "mass_flow": 0.00296502611055785,
+          "mass_fraction": 0.0213482114922875,
+          "molar_flow": 0.0926599615787321,
+          "mole_fraction": 0.0505623529160039
+        },
+        "Sulfur dioxide": {
+          "mass_flow": 0.0135359761400489,
+          "mass_fraction": 0.0974591354738365,
+          "molar_flow": 0.211288998467916,
+          "mole_fraction": 0.115295416982515
+        },
+        "Sulfur trioxide": {
+          "mass_flow": 0.122387733774378,
+          "mass_fraction": 0.881192653033876,
+          "molar_flow": 1.52863904733233,
+          "mole_fraction": 0.834142230101481
+        }
+      },
+      "id": "MAT-b8de84f0-68ec-4586-9ffd-ae017a17327c",
+      "mass_flow": 0.138888736024984,
+      "molar_flow": 1.83258800737898,
+      "pressure": 101325,
+      "tag": "S-3V",
+      "temperature": 803.15,
+      "total_energy_flow": -611.584374508141
+    },
+    {
+      "compounds": {
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Sulfur dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Sulfur trioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-54f84017-88a9-4d50-8890-420e817d6739",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 101325,
+      "tag": "S-3L",
+      "temperature": 803.15,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Oxygen": {
+          "mass_flow": 0.00296502611055782,
+          "mass_fraction": 0.150232832536496,
+          "molar_flow": 0.0926599615787312,
+          "mole_fraction": 0.2714299062143
+        },
+        "Sulfur dioxide": {
+          "mass_flow": 0.0125806497840965,
+          "mass_fraction": 0.637440137705528,
+          "molar_flow": 0.196376889664623,
+          "mole_fraction": 0.57524911338361
+        },
+        "Sulfur trioxide": {
+          "mass_flow": 0.00419052996991622,
+          "mass_fraction": 0.212327029757977,
+          "molar_flow": 0.0523402758060659,
+          "mole_fraction": 0.15332098040209
+        }
+      },
+      "id": "MAT-10abdf54-a18b-4248-a76e-ed355555e14f",
+      "mass_flow": 0.0197362058645705,
+      "molar_flow": 0.34137712704942,
+      "pressure": 101325,
+      "tag": "S-7",
+      "temperature": 298.15,
+      "total_energy_flow": -79.0046098700231
+    },
+    {
+      "compounds": {
+        "Oxygen": {
+          "mass_flow": 1.71454731611634e-17,
+          "mass_fraction": 1.43895166456681e-16,
+          "molar_flow": 5.35812780435744e-16,
+          "mole_fraction": 3.5931388880254e-16
+        },
+        "Sulfur dioxide": {
+          "mass_flow": 0.0009553263559523,
+          "mass_fraction": 0.00801767578637551,
+          "molar_flow": 0.0149121088032914,
+          "mole_fraction": 0.0099999999999996
+        },
+        "Sulfur trioxide": {
+          "mass_flow": 0.118197203804433,
+          "mass_fraction": 0.991982324213624,
+          "molar_flow": 1.47629877152591,
+          "mole_fraction": 0.99
+        }
+      },
+      "id": "MAT-ebf20289-cf37-4e7a-91b2-5018ba53c4eb",
+      "mass_flow": 0.119152530160385,
+      "molar_flow": 1.4912108803292,
+      "pressure": 101325,
+      "tag": "S-8",
+      "temperature": 298.15,
+      "total_energy_flow": -653.246445090814
+    },
+    {
+      "compounds": {
+        "Oxygen": {
+          "mass_flow": 0.00296502611055785,
+          "mass_fraction": 0.0213482114922875,
+          "molar_flow": 0.0926599615787321,
+          "mole_fraction": 0.0505623529160039
+        },
+        "Sulfur dioxide": {
+          "mass_flow": 0.0135359761400489,
+          "mass_fraction": 0.0974591354738365,
+          "molar_flow": 0.211288998467916,
+          "mole_fraction": 0.115295416982515
+        },
+        "Sulfur trioxide": {
+          "mass_flow": 0.122387733774378,
+          "mass_fraction": 0.881192653033876,
+          "molar_flow": 1.52863904733233,
+          "mole_fraction": 0.834142230101481
+        }
+      },
+      "id": "MAT-561de80f-c361-4c44-831b-3ecbbd3ab627",
+      "mass_flow": 0.138888736024984,
+      "molar_flow": 1.83258800737898,
+      "pressure": 101325,
+      "tag": "S-4",
+      "temperature": 348.15,
+      "total_energy_flow": -663.037481720685
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "delta_p": null,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "AQ-bda0664c-46b4-4fdd-a319-72ad4dfdb941",
+    "outlet_pressure": null,
+    "outlet_temperature": 803.15,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "Heater-A",
+    "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-10abdf54-a18b-4248-a76e-ed355555e14f",
+      "mass_flow": 0.0197362058645705,
+      "molar_flow": 0.34137712704942,
+      "tag": "S-7",
+      "upstream_unit_guids": [
+        "AQ-d4e49370-0c0b-4353-bccd-09e4dfc751c5"
+      ]
+    },
+    {
+      "id": "MAT-ebf20289-cf37-4e7a-91b2-5018ba53c4eb",
+      "mass_flow": 0.119152530160385,
+      "molar_flow": 1.4912108803292,
+      "tag": "S-8",
+      "upstream_unit_guids": [
+        "RESF-c9c04177-3117-45f9-aaa2-5ea5bb43091b"
+      ]
+    }
+  ]
+}

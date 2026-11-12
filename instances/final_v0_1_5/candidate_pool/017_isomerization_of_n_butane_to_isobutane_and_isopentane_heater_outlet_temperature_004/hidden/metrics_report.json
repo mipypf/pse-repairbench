@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 347.039,
+    "target_mole_fraction": null,
+    "target_value": 0.226075532632481
+  },
+  "faulty": {
+    "outlet_temperature": 377.039,
+    "target_mole_fraction": null,
+    "target_value": 0.187162875096727
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-6c7ba34b-bb9b-4a44-805a-1db1e6e9b834",
+      "kind": "unit_operation",
+      "tag": "Heater"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 347.039
+  },
+  "instance_id": "017_isomerization_of_n_butane_to_isobutane_and_isopentane_heater_outlet_temperature_004",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 347.039,
+    "target_mole_fraction": null,
+    "target_value": 0.226075532632481
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/017_isomerization_of_n_butane_to_isobutane_and_isopentane.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_flow",
+    "metric": "mass_flow",
+    "min": 0.2144017353717548,
+    "product_mole_fraction_min": null,
+    "stream": "Reactor Output 2",
+    "stream_id": "MAT-8250e372-d697-444b-a620-b1cadd3dc778",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Reactor Output 2",
+    "threshold": 0.2144017353717548
+  },
+  "target_delta": 0.038912657535754014
+}

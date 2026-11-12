@@ -1,0 +1,37 @@
+{
+  "fault": {
+    "fault_value": 5,
+    "gold_value": 3,
+    "parameter": {
+      "name": "feed_stage",
+      "namespace": "column_configuration"
+    },
+    "target": {
+      "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+      "kind": "unit_operation",
+      "tag": "DC-01"
+    },
+    "unit": null
+  },
+  "fault_severity": "medium",
+  "fault_type": "column_feed_stage_error",
+  "gold_rationale": "Restore the distillation column feed to the base stage that satisfies the selected product purity target.",
+  "instance_id": "distillation_002_feed_stage_single",
+  "mock_output": {
+    "diagnosis": "The product purity target is missed because the distillation column feed stage is misplaced.",
+    "rationale": "Restoring the feed to the validated base stage recovers the selected oxygen product purity target."
+  },
+  "process_category": "distillation",
+  "public_problem": {
+    "body": "The DWSIM air-liquefaction flowsheet runs headlessly, but the selected product stream misses its purity target.\n\nAdjust only the feed stage for column `{target_tag}` / GUID `{target_guid}`. Propose a structured repair action so that `{target_component}` mole fraction in material stream `{target_stream_tag}` is at least `{target_min}` after rerunning the flowsheet.\n\nExpected repair action type: `set_unit_parameter`.",
+    "title": "Repair Task: Distillation Column Feed Stage"
+  },
+  "reasoning_class": "P_parameter",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/distillation/002_air_liquefaction_using_linde_single_column_system.zip",
+  "source_name": "FOSSEE DWSIM Flowsheeting Project: Air Liquefaction using Linde Single Column System",
+  "target_metric": {
+    "min": 0.99,
+    "property": "oxygen_mole_fraction",
+    "stream": "S-08"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 405.15,
+    "target_mole_fraction": null,
+    "target_value": 654.724494586526
+  },
+  "faulty": {
+    "outlet_temperature": 395.15,
+    "target_mole_fraction": null,
+    "target_value": 617.243535517832
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "CL-9000d0c9-dc58-4f43-b8fc-b410fa0bd6d3",
+      "kind": "unit_operation",
+      "tag": "CL-02"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 405.15
+  },
+  "instance_id": "038_production_of_maleic_anhydride_from_oxidation_of_n_butane_cl_02_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 405.15,
+    "target_mole_fraction": null,
+    "target_value": 654.724494586526
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/038_production_of_maleic_anhydride_from_oxidation_of_n_butane.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 643.4802068659178,
+    "product_mole_fraction_min": null,
+    "stream": "S-23",
+    "stream_id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-23",
+    "threshold": 643.4802068659178
+  },
+  "target_delta": 37.480959068694006
+}

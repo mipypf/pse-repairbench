@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 5000000,
+    "target_mole_fraction": null,
+    "target_value": 175.127765913191
+  },
+  "faulty": {
+    "outlet_pressure": 7500000,
+    "target_mole_fraction": null,
+    "target_value": 154.164844430498
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287",
+      "kind": "unit_operation",
+      "tag": "Compressor2"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 5000000.0
+  },
+  "instance_id": "010_liquefaction_of_biogas_compressor2_outlet_pressure_007",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 5000000,
+    "target_mole_fraction": null,
+    "target_value": 175.127765913191
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/010_liquefaction_of_biogas.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 168.83888946838312,
+    "product_mole_fraction_min": null,
+    "stream": "Coolent out2",
+    "stream_id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Coolent out2",
+    "threshold": 168.83888946838312
+  },
+  "target_delta": 20.96292148269302
+}

@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 101325,
+    "target_mole_fraction": null,
+    "target_value": 101325.0
+  },
+  "faulty": {
+    "outlet_pressure": 91192.5,
+    "target_mole_fraction": null,
+    "target_value": 91192.5
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "VALV-66b69073-a1b7-4a35-a1c0-655de7a476f6",
+      "kind": "unit_operation",
+      "tag": "Valve"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 101325.0
+  },
+  "instance_id": "013_nitrogen_liquefaction_using_linde_cycle_valve_outlet_pressure_008",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 101325,
+    "target_mole_fraction": null,
+    "target_value": 101325.0
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/013_nitrogen_liquefaction_using_linde_cycle.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 98285.25,
+    "product_mole_fraction_min": null,
+    "stream": "Liquified-N2",
+    "stream_id": "MAT-ca61f92a-5afb-4c0c-9849-776ced812743",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Liquified-N2",
+    "threshold": 98285.25
+  },
+  "target_delta": 10132.5
+}

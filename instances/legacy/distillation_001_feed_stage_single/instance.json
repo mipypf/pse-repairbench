@@ -1,0 +1,124 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "column_feed_stage_error",
+  "faulty_flowsheet": "public/fault_feed_stage.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "namespace": "column_configuration",
+        "name": "feed_stage"
+      },
+      "target": {
+        "kind": "unit_operation",
+        "guid": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f"
+      },
+      "type": "set_unit_parameter",
+      "unit": null,
+      "value": 11
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in the separation section.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the feed location is consistent with the desired separation.",
+      "target": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the feed stage of the distillation column to 11.",
+      "target": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "distillation_001_feed_stage_single",
+  "leakage_flags": [
+    "unfaulted_placeholder_until_fault_injection"
+  ],
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "06343d8ac8199bad3d27bbedc0899cec128b425a47af223ecd0c74c81d9c920f",
+    "dwsim_runner_version": "deferred-next-phase",
+    "evaluator_version": "deferred-next-phase",
+    "executor_version": "deferred-next-phase",
+    "fault_injector_version": "seed-unfaulted-copy",
+    "faulty_flowsheet_sha256": "06343d8ac8199bad3d27bbedc0899cec128b425a47af223ecd0c74c81d9c920f",
+    "observation_extractor_version": "prepare_dwsim_seed.py:0"
+  },
+  "source": {
+    "contains_database": true,
+    "dwsim_build_version": "DWSIM v4.2",
+    "internal_archive_entries": [
+      "2e34594c-1ecc-4730-9533-e9910a04ce93.xml",
+      "382212cf-93ca-43ba-a97b-31af8f2a563d.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 11,
+    "retrieved_at": "2026-05-12",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "ParticleSizeDistributions",
+      "Spreadsheet",
+      "PanelLayout",
+      "MessagesLog",
+      "Results"
+    ],
+    "source_format": "dwxmz",
+    "source_name": "FOSSEE DWSIM Flowsheeting Project: Benzene Toluene Fractionation Unit",
+    "source_url": "https://dwsim.fossee.org/flowsheeting-project/dwsim-flowsheet-run/26",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "ParticleSizeDistributions",
+      "PanelLayout",
+      "Results"
+    ]
+  },
+  "success_criteria": {
+    "bottoms_purity_min": 0.95,
+    "converged": true,
+    "distillate_purity_min": 0.9,
+    "max_energy_balance_residual": 1e-06,
+    "max_material_balance_residual": 1e-06,
+    "max_reboiler_duty_relative_to_base": 1.2,
+    "no_fatal_error": true
+  }
+}

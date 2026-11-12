@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 85,
+    "target_mole_fraction": null,
+    "target_value": 77.3547203596941
+  },
+  "faulty": {
+    "outlet_temperature": 55,
+    "target_mole_fraction": null,
+    "target_value": 25.5386459717455
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-cbfcb8b7-ed0a-478c-924c-060f815ed8c3",
+      "kind": "unit_operation",
+      "tag": "Cooler"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 85.0
+  },
+  "instance_id": "013_nitrogen_liquefaction_using_linde_cycle_cooler_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 85,
+    "target_mole_fraction": null,
+    "target_value": 77.3547203596941
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/013_nitrogen_liquefaction_using_linde_cycle.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 61.809898043309516,
+    "product_mole_fraction_min": null,
+    "stream": "Liquified-N2",
+    "stream_id": "MAT-ca61f92a-5afb-4c0c-9849-776ced812743",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Liquified-N2",
+    "threshold": 61.809898043309516
+  },
+  "target_delta": 51.8160743879486
+}

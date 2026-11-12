@@ -1,0 +1,20 @@
+{
+  "diagnosis": "Stream M-24 has an outlet temperature of 48.176 K, which is 21 K below the required minimum of 69.176 K. The stream originates from a cooler (CL-02) that is set to 78.15 K, which is still above the target but the downstream processing reduces the temperature further. The immediate upstream unit before M-24 is CL-02 (cooler), which is currently set to 78.15 K. To increase M-24's temperature, we need to increase the outlet temperature of CL-02.",
+  "rationale": "Stream M-24 is the outlet of cooler CL-02 (RESF-cccdbb6a-6369-4f7d-97e3-be9c5faac84f). The cooler is currently configured to output 78.15 K, but M-24 is measured at 48.176 K, indicating additional cooling occurs downstream or the cooler setpoint is not being met. To raise M-24's temperature from 48.176 K to at least 69.176 K (a 21 K increase), we should increase CL-02's outlet temperature setpoint. Setting it to approximately 83.15 K should provide sufficient margin to achieve the target after accounting for any downstream effects. This is a direct and conservative approach that targets the unit immediately upstream of the problem stream.",
+  "repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Increasing CL-02's outlet temperature from 78.15 K to 83.15 K should raise M-24's temperature above the required 69.176 K minimum. This 5 K increase at the cooler outlet should propagate to increase M-24's temperature sufficiently.",
+      "target": {
+        "guid": "RESF-cccdbb6a-6369-4f7d-97e3-be9c5faac84f",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 83.15
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 20000000,
+    "target_mole_fraction": null,
+    "target_value": 14999996.5679711
+  },
+  "faulty": {
+    "outlet_pressure": 10000000,
+    "target_mole_fraction": null,
+    "target_value": 4999992.75429608
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "COMP-181f7c8c-f438-487a-ab56-baa6020266c9",
+      "kind": "unit_operation",
+      "tag": "Compressor"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 20000000.0
+  },
+  "instance_id": "052_synthesis_of_ammonia_using_natural_gas_by_steam_reforming_compressor_outlet_pressure_019",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 20000000,
+    "target_mole_fraction": null,
+    "target_value": 14999996.5679711
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/052_synthesis_of_ammonia_using_natural_gas_by_steam_reforming.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 11999995.423868593,
+    "product_mole_fraction_min": null,
+    "stream": "vap",
+    "stream_id": "MAT-cfbdd730-ea83-4d3c-8150-a22373248a17",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "vap",
+    "threshold": 11999995.423868593
+  },
+  "target_delta": 10000003.81367502
+}

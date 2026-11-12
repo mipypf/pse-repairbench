@@ -1,0 +1,556 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after outlet pressure injection.",
+  "graphic_object_count": 24,
+  "graphic_objects": [
+    {
+      "name": "MAT-7cfd555b-06b6-47b2-94a1-8ddbff43466b",
+      "object_type": "MaterialStream",
+      "tag": "Stream 2"
+    },
+    {
+      "name": "MAT-4eddd469-b8e8-4c4f-8f88-f5ab2fc71d35",
+      "object_type": "MaterialStream",
+      "tag": "Stream 1"
+    },
+    {
+      "name": "VALV-8482025b-3efb-461d-867f-8ba04f2839e3",
+      "object_type": "Valve",
+      "tag": "VALV-002"
+    },
+    {
+      "name": "MAT-c44eb5a6-55b9-43bf-a318-52244a4588d6",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-003"
+    },
+    {
+      "name": "AQ-8ab45388-2721-4bff-90dd-9625acb6376c",
+      "object_type": "Heater",
+      "tag": "Propylene Heater"
+    },
+    {
+      "name": "MAT-71e10823-a6c0-4566-ac87-82d63f48ac06",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-005"
+    },
+    {
+      "name": "EN-e4768ce7-ad87-4acb-9ccf-30573a7714aa",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-006"
+    },
+    {
+      "name": "MIST-1c3b6f46-b328-4226-8b48-ee45cc2cb3ad",
+      "object_type": "NodeIn",
+      "tag": "Jet Mixer"
+    },
+    {
+      "name": "MAT-6e8736d8-9b36-4654-ac57-cfe75f1e89f3",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-008"
+    },
+    {
+      "name": "AQ-79440953-41de-4c4a-91b4-3d294bf6eec0",
+      "object_type": "Heater",
+      "tag": "HEAT-009"
+    },
+    {
+      "name": "MAT-dcd8ed21-203d-4975-bd93-2b74e080995b",
+      "object_type": "MaterialStream",
+      "tag": "Stream 3"
+    },
+    {
+      "name": "EN-e56d6f79-d394-46d1-82d4-8717cd8100f7",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-011"
+    },
+    {
+      "name": "RC-b95947b8-c71c-4a0d-8623-6356b0f845e8",
+      "object_type": "RCT_Conversion",
+      "tag": "Reactor"
+    },
+    {
+      "name": "MAT-b2ec8238-4dba-4c2e-95ba-9aecf2798fdd",
+      "object_type": "MaterialStream",
+      "tag": "Stream 4"
+    },
+    {
+      "name": "MAT-db04e9e9-6ebc-4ddd-9166-6a057d0e2650",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-014"
+    },
+    {
+      "name": "EN-8c05cfcc-f8e4-4b33-bbc5-5177da5911d2",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-015"
+    },
+    {
+      "name": "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505",
+      "object_type": "HeatExchanger",
+      "tag": "HE-016"
+    },
+    {
+      "name": "MAT-b42ba56e-39a9-40f9-a14f-d22aa01e8870",
+      "object_type": "MaterialStream",
+      "tag": "Boiler Feed Water"
+    },
+    {
+      "name": "MAT-de35bb41-2d61-4819-bc66-c5681305bbad",
+      "object_type": "MaterialStream",
+      "tag": "Low Pressure Steam"
+    },
+    {
+      "name": "MAT-444d009c-04de-44c3-ba69-fa3421689089",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-019"
+    },
+    {
+      "name": "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b",
+      "object_type": "HeatExchanger",
+      "tag": "HE-020"
+    },
+    {
+      "name": "MAT-20b51e4b-c90a-402b-b11f-a359f5d62bcf",
+      "object_type": "MaterialStream",
+      "tag": "Cooling Water In"
+    },
+    {
+      "name": "MAT-7bf47104-9a44-4f29-ab9f-800dcff4ace6",
+      "object_type": "MaterialStream",
+      "tag": "Cooling Water Out"
+    },
+    {
+      "name": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+      "object_type": "MaterialStream",
+      "tag": "Stream 5"
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+      "object_class": null,
+      "tag": "Stream 5",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-7bf47104-9a44-4f29-ab9f-800dcff4ace6",
+      "object_class": null,
+      "tag": "Cooling Water Out",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-20b51e4b-c90a-402b-b11f-a359f5d62bcf",
+      "object_class": null,
+      "tag": "Cooling Water In",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "HeatExchanger",
+      "guid": "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b",
+      "object_class": null,
+      "tag": "HE-020",
+      "type": "DWSIM.UnitOperations.UnitOperations.HeatExchanger"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-444d009c-04de-44c3-ba69-fa3421689089",
+      "object_class": null,
+      "tag": "MSTR-019",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-de35bb41-2d61-4819-bc66-c5681305bbad",
+      "object_class": null,
+      "tag": "Low Pressure Steam",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-b42ba56e-39a9-40f9-a14f-d22aa01e8870",
+      "object_class": null,
+      "tag": "Boiler Feed Water",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "HeatExchanger",
+      "guid": "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505",
+      "object_class": null,
+      "tag": "HE-016",
+      "type": "DWSIM.UnitOperations.UnitOperations.HeatExchanger"
+    },
+    {
+      "component_description": "Vlvula",
+      "guid": "VALV-8482025b-3efb-461d-867f-8ba04f2839e3",
+      "object_class": null,
+      "tag": "VALV-002",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-7cfd555b-06b6-47b2-94a1-8ddbff43466b",
+      "object_class": null,
+      "tag": "Stream 2",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-4eddd469-b8e8-4c4f-8f88-f5ab2fc71d35",
+      "object_class": null,
+      "tag": "Stream 1",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-c44eb5a6-55b9-43bf-a318-52244a4588d6",
+      "object_class": null,
+      "tag": "MSTR-003",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Aquecedor",
+      "guid": "AQ-8ab45388-2721-4bff-90dd-9625acb6376c",
+      "object_class": null,
+      "tag": "Propylene Heater",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-71e10823-a6c0-4566-ac87-82d63f48ac06",
+      "object_class": null,
+      "tag": "MSTR-005",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-e4768ce7-ad87-4acb-9ccf-30573a7714aa",
+      "object_class": null,
+      "tag": "ESTR-006",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Misturador",
+      "guid": "MIST-1c3b6f46-b328-4226-8b48-ee45cc2cb3ad",
+      "object_class": null,
+      "tag": "Jet Mixer",
+      "type": "DWSIM.UnitOperations.UnitOperations.Mixer"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-6e8736d8-9b36-4654-ac57-cfe75f1e89f3",
+      "object_class": null,
+      "tag": "MSTR-008",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Aquecedor",
+      "guid": "AQ-79440953-41de-4c4a-91b4-3d294bf6eec0",
+      "object_class": null,
+      "tag": "HEAT-009",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-dcd8ed21-203d-4975-bd93-2b74e080995b",
+      "object_class": null,
+      "tag": "Stream 3",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-e56d6f79-d394-46d1-82d4-8717cd8100f7",
+      "object_class": null,
+      "tag": "ESTR-011",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "ReatorConversao",
+      "guid": "RC-b95947b8-c71c-4a0d-8623-6356b0f845e8",
+      "object_class": null,
+      "tag": "Reactor",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_Conversion"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-b2ec8238-4dba-4c2e-95ba-9aecf2798fdd",
+      "object_class": null,
+      "tag": "Stream 4",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-db04e9e9-6ebc-4ddd-9166-6a057d0e2650",
+      "object_class": null,
+      "tag": "MSTR-014",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-8c05cfcc-f8e4-4b33-bbc5-5177da5911d2",
+      "object_class": null,
+      "tag": "ESTR-015",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 24,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-1c3b6f46-b328-4226-8b48-ee45cc2cb3ad"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-7cfd555b-06b6-47b2-94a1-8ddbff43466b",
+        "is_terminal_material_stream": false,
+        "tag": "Stream 2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-8482025b-3efb-461d-867f-8ba04f2839e3"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-4eddd469-b8e8-4c4f-8f88-f5ab2fc71d35",
+        "is_terminal_material_stream": false,
+        "tag": "Stream 1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-8ab45388-2721-4bff-90dd-9625acb6376c"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c44eb5a6-55b9-43bf-a318-52244a4588d6",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-003",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-8482025b-3efb-461d-867f-8ba04f2839e3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-1c3b6f46-b328-4226-8b48-ee45cc2cb3ad"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-71e10823-a6c0-4566-ac87-82d63f48ac06",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-005",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-8ab45388-2721-4bff-90dd-9625acb6376c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-79440953-41de-4c4a-91b4-3d294bf6eec0"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6e8736d8-9b36-4654-ac57-cfe75f1e89f3",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-008",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-1c3b6f46-b328-4226-8b48-ee45cc2cb3ad"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-b95947b8-c71c-4a0d-8623-6356b0f845e8"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-dcd8ed21-203d-4975-bd93-2b74e080995b",
+        "is_terminal_material_stream": false,
+        "tag": "Stream 3",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-79440953-41de-4c4a-91b4-3d294bf6eec0"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b2ec8238-4dba-4c2e-95ba-9aecf2798fdd",
+        "is_terminal_material_stream": false,
+        "tag": "Stream 4",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-b95947b8-c71c-4a0d-8623-6356b0f845e8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-db04e9e9-6ebc-4ddd-9166-6a057d0e2650",
+        "is_terminal_material_stream": true,
+        "tag": "MSTR-014",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-b95947b8-c71c-4a0d-8623-6356b0f845e8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-b42ba56e-39a9-40f9-a14f-d22aa01e8870",
+        "is_terminal_material_stream": false,
+        "tag": "Boiler Feed Water",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-de35bb41-2d61-4819-bc66-c5681305bbad",
+        "is_terminal_material_stream": true,
+        "tag": "Low Pressure Steam",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-444d009c-04de-44c3-ba69-fa3421689089",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-019",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-20b51e4b-c90a-402b-b11f-a359f5d62bcf",
+        "is_terminal_material_stream": false,
+        "tag": "Cooling Water In",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-7bf47104-9a44-4f29-ab9f-800dcff4ace6",
+        "is_terminal_material_stream": true,
+        "tag": "Cooling Water Out",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+        "is_terminal_material_stream": true,
+        "tag": "Stream 5",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-db04e9e9-6ebc-4ddd-9166-6a057d0e2650",
+        "tag": "MSTR-014",
+        "upstream_unit_guids": [
+          "RC-b95947b8-c71c-4a0d-8623-6356b0f845e8"
+        ]
+      },
+      {
+        "id": "MAT-de35bb41-2d61-4819-bc66-c5681305bbad",
+        "tag": "Low Pressure Steam",
+        "upstream_unit_guids": [
+          "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+        ]
+      },
+      {
+        "id": "MAT-7bf47104-9a44-4f29-ab9f-800dcff4ace6",
+        "tag": "Cooling Water Out",
+        "upstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ]
+      },
+      {
+        "id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+        "tag": "Stream 5",
+        "upstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": "OutletPressure",
+    "guid": "VALV-8482025b-3efb-461d-867f-8ba04f2839e3",
+    "kind": "unit_operation",
+    "tag": "VALV-002",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "guid": "VALV-8482025b-3efb-461d-867f-8ba04f2839e3",
+    "kind": "unit_operation",
+    "tag": "VALV-002",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-db04e9e9-6ebc-4ddd-9166-6a057d0e2650",
+      "tag": "MSTR-014",
+      "upstream_unit_guids": [
+        "RC-b95947b8-c71c-4a0d-8623-6356b0f845e8"
+      ]
+    },
+    {
+      "id": "MAT-de35bb41-2d61-4819-bc66-c5681305bbad",
+      "tag": "Low Pressure Steam",
+      "upstream_unit_guids": [
+        "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+      ]
+    },
+    {
+      "id": "MAT-7bf47104-9a44-4f29-ab9f-800dcff4ace6",
+      "tag": "Cooling Water Out",
+      "upstream_unit_guids": [
+        "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+      ]
+    },
+    {
+      "id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+      "tag": "Stream 5",
+      "upstream_unit_guids": [
+        "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+      ]
+    }
+  ]
+}

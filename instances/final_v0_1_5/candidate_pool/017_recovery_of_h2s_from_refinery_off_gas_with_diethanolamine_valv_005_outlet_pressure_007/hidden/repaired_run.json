@@ -1,0 +1,411 @@
+{
+  "column": null,
+  "duration_sec": 3.473,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 10,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/repaired_calculated.dwxmz",
+  "simulation_path": "hidden/repaired.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-5e81d862-d814-465d-85d0-7e9958ada890",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "off gas from process unit",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f04d8527-b255-4753-bad8-f6ad0a59913b",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "lean amine",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "treated off gas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f1853649-ea1e-4322-bc08-8b199c0cb823",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "rich amine",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "rich amine to amine regeneration unit",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-2ad60d99-68d7-4362-b3f8-7ef8bdee1ad6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "lean amine from amine regeneraion unit",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+        "mass_flow": 1.22672451748698,
+        "molar_flow": 41.380455002448,
+        "tag": "treated off gas",
+        "upstream_unit_guids": [
+          "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+        ]
+      },
+      {
+        "id": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+        "mass_flow": 8.49549848251476,
+        "molar_flow": 176.72782009632,
+        "tag": "rich amine to amine regeneration unit",
+        "upstream_unit_guids": [
+          "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Diethanolamine": {
+          "mass_flow": 6.32161986738911,
+          "mass_fraction": 0.74411405998131,
+          "molar_flow": 60.1282521561594,
+          "mole_fraction": 0.34023082570355
+        },
+        "Ethane": {
+          "mass_flow": 0.103870641421644,
+          "mass_fraction": 0.0122265505238366,
+          "molar_flow": 3.454404976735,
+          "mole_fraction": 0.019546469677792
+        },
+        "Hydrogen sulfide": {
+          "mass_flow": 0.0672524925855394,
+          "mass_fraction": 0.00791625032056176,
+          "molar_flow": 1.97332030703255,
+          "mole_fraction": 0.011165872503588
+        },
+        "Methane": {
+          "mass_flow": 0.000295933967804655,
+          "mass_fraction": 3.48342087770058e-05,
+          "molar_flow": 0.0184469194752335,
+          "mole_fraction": 0.00010438039390278
+        },
+        "Water": {
+          "mass_flow": 2.00245954715066,
+          "mass_fraction": 0.235708304965515,
+          "molar_flow": 111.153395736878,
+          "mole_fraction": 0.62895245172094
+        }
+      },
+      "id": "MAT-f1853649-ea1e-4322-bc08-8b199c0cb823",
+      "mass_flow": 8.49549848251476,
+      "molar_flow": 176.72782009632,
+      "pressure": 2059400,
+      "tag": "rich amine",
+      "temperature": 329.01887107114,
+      "total_energy_flow": -58925.1275208614
+    },
+    {
+      "compounds": {
+        "Diethanolamine": {
+          "mass_flow": 4.01489140235096e-06,
+          "mass_fraction": 3.27285494429972e-06,
+          "molar_flow": 3.8187744230793e-05,
+          "mole_fraction": 9.2284495732427e-07
+        },
+        "Ethane": {
+          "mass_flow": 1.19124015616665,
+          "mass_fraction": 0.971073895716194,
+          "molar_flow": 39.6168336656792,
+          "mole_fraction": 0.95738032999723
+        },
+        "Hydrogen sulfide": {
+          "mass_flow": 0.0116671695449346,
+          "mass_fraction": 0.00951083098007647,
+          "molar_flow": 0.342337684500358,
+          "mole_fraction": 0.0082729318582917
+        },
+        "Methane": {
+          "mass_flow": 0.0145636063133118,
+          "mass_fraction": 0.0118719452539729,
+          "molar_flow": 0.907816277136539,
+          "mole_fraction": 0.021938286494985
+        },
+        "Water": {
+          "mass_flow": 0.00924957057068121,
+          "mass_fraction": 0.00754005519481219,
+          "molar_flow": 0.51342918737212,
+          "mole_fraction": 0.01240752880416
+        }
+      },
+      "id": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+      "mass_flow": 1.22672451748698,
+      "molar_flow": 41.380455002448,
+      "pressure": 2059400,
+      "tag": "treated off gas",
+      "temperature": 339.642788550339,
+      "total_energy_flow": -3468.48018601401
+    },
+    {
+      "compounds": {
+        "Diethanolamine": {
+          "mass_flow": 6.32162388227716,
+          "mass_fraction": 0.758594896217055,
+          "molar_flow": 60.1282903438717,
+          "mole_fraction": 0.35
+        },
+        "Ethane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen sulfide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 2.01170911772284,
+          "mass_fraction": 0.241405103782945,
+          "molar_flow": 111.666824924333,
+          "mole_fraction": 0.65
+        }
+      },
+      "id": "MAT-f04d8527-b255-4753-bad8-f6ad0a59913b",
+      "mass_flow": 8.333333,
+      "molar_flow": 171.795115268205,
+      "pressure": 2059429,
+      "tag": "lean amine",
+      "temperature": 328,
+      "total_energy_flow": -59141.4330677501
+    },
+    {
+      "compounds": {
+        "Diethanolamine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Ethane": {
+          "mass_flow": 1.29511079758858,
+          "mass_fraction": 0.932479028280555,
+          "molar_flow": 43.0712386424236,
+          "mole_fraction": 0.93
+        },
+        "Hydrogen sulfide": {
+          "mass_flow": 0.0789196621303118,
+          "mass_fraction": 0.0568221112761355,
+          "molar_flow": 2.31565799152815,
+          "mole_fraction": 0.05
+        },
+        "Methane": {
+          "mass_flow": 0.0148595402811083,
+          "mass_fraction": 0.0106988604433096,
+          "molar_flow": 0.926263196611259,
+          "mole_fraction": 0.02
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-5e81d862-d814-465d-85d0-7e9958ada890",
+      "mass_flow": 1.38889,
+      "molar_flow": 46.313159830563,
+      "pressure": 539374,
+      "tag": "off gas from process unit",
+      "temperature": 323.15,
+      "total_energy_flow": -3678.40096963447
+    },
+    {
+      "compounds": {
+        "Diethanolamine": {
+          "mass_flow": 6.32161986738911,
+          "mass_fraction": 0.74411405998131,
+          "molar_flow": 60.1282521561594,
+          "mole_fraction": 0.34023082570355
+        },
+        "Ethane": {
+          "mass_flow": 0.103870641421644,
+          "mass_fraction": 0.0122265505238366,
+          "molar_flow": 3.454404976735,
+          "mole_fraction": 0.019546469677792
+        },
+        "Hydrogen sulfide": {
+          "mass_flow": 0.0672524925855394,
+          "mass_fraction": 0.00791625032056176,
+          "molar_flow": 1.97332030703255,
+          "mole_fraction": 0.011165872503588
+        },
+        "Methane": {
+          "mass_flow": 0.000295933967804655,
+          "mass_fraction": 3.48342087770058e-05,
+          "molar_flow": 0.0184469194752335,
+          "mole_fraction": 0.00010438039390278
+        },
+        "Water": {
+          "mass_flow": 2.00245954715066,
+          "mass_fraction": 0.235708304965515,
+          "molar_flow": 111.153395736878,
+          "mole_fraction": 0.62895245172094
+        }
+      },
+      "id": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+      "mass_flow": 8.49549848251476,
+      "molar_flow": 176.72782009632,
+      "pressure": 637442,
+      "tag": "rich amine to amine regeneration unit",
+      "temperature": 336.084029622516,
+      "total_energy_flow": -58748.5655857342
+    },
+    {
+      "compounds": {
+        "Diethanolamine": {
+          "mass_flow": 6.32162388227716,
+          "mass_fraction": 0.758594896217055,
+          "molar_flow": 60.1282903438717,
+          "mole_fraction": 0.35
+        },
+        "Ethane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen sulfide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 2.01170911772284,
+          "mass_fraction": 0.241405103782945,
+          "molar_flow": 111.666824924333,
+          "mole_fraction": 0.65
+        }
+      },
+      "id": "MAT-2ad60d99-68d7-4362-b3f8-7ef8bdee1ad6",
+      "mass_flow": 8.333333,
+      "molar_flow": 171.795115268205,
+      "pressure": 2059429,
+      "tag": "lean amine from amine regeneraion unit",
+      "temperature": 358,
+      "total_energy_flow": -58292.3152783937
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "delta_p": 1421958,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90",
+    "outlet_pressure": 637442,
+    "outlet_temperature": 336.084029622516,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "VALV-005",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+      "mass_flow": 1.22672451748698,
+      "molar_flow": 41.380455002448,
+      "tag": "treated off gas",
+      "upstream_unit_guids": [
+        "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+      ]
+    },
+    {
+      "id": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+      "mass_flow": 8.49549848251476,
+      "molar_flow": 176.72782009632,
+      "tag": "rich amine to amine regeneration unit",
+      "upstream_unit_guids": [
+        "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90"
+      ]
+    }
+  ]
+}

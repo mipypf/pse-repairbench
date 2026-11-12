@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S15
+Target metric: molar_flow
+Observed target value: 0.100738696375906
+Required target value: >= 0.2006164752175209

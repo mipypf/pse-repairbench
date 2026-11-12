@@ -1,0 +1,107 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "lean amine cooler: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155",
+        "kind": "unit_operation",
+        "tag": "lean amine cooler",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "VALV-005: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90",
+        "kind": "unit_operation",
+        "tag": "VALV-005",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 328
+      },
+      "outlet_temperature": 328,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "lean amine cooler",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 1421958,
+      "guid": "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 318721
+      },
+      "outlet_pressure": 318721,
+      "outlet_temperature": 329.077339570873,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-005",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "pressure",
+    "stream_tag": "rich amine to amine regeneration unit",
+    "threshold": 541825.7
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 541825.7,
+    "stream": "rich amine to amine regeneration unit",
+    "stream_id": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "rich amine to amine regeneration unit",
+    "threshold": 541825.7
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+      "mass_flow": 1.22672451748698,
+      "molar_flow": 41.380455002448,
+      "tag": "treated off gas",
+      "upstream_unit_guids": [
+        "COUO-eaa4d8c3-bc8a-4455-b46d-858e47f39fdb"
+      ]
+    },
+    {
+      "id": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+      "mass_flow": 8.49549848251476,
+      "molar_flow": 176.72782009632,
+      "tag": "rich amine to amine regeneration unit",
+      "upstream_unit_guids": [
+        "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90"
+      ]
+    }
+  ]
+}

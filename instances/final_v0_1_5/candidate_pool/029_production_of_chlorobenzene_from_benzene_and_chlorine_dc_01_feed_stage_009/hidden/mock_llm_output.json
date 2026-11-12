@@ -1,0 +1,20 @@
+{
+  "diagnosis": "The selected target metric is degraded by an incorrect unit feed stage setting.",
+  "rationale": "Restoring the discovered scalar unit parameter to the base value recovers the selected process target.",
+  "repair_actions": [
+    {
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "target": {
+        "guid": "DC-a97989ca-ac4b-48d2-9654-2323021b0956",
+        "kind": "unit_operation",
+        "tag": "DC-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": null,
+      "value": 3
+    }
+  ]
+}

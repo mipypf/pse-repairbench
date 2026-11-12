@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-d32a0101-8858-4747-a1c0-fbed4073bbc1",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "010_production_of_liquid_carbon_dioxide_from_2_tph_of_raw_gas_b2_outlet_pressure_024",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 425000.0,
+      "stream": "S6",
+      "stream_id": "MAT-6141548f-024a-4c2f-8413-2b874ff1d908",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S6",
+      "threshold": 425000.0
+    },
+    "target_stream_tag": "S6"
+  }
+}

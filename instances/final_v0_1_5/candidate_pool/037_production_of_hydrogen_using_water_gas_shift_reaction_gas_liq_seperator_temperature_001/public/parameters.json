@@ -1,0 +1,167 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "Gas-liq Seperator: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4",
+        "kind": "unit_operation",
+        "tag": "Gas-liq Seperator",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Cooler 3: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-fba3bd36-c991-44f8-b5cd-77f887acde02",
+        "kind": "unit_operation",
+        "tag": "Cooler 3",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Cooler 2: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-fc7510a0-ca1f-43c0-9d8f-f9ccee0b5067",
+        "kind": "unit_operation",
+        "tag": "Cooler 2",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Cooler 1: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-9e66f56a-06c1-4d8e-9b10-6efb7e064523",
+        "kind": "unit_operation",
+        "tag": "Cooler 1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "flash_pressure": 101325,
+      "flash_temperature": 268.15,
+      "guid": "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/temperature": 268.15
+      },
+      "override_p": "false",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/temperature"
+      ],
+      "tag": "Gas-liq Seperator",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-fba3bd36-c991-44f8-b5cd-77f887acde02",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 333.15
+      },
+      "outlet_temperature": 333.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Cooler 3",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-fc7510a0-ca1f-43c0-9d8f-f9ccee0b5067",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 471.15
+      },
+      "outlet_temperature": 471.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Cooler 2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-9e66f56a-06c1-4d8e-9b10-6efb7e064523",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 589.15
+      },
+      "outlet_temperature": 589.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Cooler 1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "temperature",
+    "stream_tag": "Product Gas",
+    "threshold": 289.15
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 289.15,
+    "stream": "Product Gas",
+    "stream_id": "MAT-9e3e51c1-c601-496d-9f80-b44701525e2a",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Product Gas",
+    "threshold": 289.15
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-9e3e51c1-c601-496d-9f80-b44701525e2a",
+      "mass_flow": 0.0709513926990497,
+      "molar_flow": 3.93201134074547,
+      "tag": "Product Gas",
+      "upstream_unit_guids": [
+        "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4"
+      ]
+    },
+    {
+      "id": "MAT-bc051748-71c5-4e69-8dd8-9dba4e54a5b3",
+      "mass_flow": 0.014005548421861,
+      "molar_flow": 0.776981055599903,
+      "tag": "Water",
+      "upstream_unit_guids": [
+        "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4"
+      ]
+    }
+  ]
+}

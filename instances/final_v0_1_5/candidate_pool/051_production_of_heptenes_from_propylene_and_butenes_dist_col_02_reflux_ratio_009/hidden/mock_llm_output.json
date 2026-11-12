@@ -1,0 +1,20 @@
+{
+  "diagnosis": "The selected target metric is degraded by an incorrect unit reflux ratio setting.",
+  "rationale": "Restoring the discovered scalar unit parameter to the base value recovers the selected process target.",
+  "repair_actions": [
+    {
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "target": {
+        "guid": "DC-6e29fea9-223d-4eca-b1a1-e08bd9d5d274",
+        "kind": "unit_operation",
+        "tag": "DIST COL-02"
+      },
+      "type": "set_unit_parameter",
+      "unit": null,
+      "value": 3.74999999993983
+    }
+  ]
+}

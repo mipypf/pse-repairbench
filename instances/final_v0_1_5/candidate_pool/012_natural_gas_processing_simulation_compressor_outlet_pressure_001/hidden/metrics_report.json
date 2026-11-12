@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 3000000,
+    "target_mole_fraction": null,
+    "target_value": 353.178806293878
+  },
+  "faulty": {
+    "outlet_pressure": 1500000,
+    "target_mole_fraction": null,
+    "target_value": 288.432944493952
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "COMP-06c4eecd-8a0b-42b4-8c76-57ac5ddd5018",
+      "kind": "unit_operation",
+      "tag": "Compressor"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 3000000.0
+  },
+  "instance_id": "012_natural_gas_processing_simulation_compressor_outlet_pressure_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 3000000,
+    "target_mole_fraction": null,
+    "target_value": 353.178806293878
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/012_natural_gas_processing_simulation.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 333.75504775390016,
+    "product_mole_fraction_min": null,
+    "stream": "Lean Gas",
+    "stream_id": "MAT-37af0226-4681-429b-a1c0-ce58329b40cc",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Lean Gas",
+    "threshold": 333.75504775390016
+  },
+  "target_delta": 64.74586179992599
+}

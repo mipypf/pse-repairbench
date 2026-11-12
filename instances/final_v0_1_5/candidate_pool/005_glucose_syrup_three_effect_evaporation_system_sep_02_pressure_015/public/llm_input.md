@@ -1,0 +1,137 @@
+# LLM Input Packet: Target-Parameter Pair Selection Repair
+
+## Task
+
+The DWSIM flowsheet runs headlessly, but the selected process stream misses its target.
+Select exactly one allowed target-parameter pair to change, and propose a canonical repair action that restores the target after rerunning the flowsheet.
+
+## Target
+
+- Target stream: `S-10`
+- Required target: `molar_flow at least 2.72589825363`
+- Faulty observed target value: `0`
+
+## Observed Candidate Unit Parameters
+
+```json
+[
+  {
+    "calc_mode": "OutletTemperature",
+    "guid": "AQ-328eb7e3-85a0-470b-85c1-13e5e02cc492",
+    "kind": "unit_operation",
+    "observed_values": {
+      "thermal_specification/outlet_temperature": 373.15
+    },
+    "outlet_temperature": 373.15,
+    "supported_parameters": [
+      "thermal_specification/outlet_temperature"
+    ],
+    "tag": "HEAT-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+  },
+  {
+    "flash_pressure": 41254.2,
+    "flash_temperature": 353.15,
+    "guid": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+    "kind": "unit_operation",
+    "observed_values": {
+      "separator_specification/pressure": 41254.2,
+      "separator_specification/temperature": 353.15
+    },
+    "override_p": "true",
+    "override_t": "true",
+    "supported_parameters": [
+      "separator_specification/pressure",
+      "separator_specification/temperature"
+    ],
+    "tag": "SEP-03",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  {
+    "flash_pressure": 101325,
+    "flash_temperature": 374.089,
+    "guid": "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d",
+    "kind": "unit_operation",
+    "observed_values": {
+      "separator_specification/pressure": 101325,
+      "separator_specification/temperature": 374.089
+    },
+    "override_p": "true",
+    "override_t": "true",
+    "supported_parameters": [
+      "separator_specification/pressure",
+      "separator_specification/temperature"
+    ],
+    "tag": "SEP-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  {
+    "flash_pressure": 33226.15,
+    "flash_temperature": 363.15,
+    "guid": "SEP-081f084d-831b-46db-af90-0f3cfe7574cf",
+    "kind": "unit_operation",
+    "observed_values": {
+      "separator_specification/pressure": 33226.15,
+      "separator_specification/temperature": 363.15
+    },
+    "override_p": "true",
+    "override_t": "true",
+    "supported_parameters": [
+      "separator_specification/pressure",
+      "separator_specification/temperature"
+    ],
+    "tag": "SEP-02",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  }
+]
+```
+
+## Faulty Stream Table
+
+```csv
+stream_tag,stream_id,temperature,pressure,molar_flow,mass_flow,glucose_mole_fraction,glucose_molar_flow,water_mole_fraction,water_molar_flow
+S-11 - Glucose 60%,MAT-895dbee3-da82-4769-b87e-60ae0e7cef94,353.15,41254.2,0.585571834305907,0.0605496915849657,0.52661221872043,0.308369282884026,0.47338778127957,0.277202551421882
+S-07,MAT-493b8564-b1c1-4fa3-9030-e8f82a0db498,363.15,33226.15,0.585571834305907,0.0605496915849657,0.52661221872043,0.308369282884026,0.47338778127957,0.277202551421882
+S-08,MAT-a3d20636-f0a1-41c9-b0f3-b4913ae395aa,363.150000001121,33226.15,10.3252281136824,0.186011875531859,3.29370899550724e-21,3.40082967186998e-20,1,10.3252281136824
+S-05,MAT-7afff729-e7d0-4c19-bd0f-fa9034b05652,374.088762908588,101325,10.9107999479883,0.246561568359806,0.0282627572698516,0.308369290549902,0.971737242730148,10.6024306574384
+S-06,MAT-4857b25b-278d-444d-aa52-32d68ef029f1,374.089000009036,101325,1.73277571405592,0.0312164396659173,3.22817373804757e-23,5.59370105404194e-23,1,1.73277571405592
+S-04,MAT-1ad4f044-ff0c-4f2a-8f88-89a9708ba55c,373.15,101325,12.6435756620442,0.277777777777778,0.0243892929324217,0.308367870534833,0.975610707067578,12.3352077915093
+S-12,MAT-2fce608e-f39b-4502-a032-54f2ccd55fa9,344.592476384112,33226.15,10.3252281136824,0.186011875531859,3.29370899550724e-21,3.40082967186998e-20,1,10.3252281136824
+S-10,MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65,349.736028076481,41254.2,0,0,5.30454093694571e-22,0,1,0
+S-02 - Saturated Steam,MAT-69859cf1-485e-4869-a772-ae55addc54d7,406.718162848355,300000,3.7005623374528,0.0666666666666667,0,0,1,3.7005623374528
+S-14,MAT-e2281832-2984-4874-81bb-87e87ee106c6,406.718162848355,300000,3.7005623374528,0.0666666666666667,0,0,1,3.7005623374528
+S-09,MAT-6fbc5156-701a-4822-a094-e6b203214e93,406.718162848355,300000,2.62123165569573,0.0472222222222222,0,0,1,2.62123165569573
+S-01 - Saturated Steam,MAT-d8873d3c-f9db-4138-9bf8-344fae01eece,406.718162848355,300000,2.62123165569573,0.0472222222222222,0,0,1,2.62123165569573
+S-15,MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa,344.592476384112,33226.15,18.3797978208868,0.331117204086666,1.85335192808975e-21,3.40642337292403e-20,1,18.3797978208868
+S-03 - Glucose 20%,MSTR-69238da2-aad8-46a1-b815-a3f6b98080d7,298.15,101325,12.6435756620442,0.277777777777778,0.0243892929324217,0.308367870534833,0.975610707067578,12.3352077915093
+S-13,MAT-38297477-e096-413b-86bc-3897f94d2f4c,99.3440564629649,101325,1.73277571405592,0.0312164396659173,3.22817373804757e-23,5.59370105404194e-23,1,1.73277571405592
+```
+
+## Faulty Simulator Log
+
+```text
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-10
+Target metric: molar_flow
+Observed target value: 0.0
+Required target value: >= 2.725898253631959
+```
+
+## Allowed Repair Actions
+
+- `HEAT-01` / GUID `AQ-328eb7e3-85a0-470b-85c1-13e5e02cc492`: `thermal_specification/outlet_temperature` (unit: `K`)
+- `SEP-03` / GUID `SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4`: `separator_specification/pressure` (unit: `Pa`)
+- `SEP-03` / GUID `SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4`: `separator_specification/temperature` (unit: `K`)
+- `SEP-01` / GUID `SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d`: `separator_specification/pressure` (unit: `Pa`)
+- `SEP-01` / GUID `SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d`: `separator_specification/temperature` (unit: `K`)
+- `SEP-02` / GUID `SEP-081f084d-831b-46db-af90-0f3cfe7574cf`: `separator_specification/pressure` (unit: `Pa`)
+- `SEP-02` / GUID `SEP-081f084d-831b-46db-af90-0f3cfe7574cf`: `separator_specification/temperature` (unit: `K`)
+
+Choose exactly one `set_unit_parameter` action.
+
+## Required Output
+
+Return one JSON object with exactly one canonical `set_unit_parameter` action. The action target GUID and parameter must match exactly one allowed repair action above.

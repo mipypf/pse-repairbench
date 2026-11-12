@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "AQ-4e835ed9-46b0-4a16-9e2c-0f62ecd39a1e",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "012_natural_gas_processing_simulation_chiller_4_outlet_temperature_006",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 343.24710748111227,
+      "stream": "Lean Gas",
+      "stream_id": "MAT-37af0226-4681-429b-a1c0-ce58329b40cc",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Lean Gas",
+      "threshold": 343.24710748111227
+    },
+    "target_stream_tag": "Lean Gas"
+  }
+}

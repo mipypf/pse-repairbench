@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-ea3c9f7a-cd27-45e9-84f0-2b2283c7f9af",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "019_separation_of_diisopropyl_ether_and_isopropanol_using_psd_with_vapor_recompression_comp_02_outlet_pressure_005",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 324.3410324595218,
+      "metric": "temperature",
+      "stream": "IPA",
+      "stream_id": "MAT-742dd2e6-e885-47d6-8794-db31699a3227",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "IPA",
+      "threshold": 324.3410324595218
+    },
+    "target_stream_tag": "IPA"
+  }
+}

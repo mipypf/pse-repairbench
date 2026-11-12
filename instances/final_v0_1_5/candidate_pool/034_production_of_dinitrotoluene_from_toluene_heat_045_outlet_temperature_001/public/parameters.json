@@ -1,0 +1,114 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "Heater: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-662497a8-639f-4f20-980f-3035288b7f0c",
+        "kind": "unit_operation",
+        "tag": "Heater",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HEAT-045: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-2b92bc7d-dff2-4384-9f86-66eca8b9d146",
+        "kind": "unit_operation",
+        "tag": "HEAT-045",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-662497a8-639f-4f20-980f-3035288b7f0c",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 343
+      },
+      "outlet_temperature": 343,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Heater",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-2b92bc7d-dff2-4384-9f86-66eca8b9d146",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 420
+      },
+      "outlet_temperature": 420,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HEAT-045",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "temperature",
+    "stream_tag": "Spent acid",
+    "threshold": 441.0
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 441.0,
+    "stream": "Spent acid",
+    "stream_id": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Spent acid",
+    "threshold": 441.0
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+      "mass_flow": 10.1548809671287,
+      "molar_flow": 129.719981191235,
+      "tag": "Spent acid",
+      "upstream_unit_guids": [
+        "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+      ]
+    },
+    {
+      "id": "MAT-32126b95-086c-4917-85e5-b6c886d756a5",
+      "mass_flow": 0.0117890319776596,
+      "molar_flow": 0.085936907359512,
+      "tag": "Lights",
+      "upstream_unit_guids": [
+        "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+      ]
+    },
+    {
+      "id": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+      "mass_flow": 6.46888223771472e-05,
+      "molar_flow": 0.00035517272949219,
+      "tag": "Pure 2,4 DNT",
+      "upstream_unit_guids": [
+        "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+      ]
+    }
+  ]
+}

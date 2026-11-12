@@ -1,0 +1,225 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "HEAT-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-328eb7e3-85a0-470b-85c1-13e5e02cc492",
+        "kind": "unit_operation",
+        "tag": "HEAT-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-03: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+        "kind": "unit_operation",
+        "tag": "SEP-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-03: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+        "kind": "unit_operation",
+        "tag": "SEP-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-01: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d",
+        "kind": "unit_operation",
+        "tag": "SEP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-01: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d",
+        "kind": "unit_operation",
+        "tag": "SEP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-02: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-081f084d-831b-46db-af90-0f3cfe7574cf",
+        "kind": "unit_operation",
+        "tag": "SEP-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-02: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-081f084d-831b-46db-af90-0f3cfe7574cf",
+        "kind": "unit_operation",
+        "tag": "SEP-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-328eb7e3-85a0-470b-85c1-13e5e02cc492",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 373.15
+      },
+      "outlet_temperature": 373.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HEAT-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "flash_pressure": 41254.2,
+      "flash_temperature": 353.15,
+      "guid": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 41254.2,
+        "separator_specification/temperature": 353.15
+      },
+      "override_p": "true",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/pressure",
+        "separator_specification/temperature"
+      ],
+      "tag": "SEP-03",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "flash_pressure": 101325,
+      "flash_temperature": 374.089,
+      "guid": "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 101325,
+        "separator_specification/temperature": 374.089
+      },
+      "override_p": "true",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/pressure",
+        "separator_specification/temperature"
+      ],
+      "tag": "SEP-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "flash_pressure": 66452.3,
+      "flash_temperature": 373.15,
+      "guid": "SEP-081f084d-831b-46db-af90-0f3cfe7574cf",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 66452.3,
+        "separator_specification/temperature": 373.15
+      },
+      "override_p": "true",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/pressure",
+        "separator_specification/temperature"
+      ],
+      "tag": "SEP-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    }
+  ],
+  "product_target": {
+    "direction": "max",
+    "metric": "temperature",
+    "stream_tag": "S-15",
+    "threshold": 351.8642052729911
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 351.8642052729911,
+    "metric": "temperature",
+    "stream": "S-15",
+    "stream_id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-15",
+    "threshold": 351.8642052729911
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+      "mass_flow": 0.0661222895246736,
+      "molar_flow": 0.894906472653846,
+      "tag": "S-11 - Glucose 60%",
+      "upstream_unit_guids": [
+        "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+      ]
+    },
+    {
+      "id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+      "mass_flow": 0.325544453963129,
+      "molar_flow": 18.0704631825389,
+      "tag": "S-15",
+      "upstream_unit_guids": [
+        "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+      ]
+    }
+  ]
+}

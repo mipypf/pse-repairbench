@@ -1,0 +1,199 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "CL-02: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-61908faf-c648-4bd2-8dce-3c5696593b8f",
+        "kind": "unit_operation",
+        "tag": "CL-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "CL-3: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-f854ee52-fae5-4b12-a1ca-719708f90d71",
+        "kind": "unit_operation",
+        "tag": "CL-3",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "VALVE-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-ad472bfd-7532-4aba-bddf-79a3b2fc9802",
+        "kind": "unit_operation",
+        "tag": "VALVE-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "C-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-eb287107-d05a-4e2e-affa-8594dd3857a3",
+        "kind": "unit_operation",
+        "tag": "C-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "CL-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-8bb36765-ae7f-4cc7-ba15-0afb32731436",
+        "kind": "unit_operation",
+        "tag": "CL-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-61908faf-c648-4bd2-8dce-3c5696593b8f",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 402.35
+      },
+      "outlet_temperature": 402.35,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "CL-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-f854ee52-fae5-4b12-a1ca-719708f90d71",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 341.87
+      },
+      "outlet_temperature": 341.87,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "CL-3",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 383000,
+      "guid": "VALV-ad472bfd-7532-4aba-bddf-79a3b2fc9802",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 50500
+      },
+      "outlet_pressure": 50500,
+      "outlet_temperature": 341.880586189084,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALVE-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 384000,
+      "guid": "COMP-eb287107-d05a-4e2e-affa-8594dd3857a3",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 484000
+      },
+      "outlet_temperature": 423.831629698616,
+      "p_out": 484000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "C-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-8bb36765-ae7f-4cc7-ba15-0afb32731436",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 373.92
+      },
+      "outlet_temperature": 373.92,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "CL-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "pressure",
+    "stream_tag": "S-12",
+    "threshold": 85850.0
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 85850.0,
+    "stream": "S-12",
+    "stream_id": "MAT-c3c8477b-7053-46b5-864e-cd65633d0555",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-12",
+    "threshold": 85850.0
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-c3c8477b-7053-46b5-864e-cd65633d0555",
+      "mass_flow": 1.47326647949983,
+      "molar_flow": 17.092758333332,
+      "tag": "S-12",
+      "upstream_unit_guids": [
+        "RESF-f854ee52-fae5-4b12-a1ca-719708f90d71"
+      ]
+    },
+    {
+      "id": "MAT-5e0889e2-2917-4efc-8cd3-c06499a934e2",
+      "mass_flow": 0.941503717056324,
+      "molar_flow": 10.6861,
+      "tag": "S-14",
+      "upstream_unit_guids": [
+        "COUO-912c85c5-e989-4923-8d74-23d59dbee856"
+      ]
+    }
+  ]
+}

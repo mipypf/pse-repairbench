@@ -1,0 +1,45 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "VALV-209ee47b-5c38-42a7-8689-ddcd5bc53c7b",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "019_isopropyl_alcohol_synthesis_from_propylene_and_water_valv_01_outlet_pressure_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Propane",
+    "target_metric": {
+      "component": "Propane",
+      "direction": "min",
+      "family": "terminal_composition",
+      "metric": "mass_fraction",
+      "min": 0.8833570848322001,
+      "stream": "Propane purge",
+      "stream_id": "MAT-304099b3-7773-47f6-abf7-b31ac4a86aed",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Propane purge",
+      "threshold": 0.8833570848322001
+    },
+    "target_stream_tag": "Propane purge"
+  }
+}

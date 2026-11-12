@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-ad69457f-65f9-4aa6-9986-f7a6ffae4404",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "004_claude_cycle_for_nitrogen_liquefaction_c_1_outlet_pressure_003",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 85.76996394684514,
+      "metric": "temperature",
+      "stream": "S-11",
+      "stream_id": "MAT-4df43a66-f1e6-4d1e-b506-f7a79dccaedb",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-11",
+      "threshold": 85.76996394684514
+    },
+    "target_stream_tag": "S-11"
+  }
+}

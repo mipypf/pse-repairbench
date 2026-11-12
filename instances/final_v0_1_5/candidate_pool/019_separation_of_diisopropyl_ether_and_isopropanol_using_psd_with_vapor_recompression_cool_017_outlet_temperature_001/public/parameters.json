@@ -1,0 +1,203 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "PUMP: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "BB-180aba9d-82e3-470c-9c04-766cf19f9e00",
+        "kind": "unit_operation",
+        "tag": "PUMP",
+        "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "COMP-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-1e9e4b5c-aa2a-4eb9-a159-7fa0317c82cd",
+        "kind": "unit_operation",
+        "tag": "COMP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "COOL-017: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-1e0499ee-3c34-4ffa-a609-11f7f9e6794a",
+        "kind": "unit_operation",
+        "tag": "COOL-017",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COMP-02: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-ea3c9f7a-cd27-45e9-84f0-2b2283c7f9af",
+        "kind": "unit_operation",
+        "tag": "COMP-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "VALVE: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-2aa477ff-9667-4f89-bcf2-2010f062ba70",
+        "kind": "unit_operation",
+        "tag": "VALVE",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 172432.5038625,
+      "guid": "BB-180aba9d-82e3-470c-9c04-766cf19f9e00",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 415432.5
+      },
+      "outlet_temperature": 363.181061503183,
+      "pout": 415432.5,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "PUMP",
+      "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 141674.9961375,
+      "guid": "COMP-1e9e4b5c-aa2a-4eb9-a159-7fa0317c82cd",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 242999.9961375
+      },
+      "outlet_temperature": 1132.02791792041,
+      "p_out": 242999.9961375,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "COMP-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-1e0499ee-3c34-4ffa-a609-11f7f9e6794a",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 393.15
+      },
+      "outlet_temperature": 393.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-017",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 202699.953225,
+      "guid": "COMP-ea3c9f7a-cd27-45e9-84f0-2b2283c7f9af",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 607999.953225
+      },
+      "outlet_temperature": 1007.96914693503,
+      "p_out": 607999.953225,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "COMP-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 506674.953225,
+      "guid": "VALV-2aa477ff-9667-4f89-bcf2-2010f062ba70",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 101325
+      },
+      "outlet_pressure": 101325,
+      "outlet_temperature": 347.474330211215,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALVE",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    }
+  ],
+  "product_target": {
+    "direction": "max",
+    "metric": "temperature",
+    "stream_tag": "DIPE",
+    "threshold": 472.6625510835862
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 472.6625510835862,
+    "metric": "temperature",
+    "stream": "DIPE",
+    "stream_id": "MAT-4c3acf25-b369-420a-8a12-52de68754dd3",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "DIPE",
+    "threshold": 472.6625510835862
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-742dd2e6-e885-47d6-8794-db31699a3227",
+      "mass_flow": 1.2536922208061,
+      "molar_flow": 20.8472344923931,
+      "tag": "IPA",
+      "upstream_unit_guids": [
+        "HE-f2b51ff9-097d-44ce-b7fb-2fe939f9e04c"
+      ]
+    },
+    {
+      "id": "MAT-4c3acf25-b369-420a-8a12-52de68754dd3",
+      "mass_flow": 0.707831236052786,
+      "molar_flow": 6.930504098276,
+      "tag": "DIPE",
+      "upstream_unit_guids": [
+        "HE-0c7fbc83-ca25-4760-93d0-0beb0ccdc229"
+      ]
+    }
+  ]
+}

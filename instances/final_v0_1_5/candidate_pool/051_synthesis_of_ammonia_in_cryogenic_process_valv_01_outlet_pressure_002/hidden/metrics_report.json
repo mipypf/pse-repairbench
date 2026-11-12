@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 1500000,
+    "target_mole_fraction": null,
+    "target_value": 6.74361529955164e-07
+  },
+  "faulty": {
+    "outlet_pressure": 750000,
+    "target_mole_fraction": null,
+    "target_value": 0.0403234340838281
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "VALV-aee346c3-282e-418d-8f72-9fc2d9e5d592",
+      "kind": "unit_operation",
+      "tag": "VALV-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 1500000.0
+  },
+  "instance_id": "051_synthesis_of_ammonia_in_cryogenic_process_valv_01_outlet_pressure_002",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 1500000,
+    "target_mole_fraction": null,
+    "target_value": 6.74361529955164e-07
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/051_synthesis_of_ammonia_in_cryogenic_process.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 0.012097502278219402,
+    "metric": "mass_flow",
+    "product_mole_fraction_min": null,
+    "stream": "S-10",
+    "stream_id": "MAT-fd0ef933-59a8-4ad2-a260-1f404c3a37a5",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-10",
+    "threshold": 0.012097502278219402
+  },
+  "target_delta": -0.040322759722298145
+}

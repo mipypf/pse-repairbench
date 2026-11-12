@@ -1,0 +1,45 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "target": {
+        "guid": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "038_production_of_maleic_anhydride_from_oxidation_of_n_butane_dc_01_feed_stage_012",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Di ButylPhthalate",
+    "target_metric": {
+      "component": "Di ButylPhthalate",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.8133960901896149,
+      "metric": "mole_fraction",
+      "stream": "S-23",
+      "stream_id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-23",
+      "threshold": 0.8133960901896149
+    },
+    "target_stream_tag": "S-23"
+  }
+}

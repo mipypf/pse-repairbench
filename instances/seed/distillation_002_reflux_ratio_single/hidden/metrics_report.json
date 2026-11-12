@@ -1,0 +1,76 @@
+{
+  "base": {
+    "reflux_ratio": 7.50199999999571,
+    "target_mole_fraction": 0.996133642573117
+  },
+  "candidate_results": [
+    {
+      "fault_reflux_ratio": 0.5,
+      "faulty_exception_count": 0,
+      "faulty_success": true,
+      "repaired_exception_count": 0,
+      "repaired_success": true
+    },
+    {
+      "fault_reflux_ratio": 0.2,
+      "faulty_exception_count": 0,
+      "faulty_success": true,
+      "repaired_exception_count": 0,
+      "repaired_success": true
+    },
+    {
+      "fault_reflux_ratio": 0.05,
+      "faulty_exception_count": 0,
+      "faulty_success": true,
+      "repaired_exception_count": 0,
+      "repaired_success": true
+    },
+    {
+      "fault_reflux_ratio": 0.01,
+      "faulty_exception_count": 0,
+      "faulty_success": true,
+      "repaired_exception_count": 0,
+      "repaired_success": true
+    }
+  ],
+  "faulty": {
+    "reflux_ratio": 0.00999999999999429,
+    "target_mole_fraction": 0.925251577094379
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "reflux_ratio",
+      "namespace": "column_specification"
+    },
+    "target": {
+      "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+      "kind": "unit_operation",
+      "tag": "DC-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": null,
+    "value": 7.50199999999571
+  },
+  "instance_id": "distillation_002_reflux_ratio_single",
+  "purity_drop": 0.07088206547873799,
+  "repairable": true,
+  "repaired": {
+    "reflux_ratio": 7.50199999999142,
+    "target_mole_fraction": 0.996133642573116
+  },
+  "selection_rule": "largest base-to-faulty target mole fraction drop among successful base/faulty/repaired runs",
+  "source_archive": "curated_data/dwsim_headless_successes/distillation/002_air_liquefaction_using_linde_single_column_system.zip",
+  "target": {
+    "component": "Oxygen",
+    "product_mole_fraction_min": 0.99,
+    "stream_id": "MAT-2519ae05-5427-41dd-9478-ba6dab5f5678",
+    "stream_tag": "S-08"
+  }
+}

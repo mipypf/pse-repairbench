@@ -1,0 +1,140 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Restore the unit outlet temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "RESF-311af607-55ff-47b1-b963-f4dd79df8c20",
+        "kind": "unit_operation",
+        "tag": "COOL-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 281.41
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet temperature is consistent with the requested process target.",
+      "target": "RESF-311af607-55ff-47b1-b963-f4dd79df8c20",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet temperature of COOL-01 to 281.41.",
+      "target": "RESF-311af607-55ff-47b1-b963-f4dd79df8c20",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "004_extractive_distillation_for_ethanol_toluene_water_separation_using_glycerol_cool_01_outlet_temperature_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "247c23cf4dcf1b0aabbad7e75b4193c1f35aebe417bb7eeb08ca28469e461eb8",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "57ed6330665161f45927b385d9514934a94c29ec6ade81463aca2efa62d00b37",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/flash_separator/004_extractive_distillation_for_ethanol_toluene_water_separation_using_glycerol.zip",
+    "curated_source_entry": "Extractive_Distillation_For_Ethanol_toluene_water_Separation_Using_Glycerol_By_Mr_Shridhar_Dhanani_And_Shyamal_Patel/FOSSEE_SUBMISSION.dwxmz",
+    "detected_process_category": "flash_separator",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Cooler",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp9D9D.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 32,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "flash_separator",
+    "source_format": "dwxmz",
+    "source_name": "004_extractive_distillation_for_ethanol_toluene_water_separation_using_glycerol.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 272.41,
+      "stream": "S-09",
+      "stream_id": "MAT-cfc68ff4-4aad-4d25-b4f2-595ae302c680",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-09",
+      "threshold": 272.41
+    },
+    "target_stream_tag": "S-09"
+  }
+}

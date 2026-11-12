@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 338.15,
+    "target_mole_fraction": null,
+    "target_value": 311.882380619368
+  },
+  "faulty": {
+    "outlet_temperature": 368.15,
+    "target_mole_fraction": null,
+    "target_value": 361.921021837554
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-0d073d2d-d35a-4edb-b080-889416021e2c",
+      "kind": "unit_operation",
+      "tag": "Heater-C"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 338.15
+  },
+  "instance_id": "026_production_of_acetic_acid_from_acetaldehyde_heater_c_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 338.15,
+    "target_mole_fraction": null,
+    "target_value": 311.882380619368
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/026_production_of_acetic_acid_from_acetaldehyde.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 326.8939729848238,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "S-7B",
+    "stream_id": "MAT-24cc16b6-1985-4ce0-a960-bbf84a738fe2",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-7B",
+    "threshold": 326.8939729848238
+  },
+  "target_delta": -50.038641218186
+}

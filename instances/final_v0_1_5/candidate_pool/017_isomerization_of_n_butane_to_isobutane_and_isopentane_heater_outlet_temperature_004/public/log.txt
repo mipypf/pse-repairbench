@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: Reactor Output 2
+Target metric: mass_flow
+Observed target value: 0.187162875096727
+Required target value: >= 0.2144017353717548

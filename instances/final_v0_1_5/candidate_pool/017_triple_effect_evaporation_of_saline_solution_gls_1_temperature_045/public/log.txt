@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: M-13
+Target metric: Water mole_fraction
+Observed target value: 0.581814698067216
+Required target value: >= 0.5935597976995401

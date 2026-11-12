@@ -1,0 +1,134 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Restore the unit outlet temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd",
+        "kind": "unit_operation",
+        "tag": "cooler"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 293.15
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet temperature is consistent with the requested process target.",
+      "target": "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet temperature of cooler to 293.15.",
+      "target": "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "003_a_simple_de_humidification_system_cooler_outlet_temperature_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "549b1b80f157d19b91f07a71bf2c848f1aa3ff12bb688235495a673e77286980",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "4386cac28ed2b6e31b81ac8f71f3879f974313af74154a86877654541e6f1a98",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/other_candidate/003_a_simple_de_humidification_system.zip",
+    "curated_source_entry": "A_Simple_De-Humidification_System_By_Mr_K_G_Srinidhi/dehumidification.dwxmz",
+    "detected_process_category": "other_candidate",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Cooler",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmpCBE2.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 14,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "Spreadsheet",
+      "FlowsheetView",
+      "PanelLayout"
+    ],
+    "source_category": "other_candidate",
+    "source_format": "dwxmz",
+    "source_name": "A_Simple_De-Humidification_System.zip",
+    "unsupported_sections": [
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "FlowsheetView",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 326.2940884983842,
+      "metric": "temperature",
+      "stream": "removed water",
+      "stream_id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "removed water",
+      "threshold": 326.2940884983842
+    },
+    "target_stream_tag": "removed water"
+  }
+}

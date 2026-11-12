@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DWSIM 9.0.5 連携調査 - PSE-RepairBench</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --ink: #1b2430;
+      --muted: #5c6675;
+      --line: #d9dee7;
+      --accent: #006d77;
+      --accent-soft: #e7f4f3;
+      --warn: #8a5a00;
+      --warn-soft: #fff4d9;
+      --code: #eef1f5;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Hiragino Sans", Meiryo, sans-serif;
+      line-height: 1.7;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+
+    header {
+      margin-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin: 36px 0 14px;
+      font-size: 1.35rem;
+      border-left: 5px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    code {
+      background: var(--code);
+      border-radius: 4px;
+      padding: 0.12rem 0.32rem;
+      font-family: "Cascadia Mono", "Consolas", monospace;
+      font-size: 0.92em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      background: var(--panel);
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+    }
+
+    th {
+      background: #eef5f5;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    ul, ol {
+      padding-left: 1.35rem;
+    }
+
+    li {
+      margin: 0.35rem 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .summary,
+    .note,
+    .warning {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+
+    .summary {
+      border-color: #b8d8d6;
+      background: var(--accent-soft);
+    }
+
+    .warning {
+      border-color: #e7c56d;
+      background: var(--warn-soft);
+    }
+
+    .warning strong {
+      color: var(--warn);
+    }
+
+    .pill {
+      display: inline-block;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #07575f;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 0.12rem 0.55rem;
+      white-space: nowrap;
+    }
+
+    .rank {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>DWSIM 9.0.5 連携調査</h1>
+      <p class="meta">PSE-RepairBench 実装メモ。調査時点: 2026-05-12。対象環境: Windows 上の DWSIM 9.0.5。</p>
+    </header>
+
+    <section class="summary">
+      <h2>結論</h2>
+      <p>
+        この研究で必要な DWSIM 連携は、単なるファイル変換ではなく、観測抽出、故障注入、修復適用、再計算、
+        評価の縦通し pipeline を安定して回すことにある。第一実装は <code>.NET Automation3</code> を中核に置き、
+        <code>.dwxmz</code> / <code>.dwxml</code> の直接解析は観測抽出の補助として使う。DWSIM の <code>-commandline</code>
+        モードは、Property ID で指定できる値の読み書きには有用だが、今回の修復空間全体を表す主経路にはしない。
+      </p>
+    </section>
+
+    <section>
+      <h2>今回の研究で必要な DWSIM 連携</h2>
+      <p>
+        PSE-RepairBench は LLM に DWSIM flowsheet を直接編集させるのではなく、観測 JSON と structured repair action
+        を介して診断と修復を評価する。そのため DWSIM との連携は次の役割に分かれる。
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>役割</th>
+            <th>必要な操作</th>
+            <th>主な出力</th>
+            <th>推奨経路</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>環境検出</td>
+            <td>DWSIM の実行ファイル、DLL、バージョン、利用可能な UI/Automation を確認する。</td>
+            <td>再現性 metadata、runner 設定</td>
+            <td><code>readme.txt</code>、DLL assembly version、固定設定ファイル</td>
+          </tr>
+          <tr>
+            <td>観測抽出</td>
+            <td>flowsheet から topology、parameters、simulator log、stream table を抽出する。</td>
+            <td><code>topology.json</code>、<code>parameters.json</code>、<code>log.txt</code>、<code>streams.csv</code></td>
+            <td><code>.dwxmz</code> / <code>.dwxml</code> 直接解析 + Automation3 で補強</td>
+          </tr>
+          <tr>
+            <td>故障注入</td>
+            <td>base flowsheet に controlled fault を適用し、faulty flowsheet を保存する。</td>
+            <td>faulty flowsheet、oracle metadata、gold repair action</td>
+            <td>Automation3 を基本にし、単純な構造確認は XML diff で監査</td>
+          </tr>
+          <tr>
+            <td>修復適用</td>
+            <td>LLM の structured repair action を DWSIM オブジェクトへ適用する。</td>
+            <td>repaired flowsheet、executor log</td>
+            <td>Automation3 の <code>IFlowsheet</code> と unit operation API</td>
+          </tr>
+          <tr>
+            <td>再計算</td>
+            <td>修復済み flowsheet を DWSIM solver で実行し、収束・エラー・ログを取得する。</td>
+            <td>convergence status、error message、messages log</td>
+            <td>Automation3 の <code>CalculateFlowsheet</code> と message listener</td>
+          </tr>
+          <tr>
+            <td>評価</td>
+            <td>stream result、purity、balance residual、duty などを抽出し、success criteria と照合する。</td>
+            <td>metrics report</td>
+            <td>Automation3 経由の結果取得 + 抽出済み CSV/JSON</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>ローカル DWSIM 9.0.5 環境</h2>
+      <p>このワークスペースで確認できた DWSIM 配置は以下の通り。</p>
+      <table>
+        <tbody>
+          <tr>
+            <th>インストール先</th>
+            <td><code>%LOCALAPPDATA%/DWSIM</code></td>
+          </tr>
+          <tr>
+            <th>Classic UI</th>
+            <td><code>%LOCALAPPDATA%/DWSIM\DWSIM.exe</code></td>
+          </tr>
+          <tr>
+            <th>Cross-Platform UI</th>
+            <td><code>%LOCALAPPDATA%/DWSIM\DWSIM.UI.Desktop.exe</code></td>
+          </tr>
+          <tr>
+            <th>Automation DLL</th>
+            <td><code>DWSIM.Automation.dll</code>、assembly version <code>9.0.5.0</code></td>
+          </tr>
+          <tr>
+            <th>Interfaces DLL</th>
+            <td><code>DWSIM.Interfaces.dll</code>、assembly version <code>9.0.5.0</code></td>
+          </tr>
+          <tr>
+            <th>Unit Operations DLL</th>
+            <td><code>DWSIM.UnitOperations.dll</code>、assembly version <code>9.0.5.0</code></td>
+          </tr>
+          <tr>
+            <th>COM 登録補助</th>
+            <td><code>automation_reg.bat</code> と <code>automation_unreg.bat</code> が配置されている。</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="small">
+        DWSIM 公式サイトでは open source release として v9.0.5 が示されている。公式 API Help は現行 API の参照には有用だが、
+        ページによって assembly version が新しい系列を指すため、実装時はローカル DLL の version と runtime behavior を最終確認する。
+      </p>
+    </section>
+
+    <section>
+      <h2>連携方式の比較</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>方式</th>
+            <th>この研究での位置づけ</th>
+            <th>強み</th>
+            <th>制約・注意</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="pill">第一候補</span><br><code>.NET Automation3</code></td>
+            <td>修復適用、再計算、solver feedback 取得の主経路。</td>
+            <td>
+              <code>LoadFlowsheet</code>、<code>CalculateFlowsheet</code>、<code>SaveFlowsheet</code> を持つ。
+              <code>IFlowsheet</code> 経由で simulation objects、graphic objects、messages、results にアクセスできる。
+            </td>
+            <td>
+              .NET 参照と DWSIM 配置ディレクトリの解決が必要。API Help と 9.0.5 DLL の差分は smoke test で固定する。
+            </td>
+          </tr>
+          <tr>
+            <td><span class="pill">補助</span><br><code>.dwxmz</code> / <code>.dwxml</code> 直接解析</td>
+            <td>観測抽出、監査、diff、leakage check の補助経路。</td>
+            <td>
+              既存の <code>scripts/build_instances/prepare_dwsim_seed.py</code> と整合する。
+              <code>.dwxmz</code> は ZIP として展開でき、<code>SimulationObjects</code> と <code>GraphicObjects</code> を解析できる。
+            </td>
+            <td>
+              DWSIM 内部モデルを完全には再現しない。保存形式の細部を直接編集する修復 executor は壊れやすいため避ける。
+            </td>
+          </tr>
+          <tr>
+            <td><span class="pill">限定用途</span><br><code>-commandline</code> XML 入出力</td>
+            <td>Property ID で表せる stream/property の読み書きや小規模な外部最適化に使える。</td>
+            <td>
+              DWSIM が simulation file と input XML を読み、指定された output XML に値と単位を書き出す。
+              <code>-simfile</code>、<code>-input</code>、<code>-output</code> の CLI 引数がある。
+            </td>
+            <td>
+              Property ID が必要。Topology 変更、column feed stage、unit-specific な複雑操作には Automation3 の方が自然。
+            </td>
+          </tr>
+          <tr>
+            <td><span class="pill">副候補</span><br>COM Automation</td>
+            <td>Windows/Excel/VBA 連携には有用だが、研究 pipeline の主経路にはしない。</td>
+            <td>DWSIM は COM/.NET Automation を公開しており、installer または batch file で COM 登録できる。</td>
+            <td>Windows 依存が強い。.NET から直接 DLL 参照する方が移植性と CI 化で扱いやすい。</td>
+          </tr>
+          <tr>
+            <td><span class="pill">周辺候補</span><br>TCP/IP Server</td>
+            <td>長期的に headless backend 化を検討する候補。</td>
+            <td>リポジトリには <code>DWSIM.Apps.TCPServer</code> が存在し、ローカル配置にも <code>TcpComm.dll</code> がある。</td>
+            <td>9.0.5 での公開プロトコル、起動方法、安定性を追加検証するまで v1 実装には採用しない。</td>
+          </tr>
+          <tr>
+            <td><span class="pill">周辺候補</span><br>Python / CAPE-OPEN</td>
+            <td>個別の拡張や thermo/unit operation 連携の候補。</td>
+            <td>DWSIM は Python scripting、CAPE-OPEN、外部 property package 連携を持つ。</td>
+            <td>今回の benchmark runner では、まず Automation3 で flowsheet 全体の実行制御を確立する。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>推奨アーキテクチャ</h2>
+      <ol>
+        <li>
+          <strong>DWSIM runner layer</strong>:
+          <code>DWSIM.Automation.Automation3</code> を読み込み、flowsheet の load、calculate、save、release を担当する。
+        </li>
+        <li>
+          <strong>Observation extractor layer</strong>:
+          既存の XML/ZIP 解析を維持しつつ、DWSIM 実行後の stream values、solver log、<code>IFlowsheet.MessagesLog</code> を補う。
+        </li>
+        <li>
+          <strong>Repair executor layer</strong>:
+          <code>schemas/repair_action.schema.json</code> の action vocabulary を DWSIM API 呼び出しへ変換する。
+        </li>
+        <li>
+          <strong>Evaluator layer</strong>:
+          <code>success_criteria</code> に基づき、収束、fatal error、purity、balance residual、duty 上限を判定する。
+        </li>
+      </ol>
+
+      <div class="note">
+        <h3>初期 action の実装順</h3>
+        <p>
+          最初の vertical slice は <code>set_unit_parameter</code> だけを実装対象にする。DWSIM の
+          <code>DWSIM.UnitOperations.UnitOperations.Column</code> には feed stage を設定する API があり、
+          9.0.5 のローカル XML documentation でも <code>SetStreamFeedStage</code> 系の method が確認できる。
+          これを使って <code>distillation_001_feed_stage_single</code> の gold repair を実行する。
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>実装上の注意点</h2>
+      <ul>
+        <li>
+          <strong>Object reference 解決</strong>:
+          executor は repair action の <code>target.guid</code> を最優先にし、失敗時のみ name、tag へ fallback する。
+        </li>
+        <li>
+          <strong>Locale 固定</strong>:
+          CLI や GUI 設定は decimal separator の影響を受ける可能性がある。runner は <code>en-US</code> 相当の数値表現を固定する。
+        </li>
+        <li>
+          <strong>Log leakage</strong>:
+          simulator log は benchmark label、file path、gold repair を直接示す文字列を除去して公開 observation に入れる。
+        </li>
+        <li>
+          <strong>Release 判定</strong>:
+          現在の seed は <code>unfaulted_placeholder_until_fault_injection</code> flag を持つため、DWSIM 連携実装後に release profile を通すには実故障注入が必要。
+        </li>
+        <li>
+          <strong>API Help とローカル DLL の差</strong>:
+          公式 API Help は最新系列を指す場合がある。実装では 9.0.5 DLL で compile/run する smoke test を基準にする。
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>次に作るべきもの</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>優先度</th>
+            <th>成果物</th>
+            <th>目的</th>
+            <th>受け入れ条件</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rank">1</td>
+            <td>Automation3 smoke test</td>
+            <td>DWSIM 9.0.5 DLL をロードし、sample または seed flowsheet を読み込んで計算できることを確認する。</td>
+            <td>load、calculate、solved/error message、save が CLI から再現できる。</td>
+          </tr>
+          <tr>
+            <td class="rank">2</td>
+            <td><code>set_unit_parameter</code> executor</td>
+            <td>最初の distillation seed の gold repair を structured action から DWSIM API に適用する。</td>
+            <td>faulty copy に feed stage 変更を適用し、repaired flowsheet を保存できる。</td>
+          </tr>
+          <tr>
+            <td class="rank">3</td>
+            <td>run result extractor</td>
+            <td>計算後の stream table、messages log、balance indicators を metrics 用に抽出する。</td>
+            <td><code>streams.csv</code> と metrics JSON に有限値、収束状態、主要 purity/duty が入る。</td>
+          </tr>
+          <tr>
+            <td class="rank">4</td>
+            <td>release validation update</td>
+            <td>プレースホルダ seed から実故障注入済み seed へ移行する。</td>
+            <td><code>release --require-files</code> で placeholder flag 由来の失敗が消える。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>参考リンク</h2>
+      <ul>
+        <li><a href="https://dwsim.org/index.php/whatsnew/">DWSIM v9.0.5 release notes</a></li>
+        <li><a href="https://github.com/DanWBR/dwsim">DWSIM GitHub repository</a></li>
+        <li><a href="https://dwsim.org/wiki/index.php?title=Automation">DWSIM Automation</a></li>
+        <li><a href="https://dwsim.org/api_help/html/T_DWSIM_Automation_Automation3.htm">Automation3 API Help</a></li>
+        <li><a href="https://dwsim.org/api_help/html/T_DWSIM_Interfaces_IFlowsheet.htm">IFlowsheet API Help</a></li>
+        <li><a href="https://dwsim.org/wiki/index.php?title=Command_Line_Mode">DWSIM Command Line Mode</a></li>
+        <li><a href="https://dwsim.org/wiki/index.php?title=Object_Property_Codes">DWSIM Object Property Codes</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

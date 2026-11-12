@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "003_a_simple_de_humidification_system_valv_013_outlet_pressure_009",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 85000.0221345593,
+      "stream": "dehumidified air",
+      "stream_id": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "dehumidified air",
+      "threshold": 85000.0221345593
+    },
+    "target_stream_tag": "dehumidified air"
+  }
+}

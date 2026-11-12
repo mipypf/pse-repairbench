@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 473.15,
+    "target_mole_fraction": null,
+    "target_value": 473.15
+  },
+  "faulty": {
+    "outlet_temperature": 443.15,
+    "target_mole_fraction": null,
+    "target_value": 443.15
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-e1b6072f-490a-4b81-85d6-b37ef3960d37",
+      "kind": "unit_operation",
+      "tag": "HE-07"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 473.15
+  },
+  "instance_id": "014_hydrogen_production_from_biogas_he_07_outlet_temperature_003",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 473.15,
+    "target_mole_fraction": null,
+    "target_value": 473.15
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/014_hydrogen_production_from_biogas.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 464.15,
+    "product_mole_fraction_min": null,
+    "stream": "FLUE GAS",
+    "stream_id": "MAT-84e56672-46f2-45f5-aebf-90cb4ec96a8f",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "FLUE GAS",
+    "threshold": 464.15
+  },
+  "target_delta": 30.0
+}

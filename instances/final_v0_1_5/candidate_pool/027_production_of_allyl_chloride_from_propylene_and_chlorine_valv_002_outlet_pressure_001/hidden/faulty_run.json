@@ -1,0 +1,1129 @@
+{
+  "column": null,
+  "duration_sec": 2.548,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 24,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/faulty_calculated.dwxmz",
+  "simulation_path": "public/faulty.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-1c3b6f46-b328-4226-8b48-ee45cc2cb3ad"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-7cfd555b-06b6-47b2-94a1-8ddbff43466b",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Stream 2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-8482025b-3efb-461d-867f-8ba04f2839e3"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-4eddd469-b8e8-4c4f-8f88-f5ab2fc71d35",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Stream 1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-8ab45388-2721-4bff-90dd-9625acb6376c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c44eb5a6-55b9-43bf-a318-52244a4588d6",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-003",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-8482025b-3efb-461d-867f-8ba04f2839e3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-1c3b6f46-b328-4226-8b48-ee45cc2cb3ad"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-71e10823-a6c0-4566-ac87-82d63f48ac06",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-005",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-8ab45388-2721-4bff-90dd-9625acb6376c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-79440953-41de-4c4a-91b4-3d294bf6eec0"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6e8736d8-9b36-4654-ac57-cfe75f1e89f3",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-008",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-1c3b6f46-b328-4226-8b48-ee45cc2cb3ad"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-b95947b8-c71c-4a0d-8623-6356b0f845e8"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-dcd8ed21-203d-4975-bd93-2b74e080995b",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Stream 3",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-79440953-41de-4c4a-91b4-3d294bf6eec0"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b2ec8238-4dba-4c2e-95ba-9aecf2798fdd",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Stream 4",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-b95947b8-c71c-4a0d-8623-6356b0f845e8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-db04e9e9-6ebc-4ddd-9166-6a057d0e2650",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-014",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-b95947b8-c71c-4a0d-8623-6356b0f845e8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-b42ba56e-39a9-40f9-a14f-d22aa01e8870",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Boiler Feed Water",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-de35bb41-2d61-4819-bc66-c5681305bbad",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Low Pressure Steam",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-444d009c-04de-44c3-ba69-fa3421689089",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MSTR-019",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-20b51e4b-c90a-402b-b11f-a359f5d62bcf",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Cooling Water In",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-7bf47104-9a44-4f29-ab9f-800dcff4ace6",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Cooling Water Out",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Stream 5",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-de35bb41-2d61-4819-bc66-c5681305bbad",
+        "mass_flow": 0.333,
+        "molar_flow": 18.4845961698585,
+        "tag": "Low Pressure Steam",
+        "upstream_unit_guids": [
+          "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+        ]
+      },
+      {
+        "id": "MAT-7bf47104-9a44-4f29-ab9f-800dcff4ace6",
+        "mass_flow": 6.82,
+        "molar_flow": 123.024333157831,
+        "tag": "Cooling Water Out",
+        "upstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ]
+      },
+      {
+        "id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+        "mass_flow": 1.2750713874042,
+        "molar_flow": 27.2080353812715,
+        "tag": "Stream 5",
+        "upstream_unit_guids": [
+          "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Carbon": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-db04e9e9-6ebc-4ddd-9166-6a057d0e2650",
+      "mass_flow": -2.83122722467377e-16,
+      "molar_flow": null,
+      "pressure": 187500,
+      "tag": "MSTR-014",
+      "temperature": 784.15,
+      "total_energy_flow": -1.39820021679494e-13
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0.0384736888771649,
+          "mass_fraction": 0.03017375282453,
+          "molar_flow": 0.502761051020909,
+          "mole_fraction": 0.0184784033090085
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0.0141835993572166,
+          "mass_fraction": 0.0111237688315567,
+          "molar_flow": 0.127814718907963,
+          "mole_fraction": 0.00469768276602373
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0.330633270110579,
+          "mass_fraction": 0.259305693294306,
+          "molar_flow": 4.32070449551872,
+          "mole_fraction": 0.158802516792258
+        },
+        "Carbon": {
+          "mass_flow": 0.00472193418439813,
+          "mass_fraction": 0.00370327044512471,
+          "molar_flow": 0.393134142402642,
+          "mole_fraction": 0.0144491925599764
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0.213857010156873,
+          "mass_fraction": 0.167721597605797,
+          "molar_flow": 5.86536326916083,
+          "mole_fraction": 0.215574670753267
+        },
+        "Propylene": {
+          "mass_flow": 0.673201884717969,
+          "mass_fraction": 0.527971916998685,
+          "molar_flow": 15.9982577042605,
+          "mole_fraction": 0.587997533819467
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-b2ec8238-4dba-4c2e-95ba-9aecf2798fdd",
+      "mass_flow": 1.2750713874042,
+      "molar_flow": 27.2080353812715,
+      "pressure": 187500,
+      "tag": "Stream 4",
+      "temperature": 784.15,
+      "total_energy_flow": 1017.55997985472
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 0.388007915091,
+          "mass_fraction": 0.304302895448787,
+          "molar_flow": 5.4722222,
+          "mole_fraction": 0.206088498867512
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0.8870634723132,
+          "mass_fraction": 0.695697104551213,
+          "molar_flow": 21.080556,
+          "mole_fraction": 0.793911501132488
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-dcd8ed21-203d-4975-bd93-2b74e080995b",
+      "mass_flow": 1.2750713874042,
+      "molar_flow": 26.5527782,
+      "pressure": 214500,
+      "tag": "Stream 3",
+      "temperature": 784.15,
+      "total_energy_flow": 1534.05322556387
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 0.388007915091,
+          "mass_fraction": 0.304302895448787,
+          "molar_flow": 5.4722222,
+          "mole_fraction": 0.206088498867512
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0.8870634723132,
+          "mass_fraction": 0.695697104551213,
+          "molar_flow": 21.080556,
+          "mole_fraction": 0.793911501132488
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-6e8736d8-9b36-4654-ac57-cfe75f1e89f3",
+      "mass_flow": 1.2750713874042,
+      "molar_flow": 26.5527782,
+      "pressure": 394500,
+      "tag": "MSTR-008",
+      "temperature": 782.735120145387,
+      "total_energy_flow": 1529.98077917591
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0.8870634723132,
+          "mass_fraction": 1,
+          "molar_flow": 21.080556,
+          "mole_fraction": 1
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-71e10823-a6c0-4566-ac87-82d63f48ac06",
+      "mass_flow": 0.8870634723132,
+      "molar_flow": 21.080556,
+      "pressure": 145000,
+      "tag": "MSTR-005",
+      "temperature": 818.149999999982,
+      "total_energy_flow": 1529.98077952348
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0.8870634723132,
+          "mass_fraction": 1,
+          "molar_flow": 21.080556,
+          "mole_fraction": 1
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-c44eb5a6-55b9-43bf-a318-52244a4588d6",
+      "mass_flow": 0.8870634723132,
+      "molar_flow": 21.080556,
+      "pressure": 179000,
+      "tag": "MSTR-003",
+      "temperature": 298.447369050807,
+      "total_energy_flow": 426.865659221128
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0.8870634723132,
+          "mass_fraction": 1,
+          "molar_flow": 21.080556,
+          "mole_fraction": 1
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-4eddd469-b8e8-4c4f-8f88-f5ab2fc71d35",
+      "mass_flow": 0.8870634723132,
+      "molar_flow": 21.080556,
+      "pressure": 1170000,
+      "tag": "Stream 1",
+      "temperature": 298.447368930712,
+      "total_energy_flow": 426.865659057096
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 0.388007915091,
+          "mass_fraction": 1,
+          "molar_flow": 5.4722222,
+          "mole_fraction": 1
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-7cfd555b-06b6-47b2-94a1-8ddbff43466b",
+      "mass_flow": 0.388007915091,
+      "molar_flow": 5.4722222,
+      "pressure": 644000,
+      "tag": "Stream 2",
+      "temperature": 298.15,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.333,
+          "mass_fraction": 1,
+          "molar_flow": 18.4845961698585,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-b42ba56e-39a9-40f9-a14f-d22aa01e8870",
+      "mass_flow": 0.333,
+      "molar_flow": 18.4845961698585,
+      "pressure": 600000,
+      "tag": "Boiler Feed Water",
+      "temperature": 363.15,
+      "total_energy_flow": -5190.64909053522
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Propylene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.333,
+          "mass_fraction": 1,
+          "molar_flow": 18.4845961698585,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-de35bb41-2d61-4819-bc66-c5681305bbad",
+      "mass_flow": 0.333,
+      "molar_flow": 18.4845961698585,
+      "pressure": 600000,
+      "tag": "Low Pressure Steam",
+      "temperature": 432.049864428986,
+      "total_energy_flow": -4415.55708783015
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0.0384736888771649,
+          "mass_fraction": 0.03017375282453,
+          "molar_flow": 0.502761051020909,
+          "mole_fraction": 0.0184784033090085
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0.0141835993572166,
+          "mass_fraction": 0.0111237688315567,
+          "molar_flow": 0.127814718907963,
+          "mole_fraction": 0.00469768276602373
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0.330633270110579,
+          "mass_fraction": 0.259305693294306,
+          "molar_flow": 4.32070449551872,
+          "mole_fraction": 0.158802516792258
+        },
+        "Carbon": {
+          "mass_flow": 0.00472193418439813,
+          "mass_fraction": 0.00370327044512471,
+          "molar_flow": 0.393134142402642,
+          "mole_fraction": 0.0144491925599764
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0.213857010156873,
+          "mass_fraction": 0.167721597605797,
+          "molar_flow": 5.86536326916083,
+          "mole_fraction": 0.215574670753267
+        },
+        "Propylene": {
+          "mass_flow": 0.673201884717969,
+          "mass_fraction": 0.527971916998685,
+          "molar_flow": 15.9982577042605,
+          "mole_fraction": 0.587997533819467
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-444d009c-04de-44c3-ba69-fa3421689089",
+      "mass_flow": 1.2750713874042,
+      "molar_flow": 27.2080353812715,
+      "pressure": 153500,
+      "tag": "MSTR-019",
+      "temperature": 473.15,
+      "total_energy_flow": 242.467977149637
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 1.17680156125455,
+          "mass_fraction": 0.172551548571048,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 1.70650128131557,
+          "mass_fraction": 0.250220129225156,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Allyl Chloride": {
+          "mass_flow": 1.17677388077959,
+          "mass_fraction": 0.17254748985038,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Carbon": {
+          "mass_flow": 0.184705658194839,
+          "mass_fraction": 0.0270829410842872,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Chlorine": {
+          "mass_flow": 1.0903800428195,
+          "mass_fraction": 0.159879771674414,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0.560698776408461,
+          "mass_fraction": 0.0822138968340851,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Propylene": {
+          "mass_flow": 0.647103378997699,
+          "mass_fraction": 0.0948831934014221,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Water": {
+          "mass_flow": 0.277035420229791,
+          "mass_fraction": 0.0406210293592069,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        }
+      },
+      "id": "MAT-20b51e4b-c90a-402b-b11f-a359f5d62bcf",
+      "mass_flow": 6.82,
+      "molar_flow": 123.024333157831,
+      "pressure": 400000,
+      "tag": "Cooling Water In",
+      "temperature": 303.15,
+      "total_energy_flow": -2774.36495742394
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 1.17680156125455,
+          "mass_fraction": 0.172551548571048,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 1.70650128131557,
+          "mass_fraction": 0.250220129225156,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Allyl Chloride": {
+          "mass_flow": 1.17677388077959,
+          "mass_fraction": 0.17254748985038,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Carbon": {
+          "mass_flow": 0.184705658194839,
+          "mass_fraction": 0.0270829410842872,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Chlorine": {
+          "mass_flow": 1.0903800428195,
+          "mass_fraction": 0.159879771674414,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0.560698776408461,
+          "mass_fraction": 0.0822138968340851,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Propylene": {
+          "mass_flow": 0.647103378997699,
+          "mass_fraction": 0.0948831934014221,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        },
+        "Water": {
+          "mass_flow": 0.277035420229791,
+          "mass_fraction": 0.0406210293592069,
+          "molar_flow": 15.3780416447289,
+          "mole_fraction": 0.125
+        }
+      },
+      "id": "MAT-7bf47104-9a44-4f29-ab9f-800dcff4ace6",
+      "mass_flow": 6.82,
+      "molar_flow": 123.024333157831,
+      "pressure": 400000,
+      "tag": "Cooling Water Out",
+      "temperature": 316.546362269882,
+      "total_energy_flow": -2492.30759998988
+    },
+    {
+      "compounds": {
+        "2-Chloro prop-1-ene": {
+          "mass_flow": 0.0384736888771649,
+          "mass_fraction": 0.03017375282453,
+          "molar_flow": 0.502761051020909,
+          "mole_fraction": 0.0184784033090085
+        },
+        "3,3-Dichloro prop-1-ene": {
+          "mass_flow": 0.0141835993572166,
+          "mass_fraction": 0.0111237688315567,
+          "molar_flow": 0.127814718907963,
+          "mole_fraction": 0.00469768276602373
+        },
+        "Allyl Chloride": {
+          "mass_flow": 0.330633270110579,
+          "mass_fraction": 0.259305693294306,
+          "molar_flow": 4.32070449551872,
+          "mole_fraction": 0.158802516792258
+        },
+        "Carbon": {
+          "mass_flow": 0.00472193418439813,
+          "mass_fraction": 0.00370327044512471,
+          "molar_flow": 0.393134142402642,
+          "mole_fraction": 0.0144491925599764
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0.213857010156873,
+          "mass_fraction": 0.167721597605797,
+          "molar_flow": 5.86536326916083,
+          "mole_fraction": 0.215574670753267
+        },
+        "Propylene": {
+          "mass_flow": 0.673201884717969,
+          "mass_fraction": 0.527971916998685,
+          "molar_flow": 15.9982577042605,
+          "mole_fraction": 0.587997533819467
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+      "mass_flow": 1.2750713874042,
+      "molar_flow": 27.2080353812715,
+      "pressure": 119500,
+      "tag": "Stream 5",
+      "temperature": 323.15,
+      "total_energy_flow": -39.5892315377437
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "delta_p": 991000,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "VALV-8482025b-3efb-461d-867f-8ba04f2839e3",
+    "outlet_pressure": 179000,
+    "outlet_temperature": 298.447369050807,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "VALV-002",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-de35bb41-2d61-4819-bc66-c5681305bbad",
+      "mass_flow": 0.333,
+      "molar_flow": 18.4845961698585,
+      "tag": "Low Pressure Steam",
+      "upstream_unit_guids": [
+        "HE-1f68f2e4-e626-4aa4-86e9-79f09bcd8505"
+      ]
+    },
+    {
+      "id": "MAT-7bf47104-9a44-4f29-ab9f-800dcff4ace6",
+      "mass_flow": 6.82,
+      "molar_flow": 123.024333157831,
+      "tag": "Cooling Water Out",
+      "upstream_unit_guids": [
+        "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+      ]
+    },
+    {
+      "id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+      "mass_flow": 1.2750713874042,
+      "molar_flow": 27.2080353812715,
+      "tag": "Stream 5",
+      "upstream_unit_guids": [
+        "HE-dddcf7f3-d166-47bd-baff-8431a2177b7b"
+      ]
+    }
+  ]
+}

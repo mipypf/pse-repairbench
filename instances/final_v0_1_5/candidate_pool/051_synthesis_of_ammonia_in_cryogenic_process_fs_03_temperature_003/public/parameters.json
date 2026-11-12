@@ -1,0 +1,363 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "COOL-02: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-08371460-cc5b-4824-97db-084b0bd09799",
+        "kind": "unit_operation",
+        "tag": "COOL-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COMP-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-34fb4dec-e0e4-4049-8db8-b3f2d85d9861",
+        "kind": "unit_operation",
+        "tag": "COMP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "FS-03: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-113c45da-a2c8-48a9-9265-85fe92a65d7f",
+        "kind": "unit_operation",
+        "tag": "FS-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "FS-03: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-113c45da-a2c8-48a9-9265-85fe92a65d7f",
+        "kind": "unit_operation",
+        "tag": "FS-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "VALV-02: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-3b0e6130-7ccb-4e28-834d-982064cac0ab",
+        "kind": "unit_operation",
+        "tag": "VALV-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "FS-01: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-e526b085-c1b6-4412-953b-befa1a9e4ce4",
+        "kind": "unit_operation",
+        "tag": "FS-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "VALV-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-aee346c3-282e-418d-8f72-9fc2d9e5d592",
+        "kind": "unit_operation",
+        "tag": "VALV-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "COOL-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-5099e0d5-1132-46d2-9178-74973f950d06",
+        "kind": "unit_operation",
+        "tag": "COOL-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COMP-02: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-c09d247d-1b08-4373-8e69-a2cc10175777",
+        "kind": "unit_operation",
+        "tag": "COMP-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "HEAT-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-b0072ae5-268e-446a-8821-bf05980a683f",
+        "kind": "unit_operation",
+        "tag": "HEAT-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-08371460-cc5b-4824-97db-084b0bd09799",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 323.15
+      },
+      "outlet_temperature": 323.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 7500000,
+      "guid": "COMP-34fb4dec-e0e4-4049-8db8-b3f2d85d9861",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 9000000
+      },
+      "outlet_temperature": 398.521739053952,
+      "p_out": 9000000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "COMP-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "flash_pressure": 1500000,
+      "flash_temperature": 208.15,
+      "guid": "SEP-113c45da-a2c8-48a9-9265-85fe92a65d7f",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 1500000,
+        "separator_specification/temperature": 208.15
+      },
+      "override_p": "true",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/pressure",
+        "separator_specification/temperature"
+      ],
+      "tag": "FS-03",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 1300000,
+      "guid": "VALV-3b0e6130-7ccb-4e28-834d-982064cac0ab",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 200000
+      },
+      "outlet_pressure": 200000,
+      "outlet_temperature": 235.724569984375,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "flash_pressure": 101325,
+      "flash_temperature": 238.15,
+      "guid": "SEP-e526b085-c1b6-4412-953b-befa1a9e4ce4",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/temperature": 238.15
+      },
+      "override_p": "false",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/temperature"
+      ],
+      "tag": "FS-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 7500000,
+      "guid": "VALV-aee346c3-282e-418d-8f72-9fc2d9e5d592",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 1500000
+      },
+      "outlet_pressure": 1500000,
+      "outlet_temperature": 301.52179111604,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-5099e0d5-1132-46d2-9178-74973f950d06",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 238.15
+      },
+      "outlet_temperature": 238.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 7500000,
+      "guid": "COMP-c09d247d-1b08-4373-8e69-a2cc10175777",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 9000000
+      },
+      "outlet_temperature": 240.129459890534,
+      "p_out": 9000000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "COMP-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-b0072ae5-268e-446a-8821-bf05980a683f",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 323.15
+      },
+      "outlet_temperature": 323.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HEAT-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    }
+  ],
+  "product_target": {
+    "direction": "max",
+    "metric": "mass_flow",
+    "stream_tag": "S-10",
+    "threshold": 0.00810233031289103
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 0.00810233031289103,
+    "metric": "mass_flow",
+    "stream": "S-10",
+    "stream_id": "MAT-fd0ef933-59a8-4ad2-a260-1f404c3a37a5",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-10",
+    "threshold": 0.00810233031289103
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-3450e369-7948-4509-b8d3-194eb9db1db0",
+      "mass_flow": 0.955881608567944,
+      "molar_flow": 69.4812324119521,
+      "tag": "S-03",
+      "upstream_unit_guids": [
+        "RG-2e89f410-de1d-4bb7-9de3-99edad4e526c"
+      ]
+    },
+    {
+      "id": "MAT-6567acd2-cf15-4019-9a28-2fbc9357cf9e",
+      "mass_flow": 0.321279344947452,
+      "molar_flow": 13.1684890643535,
+      "tag": "S-21",
+      "upstream_unit_guids": [
+        "SEP-4157c896-616f-464b-aae2-234cb2f23073"
+      ]
+    },
+    {
+      "id": "MAT-8a67c0db-a31b-40e1-89b8-a5122b4bec4e",
+      "mass_flow": 10.8762770392701,
+      "molar_flow": 637.493379819153,
+      "tag": "S-22",
+      "upstream_unit_guids": [
+        "SEP-4157c896-616f-464b-aae2-234cb2f23073"
+      ]
+    },
+    {
+      "id": "MAT-fd0ef933-59a8-4ad2-a260-1f404c3a37a5",
+      "mass_flow": 0.0270061941994002,
+      "molar_flow": 1.56435420733524,
+      "tag": "S-10",
+      "upstream_unit_guids": [
+        "SEP-113c45da-a2c8-48a9-9265-85fe92a65d7f"
+      ]
+    }
+  ]
+}

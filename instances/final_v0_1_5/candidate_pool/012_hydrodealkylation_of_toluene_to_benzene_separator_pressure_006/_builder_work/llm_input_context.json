@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "012_hydrodealkylation_of_toluene_to_benzene_separator_pressure_006",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_flow",
+      "metric": "molar_flow",
+      "min": 2.374223000470311,
+      "stream": "METHANE",
+      "stream_id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "METHANE",
+      "threshold": 2.374223000470311
+    },
+    "target_stream_tag": "METHANE"
+  }
+}

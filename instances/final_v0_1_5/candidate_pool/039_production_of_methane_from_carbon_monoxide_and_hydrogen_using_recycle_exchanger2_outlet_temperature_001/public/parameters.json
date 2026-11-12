@@ -1,0 +1,135 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "EXCHANGER2_2: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-6688b989-4b0c-461d-b035-efd599791c92",
+        "kind": "unit_operation",
+        "tag": "EXCHANGER2_2",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "EXCHANGER2: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-2938f98f-22f0-4647-ae26-06d0062f7043",
+        "kind": "unit_operation",
+        "tag": "EXCHANGER2",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "EXCHNGER1: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-3eb7356d-dbe2-4ce6-9345-6bbf816a5b73",
+        "kind": "unit_operation",
+        "tag": "EXCHNGER1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-6688b989-4b0c-461d-b035-efd599791c92",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 310.927778
+      },
+      "outlet_temperature": 310.927778,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "EXCHANGER2_2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-2938f98f-22f0-4647-ae26-06d0062f7043",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 336.483333
+      },
+      "outlet_temperature": 336.483333,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "EXCHANGER2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-3eb7356d-dbe2-4ce6-9345-6bbf816a5b73",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 533.15
+      },
+      "outlet_temperature": 533.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "EXCHNGER1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "temperature",
+    "stream_tag": "8 (WATER)",
+    "threshold": 357.4833329081276
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 357.4833329081276,
+    "stream": "8 (WATER)",
+    "stream_id": "MAT-f3fd1cd5-52d7-4bca-9689-a87973beab14",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "8 (WATER)",
+    "threshold": 357.4833329081276
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-8a9ffcc4-d174-4597-b57c-529915ca293b",
+      "mass_flow": 0.330446123319324,
+      "molar_flow": 24.2797019323399,
+      "tag": "6 (PRODUCTS)",
+      "upstream_unit_guids": [
+        "DIV-8e13198a-e01c-4b4d-a77f-7fc08580e2f8"
+      ]
+    },
+    {
+      "id": "MAT-f3fd1cd5-52d7-4bca-9689-a87973beab14",
+      "mass_flow": 0.160245693968654,
+      "molar_flow": 8.89512594885672,
+      "tag": "8 (WATER)",
+      "upstream_unit_guids": [
+        "CS-666f1b75-5ce9-456b-bd42-7cd872aaeeb4"
+      ]
+    }
+  ]
+}

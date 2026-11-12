@@ -1,0 +1,13 @@
+{
+  "protocol_id": "random-one-shot-v1",
+  "dataset_split_id": "final_v0_1_5_test",
+  "split_file": "instances/final_v0_1_5/splits/test.txt",
+  "instance_root": "instances/final_v0_1_5/candidate_pool",
+  "expected_instance_count": 100,
+  "seeds": [0, 1, 2, 3, 4],
+  "temperature_offset_k": 30.0,
+  "pressure_multipliers": [0.6666666666666666, 2.0],
+  "reflux_multipliers": [0.6666666666666666, 10.0],
+  "executor_timeout_sec": 60,
+  "dwsim_timeout_sec": 180
+}

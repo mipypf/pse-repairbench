@@ -1,0 +1,136 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_pressure_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "rationale": "Restore the unit outlet pressure to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0",
+        "kind": "unit_operation",
+        "tag": "VALV-005"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 405300.0
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet pressure is consistent with the requested process target.",
+      "target": "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet pressure of VALV-005 to 405300.0.",
+      "target": "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "048_pressure_swing_distillation_of_isobutanol_and_n_heptane_valv_005_outlet_pressure_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "7543f0229f25ec345a7ac5bf36c4065c61fdb21247514b55f2407050b2e990b0",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "56b27ac69be074c62439f35bc9cd9fe061e2f4b1dab8b7cd0b9bb784a0517384",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/distillation/048_pressure_swing_distillation_of_isobutanol_and_n_heptane.zip",
+    "curated_source_entry": "Pressure_Swing_Distillation_Of_Isobutanol_And_N-Heptane_By_Mr_Pragneshsinh_Sindha/ISOBUTANOLFINAL.dwxmz",
+    "detected_process_category": "distillation",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Valve",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp16DC.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 26,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "Spreadsheet",
+      "FlowsheetView",
+      "PanelLayout"
+    ],
+    "source_category": "distillation",
+    "source_format": "dwxmz",
+    "source_name": "Pressure_Swing_Distillation_of_Isobutanol_and_N-Heptane.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "FlowsheetView",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_flow",
+      "metric": "mass_flow",
+      "min": 0.6658994180720914,
+      "stream": "N-heptane",
+      "stream_id": "MAT-0600d28e-d1ae-49c5-9383-a1c13f0ddaa9",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "N-heptane",
+      "threshold": 0.6658994180720914
+    },
+    "target_stream_tag": "N-heptane"
+  }
+}

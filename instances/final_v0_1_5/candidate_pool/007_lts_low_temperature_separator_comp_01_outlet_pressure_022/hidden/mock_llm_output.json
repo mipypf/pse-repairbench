@@ -1,0 +1,20 @@
+{
+  "diagnosis": "The selected target metric is degraded by an incorrect unit outlet pressure setting.",
+  "rationale": "Restoring the discovered scalar unit parameter to the base value recovers the selected process target.",
+  "repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-6623619f-25e5-4d76-8f78-c824ca0741a5",
+        "kind": "unit_operation",
+        "tag": "COMP-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 6251325.0
+    }
+  ]
+}

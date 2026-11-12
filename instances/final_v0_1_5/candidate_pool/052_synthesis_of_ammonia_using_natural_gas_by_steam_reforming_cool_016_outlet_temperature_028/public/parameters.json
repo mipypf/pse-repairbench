@@ -1,0 +1,287 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "COOL-022: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-ca7b2589-683d-472d-8e54-13e39c112cca",
+        "kind": "unit_operation",
+        "tag": "COOL-022",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COOL-010: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-88487018-55c7-43a8-8cca-acd5a71d2207",
+        "kind": "unit_operation",
+        "tag": "COOL-010",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COOL-016: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-0ba4d0ac-b20d-4bf6-b6cf-96ea7681a47a",
+        "kind": "unit_operation",
+        "tag": "COOL-016",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HEAT-039: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-5d23e811-dafa-4437-acfc-f70f203afc0e",
+        "kind": "unit_operation",
+        "tag": "HEAT-039",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "Compressor: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-181f7c8c-f438-487a-ab56-baa6020266c9",
+        "kind": "unit_operation",
+        "tag": "Compressor",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "COOL-048: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-06141908-aea2-469d-a7f9-fc53165d032d",
+        "kind": "unit_operation",
+        "tag": "COOL-048",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COOL-055: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-51ad5054-8bec-42e3-8847-30b2697be831",
+        "kind": "unit_operation",
+        "tag": "COOL-055",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-ca7b2589-683d-472d-8e54-13e39c112cca",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 323.15
+      },
+      "outlet_temperature": 323.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-022",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-88487018-55c7-43a8-8cca-acd5a71d2207",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 693.15
+      },
+      "outlet_temperature": 693.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-010",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-0ba4d0ac-b20d-4bf6-b6cf-96ea7681a47a",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 463.15
+      },
+      "outlet_temperature": 463.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-016",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-5d23e811-dafa-4437-acfc-f70f203afc0e",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 473.15
+      },
+      "outlet_temperature": 473.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HEAT-039",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 17500000,
+      "guid": "COMP-181f7c8c-f438-487a-ab56-baa6020266c9",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 20000000
+      },
+      "outlet_temperature": 846.620369656405,
+      "p_out": 20000000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "Compressor",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-06141908-aea2-469d-a7f9-fc53165d032d",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 698.15
+      },
+      "outlet_temperature": 698.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-048",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 5000000,
+      "guid": "RESF-51ad5054-8bec-42e3-8847-30b2697be831",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 193.15
+      },
+      "outlet_temperature": 193.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-055",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    }
+  ],
+  "product_target": {
+    "component": "Carbon monoxide",
+    "direction": "min",
+    "metric": "mass_fraction",
+    "stream_tag": "Off gas",
+    "threshold": 0.0711520464065726
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "component": "Carbon monoxide",
+    "direction": "min",
+    "family": "terminal_composition",
+    "metric": "mass_fraction",
+    "min": 0.0711520464065726,
+    "stream": "Off gas",
+    "stream_id": "MAT-9568c649-8d27-41f7-af90-a391600b8503",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Off gas",
+    "threshold": 0.0711520464065726
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-1c5c38ad-9c08-4580-b08a-6a2be849f8a4",
+      "mass_flow": 3.22651644959073,
+      "molar_flow": 178.77271177478,
+      "tag": "Light liq",
+      "upstream_unit_guids": [
+        "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4"
+      ]
+    },
+    {
+      "id": "MAT-241e9b5c-7867-4789-beb9-c05dee28c3d9",
+      "mass_flow": 35.702606926581,
+      "molar_flow": 1096.4113134466,
+      "tag": "Rich rectisol",
+      "upstream_unit_guids": [
+        "COUO-af31f276-7528-4e6d-85f9-62fa7fbb602b"
+      ]
+    },
+    {
+      "id": "MAT-9568c649-8d27-41f7-af90-a391600b8503",
+      "mass_flow": 0.144179567556183,
+      "molar_flow": 8.89446172756818,
+      "tag": "Off gas",
+      "upstream_unit_guids": [
+        "CS-88afaaaa-58b3-4dd8-b7af-259dd24d1227"
+      ]
+    },
+    {
+      "id": "MAT-cfbdd730-ea83-4d3c-8150-a22373248a17",
+      "mass_flow": 1.33421667671323,
+      "molar_flow": 156.446279445105,
+      "tag": "vap",
+      "upstream_unit_guids": [
+        "SEP-03e60839-dd21-477b-8939-5422276243d4"
+      ]
+    },
+    {
+      "id": "MAT-be980e3b-c6d6-47ee-8355-cdc7e0ad3b89",
+      "mass_flow": 1.06899656733772,
+      "molar_flow": 62.8243568306936,
+      "tag": "Tank outlet",
+      "upstream_unit_guids": [
+        "TQ-3040187e-4adf-4e76-a150-816bb8eacedb"
+      ]
+    }
+  ]
+}

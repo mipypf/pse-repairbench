@@ -1,0 +1,1938 @@
+{
+  "column": null,
+  "duration_sec": 3.414,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 58,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/base_calculated.dwxmz",
+  "simulation_path": "hidden/base.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COMP-ebe195d5-66e8-49b3-9ffa-5c91166706d6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-ca746872-129a-4fad-9f9e-ad19ddee9524",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "BIOGAS",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-ed073162-f816-4c5a-a639-975e9779080b"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-116f715e-51c0-44f4-bdee-1d9dc15abc3e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-01",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-ebe195d5-66e8-49b3-9ffa-5c91166706d6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "BB-db2c4d84-4c4d-4746-8e4b-b4f9411cf7c3"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-285f1a37-eeec-403c-831d-cf964ecde4ed",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "WATER",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-0ac67729-03f7-4e02-b3f3-9b7eac8c994a"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2f5d3bbb-0375-42b1-b4d3-cc2a64c5f5fe",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-03",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-db2c4d84-4c4d-4746-8e4b-b4f9411cf7c3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-1b801cda-5e5a-4874-8d7d-b12ebf7c8fc0"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-eb76a7e3-573f-4633-931f-ab23b676461d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-02",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-ed073162-f816-4c5a-a639-975e9779080b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-1b801cda-5e5a-4874-8d7d-b12ebf7c8fc0"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2428260a-842a-4630-8c6d-e700432b6a5b",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-04",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-0ac67729-03f7-4e02-b3f3-9b7eac8c994a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-b4372269-cc82-4cd2-887c-dbed36033948"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-146f202b-5205-412e-b2fc-50681911fe17",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-08",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-0a5c0517-8fb7-4ebd-8ef5-fcf6d672f009"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-41b3ade5-45cf-40d9-bd4c-4f9118b1cc08"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9506c949-d593-4cad-b42a-aba2d431ff56",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-09",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-b4372269-cc82-4cd2-887c-dbed36033948"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-51724c44-e7a1-48b0-81b5-00ecc1789831",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-010",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-b4372269-cc82-4cd2-887c-dbed36033948"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-813792ab-50b9-49b0-adb3-0962f8005309"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-10ef4a8d-ddb8-4c97-9dad-abe8b442f070",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-011",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-41b3ade5-45cf-40d9-bd4c-4f9118b1cc08"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-a831d6d0-01ae-45be-8c14-a3ee34137d8e"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-829f33db-6d24-4828-8edd-48595df23b27",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-012",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-813792ab-50b9-49b0-adb3-0962f8005309"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-4cef6a79-f5f6-4fb8-b0e2-77c82581eee4",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-013",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-813792ab-50b9-49b0-adb3-0962f8005309"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-40424138-45c8-49b1-b37f-28f46964461a"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-ba25c36d-b93b-4261-8aec-b497d980ff40",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-014",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-a831d6d0-01ae-45be-8c14-a3ee34137d8e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CS-7c1a0331-9df4-47a8-b115-86dea880d816"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9b3a4b3b-f3e6-496b-b959-478a41a1b293",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-015",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-40424138-45c8-49b1-b37f-28f46964461a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-04dcb007-16be-457f-bea4-acb792e6dfd5",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-016",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-40424138-45c8-49b1-b37f-28f46964461a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-80d15d6c-6747-4cdb-8ad0-e5a5b1eef678",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "H2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-7c1a0331-9df4-47a8-b115-86dea880d816"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-bc95801b-b3dc-4157-95bf-4e4b96545dd4"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f75b8b51-9331-4b28-a803-e8c398dea492",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-017",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-7c1a0331-9df4-47a8-b115-86dea880d816"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-455f03ec-8d3d-4660-99fc-7541257aa264"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-207f4ddc-75a5-46b5-ae1f-66cbd6cd06a3",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-018",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-bc95801b-b3dc-4157-95bf-4e4b96545dd4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "1302633202_AQ-7643cbfa-bf61-47e3-85d8-0719ae0a5f23"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2605c807-14d1-43f4-b42e-5f1ca9fc6354",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-019",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-455f03ec-8d3d-4660-99fc-7541257aa264"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-455f03ec-8d3d-4660-99fc-7541257aa264"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "1514841885_MAT-2605c807-14d1-43f4-b42e-5f1ca9fc6354",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "AIR",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-76f79f97-1621-45ac-a05c-404a9d83bba1"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-735a6916-2eaf-43c7-bac1-f8277dc90b66",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-020",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "1302633202_AQ-7643cbfa-bf61-47e3-85d8-0719ae0a5f23"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-e1b6072f-490a-4b81-85d6-b37ef3960d37"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f2fe06ad-e453-4897-97d8-13e69b8e4248",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-021",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-76f79f97-1621-45ac-a05c-404a9d83bba1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-5ca8152e-09cb-4c64-b6ce-3a7bc05b7f9a",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-022",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-76f79f97-1621-45ac-a05c-404a9d83bba1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-84e56672-46f2-45f5-aebf-90cb4ec96a8f",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "FLUE GAS",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-e1b6072f-490a-4b81-85d6-b37ef3960d37"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RE-80fef917-6f87-4d97-94e4-e154b471a4fe"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3fa0a9b8-86c8-48c9-b97e-4c17125c83c1",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-05",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-1b801cda-5e5a-4874-8d7d-b12ebf7c8fc0"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-0a5c0517-8fb7-4ebd-8ef5-fcf6d672f009"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2ab9f37f-9963-4401-b0e0-e21ef9e9444f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-06",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RE-80fef917-6f87-4d97-94e4-e154b471a4fe"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-90aaca82-0763-4eee-857b-da2c87853efa",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RE-80fef917-6f87-4d97-94e4-e154b471a4fe"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-04dcb007-16be-457f-bea4-acb792e6dfd5",
+        "mass_flow": 0.00471582550821498,
+        "molar_flow": 0.260983673552896,
+        "tag": "S-016",
+        "upstream_unit_guids": [
+          "SEP-40424138-45c8-49b1-b37f-28f46964461a"
+        ]
+      },
+      {
+        "id": "MAT-80d15d6c-6747-4cdb-8ad0-e5a5b1eef678",
+        "mass_flow": 0.00141293741846275,
+        "molar_flow": 0.700903535162189,
+        "tag": "H2",
+        "upstream_unit_guids": [
+          "CS-7c1a0331-9df4-47a8-b115-86dea880d816"
+        ]
+      },
+      {
+        "id": "MAT-84e56672-46f2-45f5-aebf-90cb4ec96a8f",
+        "mass_flow": 0.0428157056863474,
+        "molar_flow": 1.37022801793941,
+        "tag": "FLUE GAS",
+        "upstream_unit_guids": [
+          "RESF-e1b6072f-490a-4b81-85d6-b37ef3960d37"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-5ca8152e-09cb-4c64-b6ce-3a7bc05b7f9a",
+      "mass_flow": -9.50699645371142e-18,
+      "molar_flow": null,
+      "pressure": 100000,
+      "tag": "S-022",
+      "temperature": 1550.03399569787,
+      "total_energy_flow": -1.79583892679324e-14
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.0171941216221703,
+          "mass_fraction": 0.401584450064385,
+          "molar_flow": 0.390691137644608,
+          "mole_fraction": 0.285128557093833
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0.0196550225394293,
+          "mass_fraction": 0.459061043707069,
+          "molar_flow": 0.701629310952234,
+          "mole_fraction": 0.512052958899032
+        },
+        "Oxygen": {
+          "mass_flow": 0.00219674096299645,
+          "mass_fraction": 0.0513068960976374,
+          "molar_flow": 0.0686507294959951,
+          "mole_fraction": 0.0501016827835953
+        },
+        "Water": {
+          "mass_flow": 0.00376982056175127,
+          "mass_fraction": 0.0880476101309092,
+          "molar_flow": 0.209256839846578,
+          "mole_fraction": 0.15271680122354
+        }
+      },
+      "id": "MAT-f2fe06ad-e453-4897-97d8-13e69b8e4248",
+      "mass_flow": 0.0428157056863474,
+      "molar_flow": 1.37022801793941,
+      "pressure": 100000,
+      "tag": "S-021",
+      "temperature": 1550.03399569787,
+      "total_energy_flow": -137.472706082672
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.0161868997014913,
+          "mass_fraction": 0.378059860091312,
+          "molar_flow": 0.367804671752492,
+          "mole_fraction": 0.250134513834543
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.000394462479139216,
+          "mass_fraction": 0.00921303229307741,
+          "molar_flow": 0.0140828657926682,
+          "mole_fraction": 0.00957739544650663
+        },
+        "Hydrogen": {
+          "mass_flow": 0.0003755909593382,
+          "mass_fraction": 0.00877227067304802,
+          "molar_flow": 0.186316129600075,
+          "mole_fraction": 0.126708816054436
+        },
+        "Methane": {
+          "mass_flow": 0.000141231402451382,
+          "mass_fraction": 0.00329858868813219,
+          "molar_flow": 0.00880360009944749,
+          "mole_fraction": 0.00598710239425911
+        },
+        "Nitrogen": {
+          "mass_flow": 0.0196550225394293,
+          "mass_fraction": 0.459061043707069,
+          "molar_flow": 0.701629310952233,
+          "mole_fraction": 0.477160079970934
+        },
+        "Oxygen": {
+          "mass_flow": 0.00596641392760751,
+          "mass_fraction": 0.139351058962226,
+          "molar_flow": 0.186457427391262,
+          "mole_fraction": 0.126804909054386
+        },
+        "Water": {
+          "mass_flow": 9.60846768904684e-05,
+          "mass_fraction": 0.00224414558513529,
+          "molar_flow": 0.00533351004760783,
+          "mole_fraction": 0.00362718324493657
+        }
+      },
+      "id": "MAT-735a6916-2eaf-43c7-bac1-f8277dc90b66",
+      "mass_flow": 0.0428157056863474,
+      "molar_flow": 1.47042751563579,
+      "pressure": 100000,
+      "tag": "S-020",
+      "temperature": 523.15,
+      "total_energy_flow": -137.472840561947
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.0161868997014913,
+          "mass_fraction": 0.378059860091312,
+          "molar_flow": 0.367804671752492,
+          "mole_fraction": 0.250134513834543
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.000394462479139216,
+          "mass_fraction": 0.00921303229307741,
+          "molar_flow": 0.0140828657926682,
+          "mole_fraction": 0.00957739544650663
+        },
+        "Hydrogen": {
+          "mass_flow": 0.0003755909593382,
+          "mass_fraction": 0.00877227067304802,
+          "molar_flow": 0.186316129600075,
+          "mole_fraction": 0.126708816054436
+        },
+        "Methane": {
+          "mass_flow": 0.000141231402451382,
+          "mass_fraction": 0.00329858868813219,
+          "molar_flow": 0.00880360009944749,
+          "mole_fraction": 0.00598710239425911
+        },
+        "Nitrogen": {
+          "mass_flow": 0.0196550225394293,
+          "mass_fraction": 0.459061043707069,
+          "molar_flow": 0.701629310952233,
+          "mole_fraction": 0.477160079970934
+        },
+        "Oxygen": {
+          "mass_flow": 0.00596641392760751,
+          "mass_fraction": 0.139351058962226,
+          "molar_flow": 0.186457427391262,
+          "mole_fraction": 0.126804909054386
+        },
+        "Water": {
+          "mass_flow": 9.60846768904684e-05,
+          "mass_fraction": 0.00224414558513529,
+          "molar_flow": 0.00533351004760783,
+          "mole_fraction": 0.00362718324493657
+        }
+      },
+      "id": "MAT-2605c807-14d1-43f4-b42e-5f1ca9fc6354",
+      "mass_flow": 0.0428157056863474,
+      "molar_flow": 1.47042751563579,
+      "pressure": 100000,
+      "tag": "S-019",
+      "temperature": 297.258140296446,
+      "total_energy_flow": -148.29700310496
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0.0196330501373051,
+          "mass_fraction": 0.76708248854242,
+          "molar_flow": 0.700844957674011,
+          "mole_fraction": 0.79
+        },
+        "Oxygen": {
+          "mass_flow": 0.00596139430713926,
+          "mass_fraction": 0.23291751145758,
+          "molar_flow": 0.186300558369041,
+          "mole_fraction": 0.21
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "1514841885_MAT-2605c807-14d1-43f4-b42e-5f1ca9fc6354",
+      "mass_flow": 0.0255944444444444,
+      "molar_flow": 0.887145516043052,
+      "pressure": 100000,
+      "tag": "AIR",
+      "temperature": 298.15,
+      "total_energy_flow": -0.00719214899293479
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.0161868997014913,
+          "mass_fraction": 0.939936946203751,
+          "molar_flow": 0.367804671752492,
+          "mole_fraction": 0.630577785718237
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.000394462479139216,
+          "mass_fraction": 0.0229055510858523,
+          "molar_flow": 0.0140828657926682,
+          "mole_fraction": 0.0241441803493016
+        },
+        "Hydrogen": {
+          "mass_flow": 0.0003755909593382,
+          "mass_fraction": 0.021809724274103,
+          "molar_flow": 0.186316129600075,
+          "mole_fraction": 0.319427189130073
+        },
+        "Methane": {
+          "mass_flow": 0.000141231402451382,
+          "mass_fraction": 0.00820099065147079,
+          "molar_flow": 0.00880360009944749,
+          "mole_fraction": 0.0150932140981454
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19724021241583e-05,
+          "mass_fraction": 0.00127588809062921,
+          "molar_flow": 0.000784353278222505,
+          "mole_fraction": 0.00134472395645702
+        },
+        "Oxygen": {
+          "mass_flow": 5.01962046824751e-06,
+          "mass_fraction": 0.000291478097784947,
+          "molar_flow": 0.000156869022221068,
+          "mole_fraction": 0.00026894199089051
+        },
+        "Water": {
+          "mass_flow": 9.60846768904684e-05,
+          "mass_fraction": 0.00557942159640864,
+          "molar_flow": 0.00533351004760783,
+          "mole_fraction": 0.00914396475689607
+        }
+      },
+      "id": "MAT-207f4ddc-75a5-46b5-ae1f-66cbd6cd06a3",
+      "mass_flow": 0.017221261241903,
+      "molar_flow": 0.583281999592734,
+      "pressure": 100000,
+      "tag": "S-018",
+      "temperature": 296.152617694513,
+      "total_energy_flow": -148.289811029558
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.0161868997014913,
+          "mass_fraction": 0.939936946203751,
+          "molar_flow": 0.367804671752492,
+          "mole_fraction": 0.630577785718237
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.000394462479139216,
+          "mass_fraction": 0.0229055510858523,
+          "molar_flow": 0.0140828657926682,
+          "mole_fraction": 0.0241441803493016
+        },
+        "Hydrogen": {
+          "mass_flow": 0.0003755909593382,
+          "mass_fraction": 0.021809724274103,
+          "molar_flow": 0.186316129600075,
+          "mole_fraction": 0.319427189130073
+        },
+        "Methane": {
+          "mass_flow": 0.000141231402451382,
+          "mass_fraction": 0.00820099065147079,
+          "molar_flow": 0.00880360009944749,
+          "mole_fraction": 0.0150932140981454
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19724021241583e-05,
+          "mass_fraction": 0.00127588809062921,
+          "molar_flow": 0.000784353278222505,
+          "mole_fraction": 0.00134472395645702
+        },
+        "Oxygen": {
+          "mass_flow": 5.01962046824751e-06,
+          "mass_fraction": 0.000291478097784947,
+          "molar_flow": 0.000156869022221068,
+          "mole_fraction": 0.00026894199089051
+        },
+        "Water": {
+          "mass_flow": 9.60846768904684e-05,
+          "mass_fraction": 0.00557942159640864,
+          "molar_flow": 0.00533351004760783,
+          "mole_fraction": 0.00914396475689607
+        }
+      },
+      "id": "MAT-f75b8b51-9331-4b28-a803-e8c398dea492",
+      "mass_flow": 0.017221261241903,
+      "molar_flow": 0.583281999592734,
+      "pressure": 1570000,
+      "tag": "S-017",
+      "temperature": 311.15,
+      "total_energy_flow": -148.289810931164
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 2.39639848520375e-05,
+          "mass_fraction": 0.00508160974367948,
+          "molar_flow": 0.000544518452880344,
+          "mole_fraction": 0.00208640810924129
+        },
+        "Carbon monoxide": {
+          "mass_flow": 2.44866551279192e-10,
+          "mass_fraction": 5.19244299545507e-08,
+          "molar_flow": 8.74208058090446e-09,
+          "mole_fraction": 3.34966569436867e-08
+        },
+        "Hydrogen": {
+          "mass_flow": 2.88463249580263e-09,
+          "mass_fraction": 6.11691948902179e-07,
+          "molar_flow": 1.43095446941417e-06,
+          "mole_fraction": 5.48292714993968e-06
+        },
+        "Methane": {
+          "mass_flow": 4.10773295045832e-12,
+          "mass_fraction": 8.7105278668658e-10,
+          "molar_flow": 2.56053806614342e-10,
+          "mole_fraction": 9.81110439318134e-10
+        },
+        "Nitrogen": {
+          "mass_flow": 1.30787423090247e-11,
+          "mass_fraction": 2.77337282438494e-09,
+          "molar_flow": 4.66874506808339e-10,
+          "mole_fraction": 1.78890311586373e-09
+        },
+        "Oxygen": {
+          "mass_flow": 5.52571110389624e-11,
+          "mass_fraction": 1.17173782072098e-08,
+          "molar_flow": 1.72684947682296e-09,
+          "mole_fraction": 6.61669541743561e-09
+        },
+        "Water": {
+          "mass_flow": 0.00469185832142031,
+          "mass_fraction": 0.994917711278138,
+          "molar_flow": 0.260437712953688,
+          "mole_fraction": 0.997908066080243
+        }
+      },
+      "id": "MAT-04dcb007-16be-457f-bea4-acb792e6dfd5",
+      "mass_flow": 0.00471582550821498,
+      "molar_flow": 0.260983673552896,
+      "pressure": 1570000,
+      "tag": "S-016",
+      "temperature": 311.15,
+      "total_energy_flow": -74.815670347868
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.0161868997014913,
+          "mass_fraction": 0.868666262312651,
+          "molar_flow": 0.367804671752492,
+          "mole_fraction": 0.286410850923254
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.000394462479139216,
+          "mass_fraction": 0.0211687385290264,
+          "molar_flow": 0.0140828657926682,
+          "mole_fraction": 0.0109663793988739
+        },
+        "Hydrogen": {
+          "mass_flow": 0.00178852837780095,
+          "mass_fraction": 0.0959809654495683,
+          "molar_flow": 0.887219664762264,
+          "mole_fraction": 0.690881216732895
+        },
+        "Methane": {
+          "mass_flow": 0.000141231402451382,
+          "mass_fraction": 0.00757915084117766,
+          "molar_flow": 0.00880360009944749,
+          "mole_fraction": 0.00685539578292135
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19724021241583e-05,
+          "mass_fraction": 0.00117914392374129,
+          "molar_flow": 0.000784353278222505,
+          "mole_fraction": 0.000610778783123572
+        },
+        "Oxygen": {
+          "mass_flow": 5.01962046824751e-06,
+          "mass_fraction": 0.000269376781891033,
+          "molar_flow": 0.000156869022221068,
+          "mole_fraction": 0.000122154484671878
+        },
+        "Water": {
+          "mass_flow": 9.60846768904684e-05,
+          "mass_fraction": 0.00515636216194459,
+          "molar_flow": 0.00533351004760783,
+          "mole_fraction": 0.00415322389426049
+        }
+      },
+      "id": "MAT-9b3a4b3b-f3e6-496b-b959-478a41a1b293",
+      "mass_flow": 0.0186341986603657,
+      "molar_flow": 1.28418553475492,
+      "pressure": 1570000,
+      "tag": "S-015",
+      "temperature": 311.15,
+      "total_energy_flow": -147.854805219239
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0.00141293741846275,
+          "mass_fraction": 1,
+          "molar_flow": 0.700903535162189,
+          "mole_fraction": 1
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-80d15d6c-6747-4cdb-8ad0-e5a5b1eef678",
+      "mass_flow": 0.00141293741846275,
+      "molar_flow": 0.700903535162189,
+      "pressure": 1570000,
+      "tag": "H2",
+      "temperature": 311.14999957677,
+      "total_energy_flow": 0.259557672100546
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.01621094866209,
+          "mass_fraction": 0.694259043344325,
+          "molar_flow": 0.368351121055454,
+          "mole_fraction": 0.238388856751068
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.000394464809989695,
+          "mass_fraction": 0.0168935678796443,
+          "molar_flow": 0.0140829490073115,
+          "mole_fraction": 0.00911417916665212
+        },
+        "Hydrogen": {
+          "mass_flow": 0.00178854072042612,
+          "mass_fraction": 0.0765970329946946,
+          "molar_flow": 0.887225787460623,
+          "mole_fraction": 0.574193287499084
+        },
+        "Methane": {
+          "mass_flow": 0.000141232153416697,
+          "mass_fraction": 0.00604848622769581,
+          "molar_flow": 0.00880364691055468,
+          "mole_fraction": 0.00569752934709069
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19725313966728e-05,
+          "mass_fraction": 0.000941007768594125,
+          "molar_flow": 0.000784357892889575,
+          "mole_fraction": 0.000507619417130736
+        },
+        "Oxygen": {
+          "mass_flow": 5.01970226859899e-06,
+          "mass_fraction": 0.000214976542552419,
+          "molar_flow": 0.000156871578577915,
+          "mole_fraction": 0.000101523883426147
+        },
+        "Water": {
+          "mass_flow": 0.00478782142041222,
+          "mass_fraction": 0.205045885242493,
+          "molar_flow": 0.265764474402408,
+          "mole_fraction": 0.171997003935549
+        }
+      },
+      "id": "MAT-ba25c36d-b93b-4261-8aec-b497d980ff40",
+      "mass_flow": 0.02335,
+      "molar_flow": 1.54516920830782,
+      "pressure": 1570000,
+      "tag": "S-014",
+      "temperature": 311.15,
+      "total_energy_flow": -222.669603535325
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": null,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-4cef6a79-f5f6-4fb8-b0e2-77c82581eee4",
+      "mass_flow": -5.18474152499948e-18,
+      "molar_flow": null,
+      "pressure": 1570000,
+      "tag": "S-013",
+      "temperature": 514.575410687199,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.01621094866209,
+          "mass_fraction": 0.694259043344325,
+          "molar_flow": 0.368351121055454,
+          "mole_fraction": 0.238388856751068
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.000394464809989695,
+          "mass_fraction": 0.0168935678796443,
+          "molar_flow": 0.0140829490073115,
+          "mole_fraction": 0.00911417916665212
+        },
+        "Hydrogen": {
+          "mass_flow": 0.00178854072042612,
+          "mass_fraction": 0.0765970329946946,
+          "molar_flow": 0.887225787460623,
+          "mole_fraction": 0.574193287499084
+        },
+        "Methane": {
+          "mass_flow": 0.000141232153416697,
+          "mass_fraction": 0.00604848622769581,
+          "molar_flow": 0.00880364691055468,
+          "mole_fraction": 0.00569752934709069
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19725313966728e-05,
+          "mass_fraction": 0.000941007768594125,
+          "molar_flow": 0.000784357892889575,
+          "mole_fraction": 0.000507619417130736
+        },
+        "Oxygen": {
+          "mass_flow": 5.01970226859899e-06,
+          "mass_fraction": 0.000214976542552419,
+          "molar_flow": 0.000156871578577915,
+          "mole_fraction": 0.000101523883426147
+        },
+        "Water": {
+          "mass_flow": 0.00478782142041222,
+          "mass_fraction": 0.205045885242493,
+          "molar_flow": 0.265764474402408,
+          "mole_fraction": 0.171997003935549
+        }
+      },
+      "id": "MAT-829f33db-6d24-4828-8edd-48595df23b27",
+      "mass_flow": 0.02335,
+      "molar_flow": 1.54516920830782,
+      "pressure": 1570000,
+      "tag": "S-012",
+      "temperature": 514.575410687199,
+      "total_energy_flow": -200.540888060092
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.0143515980290782,
+          "mass_fraction": 0.614629465913412,
+          "molar_flow": 0.326102274033519,
+          "mole_fraction": 0.211046319251112
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.00157785923995878,
+          "mass_fraction": 0.0675742715185773,
+          "molar_flow": 0.0563317960292459,
+          "mole_fraction": 0.0364567166666085
+        },
+        "Hydrogen": {
+          "mass_flow": 0.00170337211469154,
+          "mass_fraction": 0.0729495552330425,
+          "molar_flow": 0.844976940438688,
+          "mole_fraction": 0.546850749999127
+        },
+        "Methane": {
+          "mass_flow": 0.000141232153416697,
+          "mass_fraction": 0.00604848622769581,
+          "molar_flow": 0.00880364691055468,
+          "mole_fraction": 0.00569752934709069
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19725313966728e-05,
+          "mass_fraction": 0.000941007768594125,
+          "molar_flow": 0.000784357892889575,
+          "mole_fraction": 0.000507619417130736
+        },
+        "Oxygen": {
+          "mass_flow": 5.01970226859899e-06,
+          "mass_fraction": 0.000214976542552419,
+          "molar_flow": 0.000156871578577915,
+          "mole_fraction": 0.000101523883426147
+        },
+        "Water": {
+          "mass_flow": 0.00554894622918953,
+          "mass_fraction": 0.237642236796126,
+          "molar_flow": 0.308013321424343,
+          "mole_fraction": 0.199339541435505
+        }
+      },
+      "id": "MAT-10ef4a8d-ddb8-4c97-9dad-abe8b442f070",
+      "mass_flow": 0.02335,
+      "molar_flow": 1.54516920830782,
+      "pressure": 1575000,
+      "tag": "S-011",
+      "temperature": 483.15,
+      "total_energy_flow": -200.540888060092
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.0143515980290782,
+          "mass_fraction": 0.614629465913412,
+          "molar_flow": 0.326102274033519,
+          "mole_fraction": 0.211046319251112
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.00157785923995878,
+          "mass_fraction": 0.0675742715185773,
+          "molar_flow": 0.0563317960292459,
+          "mole_fraction": 0.0364567166666085
+        },
+        "Hydrogen": {
+          "mass_flow": 0.00170337211469154,
+          "mass_fraction": 0.0729495552330425,
+          "molar_flow": 0.844976940438688,
+          "mole_fraction": 0.546850749999127
+        },
+        "Methane": {
+          "mass_flow": 0.000141232153416697,
+          "mass_fraction": 0.00604848622769581,
+          "molar_flow": 0.00880364691055468,
+          "mole_fraction": 0.00569752934709069
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19725313966728e-05,
+          "mass_fraction": 0.000941007768594125,
+          "molar_flow": 0.000784357892889575,
+          "mole_fraction": 0.000507619417130736
+        },
+        "Oxygen": {
+          "mass_flow": 5.01970226859899e-06,
+          "mass_fraction": 0.000214976542552419,
+          "molar_flow": 0.000156871578577915,
+          "mole_fraction": 0.000101523883426147
+        },
+        "Water": {
+          "mass_flow": 0.00554894622918953,
+          "mass_fraction": 0.237642236796126,
+          "molar_flow": 0.308013321424343,
+          "mole_fraction": 0.199339541435505
+        }
+      },
+      "id": "MAT-9506c949-d593-4cad-b42a-aba2d431ff56",
+      "mass_flow": 0.02335,
+      "molar_flow": 1.54516920830782,
+      "pressure": 1575000,
+      "tag": "S-09",
+      "temperature": 740.977597077259,
+      "total_energy_flow": -186.546429654929
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-51724c44-e7a1-48b0-81b5-00ecc1789831",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 1575000,
+      "tag": "S-010",
+      "temperature": 740.977597077259,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.00691419549703089,
+          "mass_fraction": 0.29611115618976,
+          "molar_flow": 0.157106885945782,
+          "mole_fraction": 0.101676169251286
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.00631143695983512,
+          "mass_fraction": 0.270297086074309,
+          "molar_flow": 0.225327184116983,
+          "mole_fraction": 0.145826866666434
+        },
+        "Hydrogen": {
+          "mass_flow": 0.00136269769175323,
+          "mass_fraction": 0.058359644186434,
+          "molar_flow": 0.67598155235095,
+          "mole_fraction": 0.437480599999302
+        },
+        "Methane": {
+          "mass_flow": 0.000141232153416697,
+          "mass_fraction": 0.00604848622769581,
+          "molar_flow": 0.00880364691055468,
+          "mole_fraction": 0.00569752934709069
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19725313966728e-05,
+          "mass_fraction": 0.000941007768594125,
+          "molar_flow": 0.000784357892889575,
+          "mole_fraction": 0.000507619417130736
+        },
+        "Oxygen": {
+          "mass_flow": 5.01970226859899e-06,
+          "mass_fraction": 0.000214976542552419,
+          "molar_flow": 0.000156871578577915,
+          "mole_fraction": 0.000101523883426147
+        },
+        "Water": {
+          "mass_flow": 0.00859344546429879,
+          "mass_fraction": 0.368027643010655,
+          "molar_flow": 0.47700870951208,
+          "mole_fraction": 0.30870969143533
+        }
+      },
+      "id": "MAT-146f202b-5205-412e-b2fc-50681911fe17",
+      "mass_flow": 0.02335,
+      "molar_flow": 1.54516920830782,
+      "pressure": 1600000,
+      "tag": "S-08",
+      "temperature": 623.15,
+      "total_energy_flow": -186.546429686958
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.00691419549703089,
+          "mass_fraction": 0.646354292114029,
+          "molar_flow": 0.157106885945782,
+          "mole_fraction": 0.4006
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0.00375603449152604,
+          "mass_fraction": 0.35112241416499,
+          "molar_flow": 0.234130831027538,
+          "mole_fraction": 0.597
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19725313966728e-05,
+          "mass_fraction": 0.00205404084726103,
+          "molar_flow": 0.000784357892889575,
+          "mole_fraction": 0.002
+        },
+        "Oxygen": {
+          "mass_flow": 5.01970226859899e-06,
+          "mass_fraction": 0.000469252873719979,
+          "molar_flow": 0.000156871578577915,
+          "mole_fraction": 0.0004
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-ca746872-129a-4fad-9f9e-ad19ddee9524",
+      "mass_flow": 0.0106972222222222,
+      "molar_flow": 0.392178946444788,
+      "pressure": 100000,
+      "tag": "BIOGAS",
+      "temperature": 298.15,
+      "total_energy_flow": -79.2804267580487
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.00691419549703089,
+          "mass_fraction": 0.646354292114029,
+          "molar_flow": 0.157106885945782,
+          "mole_fraction": 0.4006
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0.00375603449152604,
+          "mass_fraction": 0.35112241416499,
+          "molar_flow": 0.234130831027538,
+          "mole_fraction": 0.597
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19725313966728e-05,
+          "mass_fraction": 0.00205404084726103,
+          "molar_flow": 0.000784357892889575,
+          "mole_fraction": 0.002
+        },
+        "Oxygen": {
+          "mass_flow": 5.01970226859899e-06,
+          "mass_fraction": 0.000469252873719979,
+          "molar_flow": 0.000156871578577915,
+          "mole_fraction": 0.0004
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-116f715e-51c0-44f4-bdee-1d9dc15abc3e",
+      "mass_flow": 0.0106972222222222,
+      "molar_flow": 0.392178946444788,
+      "pressure": 1600000,
+      "tag": "S-01",
+      "temperature": 589.81794061296,
+      "total_energy_flow": -74.4053428777981
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.0126527777777778,
+          "mass_fraction": 1,
+          "molar_flow": 0.702335893629064,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-285f1a37-eeec-403c-831d-cf964ecde4ed",
+      "mass_flow": 0.0126527777777778,
+      "molar_flow": 0.702335893629064,
+      "pressure": 100000,
+      "tag": "WATER",
+      "temperature": 298.15,
+      "total_energy_flow": -201.935297428712
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.0126527777777778,
+          "mass_fraction": 1,
+          "molar_flow": 0.702335893629064,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-2f5d3bbb-0375-42b1-b4d3-cc2a64c5f5fe",
+      "mass_flow": 0.0126527777777778,
+      "molar_flow": 0.702335893629064,
+      "pressure": 1600000,
+      "tag": "S-03",
+      "temperature": 298.279728981283,
+      "total_energy_flow": -201.909898546509
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.00691419549703089,
+          "mass_fraction": 0.646354292114029,
+          "molar_flow": 0.157106885945782,
+          "mole_fraction": 0.4006
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0.00375603449152604,
+          "mass_fraction": 0.35112241416499,
+          "molar_flow": 0.234130831027538,
+          "mole_fraction": 0.597
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19725313966728e-05,
+          "mass_fraction": 0.00205404084726103,
+          "molar_flow": 0.000784357892889575,
+          "mole_fraction": 0.002
+        },
+        "Oxygen": {
+          "mass_flow": 5.01970226859899e-06,
+          "mass_fraction": 0.000469252873719979,
+          "molar_flow": 0.000156871578577915,
+          "mole_fraction": 0.0004
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-eb76a7e3-573f-4633-931f-ab23b676461d",
+      "mass_flow": 0.0106972222222222,
+      "molar_flow": 0.392178946444788,
+      "pressure": 1600000,
+      "tag": "S-02",
+      "temperature": 1182.15,
+      "total_energy_flow": -60.1776911563796
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.0126527777777778,
+          "mass_fraction": 1,
+          "molar_flow": 0.702335893629064,
+          "mole_fraction": 1
+        }
+      },
+      "id": "MAT-2428260a-842a-4630-8c6d-e700432b6a5b",
+      "mass_flow": 0.0126527777777778,
+      "molar_flow": 0.702335893629064,
+      "pressure": 1600000,
+      "tag": "S-04",
+      "temperature": 1182.15000000238,
+      "total_energy_flow": -146.307398359953
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.0171941216221703,
+          "mass_fraction": 0.401584450064385,
+          "molar_flow": 0.390691137644608,
+          "mole_fraction": 0.285128557093833
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0.0196550225394293,
+          "mass_fraction": 0.459061043707069,
+          "molar_flow": 0.701629310952234,
+          "mole_fraction": 0.512052958899032
+        },
+        "Oxygen": {
+          "mass_flow": 0.00219674096299645,
+          "mass_fraction": 0.0513068960976374,
+          "molar_flow": 0.0686507294959951,
+          "mole_fraction": 0.0501016827835953
+        },
+        "Water": {
+          "mass_flow": 0.00376982056175127,
+          "mass_fraction": 0.0880476101309092,
+          "molar_flow": 0.209256839846578,
+          "mole_fraction": 0.15271680122354
+        }
+      },
+      "id": "MAT-84e56672-46f2-45f5-aebf-90cb4ec96a8f",
+      "mass_flow": 0.0428157056863474,
+      "molar_flow": 1.37022801793941,
+      "pressure": 100000,
+      "tag": "FLUE GAS",
+      "temperature": 473.15,
+      "total_energy_flow": -196.379480989588
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.00691419549703089,
+          "mass_fraction": 0.29611115618976,
+          "molar_flow": 0.157106885945782,
+          "mole_fraction": 0.143540206302896
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0.00375603449152604,
+          "mass_fraction": 0.1608580082024,
+          "molar_flow": 0.234130831027538,
+          "mole_fraction": 0.213912888574211
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19725313966728e-05,
+          "mass_fraction": 0.000941007768594125,
+          "molar_flow": 0.000784357892889575,
+          "mole_fraction": 0.000716626092375916
+        },
+        "Oxygen": {
+          "mass_flow": 5.01970226859899e-06,
+          "mass_fraction": 0.000214976542552419,
+          "molar_flow": 0.000156871578577915,
+          "mole_fraction": 0.000143325218475183
+        },
+        "Water": {
+          "mass_flow": 0.0126527777777778,
+          "mass_fraction": 0.541874851296694,
+          "molar_flow": 0.702335893629064,
+          "mole_fraction": 0.641686953812042
+        }
+      },
+      "id": "MAT-3fa0a9b8-86c8-48c9-b97e-4c17125c83c1",
+      "mass_flow": 0.02335,
+      "molar_flow": 1.09451484007385,
+      "pressure": 1600000,
+      "tag": "S-05",
+      "temperature": 1181.78099500804,
+      "total_energy_flow": -206.485088354458
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0.00691419549703089,
+          "mass_fraction": 0.29611115618976,
+          "molar_flow": 0.157106885945782,
+          "mole_fraction": 0.101676169251286
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0.00631143695983512,
+          "mass_fraction": 0.270297086074309,
+          "molar_flow": 0.225327184116983,
+          "mole_fraction": 0.145826866666434
+        },
+        "Hydrogen": {
+          "mass_flow": 0.00136269769175323,
+          "mass_fraction": 0.058359644186434,
+          "molar_flow": 0.67598155235095,
+          "mole_fraction": 0.437480599999302
+        },
+        "Methane": {
+          "mass_flow": 0.000141232153416697,
+          "mass_fraction": 0.00604848622769581,
+          "molar_flow": 0.00880364691055468,
+          "mole_fraction": 0.00569752934709069
+        },
+        "Nitrogen": {
+          "mass_flow": 2.19725313966728e-05,
+          "mass_fraction": 0.000941007768594125,
+          "molar_flow": 0.000784357892889575,
+          "mole_fraction": 0.000507619417130736
+        },
+        "Oxygen": {
+          "mass_flow": 5.01970226859899e-06,
+          "mass_fraction": 0.000214976542552419,
+          "molar_flow": 0.000156871578577915,
+          "mole_fraction": 0.000101523883426147
+        },
+        "Water": {
+          "mass_flow": 0.00859344546429879,
+          "mass_fraction": 0.368027643010655,
+          "molar_flow": 0.47700870951208,
+          "mole_fraction": 0.30870969143533
+        }
+      },
+      "id": "MAT-2ab9f37f-9963-4401-b0e0-e21ef9e9444f",
+      "mass_flow": 0.02335,
+      "molar_flow": 1.54516920830782,
+      "pressure": 1600000,
+      "tag": "S-06",
+      "temperature": 1181.78099500804,
+      "total_energy_flow": -155.39246396644
+    },
+    {
+      "compounds": {
+        "Carbon dioxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Carbon monoxide": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methane": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Oxygen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-90aaca82-0763-4eee-857b-da2c87853efa",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 1600000,
+      "tag": "S-07",
+      "temperature": 1181.78099500804,
+      "total_energy_flow": 0
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "delta_p": null,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "RESF-a831d6d0-01ae-45be-8c14-a3ee34137d8e",
+    "outlet_pressure": null,
+    "outlet_temperature": 311.15,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "HE-05",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-04dcb007-16be-457f-bea4-acb792e6dfd5",
+      "mass_flow": 0.00471582550821498,
+      "molar_flow": 0.260983673552896,
+      "tag": "S-016",
+      "upstream_unit_guids": [
+        "SEP-40424138-45c8-49b1-b37f-28f46964461a"
+      ]
+    },
+    {
+      "id": "MAT-80d15d6c-6747-4cdb-8ad0-e5a5b1eef678",
+      "mass_flow": 0.00141293741846275,
+      "molar_flow": 0.700903535162189,
+      "tag": "H2",
+      "upstream_unit_guids": [
+        "CS-7c1a0331-9df4-47a8-b115-86dea880d816"
+      ]
+    },
+    {
+      "id": "MAT-84e56672-46f2-45f5-aebf-90cb4ec96a8f",
+      "mass_flow": 0.0428157056863474,
+      "molar_flow": 1.37022801793941,
+      "tag": "FLUE GAS",
+      "upstream_unit_guids": [
+        "RESF-e1b6072f-490a-4b81-85d6-b37ef3960d37"
+      ]
+    }
+  ]
+}

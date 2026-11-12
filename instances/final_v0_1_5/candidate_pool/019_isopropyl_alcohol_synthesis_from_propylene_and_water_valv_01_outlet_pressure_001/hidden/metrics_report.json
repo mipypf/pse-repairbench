@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 902000,
+    "target_mole_fraction": null,
+    "target_value": 0.912116475365936
+  },
+  "faulty": {
+    "outlet_pressure": 1353000,
+    "target_mole_fraction": null,
+    "target_value": 0.816251840253483
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "VALV-209ee47b-5c38-42a7-8689-ddcd5bc53c7b",
+      "kind": "unit_operation",
+      "tag": "VALV-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 902000.0
+  },
+  "instance_id": "019_isopropyl_alcohol_synthesis_from_propylene_and_water_valv_01_outlet_pressure_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 902000,
+    "target_mole_fraction": null,
+    "target_value": 0.912116475365936
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/019_isopropyl_alcohol_synthesis_from_propylene_and_water.zip",
+  "target": {
+    "component": "Propane",
+    "direction": "min",
+    "family": "terminal_composition",
+    "metric": "mass_fraction",
+    "min": 0.8833570848322001,
+    "product_mole_fraction_min": null,
+    "stream": "Propane purge",
+    "stream_id": "MAT-304099b3-7773-47f6-abf7-b31ac4a86aed",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Propane purge",
+    "threshold": 0.8833570848322001
+  },
+  "target_delta": 0.09586463511245302
+}

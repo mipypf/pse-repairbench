@@ -1,0 +1,130 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "VALV-013: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6",
+        "kind": "unit_operation",
+        "tag": "VALV-013",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "cooler: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd",
+        "kind": "unit_operation",
+        "tag": "cooler",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "compressor: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c",
+        "kind": "unit_operation",
+        "tag": "compressor",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 174999.947483059,
+      "guid": "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 100000.026040658
+      },
+      "outlet_pressure": 100000.026040658,
+      "outlet_temperature": 293.15,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-013",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 313.15
+      },
+      "outlet_temperature": 313.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "cooler",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 174999.947483059,
+      "guid": "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 274999.973523717
+      },
+      "outlet_temperature": 355.154570004591,
+      "p_out": 274999.973523717,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "compressor",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    }
+  ],
+  "product_target": {
+    "direction": "max",
+    "metric": "temperature",
+    "stream_tag": "removed water",
+    "threshold": 326.2940884983842
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 326.2940884983842,
+    "metric": "temperature",
+    "stream": "removed water",
+    "stream_id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "removed water",
+    "threshold": 326.2940884983842
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+      "mass_flow": 1,
+      "molar_flow": 34.7395382193827,
+      "tag": "dehumidified air",
+      "upstream_unit_guids": [
+        "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6"
+      ]
+    }
+  ]
+}

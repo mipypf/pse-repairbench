@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "V-998d07d5-3cd1-41e0-9b4f-0bda5622e566",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "017_triple_effect_evaporation_of_saline_solution_gls_3_pressure_015",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 25500.0,
+      "stream": "M-13",
+      "stream_id": "MS-ad7a58c5-67a4-4598-b514-0cfb02163590",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "M-13",
+      "threshold": 25500.0
+    },
+    "target_stream_tag": "M-13"
+  }
+}

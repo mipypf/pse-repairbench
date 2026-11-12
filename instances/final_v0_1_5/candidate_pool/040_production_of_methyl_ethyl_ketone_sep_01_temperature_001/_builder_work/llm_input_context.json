@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "040_production_of_methyl_ethyl_ketone_sep_01_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 292.15,
+      "metric": "temperature",
+      "stream": "S-08",
+      "stream_id": "MAT-27bed7d7-b5f6-4a15-bc01-1e9665d4d83d",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-08",
+      "threshold": 292.15
+    },
+    "target_stream_tag": "S-08"
+  }
+}

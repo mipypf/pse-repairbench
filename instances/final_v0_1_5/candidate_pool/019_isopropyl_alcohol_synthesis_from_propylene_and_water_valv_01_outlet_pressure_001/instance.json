@@ -1,0 +1,142 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_pressure_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "rationale": "Restore the unit outlet pressure to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "VALV-209ee47b-5c38-42a7-8689-ddcd5bc53c7b",
+        "kind": "unit_operation",
+        "tag": "VALV-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 902000.0
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet pressure is consistent with the requested process target.",
+      "target": "VALV-209ee47b-5c38-42a7-8689-ddcd5bc53c7b",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet pressure of VALV-01 to 902000.0.",
+      "target": "VALV-209ee47b-5c38-42a7-8689-ddcd5bc53c7b",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "019_isopropyl_alcohol_synthesis_from_propylene_and_water_valv_01_outlet_pressure_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "c31e9ef4f8c2a5fd1f8793bca3d5185557d68f8ed8c1445d66d04fce01f3e17a",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "dd4fb2ae199367f37df3029482388157aada481e4f1475f25412bbfb82dd43f2",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/019_isopropyl_alcohol_synthesis_from_propylene_and_water.zip",
+    "curated_source_entry": "Isopropyl_Alcohol_Synthesis_From_Propylene_And_Water_By_Mr_M_Dineshkumar/Flowsheet.dwxmz",
+    "detected_process_category": "reaction_recycle",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Valve",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmpCE83.xml",
+      "tmpD57B.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 56,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "Isopropyl_Alcohol_synthesis_from_Propylene_and_Water.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Propane",
+    "target_metric": {
+      "component": "Propane",
+      "direction": "min",
+      "family": "terminal_composition",
+      "metric": "mass_fraction",
+      "min": 0.8833570848322001,
+      "stream": "Propane purge",
+      "stream_id": "MAT-304099b3-7773-47f6-abf7-b31ac4a86aed",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Propane purge",
+      "threshold": 0.8833570848322001
+    },
+    "target_stream_tag": "Propane purge"
+  }
+}

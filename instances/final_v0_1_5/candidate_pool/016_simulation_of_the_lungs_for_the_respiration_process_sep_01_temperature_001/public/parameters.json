@@ -1,0 +1,104 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "SEP-01: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-10480f7f-3284-43c8-80b3-2d8d426a6f6e",
+        "kind": "unit_operation",
+        "tag": "SEP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-01: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-10480f7f-3284-43c8-80b3-2d8d426a6f6e",
+        "kind": "unit_operation",
+        "tag": "SEP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "flash_pressure": 101300,
+      "flash_temperature": 280.15,
+      "guid": "SEP-10480f7f-3284-43c8-80b3-2d8d426a6f6e",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 101300,
+        "separator_specification/temperature": 280.15
+      },
+      "override_p": "true",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/pressure",
+        "separator_specification/temperature"
+      ],
+      "tag": "SEP-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "temperature",
+    "stream_tag": "S-06 ",
+    "threshold": 301.15
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 301.15,
+    "stream": "S-06 ",
+    "stream_id": "MAT-4a38bc35-78ad-4611-a6ef-f50474126d09",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-06 ",
+    "threshold": 301.15
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-4a38bc35-78ad-4611-a6ef-f50474126d09",
+      "mass_flow": 4.66103811823021e-06,
+      "molar_flow": 0.000258708858397731,
+      "tag": "S-06 ",
+      "upstream_unit_guids": [
+        "SEP-10480f7f-3284-43c8-80b3-2d8d426a6f6e"
+      ]
+    },
+    {
+      "id": "MAT-f283e04c-f97c-432f-bd47-7610d35c417d",
+      "mass_flow": 0.000145060770383649,
+      "molar_flow": 0.00483652410848584,
+      "tag": "S-07 ",
+      "upstream_unit_guids": [
+        "CS-f732643c-825e-48db-838c-bb879c87a313"
+      ]
+    },
+    {
+      "id": "MAT-abca85bb-c0f3-4b72-9ab2-1b54f4819d94",
+      "mass_flow": 2.9653393928535e-07,
+      "molar_flow": 9.26703311640905e-06,
+      "tag": "S-08 ",
+      "upstream_unit_guids": [
+        "CS-f732643c-825e-48db-838c-bb879c87a313"
+      ]
+    }
+  ]
+}

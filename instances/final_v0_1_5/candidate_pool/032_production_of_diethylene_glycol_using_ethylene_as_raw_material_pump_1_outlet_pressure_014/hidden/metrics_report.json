@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 3500000,
+    "target_mole_fraction": null,
+    "target_value": 0.00348134107613225
+  },
+  "faulty": {
+    "outlet_pressure": 1750000,
+    "target_mole_fraction": null,
+    "target_value": 0.0566572966933191
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "1636629647_BB-f5098547-22aa-4da7-9b86-9d3cab8c5526",
+      "kind": "unit_operation",
+      "tag": "PUMP-1"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 3500000.0
+  },
+  "instance_id": "032_production_of_diethylene_glycol_using_ethylene_as_raw_material_pump_1_outlet_pressure_014",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 3500000,
+    "target_mole_fraction": null,
+    "target_value": 0.00348134107613225
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/032_production_of_diethylene_glycol_using_ethylene_as_raw_material.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 0.019434127761288306,
+    "metric": "molar_flow",
+    "product_mole_fraction_min": null,
+    "stream": "stack-1",
+    "stream_id": "1636629647_MAT-7b51ef04-ec07-46eb-9cdb-bef0354c6357",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "stack-1",
+    "threshold": 0.019434127761288306
+  },
+  "target_delta": -0.05317595561718685
+}

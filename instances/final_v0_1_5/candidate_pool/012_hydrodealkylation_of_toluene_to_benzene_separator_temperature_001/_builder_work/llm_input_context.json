@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "012_hydrodealkylation_of_toluene_to_benzene_separator_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 301.3257752309375,
+      "stream": "PURGE STREAM",
+      "stream_id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "PURGE STREAM",
+      "threshold": 301.3257752309375
+    },
+    "target_stream_tag": "PURGE STREAM"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 298.15,
+    "target_mole_fraction": null,
+    "target_value": 298.15
+  },
+  "faulty": {
+    "outlet_temperature": 268.15,
+    "target_mole_fraction": null,
+    "target_value": 268.15
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-e3174afb-cb57-44e9-901e-820cfaca0faf",
+      "kind": "unit_operation",
+      "tag": "Cooler-B"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 298.15
+  },
+  "instance_id": "026_production_of_acetic_acid_from_acetaldehyde_cooler_b_outlet_temperature_011",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 298.15,
+    "target_mole_fraction": null,
+    "target_value": 298.15
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/026_production_of_acetic_acid_from_acetaldehyde.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 289.15,
+    "product_mole_fraction_min": null,
+    "stream": "S-8A",
+    "stream_id": "MAT-3bd0a3fe-94c1-4a3a-a9b4-683613c03ed9",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-8A",
+    "threshold": 289.15
+  },
+  "target_delta": 30.0
+}

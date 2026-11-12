@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-06c4eecd-8a0b-42b4-8c76-57ac5ddd5018",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "012_natural_gas_processing_simulation_compressor_outlet_pressure_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 333.75504775390016,
+      "stream": "Lean Gas",
+      "stream_id": "MAT-37af0226-4681-429b-a1c0-ce58329b40cc",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Lean Gas",
+      "threshold": 333.75504775390016
+    },
+    "target_stream_tag": "Lean Gas"
+  }
+}

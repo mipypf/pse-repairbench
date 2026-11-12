@@ -1,0 +1,134 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Restore the unit outlet temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "RESF-2938f98f-22f0-4647-ae26-06d0062f7043",
+        "kind": "unit_operation",
+        "tag": "EXCHANGER2"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 366.483333
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet temperature is consistent with the requested process target.",
+      "target": "RESF-2938f98f-22f0-4647-ae26-06d0062f7043",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet temperature of EXCHANGER2 to 366.483333.",
+      "target": "RESF-2938f98f-22f0-4647-ae26-06d0062f7043",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "039_production_of_methane_from_carbon_monoxide_and_hydrogen_using_recycle_exchanger2_outlet_temperature_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "d14633f2f6c637dd08eb2e5036d1c5bf23d9dbdc2e2278f8adacf32db1268f2b",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "06c5b27b8c623de205e1ff71d973393f3c8e8c006808798393acc8cd92bf9d52",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/039_production_of_methane_from_carbon_monoxide_and_hydrogen_using_recycle.zip",
+    "curated_source_entry": "Production_Of_Methane_From_Carbon_Monoxide_And_Hydrogen(using_Recycle)_By_Mr_Pravinkumar_Bharat_Dalve/Recycle_Methanation_System.dwxmz",
+    "detected_process_category": "reaction_recycle",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Cooler",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp5390.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 27,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "Spreadsheet",
+      "FlowsheetView",
+      "PanelLayout"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "039_production_of_methane_from_carbon_monoxide_and_hydrogen_using_recycle.zip",
+    "unsupported_sections": [
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "FlowsheetView",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 357.4833329081276,
+      "stream": "8 (WATER)",
+      "stream_id": "MAT-f3fd1cd5-52d7-4bca-9689-a87973beab14",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "8 (WATER)",
+      "threshold": 357.4833329081276
+    },
+    "target_stream_tag": "8 (WATER)"
+  }
+}

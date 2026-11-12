@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "017_recovery_of_h2s_from_refinery_off_gas_with_diethanolamine_lean_amine_cooler_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 398.50911086106987,
+      "metric": "temperature",
+      "stream": "treated off gas",
+      "stream_id": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "treated off gas",
+      "threshold": 398.50911086106987
+    },
+    "target_stream_tag": "treated off gas"
+  }
+}

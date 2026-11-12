@@ -1,0 +1,139 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "Cooler: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-0e30f3a3-019c-4936-9359-414547f28fbf",
+        "kind": "unit_operation",
+        "tag": "Cooler",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "pump: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "BB-93a5650f-6358-4ec5-a663-352683b8b162",
+        "kind": "unit_operation",
+        "tag": "pump",
+        "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "Heater: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-6c7ba34b-bb9b-4a44-805a-1db1e6e9b834",
+        "kind": "unit_operation",
+        "tag": "Heater",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 0,
+      "guid": "RESF-0e30f3a3-019c-4936-9359-414547f28fbf",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 329.928
+      },
+      "outlet_temperature": 329.928,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Cooler",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 219575.48333333,
+      "guid": "BB-93a5650f-6358-4ec5-a663-352683b8b162",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 430922.5
+      },
+      "outlet_temperature": 330.108678986212,
+      "pout": 430922.5,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "pump",
+      "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 0,
+      "guid": "AQ-6c7ba34b-bb9b-4a44-805a-1db1e6e9b834",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 347.039
+      },
+      "outlet_temperature": 347.039,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "Heater",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "temperature",
+    "stream_tag": "Reactor Output 2",
+    "threshold": 337.0381433739567
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 337.0381433739567,
+    "stream": "Reactor Output 2",
+    "stream_id": "MAT-8250e372-d697-444b-a620-b1cadd3dc778",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Reactor Output 2",
+    "threshold": 337.0381433739567
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-4e90a53a-f0ec-483d-b1b9-cf252f49c04a",
+      "mass_flow": 0.691847816168601,
+      "molar_flow": 11.933738529916,
+      "tag": "D1",
+      "upstream_unit_guids": [
+        "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+      ]
+    },
+    {
+      "id": "MAT-dcb72175-bc2b-4d52-9554-88cc645c2b05",
+      "mass_flow": 0.0475883942466052,
+      "molar_flow": 0.66606147008107,
+      "tag": "B1",
+      "upstream_unit_guids": [
+        "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+      ]
+    }
+  ]
+}

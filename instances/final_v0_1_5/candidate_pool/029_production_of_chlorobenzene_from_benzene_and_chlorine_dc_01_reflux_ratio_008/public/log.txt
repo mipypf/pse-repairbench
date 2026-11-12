@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-10
+Target metric: P-dichlorobenzene mass_fraction
+Observed target value: 0.572180557888352
+Required target value: <= 0.5235179646638837

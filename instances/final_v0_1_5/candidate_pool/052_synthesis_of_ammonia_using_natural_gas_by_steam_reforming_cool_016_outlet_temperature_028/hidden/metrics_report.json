@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 493.15,
+    "target_mole_fraction": null,
+    "target_value": 0.0811152960945104
+  },
+  "faulty": {
+    "outlet_temperature": 463.15,
+    "target_mole_fraction": null,
+    "target_value": 0.0479044638013844
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-0ba4d0ac-b20d-4bf6-b6cf-96ea7681a47a",
+      "kind": "unit_operation",
+      "tag": "COOL-016"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 493.15
+  },
+  "instance_id": "052_synthesis_of_ammonia_using_natural_gas_by_steam_reforming_cool_016_outlet_temperature_028",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 493.15,
+    "target_mole_fraction": null,
+    "target_value": 0.0811152960945104
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/052_synthesis_of_ammonia_using_natural_gas_by_steam_reforming.zip",
+  "target": {
+    "component": "Carbon monoxide",
+    "direction": "min",
+    "family": "terminal_composition",
+    "metric": "mass_fraction",
+    "min": 0.0711520464065726,
+    "product_mole_fraction_min": null,
+    "stream": "Off gas",
+    "stream_id": "MAT-9568c649-8d27-41f7-af90-a391600b8503",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Off gas",
+    "threshold": 0.0711520464065726
+  },
+  "target_delta": 0.033210832293126005
+}

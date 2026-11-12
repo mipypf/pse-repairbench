@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 317.15,
+    "target_mole_fraction": null,
+    "target_value": 2309078.1750382
+  },
+  "faulty": {
+    "outlet_temperature": 287.15,
+    "target_mole_fraction": null,
+    "target_value": 348876.927305437
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-fb8ff58c-e576-4599-88fc-493b82e696e4",
+      "kind": "unit_operation",
+      "tag": "C-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 317.15
+  },
+  "instance_id": "003_dehydration_of_reservoir_fluid_using_methanol_c_01_outlet_temperature_007",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 317.15,
+    "target_mole_fraction": null,
+    "target_value": 2309078.1750382
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/003_dehydration_of_reservoir_fluid_using_methanol.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 1721017.8007183708,
+    "product_mole_fraction_min": null,
+    "stream": "S-10",
+    "stream_id": "MAT-9a9122e4-3919-41e7-9d62-7791314e1e7b",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-10",
+    "threshold": 1721017.8007183708
+  },
+  "target_delta": 1960201.247732763
+}

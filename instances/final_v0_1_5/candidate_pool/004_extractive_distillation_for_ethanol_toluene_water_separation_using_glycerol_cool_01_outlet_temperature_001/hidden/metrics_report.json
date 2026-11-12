@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 281.41,
+    "target_mole_fraction": null,
+    "target_value": 281.41
+  },
+  "faulty": {
+    "outlet_temperature": 251.41,
+    "target_mole_fraction": null,
+    "target_value": 251.41
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-311af607-55ff-47b1-b963-f4dd79df8c20",
+      "kind": "unit_operation",
+      "tag": "COOL-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 281.41
+  },
+  "instance_id": "004_extractive_distillation_for_ethanol_toluene_water_separation_using_glycerol_cool_01_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 281.41,
+    "target_mole_fraction": null,
+    "target_value": 281.41
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/004_extractive_distillation_for_ethanol_toluene_water_separation_using_glycerol.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 272.41,
+    "product_mole_fraction_min": null,
+    "stream": "S-09",
+    "stream_id": "MAT-cfc68ff4-4aad-4d25-b4f2-595ae302c680",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-09",
+    "threshold": 272.41
+  },
+  "target_delta": 30.00000000000003
+}

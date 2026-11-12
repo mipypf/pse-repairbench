@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_temperature": 311.15,
+    "target_mole_fraction": null,
+    "target_value": 310.786904588405
+  },
+  "faulty": {
+    "separator_temperature": 281.15,
+    "target_mole_fraction": null,
+    "target_value": 279.24980673018
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "temperature",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+      "kind": "unit_operation",
+      "tag": "SEPARATOR"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 311.15
+  },
+  "instance_id": "012_hydrodealkylation_of_toluene_to_benzene_separator_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "separator_temperature": 311.15,
+    "target_mole_fraction": null,
+    "target_value": 310.786904588405
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/012_hydrodealkylation_of_toluene_to_benzene.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 301.3257752309375,
+    "product_mole_fraction_min": null,
+    "stream": "PURGE STREAM",
+    "stream_id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "PURGE STREAM",
+    "threshold": 301.3257752309375
+  },
+  "target_delta": 31.537097858224968
+}

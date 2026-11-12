@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "VALV-8482025b-3efb-461d-867f-8ba04f2839e3",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "027_production_of_allyl_chloride_from_propylene_and_chlorine_valv_002_outlet_pressure_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 182150.0,
+      "stream": "Stream 5",
+      "stream_id": "MAT-6048a708-f08c-4b35-9ff2-cbb57a9e62fc",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Stream 5",
+      "threshold": 182150.0
+    },
+    "target_stream_tag": "Stream 5"
+  }
+}

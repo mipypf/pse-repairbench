@@ -1,0 +1,149 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_pressure_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "rationale": "Restore the unit outlet pressure to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "COMP-1875d93b-00cb-45b7-b774-03852f046d04",
+        "kind": "unit_operation",
+        "tag": "C-1"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 2300000.0
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet pressure is consistent with the requested process target.",
+      "target": "COMP-1875d93b-00cb-45b7-b774-03852f046d04",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet pressure of C-1 to 2300000.0.",
+      "target": "COMP-1875d93b-00cb-45b7-b774-03852f046d04",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "011_ethylene_oxide_production_from_styrene_c_1_outlet_pressure_003",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "4b0998783ea4197ff31c9ef779d5bb85bcc2039f49611bb34ae7cc51528c86dd",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "1406df779be20e75f737e26227ca799f6c828344167bb94918e1e4600361696a",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/011_ethylene_oxide_production_from_styrene.zip",
+    "curated_source_entry": "Ethylene_Oxide_Production_From_Styrene_By_Mr_Paresh_Rathod/flowsheet.dwxmz",
+    "detected_process_category": "reaction_recycle",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Compressor",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "c61723f8-7310-4bf3-8cd5-7a8f308b99a2.xml",
+      "e5fef34a-bb78-4e11-870b-f2dbd08d33c9.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 42,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "ParticleSizeDistributions",
+      "Spreadsheet",
+      "PanelLayout",
+      "MessagesLog",
+      "Results",
+      "GHGCompositions"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "Ethylene_Oxide_Production_from_Styrene.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "ParticleSizeDistributions",
+      "PanelLayout",
+      "Results",
+      "GHGCompositions"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Ethylene oxide",
+    "target_metric": {
+      "component": "Ethylene oxide",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.498730876905564,
+      "metric": "mole_fraction",
+      "stream": "11",
+      "stream_id": "MAT-b684857b-a243-4973-8e3a-17b21ddaa695",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "11",
+      "threshold": 0.498730876905564
+    },
+    "target_stream_tag": "11"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 1100,
+    "target_mole_fraction": null,
+    "target_value": 0.884444547375536
+  },
+  "faulty": {
+    "outlet_temperature": 1070,
+    "target_mole_fraction": null,
+    "target_value": 0.863344617467282
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-169baed2-3697-4a5a-b20b-5aa520b605cc",
+      "kind": "unit_operation",
+      "tag": "Heater"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 1100.0
+  },
+  "instance_id": "008_dry_methane_reforming_process_heater_outlet_temperature_007",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 1100,
+    "target_mole_fraction": null,
+    "target_value": 0.884444547375536
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/008_dry_methane_reforming_process.zip",
+  "target": {
+    "component": "Carbon monoxide",
+    "direction": "min",
+    "family": "terminal_composition",
+    "metric": "mass_fraction",
+    "min": 0.8781145684030598,
+    "product_mole_fraction_min": null,
+    "stream": "Cooler_out",
+    "stream_id": "MAT-a54bc1dc-48c0-4f55-8f5f-7c0e4298f63f",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Cooler_out",
+    "threshold": 0.8781145684030598
+  },
+  "target_delta": 0.021099929908254045
+}

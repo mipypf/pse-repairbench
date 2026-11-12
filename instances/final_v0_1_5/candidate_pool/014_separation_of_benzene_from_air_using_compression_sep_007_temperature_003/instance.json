@@ -1,0 +1,134 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "rationale": "Restore the unit separator temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+        "kind": "unit_operation",
+        "tag": "SEP-007"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 299.15
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit separator temperature is consistent with the requested process target.",
+      "target": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the separator temperature of SEP-007 to 299.15.",
+      "target": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "014_separation_of_benzene_from_air_using_compression_sep_007_temperature_003",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "d9c73894a0636e1764d2aa73ee42d7d5811dceadb2d4a4f333054cd579e9f4bc",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "2b7a47c792d1383bae9691c43fa4c23602f26e226d6716045b9724885daf26a9",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/flash_separator/014_separation_of_benzene_from_air_using_compression.zip",
+    "curated_source_entry": "Separation_Of_Benzene_From_Air_Using_Compression_By_Mr_Rohan_Adhikari_S/air_benzene_seperation_using_compression.dwxmz",
+    "detected_process_category": "flash_separator",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Vessel",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp3DDE.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 13,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "Spreadsheet",
+      "FlowsheetView",
+      "PanelLayout"
+    ],
+    "source_category": "flash_separator",
+    "source_format": "dwxmz",
+    "source_name": "Separation_of_Benzene_from_Air_using_Compression.zip",
+    "unsupported_sections": [
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "FlowsheetView",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 290.1499681922033,
+      "stream": "liquid benzene",
+      "stream_id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "liquid benzene",
+      "threshold": 290.1499681922033
+    },
+    "target_stream_tag": "liquid benzene"
+  }
+}

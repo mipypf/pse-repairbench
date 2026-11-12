@@ -1,0 +1,140 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Restore the unit outlet temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "AQ-41d4e056-2c7e-4293-8dba-7823598a05f5",
+        "kind": "unit_operation",
+        "tag": "HT-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 78.176
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet temperature is consistent with the requested process target.",
+      "target": "AQ-41d4e056-2c7e-4293-8dba-7823598a05f5",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet temperature of HT-01 to 78.176.",
+      "target": "AQ-41d4e056-2c7e-4293-8dba-7823598a05f5",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "001_4_step_refrigeration_cycle_with_propylene_ethylene_methane_and_nitrogen_ht_01_outlet_temperature_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "7a69b92ab88dfe387566c8ff53f47f0338c3021a18040cf9e62d4334135409db",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "6ba210defecd130106505380e17c1b775cc85990c8b02a161d2f144757401edd",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/other_candidate/001_4_step_refrigeration_cycle_with_propylene_ethylene_methane_and_nitrogen.zip",
+    "curated_source_entry": "4-Step_Refrigeration_Cycle_With_Propylene,_Ethylene,_Methane_And_Nitrogen_By_Ms_Yutika_Naik/Flowsheet.dwxmz",
+    "detected_process_category": "other_candidate",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Heater",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp11E4.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 82,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "other_candidate",
+    "source_format": "dwxmz",
+    "source_name": "001_4_step_refrigeration_cycle_with_propylene_ethylene_methane_and_nitrogen.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 69.17599999508403,
+      "stream": "M-24",
+      "stream_id": "MAT-fac0c9c9-4dda-4df4-8258-f8434c830dc9",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "M-24",
+      "threshold": 69.17599999508403
+    },
+    "target_stream_tag": "M-24"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "AQ-169baed2-3697-4a5a-b20b-5aa520b605cc",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "008_dry_methane_reforming_process_heater_outlet_temperature_007",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Carbon monoxide",
+    "target_metric": {
+      "component": "Carbon monoxide",
+      "direction": "min",
+      "family": "terminal_composition",
+      "metric": "mass_fraction",
+      "min": 0.8781145684030598,
+      "stream": "Cooler_out",
+      "stream_id": "MAT-a54bc1dc-48c0-4f55-8f5f-7c0e4298f63f",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Cooler_out",
+      "threshold": 0.8781145684030598
+    },
+    "target_stream_tag": "Cooler_out"
+  }
+}

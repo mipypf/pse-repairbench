@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-fb8ff58c-e576-4599-88fc-493b82e696e4",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "003_dehydration_of_reservoir_fluid_using_methanol_c_01_outlet_temperature_007",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 1721017.8007183708,
+      "stream": "S-10",
+      "stream_id": "MAT-9a9122e4-3919-41e7-9d62-7791314e1e7b",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-10",
+      "threshold": 1721017.8007183708
+    },
+    "target_stream_tag": "S-10"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 143.15,
+    "target_mole_fraction": null,
+    "target_value": 175.127765913191
+  },
+  "faulty": {
+    "outlet_temperature": 113.15,
+    "target_mole_fraction": null,
+    "target_value": 130.678392545343
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-350e26f4-01a4-4be1-85dd-25edca995f65",
+      "kind": "unit_operation",
+      "tag": "cooler 3"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 143.15
+  },
+  "instance_id": "010_liquefaction_of_biogas_cooler_3_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 143.15,
+    "target_mole_fraction": null,
+    "target_value": 175.127765913191
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/010_liquefaction_of_biogas.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 161.79295390283662,
+    "product_mole_fraction_min": null,
+    "stream": "Coolent out2",
+    "stream_id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Coolent out2",
+    "threshold": 161.79295390283662
+  },
+  "target_delta": 44.44937336784801
+}

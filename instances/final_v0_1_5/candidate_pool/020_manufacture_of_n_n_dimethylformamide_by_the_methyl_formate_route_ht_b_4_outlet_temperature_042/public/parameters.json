@@ -1,0 +1,383 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "HT-B-1: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-f6a0651f-bad1-45d5-a65c-214e90669684",
+        "kind": "unit_operation",
+        "tag": "HT-B-1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HT-B-2: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-b5cf3913-b1d5-4e30-bc6e-f7b0dc1a3a15",
+        "kind": "unit_operation",
+        "tag": "HT-B-2",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HT-B-4: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "802514831_AQ-f151c9fc-7c95-4e47-bfbd-9bc71dca4e22",
+        "kind": "unit_operation",
+        "tag": "HT-B-4",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "CL-B-1: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COOL-120d7b4c-5f7d-44ec-bad2-9ca5b43b4032",
+        "kind": "unit_operation",
+        "tag": "CL-B-1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "CL-A-1: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-bba96f6a-8b2a-4960-a3c2-6e57070a6866",
+        "kind": "unit_operation",
+        "tag": "CL-A-1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HT-A-3: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-f151c9fc-7c95-4e47-bfbd-9bc71dca4e22",
+        "kind": "unit_operation",
+        "tag": "HT-A-3",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HT-A-2: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "HEAT-970e0427-91fb-45d6-b80a-5df277f154cd",
+        "kind": "unit_operation",
+        "tag": "HT-A-2",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HT-A-1: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "HEAT-c086d9c6-1b3f-4ecd-9637-6874131b6a8e",
+        "kind": "unit_operation",
+        "tag": "HT-A-1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HT-A-3 (2): thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "HEAT-398454f7-5f94-45e3-b9a0-3d9abdff0806",
+        "kind": "unit_operation",
+        "tag": "HT-A-3 (2)",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HT-B-3: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "HEAT-c8dd1c15-c079-42bc-a40d-63691af2b1e6",
+        "kind": "unit_operation",
+        "tag": "HT-B-3",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-f6a0651f-bad1-45d5-a65c-214e90669684",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 323.15
+      },
+      "outlet_temperature": 323.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-B-1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-b5cf3913-b1d5-4e30-bc6e-f7b0dc1a3a15",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 323.15
+      },
+      "outlet_temperature": 323.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-B-2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "802514831_AQ-f151c9fc-7c95-4e47-bfbd-9bc71dca4e22",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 453.15
+      },
+      "outlet_temperature": 453.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-B-4",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "COOL-120d7b4c-5f7d-44ec-bad2-9ca5b43b4032",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 298.15
+      },
+      "outlet_temperature": 298.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "CL-B-1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-bba96f6a-8b2a-4960-a3c2-6e57070a6866",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 298.15
+      },
+      "outlet_temperature": 298.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "CL-A-1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-f151c9fc-7c95-4e47-bfbd-9bc71dca4e22",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 473.15
+      },
+      "outlet_temperature": 473.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-A-3",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "HEAT-970e0427-91fb-45d6-b80a-5df277f154cd",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 323.15
+      },
+      "outlet_temperature": 323.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-A-2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "HEAT-c086d9c6-1b3f-4ecd-9637-6874131b6a8e",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 323.15
+      },
+      "outlet_temperature": 323.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-A-1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "HEAT-398454f7-5f94-45e3-b9a0-3d9abdff0806",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 473.15
+      },
+      "outlet_temperature": 473.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-A-3 (2)",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "HEAT-c8dd1c15-c079-42bc-a40d-63691af2b1e6",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 473.15
+      },
+      "outlet_temperature": 473.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-B-3",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    }
+  ],
+  "product_target": {
+    "component": "N,n-dimethylformamide",
+    "direction": "min",
+    "metric": "mass_fraction",
+    "stream_tag": "SB-19",
+    "threshold": 0.11129291565080002
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "component": "N,n-dimethylformamide",
+    "direction": "min",
+    "family": "terminal_composition",
+    "metric": "mass_fraction",
+    "min": 0.11129291565080002,
+    "stream": "SB-19",
+    "stream_id": "2128506293_MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "SB-19",
+    "threshold": 0.11129291565080002
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-75437728-02da-4deb-9e78-bb43fcd22860",
+      "mass_flow": 5.67460567823337,
+      "molar_flow": 192.94658220495,
+      "tag": "SA-6",
+      "upstream_unit_guids": [
+        "RE-ccd0aef5-b905-425d-b028-1f0a907f245f"
+      ]
+    },
+    {
+      "id": "MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+      "mass_flow": 2.66583977942901,
+      "molar_flow": 85.83673616857,
+      "tag": "SA-18",
+      "upstream_unit_guids": [
+        "COUO-5afd958a-831a-40e0-9912-1005e375693b"
+      ]
+    },
+    {
+      "id": "MAT-3628eeb1-4e32-4ad5-85c4-4935b5f1e58f",
+      "mass_flow": 1.65955454221377,
+      "molar_flow": 49.161463608567,
+      "tag": "SA-20",
+      "upstream_unit_guids": [
+        "RESF-bba96f6a-8b2a-4960-a3c2-6e57070a6866"
+      ]
+    },
+    {
+      "id": "2128506293_MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+      "mass_flow": 2.71870200593674,
+      "molar_flow": 134.93113101936,
+      "tag": "SB-19",
+      "upstream_unit_guids": [
+        "COUO-f4cba791-ac65-4837-9216-d7f18eb9c21c"
+      ]
+    },
+    {
+      "id": "166514120_MAT-3628eeb1-4e32-4ad5-85c4-4935b5f1e58f",
+      "mass_flow": 9.17715217293712,
+      "molar_flow": 125.55476289612,
+      "tag": "SB-21",
+      "upstream_unit_guids": [
+        "COOL-120d7b4c-5f7d-44ec-bad2-9ca5b43b4032"
+      ]
+    },
+    {
+      "id": "MAT-edbe8fa3-6276-47a8-b8aa-9179e8eece2b",
+      "mass_flow": 2.10414608615931,
+      "molar_flow": 47.2744255925515,
+      "tag": "SB-8",
+      "upstream_unit_guids": [
+        "328797411_SEP-f0ff61fc-daaa-44b4-8b39-2284605be458"
+      ]
+    }
+  ]
+}

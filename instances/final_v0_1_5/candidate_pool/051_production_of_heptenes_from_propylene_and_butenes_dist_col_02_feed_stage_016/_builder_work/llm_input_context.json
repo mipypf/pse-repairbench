@@ -1,0 +1,45 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "target": {
+        "guid": "DC-6e29fea9-223d-4eca-b1a1-e08bd9d5d274",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "051_production_of_heptenes_from_propylene_and_butenes_dist_col_02_feed_stage_016",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "1-heptene",
+    "target_metric": {
+      "component": "1-heptene",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.02847395125241857,
+      "metric": "mass_fraction",
+      "stream": "S-22 ( HEXENES )",
+      "stream_id": "MAT-77ae95b7-1f41-4bdd-b49f-574530cb5c83",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-22 ( HEXENES )",
+      "threshold": 0.02847395125241857
+    },
+    "target_stream_tag": "S-22 ( HEXENES )"
+  }
+}

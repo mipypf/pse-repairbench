@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-08-25T05:06:18.469887+00:00",
+  "source_success_csv": "metadata\\dwsim_sources\\dwsim_headless_successes.csv",
+  "source_catalog_csv": "metadata\\dwsim_sources\\raw_data_catalog.csv",
+  "source_raw_dir": "raw_data\\DWSIM_data",
+  "success_definition": "DWSIM.Automation.Automation3.CalculateFlowsheet4 returned solved_after=true with zero exceptions",
+  "total_archives": 161,
+  "total_size_bytes": 20853065,
+  "total_size_mb": 19.89,
+  "by_category": {
+    "distillation": 68,
+    "flash_separator": 18,
+    "other_candidate": 21,
+    "reaction_recycle": 54
+  },
+  "excluded_pdf_files": 161
+}

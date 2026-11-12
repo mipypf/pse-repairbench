@@ -1,0 +1,592 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after outlet temperature injection.",
+  "graphic_object_count": 28,
+  "graphic_objects": [
+    {
+      "name": "MIST-3af2f875-e258-4488-bf20-79d9f79f5b07",
+      "object_type": "NodeIn",
+      "tag": "Mixer"
+    },
+    {
+      "name": "MAT-a0628cd8-e474-45e1-9e95-50de5facfd7b",
+      "object_type": "MaterialStream",
+      "tag": "Nitric acid"
+    },
+    {
+      "name": "MAT-655a6b94-555a-4b3c-b787-c2ec0ed7979d",
+      "object_type": "MaterialStream",
+      "tag": "Toluene"
+    },
+    {
+      "name": "MAT-b455c5da-63e4-4387-8f05-c9b31b220026",
+      "object_type": "MaterialStream",
+      "tag": "Sulfuric acid"
+    },
+    {
+      "name": "MAT-433a778b-32a0-4878-a913-c588b1d246ff",
+      "object_type": "MaterialStream",
+      "tag": "Mixed(1)"
+    },
+    {
+      "name": "MAT-94645142-82a3-4544-878a-8bcbc1ed2751",
+      "object_type": "MaterialStream",
+      "tag": "Heated stream"
+    },
+    {
+      "name": "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2",
+      "object_type": "ComponentSeparator",
+      "tag": "Seperator"
+    },
+    {
+      "name": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+      "object_type": "MaterialStream",
+      "tag": "Spent acid"
+    },
+    {
+      "name": "EN-1afb5e61-0236-40a2-a69d-62d79ca4009d",
+      "object_type": "EnergyStream",
+      "tag": "E2"
+    },
+    {
+      "name": "MAT-224de958-87dd-4c53-b52f-dd1c0f63ea01",
+      "object_type": "MaterialStream",
+      "tag": "DNT + others"
+    },
+    {
+      "name": "EN-4ddc623b-361b-4ac6-994b-9ad3198ee126",
+      "object_type": "EnergyStream",
+      "tag": "E4"
+    },
+    {
+      "name": "EN-a49aca83-c425-4e87-b9e3-0b8c6c953e42",
+      "object_type": "EnergyStream",
+      "tag": "E5"
+    },
+    {
+      "name": "MIST-03e00b7e-1b67-4f28-b681-16a2d7a73274",
+      "object_type": "NodeIn",
+      "tag": "Mixer(1)"
+    },
+    {
+      "name": "EN-09aa5d46-4737-44fb-b667-24fa74c7aea6",
+      "object_type": "EnergyStream",
+      "tag": "E6"
+    },
+    {
+      "name": "CSTR-32956965-cb2f-40e4-929c-ed6177f55d62",
+      "object_type": "RCT_CSTR",
+      "tag": "MNT nitration"
+    },
+    {
+      "name": "MAT-bb80b8ac-9b72-41de-99cd-54c2b1ab1f20",
+      "object_type": "MaterialStream",
+      "tag": "MNT"
+    },
+    {
+      "name": "EN-0cc88015-b514-4684-9b8b-31e748ac19ee",
+      "object_type": "EnergyStream",
+      "tag": "E-1"
+    },
+    {
+      "name": "MSTR-dfda7fcd-eb8a-44a6-a9c0-14455c5f815d",
+      "object_type": "MaterialStream",
+      "tag": "Mixed"
+    },
+    {
+      "name": "CSTR-0198d534-ad92-4acd-8376-04dc5565177d",
+      "object_type": "RCT_CSTR",
+      "tag": "DNT Nitration"
+    },
+    {
+      "name": "MAT-c900bdbd-924d-4150-b5ee-73eb0a08cfb8",
+      "object_type": "MaterialStream",
+      "tag": "Sulfuric acid"
+    },
+    {
+      "name": "AQ-662497a8-639f-4f20-980f-3035288b7f0c",
+      "object_type": "Heater",
+      "tag": "Heater"
+    },
+    {
+      "name": "MAT-19199869-9c0e-4bd9-a728-ae5f611b986c",
+      "object_type": "MaterialStream",
+      "tag": "Heated Mixture"
+    },
+    {
+      "name": "EN-0f0eef44-6726-40e2-8622-75bf79d30c78",
+      "object_type": "EnergyStream",
+      "tag": "E3"
+    },
+    {
+      "name": "AQ-2b92bc7d-dff2-4384-9f86-66eca8b9d146",
+      "object_type": "Heater",
+      "tag": "HEAT-045"
+    },
+    {
+      "name": "MSTR-24c47fa7-dc79-42fe-9101-6e00d2b2f19c",
+      "object_type": "MaterialStream",
+      "tag": "DNT (8)"
+    },
+    {
+      "name": "MAT-32126b95-086c-4917-85e5-b6c886d756a5",
+      "object_type": "MaterialStream",
+      "tag": "Lights"
+    },
+    {
+      "name": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+      "object_type": "MaterialStream",
+      "tag": "Pure 2,4 DNT"
+    },
+    {
+      "name": "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1",
+      "object_type": "CapeOpenUO",
+      "tag": "Distillation Column (CHEMSEP)"
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "CapeOpenUnitOperation",
+      "guid": "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1",
+      "object_class": "CAPEOPEN",
+      "tag": "Distillation Column (CHEMSEP)",
+      "type": "DWSIM.UnitOperations.UnitOperations.CapeOpenUO"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+      "object_class": "Streams",
+      "tag": "Pure 2,4 DNT",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-32126b95-086c-4917-85e5-b6c886d756a5",
+      "object_class": "Streams",
+      "tag": "Lights",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": null,
+      "guid": "MSTR-24c47fa7-dc79-42fe-9101-6e00d2b2f19c",
+      "object_class": "Streams",
+      "tag": "DNT (8)",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-0f0eef44-6726-40e2-8622-75bf79d30c78",
+      "object_class": "Streams",
+      "tag": "E3",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-19199869-9c0e-4bd9-a728-ae5f611b986c",
+      "object_class": "Streams",
+      "tag": "Heated Mixture",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Aquecedor",
+      "guid": "AQ-662497a8-639f-4f20-980f-3035288b7f0c",
+      "object_class": "Exchangers",
+      "tag": "Heater",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-09aa5d46-4737-44fb-b667-24fa74c7aea6",
+      "object_class": "Streams",
+      "tag": "E6",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-c900bdbd-924d-4150-b5ee-73eb0a08cfb8",
+      "object_class": "Streams",
+      "tag": "Sulfuric acid",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "ReatorCSTR",
+      "guid": "CSTR-0198d534-ad92-4acd-8376-04dc5565177d",
+      "object_class": "Reactors",
+      "tag": "DNT Nitration",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_CSTR"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-4ddc623b-361b-4ac6-994b-9ad3198ee126",
+      "object_class": "Streams",
+      "tag": "E4",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-433a778b-32a0-4878-a913-c588b1d246ff",
+      "object_class": "Streams",
+      "tag": "Mixed(1)",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Misturador",
+      "guid": "MIST-03e00b7e-1b67-4f28-b681-16a2d7a73274",
+      "object_class": "MixersSplitters",
+      "tag": "Mixer(1)",
+      "type": "DWSIM.UnitOperations.UnitOperations.Mixer"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-b455c5da-63e4-4387-8f05-c9b31b220026",
+      "object_class": "Streams",
+      "tag": "Sulfuric acid",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-655a6b94-555a-4b3c-b787-c2ec0ed7979d",
+      "object_class": "Streams",
+      "tag": "Toluene",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-a0628cd8-e474-45e1-9e95-50de5facfd7b",
+      "object_class": "Streams",
+      "tag": "Nitric acid",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Misturador",
+      "guid": "MIST-3af2f875-e258-4488-bf20-79d9f79f5b07",
+      "object_class": "MixersSplitters",
+      "tag": "Mixer",
+      "type": "DWSIM.UnitOperations.UnitOperations.Mixer"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-224de958-87dd-4c53-b52f-dd1c0f63ea01",
+      "object_class": "Streams",
+      "tag": "DNT + others",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Aquecedor",
+      "guid": "AQ-2b92bc7d-dff2-4384-9f86-66eca8b9d146",
+      "object_class": "Exchangers",
+      "tag": "HEAT-045",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-94645142-82a3-4544-878a-8bcbc1ed2751",
+      "object_class": "Streams",
+      "tag": "Heated stream",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "ComponentSeparator",
+      "guid": "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2",
+      "object_class": "Separators",
+      "tag": "Seperator",
+      "type": "DWSIM.UnitOperations.UnitOperations.ComponentSeparator"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+      "object_class": "Streams",
+      "tag": "Spent acid",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-1afb5e61-0236-40a2-a69d-62d79ca4009d",
+      "object_class": "Streams",
+      "tag": "E2",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-a49aca83-c425-4e87-b9e3-0b8c6c953e42",
+      "object_class": "Streams",
+      "tag": "E5",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": null,
+      "guid": "MSTR-dfda7fcd-eb8a-44a6-a9c0-14455c5f815d",
+      "object_class": "Streams",
+      "tag": "Mixed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "ReatorCSTR",
+      "guid": "CSTR-32956965-cb2f-40e4-929c-ed6177f55d62",
+      "object_class": "Reactors",
+      "tag": "MNT nitration",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_CSTR"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-bb80b8ac-9b72-41de-99cd-54c2b1ab1f20",
+      "object_class": "Streams",
+      "tag": "MNT",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-0cc88015-b514-4684-9b8b-31e748ac19ee",
+      "object_class": "Streams",
+      "tag": "E-1",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 28,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-3af2f875-e258-4488-bf20-79d9f79f5b07"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-a0628cd8-e474-45e1-9e95-50de5facfd7b",
+        "is_terminal_material_stream": false,
+        "tag": "Nitric acid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-3af2f875-e258-4488-bf20-79d9f79f5b07"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-655a6b94-555a-4b3c-b787-c2ec0ed7979d",
+        "is_terminal_material_stream": false,
+        "tag": "Toluene",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-03e00b7e-1b67-4f28-b681-16a2d7a73274"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-b455c5da-63e4-4387-8f05-c9b31b220026",
+        "is_terminal_material_stream": false,
+        "tag": "Sulfuric acid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-662497a8-639f-4f20-980f-3035288b7f0c"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-433a778b-32a0-4878-a913-c588b1d246ff",
+        "is_terminal_material_stream": false,
+        "tag": "Mixed(1)",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-03e00b7e-1b67-4f28-b681-16a2d7a73274"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-94645142-82a3-4544-878a-8bcbc1ed2751",
+        "is_terminal_material_stream": false,
+        "tag": "Heated stream",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-2b92bc7d-dff2-4384-9f86-66eca8b9d146"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+        "is_terminal_material_stream": true,
+        "tag": "Spent acid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-2b92bc7d-dff2-4384-9f86-66eca8b9d146"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-224de958-87dd-4c53-b52f-dd1c0f63ea01",
+        "is_terminal_material_stream": false,
+        "tag": "DNT + others",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CSTR-0198d534-ad92-4acd-8376-04dc5565177d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-03e00b7e-1b67-4f28-b681-16a2d7a73274"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-bb80b8ac-9b72-41de-99cd-54c2b1ab1f20",
+        "is_terminal_material_stream": false,
+        "tag": "MNT",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CSTR-32956965-cb2f-40e4-929c-ed6177f55d62"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CSTR-32956965-cb2f-40e4-929c-ed6177f55d62"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MSTR-dfda7fcd-eb8a-44a6-a9c0-14455c5f815d",
+        "is_terminal_material_stream": false,
+        "tag": "Mixed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-3af2f875-e258-4488-bf20-79d9f79f5b07"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-3af2f875-e258-4488-bf20-79d9f79f5b07"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-c900bdbd-924d-4150-b5ee-73eb0a08cfb8",
+        "is_terminal_material_stream": false,
+        "tag": "Sulfuric acid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "CSTR-0198d534-ad92-4acd-8376-04dc5565177d"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-19199869-9c0e-4bd9-a728-ae5f611b986c",
+        "is_terminal_material_stream": false,
+        "tag": "Heated Mixture",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-662497a8-639f-4f20-980f-3035288b7f0c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MSTR-24c47fa7-dc79-42fe-9101-6e00d2b2f19c",
+        "is_terminal_material_stream": false,
+        "tag": "DNT (8)",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-32126b95-086c-4917-85e5-b6c886d756a5",
+        "is_terminal_material_stream": true,
+        "tag": "Lights",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+        "is_terminal_material_stream": true,
+        "tag": "Pure 2,4 DNT",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+        "tag": "Spent acid",
+        "upstream_unit_guids": [
+          "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+        ]
+      },
+      {
+        "id": "MAT-32126b95-086c-4917-85e5-b6c886d756a5",
+        "tag": "Lights",
+        "upstream_unit_guids": [
+          "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+        ]
+      },
+      {
+        "id": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+        "tag": "Pure 2,4 DNT",
+        "upstream_unit_guids": [
+          "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": "OutletTemperature",
+    "guid": "AQ-662497a8-639f-4f20-980f-3035288b7f0c",
+    "kind": "unit_operation",
+    "tag": "Heater",
+    "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+  },
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "guid": "AQ-662497a8-639f-4f20-980f-3035288b7f0c",
+    "kind": "unit_operation",
+    "tag": "Heater",
+    "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+      "tag": "Spent acid",
+      "upstream_unit_guids": [
+        "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+      ]
+    },
+    {
+      "id": "MAT-32126b95-086c-4917-85e5-b6c886d756a5",
+      "tag": "Lights",
+      "upstream_unit_guids": [
+        "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+      ]
+    },
+    {
+      "id": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+      "tag": "Pure 2,4 DNT",
+      "upstream_unit_guids": [
+        "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-a831d6d0-01ae-45be-8c14-a3ee34137d8e",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "014_hydrogen_production_from_biogas_he_05_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 320.14999973097633,
+      "metric": "temperature",
+      "stream": "H2",
+      "stream_id": "MAT-80d15d6c-6747-4cdb-8ad0-e5a5b1eef678",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "H2",
+      "threshold": 320.14999973097633
+    },
+    "target_stream_tag": "H2"
+  }
+}

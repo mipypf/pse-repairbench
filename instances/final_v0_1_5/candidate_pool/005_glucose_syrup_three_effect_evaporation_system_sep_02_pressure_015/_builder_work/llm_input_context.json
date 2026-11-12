@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-081f084d-831b-46db-af90-0f3cfe7574cf",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "005_glucose_syrup_three_effect_evaporation_system_sep_02_pressure_015",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_flow",
+      "metric": "molar_flow",
+      "min": 2.725898253631959,
+      "stream": "S-10",
+      "stream_id": "MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-10",
+      "threshold": 2.725898253631959
+    },
+    "target_stream_tag": "S-10"
+  }
+}

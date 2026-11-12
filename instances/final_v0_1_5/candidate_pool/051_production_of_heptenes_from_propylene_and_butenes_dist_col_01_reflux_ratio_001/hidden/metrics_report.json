@@ -1,0 +1,56 @@
+{
+  "base": {
+    "reflux_ratio": 0.799999999997587,
+    "target_mole_fraction": null,
+    "target_value": 318.15
+  },
+  "faulty": {
+    "reflux_ratio": 0.0799999999995174,
+    "target_mole_fraction": null,
+    "target_value": 224.083509093226
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "reflux_ratio",
+      "namespace": "column_specification"
+    },
+    "target": {
+      "guid": "DC-c2ced87f-8428-4cd9-89b6-b131eeaebdce",
+      "kind": "unit_operation",
+      "tag": "DIST COL-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": null,
+    "value": 0.799999999997587
+  },
+  "instance_id": "051_production_of_heptenes_from_propylene_and_butenes_dist_col_01_reflux_ratio_001",
+  "repairable": true,
+  "repaired": {
+    "reflux_ratio": 0.799999999995174,
+    "target_mole_fraction": null,
+    "target_value": 318.15
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/distillation/051_production_of_heptenes_from_propylene_and_butenes.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 289.9300527279678,
+    "product_mole_fraction_min": null,
+    "stream": "S-22 ( HEXENES )",
+    "stream_id": "MAT-77ae95b7-1f41-4bdd-b49f-574530cb5c83",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-22 ( HEXENES )",
+    "threshold": 289.9300527279678
+  },
+  "target_delta": 94.06649090677396
+}

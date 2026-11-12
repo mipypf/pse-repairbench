@@ -1,0 +1,45 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "target": {
+        "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "002_air_liquefaction_using_linde_single_column_system_dc_01_reflux_ratio_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Nitrogen",
+    "target_metric": {
+      "component": "Nitrogen",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.0077604090926189275,
+      "metric": "mole_fraction",
+      "stream": "S-08",
+      "stream_id": "MAT-2519ae05-5427-41dd-9478-ba6dab5f5678",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-08",
+      "threshold": 0.0077604090926189275
+    },
+    "target_stream_tag": "S-08"
+  }
+}

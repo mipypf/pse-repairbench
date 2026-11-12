@@ -1,0 +1,141 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Restore the unit outlet temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "RESF-7c3e3af4-c21f-4332-aca7-3c97838930e7",
+        "kind": "unit_operation",
+        "tag": "CO-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 322.039
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet temperature is consistent with the requested process target.",
+      "target": "RESF-7c3e3af4-c21f-4332-aca7-3c97838930e7",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet temperature of CO-01 to 322.039.",
+      "target": "RESF-7c3e3af4-c21f-4332-aca7-3c97838930e7",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "006_improvement_of_the_monochlorobenzene_separation_process_through_heat_integration_co_01_outlet_temperature_004",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "fb691605350487c3c9d6e6d8a8fcf20aa515edc782cf9e0d47dfb9d82b4c6e19",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "496ffef2352cf31871f3e78d09488e0af09071e91e889fd4584500909af71d45",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/flash_separator/006_improvement_of_the_monochlorobenzene_separation_process_through_heat_integration.zip",
+    "curated_source_entry": "Improvement_Of_The_Monochlorobenzene_Separation_Process_Through_Heat_Integration_By_Ms_Ana_Paula_Ribeiro_Paiva/Flowsheet.dwxmz",
+    "detected_process_category": "flash_separator",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Cooler",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "b6579896-6fb6-4de6-a6c0-7b904db9b665.xml",
+      "05626dff-7d41-441b-90d8-eb8ec506a6c3.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 34,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "flash_separator",
+    "source_format": "dwxmz",
+    "source_name": "006_improvement_of_the_monochlorobenzene_separation_process_through_heat_integration.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 347.7842512691565,
+      "metric": "temperature",
+      "stream": "S-06",
+      "stream_id": "MAT-8c76857c-a75c-4bbc-81b2-634095601e4e",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-06",
+      "threshold": 347.7842512691565
+    },
+    "target_stream_tag": "S-06"
+  }
+}

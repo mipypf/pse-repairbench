@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 100000.026040658,
+    "target_mole_fraction": null,
+    "target_value": 100000.026040658
+  },
+  "faulty": {
+    "outlet_pressure": 50000.013020329,
+    "target_mole_fraction": null,
+    "target_value": 50000.013020329
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6",
+      "kind": "unit_operation",
+      "tag": "VALV-013"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 100000.026040658
+  },
+  "instance_id": "003_a_simple_de_humidification_system_valv_013_outlet_pressure_009",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 100000.026040658,
+    "target_mole_fraction": null,
+    "target_value": 100000.026040658
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/003_a_simple_de_humidification_system.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 85000.0221345593,
+    "product_mole_fraction_min": null,
+    "stream": "dehumidified air",
+    "stream_id": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "dehumidified air",
+    "threshold": 85000.0221345593
+  },
+  "target_delta": 50000.013020329
+}

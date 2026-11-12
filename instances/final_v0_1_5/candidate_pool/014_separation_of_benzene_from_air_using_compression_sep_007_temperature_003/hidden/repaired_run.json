@@ -1,0 +1,305 @@
+{
+  "column": null,
+  "duration_sec": 2.241,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 13,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/repaired_calculated.dwxmz",
+  "simulation_path": "hidden/repaired.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COMP-b94d9cad-c70e-478a-b96e-52615f040364"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-c7f25921-1bd6-4d9c-9682-2aab93d6389b",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-866cd520-75ec-45e5-b3ea-a62b8e3958e1"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-e70ce5c2-9c7f-4a3f-b3f4-1d093e1914dc",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "compressed gas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-b94d9cad-c70e-478a-b96e-52615f040364"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-0a35e700-5e2a-40bc-8f85-77696635f840",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "cooler outlet",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-866cd520-75ec-45e5-b3ea-a62b8e3958e1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4aa39093-653c-4e27-a8d2-7b8bde060aa7",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "purified air",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "liquid benzene",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "valve outlet",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+        "mass_flow": 0.0478174230613059,
+        "molar_flow": 0.670966959878289,
+        "tag": "liquid benzene",
+        "upstream_unit_guids": [
+          "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+        ]
+      },
+      {
+        "id": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+        "mass_flow": 0.952180777398139,
+        "molar_flow": 32.8357390052402,
+        "tag": "valve outlet",
+        "upstream_unit_guids": [
+          "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.950181959410999,
+          "mass_fraction": 0.997900799895791,
+          "molar_flow": 32.8101505321478,
+          "mole_fraction": 0.999220712739606
+        },
+        "Benzene": {
+          "mass_flow": 0.00199881798714026,
+          "mass_fraction": 0.00209920010420929,
+          "molar_flow": 0.0255884730924067,
+          "mole_fraction": 0.000779287260394022
+        }
+      },
+      "id": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+      "mass_flow": 0.952180777398139,
+      "molar_flow": 32.8357390052402,
+      "pressure": 101325,
+      "tag": "valve outlet",
+      "temperature": 299.15,
+      "total_energy_flow": 3.07446325489066
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.00270692988636676,
+          "mass_fraction": 0.0566096981616146,
+          "molar_flow": 0.0934713358552057,
+          "mole_fraction": 0.139308403311187
+        },
+        "Benzene": {
+          "mass_flow": 0.0451104931749391,
+          "mass_fraction": 0.943390301838385,
+          "molar_flow": 0.577495624023083,
+          "mole_fraction": 0.860691596688813
+        }
+      },
+      "id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+      "mass_flow": 0.0478174230613059,
+      "molar_flow": 0.670966959878289,
+      "pressure": 14489475,
+      "tag": "liquid benzene",
+      "temperature": 299.15,
+      "total_energy_flow": 29.0942446864721
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.950181959410999,
+          "mass_fraction": 0.997900799895791,
+          "molar_flow": 32.8101505321478,
+          "mole_fraction": 0.999220712739606
+        },
+        "Benzene": {
+          "mass_flow": 0.00199881798714026,
+          "mass_fraction": 0.00209920010420929,
+          "molar_flow": 0.0255884730924067,
+          "mole_fraction": 0.000779287260394022
+        }
+      },
+      "id": "MAT-4aa39093-653c-4e27-a8d2-7b8bde060aa7",
+      "mass_flow": 0.952180777398139,
+      "molar_flow": 32.8357390052402,
+      "pressure": 14489475,
+      "tag": "purified air",
+      "temperature": 299.15,
+      "total_energy_flow": 3.07446325489066
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.952887829064333,
+          "mass_fraction": 0.952887829064333,
+          "molar_flow": 32.9035852577463,
+          "mole_fraction": 0.982
+        },
+        "Benzene": {
+          "mass_flow": 0.0471121709356667,
+          "mass_fraction": 0.0471121709356667,
+          "molar_flow": 0.603120707372132,
+          "mole_fraction": 0.018
+        }
+      },
+      "id": "MAT-0a35e700-5e2a-40bc-8f85-77696635f840",
+      "mass_flow": 1,
+      "molar_flow": 33.5067059651184,
+      "pressure": 14489475,
+      "tag": "cooler outlet",
+      "temperature": 299.15,
+      "total_energy_flow": 32.1717081592212
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.952887829064333,
+          "mass_fraction": 0.952887829064333,
+          "molar_flow": 32.9035852577463,
+          "mole_fraction": 0.982
+        },
+        "Benzene": {
+          "mass_flow": 0.0471121709356667,
+          "mass_fraction": 0.0471121709356667,
+          "molar_flow": 0.603120707372132,
+          "mole_fraction": 0.018
+        }
+      },
+      "id": "MAT-e70ce5c2-9c7f-4a3f-b3f4-1d093e1914dc",
+      "mass_flow": 1,
+      "molar_flow": 33.5067059651184,
+      "pressure": 14489475,
+      "tag": "compressed gas",
+      "temperature": 1057.19506495739,
+      "total_energy_flow": 898.90170700035
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.952887829064333,
+          "mass_fraction": 0.952887829064333,
+          "molar_flow": 32.9035852577463,
+          "mole_fraction": 0.982
+        },
+        "Benzene": {
+          "mass_flow": 0.0471121709356667,
+          "mass_fraction": 0.0471121709356667,
+          "molar_flow": 0.603120707372132,
+          "mole_fraction": 0.018
+        }
+      },
+      "id": "MAT-c7f25921-1bd6-4d9c-9682-2aab93d6389b",
+      "mass_flow": 1,
+      "molar_flow": 33.5067059651184,
+      "pressure": 101325,
+      "tag": "feed",
+      "temperature": 299.15,
+      "total_energy_flow": 50.9908352800411
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": null,
+    "delta_p": null,
+    "flash_pressure": 14489475,
+    "flash_temperature": 299.15,
+    "guid": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+    "outlet_pressure": null,
+    "outlet_temperature": null,
+    "override_p": "true",
+    "override_t": "true",
+    "p_out": null,
+    "pout": null,
+    "tag": "SEP-007",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+      "mass_flow": 0.0478174230613059,
+      "molar_flow": 0.670966959878289,
+      "tag": "liquid benzene",
+      "upstream_unit_guids": [
+        "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+      ]
+    },
+    {
+      "id": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+      "mass_flow": 0.952180777398139,
+      "molar_flow": 32.8357390052402,
+      "tag": "valve outlet",
+      "upstream_unit_guids": [
+        "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-081f084d-831b-46db-af90-0f3cfe7574cf",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "005_glucose_syrup_three_effect_evaporation_system_sep_02_temperature_005",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 351.8642052729911,
+      "metric": "temperature",
+      "stream": "S-15",
+      "stream_id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-15",
+      "threshold": 351.8642052729911
+    },
+    "target_stream_tag": "S-15"
+  }
+}

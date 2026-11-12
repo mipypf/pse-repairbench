@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 600000,
+    "target_mole_fraction": null,
+    "target_value": 600000.0
+  },
+  "faulty": {
+    "outlet_pressure": 300000,
+    "target_mole_fraction": null,
+    "target_value": 300000.0
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "COMP-a5a7b51b-b153-4b82-81d7-cf51dfa0e8cb",
+      "kind": "unit_operation",
+      "tag": "C-1"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 600000.0
+  },
+  "instance_id": "011_rectisol_process_for_syngas_with_co2_for_enhanced_oil_recovery_c_1_outlet_pressure_031",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 600000,
+    "target_mole_fraction": null,
+    "target_value": 600000.0
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/011_rectisol_process_for_syngas_with_co2_for_enhanced_oil_recovery.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 510000.0,
+    "product_mole_fraction_min": null,
+    "stream": "43",
+    "stream_id": "MAT-c5bd96e2-2750-4f7a-832b-092dc021797f",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "43",
+    "threshold": 510000.0
+  },
+  "target_delta": 300000.0
+}

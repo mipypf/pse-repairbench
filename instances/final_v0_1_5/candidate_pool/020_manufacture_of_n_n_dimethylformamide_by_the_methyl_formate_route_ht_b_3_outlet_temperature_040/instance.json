@@ -1,0 +1,142 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Restore the unit outlet temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "HEAT-c8dd1c15-c079-42bc-a40d-63691af2b1e6",
+        "kind": "unit_operation",
+        "tag": "HT-B-3"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 473.15
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet temperature is consistent with the requested process target.",
+      "target": "HEAT-c8dd1c15-c079-42bc-a40d-63691af2b1e6",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet temperature of HT-B-3 to 473.15.",
+      "target": "HEAT-c8dd1c15-c079-42bc-a40d-63691af2b1e6",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "020_manufacture_of_n_n_dimethylformamide_by_the_methyl_formate_route_ht_b_3_outlet_temperature_040",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "da09f67241286b397171186d679a2e1838d51c753230ea17c7b81b5607b5197a",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "ff7345c04bc696babefbcc8949813f1a87fb4e1bab0320a74a03ce1c09ca4c77",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/020_manufacture_of_n_n_dimethylformamide_by_the_methyl_formate_route.zip",
+    "curated_source_entry": "Manufacture_Of_N,_N-Dimethylformamide_By_The_Methyl_Formate_Route_By_Mr_Venkatta_Sharma_S/Flowsheet.dwxmz",
+    "detected_process_category": "reaction_recycle",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Heater",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "c3064c3f-3e58-45a2-86ad-ccf993440884.xml",
+      "48f185df-7899-4e92-9ef1-e555233e0916.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 83,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "020_manufacture_of_n_n_dimethylformamide_by_the_methyl_formate_route.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "N,n-dimethylformamide",
+    "target_metric": {
+      "component": "N,n-dimethylformamide",
+      "direction": "min",
+      "family": "terminal_composition",
+      "metric": "mass_fraction",
+      "min": 0.10998697896360768,
+      "stream": "SB-19",
+      "stream_id": "2128506293_MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "SB-19",
+      "threshold": 0.10998697896360768
+    },
+    "target_stream_tag": "SB-19"
+  }
+}

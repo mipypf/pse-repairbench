@@ -1,0 +1,487 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after separator temperature injection.",
+  "graphic_object_count": 23,
+  "graphic_objects": [
+    {
+      "name": "MAT-25e172e1-f550-4d6f-b0f7-4af44021c572",
+      "object_type": "MaterialStream",
+      "tag": "Flue Gases from Steam Methane Reforming(SMR)"
+    },
+    {
+      "name": "MAT-10619d53-ce3a-4b09-819d-9ab51c5399aa",
+      "object_type": "MaterialStream",
+      "tag": "High Temperature WGSR Inlet"
+    },
+    {
+      "name": "RESF-9e66f56a-06c1-4d8e-9b10-6efb7e064523",
+      "object_type": "Cooler",
+      "tag": "Cooler 1"
+    },
+    {
+      "name": "EN-fb5f9a0d-1d46-4c0b-8d08-bfe189f14c03",
+      "object_type": "EnergyStream",
+      "tag": "Energy Stream 1"
+    },
+    {
+      "name": "RC-2c850083-89a7-4cf9-a44c-3833fc638994",
+      "object_type": "RCT_Conversion",
+      "tag": "HTS Reactor"
+    },
+    {
+      "name": "MAT-d56c2931-3f04-46db-b2c9-54d71fafae0e",
+      "object_type": "MaterialStream",
+      "tag": "Overhead"
+    },
+    {
+      "name": "EN-c5697381-b221-434c-aca2-434587050edd",
+      "object_type": "EnergyStream",
+      "tag": "Energy Stream 2"
+    },
+    {
+      "name": "MAT-9017d75b-e1aa-490b-9691-05a3f65b1ceb",
+      "object_type": "MaterialStream",
+      "tag": "Dummy"
+    },
+    {
+      "name": "RESF-fc7510a0-ca1f-43c0-9d8f-f9ccee0b5067",
+      "object_type": "Cooler",
+      "tag": "Cooler 2"
+    },
+    {
+      "name": "MAT-35f5024a-e6f6-4cca-8e90-8af7e866484f",
+      "object_type": "MaterialStream",
+      "tag": "Low Temperature WGSR Inlet"
+    },
+    {
+      "name": "EN-dd5e8afe-e608-453c-85a1-a69505298206",
+      "object_type": "EnergyStream",
+      "tag": "Energy Stream 3"
+    },
+    {
+      "name": "RC-45fc2785-d8c8-4110-b064-c7b467db6905",
+      "object_type": "RCT_Conversion",
+      "tag": "LTS Reactor"
+    },
+    {
+      "name": "MAT-c90f91bd-0409-47d7-ba4a-5f5bb36890cf",
+      "object_type": "MaterialStream",
+      "tag": "Vapor"
+    },
+    {
+      "name": "MAT-f5b6aa76-6635-4022-bec8-35d298ecbbf6",
+      "object_type": "MaterialStream",
+      "tag": "Dummy 2"
+    },
+    {
+      "name": "EN-64570c43-fb53-463a-9b17-1aaca2636170",
+      "object_type": "EnergyStream",
+      "tag": "Energy Stream 4"
+    },
+    {
+      "name": "RESF-fba3bd36-c991-44f8-b5cd-77f887acde02",
+      "object_type": "Cooler",
+      "tag": "Cooler 3"
+    },
+    {
+      "name": "MAT-11a34680-07b7-46c8-aca6-808fa8a2098d",
+      "object_type": "MaterialStream",
+      "tag": "Cooled Vapor"
+    },
+    {
+      "name": "EN-918c19a7-41fd-462a-87b5-2ee20da5ecd2",
+      "object_type": "EnergyStream",
+      "tag": "Energy Stream 5"
+    },
+    {
+      "name": "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4",
+      "object_type": "Vessel",
+      "tag": "Gas-liq Seperator"
+    },
+    {
+      "name": "MAT-9e3e51c1-c601-496d-9f80-b44701525e2a",
+      "object_type": "MaterialStream",
+      "tag": "Product Gas"
+    },
+    {
+      "name": "MAT-bc051748-71c5-4e69-8dd8-9dba4e54a5b3",
+      "object_type": "MaterialStream",
+      "tag": "Water"
+    },
+    {
+      "name": "EN-175f207b-6cb9-4ca8-8707-287f82c94ebe",
+      "object_type": "EnergyStream",
+      "tag": "Energy Stream 6"
+    },
+    {
+      "name": "MASTERTABLE-33018b31-048d-41fc-ae75-42d543b11cc3",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-175f207b-6cb9-4ca8-8707-287f82c94ebe",
+      "object_class": null,
+      "tag": "Energy Stream 6",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-bc051748-71c5-4e69-8dd8-9dba4e54a5b3",
+      "object_class": null,
+      "tag": "Water",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-9e3e51c1-c601-496d-9f80-b44701525e2a",
+      "object_class": null,
+      "tag": "Product Gas",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "VasoSeparadorGL",
+      "guid": "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4",
+      "object_class": null,
+      "tag": "Gas-liq Seperator",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-918c19a7-41fd-462a-87b5-2ee20da5ecd2",
+      "object_class": null,
+      "tag": "Energy Stream 5",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-11a34680-07b7-46c8-aca6-808fa8a2098d",
+      "object_class": null,
+      "tag": "Cooled Vapor",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-fba3bd36-c991-44f8-b5cd-77f887acde02",
+      "object_class": null,
+      "tag": "Cooler 3",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-64570c43-fb53-463a-9b17-1aaca2636170",
+      "object_class": null,
+      "tag": "Energy Stream 4",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-f5b6aa76-6635-4022-bec8-35d298ecbbf6",
+      "object_class": null,
+      "tag": "Dummy 2",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-c90f91bd-0409-47d7-ba4a-5f5bb36890cf",
+      "object_class": null,
+      "tag": "Vapor",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "ReatorConversao",
+      "guid": "RC-45fc2785-d8c8-4110-b064-c7b467db6905",
+      "object_class": null,
+      "tag": "LTS Reactor",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_Conversion"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-dd5e8afe-e608-453c-85a1-a69505298206",
+      "object_class": null,
+      "tag": "Energy Stream 3",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-35f5024a-e6f6-4cca-8e90-8af7e866484f",
+      "object_class": null,
+      "tag": "Low Temperature WGSR Inlet",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-fc7510a0-ca1f-43c0-9d8f-f9ccee0b5067",
+      "object_class": null,
+      "tag": "Cooler 2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-c5697381-b221-434c-aca2-434587050edd",
+      "object_class": null,
+      "tag": "Energy Stream 2",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-9017d75b-e1aa-490b-9691-05a3f65b1ceb",
+      "object_class": null,
+      "tag": "Dummy",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-d56c2931-3f04-46db-b2c9-54d71fafae0e",
+      "object_class": null,
+      "tag": "Overhead",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "ReatorConversao",
+      "guid": "RC-2c850083-89a7-4cf9-a44c-3833fc638994",
+      "object_class": null,
+      "tag": "HTS Reactor",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_Conversion"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-fb5f9a0d-1d46-4c0b-8d08-bfe189f14c03",
+      "object_class": null,
+      "tag": "Energy Stream 1",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-10619d53-ce3a-4b09-819d-9ab51c5399aa",
+      "object_class": null,
+      "tag": "High Temperature WGSR Inlet",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-9e66f56a-06c1-4d8e-9b10-6efb7e064523",
+      "object_class": null,
+      "tag": "Cooler 1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-25e172e1-f550-4d6f-b0f7-4af44021c572",
+      "object_class": null,
+      "tag": "Flue Gases from Steam Methane Reforming(SMR)",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 22,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "RESF-9e66f56a-06c1-4d8e-9b10-6efb7e064523"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-25e172e1-f550-4d6f-b0f7-4af44021c572",
+        "is_terminal_material_stream": false,
+        "tag": "Flue Gases from Steam Methane Reforming(SMR)",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-2c850083-89a7-4cf9-a44c-3833fc638994"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-10619d53-ce3a-4b09-819d-9ab51c5399aa",
+        "is_terminal_material_stream": false,
+        "tag": "High Temperature WGSR Inlet",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-9e66f56a-06c1-4d8e-9b10-6efb7e064523"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-fc7510a0-ca1f-43c0-9d8f-f9ccee0b5067"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-d56c2931-3f04-46db-b2c9-54d71fafae0e",
+        "is_terminal_material_stream": false,
+        "tag": "Overhead",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-2c850083-89a7-4cf9-a44c-3833fc638994"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-9017d75b-e1aa-490b-9691-05a3f65b1ceb",
+        "is_terminal_material_stream": true,
+        "tag": "Dummy",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-2c850083-89a7-4cf9-a44c-3833fc638994"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-45fc2785-d8c8-4110-b064-c7b467db6905"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-35f5024a-e6f6-4cca-8e90-8af7e866484f",
+        "is_terminal_material_stream": false,
+        "tag": "Low Temperature WGSR Inlet",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-fc7510a0-ca1f-43c0-9d8f-f9ccee0b5067"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-fba3bd36-c991-44f8-b5cd-77f887acde02"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c90f91bd-0409-47d7-ba4a-5f5bb36890cf",
+        "is_terminal_material_stream": false,
+        "tag": "Vapor",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-45fc2785-d8c8-4110-b064-c7b467db6905"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-f5b6aa76-6635-4022-bec8-35d298ecbbf6",
+        "is_terminal_material_stream": true,
+        "tag": "Dummy 2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-45fc2785-d8c8-4110-b064-c7b467db6905"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-11a34680-07b7-46c8-aca6-808fa8a2098d",
+        "is_terminal_material_stream": false,
+        "tag": "Cooled Vapor",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-fba3bd36-c991-44f8-b5cd-77f887acde02"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-9e3e51c1-c601-496d-9f80-b44701525e2a",
+        "is_terminal_material_stream": true,
+        "tag": "Product Gas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-bc051748-71c5-4e69-8dd8-9dba4e54a5b3",
+        "is_terminal_material_stream": true,
+        "tag": "Water",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-9017d75b-e1aa-490b-9691-05a3f65b1ceb",
+        "tag": "Dummy",
+        "upstream_unit_guids": [
+          "RC-2c850083-89a7-4cf9-a44c-3833fc638994"
+        ]
+      },
+      {
+        "id": "MAT-f5b6aa76-6635-4022-bec8-35d298ecbbf6",
+        "tag": "Dummy 2",
+        "upstream_unit_guids": [
+          "RC-45fc2785-d8c8-4110-b064-c7b467db6905"
+        ]
+      },
+      {
+        "id": "MAT-9e3e51c1-c601-496d-9f80-b44701525e2a",
+        "tag": "Product Gas",
+        "upstream_unit_guids": [
+          "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4"
+        ]
+      },
+      {
+        "id": "MAT-bc051748-71c5-4e69-8dd8-9dba4e54a5b3",
+        "tag": "Water",
+        "upstream_unit_guids": [
+          "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": null,
+    "guid": "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4",
+    "kind": "unit_operation",
+    "tag": "Gas-liq Seperator",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "target_unit": {
+    "calc_mode": null,
+    "guid": "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4",
+    "kind": "unit_operation",
+    "tag": "Gas-liq Seperator",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-9017d75b-e1aa-490b-9691-05a3f65b1ceb",
+      "tag": "Dummy",
+      "upstream_unit_guids": [
+        "RC-2c850083-89a7-4cf9-a44c-3833fc638994"
+      ]
+    },
+    {
+      "id": "MAT-f5b6aa76-6635-4022-bec8-35d298ecbbf6",
+      "tag": "Dummy 2",
+      "upstream_unit_guids": [
+        "RC-45fc2785-d8c8-4110-b064-c7b467db6905"
+      ]
+    },
+    {
+      "id": "MAT-9e3e51c1-c601-496d-9f80-b44701525e2a",
+      "tag": "Product Gas",
+      "upstream_unit_guids": [
+        "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4"
+      ]
+    },
+    {
+      "id": "MAT-bc051748-71c5-4e69-8dd8-9dba4e54a5b3",
+      "tag": "Water",
+      "upstream_unit_guids": [
+        "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4"
+      ]
+    }
+  ]
+}

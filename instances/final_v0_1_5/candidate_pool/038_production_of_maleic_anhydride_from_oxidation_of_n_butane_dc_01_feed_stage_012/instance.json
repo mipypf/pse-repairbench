@@ -1,0 +1,137 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_feed_stage_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "rationale": "Restore the unit feed stage to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+        "kind": "unit_operation",
+        "tag": "DC-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": null,
+      "value": 1
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit feed stage is consistent with the requested process target.",
+      "target": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the feed stage of DC-01 to 1.",
+      "target": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "038_production_of_maleic_anhydride_from_oxidation_of_n_butane_dc_01_feed_stage_012",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "69422ec16c7240f33731545fdcd601f2bfe31f6076837b50293f73b5380eafb9",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "a6b26491b88796a8d75a513c2b435fe59751647b6939fa1e41d520278e1ecb51",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/038_production_of_maleic_anhydride_from_oxidation_of_n_butane.zip",
+    "curated_source_entry": "Production_Of_Maleic_Anhydride_From_Oxidation_Of_N-Butane_By_Ms_Ishty_Malhotra/MaleicAcidProject.dwxmz",
+    "detected_process_category": "distillation",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.DistillationColumn",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmpB4C9.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 51,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "Production_of_Maleic_Anhydride_from_Oxidation_of_N-Butane.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Di ButylPhthalate",
+    "target_metric": {
+      "component": "Di ButylPhthalate",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.8133960901896149,
+      "metric": "mole_fraction",
+      "stream": "S-23",
+      "stream_id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-23",
+      "threshold": 0.8133960901896149
+    },
+    "target_stream_tag": "S-23"
+  }
+}

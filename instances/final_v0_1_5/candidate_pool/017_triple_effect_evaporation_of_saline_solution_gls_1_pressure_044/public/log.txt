@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: M-13
+Target metric: Sodium Chloride mole_fraction
+Observed target value: 0.41906322918805
+Required target value: <= 0.4067035804770397

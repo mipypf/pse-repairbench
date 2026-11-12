@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-08
+Target metric: Nitrogen mole_fraction
+Observed target value: 0.0168465296460022
+Required target value: <= 0.0077604090926189275

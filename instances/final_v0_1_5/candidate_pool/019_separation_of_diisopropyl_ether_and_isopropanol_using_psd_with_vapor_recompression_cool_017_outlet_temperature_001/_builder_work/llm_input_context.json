@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-1e0499ee-3c34-4ffa-a609-11f7f9e6794a",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "019_separation_of_diisopropyl_ether_and_isopropanol_using_psd_with_vapor_recompression_cool_017_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 472.6625510835862,
+      "metric": "temperature",
+      "stream": "DIPE",
+      "stream_id": "MAT-4c3acf25-b369-420a-8a12-52de68754dd3",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "DIPE",
+      "threshold": 472.6625510835862
+    },
+    "target_stream_tag": "DIPE"
+  }
+}

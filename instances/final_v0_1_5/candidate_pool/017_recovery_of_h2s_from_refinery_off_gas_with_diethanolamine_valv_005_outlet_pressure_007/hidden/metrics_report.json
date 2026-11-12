@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 637442,
+    "target_mole_fraction": null,
+    "target_value": 637442.0
+  },
+  "faulty": {
+    "outlet_pressure": 318721,
+    "target_mole_fraction": null,
+    "target_value": 318721.0
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90",
+      "kind": "unit_operation",
+      "tag": "VALV-005"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 637442.0
+  },
+  "instance_id": "017_recovery_of_h2s_from_refinery_off_gas_with_diethanolamine_valv_005_outlet_pressure_007",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 637442,
+    "target_mole_fraction": null,
+    "target_value": 637442.0
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/017_recovery_of_h2s_from_refinery_off_gas_with_diethanolamine.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 541825.7,
+    "product_mole_fraction_min": null,
+    "stream": "rich amine to amine regeneration unit",
+    "stream_id": "MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "rich amine to amine regeneration unit",
+    "threshold": 541825.7
+  },
+  "target_delta": 318721.0
+}

@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "AQ-e1efb515-bb7b-4a2f-9155-730e3363d364",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "026_production_of_acetic_acid_from_acetaldehyde_heater_a_outlet_temperature_002",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 326.8939729848238,
+      "metric": "temperature",
+      "stream": "S-7A",
+      "stream_id": "MAT-4b975724-04b8-4428-9117-4c6f8a4507eb",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-7A",
+      "threshold": 326.8939729848238
+    },
+    "target_stream_tag": "S-7A"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_pressure": 14489475,
+    "target_mole_fraction": null,
+    "target_value": 101325.0
+  },
+  "faulty": {
+    "separator_pressure": 21734212.5,
+    "target_mole_fraction": null,
+    "target_value": 7346062.5
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "pressure",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+      "kind": "unit_operation",
+      "tag": "SEP-007"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 14489475.0
+  },
+  "instance_id": "014_separation_of_benzene_from_air_using_compression_sep_007_pressure_001",
+  "repairable": true,
+  "repaired": {
+    "separator_pressure": 14489475,
+    "target_mole_fraction": null,
+    "target_value": 101325.0
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/014_separation_of_benzene_from_air_using_compression.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_pressure",
+    "max": 2274746.25,
+    "metric": "pressure",
+    "product_mole_fraction_min": null,
+    "stream": "valve outlet",
+    "stream_id": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "valve outlet",
+    "threshold": 2274746.25
+  },
+  "target_delta": -7244737.5
+}

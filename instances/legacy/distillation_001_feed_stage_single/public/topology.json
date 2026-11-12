@@ -1,0 +1,579 @@
+{
+  "extraction_note": "Topology combines SimulationObjects with GraphicObjects connector summaries.",
+  "graphic_object_count": 12,
+  "graphic_objects": [
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "1",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "HE-3dc57531-4c87-4b56-a0f0-18dec5e4bf19",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "MAT-62d7f6aa-4504-42fb-9b65-eb8b570bc868",
+      "output_connectors": [
+        {
+          "attributes": {
+            "AttachedToConnIndex": "0",
+            "AttachedToEnergyConn": "False",
+            "AttachedToObjID": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "preheated feed",
+      "type": "MaterialStream"
+    },
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "0",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "MAT-62d7f6aa-4504-42fb-9b65-eb8b570bc868",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f",
+      "output_connectors": [
+        {
+          "attributes": {
+            "AttachedToConnIndex": "0",
+            "AttachedToEnergyConn": "False",
+            "AttachedToObjID": "MAT-93398209-a3f8-448b-a4af-2596ea13332b",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "AttachedToConnIndex": "0",
+            "AttachedToEnergyConn": "False",
+            "AttachedToObjID": "MAT-20c3dc4a-84bb-4d47-a00f-3f55331f38d5",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "AttachedToConnIndex": "0",
+            "AttachedToEnergyConn": "True",
+            "AttachedToObjID": "EN-251f41a3-17e2-4542-843e-28f11fd8b022",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "AttachedToConnIndex": "0",
+            "AttachedToEnergyConn": "True",
+            "AttachedToObjID": "EN-5d392d44-1477-4d2d-a149-7ae3acd8b8d9",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "DC-001",
+      "type": "DistillationColumn"
+    },
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "0",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "MAT-93398209-a3f8-448b-a4af-2596ea13332b",
+      "output_connectors": [
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "distillate",
+      "type": "MaterialStream"
+    },
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "1",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "MAT-20c3dc4a-84bb-4d47-a00f-3f55331f38d5",
+      "output_connectors": [
+        {
+          "attributes": {
+            "AttachedToConnIndex": "0",
+            "AttachedToEnergyConn": "False",
+            "AttachedToObjID": "REC-89b5ed60-4893-4b5c-9e3e-6fee0b619768",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "bottoms",
+      "type": "MaterialStream"
+    },
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "2",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "EN-251f41a3-17e2-4542-843e-28f11fd8b022",
+      "output_connectors": [
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "c duty",
+      "type": "EnergyStream"
+    },
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "3",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "EN-5d392d44-1477-4d2d-a149-7ae3acd8b8d9",
+      "output_connectors": [
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "r duty",
+      "type": "EnergyStream"
+    },
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "0",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "MAT-ac69dd69-133f-4c9d-8faa-a586690e0f97",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "0",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "MAT-0256f50f-0094-4e9c-882f-6f77c1a49379",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "HE-3dc57531-4c87-4b56-a0f0-18dec5e4bf19",
+      "output_connectors": [
+        {
+          "attributes": {
+            "AttachedToConnIndex": "0",
+            "AttachedToEnergyConn": "False",
+            "AttachedToObjID": "MAT-885ebb93-f688-487c-8451-4c1030976d95",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        },
+        {
+          "attributes": {
+            "AttachedToConnIndex": "0",
+            "AttachedToEnergyConn": "False",
+            "AttachedToObjID": "MAT-62d7f6aa-4504-42fb-9b65-eb8b570bc868",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "HE-006",
+      "type": "HeatExchanger"
+    },
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "0",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "HE-3dc57531-4c87-4b56-a0f0-18dec5e4bf19",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "MAT-885ebb93-f688-487c-8451-4c1030976d95",
+      "output_connectors": [
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "cooled bottoms",
+      "type": "MaterialStream"
+    },
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "IsAttached": "false"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "MAT-0256f50f-0094-4e9c-882f-6f77c1a49379",
+      "output_connectors": [
+        {
+          "attributes": {
+            "AttachedToConnIndex": "1",
+            "AttachedToEnergyConn": "False",
+            "AttachedToObjID": "HE-3dc57531-4c87-4b56-a0f0-18dec5e4bf19",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "feed",
+      "type": "MaterialStream"
+    },
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "0",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "MAT-20c3dc4a-84bb-4d47-a00f-3f55331f38d5",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "REC-89b5ed60-4893-4b5c-9e3e-6fee0b619768",
+      "output_connectors": [
+        {
+          "attributes": {
+            "AttachedToConnIndex": "0",
+            "AttachedToEnergyConn": "False",
+            "AttachedToObjID": "MAT-ac69dd69-133f-4c9d-8faa-a586690e0f97",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "REC-009",
+      "type": "OT_Recycle"
+    },
+    {
+      "input_connectors": [
+        {
+          "attributes": {
+            "AttachedFromConnIndex": "0",
+            "AttachedFromEnergyConn": "False",
+            "AttachedFromObjID": "REC-89b5ed60-4893-4b5c-9e3e-6fee0b619768",
+            "ConnType": "ConIn",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "name": "MAT-ac69dd69-133f-4c9d-8faa-a586690e0f97",
+      "output_connectors": [
+        {
+          "attributes": {
+            "AttachedToConnIndex": "0",
+            "AttachedToEnergyConn": "False",
+            "AttachedToObjID": "HE-3dc57531-4c87-4b56-a0f0-18dec5e4bf19",
+            "ConnType": "ConOut",
+            "IsAttached": "true"
+          },
+          "children": [],
+          "tag": "Connector"
+        }
+      ],
+      "tag": "recycled bottoms",
+      "type": "MaterialStream"
+    },
+    {
+      "input_connectors": [],
+      "name": "MASTERTABLE-83807dff-6675-4efd-acde-e9e4b50881b1",
+      "output_connectors": [],
+      "tag": null,
+      "type": "GO_MasterTable"
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-62d7f6aa-4504-42fb-9b65-eb8b570bc868",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "DistillationColumn",
+      "guid": "DC-24fb46b5-6c48-41a8-9100-289a7a90e87f",
+      "object_class": "Columns",
+      "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-93398209-a3f8-448b-a4af-2596ea13332b",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-20c3dc4a-84bb-4d47-a00f-3f55331f38d5",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-251f41a3-17e2-4542-843e-28f11fd8b022",
+      "object_class": "Streams",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-5d392d44-1477-4d2d-a149-7ae3acd8b8d9",
+      "object_class": "Streams",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "HeatExchanger",
+      "guid": "HE-3dc57531-4c87-4b56-a0f0-18dec5e4bf19",
+      "object_class": "Exchangers",
+      "type": "DWSIM.UnitOperations.UnitOperations.HeatExchanger"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-885ebb93-f688-487c-8451-4c1030976d95",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-0256f50f-0094-4e9c-882f-6f77c1a49379",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Reciclo",
+      "guid": "REC-89b5ed60-4893-4b5c-9e3e-6fee0b619768",
+      "object_class": "Logical",
+      "type": "DWSIM.UnitOperations.SpecialOps.Recycle"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-ac69dd69-133f-4c9d-8faa-a586690e0f97",
+      "object_class": "Streams",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 11,
+  "unresolved_connector_references": []
+}

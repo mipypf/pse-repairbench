@@ -1,0 +1,76 @@
+{
+  "base": {
+    "feed_stage": 3,
+    "target_mole_fraction": 0.996133642573117
+  },
+  "candidate_results": [
+    {
+      "fault_feed_stage": 1,
+      "faulty_exception_count": 0,
+      "faulty_success": true,
+      "repaired_exception_count": 0,
+      "repaired_success": true
+    },
+    {
+      "fault_feed_stage": 2,
+      "faulty_exception_count": 0,
+      "faulty_success": true,
+      "repaired_exception_count": 0,
+      "repaired_success": true
+    },
+    {
+      "fault_feed_stage": 4,
+      "faulty_exception_count": 0,
+      "faulty_success": true,
+      "repaired_exception_count": 0,
+      "repaired_success": true
+    },
+    {
+      "fault_feed_stage": 5,
+      "faulty_exception_count": 0,
+      "faulty_success": true,
+      "repaired_exception_count": 0,
+      "repaired_success": true
+    }
+  ],
+  "faulty": {
+    "feed_stage": 5,
+    "target_mole_fraction": 0.983653160294288
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "feed_stage",
+      "namespace": "column_configuration"
+    },
+    "target": {
+      "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+      "kind": "unit_operation",
+      "tag": "DC-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": null,
+    "value": 3
+  },
+  "instance_id": "distillation_002_feed_stage_single",
+  "purity_drop": 0.01248048227882903,
+  "repairable": true,
+  "repaired": {
+    "feed_stage": 3,
+    "target_mole_fraction": 0.996133642573117
+  },
+  "selection_rule": "largest base-to-faulty target mole fraction drop among successful base/faulty/repaired runs",
+  "source_archive": "curated_data/dwsim_headless_successes/distillation/002_air_liquefaction_using_linde_single_column_system.zip",
+  "target": {
+    "component": "Oxygen",
+    "product_mole_fraction_min": 0.99,
+    "stream_id": "MAT-2519ae05-5427-41dd-9478-ba6dab5f5678",
+    "stream_tag": "S-08"
+  }
+}

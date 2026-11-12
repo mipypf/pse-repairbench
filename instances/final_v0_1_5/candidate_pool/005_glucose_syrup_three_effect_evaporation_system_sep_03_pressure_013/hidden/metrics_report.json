@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_pressure": 41254.2,
+    "target_mole_fraction": null,
+    "target_value": 3.530174596576
+  },
+  "faulty": {
+    "separator_pressure": 45379.62,
+    "target_mole_fraction": null,
+    "target_value": 7.42431495890737
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "pressure",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+      "kind": "unit_operation",
+      "tag": "SEP-03"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 41254.2
+  },
+  "instance_id": "005_glucose_syrup_three_effect_evaporation_system_sep_03_pressure_013",
+  "repairable": true,
+  "repaired": {
+    "separator_pressure": 41254.2,
+    "target_mole_fraction": null,
+    "target_value": 3.530174596576
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/005_glucose_syrup_three_effect_evaporation_system.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 4.698416705275411,
+    "metric": "molar_flow",
+    "product_mole_fraction_min": null,
+    "stream": "S-11 - Glucose 60%",
+    "stream_id": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-11 - Glucose 60%",
+    "threshold": 4.698416705275411
+  },
+  "target_delta": -3.8941403623313704
+}

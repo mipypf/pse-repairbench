@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "VALV-ad472bfd-7532-4aba-bddf-79a3b2fc9802",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "018_extractive_distillation_for_separating_n_hexane_and_ethyl_acetate_using_nmp_valve_01_outlet_pressure_007",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 85850.0,
+      "stream": "S-12",
+      "stream_id": "MAT-c3c8477b-7053-46b5-864e-cd65633d0555",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-12",
+      "threshold": 85850.0
+    },
+    "target_stream_tag": "S-12"
+  }
+}

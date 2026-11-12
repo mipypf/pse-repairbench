@@ -1,0 +1,223 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "DC-01: column_specification/reflux_ratio",
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+        "kind": "unit_operation",
+        "tag": "DC-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "number"
+    },
+    {
+      "label": "DC-01: column_configuration/feed_stage",
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+        "kind": "unit_operation",
+        "tag": "DC-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "integer"
+    },
+    {
+      "label": "COMP-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "COMP-e62d776c-5d63-4882-84fa-5df79b0f074d",
+        "kind": "unit_operation",
+        "tag": "COMP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "COOL-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-ba73118a-8e11-4e3e-b16d-df1d92bec4d3",
+        "kind": "unit_operation",
+        "tag": "COOL-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COOL-02: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-30f94a25-21b4-4957-bb18-34243330c90d",
+        "kind": "unit_operation",
+        "tag": "COOL-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "VALV-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-59b34710-ae6d-4e4a-a95a-eed7a8ce9d5f",
+        "kind": "unit_operation",
+        "tag": "VALV-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "condenser_duty": 8503.25047830703,
+      "feed_stage": 3,
+      "feed_stage_name": "Stage3",
+      "feed_stream_id": "MAT-3b08d703-49be-433a-bf6d-9e8019f65a38",
+      "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+      "kind": "unit_operation",
+      "number_of_stages": 7,
+      "observed_values": {
+        "column_specification/reflux_ratio": 0.750199999999571
+      },
+      "reboiler_duty": -8313.83904787466,
+      "reflux_ratio": 0.750199999999571,
+      "supported_parameters": [
+        "column_configuration/feed_stage",
+        "column_specification/reflux_ratio"
+      ],
+      "tag": "DC-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 20163675,
+      "guid": "COMP-e62d776c-5d63-4882-84fa-5df79b0f074d",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 20265000
+      },
+      "outlet_temperature": 1234.05577031637,
+      "p_out": 20265000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "COMP-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-ba73118a-8e11-4e3e-b16d-df1d92bec4d3",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 298
+      },
+      "outlet_temperature": 298,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-30f94a25-21b4-4957-bb18-34243330c90d",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 91
+      },
+      "outlet_temperature": 91,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 20163675,
+      "guid": "VALV-59b34710-ae6d-4e4a-a95a-eed7a8ce9d5f",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 101325
+      },
+      "outlet_pressure": 101325,
+      "outlet_temperature": 79.0011007965414,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    }
+  ],
+  "product_target": {
+    "component": "Nitrogen",
+    "direction": "max",
+    "metric": "mole_fraction",
+    "stream_tag": "S-08",
+    "threshold": 0.0077604090926189275
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "component": "Nitrogen",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.0077604090926189275,
+    "metric": "mole_fraction",
+    "stream": "S-08",
+    "stream_id": "MAT-2519ae05-5427-41dd-9478-ba6dab5f5678",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-08",
+    "threshold": 0.0077604090926189275
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-2519ae05-5427-41dd-9478-ba6dab5f5678",
+      "mass_flow": 0.79829149601872,
+      "molar_flow": 25,
+      "tag": "S-08",
+      "upstream_unit_guids": [
+        "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75"
+      ]
+    },
+    {
+      "id": "MAT-a875005a-a2f6-44eb-a1c5-bce058f59d89",
+      "mass_flow": 4.9717750132443,
+      "molar_flow": 174.9999999999,
+      "tag": "S-05",
+      "upstream_unit_guids": [
+        "HE-945bccda-286d-4fda-8d64-4552eb339159"
+      ]
+    }
+  ]
+}

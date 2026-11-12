@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 110000,
+    "target_mole_fraction": null,
+    "target_value": 569.177965105936
+  },
+  "faulty": {
+    "outlet_pressure": 99000,
+    "target_mole_fraction": null,
+    "target_value": 643.300943887918
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "VALV-32cc2c07-eb8f-468e-a771-60b97413a3b7",
+      "kind": "unit_operation",
+      "tag": "VALV-100"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 110000.0
+  },
+  "instance_id": "021_tealarc_lng_refrigeration_cycle_for_natural_gas_valv_100_outlet_pressure_010",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 110000,
+    "target_mole_fraction": null,
+    "target_value": 569.177965105936
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/021_tealarc_lng_refrigeration_cycle_for_natural_gas.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 591.4148587405306,
+    "metric": "molar_flow",
+    "product_mole_fraction_min": null,
+    "stream": "NG-6",
+    "stream_id": "MAT-ed4bbbcc-2dcb-40d6-a24a-073afcc58205",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "NG-6",
+    "threshold": 591.4148587405306
+  },
+  "target_delta": -74.12297878198206
+}

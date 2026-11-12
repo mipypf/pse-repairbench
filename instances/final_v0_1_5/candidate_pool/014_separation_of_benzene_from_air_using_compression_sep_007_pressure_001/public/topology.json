@@ -1,0 +1,304 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after separator pressure injection.",
+  "graphic_object_count": 15,
+  "graphic_objects": [
+    {
+      "name": "MAT-c7f25921-1bd6-4d9c-9682-2aab93d6389b",
+      "object_type": "MaterialStream",
+      "tag": "feed"
+    },
+    {
+      "name": "EN-8d9b7d3c-3b4f-4e01-a0d4-10918dd7e0a8",
+      "object_type": "EnergyStream",
+      "tag": "compresser energy"
+    },
+    {
+      "name": "COMP-b94d9cad-c70e-478a-b96e-52615f040364",
+      "object_type": "Compressor",
+      "tag": "COMP-002"
+    },
+    {
+      "name": "MAT-e70ce5c2-9c7f-4a3f-b3f4-1d093e1914dc",
+      "object_type": "MaterialStream",
+      "tag": "compressed gas"
+    },
+    {
+      "name": "RESF-866cd520-75ec-45e5-b3ea-a62b8e3958e1",
+      "object_type": "Cooler",
+      "tag": "COOL-004"
+    },
+    {
+      "name": "EN-ffb6e465-11bd-4eb5-9f35-9e1398a977c3",
+      "object_type": "EnergyStream",
+      "tag": "cooler energy"
+    },
+    {
+      "name": "MAT-0a35e700-5e2a-40bc-8f85-77696635f840",
+      "object_type": "MaterialStream",
+      "tag": "cooler outlet"
+    },
+    {
+      "name": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+      "object_type": "Vessel",
+      "tag": "SEP-007"
+    },
+    {
+      "name": "MAT-4aa39093-653c-4e27-a8d2-7b8bde060aa7",
+      "object_type": "MaterialStream",
+      "tag": "purified air"
+    },
+    {
+      "name": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+      "object_type": "MaterialStream",
+      "tag": "liquid benzene"
+    },
+    {
+      "name": "EN-81c01335-514d-4e08-b1cb-058ceee22197",
+      "object_type": "EnergyStream",
+      "tag": "flash energy"
+    },
+    {
+      "name": "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395",
+      "object_type": "Valve",
+      "tag": "VALV-011"
+    },
+    {
+      "name": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+      "object_type": "MaterialStream",
+      "tag": "valve outlet"
+    },
+    {
+      "name": "MASTERTABLE-9a90b86d-8704-418f-b105-8cb5fde03b30",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    },
+    {
+      "name": "MASTERTABLE-dfbb1ffd-4d03-43c3-990a-818e556d69b1",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-c7f25921-1bd6-4d9c-9682-2aab93d6389b",
+      "object_class": null,
+      "tag": "feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-e70ce5c2-9c7f-4a3f-b3f4-1d093e1914dc",
+      "object_class": null,
+      "tag": "compressed gas",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-8d9b7d3c-3b4f-4e01-a0d4-10918dd7e0a8",
+      "object_class": null,
+      "tag": "compresser energy",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-ffb6e465-11bd-4eb5-9f35-9e1398a977c3",
+      "object_class": null,
+      "tag": "cooler energy",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CompressorAdiabtico",
+      "guid": "COMP-b94d9cad-c70e-478a-b96e-52615f040364",
+      "object_class": null,
+      "tag": "COMP-002",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-0a35e700-5e2a-40bc-8f85-77696635f840",
+      "object_class": null,
+      "tag": "cooler outlet",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-866cd520-75ec-45e5-b3ea-a62b8e3958e1",
+      "object_class": null,
+      "tag": "COOL-004",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "VasoSeparadorGL",
+      "guid": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+      "object_class": null,
+      "tag": "SEP-007",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-4aa39093-653c-4e27-a8d2-7b8bde060aa7",
+      "object_class": null,
+      "tag": "purified air",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+      "object_class": null,
+      "tag": "liquid benzene",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-81c01335-514d-4e08-b1cb-058ceee22197",
+      "object_class": null,
+      "tag": "flash energy",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Vlvula",
+      "guid": "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395",
+      "object_class": null,
+      "tag": "VALV-011",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+      "object_class": null,
+      "tag": "valve outlet",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 13,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COMP-b94d9cad-c70e-478a-b96e-52615f040364"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-c7f25921-1bd6-4d9c-9682-2aab93d6389b",
+        "is_terminal_material_stream": false,
+        "tag": "feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-866cd520-75ec-45e5-b3ea-a62b8e3958e1"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-e70ce5c2-9c7f-4a3f-b3f4-1d093e1914dc",
+        "is_terminal_material_stream": false,
+        "tag": "compressed gas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-b94d9cad-c70e-478a-b96e-52615f040364"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-0a35e700-5e2a-40bc-8f85-77696635f840",
+        "is_terminal_material_stream": false,
+        "tag": "cooler outlet",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-866cd520-75ec-45e5-b3ea-a62b8e3958e1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4aa39093-653c-4e27-a8d2-7b8bde060aa7",
+        "is_terminal_material_stream": false,
+        "tag": "purified air",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+        "is_terminal_material_stream": true,
+        "tag": "liquid benzene",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+        "is_terminal_material_stream": true,
+        "tag": "valve outlet",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+        "tag": "liquid benzene",
+        "upstream_unit_guids": [
+          "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+        ]
+      },
+      {
+        "id": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+        "tag": "valve outlet",
+        "upstream_unit_guids": [
+          "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": null,
+    "guid": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+    "kind": "unit_operation",
+    "tag": "SEP-007",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "target_unit": {
+    "calc_mode": null,
+    "guid": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+    "kind": "unit_operation",
+    "tag": "SEP-007",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+      "tag": "liquid benzene",
+      "upstream_unit_guids": [
+        "SEP-443953ab-5634-4b6f-93ae-b110cd98182c"
+      ]
+    },
+    {
+      "id": "MAT-3b61dd0c-4dd9-43e0-89ab-a0298fa4548a",
+      "tag": "valve outlet",
+      "upstream_unit_guids": [
+        "VALV-df26e96c-76bf-4781-a9af-d6366b4ed395"
+      ]
+    }
+  ]
+}

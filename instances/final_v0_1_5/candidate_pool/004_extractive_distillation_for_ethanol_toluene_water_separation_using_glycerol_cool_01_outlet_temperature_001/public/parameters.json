@@ -1,0 +1,114 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "COOL-02: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-0d1b93cd-b66b-4a92-84f6-702f80151abb",
+        "kind": "unit_operation",
+        "tag": "COOL-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COOL-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-311af607-55ff-47b1-b963-f4dd79df8c20",
+        "kind": "unit_operation",
+        "tag": "COOL-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-0d1b93cd-b66b-4a92-84f6-702f80151abb",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 336.15
+      },
+      "outlet_temperature": 336.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-311af607-55ff-47b1-b963-f4dd79df8c20",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 251.41000000000003
+      },
+      "outlet_temperature": 251.41000000000003,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "temperature",
+    "stream_tag": "S-09",
+    "threshold": 272.41
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 272.41,
+    "stream": "S-09",
+    "stream_id": "MAT-cfc68ff4-4aad-4d25-b4f2-595ae302c680",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-09",
+    "threshold": 272.41
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-3fcfdd37-247e-40e1-9f18-077eadd00d90",
+      "mass_flow": 0.171080813679145,
+      "molar_flow": 3.7189836457737,
+      "tag": "S-03",
+      "upstream_unit_guids": [
+        "COUO-0cd18729-74c9-4807-b1cc-ec68526bfc2d"
+      ]
+    },
+    {
+      "id": "MAT-cfc68ff4-4aad-4d25-b4f2-595ae302c680",
+      "mass_flow": 0.0912454425962528,
+      "molar_flow": 0.991287574152367,
+      "tag": "S-09",
+      "upstream_unit_guids": [
+        "DIV-5c792799-5f63-4869-a6be-8b411470621b"
+      ]
+    },
+    {
+      "id": "MAT-8f4f03fb-e1ac-4758-99a6-ea4df867cad4",
+      "mass_flow": 0.0252455998397908,
+      "molar_flow": 0.949140319934695,
+      "tag": "S-11",
+      "upstream_unit_guids": [
+        "DIV-6bd17216-848d-4cc7-b33c-6ad36127c4dd"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "diagnosis": "The selected target metric is degraded by an incorrect unit pressure setting.",
+  "rationale": "Restoring the discovered scalar unit parameter to the base value recovers the selected process target.",
+  "repair_actions": [
+    {
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-78b22884-b240-49c2-a81f-e0912ca2a2c7",
+        "kind": "unit_operation",
+        "tag": "flash"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 810600.0
+    }
+  ]
+}

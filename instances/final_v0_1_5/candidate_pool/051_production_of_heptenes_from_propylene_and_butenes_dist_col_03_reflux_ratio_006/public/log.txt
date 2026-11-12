@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-33 ( C8 + HEAVIES )
+Target metric: 1-octene mole_fraction
+Observed target value: 0.36571830927946
+Required target value: >= 0.5978206652821303

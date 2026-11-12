@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: Pure 2,4 DNT
+Target metric: mass_flow
+Observed target value: 0.00012937793116867
+Required target value: <= 8.409556258582427e-05

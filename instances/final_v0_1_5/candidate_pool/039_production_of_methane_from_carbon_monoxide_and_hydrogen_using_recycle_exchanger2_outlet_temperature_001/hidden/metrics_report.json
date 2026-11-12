@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 366.483333,
+    "target_mole_fraction": null,
+    "target_value": 366.483332990666
+  },
+  "faulty": {
+    "outlet_temperature": 336.483333,
+    "target_mole_fraction": null,
+    "target_value": 336.483332715538
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-2938f98f-22f0-4647-ae26-06d0062f7043",
+      "kind": "unit_operation",
+      "tag": "EXCHANGER2"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 366.483333
+  },
+  "instance_id": "039_production_of_methane_from_carbon_monoxide_and_hydrogen_using_recycle_exchanger2_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 366.483333,
+    "target_mole_fraction": null,
+    "target_value": 366.483332990666
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/039_production_of_methane_from_carbon_monoxide_and_hydrogen_using_recycle.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 357.4833329081276,
+    "product_mole_fraction_min": null,
+    "stream": "8 (WATER)",
+    "stream_id": "MAT-f3fd1cd5-52d7-4bca-9689-a87973beab14",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "8 (WATER)",
+    "threshold": 357.4833329081276
+  },
+  "target_delta": 30.000000275128002
+}

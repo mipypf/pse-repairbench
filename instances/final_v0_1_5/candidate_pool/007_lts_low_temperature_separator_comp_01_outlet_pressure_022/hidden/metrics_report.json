@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 6251325,
+    "target_mole_fraction": null,
+    "target_value": 12.326542136791
+  },
+  "faulty": {
+    "outlet_pressure": 9376987.5,
+    "target_mole_fraction": null,
+    "target_value": 26.0563731974963
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "COMP-6623619f-25e5-4d76-8f78-c824ca0741a5",
+      "kind": "unit_operation",
+      "tag": "COMP-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 6251325.0
+  },
+  "instance_id": "007_lts_low_temperature_separator_comp_01_outlet_pressure_022",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 6251325,
+    "target_mole_fraction": null,
+    "target_value": 12.326542136791
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/007_lts_low_temperature_separator.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 16.44549145500259,
+    "metric": "molar_flow",
+    "product_mole_fraction_min": null,
+    "stream": "S-14",
+    "stream_id": "MAT-b970090b-5483-4c67-9510-7f8ce3bd8a1b",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-14",
+    "threshold": 16.44549145500259
+  },
+  "target_delta": -13.7298310607053
+}

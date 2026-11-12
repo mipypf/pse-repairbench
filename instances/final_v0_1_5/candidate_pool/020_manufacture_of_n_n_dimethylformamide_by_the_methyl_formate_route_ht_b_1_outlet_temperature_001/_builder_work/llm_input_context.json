@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "AQ-f6a0651f-bad1-45d5-a65c-214e90669684",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "020_manufacture_of_n_n_dimethylformamide_by_the_methyl_formate_route_ht_b_1_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 338.9359284150686,
+      "stream": "SB-19",
+      "stream_id": "2128506293_MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "SB-19",
+      "threshold": 338.9359284150686
+    },
+    "target_stream_tag": "SB-19"
+  }
+}

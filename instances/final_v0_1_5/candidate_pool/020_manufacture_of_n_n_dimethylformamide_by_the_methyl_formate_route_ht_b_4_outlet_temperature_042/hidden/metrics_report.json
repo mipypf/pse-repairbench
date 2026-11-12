@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 473.15,
+    "target_mole_fraction": null,
+    "target_value": 0.121629238509669
+  },
+  "faulty": {
+    "outlet_temperature": 453.15,
+    "target_mole_fraction": null,
+    "target_value": 0.0871748289801057
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "802514831_AQ-f151c9fc-7c95-4e47-bfbd-9bc71dca4e22",
+      "kind": "unit_operation",
+      "tag": "HT-B-4"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 473.15
+  },
+  "instance_id": "020_manufacture_of_n_n_dimethylformamide_by_the_methyl_formate_route_ht_b_4_outlet_temperature_042",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 473.15,
+    "target_mole_fraction": null,
+    "target_value": 0.121629238509669
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/020_manufacture_of_n_n_dimethylformamide_by_the_methyl_formate_route.zip",
+  "target": {
+    "component": "N,n-dimethylformamide",
+    "direction": "min",
+    "family": "terminal_composition",
+    "metric": "mass_fraction",
+    "min": 0.11129291565080002,
+    "product_mole_fraction_min": null,
+    "stream": "SB-19",
+    "stream_id": "2128506293_MAT-6145a7d8-4086-4a36-b9ed-dca330f342b5",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "SB-19",
+    "threshold": 0.11129291565080002
+  },
+  "target_delta": 0.0344544095295633
+}

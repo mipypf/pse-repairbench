@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: TEEout2
+Target metric: temperature
+Observed target value: 255.0
+Required target value: >= 276.0

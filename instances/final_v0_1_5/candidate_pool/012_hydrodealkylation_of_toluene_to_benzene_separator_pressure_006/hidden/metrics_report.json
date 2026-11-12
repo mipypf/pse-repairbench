@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_pressure": 3280000,
+    "target_mole_fraction": null,
+    "target_value": 2.80198350889203
+  },
+  "faulty": {
+    "separator_pressure": 1640000,
+    "target_mole_fraction": null,
+    "target_value": 1.3761151474863
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "pressure",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+      "kind": "unit_operation",
+      "tag": "SEPARATOR"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 3280000.0
+  },
+  "instance_id": "012_hydrodealkylation_of_toluene_to_benzene_separator_pressure_006",
+  "repairable": true,
+  "repaired": {
+    "separator_pressure": 3280000,
+    "target_mole_fraction": null,
+    "target_value": 2.80198350889203
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/012_hydrodealkylation_of_toluene_to_benzene.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_flow",
+    "metric": "molar_flow",
+    "min": 2.374223000470311,
+    "product_mole_fraction_min": null,
+    "stream": "METHANE",
+    "stream_id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "METHANE",
+    "threshold": 2.374223000470311
+  },
+  "target_delta": 1.4258683614057301
+}

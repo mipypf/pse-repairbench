@@ -1,0 +1,1046 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after separator pressure injection.",
+  "graphic_object_count": 53,
+  "graphic_objects": [
+    {
+      "name": "MAT-967d1536-36da-4b52-bbb1-e3700a118acb",
+      "object_type": "MaterialStream",
+      "tag": "HYDROGEN"
+    },
+    {
+      "name": "MAT-d0aa7796-106f-4999-8fd6-b06eccab81a9",
+      "object_type": "MaterialStream",
+      "tag": "TOLUENE"
+    },
+    {
+      "name": "HE-8ebbd873-eeb3-4a4a-ba77-234539e0ffcd",
+      "object_type": "HeatExchanger",
+      "tag": "HE"
+    },
+    {
+      "name": "MAT-cadbb4e0-49d8-49e8-ac99-4c8a99b2d2e5",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-006"
+    },
+    {
+      "name": "RC-a058e49d-c69c-4bbb-a69c-636417010b37",
+      "object_type": "RCT_Conversion",
+      "tag": "REACTOR"
+    },
+    {
+      "name": "MAT-1a463706-386a-4f10-bac4-4f4ff47f6610",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-009"
+    },
+    {
+      "name": "MAT-62fe8dd7-c904-4bf5-a754-f33b5ff90b06",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-010"
+    },
+    {
+      "name": "EN-fce1f266-f700-4cb3-87ff-23975d45e6dc",
+      "object_type": "EnergyStream",
+      "tag": "energy reactor"
+    },
+    {
+      "name": "AQ-f0a27fd7-fec7-401d-9d34-c7e4edfebb5d",
+      "object_type": "Heater",
+      "tag": "HEATER"
+    },
+    {
+      "name": "MAT-8921e5f8-9ed4-4c8b-8e34-8b7d3ba137ab",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-013"
+    },
+    {
+      "name": "EN-779f0253-2951-4d81-a5eb-fa7ed81baa41",
+      "object_type": "EnergyStream",
+      "tag": "energy heater"
+    },
+    {
+      "name": "RESF-84c0bcaa-346c-47ba-a16f-3b656919565d",
+      "object_type": "Cooler",
+      "tag": "COOLER"
+    },
+    {
+      "name": "MAT-80a791ff-aea7-46b6-b1f7-0be6da33d0b3",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-016A"
+    },
+    {
+      "name": "EN-44058ce5-3915-44d9-891f-dbf2e280f9f9",
+      "object_type": "EnergyStream",
+      "tag": "energy cooler"
+    },
+    {
+      "name": "MAT-c6e8aa0c-2ab6-464b-a329-783a48479492",
+      "object_type": "MaterialStream",
+      "tag": "SEP IP"
+    },
+    {
+      "name": "REC-02061d93-b358-487b-8370-620b1513077e",
+      "object_type": "OT_Recycle",
+      "tag": "REC-01"
+    },
+    {
+      "name": "MAT-9dd3e540-c2ba-48e0-ba3a-92b9074629dc",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-018"
+    },
+    {
+      "name": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+      "object_type": "Vessel",
+      "tag": "SEPARATOR"
+    },
+    {
+      "name": "MAT-04ea92a1-446e-45f6-bdce-eda5faea9d4a",
+      "object_type": "MaterialStream",
+      "tag": "TOP"
+    },
+    {
+      "name": "MAT-f4ba6b55-94cd-4a3e-bea1-63327d54a2f3",
+      "object_type": "MaterialStream",
+      "tag": "BOTTOM"
+    },
+    {
+      "name": "EN-5b56449b-8394-4454-be13-104b5d83e283",
+      "object_type": "EnergyStream",
+      "tag": "energy separator"
+    },
+    {
+      "name": "MAT-2bf528eb-f4a5-4983-b4e9-dc5124124dee",
+      "object_type": "MaterialStream",
+      "tag": "recycle stream toluene"
+    },
+    {
+      "name": "MIST-4becd34f-330f-4508-b6ec-5c990d435e57",
+      "object_type": "NodeIn",
+      "tag": "MIX-023"
+    },
+    {
+      "name": "MAT-104e38e6-ca29-46eb-9d4b-1f0fac62ccb6",
+      "object_type": "MaterialStream",
+      "tag": "mixer output"
+    },
+    {
+      "name": "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1",
+      "object_type": "NodeOut",
+      "tag": "splitter"
+    },
+    {
+      "name": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+      "object_type": "MaterialStream",
+      "tag": "PURGE STREAM"
+    },
+    {
+      "name": "MAT-1f39eb67-1226-4ac5-8f62-33ac75cc3331",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-027"
+    },
+    {
+      "name": "COMP-2b37ab2a-93da-40e8-974c-650d7c702b39",
+      "object_type": "Compressor",
+      "tag": "COMP-028"
+    },
+    {
+      "name": "EN-e99c4fd3-d71b-41a4-9323-ffa8be9292ce",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-030"
+    },
+    {
+      "name": "MAT-4a316992-47e2-457d-8c89-15b6e69b347c",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-030"
+    },
+    {
+      "name": "MAT-1bffca76-0f25-479b-b1fe-96384ae53496",
+      "object_type": "MaterialStream",
+      "tag": "rec"
+    },
+    {
+      "name": "REC-f0ef589b-3068-400f-8b18-4428f053e92c",
+      "object_type": "OT_Recycle",
+      "tag": "REC-02"
+    },
+    {
+      "name": "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77",
+      "object_type": "ShortcutColumn",
+      "tag": "DISTILLATION column 1"
+    },
+    {
+      "name": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+      "object_type": "MaterialStream",
+      "tag": "METHANE"
+    },
+    {
+      "name": "MAT-3505383f-577e-4ec0-929e-ae12016e61be",
+      "object_type": "MaterialStream",
+      "tag": "BOTTOMS1"
+    },
+    {
+      "name": "EN-b13f0b38-8e8b-4c2a-99ae-ae5744175c40",
+      "object_type": "EnergyStream",
+      "tag": "con1"
+    },
+    {
+      "name": "EN-ba29247c-2f68-44e4-974a-3ca790d89b02",
+      "object_type": "EnergyStream",
+      "tag": "reb1"
+    },
+    {
+      "name": "SC-d97040f2-b186-4968-af9b-d91b12c3aa73",
+      "object_type": "ShortcutColumn",
+      "tag": "DISTILLATION column 2"
+    },
+    {
+      "name": "MAT-e9d26b02-2932-4013-810b-3c4d8f4b3408",
+      "object_type": "MaterialStream",
+      "tag": "BENZENE"
+    },
+    {
+      "name": "MAT-64dbe0d8-9e0e-4716-974c-8ac0ef563897",
+      "object_type": "MaterialStream",
+      "tag": "BOTTOMS2"
+    },
+    {
+      "name": "EN-c6c9d015-0745-435e-ad53-dd02c12a8566",
+      "object_type": "EnergyStream",
+      "tag": "con2"
+    },
+    {
+      "name": "EN-3eddf59e-e29f-4e9f-983f-83f2416f1cb5",
+      "object_type": "EnergyStream",
+      "tag": "reb2"
+    },
+    {
+      "name": "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8",
+      "object_type": "ShortcutColumn",
+      "tag": "DISTILLATION column 3"
+    },
+    {
+      "name": "MAT-4635b999-e568-4808-bfb3-65a9ba6034ef",
+      "object_type": "MaterialStream",
+      "tag": "TOLUENE REC"
+    },
+    {
+      "name": "MAT-c95e4bd5-4e90-4959-b311-00159594b8cf",
+      "object_type": "MaterialStream",
+      "tag": "BIPHENYL"
+    },
+    {
+      "name": "EN-b468960d-6e91-4486-b1ce-1e3f2c6ad127",
+      "object_type": "EnergyStream",
+      "tag": "con3"
+    },
+    {
+      "name": "EN-8859ffb7-322b-4881-b253-4f24aa5615e2",
+      "object_type": "EnergyStream",
+      "tag": "reb3"
+    },
+    {
+      "name": "BB-3912dc92-0690-4f6c-9f85-7b55f1596a73",
+      "object_type": "Pump",
+      "tag": "PUMP-047"
+    },
+    {
+      "name": "EN-7c2ff89f-ea90-4918-97fd-487a211f039b",
+      "object_type": "EnergyStream",
+      "tag": "energy pump"
+    },
+    {
+      "name": "MAT-143704e1-9e0e-4ee2-bfbc-dc3e3b032c14",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-049"
+    },
+    {
+      "name": "REC-402f5db0-1a2c-49a9-85ff-4243c1d9d8e6",
+      "object_type": "OT_Recycle",
+      "tag": "rec toluene"
+    },
+    {
+      "name": "MASTERTABLE-af897f5e-f2cc-42e5-aa7b-e7207f23d5a5",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    },
+    {
+      "name": "TEXT-7d8948b6-c6a5-45c5-bfc9-efbf10070398",
+      "object_type": "GO_Text",
+      "tag": "TEXT1"
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "Reciclo",
+      "guid": "REC-402f5db0-1a2c-49a9-85ff-4243c1d9d8e6",
+      "object_class": null,
+      "tag": "rec toluene",
+      "type": "DWSIM.UnitOperations.SpecialOps.Recycle"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-143704e1-9e0e-4ee2-bfbc-dc3e3b032c14",
+      "object_class": null,
+      "tag": "MSTR-049",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-7c2ff89f-ea90-4918-97fd-487a211f039b",
+      "object_class": null,
+      "tag": "energy pump",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Bomba",
+      "guid": "BB-3912dc92-0690-4f6c-9f85-7b55f1596a73",
+      "object_class": null,
+      "tag": "PUMP-047",
+      "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-e99c4fd3-d71b-41a4-9323-ffa8be9292ce",
+      "object_class": null,
+      "tag": "ESTR-030",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-4a316992-47e2-457d-8c89-15b6e69b347c",
+      "object_class": null,
+      "tag": "MSTR-030",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CompressorAdiabtico",
+      "guid": "COMP-2b37ab2a-93da-40e8-974c-650d7c702b39",
+      "object_class": null,
+      "tag": "COMP-028",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-1f39eb67-1226-4ac5-8f62-33ac75cc3331",
+      "object_class": null,
+      "tag": "MSTR-027",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+      "object_class": null,
+      "tag": "PURGE STREAM",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Divisor",
+      "guid": "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1",
+      "object_class": null,
+      "tag": "splitter",
+      "type": "DWSIM.UnitOperations.UnitOperations.Splitter"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-104e38e6-ca29-46eb-9d4b-1f0fac62ccb6",
+      "object_class": null,
+      "tag": "mixer output",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Misturador",
+      "guid": "MIST-4becd34f-330f-4508-b6ec-5c990d435e57",
+      "object_class": null,
+      "tag": "MIX-023",
+      "type": "DWSIM.UnitOperations.UnitOperations.Mixer"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-1bffca76-0f25-479b-b1fe-96384ae53496",
+      "object_class": null,
+      "tag": "rec",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-2bf528eb-f4a5-4983-b4e9-dc5124124dee",
+      "object_class": null,
+      "tag": "recycle stream toluene",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-5b56449b-8394-4454-be13-104b5d83e283",
+      "object_class": null,
+      "tag": "energy separator",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-f4ba6b55-94cd-4a3e-bea1-63327d54a2f3",
+      "object_class": null,
+      "tag": "BOTTOM",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-04ea92a1-446e-45f6-bdce-eda5faea9d4a",
+      "object_class": null,
+      "tag": "TOP",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "VasoSeparadorGL",
+      "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+      "object_class": null,
+      "tag": "SEPARATOR",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-9dd3e540-c2ba-48e0-ba3a-92b9074629dc",
+      "object_class": null,
+      "tag": "MSTR-018",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-967d1536-36da-4b52-bbb1-e3700a118acb",
+      "object_class": null,
+      "tag": "HYDROGEN",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-d0aa7796-106f-4999-8fd6-b06eccab81a9",
+      "object_class": null,
+      "tag": "TOLUENE",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "HeatExchanger",
+      "guid": "HE-8ebbd873-eeb3-4a4a-ba77-234539e0ffcd",
+      "object_class": null,
+      "tag": "HE",
+      "type": "DWSIM.UnitOperations.UnitOperations.HeatExchanger"
+    },
+    {
+      "component_description": "ReatorConversao",
+      "guid": "RC-a058e49d-c69c-4bbb-a69c-636417010b37",
+      "object_class": null,
+      "tag": "REACTOR",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_Conversion"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-cadbb4e0-49d8-49e8-ac99-4c8a99b2d2e5",
+      "object_class": null,
+      "tag": "MSTR-006",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-c6e8aa0c-2ab6-464b-a329-783a48479492",
+      "object_class": null,
+      "tag": "SEP IP",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-1a463706-386a-4f10-bac4-4f4ff47f6610",
+      "object_class": null,
+      "tag": "MSTR-009",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-62fe8dd7-c904-4bf5-a754-f33b5ff90b06",
+      "object_class": null,
+      "tag": "MSTR-010",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-fce1f266-f700-4cb3-87ff-23975d45e6dc",
+      "object_class": null,
+      "tag": "energy reactor",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Aquecedor",
+      "guid": "AQ-f0a27fd7-fec7-401d-9d34-c7e4edfebb5d",
+      "object_class": null,
+      "tag": "HEATER",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-8921e5f8-9ed4-4c8b-8e34-8b7d3ba137ab",
+      "object_class": null,
+      "tag": "MSTR-013",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-779f0253-2951-4d81-a5eb-fa7ed81baa41",
+      "object_class": null,
+      "tag": "energy heater",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-84c0bcaa-346c-47ba-a16f-3b656919565d",
+      "object_class": null,
+      "tag": "COOLER",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-80a791ff-aea7-46b6-b1f7-0be6da33d0b3",
+      "object_class": null,
+      "tag": "MSTR-016A",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-44058ce5-3915-44d9-891f-dbf2e280f9f9",
+      "object_class": null,
+      "tag": "energy cooler",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Reciclo",
+      "guid": "REC-02061d93-b358-487b-8370-620b1513077e",
+      "object_class": null,
+      "tag": "REC-01",
+      "type": "DWSIM.UnitOperations.SpecialOps.Recycle"
+    },
+    {
+      "component_description": "Reciclo",
+      "guid": "REC-f0ef589b-3068-400f-8b18-4428f053e92c",
+      "object_class": null,
+      "tag": "REC-02",
+      "type": "DWSIM.UnitOperations.SpecialOps.Recycle"
+    },
+    {
+      "component_description": "ShortcutColumn",
+      "guid": "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77",
+      "object_class": null,
+      "tag": "DISTILLATION column 1",
+      "type": "DWSIM.UnitOperations.UnitOperations.ShortcutColumn"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-b13f0b38-8e8b-4c2a-99ae-ae5744175c40",
+      "object_class": null,
+      "tag": "con1",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-ba29247c-2f68-44e4-974a-3ca790d89b02",
+      "object_class": null,
+      "tag": "reb1",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+      "object_class": null,
+      "tag": "METHANE",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-3505383f-577e-4ec0-929e-ae12016e61be",
+      "object_class": null,
+      "tag": "BOTTOMS1",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "ShortcutColumn",
+      "guid": "SC-d97040f2-b186-4968-af9b-d91b12c3aa73",
+      "object_class": null,
+      "tag": "DISTILLATION column 2",
+      "type": "DWSIM.UnitOperations.UnitOperations.ShortcutColumn"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-e9d26b02-2932-4013-810b-3c4d8f4b3408",
+      "object_class": null,
+      "tag": "BENZENE",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-64dbe0d8-9e0e-4716-974c-8ac0ef563897",
+      "object_class": null,
+      "tag": "BOTTOMS2",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-c6c9d015-0745-435e-ad53-dd02c12a8566",
+      "object_class": null,
+      "tag": "con2",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-3eddf59e-e29f-4e9f-983f-83f2416f1cb5",
+      "object_class": null,
+      "tag": "reb2",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "ShortcutColumn",
+      "guid": "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8",
+      "object_class": null,
+      "tag": "DISTILLATION column 3",
+      "type": "DWSIM.UnitOperations.UnitOperations.ShortcutColumn"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-4635b999-e568-4808-bfb3-65a9ba6034ef",
+      "object_class": null,
+      "tag": "TOLUENE REC",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-c95e4bd5-4e90-4959-b311-00159594b8cf",
+      "object_class": null,
+      "tag": "BIPHENYL",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-b468960d-6e91-4486-b1ce-1e3f2c6ad127",
+      "object_class": null,
+      "tag": "con3",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-8859ffb7-322b-4881-b253-4f24aa5615e2",
+      "object_class": null,
+      "tag": "reb3",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 51,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-4becd34f-330f-4508-b6ec-5c990d435e57"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-967d1536-36da-4b52-bbb1-e3700a118acb",
+        "is_terminal_material_stream": false,
+        "tag": "HYDROGEN",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-4becd34f-330f-4508-b6ec-5c990d435e57"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-d0aa7796-106f-4999-8fd6-b06eccab81a9",
+        "is_terminal_material_stream": false,
+        "tag": "TOLUENE",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-f0a27fd7-fec7-401d-9d34-c7e4edfebb5d"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-cadbb4e0-49d8-49e8-ac99-4c8a99b2d2e5",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-006",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-8ebbd873-eeb3-4a4a-ba77-234539e0ffcd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-84c0bcaa-346c-47ba-a16f-3b656919565d"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1a463706-386a-4f10-bac4-4f4ff47f6610",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-009",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-a058e49d-c69c-4bbb-a69c-636417010b37"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-62fe8dd7-c904-4bf5-a754-f33b5ff90b06",
+        "is_terminal_material_stream": true,
+        "tag": "MSTR-010",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-a058e49d-c69c-4bbb-a69c-636417010b37"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-a058e49d-c69c-4bbb-a69c-636417010b37"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8921e5f8-9ed4-4c8b-8e34-8b7d3ba137ab",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-013",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-f0a27fd7-fec7-401d-9d34-c7e4edfebb5d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-02061d93-b358-487b-8370-620b1513077e"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-80a791ff-aea7-46b6-b1f7-0be6da33d0b3",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-016A",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-84c0bcaa-346c-47ba-a16f-3b656919565d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c6e8aa0c-2ab6-464b-a329-783a48479492",
+        "is_terminal_material_stream": false,
+        "tag": "SEP IP",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-8ebbd873-eeb3-4a4a-ba77-234539e0ffcd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-8ebbd873-eeb3-4a4a-ba77-234539e0ffcd"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9dd3e540-c2ba-48e0-ba3a-92b9074629dc",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-018",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-02061d93-b358-487b-8370-620b1513077e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-04ea92a1-446e-45f6-bdce-eda5faea9d4a",
+        "is_terminal_material_stream": false,
+        "tag": "TOP",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f4ba6b55-94cd-4a3e-bea1-63327d54a2f3",
+        "is_terminal_material_stream": false,
+        "tag": "BOTTOM",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-4becd34f-330f-4508-b6ec-5c990d435e57"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2bf528eb-f4a5-4983-b4e9-dc5124124dee",
+        "is_terminal_material_stream": false,
+        "tag": "recycle stream toluene",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-402f5db0-1a2c-49a9-85ff-4243c1d9d8e6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-8ebbd873-eeb3-4a4a-ba77-234539e0ffcd"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-104e38e6-ca29-46eb-9d4b-1f0fac62ccb6",
+        "is_terminal_material_stream": false,
+        "tag": "mixer output",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-4becd34f-330f-4508-b6ec-5c990d435e57"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+        "is_terminal_material_stream": true,
+        "tag": "PURGE STREAM",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COMP-2b37ab2a-93da-40e8-974c-650d7c702b39"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1f39eb67-1226-4ac5-8f62-33ac75cc3331",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-027",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-f0ef589b-3068-400f-8b18-4428f053e92c"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4a316992-47e2-457d-8c89-15b6e69b347c",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-030",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-2b37ab2a-93da-40e8-974c-650d7c702b39"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-4becd34f-330f-4508-b6ec-5c990d435e57"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1bffca76-0f25-479b-b1fe-96384ae53496",
+        "is_terminal_material_stream": false,
+        "tag": "rec",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-f0ef589b-3068-400f-8b18-4428f053e92c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+        "is_terminal_material_stream": true,
+        "tag": "METHANE",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3505383f-577e-4ec0-929e-ae12016e61be",
+        "is_terminal_material_stream": false,
+        "tag": "BOTTOMS1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-e9d26b02-2932-4013-810b-3c4d8f4b3408",
+        "is_terminal_material_stream": true,
+        "tag": "BENZENE",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-64dbe0d8-9e0e-4716-974c-8ac0ef563897",
+        "is_terminal_material_stream": false,
+        "tag": "BOTTOMS2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "BB-3912dc92-0690-4f6c-9f85-7b55f1596a73"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4635b999-e568-4808-bfb3-65a9ba6034ef",
+        "is_terminal_material_stream": false,
+        "tag": "TOLUENE REC",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-c95e4bd5-4e90-4959-b311-00159594b8cf",
+        "is_terminal_material_stream": true,
+        "tag": "BIPHENYL",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-402f5db0-1a2c-49a9-85ff-4243c1d9d8e6"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-143704e1-9e0e-4ee2-bfbc-dc3e3b032c14",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-049",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-3912dc92-0690-4f6c-9f85-7b55f1596a73"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-62fe8dd7-c904-4bf5-a754-f33b5ff90b06",
+        "tag": "MSTR-010",
+        "upstream_unit_guids": [
+          "RC-a058e49d-c69c-4bbb-a69c-636417010b37"
+        ]
+      },
+      {
+        "id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+        "tag": "PURGE STREAM",
+        "upstream_unit_guids": [
+          "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+        ]
+      },
+      {
+        "id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+        "tag": "METHANE",
+        "upstream_unit_guids": [
+          "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+        ]
+      },
+      {
+        "id": "MAT-e9d26b02-2932-4013-810b-3c4d8f4b3408",
+        "tag": "BENZENE",
+        "upstream_unit_guids": [
+          "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+        ]
+      },
+      {
+        "id": "MAT-c95e4bd5-4e90-4959-b311-00159594b8cf",
+        "tag": "BIPHENYL",
+        "upstream_unit_guids": [
+          "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": null,
+    "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+    "kind": "unit_operation",
+    "tag": "SEPARATOR",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "target_unit": {
+    "calc_mode": null,
+    "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+    "kind": "unit_operation",
+    "tag": "SEPARATOR",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-62fe8dd7-c904-4bf5-a754-f33b5ff90b06",
+      "tag": "MSTR-010",
+      "upstream_unit_guids": [
+        "RC-a058e49d-c69c-4bbb-a69c-636417010b37"
+      ]
+    },
+    {
+      "id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+      "tag": "PURGE STREAM",
+      "upstream_unit_guids": [
+        "DIV-3aa50388-0c83-4689-8162-3b8d15bf44a1"
+      ]
+    },
+    {
+      "id": "MAT-7513a3c4-c0a0-4ec8-a242-02fafabfde90",
+      "tag": "METHANE",
+      "upstream_unit_guids": [
+        "SC-36aa11ac-7dac-4054-b0a6-c8307856ba77"
+      ]
+    },
+    {
+      "id": "MAT-e9d26b02-2932-4013-810b-3c4d8f4b3408",
+      "tag": "BENZENE",
+      "upstream_unit_guids": [
+        "SC-d97040f2-b186-4968-af9b-d91b12c3aa73"
+      ]
+    },
+    {
+      "id": "MAT-c95e4bd5-4e90-4959-b311-00159594b8cf",
+      "tag": "BIPHENYL",
+      "upstream_unit_guids": [
+        "SC-eba8dfa7-a72b-4473-a158-43c3720dcbb8"
+      ]
+    }
+  ]
+}

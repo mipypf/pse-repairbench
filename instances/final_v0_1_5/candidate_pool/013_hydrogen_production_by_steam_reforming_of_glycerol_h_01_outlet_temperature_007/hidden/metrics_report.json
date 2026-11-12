@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 873.15,
+    "target_mole_fraction": null,
+    "target_value": 0.140497022776101
+  },
+  "faulty": {
+    "outlet_temperature": 843.15,
+    "target_mole_fraction": null,
+    "target_value": 0.111198666764929
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-cafc70c6-94a8-40f5-9440-f5c00ace4170",
+      "kind": "unit_operation",
+      "tag": "H-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 873.15
+  },
+  "instance_id": "013_hydrogen_production_by_steam_reforming_of_glycerol_h_01_outlet_temperature_007",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 873.15,
+    "target_mole_fraction": null,
+    "target_value": 0.140497022776101
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/013_hydrogen_production_by_steam_reforming_of_glycerol.zip",
+  "target": {
+    "component": "Carbon monoxide",
+    "direction": "min",
+    "family": "terminal_composition",
+    "metric": "mass_fraction",
+    "min": 0.13170751597274938,
+    "product_mole_fraction_min": null,
+    "stream": "S-09",
+    "stream_id": "MAT-894b5dd9-f5a5-4822-9a02-2785a00a74b8",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-09",
+    "threshold": 0.13170751597274938
+  },
+  "target_delta": 0.02929835601117199
+}

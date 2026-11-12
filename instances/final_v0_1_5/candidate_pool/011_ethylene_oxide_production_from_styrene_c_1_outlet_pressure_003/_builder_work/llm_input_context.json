@@ -1,0 +1,45 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-1875d93b-00cb-45b7-b774-03852f046d04",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "011_ethylene_oxide_production_from_styrene_c_1_outlet_pressure_003",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Ethylene oxide",
+    "target_metric": {
+      "component": "Ethylene oxide",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.498730876905564,
+      "metric": "mole_fraction",
+      "stream": "11",
+      "stream_id": "MAT-b684857b-a243-4973-8e3a-17b21ddaa695",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "11",
+      "threshold": 0.498730876905564
+    },
+    "target_stream_tag": "11"
+  }
+}

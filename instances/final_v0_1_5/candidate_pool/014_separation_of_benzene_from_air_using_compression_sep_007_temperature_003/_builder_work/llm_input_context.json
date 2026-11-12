@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-443953ab-5634-4b6f-93ae-b110cd98182c",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "014_separation_of_benzene_from_air_using_compression_sep_007_temperature_003",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 290.1499681922033,
+      "stream": "liquid benzene",
+      "stream_id": "MAT-72b85346-c84f-4f01-b829-9923f33a9dc6",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "liquid benzene",
+      "threshold": 290.1499681922033
+    },
+    "target_stream_tag": "liquid benzene"
+  }
+}

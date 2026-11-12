@@ -1,0 +1,649 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after outlet pressure injection.",
+  "graphic_object_count": 33,
+  "graphic_objects": [
+    {
+      "name": "MAT-80f0616a-240e-426e-ade2-5fefbfd0b968",
+      "object_type": "MaterialStream",
+      "tag": "Bio Gas feed"
+    },
+    {
+      "name": "COMP-b362cfc2-bfe6-4cab-a2f0-dd163ad5a0e6",
+      "object_type": "Compressor",
+      "tag": "Compressor 1"
+    },
+    {
+      "name": "MAT-2f258861-a506-435e-b852-4d622c2d374e",
+      "object_type": "MaterialStream",
+      "tag": "Biogas Compressed"
+    },
+    {
+      "name": "EN-e98486e7-b2d8-4800-8003-8812efe28112",
+      "object_type": "EnergyStream",
+      "tag": "Compressor duty 1"
+    },
+    {
+      "name": "RESF-672e856b-ca14-453d-89a3-94f89d3d75f4",
+      "object_type": "Cooler",
+      "tag": "Cooler 1"
+    },
+    {
+      "name": "MAT-871acf59-b459-4c99-a20c-84a62465dfd5",
+      "object_type": "MaterialStream",
+      "tag": "cool biogas"
+    },
+    {
+      "name": "EN-f9b2f5f6-79b3-4453-8cff-79be0350e3b1",
+      "object_type": "EnergyStream",
+      "tag": "cooler duty1"
+    },
+    {
+      "name": "HE-8769e32d-b1c5-4152-a8f1-c0007f2a432f",
+      "object_type": "HeatExchanger",
+      "tag": "LNG exchanger"
+    },
+    {
+      "name": "MAT-98e6b16c-e867-489c-a4a9-0c5a3273a589",
+      "object_type": "MaterialStream",
+      "tag": "Cold biogas"
+    },
+    {
+      "name": "MAT-860d25a8-27a9-4444-93e2-b3f01c143ac9",
+      "object_type": "MaterialStream",
+      "tag": "Coolent(N2)In"
+    },
+    {
+      "name": "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287",
+      "object_type": "Compressor",
+      "tag": "Compressor2"
+    },
+    {
+      "name": "RESF-995c7dfb-cd32-45ce-b974-806ee098a74a",
+      "object_type": "Cooler",
+      "tag": "cooler 2"
+    },
+    {
+      "name": "MAT-aee28644-dbcb-417f-9ad9-6657d0e02a38",
+      "object_type": "MaterialStream",
+      "tag": "Coolent out"
+    },
+    {
+      "name": "EN-1fb92b75-3548-4fc1-ab94-a48dd7054aaa",
+      "object_type": "EnergyStream",
+      "tag": "Compressor duty2"
+    },
+    {
+      "name": "EN-d321820c-e163-4aa9-91c4-3f39cf855f7a",
+      "object_type": "EnergyStream",
+      "tag": "cooler duty 2"
+    },
+    {
+      "name": "MAT-94174c2d-be53-468b-b28d-0736b0aa7694",
+      "object_type": "MaterialStream",
+      "tag": "coolent1"
+    },
+    {
+      "name": "MAT-45c08a7c-6b4e-4f33-8fb8-b5092fbc0392",
+      "object_type": "MaterialStream",
+      "tag": "coolent2"
+    },
+    {
+      "name": "MAT-8b570fe7-4846-4331-8cbb-6f01bfa9a950",
+      "object_type": "MaterialStream",
+      "tag": "Biogas to cryogenic column"
+    },
+    {
+      "name": "MAT-2deec42d-c598-41af-be16-f36dff3f102b",
+      "object_type": "MaterialStream",
+      "tag": "Liquid CO2"
+    },
+    {
+      "name": "MAT-eb499dc5-a8b3-43ee-b9fa-0b318e4ddcfd",
+      "object_type": "MaterialStream",
+      "tag": "Liquid BioMethane"
+    },
+    {
+      "name": "MAT-3b00487e-dd6f-46f9-94a6-741740f2910e",
+      "object_type": "MaterialStream",
+      "tag": "Cold Biogas2"
+    },
+    {
+      "name": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+      "object_type": "MaterialStream",
+      "tag": "Coolent out2"
+    },
+    {
+      "name": "BB-3283502e-0c27-4efb-b62b-80462f65cffb",
+      "object_type": "Pump",
+      "tag": "PUMP"
+    },
+    {
+      "name": "RESF-350e26f4-01a4-4be1-85dd-25edca995f65",
+      "object_type": "Cooler",
+      "tag": "cooler 3"
+    },
+    {
+      "name": "MAT-b5cc062d-5567-4693-a1a4-63dddb99e99e",
+      "object_type": "MaterialStream",
+      "tag": "coolent 3"
+    },
+    {
+      "name": "EN-4e84e373-f982-4adc-b2cc-8461f9521837",
+      "object_type": "EnergyStream",
+      "tag": "cooler duty 3"
+    },
+    {
+      "name": "HE-300e8f4d-ab63-40ef-af73-c03e329afe04",
+      "object_type": "HeatExchanger",
+      "tag": "HE-028"
+    },
+    {
+      "name": "EN-4a673f99-2cac-4a5d-9c5b-fcccc82114f1",
+      "object_type": "EnergyStream",
+      "tag": "Pump Duty"
+    },
+    {
+      "name": "EN-0de24196-c08a-4c2a-b7fb-57562bd6abd1",
+      "object_type": "EnergyStream",
+      "tag": "Reboiler duty"
+    },
+    {
+      "name": "EN-5f065e0c-0651-4f88-8cfc-13cafb5ca8f6",
+      "object_type": "EnergyStream",
+      "tag": "Condensor duty"
+    },
+    {
+      "name": "MASTERTABLE-9dd77da4-8843-43f8-839b-211a67c7ffaf",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    },
+    {
+      "name": "EN-178b9481-873e-4bbc-8be9-81c83a6ad29c",
+      "object_type": "EnergyStream",
+      "tag": "Column duty"
+    },
+    {
+      "name": "COUO-2119f788-7330-4e64-b1fd-347b26070a22",
+      "object_type": "CapeOpenUO",
+      "tag": "CSCOL-01"
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "Bomba",
+      "guid": "BB-3283502e-0c27-4efb-b62b-80462f65cffb",
+      "object_class": "PressureChangers",
+      "tag": "PUMP",
+      "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-4a673f99-2cac-4a5d-9c5b-fcccc82114f1",
+      "object_class": "Streams",
+      "tag": "Pump Duty",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-eb499dc5-a8b3-43ee-b9fa-0b318e4ddcfd",
+      "object_class": "Streams",
+      "tag": "Liquid BioMethane",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-2deec42d-c598-41af-be16-f36dff3f102b",
+      "object_class": "Streams",
+      "tag": "Liquid CO2",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-8b570fe7-4846-4331-8cbb-6f01bfa9a950",
+      "object_class": "Streams",
+      "tag": "Biogas to cryogenic column",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+      "object_class": "Streams",
+      "tag": "Coolent out2",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-80f0616a-240e-426e-ade2-5fefbfd0b968",
+      "object_class": "Streams",
+      "tag": "Bio Gas feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CompressorAdiabtico",
+      "guid": "COMP-b362cfc2-bfe6-4cab-a2f0-dd163ad5a0e6",
+      "object_class": "PressureChangers",
+      "tag": "Compressor 1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-2f258861-a506-435e-b852-4d622c2d374e",
+      "object_class": "Streams",
+      "tag": "Biogas Compressed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-e98486e7-b2d8-4800-8003-8812efe28112",
+      "object_class": "Streams",
+      "tag": "Compressor duty 1",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-672e856b-ca14-453d-89a3-94f89d3d75f4",
+      "object_class": "Exchangers",
+      "tag": "Cooler 1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-871acf59-b459-4c99-a20c-84a62465dfd5",
+      "object_class": "Streams",
+      "tag": "cool biogas",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-f9b2f5f6-79b3-4453-8cff-79be0350e3b1",
+      "object_class": "Streams",
+      "tag": "cooler duty1",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "HeatExchanger",
+      "guid": "HE-8769e32d-b1c5-4152-a8f1-c0007f2a432f",
+      "object_class": "Exchangers",
+      "tag": "LNG exchanger",
+      "type": "DWSIM.UnitOperations.UnitOperations.HeatExchanger"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-98e6b16c-e867-489c-a4a9-0c5a3273a589",
+      "object_class": "Streams",
+      "tag": "Cold biogas",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-860d25a8-27a9-4444-93e2-b3f01c143ac9",
+      "object_class": "Streams",
+      "tag": "Coolent(N2)In",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CompressorAdiabtico",
+      "guid": "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287",
+      "object_class": "PressureChangers",
+      "tag": "Compressor2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-995c7dfb-cd32-45ce-b974-806ee098a74a",
+      "object_class": "Exchangers",
+      "tag": "cooler 2",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-aee28644-dbcb-417f-9ad9-6657d0e02a38",
+      "object_class": "Streams",
+      "tag": "Coolent out",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-1fb92b75-3548-4fc1-ab94-a48dd7054aaa",
+      "object_class": "Streams",
+      "tag": "Compressor duty2",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-d321820c-e163-4aa9-91c4-3f39cf855f7a",
+      "object_class": "Streams",
+      "tag": "cooler duty 2",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-94174c2d-be53-468b-b28d-0736b0aa7694",
+      "object_class": "Streams",
+      "tag": "coolent1",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-45c08a7c-6b4e-4f33-8fb8-b5092fbc0392",
+      "object_class": "Streams",
+      "tag": "coolent2",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "HeatExchanger",
+      "guid": "HE-300e8f4d-ab63-40ef-af73-c03e329afe04",
+      "object_class": "Exchangers",
+      "tag": "HE-028",
+      "type": "DWSIM.UnitOperations.UnitOperations.HeatExchanger"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-3b00487e-dd6f-46f9-94a6-741740f2910e",
+      "object_class": "Streams",
+      "tag": "Cold Biogas2",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-350e26f4-01a4-4be1-85dd-25edca995f65",
+      "object_class": "Exchangers",
+      "tag": "cooler 3",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-b5cc062d-5567-4693-a1a4-63dddb99e99e",
+      "object_class": "Streams",
+      "tag": "coolent 3",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-4e84e373-f982-4adc-b2cc-8461f9521837",
+      "object_class": "Streams",
+      "tag": "cooler duty 3",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-0de24196-c08a-4c2a-b7fb-57562bd6abd1",
+      "object_class": "Streams",
+      "tag": "Reboiler duty",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-5f065e0c-0651-4f88-8cfc-13cafb5ca8f6",
+      "object_class": "Streams",
+      "tag": "Condensor duty",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CapeOpenUnitOperation",
+      "guid": "COUO-2119f788-7330-4e64-b1fd-347b26070a22",
+      "object_class": "CAPEOPEN",
+      "tag": "CSCOL-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.CapeOpenUO"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-178b9481-873e-4bbc-8be9-81c83a6ad29c",
+      "object_class": "Streams",
+      "tag": "Column duty",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 32,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COMP-b362cfc2-bfe6-4cab-a2f0-dd163ad5a0e6"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-80f0616a-240e-426e-ade2-5fefbfd0b968",
+        "is_terminal_material_stream": false,
+        "tag": "Bio Gas feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-672e856b-ca14-453d-89a3-94f89d3d75f4"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2f258861-a506-435e-b852-4d622c2d374e",
+        "is_terminal_material_stream": false,
+        "tag": "Biogas Compressed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-b362cfc2-bfe6-4cab-a2f0-dd163ad5a0e6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-8769e32d-b1c5-4152-a8f1-c0007f2a432f"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-871acf59-b459-4c99-a20c-84a62465dfd5",
+        "is_terminal_material_stream": false,
+        "tag": "cool biogas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-672e856b-ca14-453d-89a3-94f89d3d75f4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-98e6b16c-e867-489c-a4a9-0c5a3273a589",
+        "is_terminal_material_stream": false,
+        "tag": "Cold biogas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-8769e32d-b1c5-4152-a8f1-c0007f2a432f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-860d25a8-27a9-4444-93e2-b3f01c143ac9",
+        "is_terminal_material_stream": false,
+        "tag": "Coolent(N2)In",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-350e26f4-01a4-4be1-85dd-25edca995f65"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-aee28644-dbcb-417f-9ad9-6657d0e02a38",
+        "is_terminal_material_stream": false,
+        "tag": "Coolent out",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-8769e32d-b1c5-4152-a8f1-c0007f2a432f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-995c7dfb-cd32-45ce-b974-806ee098a74a"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-94174c2d-be53-468b-b28d-0736b0aa7694",
+        "is_terminal_material_stream": false,
+        "tag": "coolent1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-fc67a970-15ae-4d67-b3e5-db55fafcc287"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-8769e32d-b1c5-4152-a8f1-c0007f2a432f"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-45c08a7c-6b4e-4f33-8fb8-b5092fbc0392",
+        "is_terminal_material_stream": false,
+        "tag": "coolent2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-995c7dfb-cd32-45ce-b974-806ee098a74a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8b570fe7-4846-4331-8cbb-6f01bfa9a950",
+        "is_terminal_material_stream": false,
+        "tag": "Biogas to cryogenic column",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-3283502e-0c27-4efb-b62b-80462f65cffb"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-2deec42d-c598-41af-be16-f36dff3f102b",
+        "is_terminal_material_stream": true,
+        "tag": "Liquid CO2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-eb499dc5-a8b3-43ee-b9fa-0b318e4ddcfd",
+        "is_terminal_material_stream": true,
+        "tag": "Liquid BioMethane",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "BB-3283502e-0c27-4efb-b62b-80462f65cffb"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3b00487e-dd6f-46f9-94a6-741740f2910e",
+        "is_terminal_material_stream": false,
+        "tag": "Cold Biogas2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+        "is_terminal_material_stream": true,
+        "tag": "Coolent out2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b5cc062d-5567-4693-a1a4-63dddb99e99e",
+        "is_terminal_material_stream": false,
+        "tag": "coolent 3",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-350e26f4-01a4-4be1-85dd-25edca995f65"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-2deec42d-c598-41af-be16-f36dff3f102b",
+        "tag": "Liquid CO2",
+        "upstream_unit_guids": [
+          "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+        ]
+      },
+      {
+        "id": "MAT-eb499dc5-a8b3-43ee-b9fa-0b318e4ddcfd",
+        "tag": "Liquid BioMethane",
+        "upstream_unit_guids": [
+          "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+        ]
+      },
+      {
+        "id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+        "tag": "Coolent out2",
+        "upstream_unit_guids": [
+          "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": "OutletPressure",
+    "guid": "COMP-b362cfc2-bfe6-4cab-a2f0-dd163ad5a0e6",
+    "kind": "unit_operation",
+    "tag": "Compressor 1",
+    "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+  },
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "guid": "COMP-b362cfc2-bfe6-4cab-a2f0-dd163ad5a0e6",
+    "kind": "unit_operation",
+    "tag": "Compressor 1",
+    "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-2deec42d-c598-41af-be16-f36dff3f102b",
+      "tag": "Liquid CO2",
+      "upstream_unit_guids": [
+        "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+      ]
+    },
+    {
+      "id": "MAT-eb499dc5-a8b3-43ee-b9fa-0b318e4ddcfd",
+      "tag": "Liquid BioMethane",
+      "upstream_unit_guids": [
+        "COUO-2119f788-7330-4e64-b1fd-347b26070a22"
+      ]
+    },
+    {
+      "id": "MAT-9e03367b-74e4-44ae-b131-20c0bcf59d98",
+      "tag": "Coolent out2",
+      "upstream_unit_guids": [
+        "HE-300e8f4d-ab63-40ef-af73-c03e329afe04"
+      ]
+    }
+  ]
+}

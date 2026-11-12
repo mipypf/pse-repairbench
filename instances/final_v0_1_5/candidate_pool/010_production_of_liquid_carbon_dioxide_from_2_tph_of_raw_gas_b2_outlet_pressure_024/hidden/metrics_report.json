@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 500000,
+    "target_mole_fraction": null,
+    "target_value": 500000.0
+  },
+  "faulty": {
+    "outlet_pressure": 250000,
+    "target_mole_fraction": null,
+    "target_value": 250000.0
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "COMP-d32a0101-8858-4747-a1c0-fbed4073bbc1",
+      "kind": "unit_operation",
+      "tag": "B2"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 500000.0
+  },
+  "instance_id": "010_production_of_liquid_carbon_dioxide_from_2_tph_of_raw_gas_b2_outlet_pressure_024",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 500000,
+    "target_mole_fraction": null,
+    "target_value": 500000.0
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/010_production_of_liquid_carbon_dioxide_from_2_tph_of_raw_gas.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_pressure",
+    "metric": "pressure",
+    "min": 425000.0,
+    "product_mole_fraction_min": null,
+    "stream": "S6",
+    "stream_id": "MAT-6141548f-024a-4c2f-8413-2b874ff1d908",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S6",
+    "threshold": 425000.0
+  },
+  "target_delta": 250000.0
+}

@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 303.15,
+    "target_mole_fraction": null,
+    "target_value": 353.178806293878
+  },
+  "faulty": {
+    "outlet_temperature": 273.15,
+    "target_mole_fraction": null,
+    "target_value": 320.073143584659
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-4e835ed9-46b0-4a16-9e2c-0f62ecd39a1e",
+      "kind": "unit_operation",
+      "tag": "Chiller-4"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 303.15
+  },
+  "instance_id": "012_natural_gas_processing_simulation_chiller_4_outlet_temperature_006",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 303.15,
+    "target_mole_fraction": null,
+    "target_value": 353.178806293878
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/012_natural_gas_processing_simulation.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 343.24710748111227,
+    "product_mole_fraction_min": null,
+    "stream": "Lean Gas",
+    "stream_id": "MAT-37af0226-4681-429b-a1c0-ce58329b40cc",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Lean Gas",
+    "threshold": 343.24710748111227
+  },
+  "target_delta": 33.10566270921896
+}

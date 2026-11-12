@@ -1,0 +1,136 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "rationale": "Restore the unit separator temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+        "kind": "unit_operation",
+        "tag": "SEPARATOR"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 311.15
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit separator temperature is consistent with the requested process target.",
+      "target": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the separator temperature of SEPARATOR to 311.15.",
+      "target": "SEP-7d86d5b2-353b-4b61-82ed-29c81b81ec46",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "012_hydrodealkylation_of_toluene_to_benzene_separator_temperature_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "e82c9d15b658425da5a38601159979a99da352dbc8b4ce05e18b30db36d0f3ef",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "f0531bc36685cb822e63268b6e116e07108bf4a806d73e284a1c304dc4ab34b8",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/012_hydrodealkylation_of_toluene_to_benzene.zip",
+    "curated_source_entry": "Hydrodealkylation_Of_Toluene_To_Benzene_By_Mr_Sanagapalli_Venkata_Karthik/HDA.dwxmz",
+    "detected_process_category": "reaction_recycle",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Vessel",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmpE81D.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 51,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "Spreadsheet",
+      "FlowsheetView",
+      "PanelLayout"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "HydroDeAlkylation_of_Toluene_to_Benzene.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "FlowsheetView",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 301.3257752309375,
+      "stream": "PURGE STREAM",
+      "stream_id": "MAT-59440080-e3e1-4bce-a2b8-7b7dcf0b540f",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "PURGE STREAM",
+      "threshold": 301.3257752309375
+    },
+    "target_stream_tag": "PURGE STREAM"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "target": {
+        "guid": "DC-4c54c848-290b-4835-8d3d-f19fe55a2979",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "029_production_of_chlorobenzene_from_benzene_and_chlorine_dc_026_feed_stage_003",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 444.0200828164131,
+      "metric": "temperature",
+      "stream": "S-10",
+      "stream_id": "MAT-c5d3a2d6-1af4-4330-8ad7-d4b484a09ef3",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-10",
+      "threshold": 444.0200828164131
+    },
+    "target_stream_tag": "S-10"
+  }
+}

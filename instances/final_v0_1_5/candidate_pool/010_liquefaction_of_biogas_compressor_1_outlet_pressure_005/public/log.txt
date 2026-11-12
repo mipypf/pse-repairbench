@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: Coolent out2
+Target metric: temperature
+Observed target value: 151.96473339204
+Required target value: >= 168.1788561568457

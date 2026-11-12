@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 861845,
+    "target_mole_fraction": null,
+    "target_value": 341.875677823329
+  },
+  "faulty": {
+    "outlet_pressure": 430922.5,
+    "target_mole_fraction": null,
+    "target_value": 325.750562992088
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "BB-93a5650f-6358-4ec5-a663-352683b8b162",
+      "kind": "unit_operation",
+      "tag": "pump"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 861845.0
+  },
+  "instance_id": "017_isomerization_of_n_butane_to_isobutane_and_isopentane_pump_outlet_pressure_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 861845,
+    "target_mole_fraction": null,
+    "target_value": 341.875677823329
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/017_isomerization_of_n_butane_to_isobutane_and_isopentane.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 337.0381433739567,
+    "product_mole_fraction_min": null,
+    "stream": "Reactor Output 2",
+    "stream_id": "MAT-8250e372-d697-444b-a620-b1cadd3dc778",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Reactor Output 2",
+    "threshold": 337.0381433739567
+  },
+  "target_delta": 16.125114831240978
+}

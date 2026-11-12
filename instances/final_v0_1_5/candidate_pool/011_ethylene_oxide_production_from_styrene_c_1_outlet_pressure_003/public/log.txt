@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: 11
+Target metric: Ethylene oxide mole_fraction
+Observed target value: 0.51097729719116
+Required target value: <= 0.498730876905564

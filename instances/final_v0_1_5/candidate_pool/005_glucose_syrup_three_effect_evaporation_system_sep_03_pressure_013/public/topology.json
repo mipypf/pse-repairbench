@@ -1,0 +1,714 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after separator pressure injection.",
+  "graphic_object_count": 38,
+  "graphic_objects": [
+    {
+      "name": "MAT-1ad4f044-ff0c-4f2a-8f88-89a9708ba55c",
+      "object_type": "MaterialStream",
+      "tag": "S-04"
+    },
+    {
+      "name": "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d",
+      "object_type": "Vessel",
+      "tag": "SEP-01"
+    },
+    {
+      "name": "MAT-4857b25b-278d-444d-aa52-32d68ef029f1",
+      "object_type": "MaterialStream",
+      "tag": "S-06"
+    },
+    {
+      "name": "MAT-7afff729-e7d0-4c19-bd0f-fa9034b05652",
+      "object_type": "MaterialStream",
+      "tag": "S-05"
+    },
+    {
+      "name": "EN-d036f1fa-1743-4b1f-9f24-7af4d2165c15",
+      "object_type": "EnergyStream",
+      "tag": "E-04"
+    },
+    {
+      "name": "SEP-081f084d-831b-46db-af90-0f3cfe7574cf",
+      "object_type": "Vessel",
+      "tag": "SEP-02"
+    },
+    {
+      "name": "MAT-a3d20636-f0a1-41c9-b0f3-b4913ae395aa",
+      "object_type": "MaterialStream",
+      "tag": "S-08"
+    },
+    {
+      "name": "MAT-493b8564-b1c1-4fa3-9030-e8f82a0db498",
+      "object_type": "MaterialStream",
+      "tag": "S-07"
+    },
+    {
+      "name": "RESF-c8c99b22-a66a-4e2b-9012-d0d3dd15168d",
+      "object_type": "Cooler",
+      "tag": "COOL-04"
+    },
+    {
+      "name": "MAT-2fce608e-f39b-4502-a032-54f2ccd55fa9",
+      "object_type": "MaterialStream",
+      "tag": "S-12"
+    },
+    {
+      "name": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+      "object_type": "Vessel",
+      "tag": "SEP-03"
+    },
+    {
+      "name": "MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65",
+      "object_type": "MaterialStream",
+      "tag": "S-10"
+    },
+    {
+      "name": "EN-67054ba5-bf2f-4500-93b6-2d9c642f188f",
+      "object_type": "EnergyStream",
+      "tag": "E-08"
+    },
+    {
+      "name": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+      "object_type": "MaterialStream",
+      "tag": "S-11 - Glucose 60%"
+    },
+    {
+      "name": "RESF-2fcce974-68ac-40f9-8d57-9ca5e4f65be6",
+      "object_type": "Cooler",
+      "tag": "COOL-02"
+    },
+    {
+      "name": "MAT-69859cf1-485e-4869-a772-ae55addc54d7",
+      "object_type": "MaterialStream",
+      "tag": "S-02 - Saturated Steam"
+    },
+    {
+      "name": "MAT-e2281832-2984-4874-81bb-87e87ee106c6",
+      "object_type": "MaterialStream",
+      "tag": "S-14"
+    },
+    {
+      "name": "MSTR-69238da2-aad8-46a1-b815-a3f6b98080d7",
+      "object_type": "MaterialStream",
+      "tag": "S-03 - Glucose 20%"
+    },
+    {
+      "name": "AQ-328eb7e3-85a0-470b-85c1-13e5e02cc492",
+      "object_type": "Heater",
+      "tag": "HEAT-01"
+    },
+    {
+      "name": "EN-81a0ad06-01eb-4a3e-9c11-65fa55aa6232",
+      "object_type": "EnergyStream",
+      "tag": "E-02"
+    },
+    {
+      "name": "EN-38d4239f-925a-4538-9d8e-9274c377992d",
+      "object_type": "EnergyStream",
+      "tag": "E-07"
+    },
+    {
+      "name": "EN-c95923f6-6136-4eaf-855b-2f8bd7bd5ca9",
+      "object_type": "EnergyStream",
+      "tag": "E-06"
+    },
+    {
+      "name": "EN-4c1656cd-d5a3-4519-b8a3-c75a21774942",
+      "object_type": "EnergyStream",
+      "tag": "E-03"
+    },
+    {
+      "name": "RESF-82fd50e6-db5b-4785-b8ce-eaf2d138b5e4",
+      "object_type": "Cooler",
+      "tag": "COOL-03"
+    },
+    {
+      "name": "MAT-38297477-e096-413b-86bc-3897f94d2f4c",
+      "object_type": "MaterialStream",
+      "tag": "S-13"
+    },
+    {
+      "name": "EN-0ae4774a-b4fc-4b58-892d-ec8a45c3fdb9",
+      "object_type": "EnergyStream",
+      "tag": "E-05"
+    },
+    {
+      "name": "ES-0195c92a-d1f8-480c-ab33-1701a801462d",
+      "object_type": "OT_Spec",
+      "tag": "SPEC-03"
+    },
+    {
+      "name": "ES-36d6ad8c-d749-4a9d-acb4-f10a39830ded",
+      "object_type": "OT_Spec",
+      "tag": "SPEC-027"
+    },
+    {
+      "name": "ES-94500d10-fcfd-4c1d-97bd-249a53ed9250",
+      "object_type": "OT_Spec",
+      "tag": "SPEC-02"
+    },
+    {
+      "name": "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9",
+      "object_type": "NodeIn",
+      "tag": "MIX-029"
+    },
+    {
+      "name": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+      "object_type": "MaterialStream",
+      "tag": "S-15"
+    },
+    {
+      "name": "RESF-546ca6e9-56c1-44bc-9d7b-29fbc1923293",
+      "object_type": "Cooler",
+      "tag": "COOL-01"
+    },
+    {
+      "name": "MAT-d8873d3c-f9db-4138-9bf8-344fae01eece",
+      "object_type": "MaterialStream",
+      "tag": "S-01 - Saturated Steam"
+    },
+    {
+      "name": "MAT-6fbc5156-701a-4822-a094-e6b203214e93",
+      "object_type": "MaterialStream",
+      "tag": "S-09"
+    },
+    {
+      "name": "EN-a9a7b841-a1ef-4fd5-9f97-c65f4524ca34",
+      "object_type": "EnergyStream",
+      "tag": "E-01"
+    },
+    {
+      "name": "ES-e8febaff-1c64-4563-9975-f20b2e4d5c9c",
+      "object_type": "OT_Spec",
+      "tag": "SPEC-01"
+    },
+    {
+      "name": "STABLE-62c4ced6-2eb3-4c84-aea6-281b39b80ce1",
+      "object_type": "GO_SpreadsheetTable",
+      "tag": "Spreadsheet Table"
+    },
+    {
+      "name": "STABLE-d0ac663f-a04c-4bb8-a7d1-4b1dffbe66f7",
+      "object_type": "GO_SpreadsheetTable",
+      "tag": "Spreadsheet Table"
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-82fd50e6-db5b-4785-b8ce-eaf2d138b5e4",
+      "object_class": "Exchangers",
+      "tag": "COOL-03",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-38d4239f-925a-4538-9d8e-9274c377992d",
+      "object_class": "Streams",
+      "tag": "E-07",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-38297477-e096-413b-86bc-3897f94d2f4c",
+      "object_class": "Streams",
+      "tag": "S-13",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-81a0ad06-01eb-4a3e-9c11-65fa55aa6232",
+      "object_class": "Streams",
+      "tag": "E-02",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Aquecedor",
+      "guid": "AQ-328eb7e3-85a0-470b-85c1-13e5e02cc492",
+      "object_class": "Exchangers",
+      "tag": "HEAT-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "component_description": null,
+      "guid": "MSTR-69238da2-aad8-46a1-b815-a3f6b98080d7",
+      "object_class": "Streams",
+      "tag": "S-03 - Glucose 20%",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Misturador",
+      "guid": "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9",
+      "object_class": "MixersSplitters",
+      "tag": "MIX-029",
+      "type": "DWSIM.UnitOperations.UnitOperations.Mixer"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+      "object_class": "Streams",
+      "tag": "S-15",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Especificao",
+      "guid": "ES-94500d10-fcfd-4c1d-97bd-249a53ed9250",
+      "object_class": "Logical",
+      "tag": "SPEC-02",
+      "type": "DWSIM.UnitOperations.SpecialOps.Spec"
+    },
+    {
+      "component_description": "Especificao",
+      "guid": "ES-36d6ad8c-d749-4a9d-acb4-f10a39830ded",
+      "object_class": "Logical",
+      "tag": "SPEC-027",
+      "type": "DWSIM.UnitOperations.SpecialOps.Spec"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-d8873d3c-f9db-4138-9bf8-344fae01eece",
+      "object_class": "Streams",
+      "tag": "S-01 - Saturated Steam",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-6fbc5156-701a-4822-a094-e6b203214e93",
+      "object_class": "Streams",
+      "tag": "S-09",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Especificao",
+      "guid": "ES-e8febaff-1c64-4563-9975-f20b2e4d5c9c",
+      "object_class": "Logical",
+      "tag": "SPEC-01",
+      "type": "DWSIM.UnitOperations.SpecialOps.Spec"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-546ca6e9-56c1-44bc-9d7b-29fbc1923293",
+      "object_class": "Exchangers",
+      "tag": "COOL-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "Especificao",
+      "guid": "ES-0195c92a-d1f8-480c-ab33-1701a801462d",
+      "object_class": "Logical",
+      "tag": "SPEC-03",
+      "type": "DWSIM.UnitOperations.SpecialOps.Spec"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-e2281832-2984-4874-81bb-87e87ee106c6",
+      "object_class": "Streams",
+      "tag": "S-14",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-69859cf1-485e-4869-a772-ae55addc54d7",
+      "object_class": "Streams",
+      "tag": "S-02 - Saturated Steam",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-2fcce974-68ac-40f9-8d57-9ca5e4f65be6",
+      "object_class": "Exchangers",
+      "tag": "COOL-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-67054ba5-bf2f-4500-93b6-2d9c642f188f",
+      "object_class": "Streams",
+      "tag": "E-08",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65",
+      "object_class": "Streams",
+      "tag": "S-10",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "VasoSeparadorGL",
+      "guid": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+      "object_class": "Separators",
+      "tag": "SEP-03",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-4c1656cd-d5a3-4519-b8a3-c75a21774942",
+      "object_class": "Streams",
+      "tag": "E-03",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-2fce608e-f39b-4502-a032-54f2ccd55fa9",
+      "object_class": "Streams",
+      "tag": "S-12",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-1ad4f044-ff0c-4f2a-8f88-89a9708ba55c",
+      "object_class": "Streams",
+      "tag": "S-04",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "VasoSeparadorGL",
+      "guid": "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d",
+      "object_class": "Separators",
+      "tag": "SEP-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-4857b25b-278d-444d-aa52-32d68ef029f1",
+      "object_class": "Streams",
+      "tag": "S-06",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-7afff729-e7d0-4c19-bd0f-fa9034b05652",
+      "object_class": "Streams",
+      "tag": "S-05",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-d036f1fa-1743-4b1f-9f24-7af4d2165c15",
+      "object_class": "Streams",
+      "tag": "E-04",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-a9a7b841-a1ef-4fd5-9f97-c65f4524ca34",
+      "object_class": "Streams",
+      "tag": "E-01",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-c95923f6-6136-4eaf-855b-2f8bd7bd5ca9",
+      "object_class": "Streams",
+      "tag": "E-06",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-c8c99b22-a66a-4e2b-9012-d0d3dd15168d",
+      "object_class": "Exchangers",
+      "tag": "COOL-04",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-a3d20636-f0a1-41c9-b0f3-b4913ae395aa",
+      "object_class": "Streams",
+      "tag": "S-08",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-493b8564-b1c1-4fa3-9030-e8f82a0db498",
+      "object_class": "Streams",
+      "tag": "S-07",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "VasoSeparadorGL",
+      "guid": "SEP-081f084d-831b-46db-af90-0f3cfe7574cf",
+      "object_class": "Separators",
+      "tag": "SEP-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+      "object_class": "Streams",
+      "tag": "S-11 - Glucose 60%",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-0ae4774a-b4fc-4b58-892d-ec8a45c3fdb9",
+      "object_class": "Streams",
+      "tag": "E-05",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 36,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1ad4f044-ff0c-4f2a-8f88-89a9708ba55c",
+        "is_terminal_material_stream": false,
+        "tag": "S-04",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-328eb7e3-85a0-470b-85c1-13e5e02cc492"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-82fd50e6-db5b-4785-b8ce-eaf2d138b5e4"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4857b25b-278d-444d-aa52-32d68ef029f1",
+        "is_terminal_material_stream": false,
+        "tag": "S-06",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-081f084d-831b-46db-af90-0f3cfe7574cf"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-7afff729-e7d0-4c19-bd0f-fa9034b05652",
+        "is_terminal_material_stream": false,
+        "tag": "S-05",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-973de038-1244-43f7-a4cc-86b0c0af8e8d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-c8c99b22-a66a-4e2b-9012-d0d3dd15168d"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-a3d20636-f0a1-41c9-b0f3-b4913ae395aa",
+        "is_terminal_material_stream": false,
+        "tag": "S-08",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-081f084d-831b-46db-af90-0f3cfe7574cf"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-493b8564-b1c1-4fa3-9030-e8f82a0db498",
+        "is_terminal_material_stream": false,
+        "tag": "S-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-081f084d-831b-46db-af90-0f3cfe7574cf"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2fce608e-f39b-4502-a032-54f2ccd55fa9",
+        "is_terminal_material_stream": false,
+        "tag": "S-12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-c8c99b22-a66a-4e2b-9012-d0d3dd15168d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65",
+        "is_terminal_material_stream": true,
+        "tag": "S-10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+        "is_terminal_material_stream": true,
+        "tag": "S-11 - Glucose 60%",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-2fcce974-68ac-40f9-8d57-9ca5e4f65be6"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-69859cf1-485e-4869-a772-ae55addc54d7",
+        "is_terminal_material_stream": false,
+        "tag": "S-02 - Saturated Steam",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-e2281832-2984-4874-81bb-87e87ee106c6",
+        "is_terminal_material_stream": false,
+        "tag": "S-14",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-2fcce974-68ac-40f9-8d57-9ca5e4f65be6"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-328eb7e3-85a0-470b-85c1-13e5e02cc492"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MSTR-69238da2-aad8-46a1-b815-a3f6b98080d7",
+        "is_terminal_material_stream": false,
+        "tag": "S-03 - Glucose 20%",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-38297477-e096-413b-86bc-3897f94d2f4c",
+        "is_terminal_material_stream": false,
+        "tag": "S-13",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-82fd50e6-db5b-4785-b8ce-eaf2d138b5e4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+        "is_terminal_material_stream": true,
+        "tag": "S-15",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-546ca6e9-56c1-44bc-9d7b-29fbc1923293"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-d8873d3c-f9db-4138-9bf8-344fae01eece",
+        "is_terminal_material_stream": false,
+        "tag": "S-01 - Saturated Steam",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6fbc5156-701a-4822-a094-e6b203214e93",
+        "is_terminal_material_stream": false,
+        "tag": "S-09",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-546ca6e9-56c1-44bc-9d7b-29fbc1923293"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65",
+        "tag": "S-10",
+        "upstream_unit_guids": [
+          "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+        ]
+      },
+      {
+        "id": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+        "tag": "S-11 - Glucose 60%",
+        "upstream_unit_guids": [
+          "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+        ]
+      },
+      {
+        "id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+        "tag": "S-15",
+        "upstream_unit_guids": [
+          "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": null,
+    "guid": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+    "kind": "unit_operation",
+    "tag": "SEP-03",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "target_unit": {
+    "calc_mode": null,
+    "guid": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+    "kind": "unit_operation",
+    "tag": "SEP-03",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-5e9be05c-4503-4768-ac2b-b411ea9e3a65",
+      "tag": "S-10",
+      "upstream_unit_guids": [
+        "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+      ]
+    },
+    {
+      "id": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+      "tag": "S-11 - Glucose 60%",
+      "upstream_unit_guids": [
+        "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4"
+      ]
+    },
+    {
+      "id": "MAT-c7a44e30-b755-448c-b5c8-78f70c0afdaa",
+      "tag": "S-15",
+      "upstream_unit_guids": [
+        "MIST-6a8067d5-fba3-4cea-95a6-89b699fcd9b9"
+      ]
+    }
+  ]
+}

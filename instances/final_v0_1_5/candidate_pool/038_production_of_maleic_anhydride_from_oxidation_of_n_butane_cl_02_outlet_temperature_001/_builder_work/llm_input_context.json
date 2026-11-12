@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "CL-9000d0c9-dc58-4f43-b8fc-b410fa0bd6d3",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "038_production_of_maleic_anhydride_from_oxidation_of_n_butane_cl_02_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 643.4802068659178,
+      "stream": "S-23",
+      "stream_id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-23",
+      "threshold": 643.4802068659178
+    },
+    "target_stream_tag": "S-23"
+  }
+}

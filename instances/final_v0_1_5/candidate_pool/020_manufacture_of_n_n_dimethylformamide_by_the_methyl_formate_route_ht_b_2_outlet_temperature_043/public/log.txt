@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: SB-19
+Target metric: Methyl formate mass_fraction
+Observed target value: 0.0855904398573899
+Required target value: <= 0.062157041558001835

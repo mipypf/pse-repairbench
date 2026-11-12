@@ -1,0 +1,296 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "HE-07: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-e1b6072f-490a-4b81-85d6-b37ef3960d37",
+        "kind": "unit_operation",
+        "tag": "HE-07",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HE-02: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-0ac67729-03f7-4e02-b3f3-9b7eac8c994a",
+        "kind": "unit_operation",
+        "tag": "HE-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HE-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-ed073162-f816-4c5a-a639-975e9779080b",
+        "kind": "unit_operation",
+        "tag": "HE-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "PUMP-1: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "BB-db2c4d84-4c4d-4746-8e4b-b4f9411cf7c3",
+        "kind": "unit_operation",
+        "tag": "PUMP-1",
+        "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "HE-03: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-0a5c0517-8fb7-4ebd-8ef5-fcf6d672f009",
+        "kind": "unit_operation",
+        "tag": "HE-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HE-04: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-41b3ade5-45cf-40d9-bd4c-4f9118b1cc08",
+        "kind": "unit_operation",
+        "tag": "HE-04",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HE-05: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-a831d6d0-01ae-45be-8c14-a3ee34137d8e",
+        "kind": "unit_operation",
+        "tag": "HE-05",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HE-06: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "1302633202_AQ-7643cbfa-bf61-47e3-85d8-0719ae0a5f23",
+        "kind": "unit_operation",
+        "tag": "HE-06",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-e1b6072f-490a-4b81-85d6-b37ef3960d37",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 443.15
+      },
+      "outlet_temperature": 443.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HE-07",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-0ac67729-03f7-4e02-b3f3-9b7eac8c994a",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 1182.15
+      },
+      "outlet_temperature": 1182.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HE-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-ed073162-f816-4c5a-a639-975e9779080b",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 1182.15
+      },
+      "outlet_temperature": 1182.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HE-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 1500000,
+      "guid": "BB-db2c4d84-4c4d-4746-8e4b-b4f9411cf7c3",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 1600000
+      },
+      "outlet_temperature": 298.279728981283,
+      "pout": 1600000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "PUMP-1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-0a5c0517-8fb7-4ebd-8ef5-fcf6d672f009",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 623.15
+      },
+      "outlet_temperature": 623.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HE-03",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-41b3ade5-45cf-40d9-bd4c-4f9118b1cc08",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 483.15
+      },
+      "outlet_temperature": 483.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HE-04",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-a831d6d0-01ae-45be-8c14-a3ee34137d8e",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 311.15
+      },
+      "outlet_temperature": 311.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HE-05",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "1302633202_AQ-7643cbfa-bf61-47e3-85d8-0719ae0a5f23",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 523.15
+      },
+      "outlet_temperature": 523.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HE-06",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "temperature",
+    "stream_tag": "FLUE GAS",
+    "threshold": 464.15
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 464.15,
+    "stream": "FLUE GAS",
+    "stream_id": "MAT-84e56672-46f2-45f5-aebf-90cb4ec96a8f",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "FLUE GAS",
+    "threshold": 464.15
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-04dcb007-16be-457f-bea4-acb792e6dfd5",
+      "mass_flow": 0.00471582550821498,
+      "molar_flow": 0.260983673552896,
+      "tag": "S-016",
+      "upstream_unit_guids": [
+        "SEP-40424138-45c8-49b1-b37f-28f46964461a"
+      ]
+    },
+    {
+      "id": "MAT-80d15d6c-6747-4cdb-8ad0-e5a5b1eef678",
+      "mass_flow": 0.00141293741846275,
+      "molar_flow": 0.700903535162189,
+      "tag": "H2",
+      "upstream_unit_guids": [
+        "CS-7c1a0331-9df4-47a8-b115-86dea880d816"
+      ]
+    },
+    {
+      "id": "MAT-84e56672-46f2-45f5-aebf-90cb4ec96a8f",
+      "mass_flow": 0.0428157056863474,
+      "molar_flow": 1.37022801793941,
+      "tag": "FLUE GAS",
+      "upstream_unit_guids": [
+        "RESF-e1b6072f-490a-4b81-85d6-b37ef3960d37"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 322.039,
+    "target_mole_fraction": null,
+    "target_value": 332.05191251214
+  },
+  "faulty": {
+    "outlet_temperature": 352.039,
+    "target_mole_fraction": null,
+    "target_value": 384.493041702195
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-7c3e3af4-c21f-4332-aca7-3c97838930e7",
+      "kind": "unit_operation",
+      "tag": "CO-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 322.039
+  },
+  "instance_id": "006_improvement_of_the_monochlorobenzene_separation_process_through_heat_integration_co_01_outlet_temperature_004",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 322.039,
+    "target_mole_fraction": null,
+    "target_value": 332.05191251214
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/006_improvement_of_the_monochlorobenzene_separation_process_through_heat_integration.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 347.7842512691565,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "S-06",
+    "stream_id": "MAT-8c76857c-a75c-4bbc-81b2-634095601e4e",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-06",
+    "threshold": 347.7842512691565
+  },
+  "target_delta": -52.441129190054994
+}

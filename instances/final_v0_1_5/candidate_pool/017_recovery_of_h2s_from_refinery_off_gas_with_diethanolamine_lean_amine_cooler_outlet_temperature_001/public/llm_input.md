@@ -1,0 +1,85 @@
+# LLM Input Packet: Target-Parameter Pair Selection Repair
+
+## Task
+
+The DWSIM flowsheet runs headlessly, but the selected process stream misses its target.
+Select exactly one allowed target-parameter pair to change, and propose a canonical repair action that restores the target after rerunning the flowsheet.
+
+## Target
+
+- Target stream: `treated off gas`
+- Required target: `temperature at most 398.509110861`
+- Faulty observed target value: `535.863862919442`
+
+## Observed Candidate Unit Parameters
+
+```json
+[
+  {
+    "calc_mode": "OutletTemperature",
+    "guid": "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155",
+    "kind": "unit_operation",
+    "observed_values": {
+      "thermal_specification/outlet_temperature": 298
+    },
+    "outlet_temperature": 298,
+    "supported_parameters": [
+      "thermal_specification/outlet_temperature"
+    ],
+    "tag": "lean amine cooler",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  {
+    "calc_mode": "OutletPressure",
+    "delta_p": 1421958,
+    "guid": "VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90",
+    "kind": "unit_operation",
+    "observed_values": {
+      "pressure_specification/outlet_pressure": 637442
+    },
+    "outlet_pressure": 637442,
+    "outlet_temperature": 329.077339570873,
+    "supported_parameters": [
+      "pressure_specification/outlet_pressure"
+    ],
+    "tag": "VALV-005",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  }
+]
+```
+
+## Faulty Stream Table
+
+```csv
+stream_tag,stream_id,temperature,pressure,molar_flow,mass_flow,diethanolamine_mole_fraction,diethanolamine_molar_flow,ethane_mole_fraction,ethane_molar_flow,hydrogen sulfide_mole_fraction,hydrogen sulfide_molar_flow,methane_mole_fraction,methane_molar_flow,water_mole_fraction,water_molar_flow
+rich amine,MAT-f1853649-ea1e-4322-bc08-8b199c0cb823,464.612738509339,2059400,54.366399231007,5.52798481413579,0.95391255798469,51.8607909588668,0.039442721343746,2.14435873533146,0.0052873576596003,0.287454597398953,0.00033108463088777,0.0179998792220951,0.0010262783810768,0.0557950601877728
+treated off gas,MAT-26501171-ba14-4428-8d1d-5f3ce19469b8,535.863862919442,2059400,163.74187586776,4.19423823697639,0.050491054781502,8.26750002446497,0.24994754299284,40.9268795581852,0.012386589307426,2.02820336880147,0.0055469213668735,0.908263309902826,0.68162789155136,111.611029606406
+lean amine,MAT-f04d8527-b255-4753-bad8-f6ad0a59913b,298,2059429,171.795115268205,8.333333,0.35,60.1282903438717,0,0,0,0,0,0,0.65,111.666824924333
+off gas from process unit,MAT-5e81d862-d814-465d-85d0-7e9958ada890,323.15,539374,46.313159830563,1.38889,0,0,0.93,43.0712386424236,0.05,2.31565799152815,0.02,0.926263196611259,0,0
+rich amine to amine regeneration unit,MAT-800055a1-09e5-4daa-acc5-2ef6cb42f782,464.557378602675,637442,54.366399231007,5.52798481413579,0.95391255798469,51.8607909588668,0.039442721343746,2.14435873533146,0.0052873576596003,0.287454597398953,0.00033108463088777,0.0179998792220951,0.0010262783810768,0.0557950601877729
+lean amine from amine regeneraion unit,MAT-2ad60d99-68d7-4362-b3f8-7ef8bdee1ad6,358,2059429,171.795115268205,8.333333,0.35,60.1282903438717,0,0,0,0,0,0,0.65,111.666824924333
+```
+
+## Faulty Simulator Log
+
+```text
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: treated off gas
+Target metric: temperature
+Observed target value: 535.863862919442
+Required target value: <= 398.50911086106987
+```
+
+## Allowed Repair Actions
+
+- `lean amine cooler` / GUID `RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155`: `thermal_specification/outlet_temperature` (unit: `K`)
+- `VALV-005` / GUID `VALV-f8577b80-daac-4fb5-95da-75a2d40fcc90`: `pressure_specification/outlet_pressure` (unit: `Pa`)
+
+Choose exactly one `set_unit_parameter` action.
+
+## Required Output
+
+Return one JSON object with exactly one canonical `set_unit_parameter` action. The action target GUID and parameter must match exactly one allowed repair action above.

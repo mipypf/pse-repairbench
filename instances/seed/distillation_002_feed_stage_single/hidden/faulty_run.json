@@ -1,0 +1,280 @@
+{
+  "column": {
+    "condenser_duty": 8507.87973435722,
+    "condenser_pressure": null,
+    "feed_stage": 5,
+    "feed_stage_id": "35e9f18c-159d-4510-bba0-53a8658f5357",
+    "feed_stage_name": "Stage5",
+    "feed_stream_id": "MAT-3b08d703-49be-433a-bf6d-9e8019f65a38",
+    "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+    "number_of_stages": 7,
+    "reboiler_duty": -8340.64877164773,
+    "reboiler_pressure": null,
+    "reflux_ratio": 7.50199999999571,
+    "specs": [
+      {
+        "calculated_value": 7.502,
+        "component_id": "",
+        "spec_unit": "",
+        "spec_value": 7.502,
+        "stage_number": 0,
+        "stype": "Stream_Ratio"
+      },
+      {
+        "calculated_value": 25,
+        "component_id": "Oxygen",
+        "spec_unit": "kmol/h",
+        "spec_value": 90,
+        "stage_number": -1,
+        "stype": "Product_Molar_Flow_Rate"
+      }
+    ],
+    "tag": "DC-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+  },
+  "duration_sec": 2.428,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 22,
+  "messages_log_count": 0,
+  "saved_flowsheet": ".tmp/distillation_002_feed_stage_probe/formal_runs/faulty_calculated.dwxmz",
+  "simulation_path": "instances/seed/distillation_002_feed_stage_single/public/faulty.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "streams": [
+    {
+      "compounds": {
+        "Nitrogen": {
+          "mass_flow": 4.41467019548195,
+          "mass_fraction": 0.887955366635284,
+          "molar_flow": 157.591373966814,
+          "mole_fraction": 0.900522136953738
+        },
+        "Oxygen": {
+          "mass_flow": 0.557055142707508,
+          "mass_fraction": 0.112044633364716,
+          "molar_flow": 17.4086260330859,
+          "mole_fraction": 0.0994778630462618
+        }
+      },
+      "id": "MAT-a875005a-a2f6-44eb-a1c5-bce058f59d89",
+      "mass_flow": 4.97172533818946,
+      "molar_flow": 174.9999999999,
+      "pressure": 101325,
+      "tag": "S-05",
+      "temperature": 148.0421,
+      "total_energy_flow": -769.394370564494
+    },
+    {
+      "compounds": {
+        "Nitrogen": {
+          "mass_flow": 4.41467019548195,
+          "mass_fraction": 0.887955366635284,
+          "molar_flow": 157.591373966814,
+          "mole_fraction": 0.900522136953738
+        },
+        "Oxygen": {
+          "mass_flow": 0.557055142707508,
+          "mass_fraction": 0.112044633364716,
+          "molar_flow": 17.4086260330859,
+          "mole_fraction": 0.0994778630462618
+        }
+      },
+      "id": "MAT-9ac7748d-2b1d-457b-a944-dcfcb8c2260b",
+      "mass_flow": 4.97172533818946,
+      "molar_flow": 174.9999999999,
+      "pressure": 101325,
+      "tag": "S-09",
+      "temperature": 77.9380499509433,
+      "total_energy_flow": -2124.94011478629
+    },
+    {
+      "compounds": {
+        "Nitrogen": {
+          "mass_flow": 0.0114482639852998,
+          "mass_fraction": 0.0143400626203921,
+          "molar_flow": 0.408670992642801,
+          "mole_fraction": 0.016346839705712
+        },
+        "Oxygen": {
+          "mass_flow": 0.786893018640621,
+          "mass_fraction": 0.985659937379608,
+          "molar_flow": 24.5913290073572,
+          "mole_fraction": 0.983653160294288
+        }
+      },
+      "id": "MAT-2519ae05-5427-41dd-9478-ba6dab5f5678",
+      "mass_flow": 0.798341282625921,
+      "molar_flow": 25,
+      "pressure": 101325,
+      "tag": "S-08",
+      "temperature": 89.6016555867044,
+      "total_energy_flow": -322.243103309658
+    },
+    {
+      "compounds": {
+        "Nitrogen": {
+          "mass_flow": 4.4261172,
+          "mass_fraction": 0.76708248854242,
+          "molar_flow": 158,
+          "mole_fraction": 0.79
+        },
+        "Oxygen": {
+          "mass_flow": 1.3439496,
+          "mass_fraction": 0.23291751145758,
+          "molar_flow": 42,
+          "mole_fraction": 0.21
+        }
+      },
+      "id": "MAT-3b08d703-49be-433a-bf6d-9e8019f65a38",
+      "mass_flow": 5.7700668,
+      "molar_flow": 200,
+      "pressure": 101325,
+      "tag": "S-07",
+      "temperature": 78.9719484687114,
+      "total_energy_flow": -2279.95225538711
+    },
+    {
+      "compounds": {
+        "Nitrogen": {
+          "mass_flow": 4.4261172,
+          "mass_fraction": 0.76708248854242,
+          "molar_flow": 158,
+          "mole_fraction": 0.79
+        },
+        "Oxygen": {
+          "mass_flow": 1.3439496,
+          "mass_fraction": 0.23291751145758,
+          "molar_flow": 42,
+          "mole_fraction": 0.21
+        }
+      },
+      "id": "MAT-9ec66030-175b-4308-b7ea-6d8024486292",
+      "mass_flow": 5.7700668,
+      "molar_flow": 200,
+      "pressure": 20265000,
+      "tag": "S-06",
+      "temperature": 91,
+      "total_energy_flow": -2257.48306009961
+    },
+    {
+      "compounds": {
+        "Nitrogen": {
+          "mass_flow": 4.4261172,
+          "mass_fraction": 0.76708248854242,
+          "molar_flow": 158,
+          "mole_fraction": 0.79
+        },
+        "Oxygen": {
+          "mass_flow": 1.3439496,
+          "mass_fraction": 0.23291751145758,
+          "molar_flow": 42,
+          "mole_fraction": 0.21
+        }
+      },
+      "id": "MAT-63e6a9e2-bbab-4a05-812f-0f64b09efb30",
+      "mass_flow": 5.7700668,
+      "molar_flow": 200,
+      "pressure": 20265000,
+      "tag": "S-04",
+      "temperature": 153.424939910188,
+      "total_energy_flow": -1583.9815794619
+    },
+    {
+      "compounds": {
+        "Nitrogen": {
+          "mass_flow": 4.4261172,
+          "mass_fraction": 0.76708248854242,
+          "molar_flow": 158,
+          "mole_fraction": 0.79
+        },
+        "Oxygen": {
+          "mass_flow": 1.3439496,
+          "mass_fraction": 0.23291751145758,
+          "molar_flow": 42,
+          "mole_fraction": 0.21
+        }
+      },
+      "id": "MAT-5b1626c4-d590-4fdd-81bf-9a9a0fd1c5f9",
+      "mass_flow": 5.7700668,
+      "molar_flow": 200,
+      "pressure": 20265000,
+      "tag": "S-03",
+      "temperature": 298,
+      "total_energy_flow": -229.515788708394
+    },
+    {
+      "compounds": {
+        "Nitrogen": {
+          "mass_flow": 4.4261172,
+          "mass_fraction": 0.76708248854242,
+          "molar_flow": 158,
+          "mole_fraction": 0.79
+        },
+        "Oxygen": {
+          "mass_flow": 1.3439496,
+          "mass_fraction": 0.23291751145758,
+          "molar_flow": 42,
+          "mole_fraction": 0.21
+        }
+      },
+      "id": "MAT-1c661434-a1e3-4873-828e-ee60b8261219",
+      "mass_flow": 5.7700668,
+      "molar_flow": 200,
+      "pressure": 20265000,
+      "tag": "S-02",
+      "temperature": 1234.05577031637,
+      "total_energy_flow": 6007.41331525885
+    },
+    {
+      "compounds": {
+        "Nitrogen": {
+          "mass_flow": 4.4261172,
+          "mass_fraction": 0.76708248854242,
+          "molar_flow": 158,
+          "mole_fraction": 0.79
+        },
+        "Oxygen": {
+          "mass_flow": 1.3439496,
+          "mass_fraction": 0.23291751145758,
+          "molar_flow": 42,
+          "mole_fraction": 0.21
+        }
+      },
+      "id": "MAT-33f1eec1-8320-46fe-a0c5-9380d71675ed",
+      "mass_flow": 5.7700668,
+      "molar_flow": 200,
+      "pressure": 101325,
+      "tag": "S-01",
+      "temperature": 298,
+      "total_energy_flow": -2.52012874174865
+    },
+    {
+      "compounds": {
+        "Nitrogen": {
+          "mass_flow": 4.41467019548195,
+          "mass_fraction": 0.887955366635284,
+          "molar_flow": 157.591373966814,
+          "mole_fraction": 0.900522136953738
+        },
+        "Oxygen": {
+          "mass_flow": 0.557055142707508,
+          "mass_fraction": 0.112044633364716,
+          "molar_flow": 17.4086260330859,
+          "mole_fraction": 0.0994778630462618
+        }
+      },
+      "id": "MAT-cc0d769a-93cd-49f7-9ae0-8ce964e95f32",
+      "mass_flow": 4.97172533818946,
+      "molar_flow": 174.9999999999,
+      "pressure": 101325,
+      "tag": "S-10",
+      "temperature": 77.9380499509433,
+      "total_energy_flow": -2123.86016128887
+    }
+  ],
+  "success": true
+}

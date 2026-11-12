@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-22 ( HEXENES )
+Target metric: temperature
+Observed target value: 224.083509093226
+Required target value: >= 289.9300527279678

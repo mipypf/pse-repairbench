@@ -1,0 +1,136 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_pressure_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "rationale": "Restore the unit outlet pressure to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "COMP-d32a0101-8858-4747-a1c0-fbed4073bbc1",
+        "kind": "unit_operation",
+        "tag": "B2"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 500000.0
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet pressure is consistent with the requested process target.",
+      "target": "COMP-d32a0101-8858-4747-a1c0-fbed4073bbc1",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet pressure of B2 to 500000.0.",
+      "target": "COMP-d32a0101-8858-4747-a1c0-fbed4073bbc1",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "010_production_of_liquid_carbon_dioxide_from_2_tph_of_raw_gas_b2_outlet_pressure_024",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "d0a69f480d279bc8175823f445e76982bdcf6ed6adf1884683952f28563a26eb",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "0faa2ab1a4a403a258b2f405c7f8e43ad15119de7bde35806d247877e399b252",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/flash_separator/010_production_of_liquid_carbon_dioxide_from_2_tph_of_raw_gas.zip",
+    "curated_source_entry": "Production_Of_Liquid_Carbon_Dioxide_From_2_Tph_Of_Raw_Gas_By_Ms_Madhangi_R/Flowsheet.dwxmz",
+    "detected_process_category": "flash_separator",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Compressor",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp9D01.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 30,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "flash_separator",
+    "source_format": "dwxmz",
+    "source_name": "Production_of_Liquid_Carbon_dioxide_from_2_TPH_of_Raw_gas.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 425000.0,
+      "stream": "S6",
+      "stream_id": "MAT-6141548f-024a-4c2f-8413-2b874ff1d908",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S6",
+      "threshold": 425000.0
+    },
+    "target_stream_tag": "S6"
+  }
+}

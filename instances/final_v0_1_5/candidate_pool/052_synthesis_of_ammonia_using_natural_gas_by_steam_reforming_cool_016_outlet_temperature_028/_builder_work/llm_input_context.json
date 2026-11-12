@@ -1,0 +1,45 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-0ba4d0ac-b20d-4bf6-b6cf-96ea7681a47a",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "052_synthesis_of_ammonia_using_natural_gas_by_steam_reforming_cool_016_outlet_temperature_028",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Carbon monoxide",
+    "target_metric": {
+      "component": "Carbon monoxide",
+      "direction": "min",
+      "family": "terminal_composition",
+      "metric": "mass_fraction",
+      "min": 0.0711520464065726,
+      "stream": "Off gas",
+      "stream_id": "MAT-9568c649-8d27-41f7-af90-a391600b8503",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Off gas",
+      "threshold": 0.0711520464065726
+    },
+    "target_stream_tag": "Off gas"
+  }
+}

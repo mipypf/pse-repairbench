@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: Liquified-N2
+Target metric: temperature
+Observed target value: 25.5386459717455
+Required target value: >= 61.809898043309516

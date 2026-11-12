@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-3ca38f36-0bed-44cd-967b-38f2020832cc",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "009_monochlorobenzene_separation_process_co_01_outlet_temperature_004",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 347.7728404942673,
+      "metric": "temperature",
+      "stream": "S-06",
+      "stream_id": "MAT-8c76857c-a75c-4bbc-81b2-634095601e4e",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-06",
+      "threshold": 347.7728404942673
+    },
+    "target_stream_tag": "S-06"
+  }
+}

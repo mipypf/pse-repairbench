@@ -1,0 +1,597 @@
+{
+  "column": null,
+  "duration_sec": 6.282,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 20,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/faulty_calculated.dwxmz",
+  "simulation_path": "public/faulty.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-8b48a7ff-c28f-4b8f-bac6-050943950ece",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-0e30f3a3-019c-4936-9359-414547f28fbf"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-976ba279-5a47-4eae-9f29-37b68d7c0871",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "R1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4e90a53a-f0ec-483d-b1b9-cf252f49c04a",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "D1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-dcb72175-bc2b-4d52-9554-88cc645c2b05",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "B1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3ce0ae10-0f11-4e6f-88d1-32b9add72a3d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Recycle",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-a1556db3-0832-4d98-9d5b-8f4bc1f23cdb"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "BB-93a5650f-6358-4ec5-a663-352683b8b162"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f77c0a0f-967f-4002-9935-d489e6ba142a",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "R2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-0e30f3a3-019c-4936-9359-414547f28fbf"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-6c7ba34b-bb9b-4a44-805a-1db1e6e9b834"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3174a79f-fff4-4d76-bbcb-f785cc13dbb2",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "R3",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "BB-93a5650f-6358-4ec5-a663-352683b8b162"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-524707c9-3a70-420b-8ed6-fcb0f31021d4"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-dbb1da71-fd4c-4d82-8ae9-610b5bda2ea9",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "R4",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-6c7ba34b-bb9b-4a44-805a-1db1e6e9b834"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-a1556db3-0832-4d98-9d5b-8f4bc1f23cdb"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-a302881c-d42f-4cb5-9667-7c91def1dc04",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Reactor Output1",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-524707c9-3a70-420b-8ed6-fcb0f31021d4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8250e372-d697-444b-a620-b1cadd3dc778",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Reactor Output 2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-524707c9-3a70-420b-8ed6-fcb0f31021d4"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-4e90a53a-f0ec-483d-b1b9-cf252f49c04a",
+        "mass_flow": 0.509109187800306,
+        "molar_flow": 8.7896775919274,
+        "tag": "D1",
+        "upstream_unit_guids": [
+          "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+        ]
+      },
+      {
+        "id": "MAT-dcb72175-bc2b-4d52-9554-88cc645c2b05",
+        "mass_flow": 0.0438475704986469,
+        "molar_flow": 0.61370377648108,
+        "tag": "B1",
+        "upstream_unit_guids": [
+          "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+        ]
+      },
+      {
+        "id": "MAT-8250e372-d697-444b-a620-b1cadd3dc778",
+        "mass_flow": 0.187162875096727,
+        "molar_flow": 3.20925595744941,
+        "tag": "Reactor Output 2",
+        "upstream_unit_guids": [
+          "RC-524707c9-3a70-420b-8ed6-fcb0f31021d4"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Isobutane": {
+          "mass_flow": 0.0808670322641916,
+          "mass_fraction": 0.432067696237295,
+          "molar_flow": 1.39132779323893,
+          "mole_fraction": 0.433535938449951
+        },
+        "Isopentane": {
+          "mass_flow": 0.00326164654401004,
+          "mass_fraction": 0.0174267815790092,
+          "molar_flow": 0.0452072307253157,
+          "mole_fraction": 0.0140865145456471
+        },
+        "N-butane": {
+          "mass_flow": 0.103033428115593,
+          "mass_fraction": 0.550501417881858,
+          "molar_flow": 1.7727035128676,
+          "mole_fraction": 0.55237211876253
+        },
+        "Propane": {
+          "mass_flow": 7.68172932362971e-07,
+          "mass_fraction": 4.10430183852418e-06,
+          "molar_flow": 1.74206175661658e-05,
+          "mole_fraction": 5.42824187199172e-06
+        }
+      },
+      "id": "MAT-8250e372-d697-444b-a620-b1cadd3dc778",
+      "mass_flow": 0.187162875096727,
+      "molar_flow": 3.20925595744941,
+      "pressure": 861845,
+      "tag": "Reactor Output 2",
+      "temperature": 342.076718288712,
+      "total_energy_flow": -478.235306363856
+    },
+    {
+      "compounds": {
+        "Isobutane": {
+          "mass_flow": 0.704598961211954,
+          "mass_fraction": 0.494211184147281,
+          "molar_flow": 12.1227166420396,
+          "mole_fraction": 0.494991765833552
+        },
+        "Isopentane": {
+          "mass_flow": 0.0115859851461654,
+          "mass_fraction": 0.0081264999720554,
+          "molar_flow": 0.160584630068109,
+          "mole_fraction": 0.00655695187392976
+        },
+        "N-butane": {
+          "mass_flow": 0.709506125463452,
+          "mass_fraction": 0.497653107268154,
+          "molar_flow": 12.2071450403366,
+          "mole_fraction": 0.498439125298724
+        },
+        "Propane": {
+          "mass_flow": 1.31287575362168e-05,
+          "mass_fraction": 9.20861250944204e-06,
+          "molar_flow": 0.000297733823364244,
+          "mole_fraction": 1.21569937933192e-05
+        }
+      },
+      "id": "MAT-a302881c-d42f-4cb5-9667-7c91def1dc04",
+      "mass_flow": 1.42570420057911,
+      "molar_flow": 24.4907440462677,
+      "pressure": 861845,
+      "tag": "Reactor Output1",
+      "temperature": 342.076718288712,
+      "total_energy_flow": -3238.93039992729
+    },
+    {
+      "compounds": {
+        "Isobutane": {
+          "mass_flow": 0.385259934171797,
+          "mass_fraction": 0.238866512921012,
+          "molar_flow": 6.62844720557373,
+          "mole_fraction": 0.2392941229449
+        },
+        "Isopentane": {
+          "mass_flow": 0.0148476328004944,
+          "mass_fraction": 0.0092057386652727,
+          "molar_flow": 0.205791876182721,
+          "mole_fraction": 0.0074293096094845
+        },
+        "N-butane": {
+          "mass_flow": 1.21274561177368,
+          "mass_fraction": 0.751919132124085,
+          "molar_flow": 20.8654457638163,
+          "mole_fraction": 0.75326519002947
+        },
+        "Propane": {
+          "mass_flow": 1.38969298591991e-05,
+          "mass_fraction": 8.61628963030066e-06,
+          "molar_flow": 0.00031515442711088,
+          "mole_fraction": 1.1377416141187e-05
+        }
+      },
+      "id": "MAT-dbb1da71-fd4c-4d82-8ae9-610b5bda2ea9",
+      "mass_flow": 1.61286707567584,
+      "molar_flow": 27.7,
+      "pressure": 861845,
+      "tag": "R4",
+      "temperature": 377.039,
+      "total_energy_flow": -3588.35571967568
+    },
+    {
+      "compounds": {
+        "Isobutane": {
+          "mass_flow": 0.385259934171797,
+          "mass_fraction": 0.238866512921012,
+          "molar_flow": 6.62844720557373,
+          "mole_fraction": 0.2392941229449
+        },
+        "Isopentane": {
+          "mass_flow": 0.0148476328004944,
+          "mass_fraction": 0.0092057386652727,
+          "molar_flow": 0.205791876182721,
+          "mole_fraction": 0.0074293096094845
+        },
+        "N-butane": {
+          "mass_flow": 1.21274561177368,
+          "mass_fraction": 0.751919132124085,
+          "molar_flow": 20.8654457638163,
+          "mole_fraction": 0.75326519002947
+        },
+        "Propane": {
+          "mass_flow": 1.38969298591991e-05,
+          "mass_fraction": 8.61628963030066e-06,
+          "molar_flow": 0.00031515442711088,
+          "mole_fraction": 1.1377416141187e-05
+        }
+      },
+      "id": "MAT-3174a79f-fff4-4d76-bbcb-f785cc13dbb2",
+      "mass_flow": 1.61286707567584,
+      "molar_flow": 27.7,
+      "pressure": 861845,
+      "tag": "R3",
+      "temperature": 308.217473912812,
+      "total_energy_flow": -4125.64039361731
+    },
+    {
+      "compounds": {
+        "Isobutane": {
+          "mass_flow": 0.385259934171797,
+          "mass_fraction": 0.238866512921012,
+          "molar_flow": 6.62844720557373,
+          "mole_fraction": 0.2392941229449
+        },
+        "Isopentane": {
+          "mass_flow": 0.0148476328004944,
+          "mass_fraction": 0.0092057386652727,
+          "molar_flow": 0.205791876182721,
+          "mole_fraction": 0.0074293096094845
+        },
+        "N-butane": {
+          "mass_flow": 1.21274561177368,
+          "mass_fraction": 0.751919132124085,
+          "molar_flow": 20.8654457638163,
+          "mole_fraction": 0.75326519002947
+        },
+        "Propane": {
+          "mass_flow": 1.38969298591991e-05,
+          "mass_fraction": 8.61628963030066e-06,
+          "molar_flow": 0.00031515442711088,
+          "mole_fraction": 1.1377416141187e-05
+        }
+      },
+      "id": "MAT-f77c0a0f-967f-4002-9935-d489e6ba142a",
+      "mass_flow": 1.61286707567584,
+      "molar_flow": 27.7,
+      "pressure": 642269.51666667,
+      "tag": "R2",
+      "temperature": 329.928,
+      "total_energy_flow": -4098.07396252201
+    },
+    {
+      "compounds": {
+        "Isobutane": {
+          "mass_flow": 3.69348439606794e-06,
+          "mass_fraction": 8.42346418299714e-05,
+          "molar_flow": 6.35468787497366e-05,
+          "mole_fraction": 0.00010354650107273
+        },
+        "Isopentane": {
+          "mass_flow": 0.0420640798167775,
+          "mass_fraction": 0.959325210916202,
+          "molar_flow": 0.583018587657026,
+          "mole_fraction": 0.95
+        },
+        "N-butane": {
+          "mass_flow": 0.00177979719747325,
+          "mass_fraction": 0.0405905544419655,
+          "molar_flow": 0.0306216419453023,
+          "mole_fraction": 0.049896453498924
+        },
+        "Propane": {
+          "mass_flow": 9.7666333955402e-17,
+          "mass_fraction": 2.22740582533338e-15,
+          "molar_flow": 2.21487607965149e-15,
+          "mole_fraction": 3.6090312045192e-15
+        }
+      },
+      "id": "MAT-dcb72175-bc2b-4d52-9554-88cc645c2b05",
+      "mass_flow": 0.0438475704986469,
+      "molar_flow": 0.61370377648108,
+      "pressure": 650865,
+      "tag": "B1",
+      "temperature": 367.31873636037,
+      "total_energy_flow": -106.78090199936
+    },
+    {
+      "compounds": {
+        "Isobutane": {
+          "mass_flow": 0.462686685039941,
+          "mass_fraction": 0.908816214924461,
+          "molar_flow": 7.96058451056465,
+          "mole_fraction": 0.90567423290654
+        },
+        "Isopentane": {
+          "mass_flow": 6.83470272575977e-11,
+          "mass_fraction": 1.34248269124552e-10,
+          "molar_flow": 9.47306763296589e-10,
+          "mole_fraction": 1.0777491590438e-10
+        },
+        "N-butane": {
+          "mass_flow": 0.0408700319146818,
+          "mass_fraction": 0.0802775374989161,
+          "molar_flow": 0.703174207354192,
+          "mole_fraction": 0.08
+        },
+        "Propane": {
+          "mass_flow": 0.00555247077733668,
+          "mass_fraction": 0.0109062474423749,
+          "molar_flow": 0.12591887306124,
+          "mole_fraction": 0.014325766985684
+        }
+      },
+      "id": "MAT-4e90a53a-f0ec-483d-b1b9-cf252f49c04a",
+      "mass_flow": 0.509109187800306,
+      "molar_flow": 8.7896775919274,
+      "pressure": 620528,
+      "tag": "D1",
+      "temperature": 321.236129493284,
+      "total_energy_flow": -1342.00952931779
+    },
+    {
+      "compounds": {
+        "Isobutane": {
+          "mass_flow": 0.385259934171797,
+          "mass_fraction": 0.238866512921012,
+          "molar_flow": 6.62844720557373,
+          "mole_fraction": 0.2392941229449
+        },
+        "Isopentane": {
+          "mass_flow": 0.0148476328004944,
+          "mass_fraction": 0.0092057386652727,
+          "molar_flow": 0.205791876182721,
+          "mole_fraction": 0.0074293096094845
+        },
+        "N-butane": {
+          "mass_flow": 1.21274561177368,
+          "mass_fraction": 0.751919132124085,
+          "molar_flow": 20.8654457638163,
+          "mole_fraction": 0.75326519002947
+        },
+        "Propane": {
+          "mass_flow": 1.38969298591991e-05,
+          "mass_fraction": 8.61628963030066e-06,
+          "molar_flow": 0.00031515442711088,
+          "mole_fraction": 1.1377416141187e-05
+        }
+      },
+      "id": "MAT-976ba279-5a47-4eae-9f29-37b68d7c0871",
+      "mass_flow": 1.61286707567584,
+      "molar_flow": 27.7,
+      "pressure": 642269.51666667,
+      "tag": "R1",
+      "temperature": 332.826614901795,
+      "total_energy_flow": -3588.75571118194
+    },
+    {
+      "compounds": {
+        "Isobutane": {
+          "mass_flow": 0.146465619112,
+          "mass_fraction": 0.198087825490931,
+          "molar_flow": 2.51996,
+          "mole_fraction": 0.2
+        },
+        "Isopentane": {
+          "mass_flow": 0.0454530099122,
+          "mass_fraction": 0.0614730470544113,
+          "molar_flow": 0.62999,
+          "mole_fraction": 0.05
+        },
+        "N-butane": {
+          "mass_flow": 0.5419227907144,
+          "mass_fraction": 0.732924954316446,
+          "molar_flow": 9.323852,
+          "mole_fraction": 0.74
+        },
+        "Propane": {
+          "mass_flow": 0.00555595992876,
+          "mass_fraction": 0.0075141731382109,
+          "molar_flow": 0.125998,
+          "mole_fraction": 0.01
+        }
+      },
+      "id": "MAT-8b48a7ff-c28f-4b8f-bac6-050943950ece",
+      "mass_flow": 0.73939737966736,
+      "molar_flow": 12.5998,
+      "pressure": 101325,
+      "tag": "Feed",
+      "temperature": 298.15,
+      "total_energy_flow": -1626.2012663185
+    },
+    {
+      "compounds": {
+        "Isobutane": {
+          "mass_flow": 0.704598961211954,
+          "mass_fraction": 0.494211184147281,
+          "molar_flow": 12.1227166420396,
+          "mole_fraction": 0.494991765833552
+        },
+        "Isopentane": {
+          "mass_flow": 0.0115859851461654,
+          "mass_fraction": 0.0081264999720554,
+          "molar_flow": 0.160584630068109,
+          "mole_fraction": 0.00655695187392976
+        },
+        "N-butane": {
+          "mass_flow": 0.709506125463452,
+          "mass_fraction": 0.497653107268154,
+          "molar_flow": 12.2071450403366,
+          "mole_fraction": 0.498439125298724
+        },
+        "Propane": {
+          "mass_flow": 1.31287575362168e-05,
+          "mass_fraction": 9.20861250944204e-06,
+          "molar_flow": 0.000297733823364244,
+          "mole_fraction": 1.21569937933192e-05
+        }
+      },
+      "id": "MAT-3ce0ae10-0f11-4e6f-88d1-32b9add72a3d",
+      "mass_flow": 1.42570420057911,
+      "molar_flow": 24.4907440462677,
+      "pressure": 861845,
+      "tag": "Recycle",
+      "temperature": 342.076718288712,
+      "total_energy_flow": -3240.0282957076
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "delta_p": 0,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "AQ-6c7ba34b-bb9b-4a44-805a-1db1e6e9b834",
+    "outlet_pressure": null,
+    "outlet_temperature": 377.039,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "Heater",
+    "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-4e90a53a-f0ec-483d-b1b9-cf252f49c04a",
+      "mass_flow": 0.509109187800306,
+      "molar_flow": 8.7896775919274,
+      "tag": "D1",
+      "upstream_unit_guids": [
+        "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+      ]
+    },
+    {
+      "id": "MAT-dcb72175-bc2b-4d52-9554-88cc645c2b05",
+      "mass_flow": 0.0438475704986469,
+      "molar_flow": 0.61370377648108,
+      "tag": "B1",
+      "upstream_unit_guids": [
+        "COUO-08a034a7-2cec-468a-ae06-d879b17cf8b3"
+      ]
+    },
+    {
+      "id": "MAT-8250e372-d697-444b-a620-b1cadd3dc778",
+      "mass_flow": 0.187162875096727,
+      "molar_flow": 3.20925595744941,
+      "tag": "Reactor Output 2",
+      "upstream_unit_guids": [
+        "RC-524707c9-3a70-420b-8ed6-fcb0f31021d4"
+      ]
+    }
+  ]
+}

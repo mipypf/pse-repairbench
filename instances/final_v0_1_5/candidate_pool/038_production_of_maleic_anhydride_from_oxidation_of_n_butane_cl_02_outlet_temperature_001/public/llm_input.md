@@ -1,0 +1,206 @@
+# LLM Input Packet: Target-Parameter Pair Selection Repair
+
+## Task
+
+The DWSIM flowsheet runs headlessly, but the selected process stream misses its target.
+Select exactly one allowed target-parameter pair to change, and propose a canonical repair action that restores the target after rerunning the flowsheet.
+
+## Target
+
+- Target stream: `S-23`
+- Required target: `temperature at least 643.480206866`
+- Faulty observed target value: `617.243535517832`
+
+## Observed Candidate Unit Parameters
+
+```json
+[
+  {
+    "calc_mode": "OutletTemperature",
+    "delta_p": 180000,
+    "guid": "CL-9000d0c9-dc58-4f43-b8fc-b410fa0bd6d3",
+    "kind": "unit_operation",
+    "observed_values": {
+      "thermal_specification/outlet_temperature": 395.15
+    },
+    "outlet_temperature": 395.15,
+    "supported_parameters": [
+      "thermal_specification/outlet_temperature"
+    ],
+    "tag": "CL-02",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  {
+    "calc_mode": "OutletTemperature",
+    "delta_p": 5000,
+    "guid": "HT-7cdf3c8e-6c03-4d4f-b778-18955980201a",
+    "kind": "unit_operation",
+    "observed_values": {
+      "thermal_specification/outlet_temperature": 673.437
+    },
+    "outlet_temperature": 673.437,
+    "supported_parameters": [
+      "thermal_specification/outlet_temperature"
+    ],
+    "tag": "HT-02",
+    "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+  },
+  {
+    "calc_mode": "OutletPressure",
+    "delta_p": 183675,
+    "guid": "C-60f4215d-18f0-478f-89cd-52c57676bc7d",
+    "kind": "unit_operation",
+    "observed_values": {
+      "pressure_specification/outlet_pressure": 285000
+    },
+    "outlet_temperature": 433.483259624499,
+    "p_out": 285000,
+    "supported_parameters": [
+      "pressure_specification/outlet_pressure"
+    ],
+    "tag": "C-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+  },
+  {
+    "calc_mode": "OutletTemperature",
+    "delta_p": 15000,
+    "guid": "CL-aea23b3b-cb6a-4643-b147-41acc81054c7",
+    "kind": "unit_operation",
+    "observed_values": {
+      "thermal_specification/outlet_temperature": 312.15
+    },
+    "outlet_temperature": 312.15,
+    "supported_parameters": [
+      "thermal_specification/outlet_temperature"
+    ],
+    "tag": "CL-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  {
+    "calc_mode": "OutletTemperature",
+    "delta_p": 30000,
+    "guid": "HT-7d9516ac-0f88-4b70-abea-2d9df13a31fd",
+    "kind": "unit_operation",
+    "observed_values": {
+      "thermal_specification/outlet_temperature": 363.15
+    },
+    "outlet_temperature": 363.15,
+    "supported_parameters": [
+      "thermal_specification/outlet_temperature"
+    ],
+    "tag": "HT-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+  },
+  {
+    "condenser_duty": 2567.93167213174,
+    "feed_stage": 1,
+    "feed_stage_name": "Stage1",
+    "feed_stream_id": "MS-76293854-baba-4342-b425-d0b1877ae2c6",
+    "guid": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+    "kind": "unit_operation",
+    "number_of_stages": 12,
+    "observed_values": {
+      "column_specification/reflux_ratio": 0.8
+    },
+    "reboiler_duty": -572.24741108805,
+    "reflux_ratio": 0.8,
+    "supported_parameters": [
+      "column_configuration/feed_stage",
+      "column_specification/reflux_ratio"
+    ],
+    "tag": "DC-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+  },
+  {
+    "calc_mode": "OutletTemperature",
+    "delta_p": -23000,
+    "guid": "HT-8a10ec1a-7da3-42cb-8207-3de8049666a9",
+    "kind": "unit_operation",
+    "observed_values": {
+      "thermal_specification/outlet_temperature": 573.15
+    },
+    "outlet_temperature": 573.15,
+    "supported_parameters": [
+      "thermal_specification/outlet_temperature"
+    ],
+    "tag": "HT-03",
+    "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+  },
+  {
+    "calc_mode": "OutletTemperature",
+    "delta_p": -10000,
+    "guid": "CL-5ce1a542-c24d-40a8-9e24-90fd9a9f15a0",
+    "kind": "unit_operation",
+    "observed_values": {
+      "thermal_specification/outlet_temperature": 303.15
+    },
+    "outlet_temperature": 303.15,
+    "supported_parameters": [
+      "thermal_specification/outlet_temperature"
+    ],
+    "tag": "CL-03",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  }
+]
+```
+
+## Faulty Stream Table
+
+```csv
+stream_tag,stream_id,temperature,pressure,molar_flow,mass_flow,carbon dioxide_mole_fraction,carbon dioxide_molar_flow,carbon monoxide_mole_fraction,carbon monoxide_molar_flow,di butylphthalate_mole_fraction,di butylphthalate_molar_flow,maleic anhydride_mole_fraction,maleic anhydride_molar_flow,n-butane_mole_fraction,n-butane_molar_flow,nitrogen_mole_fraction,nitrogen_molar_flow,oxygen_mole_fraction,oxygen_molar_flow,water_mole_fraction,water_molar_flow
+S-16,MS-2111fc36-d4c4-42bd-ba10-69eeafac9360,393.68,111325,1,0.278348000000001,9.06488575265671e-64,9.06488575265673e-64,2.95263811328236e-71,2.95263811328237e-71,1,1,2.13567284289836e-23,2.13567284289837e-23,0,0,1.3850103442513e-74,1.3850103442513e-74,2.50695916480814e-71,2.50695916480815e-71,1.30251523265719e-31,1.3025152326572e-31
+S-18,MS-610398b5-5898-4e9e-893d-c5ef9c31e93d,713.779993635473,101325,91.8333333333335,25.5616246666667,9.87101964112523e-66,9.06488637043335e-64,3.21520950630239e-73,2.9526340632877e-71,1,91.8333333333335,2.32562142013335e-25,2.13569567082246e-23,0,0,1.50817675682939e-76,1.38500898835499e-74,2.72989805706852e-73,2.50695638240793e-71,1.41835173921507e-33,1.3025196805125e-31
+S-22,MS-284d8806-f41b-435b-b4af-dffe8d30d5e3,393.68,111325,1,0.278348000000001,9.06488575265671e-64,9.06488575265673e-64,2.95263811328236e-71,2.95263811328237e-71,1,1,2.13567284289836e-23,2.13567284289837e-23,0,0,1.3850103442513e-74,1.3850103442513e-74,2.50695916480814e-71,2.50695916480815e-71,1.30251523265719e-31,1.3025152326572e-31
+S-24,MS-6c3473d2-d40e-488e-bca1-7e6370ea6443,709.279243093118,101325,1,0.278348000000001,9.06488575265671e-64,9.06488575265673e-64,2.95263811328236e-71,2.95263811328237e-71,1,1,2.13567284289836e-23,2.13567284289837e-23,0,0,1.3850103442513e-74,1.3850103442513e-74,2.50695916480814e-71,2.50695916480815e-71,1.30251523265719e-31,1.3025152326572e-31
+S-23,MS-167bfa3e-a801-400e-9031-805e970b63f2,617.243535517832,101325,90.8333333332335,18.4888245493702,0.000167804024885682,0.0152421989270994,3.87443971812664e-05,0.00351928274396116,0.635701875818794,57.7429203868103,0.250145738097484,22.7215712104964,0,0,0.000939405758284646,0.0853293563774282,8.63349028467501e-05,0.00784208700857118,0.112920097000524,10.2569088108697
+S-21,MS-76293854-baba-4342-b425-d0b1877ae2c6,573.15,124325,91.8333333333335,22.5369404156591,7.38878357616199e-05,0.00678536625077544,1.70600270153143e-05,0.00156667914757303,0.839591476763694,77.102483949466,0.110144701745587,10.1149551103031,0,0,0.000413641900104313,0.0379861144929128,3.80151961915024e-05,0.00349106218358631,0.0497212165316464,4.56606505148953
+S-19,MS-dfaf52ed-f0eb-42e4-ae88-7daf1084055f,395.143895575566,101325,91.8333333333335,22.5369404156591,7.38878357616199e-05,0.00678536625077544,1.70600270153143e-05,0.00156667914757303,0.839591476763694,77.102483949466,0.110144701745587,10.1149551103031,0,0,0.000413641900104313,0.0379861144929128,3.80151961915024e-05,0.00349106218358631,0.0497212165316464,4.56606505148953
+S-20,MS-9a739e88-e84b-4e34-86a2-2e94e6f3a7e0,713.779993635473,101325,2627.51575046482,96.1245891835774,0.0281557217937374,73.9796024787507,0.0281557366833245,73.9796416013752,0.0325782030711212,85.5997416912124,0.0140705714311047,36.970648053268,0,0,0.708668485193092,1862.0376067029,0.0616794980826447,162.063852692914,0.126691783744976,332.884657244407
+S-17,MS-48246a61-4dda-4675-8c86-cc175c65c19d,713.779993635473,101325,90.8333333333334,25.2832766666667,0,0,0,0,1,90.8333333333334,0,0,0,0,0,0,0,0,0,0
+S-01,MS-36d31302-0455-45a5-a169-df1e9288340b,345.15,925000,76.4696335192634,4.44458333333333,0,0,0,0,0,0,0,0,1,76.4696335192634,0,0,0,0,0,0
+S-02,MS-97953d73-0b32-4549-9304-4b8d8314a76d,363.150000000027,895000,76.4696335192634,4.44458333333333,0,0,0,0,0,0,0,0,1,76.4696335192634,0,0,0,0,0,0
+S-03,MS-0fa683a8-991d-4a89-aee0-cbaf12c60c22,363.150000008182,300000,76.4696335192634,4.44458333333333,0,0,0,0,0,0,0,0,1,76.4696335192634,0,0,0,0,0,0
+S-06,MS-126f3bf4-0ae6-42e8-bfb6-5849f0a02564,312.150000000958,285000,76.4696335192634,4.44458333333333,0,0,0,0,0,0,0,0,1,76.4696335192634,0,0,0,0,0,0
+S-04,MS-6fd2edc6-dc0d-4665-be75-025487ef5e1e,298.15,101325,2436.34166666667,70.28927082145,0,0,0,0,0,0,0,0,0,0,0.79,1924.70991666667,0.21,511.63175,0,0
+S-05,MS-734e703f-5ea5-4d9f-a6e8-f4cbfa3919d7,433.496294730776,285000,2436.34166666667,70.28927082145,0,0,0,0,0,0,0,0,0,0,0.79,1924.70991666667,0.21,511.63175,0,0
+S-07,MS-b104fdb3-82c6-475f-8f4d-8c417a3ec746,419.986327062869,285000,2512.81130018593,74.7338541547833,0,0,0,0,0,0,0,0,0.0304319045021826,76.4696335192634,0.765958795443276,1924.70991666667,0.203609300054542,511.63175,0,0
+S-08,MS-850aa90a-f800-4672-8033-a864a79414de,426.593480925823,285000,2512.81130018593,74.7338541547833,0,0,0,0,0,0,0,0,0.0304319045021826,76.4696335192634,0.765958795443276,1924.70991666667,0.203609300054542,511.63175,0,0
+S-09,MS-eab40d57-f776-4b16-b194-1935819a2f86,673.437,280000,2512.81130018593,74.7338541547833,0,0,0,0,0,0,0,0,0.0304319045021826,76.4696335192634,0.765958795443276,1924.70991666667,0.203609300054542,511.63175,0,0
+S-10,MS-63aa3872-5d8d-4d7c-98d1-2b231a0b9466,968.15,270000,2627.51575046482,74.7338541547833,0.0291033968134103,76.4696335192634,0.0291033968134103,76.4696335192634,0,0,0.0145516984067052,38.2348167596317,0,0,0.732520791293515,1924.70991666667,0.0637554310126132,167.518399163315,0.130965285660346,344.113350836685
+S-11,MS-f43035f5-811d-4abf-b052-56206e8dbe93,968.15,270000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+S-12,MS-4d59b7d0-57a8-4b6a-9c53-a6875551beb7,968.15,270000,2627.51575046482,74.7338541547833,0.0291033968134103,76.4696335192634,0.0291033968134103,76.4696335192634,0,0,0.0145516984067052,38.2348167596317,0,0,0.732520791293515,1924.70991666667,0.0637554310126132,167.518399163315,0.130965285660346,344.113350836685
+S-14,MS-c104afff-8cdf-477f-9c79-5d7a00800f5c,962.524103357957,270000,2627.51575046482,74.7338541547833,0.0291033968134103,76.4696335192634,0.0291033968134103,76.4696335192634,0,0,0.0145516984067052,38.2348167596317,0,0,0.732520791293515,1924.70991666667,0.0637554310126132,167.518399163315,0.130965285660346,344.113350836685
+S-13,MS-89150117-07ba-4609-83b4-a220d9d59e8c,968.15,270000,2627.51575046482,74.7338541547833,0.0291033968134103,76.4696335192634,0.0291033968134103,76.4696335192634,0,0,0.0145516984067052,38.2348167596317,0,0,0.732520791293515,1924.70991666667,0.0637554310126132,167.518399163315,0.130965285660346,344.113350836685
+S-15,MS-4d8b4926-a66e-42bb-aba3-9e4cd163931f,395.15,90000,2627.51575046482,74.7338541547833,0.0291033968134103,76.4696335192634,0.0291033968134103,76.4696335192634,0,0,0.0145516984067052,38.2348167596317,0,0,0.732520791293515,1924.70991666667,0.0637554310126132,167.518399163315,0.130965285660346,344.113350836685
+```
+
+## Faulty Simulator Log
+
+```text
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-23
+Target metric: temperature
+Observed target value: 617.243535517832
+Required target value: >= 643.4802068659178
+```
+
+## Allowed Repair Actions
+
+- `CL-02` / GUID `CL-9000d0c9-dc58-4f43-b8fc-b410fa0bd6d3`: `thermal_specification/outlet_temperature` (unit: `K`)
+- `HT-02` / GUID `HT-7cdf3c8e-6c03-4d4f-b778-18955980201a`: `thermal_specification/outlet_temperature` (unit: `K`)
+- `C-01` / GUID `C-60f4215d-18f0-478f-89cd-52c57676bc7d`: `pressure_specification/outlet_pressure` (unit: `Pa`)
+- `CL-01` / GUID `CL-aea23b3b-cb6a-4643-b147-41acc81054c7`: `thermal_specification/outlet_temperature` (unit: `K`)
+- `HT-01` / GUID `HT-7d9516ac-0f88-4b70-abea-2d9df13a31fd`: `thermal_specification/outlet_temperature` (unit: `K`)
+- `DC-01` / GUID `DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd`: `column_specification/reflux_ratio` (unit: `null`)
+- `DC-01` / GUID `DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd`: `column_configuration/feed_stage` (unit: `null`)
+- `HT-03` / GUID `HT-8a10ec1a-7da3-42cb-8207-3de8049666a9`: `thermal_specification/outlet_temperature` (unit: `K`)
+- `CL-03` / GUID `CL-5ce1a542-c24d-40a8-9e24-90fd9a9f15a0`: `thermal_specification/outlet_temperature` (unit: `K`)
+
+Choose exactly one `set_unit_parameter` action.
+
+## Required Output
+
+Return one JSON object with exactly one canonical `set_unit_parameter` action. The action target GUID and parameter must match exactly one allowed repair action above.

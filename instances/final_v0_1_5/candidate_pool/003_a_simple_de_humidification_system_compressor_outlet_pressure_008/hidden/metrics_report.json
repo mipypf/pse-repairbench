@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 274999.973523717,
+    "target_mole_fraction": null,
+    "target_value": 274999.973523717
+  },
+  "faulty": {
+    "outlet_pressure": 412499.960285576,
+    "target_mole_fraction": null,
+    "target_value": 412499.960285576
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c",
+      "kind": "unit_operation",
+      "tag": "compressor"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 274999.973523717
+  },
+  "instance_id": "003_a_simple_de_humidification_system_compressor_outlet_pressure_008",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 274999.973523717,
+    "target_mole_fraction": null,
+    "target_value": 274999.973523717
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/003_a_simple_de_humidification_system.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_pressure",
+    "max": 316249.96955227474,
+    "metric": "pressure",
+    "product_mole_fraction_min": null,
+    "stream": "removed water",
+    "stream_id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "removed water",
+    "threshold": 316249.96955227474
+  },
+  "target_delta": -137499.98676185898
+}

@@ -1,0 +1,142 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_reflux_ratio_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "rationale": "Restore the unit reflux ratio to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+        "kind": "unit_operation",
+        "tag": "DC-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": null,
+      "value": 7.50199999999571
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit reflux ratio is consistent with the requested process target.",
+      "target": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the reflux ratio of DC-01 to 7.50199999999571.",
+      "target": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "002_air_liquefaction_using_linde_single_column_system_dc_01_reflux_ratio_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "aceb79100b6694a1d9310a1105fc23696b77d91cee35bd41fde4d5839a56671f",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "6ce0a6d9226fa9287c07c6b295dc76837f774e82f11584f14ba80a4447b5e32b",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/distillation/002_air_liquefaction_using_linde_single_column_system.zip",
+    "curated_source_entry": "Air_Liquefaction_Using_Linde_Single_Column_System_By_Mr_Srivatsa_Varadarajan/Flowsheet.dwxmz",
+    "detected_process_category": "distillation",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.DistillationColumn",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "8f73f18b-cf76-4b83-8251-281fd5f715d3.xml",
+      "402f0df5-54e0-4d59-8b6b-72f196ec2758.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 22,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "distillation",
+    "source_format": "dwxmz",
+    "source_name": "Air_Liquefaction_using_Linde_Single_Column_System.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Nitrogen",
+    "target_metric": {
+      "component": "Nitrogen",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.0077604090926189275,
+      "metric": "mole_fraction",
+      "stream": "S-08",
+      "stream_id": "MAT-2519ae05-5427-41dd-9478-ba6dab5f5678",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-08",
+      "threshold": 0.0077604090926189275
+    },
+    "target_stream_tag": "S-08"
+  }
+}

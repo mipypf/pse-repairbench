@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "AQ-41d4e056-2c7e-4293-8dba-7823598a05f5",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "001_4_step_refrigeration_cycle_with_propylene_ethylene_methane_and_nitrogen_ht_01_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "other_candidate",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 69.17599999508403,
+      "stream": "M-24",
+      "stream_id": "MAT-fac0c9c9-4dda-4df4-8258-f8434c830dc9",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "M-24",
+      "threshold": 69.17599999508403
+    },
+    "target_stream_tag": "M-24"
+  }
+}

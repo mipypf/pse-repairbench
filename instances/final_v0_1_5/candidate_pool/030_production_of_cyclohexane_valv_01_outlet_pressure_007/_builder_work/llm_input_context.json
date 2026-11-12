@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "VALV-6e5cc788-25f4-4553-8f65-bed06e770fa3",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "030_production_of_cyclohexane_valv_01_outlet_pressure_007",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_flow",
+      "max": 0.012184715909535805,
+      "metric": "mass_flow",
+      "stream": "S15",
+      "stream_id": "MAT-a9c9deac-5cd1-4cf8-af86-0b3d5f91ecf4",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S15",
+      "threshold": 0.012184715909535805
+    },
+    "target_stream_tag": "S15"
+  }
+}

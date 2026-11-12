@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 291.483333333333,
+    "target_mole_fraction": null,
+    "target_value": 291.486332687953
+  },
+  "faulty": {
+    "outlet_temperature": 261.483333333333,
+    "target_mole_fraction": null,
+    "target_value": 261.483333333333
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-1743a2d1-6118-44f2-b51c-ef8a36c22860",
+      "kind": "unit_operation",
+      "tag": "COOLER"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 291.483333333333
+  },
+  "instance_id": "042_production_of_toluene_by_dehydrogenation_of_normal_heptane_cooler_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 291.483333333333,
+    "target_mole_fraction": null,
+    "target_value": 291.486332687953
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/042_production_of_toluene_by_dehydrogenation_of_normal_heptane.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 282.485432881567,
+    "product_mole_fraction_min": null,
+    "stream": "S-05",
+    "stream_id": "MAT-b484fea2-6c14-4381-98ba-245529808c66",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-05",
+    "threshold": 282.485432881567
+  },
+  "target_delta": 30.002999354619988
+}

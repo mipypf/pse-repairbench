@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 323.15,
+    "target_mole_fraction": null,
+    "target_value": 323.15
+  },
+  "faulty": {
+    "outlet_temperature": 293.15,
+    "target_mole_fraction": null,
+    "target_value": 293.15
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-090744d3-7826-4f4a-8dc2-2e7b1ed39f04",
+      "kind": "unit_operation",
+      "tag": "Cooler"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 323.15
+  },
+  "instance_id": "008_dry_methane_reforming_process_cooler_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 323.15,
+    "target_mole_fraction": null,
+    "target_value": 323.15
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/008_dry_methane_reforming_process.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 314.15,
+    "product_mole_fraction_min": null,
+    "stream": "Cooler_out",
+    "stream_id": "MAT-a54bc1dc-48c0-4f55-8f5f-7c0e4298f63f",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Cooler_out",
+    "threshold": 314.15
+  },
+  "target_delta": 30.0
+}

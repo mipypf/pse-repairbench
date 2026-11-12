@@ -1,0 +1,952 @@
+{
+  "column": {
+    "condenser_duty": 123.005532475497,
+    "condenser_pressure": null,
+    "feed_stage": 5,
+    "feed_stage_id": "500e2eb9-bf00-4059-a429-9ca8bf26ac46",
+    "feed_stage_name": "Stage5",
+    "feed_stream_id": "MAT-355e8342-aea3-47dd-91ce-0d5c1af565df",
+    "guid": "DC-a97989ca-ac4b-48d2-9654-2323021b0956",
+    "number_of_stages": 12,
+    "reboiler_duty": -329.10973171519,
+    "reboiler_pressure": null,
+    "reflux_ratio": 1.20499999993355,
+    "specs": [
+      {
+        "calculated_value": 1.205,
+        "component_id": "",
+        "spec_unit": "",
+        "spec_value": 1.205,
+        "stage_number": 0,
+        "stype": "Stream_Ratio"
+      },
+      {
+        "calculated_value": 11.94,
+        "component_id": "Benzene",
+        "spec_unit": "mol/s",
+        "spec_value": 11.94,
+        "stage_number": -1,
+        "stype": "Product_Molar_Flow_Rate"
+      }
+    ],
+    "tag": "DC-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+  },
+  "duration_sec": 8.901,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 27,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/faulty_calculated.dwxmz",
+  "simulation_path": "public/faulty.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-23782a07-0786-42ad-a828-0b798a4c4b91"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-a5f5b467-6cb0-47b3-bd09-aec5aed0fbc1",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-01",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-23782a07-0786-42ad-a828-0b798a4c4b91"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-dd50b5c9-3730-4051-a95f-c905f4a24be5",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-02",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-65f74fa1-414f-406e-8488-b97858948dce"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f4678183-e7a6-412f-99a6-47d94c5ae20d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-03",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-23782a07-0786-42ad-a828-0b798a4c4b91"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-290d212b-d770-40ce-88fb-2d6249bfb1fc",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-06",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-9e0a5944-2ec3-4d8a-897f-4443eb449b49"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CS-082d8d1b-653f-483a-8c51-2bb81adc83db"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-eefb8ddc-9268-486f-b44d-3b839b76363a",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-05",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-9e0a5944-2ec3-4d8a-897f-4443eb449b49"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-9e0a5944-2ec3-4d8a-897f-4443eb449b49"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-77e65f24-f1bc-491e-ad6e-25874eeece7e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-04",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-65f74fa1-414f-406e-8488-b97858948dce"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-d1a9ad3e-942e-4db8-acc3-23aaab3f785f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-0a9925f7-d336-415b-af26-5078e2f83083",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DC-a97989ca-ac4b-48d2-9654-2323021b0956"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DC-4c54c848-290b-4835-8d3d-f19fe55a2979"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-99357e52-6227-4aa9-8014-1b6bf38bbba1",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-08",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DC-a97989ca-ac4b-48d2-9654-2323021b0956"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-23782a07-0786-42ad-a828-0b798a4c4b91"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-662800f5-c17e-4aa6-b329-e80fb6d31909",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-d1a9ad3e-942e-4db8-acc3-23aaab3f785f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-675ced55-ae0a-4506-9070-21c5e0edb2c3",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-09",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DC-4c54c848-290b-4835-8d3d-f19fe55a2979"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c5d3a2d6-1af4-4330-8ad7-d4b484a09ef3",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DC-4c54c848-290b-4835-8d3d-f19fe55a2979"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DC-a97989ca-ac4b-48d2-9654-2323021b0956"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-355e8342-aea3-47dd-91ce-0d5c1af565df",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-11",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-082d8d1b-653f-483a-8c51-2bb81adc83db"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-48e23d4e-2022-468e-b6ba-c03e21c2914a",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-082d8d1b-653f-483a-8c51-2bb81adc83db"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-290d212b-d770-40ce-88fb-2d6249bfb1fc",
+        "mass_flow": 0.593469939468767,
+        "molar_flow": 14.8697267702229,
+        "tag": "S-06",
+        "upstream_unit_guids": [
+          "RC-9e0a5944-2ec3-4d8a-897f-4443eb449b49"
+        ]
+      },
+      {
+        "id": "MAT-675ced55-ae0a-4506-9070-21c5e0edb2c3",
+        "mass_flow": 1.19692774744461,
+        "molar_flow": 10.4713914176088,
+        "tag": "S-09",
+        "upstream_unit_guids": [
+          "DC-4c54c848-290b-4835-8d3d-f19fe55a2979"
+        ]
+      },
+      {
+        "id": "MAT-c5d3a2d6-1af4-4330-8ad7-d4b484a09ef3",
+        "mass_flow": 0.209,
+        "molar_flow": 1.46860858229122,
+        "tag": "S-10",
+        "upstream_unit_guids": [
+          "DC-4c54c848-290b-4835-8d3d-f19fe55a2979"
+        ]
+      },
+      {
+        "id": "MAT-48e23d4e-2022-468e-b6ba-c03e21c2914a",
+        "mass_flow": 0.00584881044244666,
+        "molar_flow": 0.160413045918363,
+        "tag": "S-12",
+        "upstream_unit_guids": [
+          "CS-082d8d1b-653f-483a-8c51-2bb81adc83db"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.0315234080963847,
+          "mass_fraction": 0.0224217837350702,
+          "molar_flow": 0.403567603789447,
+          "mole_fraction": 0.0337996318081614
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 1.0504875635786,
+          "mass_fraction": 0.74718459675816,
+          "molar_flow": 9.33294683469958,
+          "mole_fraction": 0.781653838752059
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 0.117995789385663,
+          "mass_fraction": 0.0839273489454223,
+          "molar_flow": 0.802681523963369,
+          "mole_fraction": 0.0672262582883894
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 0.205920995127573,
+          "mass_fraction": 0.146466270561348,
+          "molar_flow": 1.4008040375476,
+          "mole_fraction": 0.11732027115139
+        }
+      },
+      "id": "MAT-99357e52-6227-4aa9-8014-1b6bf38bbba1",
+      "mass_flow": 1.40592775618822,
+      "molar_flow": 11.94,
+      "pressure": 111325,
+      "tag": "S-08",
+      "temperature": 409.557008270087,
+      "total_energy_flow": 284.899210104643
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.138621525036641,
+          "mass_fraction": 0.969568287138981,
+          "molar_flow": 1.77465445746306,
+          "mole_fraction": 0.97868388847741
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 0.00434973294765977,
+          "mass_fraction": 0.0304235804826106,
+          "molar_flow": 0.0386447472137183,
+          "mole_fraction": 0.0213117496272571
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 1.62559184535406e-07,
+          "mass_fraction": 1.13699679805891e-06,
+          "molar_flow": 1.10582974745518e-06,
+          "mole_fraction": 6.09841399085972e-07
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 1.00014664246705e-06,
+          "mass_fraction": 6.99538161023885e-06,
+          "molar_flow": 6.80362608989709e-06,
+          "mole_fraction": 3.75205393331927e-06
+        }
+      },
+      "id": "MAT-0a9925f7-d336-415b-af26-5078e2f83083",
+      "mass_flow": 0.142972420690128,
+      "molar_flow": 1.81330711413261,
+      "pressure": 101325,
+      "tag": "S-07",
+      "temperature": 353.843163453838,
+      "total_energy_flow": 102.258705958793
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 1.14327071342601,
+          "mass_fraction": 0.532194798446499,
+          "molar_flow": 14.6363305924686,
+          "mole_fraction": 0.508497870600895
+        },
+        "Chlorine": {
+          "mass_flow": 1,
+          "mass_fraction": 0.46550199545625,
+          "molar_flow": 14.1031788565143,
+          "mole_fraction": 0.489975022901661
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 1.01200150301566e-18,
+          "mass_fraction": 4.71088719058513e-19,
+          "molar_flow": 2.77557710529585e-17,
+          "mole_fraction": 9.64295687921799e-19
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 0.00494649014511247,
+          "mass_fraction": 0.00230260103305453,
+          "molar_flow": 0.0439465740893048,
+          "mole_fraction": 0.00152679930283311
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 1.74786327079014e-07,
+          "mass_fraction": 8.136338403375e-08,
+          "molar_flow": 1.18900645623199e-06,
+          "mole_fraction": 4.13086632134283e-08
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 1.12502377521045e-06,
+          "mass_fraction": 5.2370081229619e-07,
+          "molar_flow": 7.65311883654953e-06,
+          "mole_fraction": 2.65885947796474e-07
+        }
+      },
+      "id": "MAT-77e65f24-f1bc-491e-ad6e-25874eeece7e",
+      "mass_flow": 2.14821850338123,
+      "molar_flow": 28.7834648651974,
+      "pressure": 101325,
+      "tag": "S-04",
+      "temperature": 313.15,
+      "total_energy_flow": 869.346674660111
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.170145736441121,
+          "mass_fraction": 0.109436175334329,
+          "molar_flow": 2.17823234532845,
+          "mole_fraction": 0.156552835636793
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0.00584881044244666,
+          "mass_fraction": 0.00376190117052006,
+          "molar_flow": 0.160413045918363,
+          "mole_fraction": 0.0115291269388748
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 1.05483636506759,
+          "mass_fraction": 0.678461064092021,
+          "molar_flow": 9.37158330646622,
+          "mole_fraction": 0.673549791040539
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 0.117995844387347,
+          "mass_fraction": 0.075893843626017,
+          "molar_flow": 0.80268189811939,
+          "mole_fraction": 0.0576899555891801
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 0.205921807573956,
+          "mass_fraction": 0.132447015777112,
+          "molar_flow": 1.40080956431855,
+          "mole_fraction": 0.100678290794613
+        }
+      },
+      "id": "MAT-eefb8ddc-9268-486f-b44d-3b839b76363a",
+      "mass_flow": 1.55474856391246,
+      "molar_flow": 13.913720160151,
+      "pressure": 101325,
+      "tag": "S-05",
+      "temperature": 313.15,
+      "total_energy_flow": 163.69398491314
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.0444184027884509,
+          "mass_fraction": 0.074845244610386,
+          "molar_flow": 0.568651343873744,
+          "mole_fraction": 0.0382422187482615
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0.508365439628692,
+          "mass_fraction": 0.856598465768536,
+          "molar_flow": 13.9427409065343,
+          "mole_fraction": 0.937659522732796
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 0.0391792750689599,
+          "mass_fraction": 0.066017286577363,
+          "molar_flow": 0.34808416959742,
+          "mole_fraction": 0.0234089149704129
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 0.000562895970484412,
+          "mass_fraction": 0.000948482699879083,
+          "molar_flow": 0.00382917219142877,
+          "mole_fraction": 0.000257514630268581
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 0.000943926012180287,
+          "mass_fraction": 0.00159052034383616,
+          "molar_flow": 0.0064211780260152,
+          "mole_fraction": 0.000431828918260544
+        }
+      },
+      "id": "MAT-290d212b-d770-40ce-88fb-2d6249bfb1fc",
+      "mass_flow": 0.593469939468767,
+      "molar_flow": 14.8697267702229,
+      "pressure": 101325,
+      "tag": "S-06",
+      "temperature": 313.15,
+      "total_energy_flow": -1215.28913979364
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 1.14327071342601,
+          "mass_fraction": 0.532194798446499,
+          "molar_flow": 14.6363305924686,
+          "mole_fraction": 0.508497870600895
+        },
+        "Chlorine": {
+          "mass_flow": 1,
+          "mass_fraction": 0.46550199545625,
+          "molar_flow": 14.1031788565143,
+          "mole_fraction": 0.489975022901661
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 1.01200150301566e-18,
+          "mass_fraction": 4.71088719058513e-19,
+          "molar_flow": 2.77557710529585e-17,
+          "mole_fraction": 9.64295687921799e-19
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 0.00494649014511247,
+          "mass_fraction": 0.00230260103305453,
+          "molar_flow": 0.0439465740893048,
+          "mole_fraction": 0.00152679930283311
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 1.74786327079014e-07,
+          "mass_fraction": 8.136338403375e-08,
+          "molar_flow": 1.18900645623199e-06,
+          "mole_fraction": 4.13086632134283e-08
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 1.12502377521045e-06,
+          "mass_fraction": 5.2370081229619e-07,
+          "molar_flow": 7.65311883654953e-06,
+          "mole_fraction": 2.65885947796474e-07
+        }
+      },
+      "id": "MAT-f4678183-e7a6-412f-99a6-47d94c5ae20d",
+      "mass_flow": 2.14821850338123,
+      "molar_flow": 28.7834648651974,
+      "pressure": 101325,
+      "tag": "S-03",
+      "temperature": 302.032020021921,
+      "total_energy_flow": 770.973159524757
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 1,
+          "mass_fraction": 1,
+          "molar_flow": 14.1031788565143,
+          "mole_fraction": 1
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-dd50b5c9-3730-4051-a95f-c905f4a24be5",
+      "mass_flow": 1,
+      "molar_flow": 14.1031788565143,
+      "pressure": 101325,
+      "tag": "S-02",
+      "temperature": 313.15,
+      "total_energy_flow": 5.9705312269407
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 1,
+          "mass_fraction": 1,
+          "molar_flow": 12.8021564976577,
+          "mole_fraction": 1
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-a5f5b467-6cb0-47b3-bd09-aec5aed0fbc1",
+      "mass_flow": 1,
+      "molar_flow": 12.8021564976577,
+      "pressure": 101325,
+      "tag": "S-01",
+      "temperature": 313.15,
+      "total_energy_flow": 659.225838201366
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.138621525036641,
+          "mass_fraction": 0.969568287138981,
+          "molar_flow": 1.77465445746306,
+          "mole_fraction": 0.97868388847741
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 0.00434973294765977,
+          "mass_fraction": 0.0304235804826106,
+          "molar_flow": 0.0386447472137183,
+          "mole_fraction": 0.0213117496272571
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 1.62559184535406e-07,
+          "mass_fraction": 1.13699679805891e-06,
+          "molar_flow": 1.10582974745518e-06,
+          "mole_fraction": 6.09841399085972e-07
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 1.00014664246705e-06,
+          "mass_fraction": 6.99538161023885e-06,
+          "molar_flow": 6.80362608989709e-06,
+          "mole_fraction": 3.75205393331927e-06
+        }
+      },
+      "id": "MAT-662800f5-c17e-4aa6-b329-e80fb6d31909",
+      "mass_flow": 0.142972420690128,
+      "molar_flow": 1.81330711413261,
+      "pressure": 101325,
+      "tag": "S-07",
+      "temperature": 353.843163453838,
+      "total_energy_flow": 105.776789678999
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.0314788205474593,
+          "mass_fraction": 0.0262996831802632,
+          "molar_flow": 0.402996787010258,
+          "mole_fraction": 0.0384855050239622
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 1.02810674062311,
+          "mass_fraction": 0.858954722052418,
+          "molar_flow": 9.13410675509997,
+          "mole_fraction": 0.872291598205371
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 0.0380049291409535,
+          "mass_fraction": 0.0317520662563738,
+          "molar_flow": 0.258533415470221,
+          "mole_fraction": 0.0246894997197287
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 0.0993372571330854,
+          "mass_fraction": 0.0829935285109449,
+          "molar_flow": 0.675754460028335,
+          "mole_fraction": 0.0645333970509383
+        }
+      },
+      "id": "MAT-675ced55-ae0a-4506-9070-21c5e0edb2c3",
+      "mass_flow": 1.19692774744461,
+      "molar_flow": 10.4713914176088,
+      "pressure": 101325,
+      "tag": "S-09",
+      "temperature": 402.938606474632,
+      "total_energy_flow": 268.4878994897
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 4.45884755881299e-05,
+          "mass_fraction": 0.000213341988459952,
+          "molar_flow": 0.00057082864247123,
+          "mole_fraction": 0.000388686712957012
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 0.0223808488085139,
+          "mass_fraction": 0.107085400997674,
+          "molar_flow": 0.198840309288137,
+          "mole_fraction": 0.135393672409241
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 0.079990844393037,
+          "mass_fraction": 0.382731312885344,
+          "molar_flow": 0.544148000660106,
+          "mole_fraction": 0.370519420369426
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 0.106583718322861,
+          "mass_fraction": 0.509969944128522,
+          "molar_flow": 0.725049443700501,
+          "mole_fraction": 0.493698220508375
+        }
+      },
+      "id": "MAT-c5d3a2d6-1af4-4330-8ad7-d4b484a09ef3",
+      "mass_flow": 0.209,
+      "molar_flow": 1.46860858229122,
+      "pressure": 111325,
+      "tag": "S-10",
+      "temperature": 443.360364505308,
+      "total_energy_flow": 14.171708585119
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0.170145736441121,
+          "mass_fraction": 0.109849417988441,
+          "molar_flow": 2.17823234532845,
+          "mole_fraction": 0.158378804983879
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 1.05483636506759,
+          "mass_fraction": 0.681023005332934,
+          "molar_flow": 9.37158330646622,
+          "mole_fraction": 0.681405805064008
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 0.117995844387347,
+          "mass_fraction": 0.0761804268630037,
+          "molar_flow": 0.80268189811939,
+          "mole_fraction": 0.0583628280421903
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 0.205921807573956,
+          "mass_fraction": 0.132947149815621,
+          "molar_flow": 1.40080956431855,
+          "mole_fraction": 0.101852561909922
+        }
+      },
+      "id": "MAT-355e8342-aea3-47dd-91ce-0d5c1af565df",
+      "mass_flow": 1.54889975347001,
+      "molar_flow": 13.7533071142326,
+      "pressure": 101325,
+      "tag": "S-11",
+      "temperature": 313.15,
+      "total_energy_flow": 181.054008266855
+    },
+    {
+      "compounds": {
+        "Benzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Chlorine": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen chloride": {
+          "mass_flow": 0.00584881044244666,
+          "mass_fraction": 1,
+          "molar_flow": 0.160413045918363,
+          "mole_fraction": 1
+        },
+        "Monochlorobenzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-dichlorobenzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "P-dichlorobenzene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-48e23d4e-2022-468e-b6ba-c03e21c2914a",
+      "mass_flow": 0.00584881044244666,
+      "molar_flow": 0.160413045918363,
+      "pressure": 101325,
+      "tag": "S-12",
+      "temperature": 313.150000002938,
+      "total_energy_flow": -14.7439880792937
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": null,
+    "delta_p": null,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "DC-a97989ca-ac4b-48d2-9654-2323021b0956",
+    "outlet_pressure": null,
+    "outlet_temperature": null,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "DC-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-290d212b-d770-40ce-88fb-2d6249bfb1fc",
+      "mass_flow": 0.593469939468767,
+      "molar_flow": 14.8697267702229,
+      "tag": "S-06",
+      "upstream_unit_guids": [
+        "RC-9e0a5944-2ec3-4d8a-897f-4443eb449b49"
+      ]
+    },
+    {
+      "id": "MAT-675ced55-ae0a-4506-9070-21c5e0edb2c3",
+      "mass_flow": 1.19692774744461,
+      "molar_flow": 10.4713914176088,
+      "tag": "S-09",
+      "upstream_unit_guids": [
+        "DC-4c54c848-290b-4835-8d3d-f19fe55a2979"
+      ]
+    },
+    {
+      "id": "MAT-c5d3a2d6-1af4-4330-8ad7-d4b484a09ef3",
+      "mass_flow": 0.209,
+      "molar_flow": 1.46860858229122,
+      "tag": "S-10",
+      "upstream_unit_guids": [
+        "DC-4c54c848-290b-4835-8d3d-f19fe55a2979"
+      ]
+    },
+    {
+      "id": "MAT-48e23d4e-2022-468e-b6ba-c03e21c2914a",
+      "mass_flow": 0.00584881044244666,
+      "molar_flow": 0.160413045918363,
+      "tag": "S-12",
+      "upstream_unit_guids": [
+        "CS-082d8d1b-653f-483a-8c51-2bb81adc83db"
+      ]
+    }
+  ]
+}

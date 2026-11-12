@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_pressure": 1500000,
+    "target_mole_fraction": null,
+    "target_value": 6.74361529955164e-07
+  },
+  "faulty": {
+    "separator_pressure": 2250000,
+    "target_mole_fraction": null,
+    "target_value": 0.0095020840443405
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "pressure",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-113c45da-a2c8-48a9-9265-85fe92a65d7f",
+      "kind": "unit_operation",
+      "tag": "FS-03"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 1500000.0
+  },
+  "instance_id": "051_synthesis_of_ammonia_in_cryogenic_process_fs_03_pressure_008",
+  "repairable": true,
+  "repaired": {
+    "separator_pressure": 1500000,
+    "target_mole_fraction": null,
+    "target_value": 6.74361529955164e-07
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/051_synthesis_of_ammonia_in_cryogenic_process.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 0.0028510972663731184,
+    "metric": "mass_flow",
+    "product_mole_fraction_min": null,
+    "stream": "S-10",
+    "stream_id": "MAT-fd0ef933-59a8-4ad2-a260-1f404c3a37a5",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-10",
+    "threshold": 0.0028510972663731184
+  },
+  "target_delta": -0.009501409682810545
+}

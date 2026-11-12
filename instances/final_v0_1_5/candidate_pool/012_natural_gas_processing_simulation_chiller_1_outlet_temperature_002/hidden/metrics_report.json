@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 243.15,
+    "target_mole_fraction": null,
+    "target_value": 317.568593847044
+  },
+  "faulty": {
+    "outlet_temperature": 233.15,
+    "target_mole_fraction": null,
+    "target_value": 274.121347778409
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-30d5d772-5e7c-4262-b103-6879a9bce925",
+      "kind": "unit_operation",
+      "tag": "Chiller-1"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 243.15
+  },
+  "instance_id": "012_natural_gas_processing_simulation_chiller_1_outlet_temperature_002",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 243.15,
+    "target_mole_fraction": null,
+    "target_value": 317.568593847044
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/012_natural_gas_processing_simulation.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 304.5344200264535,
+    "product_mole_fraction_min": null,
+    "stream": "LPG",
+    "stream_id": "MAT-b341ded4-f48a-4981-a26d-e6933c88f69d",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "LPG",
+    "threshold": 304.5344200264535
+  },
+  "target_delta": 43.44724606863497
+}

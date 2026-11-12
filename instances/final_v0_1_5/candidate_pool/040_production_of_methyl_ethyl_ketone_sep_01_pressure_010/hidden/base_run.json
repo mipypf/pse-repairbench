@@ -1,0 +1,670 @@
+{
+  "column": null,
+  "duration_sec": 3.698,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 27,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/base_calculated.dwxmz",
+  "simulation_path": "hidden/base.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "HE-c4bd12d8-97ad-4daf-9d9c-16023e407996"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-ccb37445-00a7-4024-bbab-29d5b4c29f80",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-01",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "HE-c4bd12d8-97ad-4daf-9d9c-16023e407996"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8bf462fa-c66d-4188-babb-d4b6660f0105",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-03",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-9c567597-f7f9-478e-8fbe-8408d51d42d5"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-b0ef157f-5158-44c0-b074-f9c30892db7a"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2c3f1fbe-aa16-40b5-bb41-fee04e56f5dd",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-04",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-c4bd12d8-97ad-4daf-9d9c-16023e407996"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RC-27c2d37d-3cbc-44ff-a3d5-67005c39b0ad"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-1081aaac-a858-415f-8800-51c1e68f4cce",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-02",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HE-c4bd12d8-97ad-4daf-9d9c-16023e407996"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-0de1443b-b871-4cf9-877f-89d217c7284d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-b0ef157f-5158-44c0-b074-f9c30892db7a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "TURB-96195444-8401-4e97-adc9-bd7d99f77b92"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-15f82d59-4faa-471d-89df-d6d06d2cb8af",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-09",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-27bed7d7-b5f6-4a15-bc01-1e9665d4d83d",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-08",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-fe2ea09f-3042-408e-b4a3-30aaf1f49e1a",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-05",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-27c2d37d-3cbc-44ff-a3d5-67005c39b0ad"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-9c567597-f7f9-478e-8fbe-8408d51d42d5"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9c1506eb-0ed1-4074-a298-5bd03d19b74a",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-06",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RC-27c2d37d-3cbc-44ff-a3d5-67005c39b0ad"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-324e6e14-76ab-49b2-9291-2293b59316be",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-13",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-575a8d38-7ba7-49ac-9f52-daaf981d81a8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-e3fe516b-2883-4eb9-80c2-d803b78a3584",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "S-12",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-575a8d38-7ba7-49ac-9f52-daaf981d81a8"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-b1ad48b4-14bc-4124-9613-8bd2749e8f81"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-3dbcbe62-72f9-4809-95f3-316a0b60e266",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "TURB-96195444-8401-4e97-adc9-bd7d99f77b92"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-575a8d38-7ba7-49ac-9f52-daaf981d81a8"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f0b73eca-66fb-4240-b8a4-e9161b02cda0",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "S-11",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-b1ad48b4-14bc-4124-9613-8bd2749e8f81"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-27bed7d7-b5f6-4a15-bc01-1e9665d4d83d",
+        "mass_flow": 0.0256987580647594,
+        "molar_flow": 8.16857110656085,
+        "tag": "S-08",
+        "upstream_unit_guids": [
+          "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072"
+        ]
+      },
+      {
+        "id": "MAT-324e6e14-76ab-49b2-9291-2293b59316be",
+        "mass_flow": 0.575676378988555,
+        "molar_flow": 7.9821778934389,
+        "tag": "S-13",
+        "upstream_unit_guids": [
+          "COUO-575a8d38-7ba7-49ac-9f52-daaf981d81a8"
+        ]
+      },
+      {
+        "id": "MAT-e3fe516b-2883-4eb9-80c2-d803b78a3584",
+        "mass_flow": 0.0605676016539267,
+        "molar_flow": 0.817201,
+        "tag": "S-12",
+        "upstream_unit_guids": [
+          "COUO-575a8d38-7ba7-49ac-9f52-daaf981d81a8"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.0661942948800001,
+          "mass_fraction": 0.1,
+          "molar_flow": 0.893050000000001,
+          "mole_fraction": 0.0526315789473685
+        },
+        "Hydrogen": {
+          "mass_flow": 0.016202534706,
+          "mass_fraction": 0.0244772374044813,
+          "molar_flow": 8.03745,
+          "mole_fraction": 0.473684210526316
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0.579546119214,
+          "mass_fraction": 0.875522762595519,
+          "molar_flow": 8.03745,
+          "mole_fraction": 0.473684210526316
+        }
+      },
+      "id": "MAT-9c1506eb-0ed1-4074-a298-5bd03d19b74a",
+      "mass_flow": 0.6619429488,
+      "molar_flow": 16.96795,
+      "pressure": 101325,
+      "tag": "S-06",
+      "temperature": 673.15,
+      "total_energy_flow": -1614.88048091564
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.0604014915283276,
+          "mass_fraction": 0.997257442575518,
+          "molar_flow": 0.81489729752633,
+          "mole_fraction": 0.99718098426988
+        },
+        "Hydrogen": {
+          "mass_flow": 4.67838381652825e-28,
+          "mass_fraction": 7.72423488593749e-27,
+          "molar_flow": 2.320765033895e-25,
+          "mole_fraction": 2.839895e-25
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0.000166110125599031,
+          "mass_fraction": 0.00274255742448178,
+          "molar_flow": 0.00230370247463074,
+          "mole_fraction": 0.0028190157312959
+        }
+      },
+      "id": "MAT-e3fe516b-2883-4eb9-80c2-d803b78a3584",
+      "mass_flow": 0.0605676016539267,
+      "molar_flow": 0.817201,
+      "pressure": 111458,
+      "tag": "S-12",
+      "temperature": 375.067251760543,
+      "total_energy_flow": -262.39489280202
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.00547949540069868,
+          "mass_fraction": 0.00951836066354846,
+          "molar_flow": 0.0739257571436488,
+          "mole_fraction": 0.0092613517426633
+        },
+        "Hydrogen": {
+          "mass_flow": 9.58634988001886e-07,
+          "mass_fraction": 1.66523245175732e-06,
+          "molar_flow": 0.00047554169295885,
+          "mole_fraction": 5.9575431581114e-05
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0.570195924952868,
+          "mass_fraction": 0.990479974104,
+          "molar_flow": 7.90777659460121,
+          "mole_fraction": 0.99067907282562
+        }
+      },
+      "id": "MAT-324e6e14-76ab-49b2-9291-2293b59316be",
+      "mass_flow": 0.575676378988555,
+      "molar_flow": 7.9821778934389,
+      "pressure": 101325,
+      "tag": "S-13",
+      "temperature": 349.1139567715,
+      "total_energy_flow": -2125.8255411935
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.000313285323460006,
+          "mass_fraction": 0.0121906795134047,
+          "molar_flow": 0.00422664005445114,
+          "mole_fraction": 0.000517427099466194
+        },
+        "Hydrogen": {
+          "mass_flow": 0.0162015820958676,
+          "mass_fraction": 0.630442220399934,
+          "molar_flow": 8.03697744700459,
+          "mole_fraction": 0.983890247408073
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0.00918389064543175,
+          "mass_fraction": 0.357367100086661,
+          "molar_flow": 0.127367019501806,
+          "mole_fraction": 0.0155923254924606
+        }
+      },
+      "id": "MAT-27bed7d7-b5f6-4a15-bc01-1e9665d4d83d",
+      "mass_flow": 0.0256987580647594,
+      "molar_flow": 8.16857110656085,
+      "pressure": 354637.5,
+      "tag": "S-08",
+      "temperature": 283.15,
+      "total_energy_flow": -35.3352266678256
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.0658809869290266,
+          "mass_fraction": 0.103546735110165,
+          "molar_flow": 0.888823054669983,
+          "mole_fraction": 0.101009749146351
+        },
+        "Hydrogen": {
+          "mass_flow": 9.58634988002022e-07,
+          "mass_fraction": 1.50670971697673e-06,
+          "molar_flow": 0.000475541692958917,
+          "mole_fraction": 5.40426430908075e-05
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0.570362035078495,
+          "mass_fraction": 0.896451758180118,
+          "molar_flow": 7.91008029707622,
+          "mole_fraction": 0.898936208210559
+        }
+      },
+      "id": "MAT-15f82d59-4faa-471d-89df-d6d06d2cb8af",
+      "mass_flow": 0.63624398064251,
+      "molar_flow": 8.79937889343916,
+      "pressure": 354637.5,
+      "tag": "S-09",
+      "temperature": 283.15,
+      "total_energy_flow": -2491.58355395952
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.0661942948800001,
+          "mass_fraction": 0.1,
+          "molar_flow": 0.893050000000001,
+          "mole_fraction": 0.0526315789473685
+        },
+        "Hydrogen": {
+          "mass_flow": 0.016202534706,
+          "mass_fraction": 0.0244772374044813,
+          "molar_flow": 8.03745,
+          "mole_fraction": 0.473684210526316
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0.579546119214,
+          "mass_fraction": 0.875522762595519,
+          "molar_flow": 8.03745,
+          "mole_fraction": 0.473684210526316
+        }
+      },
+      "id": "MAT-0de1443b-b871-4cf9-877f-89d217c7284d",
+      "mass_flow": 0.6619429488,
+      "molar_flow": 16.96795,
+      "pressure": 99268.1025,
+      "tag": "S-07",
+      "temperature": 353.15,
+      "total_energy_flow": -2116.2745382895
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.6619429488,
+          "mass_fraction": 1,
+          "molar_flow": 8.9305,
+          "mole_fraction": 1
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-ccb37445-00a7-4024-bbab-29d5b4c29f80",
+      "mass_flow": 0.6619429488,
+      "molar_flow": 8.9305,
+      "pressure": 101325,
+      "tag": "S-01",
+      "temperature": 303.15,
+      "total_energy_flow": -3003.27764380193
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.0661942948800001,
+          "mass_fraction": 0.1,
+          "molar_flow": 0.893050000000001,
+          "mole_fraction": 0.0526315789473685
+        },
+        "Hydrogen": {
+          "mass_flow": 0.016202534706,
+          "mass_fraction": 0.0244772374044813,
+          "molar_flow": 8.03745,
+          "mole_fraction": 0.473684210526316
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0.579546119214,
+          "mass_fraction": 0.875522762595519,
+          "molar_flow": 8.03745,
+          "mole_fraction": 0.473684210526316
+        }
+      },
+      "id": "MAT-8bf462fa-c66d-4188-babb-d4b6660f0105",
+      "mass_flow": 0.6619429488,
+      "molar_flow": 16.96795,
+      "pressure": 101325,
+      "tag": "S-03",
+      "temperature": 673.15,
+      "total_energy_flow": -1614.88048091564
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.0661942948800001,
+          "mass_fraction": 0.1,
+          "molar_flow": 0.893050000000001,
+          "mole_fraction": 0.0526315789473685
+        },
+        "Hydrogen": {
+          "mass_flow": 0.016202534706,
+          "mass_fraction": 0.0244772374044813,
+          "molar_flow": 8.03745,
+          "mole_fraction": 0.473684210526316
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0.579546119214,
+          "mass_fraction": 0.875522762595519,
+          "molar_flow": 8.03745,
+          "mole_fraction": 0.473684210526316
+        }
+      },
+      "id": "MAT-2c3f1fbe-aa16-40b5-bb41-fee04e56f5dd",
+      "mass_flow": 0.6619429488,
+      "molar_flow": 16.96795,
+      "pressure": 99268.1025,
+      "tag": "S-04",
+      "temperature": 379.75247225114,
+      "total_energy_flow": -2081.51119075821
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.6619429488,
+          "mass_fraction": 1,
+          "molar_flow": 8.9305,
+          "mole_fraction": 1
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-1081aaac-a858-415f-8800-51c1e68f4cce",
+      "mass_flow": 0.6619429488,
+      "molar_flow": 8.9305,
+      "pressure": 101325,
+      "tag": "S-02",
+      "temperature": 373.150000000118,
+      "total_energy_flow": -2536.64693395924
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Hydrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-fe2ea09f-3042-408e-b4a3-30aaf1f49e1a",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 101325,
+      "tag": "S-05",
+      "temperature": 673.15,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.0658809869290266,
+          "mass_fraction": 0.103546735110165,
+          "molar_flow": 0.888823054669983,
+          "mole_fraction": 0.101009749146351
+        },
+        "Hydrogen": {
+          "mass_flow": 9.58634988002022e-07,
+          "mass_fraction": 1.50670971697673e-06,
+          "molar_flow": 0.000475541692958917,
+          "mole_fraction": 5.40426430908075e-05
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0.570362035078495,
+          "mass_fraction": 0.896451758180118,
+          "molar_flow": 7.91008029707622,
+          "mole_fraction": 0.898936208210559
+        }
+      },
+      "id": "MAT-3dbcbe62-72f9-4809-95f3-316a0b60e266",
+      "mass_flow": 0.63624398064251,
+      "molar_flow": 8.79937889343916,
+      "pressure": 101325,
+      "tag": "S-10",
+      "temperature": 283.273881549893,
+      "total_energy_flow": -2491.54517486684
+    },
+    {
+      "compounds": {
+        "2-butanol": {
+          "mass_flow": 0.0658809869290266,
+          "mass_fraction": 0.103546735110165,
+          "molar_flow": 0.888823054669983,
+          "mole_fraction": 0.101009749146351
+        },
+        "Hydrogen": {
+          "mass_flow": 9.58634988002022e-07,
+          "mass_fraction": 1.50670971697673e-06,
+          "molar_flow": 0.000475541692958917,
+          "mole_fraction": 5.40426430908075e-05
+        },
+        "Methyl ethyl ketone": {
+          "mass_flow": 0.570362035078495,
+          "mass_fraction": 0.896451758180118,
+          "molar_flow": 7.91008029707622,
+          "mole_fraction": 0.898936208210559
+        }
+      },
+      "id": "MAT-f0b73eca-66fb-4240-b8a4-e9161b02cda0",
+      "mass_flow": 0.63624398064251,
+      "molar_flow": 8.79937889343916,
+      "pressure": 101325,
+      "tag": "S-11",
+      "temperature": 353.15,
+      "total_energy_flow": -2385.06448402208
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": null,
+    "delta_p": null,
+    "flash_pressure": 354637.5,
+    "flash_temperature": 283.15,
+    "guid": "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072",
+    "outlet_pressure": null,
+    "outlet_temperature": null,
+    "override_p": "true",
+    "override_t": "true",
+    "p_out": null,
+    "pout": null,
+    "tag": "SEP-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-27bed7d7-b5f6-4a15-bc01-1e9665d4d83d",
+      "mass_flow": 0.0256987580647594,
+      "molar_flow": 8.16857110656085,
+      "tag": "S-08",
+      "upstream_unit_guids": [
+        "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072"
+      ]
+    },
+    {
+      "id": "MAT-324e6e14-76ab-49b2-9291-2293b59316be",
+      "mass_flow": 0.575676378988555,
+      "molar_flow": 7.9821778934389,
+      "tag": "S-13",
+      "upstream_unit_guids": [
+        "COUO-575a8d38-7ba7-49ac-9f52-daaf981d81a8"
+      ]
+    },
+    {
+      "id": "MAT-e3fe516b-2883-4eb9-80c2-d803b78a3584",
+      "mass_flow": 0.0605676016539267,
+      "molar_flow": 0.817201,
+      "tag": "S-12",
+      "upstream_unit_guids": [
+        "COUO-575a8d38-7ba7-49ac-9f52-daaf981d81a8"
+      ]
+    }
+  ]
+}

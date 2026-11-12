@@ -1,0 +1,632 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after outlet pressure injection.",
+  "graphic_object_count": 30,
+  "graphic_objects": [
+    {
+      "name": "MAT-6f0f030d-51a9-42d5-bdde-54fba1d7def0",
+      "object_type": "MaterialStream",
+      "tag": "feed"
+    },
+    {
+      "name": "COUO-92297909-ae1d-4ab1-8f5e-93785858e6f1",
+      "object_type": "CapeOpenUO",
+      "tag": "LPC"
+    },
+    {
+      "name": "MAT-ef38e397-d8d2-49e2-971d-3190f3694e81",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-003"
+    },
+    {
+      "name": "MAT-839610a3-b7ec-440a-abb0-e6d4fdaef187",
+      "object_type": "MaterialStream",
+      "tag": "Isobutanol"
+    },
+    {
+      "name": "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0",
+      "object_type": "Valve",
+      "tag": "VALV-005"
+    },
+    {
+      "name": "MAT-bfccbeaf-c679-4829-8706-b5e71b7ebd39",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-006"
+    },
+    {
+      "name": "COUO-c3a8d7c2-9db0-42c5-a580-21d98fbf1284",
+      "object_type": "CapeOpenUO",
+      "tag": "HPC"
+    },
+    {
+      "name": "MAT-686107bb-8974-4dda-ba2a-ea058103d24f",
+      "object_type": "MaterialStream",
+      "tag": "Recyle back to first column"
+    },
+    {
+      "name": "MAT-0600d28e-d1ae-49c5-9383-a1c13f0ddaa9",
+      "object_type": "MaterialStream",
+      "tag": "N-heptane"
+    },
+    {
+      "name": "VALV-42381f53-f1a9-496e-b234-65aa1e9846e2",
+      "object_type": "Valve",
+      "tag": "VALV-010"
+    },
+    {
+      "name": "MAT-2e801a04-d8e2-447b-853b-6cee906613c3",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-011"
+    },
+    {
+      "name": "REC-39a6fac5-115a-4527-b4a4-c996a6560cde",
+      "object_type": "OT_Recycle",
+      "tag": "REC-012"
+    },
+    {
+      "name": "MAT-52f17ee4-757a-451b-bc36-fe11ed3cd4fe",
+      "object_type": "MaterialStream",
+      "tag": "Recycle stream"
+    },
+    {
+      "name": "MASTERTABLE-79d4fe3b-e8ec-4979-ab59-306ab9728651",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    },
+    {
+      "name": "TEXT-04674a36-113b-4522-870f-6be832a629c8",
+      "object_type": "GO_Text",
+      "tag": "TEXT1"
+    },
+    {
+      "name": "MAT-193819dc-bb22-45ad-b234-717109db823d",
+      "object_type": "MaterialStream",
+      "tag": "Feed2"
+    },
+    {
+      "name": "COUO-73105f5e-bf44-4352-9d47-54efc2f2d58b",
+      "object_type": "CapeOpenUO",
+      "tag": "LPC"
+    },
+    {
+      "name": "MAT-f46baff6-aeb6-4a31-abaa-66502f272aa9",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-016"
+    },
+    {
+      "name": "MAT-079b0cb0-78bf-426e-9188-1df25a4174e3",
+      "object_type": "MaterialStream",
+      "tag": "ISOBUTANOL"
+    },
+    {
+      "name": "VALV-41032154-7329-4ed4-91c5-02a2695c7a98",
+      "object_type": "Valve",
+      "tag": "VALV-018"
+    },
+    {
+      "name": "MAT-efa95d0c-b0da-4131-b870-dafcdf130eb5",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-019"
+    },
+    {
+      "name": "COUO-72448039-2072-4a88-bea0-842833867b87",
+      "object_type": "CapeOpenUO",
+      "tag": "HPC"
+    },
+    {
+      "name": "MAT-3d924e79-a036-4601-94db-0a610718142a",
+      "object_type": "MaterialStream",
+      "tag": "N-HEPTANE"
+    },
+    {
+      "name": "MAT-8a941a1b-8b3f-4004-9d20-54cb77ca5083",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-022"
+    },
+    {
+      "name": "VALV-d850963c-c33c-4bb3-9a29-a3127c71306d",
+      "object_type": "Valve",
+      "tag": "VALV-023"
+    },
+    {
+      "name": "MAT-f016d390-e04c-4c7e-81ce-cf05ac17f0f8",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-024"
+    },
+    {
+      "name": "REC-caf19184-9568-4d85-8914-cb0f0a9212ad",
+      "object_type": "OT_Recycle",
+      "tag": "REC-025"
+    },
+    {
+      "name": "MAT-02e64f2a-1339-4522-a8e9-0597c918fda8",
+      "object_type": "MaterialStream",
+      "tag": "Recycle from HPC"
+    },
+    {
+      "name": "TEXT-29dd8695-309d-4f2b-ab6e-a43577c0ef19",
+      "object_type": "GO_Text",
+      "tag": "TEXT2"
+    },
+    {
+      "name": "MASTERTABLE-b762303f-f5f6-4b14-b099-e12f7921860a",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-52f17ee4-757a-451b-bc36-fe11ed3cd4fe",
+      "object_class": null,
+      "tag": "Recycle stream",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Reciclo",
+      "guid": "REC-39a6fac5-115a-4527-b4a4-c996a6560cde",
+      "object_class": null,
+      "tag": "REC-012",
+      "type": "DWSIM.UnitOperations.SpecialOps.Recycle"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-2e801a04-d8e2-447b-853b-6cee906613c3",
+      "object_class": null,
+      "tag": "MSTR-011",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Vlvula",
+      "guid": "VALV-42381f53-f1a9-496e-b234-65aa1e9846e2",
+      "object_class": null,
+      "tag": "VALV-010",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-0600d28e-d1ae-49c5-9383-a1c13f0ddaa9",
+      "object_class": null,
+      "tag": "N-heptane",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-686107bb-8974-4dda-ba2a-ea058103d24f",
+      "object_class": null,
+      "tag": "Recyle back to first column",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CapeOpenUnitOperation",
+      "guid": "COUO-c3a8d7c2-9db0-42c5-a580-21d98fbf1284",
+      "object_class": null,
+      "tag": "HPC",
+      "type": "DWSIM.UnitOperations.UnitOperations.CapeOpenUO"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-bfccbeaf-c679-4829-8706-b5e71b7ebd39",
+      "object_class": null,
+      "tag": "MSTR-006",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Vlvula",
+      "guid": "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0",
+      "object_class": null,
+      "tag": "VALV-005",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-839610a3-b7ec-440a-abb0-e6d4fdaef187",
+      "object_class": null,
+      "tag": "Isobutanol",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-ef38e397-d8d2-49e2-971d-3190f3694e81",
+      "object_class": null,
+      "tag": "MSTR-003",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CapeOpenUnitOperation",
+      "guid": "COUO-92297909-ae1d-4ab1-8f5e-93785858e6f1",
+      "object_class": null,
+      "tag": "LPC",
+      "type": "DWSIM.UnitOperations.UnitOperations.CapeOpenUO"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-6f0f030d-51a9-42d5-bdde-54fba1d7def0",
+      "object_class": null,
+      "tag": "feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-193819dc-bb22-45ad-b234-717109db823d",
+      "object_class": null,
+      "tag": "Feed2",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-079b0cb0-78bf-426e-9188-1df25a4174e3",
+      "object_class": null,
+      "tag": "ISOBUTANOL",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-f46baff6-aeb6-4a31-abaa-66502f272aa9",
+      "object_class": null,
+      "tag": "MSTR-016",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CapeOpenUnitOperation",
+      "guid": "COUO-73105f5e-bf44-4352-9d47-54efc2f2d58b",
+      "object_class": null,
+      "tag": "LPC",
+      "type": "DWSIM.UnitOperations.UnitOperations.CapeOpenUO"
+    },
+    {
+      "component_description": "Vlvula",
+      "guid": "VALV-41032154-7329-4ed4-91c5-02a2695c7a98",
+      "object_class": null,
+      "tag": "VALV-018",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-efa95d0c-b0da-4131-b870-dafcdf130eb5",
+      "object_class": null,
+      "tag": "MSTR-019",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CapeOpenUnitOperation",
+      "guid": "COUO-72448039-2072-4a88-bea0-842833867b87",
+      "object_class": null,
+      "tag": "HPC",
+      "type": "DWSIM.UnitOperations.UnitOperations.CapeOpenUO"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-3d924e79-a036-4601-94db-0a610718142a",
+      "object_class": null,
+      "tag": "N-HEPTANE",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-8a941a1b-8b3f-4004-9d20-54cb77ca5083",
+      "object_class": null,
+      "tag": "MSTR-022",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Vlvula",
+      "guid": "VALV-d850963c-c33c-4bb3-9a29-a3127c71306d",
+      "object_class": null,
+      "tag": "VALV-023",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-f016d390-e04c-4c7e-81ce-cf05ac17f0f8",
+      "object_class": null,
+      "tag": "MSTR-024",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Reciclo",
+      "guid": "REC-caf19184-9568-4d85-8914-cb0f0a9212ad",
+      "object_class": null,
+      "tag": "REC-025",
+      "type": "DWSIM.UnitOperations.SpecialOps.Recycle"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-02e64f2a-1339-4522-a8e9-0597c918fda8",
+      "object_class": null,
+      "tag": "Recycle from HPC",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 26,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COUO-92297909-ae1d-4ab1-8f5e-93785858e6f1"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-6f0f030d-51a9-42d5-bdde-54fba1d7def0",
+        "is_terminal_material_stream": false,
+        "tag": "feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-ef38e397-d8d2-49e2-971d-3190f3694e81",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-003",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-92297909-ae1d-4ab1-8f5e-93785858e6f1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-839610a3-b7ec-440a-abb0-e6d4fdaef187",
+        "is_terminal_material_stream": true,
+        "tag": "Isobutanol",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-92297909-ae1d-4ab1-8f5e-93785858e6f1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-c3a8d7c2-9db0-42c5-a580-21d98fbf1284"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-bfccbeaf-c679-4829-8706-b5e71b7ebd39",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-006",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-42381f53-f1a9-496e-b234-65aa1e9846e2"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-686107bb-8974-4dda-ba2a-ea058103d24f",
+        "is_terminal_material_stream": false,
+        "tag": "Recyle back to first column",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-c3a8d7c2-9db0-42c5-a580-21d98fbf1284"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-0600d28e-d1ae-49c5-9383-a1c13f0ddaa9",
+        "is_terminal_material_stream": true,
+        "tag": "N-heptane",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-c3a8d7c2-9db0-42c5-a580-21d98fbf1284"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-39a6fac5-115a-4527-b4a4-c996a6560cde"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-2e801a04-d8e2-447b-853b-6cee906613c3",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-011",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-42381f53-f1a9-496e-b234-65aa1e9846e2"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-92297909-ae1d-4ab1-8f5e-93785858e6f1"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-52f17ee4-757a-451b-bc36-fe11ed3cd4fe",
+        "is_terminal_material_stream": false,
+        "tag": "Recycle stream",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-39a6fac5-115a-4527-b4a4-c996a6560cde"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-73105f5e-bf44-4352-9d47-54efc2f2d58b"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-193819dc-bb22-45ad-b234-717109db823d",
+        "is_terminal_material_stream": false,
+        "tag": "Feed2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-41032154-7329-4ed4-91c5-02a2695c7a98"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f46baff6-aeb6-4a31-abaa-66502f272aa9",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-016",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-73105f5e-bf44-4352-9d47-54efc2f2d58b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-079b0cb0-78bf-426e-9188-1df25a4174e3",
+        "is_terminal_material_stream": true,
+        "tag": "ISOBUTANOL",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-73105f5e-bf44-4352-9d47-54efc2f2d58b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-72448039-2072-4a88-bea0-842833867b87"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-efa95d0c-b0da-4131-b870-dafcdf130eb5",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-019",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-41032154-7329-4ed4-91c5-02a2695c7a98"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-3d924e79-a036-4601-94db-0a610718142a",
+        "is_terminal_material_stream": true,
+        "tag": "N-HEPTANE",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-72448039-2072-4a88-bea0-842833867b87"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-d850963c-c33c-4bb3-9a29-a3127c71306d"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8a941a1b-8b3f-4004-9d20-54cb77ca5083",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-022",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-72448039-2072-4a88-bea0-842833867b87"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-caf19184-9568-4d85-8914-cb0f0a9212ad"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-f016d390-e04c-4c7e-81ce-cf05ac17f0f8",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-024",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-d850963c-c33c-4bb3-9a29-a3127c71306d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-73105f5e-bf44-4352-9d47-54efc2f2d58b"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-02e64f2a-1339-4522-a8e9-0597c918fda8",
+        "is_terminal_material_stream": false,
+        "tag": "Recycle from HPC",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-caf19184-9568-4d85-8914-cb0f0a9212ad"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-839610a3-b7ec-440a-abb0-e6d4fdaef187",
+        "tag": "Isobutanol",
+        "upstream_unit_guids": [
+          "COUO-92297909-ae1d-4ab1-8f5e-93785858e6f1"
+        ]
+      },
+      {
+        "id": "MAT-0600d28e-d1ae-49c5-9383-a1c13f0ddaa9",
+        "tag": "N-heptane",
+        "upstream_unit_guids": [
+          "COUO-c3a8d7c2-9db0-42c5-a580-21d98fbf1284"
+        ]
+      },
+      {
+        "id": "MAT-079b0cb0-78bf-426e-9188-1df25a4174e3",
+        "tag": "ISOBUTANOL",
+        "upstream_unit_guids": [
+          "COUO-73105f5e-bf44-4352-9d47-54efc2f2d58b"
+        ]
+      },
+      {
+        "id": "MAT-3d924e79-a036-4601-94db-0a610718142a",
+        "tag": "N-HEPTANE",
+        "upstream_unit_guids": [
+          "COUO-72448039-2072-4a88-bea0-842833867b87"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": "OutletPressure",
+    "guid": "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0",
+    "kind": "unit_operation",
+    "tag": "VALV-005",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "guid": "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0",
+    "kind": "unit_operation",
+    "tag": "VALV-005",
+    "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-839610a3-b7ec-440a-abb0-e6d4fdaef187",
+      "tag": "Isobutanol",
+      "upstream_unit_guids": [
+        "COUO-92297909-ae1d-4ab1-8f5e-93785858e6f1"
+      ]
+    },
+    {
+      "id": "MAT-0600d28e-d1ae-49c5-9383-a1c13f0ddaa9",
+      "tag": "N-heptane",
+      "upstream_unit_guids": [
+        "COUO-c3a8d7c2-9db0-42c5-a580-21d98fbf1284"
+      ]
+    },
+    {
+      "id": "MAT-079b0cb0-78bf-426e-9188-1df25a4174e3",
+      "tag": "ISOBUTANOL",
+      "upstream_unit_guids": [
+        "COUO-73105f5e-bf44-4352-9d47-54efc2f2d58b"
+      ]
+    },
+    {
+      "id": "MAT-3d924e79-a036-4601-94db-0a610718142a",
+      "tag": "N-HEPTANE",
+      "upstream_unit_guids": [
+        "COUO-72448039-2072-4a88-bea0-842833867b87"
+      ]
+    }
+  ]
+}

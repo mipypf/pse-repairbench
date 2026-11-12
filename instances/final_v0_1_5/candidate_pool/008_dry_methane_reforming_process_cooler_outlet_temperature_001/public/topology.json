@@ -1,0 +1,345 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after outlet temperature injection.",
+  "graphic_object_count": 18,
+  "graphic_objects": [
+    {
+      "name": "MIST-382ae935-0216-414c-984f-e11f0a2c4d95",
+      "object_type": "NodeIn",
+      "tag": "Mixer"
+    },
+    {
+      "name": "MAT-23729c45-2c8e-404b-a68c-9deb65afe758",
+      "object_type": "MaterialStream",
+      "tag": "Methane"
+    },
+    {
+      "name": "MAT-091fbf4b-b85b-4f5a-9382-df75928f4668",
+      "object_type": "MaterialStream",
+      "tag": "Carbon-di-oxide"
+    },
+    {
+      "name": "MAT-51df4690-c14c-4b85-ba3e-e96a707f7405",
+      "object_type": "MaterialStream",
+      "tag": "Mixer_out"
+    },
+    {
+      "name": "AQ-169baed2-3697-4a5a-b20b-5aa520b605cc",
+      "object_type": "Heater",
+      "tag": "Heater"
+    },
+    {
+      "name": "EN-17279421-d5c8-4794-ab4f-d890c923eb71",
+      "object_type": "EnergyStream",
+      "tag": "E_Heater"
+    },
+    {
+      "name": "RE-dbc5a5bc-5376-49ec-893f-661a48818411",
+      "object_type": "RCT_Equilibrium",
+      "tag": "Reactor"
+    },
+    {
+      "name": "MAT-b859355b-17c3-49bd-beed-df044e031bb7",
+      "object_type": "MaterialStream",
+      "tag": "Product"
+    },
+    {
+      "name": "EN-583d50f0-efb9-4eef-a08e-305039dae228",
+      "object_type": "EnergyStream",
+      "tag": "E_Reactor"
+    },
+    {
+      "name": "MAT-b4ec0d6f-b345-411a-84b1-845f9dccbb51",
+      "object_type": "MaterialStream",
+      "tag": "Reactor_in"
+    },
+    {
+      "name": "MAT-1598ba22-e692-43f4-a636-7a1bf2034b9a",
+      "object_type": "MaterialStream",
+      "tag": "Reactor_out"
+    },
+    {
+      "name": "RESF-090744d3-7826-4f4a-8dc2-2e7b1ed39f04",
+      "object_type": "Cooler",
+      "tag": "Cooler"
+    },
+    {
+      "name": "MAT-a54bc1dc-48c0-4f55-8f5f-7c0e4298f63f",
+      "object_type": "MaterialStream",
+      "tag": "Cooler_out"
+    },
+    {
+      "name": "EN-58cd53ac-2e2a-418b-bd9b-1c876dd682db",
+      "object_type": "EnergyStream",
+      "tag": "E_Cooler"
+    },
+    {
+      "name": "EREC-e9513f78-cbdc-4a04-8a56-49f145ee7799",
+      "object_type": "OT_EnergyRecycle",
+      "tag": "E_Recycle"
+    },
+    {
+      "name": "TEXT-c56a8725-8bd5-4e6e-bd4a-cd1b884d7016",
+      "object_type": "GO_Text",
+      "tag": "TEXT1"
+    },
+    {
+      "name": "TEXT-193de101-51d7-4adf-8749-add81df756bf",
+      "object_type": "GO_Text",
+      "tag": "TEXT2"
+    },
+    {
+      "name": "MASTERTABLE-5a609273-e093-457e-9350-cf5e9d3ca6d8",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "Misturador",
+      "guid": "MIST-382ae935-0216-414c-984f-e11f0a2c4d95",
+      "object_class": null,
+      "tag": "Mixer",
+      "type": "DWSIM.UnitOperations.UnitOperations.Mixer"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-23729c45-2c8e-404b-a68c-9deb65afe758",
+      "object_class": null,
+      "tag": "Methane",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-091fbf4b-b85b-4f5a-9382-df75928f4668",
+      "object_class": null,
+      "tag": "Carbon-di-oxide",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-51df4690-c14c-4b85-ba3e-e96a707f7405",
+      "object_class": null,
+      "tag": "Mixer_out",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-1598ba22-e692-43f4-a636-7a1bf2034b9a",
+      "object_class": null,
+      "tag": "Reactor_out",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-b859355b-17c3-49bd-beed-df044e031bb7",
+      "object_class": null,
+      "tag": "Product",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-090744d3-7826-4f4a-8dc2-2e7b1ed39f04",
+      "object_class": null,
+      "tag": "Cooler",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-b4ec0d6f-b345-411a-84b1-845f9dccbb51",
+      "object_class": null,
+      "tag": "Reactor_in",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Aquecedor",
+      "guid": "AQ-169baed2-3697-4a5a-b20b-5aa520b605cc",
+      "object_class": null,
+      "tag": "Heater",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-583d50f0-efb9-4eef-a08e-305039dae228",
+      "object_class": null,
+      "tag": "E_Reactor",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-17279421-d5c8-4794-ab4f-d890c923eb71",
+      "object_class": null,
+      "tag": "E_Heater",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "ReatorEquilibrio",
+      "guid": "RE-dbc5a5bc-5376-49ec-893f-661a48818411",
+      "object_class": null,
+      "tag": "Reactor",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_Equilibrium"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-a54bc1dc-48c0-4f55-8f5f-7c0e4298f63f",
+      "object_class": null,
+      "tag": "Cooler_out",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-58cd53ac-2e2a-418b-bd9b-1c876dd682db",
+      "object_class": null,
+      "tag": "E_Cooler",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "EnergyRecycle",
+      "guid": "EREC-e9513f78-cbdc-4a04-8a56-49f145ee7799",
+      "object_class": null,
+      "tag": "E_Recycle",
+      "type": "DWSIM.UnitOperations.SpecialOps.EnergyRecycle"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 15,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-382ae935-0216-414c-984f-e11f0a2c4d95"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-23729c45-2c8e-404b-a68c-9deb65afe758",
+        "is_terminal_material_stream": false,
+        "tag": "Methane",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-382ae935-0216-414c-984f-e11f0a2c4d95"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-091fbf4b-b85b-4f5a-9382-df75928f4668",
+        "is_terminal_material_stream": false,
+        "tag": "Carbon-di-oxide",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-169baed2-3697-4a5a-b20b-5aa520b605cc"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-51df4690-c14c-4b85-ba3e-e96a707f7405",
+        "is_terminal_material_stream": false,
+        "tag": "Mixer_out",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-382ae935-0216-414c-984f-e11f0a2c4d95"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-090744d3-7826-4f4a-8dc2-2e7b1ed39f04"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b859355b-17c3-49bd-beed-df044e031bb7",
+        "is_terminal_material_stream": false,
+        "tag": "Product",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RE-dbc5a5bc-5376-49ec-893f-661a48818411"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RE-dbc5a5bc-5376-49ec-893f-661a48818411"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b4ec0d6f-b345-411a-84b1-845f9dccbb51",
+        "is_terminal_material_stream": false,
+        "tag": "Reactor_in",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-169baed2-3697-4a5a-b20b-5aa520b605cc"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-1598ba22-e692-43f4-a636-7a1bf2034b9a",
+        "is_terminal_material_stream": true,
+        "tag": "Reactor_out",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RE-dbc5a5bc-5376-49ec-893f-661a48818411"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-a54bc1dc-48c0-4f55-8f5f-7c0e4298f63f",
+        "is_terminal_material_stream": true,
+        "tag": "Cooler_out",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-090744d3-7826-4f4a-8dc2-2e7b1ed39f04"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-1598ba22-e692-43f4-a636-7a1bf2034b9a",
+        "tag": "Reactor_out",
+        "upstream_unit_guids": [
+          "RE-dbc5a5bc-5376-49ec-893f-661a48818411"
+        ]
+      },
+      {
+        "id": "MAT-a54bc1dc-48c0-4f55-8f5f-7c0e4298f63f",
+        "tag": "Cooler_out",
+        "upstream_unit_guids": [
+          "RESF-090744d3-7826-4f4a-8dc2-2e7b1ed39f04"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": "OutletTemperature",
+    "guid": "RESF-090744d3-7826-4f4a-8dc2-2e7b1ed39f04",
+    "kind": "unit_operation",
+    "tag": "Cooler",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "guid": "RESF-090744d3-7826-4f4a-8dc2-2e7b1ed39f04",
+    "kind": "unit_operation",
+    "tag": "Cooler",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-1598ba22-e692-43f4-a636-7a1bf2034b9a",
+      "tag": "Reactor_out",
+      "upstream_unit_guids": [
+        "RE-dbc5a5bc-5376-49ec-893f-661a48818411"
+      ]
+    },
+    {
+      "id": "MAT-a54bc1dc-48c0-4f55-8f5f-7c0e4298f63f",
+      "tag": "Cooler_out",
+      "upstream_unit_guids": [
+        "RESF-090744d3-7826-4f4a-8dc2-2e7b1ed39f04"
+      ]
+    }
+  ]
+}

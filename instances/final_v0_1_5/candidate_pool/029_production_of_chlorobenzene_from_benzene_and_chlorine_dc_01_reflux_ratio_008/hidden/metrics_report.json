@@ -1,0 +1,56 @@
+{
+  "base": {
+    "reflux_ratio": 1.20499999994375,
+    "target_mole_fraction": null,
+    "target_value": 0.502662567567683
+  },
+  "faulty": {
+    "reflux_ratio": 1.80749999982792,
+    "target_mole_fraction": null,
+    "target_value": 0.572180557888352
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "reflux_ratio",
+      "namespace": "column_specification"
+    },
+    "target": {
+      "guid": "DC-a97989ca-ac4b-48d2-9654-2323021b0956",
+      "kind": "unit_operation",
+      "tag": "DC-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": null,
+    "value": 1.20499999994375
+  },
+  "instance_id": "029_production_of_chlorobenzene_from_benzene_and_chlorine_dc_01_reflux_ratio_008",
+  "repairable": true,
+  "repaired": {
+    "reflux_ratio": 1.20499999988044,
+    "target_mole_fraction": null,
+    "target_value": 0.479535002674993
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/029_production_of_chlorobenzene_from_benzene_and_chlorine.zip",
+  "target": {
+    "component": "P-dichlorobenzene",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.5235179646638837,
+    "metric": "mass_fraction",
+    "product_mole_fraction_min": null,
+    "stream": "S-10",
+    "stream_id": "MAT-c5d3a2d6-1af4-4330-8ad7-d4b484a09ef3",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-10",
+    "threshold": 0.5235179646638837
+  },
+  "target_delta": -0.06951799032066897
+}

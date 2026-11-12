@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 343,
+    "target_mole_fraction": null,
+    "target_value": 6.46888331931761e-05
+  },
+  "faulty": {
+    "outlet_temperature": 333,
+    "target_mole_fraction": null,
+    "target_value": 0.00012937793116867
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "AQ-662497a8-639f-4f20-980f-3035288b7f0c",
+      "kind": "unit_operation",
+      "tag": "Heater"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 343.0
+  },
+  "instance_id": "034_production_of_dinitrotoluene_from_toluene_heater_outlet_temperature_007",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 343,
+    "target_mole_fraction": null,
+    "target_value": 6.46888331931761e-05
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/034_production_of_dinitrotoluene_from_toluene.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 8.409556258582427e-05,
+    "metric": "mass_flow",
+    "product_mole_fraction_min": null,
+    "stream": "Pure 2,4 DNT",
+    "stream_id": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "Pure 2,4 DNT",
+    "threshold": 8.409556258582427e-05
+  },
+  "target_delta": -6.468909797549389e-05
+}

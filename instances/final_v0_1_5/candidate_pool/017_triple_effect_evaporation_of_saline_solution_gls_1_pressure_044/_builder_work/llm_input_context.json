@@ -1,0 +1,45 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "V-1ed3d67d-176d-45e5-8957-9a3b8d9a7b51",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "017_triple_effect_evaporation_of_saline_solution_gls_1_pressure_044",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "Sodium Chloride",
+    "target_metric": {
+      "component": "Sodium Chloride",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.4067035804770397,
+      "metric": "mole_fraction",
+      "stream": "M-13",
+      "stream_id": "MS-ad7a58c5-67a4-4598-b514-0cfb02163590",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "M-13",
+      "threshold": 0.4067035804770397
+    },
+    "target_stream_tag": "M-13"
+  }
+}

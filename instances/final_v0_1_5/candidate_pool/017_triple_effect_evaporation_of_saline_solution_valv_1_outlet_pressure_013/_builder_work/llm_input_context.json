@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "VALV-d7046982-4e5b-45bb-8242-d7d141d955df",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "017_triple_effect_evaporation_of_saline_solution_valv_1_outlet_pressure_013",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 86126.25,
+      "stream": "M-20",
+      "stream_id": "MAT-7daf21d6-325a-477b-aa20-72e7da2abe85",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "M-20",
+      "threshold": 86126.25
+    },
+    "target_stream_tag": "M-20"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-2938f98f-22f0-4647-ae26-06d0062f7043",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "039_production_of_methane_from_carbon_monoxide_and_hydrogen_using_recycle_exchanger2_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 357.4833329081276,
+      "stream": "8 (WATER)",
+      "stream_id": "MAT-f3fd1cd5-52d7-4bca-9689-a87973beab14",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "8 (WATER)",
+      "threshold": 357.4833329081276
+    },
+    "target_stream_tag": "8 (WATER)"
+  }
+}

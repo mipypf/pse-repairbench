@@ -1,0 +1,141 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_pressure_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "rationale": "Restore the unit outlet pressure to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "COMP-fa6d0bb1-f8bc-440d-9d23-610deb58b70d",
+        "kind": "unit_operation",
+        "tag": "P-2"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 300000.0
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet pressure is consistent with the requested process target.",
+      "target": "COMP-fa6d0bb1-f8bc-440d-9d23-610deb58b70d",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet pressure of P-2 to 300000.0.",
+      "target": "COMP-fa6d0bb1-f8bc-440d-9d23-610deb58b70d",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "024_process_development_for_the_production_of_100_tpd_dmf_using_methanol_dehydrogenation_pro_p_2_outlet_pressure_026",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "4755da8e1359b2ef2552c4cf535e532304893ffd929d16ca98f199edd74ced5c",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "a751969326ea0cfac0269a02c69c14e86928747ae99e9be404723d523afb210a",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/024_process_development_for_the_production_of_100_tpd_dmf_using_methanol_dehydrogenation_pro.zip",
+    "curated_source_entry": "Process_Development_For_The_Production_Of_100_Tpd_Dmf_Using_Methanol_Dehydrogenation_Process_By_Mr_S._Srinivasan/Process_Flowsheet_DMF.dwxmz",
+    "detected_process_category": "reaction_recycle",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Compressor",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "e0a7bf9f-7153-45a4-a8d9-3a111ec62b24.xml",
+      "47d14bd5-5b8d-4c84-a329-ff47b090b16b.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 58,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "024_process_development_for_the_production_of_100_tpd_dmf_using_methanol_dehydrogenation_pro.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_flow",
+      "max": 16.15829985908596,
+      "metric": "molar_flow",
+      "stream": "S19",
+      "stream_id": "MAT-e38b7663-c341-46d6-bfa7-21fe81dd21b3",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S19",
+      "threshold": 16.15829985908596
+    },
+    "target_stream_tag": "S19"
+  }
+}

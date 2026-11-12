@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-10
+Target metric: mass_flow
+Observed target value: 0.060373198526189
+Required target value: <= 0.018112431610927675

@@ -1,0 +1,1719 @@
+{
+  "column": null,
+  "duration_sec": 4.425,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 28,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/base_calculated.dwxmz",
+  "simulation_path": "hidden/base.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-3af2f875-e258-4488-bf20-79d9f79f5b07"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-a0628cd8-e474-45e1-9e95-50de5facfd7b",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Nitric acid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-3af2f875-e258-4488-bf20-79d9f79f5b07"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-655a6b94-555a-4b3c-b787-c2ec0ed7979d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Toluene",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-03e00b7e-1b67-4f28-b681-16a2d7a73274"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-b455c5da-63e4-4387-8f05-c9b31b220026",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Sulfuric acid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-662497a8-639f-4f20-980f-3035288b7f0c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-433a778b-32a0-4878-a913-c588b1d246ff",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Mixed(1)",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-03e00b7e-1b67-4f28-b681-16a2d7a73274"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-94645142-82a3-4544-878a-8bcbc1ed2751",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Heated stream",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-2b92bc7d-dff2-4384-9f86-66eca8b9d146"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Spent acid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-2b92bc7d-dff2-4384-9f86-66eca8b9d146"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-224de958-87dd-4c53-b52f-dd1c0f63ea01",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "DNT + others",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CSTR-0198d534-ad92-4acd-8376-04dc5565177d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-03e00b7e-1b67-4f28-b681-16a2d7a73274"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-bb80b8ac-9b72-41de-99cd-54c2b1ab1f20",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MNT ",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CSTR-32956965-cb2f-40e4-929c-ed6177f55d62"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CSTR-32956965-cb2f-40e4-929c-ed6177f55d62"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MSTR-dfda7fcd-eb8a-44a6-a9c0-14455c5f815d",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Mixed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-3af2f875-e258-4488-bf20-79d9f79f5b07"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-3af2f875-e258-4488-bf20-79d9f79f5b07"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-c900bdbd-924d-4150-b5ee-73eb0a08cfb8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Sulfuric acid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "CSTR-0198d534-ad92-4acd-8376-04dc5565177d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-19199869-9c0e-4bd9-a728-ae5f611b986c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Heated Mixture",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-662497a8-639f-4f20-980f-3035288b7f0c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MSTR-24c47fa7-dc79-42fe-9101-6e00d2b2f19c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "DNT (8)",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-32126b95-086c-4917-85e5-b6c886d756a5",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Lights",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "Pure 2,4 DNT",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+        "mass_flow": 10.1548809671287,
+        "molar_flow": 129.719981191235,
+        "tag": "Spent acid",
+        "upstream_unit_guids": [
+          "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+        ]
+      },
+      {
+        "id": "MAT-32126b95-086c-4917-85e5-b6c886d756a5",
+        "mass_flow": 0.0117890319776688,
+        "molar_flow": 0.085936905728409,
+        "tag": "Lights",
+        "upstream_unit_guids": [
+          "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+        ]
+      },
+      {
+        "id": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+        "mass_flow": 6.46888331931761e-05,
+        "molar_flow": 0.00035517272949219,
+        "tag": "Pure 2,4 DNT",
+        "upstream_unit_guids": [
+          "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0.00041247656483569,
+          "mass_fraction": 5.01660212418882e-05,
+          "molar_flow": 0.00300779200819398,
+          "mole_fraction": 2.74303850060798e-05
+        },
+        "Nitric acid": {
+          "mass_flow": 4.16125487051978,
+          "mass_fraction": 0.506098086592053,
+          "molar_flow": 66.03820539623,
+          "mole_fraction": 0.602253544857592
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0.00671747548446695,
+          "mass_fraction": 0.000816989488796464,
+          "molar_flow": 0.048984041276302,
+          "mole_fraction": 0.000446723412956156
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0.0046550926602885,
+          "mass_fraction": 0.000566159382587024,
+          "molar_flow": 0.0339450812353321,
+          "mole_fraction": 0.000309571487925757
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 0.996265439012626,
+          "mass_fraction": 0.121167303640573,
+          "molar_flow": 10.1576818822658,
+          "mole_fraction": 0.0926357687103279
+        },
+        "Toluene": {
+          "mass_flow": 3.04764190729774,
+          "mass_fraction": 0.370658800264373,
+          "molar_flow": 33.0767727135978,
+          "mole_fraction": 0.301652709968257
+        },
+        "Water": {
+          "mass_flow": 0.00528273846026679,
+          "mass_fraction": 0.000642494610375383,
+          "molar_flow": 0.29323654477015,
+          "mole_fraction": 0.0026742511779355
+        }
+      },
+      "id": "MAT-bb80b8ac-9b72-41de-99cd-54c2b1ab1f20",
+      "mass_flow": 8.22223,
+      "molar_flow": 109.651833451384,
+      "pressure": 101325,
+      "tag": "MNT ",
+      "temperature": 321.430165430765,
+      "total_energy_flow": -19888.4990829329
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitric acid": {
+          "mass_flow": 4.16667,
+          "mass_fraction": 0.506756682797732,
+          "molar_flow": 66.124142317661,
+          "mole_fraction": 0.60303727014348
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 0.996265439116753,
+          "mass_fraction": 0.121167303653237,
+          "molar_flow": 10.1576818833274,
+          "mole_fraction": 0.092635768710328
+        },
+        "Toluene": {
+          "mass_flow": 3.05556,
+          "mass_fraction": 0.371621810628017,
+          "molar_flow": 33.1627096315837,
+          "mole_fraction": 0.302436435254145
+        },
+        "Water": {
+          "mass_flow": 0.00373456088324634,
+          "mass_fraction": 0.000454202921013684,
+          "molar_flow": 0.207299630271988,
+          "mole_fraction": 0.00189052589204751
+        }
+      },
+      "id": "MSTR-dfda7fcd-eb8a-44a6-a9c0-14455c5f815d",
+      "mass_flow": 8.22223,
+      "molar_flow": 109.651833462844,
+      "pressure": 101325,
+      "tag": "Mixed",
+      "temperature": 321.430165430765,
+      "total_energy_flow": -19875.9377922979
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitric acid": {
+          "mass_flow": 4.16124928564733,
+          "mass_fraction": 0.409778243498598,
+          "molar_flow": 66.0381167655248,
+          "mole_fraction": 0.509082071698505
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 2.93344380945034,
+          "mass_fraction": 0.288870329346635,
+          "molar_flow": 29.9086848434986,
+          "mole_fraction": 0.230563438021216
+        },
+        "Toluene": {
+          "mass_flow": 3.04764190729933,
+          "mass_fraction": 0.300115965629192,
+          "molar_flow": 33.0767727136151,
+          "mole_fraction": 0.254985950582685
+        },
+        "Water": {
+          "mass_flow": 0.0125459647316849,
+          "mass_fraction": 0.00123546152557535,
+          "molar_flow": 0.696406868596262,
+          "mole_fraction": 0.00536853969759378
+        }
+      },
+      "id": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+      "mass_flow": 10.1548809671287,
+      "molar_flow": 129.719981191235,
+      "pressure": 101325,
+      "tag": "Spent acid",
+      "temperature": 450,
+      "total_energy_flow": -29952.0503179574
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 2.65342072779298e-09,
+          "mass_fraction": 2.6099211716255e-10,
+          "molar_flow": 1.45685484976294e-08,
+          "mole_fraction": 1.12233315015423e-10
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 1.61399734054594e-05,
+          "mass_fraction": 1.5875378472459e-06,
+          "molar_flow": 8.86161711352357e-05,
+          "mole_fraction": 6.82682056630414e-07
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0.000412476564835906,
+          "mass_fraction": 4.05714520915802e-05,
+          "molar_flow": 0.00300779200819556,
+          "mole_fraction": 2.31714551392416e-05
+        },
+        "Nitric acid": {
+          "mass_flow": 4.16124928564733,
+          "mass_fraction": 0.409303074226599,
+          "molar_flow": 66.0381167655248,
+          "mole_fraction": 0.508745038201746
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0.00670532201828943,
+          "mass_fraction": 0.00065953965440891,
+          "molar_flow": 0.0488954178209181,
+          "mole_fraction": 0.000376680959808646
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0.0046550916613547,
+          "mass_fraction": 0.000457877718206129,
+          "molar_flow": 0.0339450739510756,
+          "mole_fraction": 0.000261506366169069
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 2.93344380945034,
+          "mass_fraction": 0.288535362065489,
+          "molar_flow": 29.9086848434986,
+          "mole_fraction": 0.230410795439477
+        },
+        "Toluene": {
+          "mass_flow": 3.04764190729933,
+          "mass_fraction": 0.299767958171096,
+          "molar_flow": 33.0767727136151,
+          "mole_fraction": 0.254817139282255
+        },
+        "Water": {
+          "mass_flow": 0.0125459647316849,
+          "mass_fraction": 0.001234028913271,
+          "molar_flow": 0.696406868596262,
+          "mole_fraction": 0.00536498550111475
+        }
+      },
+      "id": "MAT-94645142-82a3-4544-878a-8bcbc1ed2751",
+      "mass_flow": 10.16667,
+      "molar_flow": 129.805918105755,
+      "pressure": 101325,
+      "tag": "Heated stream",
+      "temperature": 450,
+      "total_energy_flow": -29946.3718481802
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 2.65342072779298e-09,
+          "mass_fraction": 2.6099211716255e-10,
+          "molar_flow": 1.45685484976294e-08,
+          "mole_fraction": 1.12233315015423e-10
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 1.61399734054594e-05,
+          "mass_fraction": 1.5875378472459e-06,
+          "molar_flow": 8.86161711352357e-05,
+          "mole_fraction": 6.82682056630414e-07
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0.000412476564835906,
+          "mass_fraction": 4.05714520915802e-05,
+          "molar_flow": 0.00300779200819556,
+          "mole_fraction": 2.31714551392416e-05
+        },
+        "Nitric acid": {
+          "mass_flow": 4.16124928564733,
+          "mass_fraction": 0.409303074226599,
+          "molar_flow": 66.0381167655248,
+          "mole_fraction": 0.508745038201746
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0.00670532201828943,
+          "mass_fraction": 0.00065953965440891,
+          "molar_flow": 0.0488954178209181,
+          "mole_fraction": 0.000376680959808646
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0.0046550916613547,
+          "mass_fraction": 0.000457877718206129,
+          "molar_flow": 0.0339450739510756,
+          "mole_fraction": 0.000261506366169069
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 2.93344380945034,
+          "mass_fraction": 0.288535362065489,
+          "molar_flow": 29.9086848434986,
+          "mole_fraction": 0.230410795439477
+        },
+        "Toluene": {
+          "mass_flow": 3.04764190729933,
+          "mass_fraction": 0.299767958171096,
+          "molar_flow": 33.0767727136151,
+          "mole_fraction": 0.254817139282255
+        },
+        "Water": {
+          "mass_flow": 0.0125459647316849,
+          "mass_fraction": 0.001234028913271,
+          "molar_flow": 0.696406868596262,
+          "mole_fraction": 0.00536498550111475
+        }
+      },
+      "id": "MAT-224de958-87dd-4c53-b52f-dd1c0f63ea01",
+      "mass_flow": 10.16667,
+      "molar_flow": 129.805918105755,
+      "pressure": 101325,
+      "tag": "DNT + others",
+      "temperature": 343,
+      "total_energy_flow": -35783.5757477662
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitric acid": {
+          "mass_flow": 4.16667,
+          "mass_fraction": 1,
+          "molar_flow": 66.124142317661,
+          "mole_fraction": 1
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Toluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-a0628cd8-e474-45e1-9e95-50de5facfd7b",
+      "mass_flow": 4.16667,
+      "molar_flow": 66.124142317661,
+      "pressure": 101325,
+      "tag": "Nitric acid",
+      "temperature": 310,
+      "total_energy_flow": -11872.8879867084
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitric acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Toluene": {
+          "mass_flow": 3.05556,
+          "mass_fraction": 1,
+          "molar_flow": 33.1627096315837,
+          "mole_fraction": 1
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-655a6b94-555a-4b3c-b787-c2ec0ed7979d",
+      "mass_flow": 3.05556,
+      "molar_flow": 33.1627096315837,
+      "pressure": 700000,
+      "tag": "Toluene",
+      "temperature": 310,
+      "total_energy_flow": 458.881027538283
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitric acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 1.93717837043618,
+          "mass_fraction": 0.996265439116754,
+          "molar_flow": 19.7510029612172,
+          "mole_fraction": 0.98
+        },
+        "Toluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.00726162956381952,
+          "mass_fraction": 0.00373456088324634,
+          "molar_flow": 0.403081693086065,
+          "mole_fraction": 0.02
+        }
+      },
+      "id": "MAT-b455c5da-63e4-4387-8f05-c9b31b220026",
+      "mass_flow": 1.94444,
+      "molar_flow": 20.1540846543032,
+      "pressure": 700000,
+      "tag": "Sulfuric acid",
+      "temperature": 298.15,
+      "total_energy_flow": -16467.0965981012
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0.00041247656483569,
+          "mass_fraction": 4.0571452091559e-05,
+          "molar_flow": 0.00300779200819399,
+          "mole_fraction": 2.31714551392416e-05
+        },
+        "Nitric acid": {
+          "mass_flow": 4.16125487051978,
+          "mass_fraction": 0.409303623558134,
+          "molar_flow": 66.03820539623,
+          "mole_fraction": 0.508745720996036
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0.00671747548446695,
+          "mass_fraction": 0.000660735076919675,
+          "molar_flow": 0.048984041276302,
+          "mole_fraction": 0.000377363697981934
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0.0046550926602885,
+          "mass_fraction": 0.00045787781646188,
+          "molar_flow": 0.0339450812353321,
+          "mole_fraction": 0.000261506422285726
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 2.93344380944881,
+          "mass_fraction": 0.288535362065338,
+          "molar_flow": 29.9086848434829,
+          "mole_fraction": 0.230410795439477
+        },
+        "Toluene": {
+          "mass_flow": 3.04764190729774,
+          "mass_fraction": 0.299767958170939,
+          "molar_flow": 33.0767727135978,
+          "mole_fraction": 0.254817139282255
+        },
+        "Water": {
+          "mass_flow": 0.0125443680240863,
+          "mass_fraction": 0.00123387186011608,
+          "molar_flow": 0.696318237856215,
+          "mole_fraction": 0.00536430270682481
+        }
+      },
+      "id": "MAT-433a778b-32a0-4878-a913-c588b1d246ff",
+      "mass_flow": 10.16667,
+      "molar_flow": 129.805918105687,
+      "pressure": 101325,
+      "tag": "Mixed(1)",
+      "temperature": 321.343042543163,
+      "total_energy_flow": -36355.5957082768
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitric acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 0.996265439116754,
+          "mass_fraction": 0.996265439116754,
+          "molar_flow": 10.1576818833274,
+          "mole_fraction": 0.98
+        },
+        "Toluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0.00373456088324634,
+          "mass_fraction": 0.00373456088324634,
+          "molar_flow": 0.207299630271988,
+          "mole_fraction": 0.02
+        }
+      },
+      "id": "MAT-c900bdbd-924d-4150-b5ee-73eb0a08cfb8",
+      "mass_flow": 1,
+      "molar_flow": 10.3649815135994,
+      "pressure": 101325,
+      "tag": "Sulfuric acid",
+      "temperature": 310.5,
+      "total_energy_flow": -8461.93083211684
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0.00041247656483569,
+          "mass_fraction": 4.0571452091559e-05,
+          "molar_flow": 0.00300779200819399,
+          "mole_fraction": 2.31714551392416e-05
+        },
+        "Nitric acid": {
+          "mass_flow": 4.16125487051978,
+          "mass_fraction": 0.409303623558134,
+          "molar_flow": 66.03820539623,
+          "mole_fraction": 0.508745720996036
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0.00671747548446695,
+          "mass_fraction": 0.000660735076919675,
+          "molar_flow": 0.048984041276302,
+          "mole_fraction": 0.000377363697981934
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0.0046550926602885,
+          "mass_fraction": 0.00045787781646188,
+          "molar_flow": 0.0339450812353321,
+          "mole_fraction": 0.000261506422285726
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 2.93344380944881,
+          "mass_fraction": 0.288535362065338,
+          "molar_flow": 29.9086848434829,
+          "mole_fraction": 0.230410795439477
+        },
+        "Toluene": {
+          "mass_flow": 3.04764190729774,
+          "mass_fraction": 0.299767958170939,
+          "molar_flow": 33.0767727135978,
+          "mole_fraction": 0.254817139282255
+        },
+        "Water": {
+          "mass_flow": 0.0125443680240863,
+          "mass_fraction": 0.00123387186011608,
+          "molar_flow": 0.696318237856215,
+          "mole_fraction": 0.00536430270682481
+        }
+      },
+      "id": "MAT-19199869-9c0e-4bd9-a728-ae5f611b986c",
+      "mass_flow": 10.16667,
+      "molar_flow": 129.805918105687,
+      "pressure": 101325,
+      "tag": "Heated Mixture",
+      "temperature": 343,
+      "total_energy_flow": -35783.5834032624
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 2.65342072779298e-09,
+          "mass_fraction": 2.25075352385457e-07,
+          "molar_flow": 1.45685484976294e-08,
+          "mole_fraction": 1.69526082929826e-07
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 1.61399734054594e-05,
+          "mass_fraction": 0.00136906679128388,
+          "molar_flow": 8.86161711352357e-05,
+          "mole_fraction": 0.00103117701665613
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0.000412476564835906,
+          "mass_fraction": 0.0349881597022134,
+          "molar_flow": 0.00300779200819556,
+          "mole_fraction": 0.035
+        },
+        "Nitric acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0.00670532201828943,
+          "mass_fraction": 0.568776259383394,
+          "molar_flow": 0.0488954178209181,
+          "mole_fraction": 0.568968738220302
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0.0046550916613547,
+          "mass_fraction": 0.394866289047756,
+          "molar_flow": 0.0339450739510756,
+          "mole_fraction": 0.394999915236959
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Toluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MSTR-24c47fa7-dc79-42fe-9101-6e00d2b2f19c",
+      "mass_flow": 0.0117890328713062,
+      "molar_flow": 0.085936914519873,
+      "pressure": 101325,
+      "tag": "DNT (8)",
+      "temperature": 450,
+      "total_energy_flow": 1.13435598471247
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 1.76836161729707e-09,
+          "mass_fraction": 1.50000578558677e-07,
+          "molar_flow": 9.70915080035835e-09,
+          "mole_fraction": 1.1297999058801e-07
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 1.61399659525837e-05,
+          "mass_fraction": 0.00136906626287523,
+          "molar_flow": 8.86161302153843e-05,
+          "mole_fraction": 0.0010311766459854
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 0.000412476564821513,
+          "mass_fraction": 0.0349881623531805,
+          "molar_flow": 0.0030077920080906,
+          "mole_fraction": 0.035000003579327
+        },
+        "Nitric acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 0.00670532201827082,
+          "mass_fraction": 0.568776302496444,
+          "molar_flow": 0.0488954178207824,
+          "mole_fraction": 0.56896879642501
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 0.00465509166026229,
+          "mass_fraction": 0.394866318886921,
+          "molar_flow": 0.0339450739431097,
+          "mole_fraction": 0.3949999555533
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Toluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-32126b95-086c-4917-85e5-b6c886d756a5",
+      "mass_flow": 0.0117890319776688,
+      "molar_flow": 0.085936905728409,
+      "pressure": 101325,
+      "tag": "Lights",
+      "temperature": 501.577054913879,
+      "total_energy_flow": 2.39604971423069
+    },
+    {
+      "compounds": {
+        "2,4,6-trinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,4-dinitrotoluene": {
+          "mass_flow": 6.40419868961829e-05,
+          "mass_fraction": 0.990000649802084,
+          "molar_flow": 0.000351621128986062,
+          "mole_fraction": 0.99000035697784
+        },
+        "2,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "2,6-dinitrotoluene": {
+          "mass_flow": 6.46716895789808e-07,
+          "mass_fraction": 0.00999734983406733,
+          "molar_flow": 3.55078497799585e-06,
+          "mole_fraction": 0.0099973468770325
+        },
+        "3,4-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "3,5-dinitrotoluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "M-nitrotoluene": {
+          "mass_flow": 1.63880024120786e-12,
+          "mass_fraction": 2.53335878901079e-08,
+          "molar_flow": 1.19501826012707e-11,
+          "mole_fraction": 3.3646115281307e-08
+        },
+        "Nitric acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Nitrogen": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "O-nitrotoluene": {
+          "mass_flow": 1.92434962843268e-12,
+          "mass_fraction": 2.97477869586258e-08,
+          "molar_flow": 1.4032417661538e-11,
+          "mole_fraction": 3.9508713638012e-08
+        },
+        "P-nitrotoluene": {
+          "mass_flow": 1.25838053474413e-10,
+          "mass_fraction": 1.94528247400337e-06,
+          "molar_flow": 9.17615020668627e-10,
+          "mole_fraction": 2.583573975346e-06
+        },
+        "Sulfuric Acid": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Toluene": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+      "mass_flow": 6.46888331931761e-05,
+      "molar_flow": 0.00035517272949219,
+      "pressure": 101325,
+      "tag": "Pure 2,4 DNT",
+      "temperature": 592.21966168274,
+      "total_energy_flow": 0.0145264595528148
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "delta_p": null,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "AQ-662497a8-639f-4f20-980f-3035288b7f0c",
+    "outlet_pressure": null,
+    "outlet_temperature": 343,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "Heater",
+    "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-21a76a1a-4bd0-487a-bc01-98ddfb349d0c",
+      "mass_flow": 10.1548809671287,
+      "molar_flow": 129.719981191235,
+      "tag": "Spent acid",
+      "upstream_unit_guids": [
+        "CS-5c7f4121-4ec6-4c2e-a137-f5365f0a15e2"
+      ]
+    },
+    {
+      "id": "MAT-32126b95-086c-4917-85e5-b6c886d756a5",
+      "mass_flow": 0.0117890319776688,
+      "molar_flow": 0.085936905728409,
+      "tag": "Lights",
+      "upstream_unit_guids": [
+        "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+      ]
+    },
+    {
+      "id": "MAT-865ff4d5-0113-4b4b-b90d-25845f4652ca",
+      "mass_flow": 6.46888331931761e-05,
+      "molar_flow": 0.00035517272949219,
+      "tag": "Pure 2,4 DNT",
+      "upstream_unit_guids": [
+        "COUO-f76be81a-a109-4a95-aafb-bbcaea5605c1"
+      ]
+    }
+  ]
+}

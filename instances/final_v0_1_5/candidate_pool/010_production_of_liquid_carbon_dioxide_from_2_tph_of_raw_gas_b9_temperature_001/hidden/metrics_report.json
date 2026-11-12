@@ -1,0 +1,56 @@
+{
+  "base": {
+    "separator_temperature": 243.15,
+    "target_mole_fraction": null,
+    "target_value": 0.0171272366656895
+  },
+  "faulty": {
+    "separator_temperature": 213.15,
+    "target_mole_fraction": null,
+    "target_value": 12.5407046990981
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "temperature",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "SEP-c8bf41f5-1b20-4edc-b16f-d281014da43a",
+      "kind": "unit_operation",
+      "tag": "B9"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 243.15
+  },
+  "instance_id": "010_production_of_liquid_carbon_dioxide_from_2_tph_of_raw_gas_b9_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "separator_temperature": 243.15,
+    "target_mole_fraction": null,
+    "target_value": 0.0171272366656895
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/010_production_of_liquid_carbon_dioxide_from_2_tph_of_raw_gas.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 3.774200475395414,
+    "metric": "molar_flow",
+    "product_mole_fraction_min": null,
+    "stream": "S13",
+    "stream_id": "MAT-1d57ef54-acd4-4b3d-abad-5f905bfa4a0c",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S13",
+    "threshold": 3.774200475395414
+  },
+  "target_delta": -12.52357746243241
+}

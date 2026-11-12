@@ -1,0 +1,1367 @@
+{
+  "column": null,
+  "duration_sec": 2.521,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 58,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/repaired_calculated.dwxmz",
+  "simulation_path": "hidden/repaired.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "DIV-bd4d1fae-114d-4895-bd76-2ef0bf13cabf"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MS-a37aab79-f1a4-4da1-8a30-c9fb4705cf7c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-001",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "V-1ed3d67d-176d-45e5-8957-9a3b8d9a7b51"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-5b2380db-51f3-4128-a6f6-bbcea656e61b",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-003",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HT-d4a694dc-44da-4897-9d69-ee6a5de1e427"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DIV-a51d598a-986a-4d66-b087-cd734279ae3d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-4e019937-061a-410a-bbdb-b0565569aca2",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-007",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "V-1ed3d67d-176d-45e5-8957-9a3b8d9a7b51"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HX-231dca3d-51bb-4ab2-af4e-af981b3a87a3"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-b4992008-2187-44f1-9a17-6d9030c79b59",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-008",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "V-1ed3d67d-176d-45e5-8957-9a3b8d9a7b51"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-54ec2996-da05-4c80-bc0c-45cba543fc03"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-facdbc5c-a12c-4af5-a0cf-e3321ea3ca4f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-011",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-a51d598a-986a-4d66-b087-cd734279ae3d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-648a2c0d-31e3-4034-b50b-8b5f3129145d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-e7ae885d-2d20-4362-a498-660d9db6ae04",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-012",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-a51d598a-986a-4d66-b087-cd734279ae3d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-980c2d05-58c6-4ad1-ab89-071ca5786369"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-ecb726f1-07bb-414b-876d-ac17fdc31ca8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-013",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-bd4d1fae-114d-4895-bd76-2ef0bf13cabf"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HT-d4a694dc-44da-4897-9d69-ee6a5de1e427"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-581e03cc-57bd-4a55-adb6-42a1f7419199",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-014",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIX-980c2d05-58c6-4ad1-ab89-071ca5786369"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-d6bb05f8-9e7a-4b38-bf33-b59e1feedac7"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-2315849c-674a-41e1-aa54-11a118cce878",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-015",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-bd4d1fae-114d-4895-bd76-2ef0bf13cabf"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-dc241382-c55c-4fcf-a534-23d0d8f31b3c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-b30865b1-bd76-44b1-8ce9-b6f4129a262a",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-018",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-bd4d1fae-114d-4895-bd76-2ef0bf13cabf"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-980c2d05-58c6-4ad1-ab89-071ca5786369"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-5308326a-cbe0-4502-b6af-ab2864550cb8",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-011_CLONE",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-54ec2996-da05-4c80-bc0c-45cba543fc03"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "V-d959b7d1-4c5f-4c4f-9af2-34c2914bf79f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-acdfdd9c-9eb6-47f4-a1de-0a707d969c98",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-023",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HX-231dca3d-51bb-4ab2-af4e-af981b3a87a3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-063a6ef9-92ba-4894-a881-16ef48bd5769",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "MS-024",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HX-231dca3d-51bb-4ab2-af4e-af981b3a87a3"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HX-a68673c9-d356-4276-97d8-130237e52676"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-705f899c-edda-47f8-a422-b83ef9f26e1e",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-024",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "V-d959b7d1-4c5f-4c4f-9af2-34c2914bf79f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DIV-e54a0db3-6a48-4cc4-a008-2571c29d3a29"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-e856cc5d-29ba-44b8-a9f9-45875ea96a03",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-025",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "V-d959b7d1-4c5f-4c4f-9af2-34c2914bf79f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-decc0478-6c37-447d-94fd-2bb5875f8b1f"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-3ee1f496-6af7-4c69-ad9d-e698eb9e33a0",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-027",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-e54a0db3-6a48-4cc4-a008-2571c29d3a29"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-648a2c0d-31e3-4034-b50b-8b5f3129145d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-e8429c22-f711-4365-9d90-759d50e371a4",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-028",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-e54a0db3-6a48-4cc4-a008-2571c29d3a29"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HX-231dca3d-51bb-4ab2-af4e-af981b3a87a3"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-4f68cdec-6834-4edf-b2bb-63eeebb7aabc",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-031",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIX-d6bb05f8-9e7a-4b38-bf33-b59e1feedac7"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-d6bb05f8-9e7a-4b38-bf33-b59e1feedac7"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-3c9c8fe9-ac4e-444f-8f40-d4134997ef54",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-027_CLONE",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-decc0478-6c37-447d-94fd-2bb5875f8b1f"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "V-998d07d5-3cd1-41e0-9b4f-0bda5622e566"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-1346323b-1041-4e33-b442-db507d1b55ce",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-034",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HX-a68673c9-d356-4276-97d8-130237e52676"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-59ba9c3e-0a5b-449b-8a98-75ed1f94efb8",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "MS-035",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "HX-a68673c9-d356-4276-97d8-130237e52676"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-9b3bdaee-e309-44d9-a6ea-3463d12e6b3f",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "MS-037",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "V-998d07d5-3cd1-41e0-9b4f-0bda5622e566"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "DIV-bed1e42d-ddc5-4aa0-a0c7-7df56d8e5c65"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-e2d9ea54-9c00-41af-bfa3-dce1ca74df8f",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-038",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "V-998d07d5-3cd1-41e0-9b4f-0bda5622e566"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-be8c19ef-a290-4737-b6dc-1a38e7094b08"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-f5251e7e-fdad-4487-967b-0b5465b4688c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-041",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-bed1e42d-ddc5-4aa0-a0c7-7df56d8e5c65"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-648a2c0d-31e3-4034-b50b-8b5f3129145d"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-1f67696e-62ae-46df-8acc-e2292ceb2e10",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-042",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "DIV-bed1e42d-ddc5-4aa0-a0c7-7df56d8e5c65"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "HX-a68673c9-d356-4276-97d8-130237e52676"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-eb2d79b3-a507-4287-b834-8f954fc1ba36",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-045",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIX-dc241382-c55c-4fcf-a534-23d0d8f31b3c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIX-dc241382-c55c-4fcf-a534-23d0d8f31b3c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-acfe022c-97a7-4a5f-91ab-ff7735ec9649",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-041_CLONE",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-be8c19ef-a290-4737-b6dc-1a38e7094b08"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CL-137acbff-a2e7-43aa-8ca9-aec17cc89af5"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-1906d181-9171-47e5-97e7-8080c24a479a",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-048",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIX-648a2c0d-31e3-4034-b50b-8b5f3129145d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SS-3a700a2d-86f8-4d08-ab14-659677c60a8c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-ad7a58c5-67a4-4598-b514-0cfb02163590",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-050",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CL-137acbff-a2e7-43aa-8ca9-aec17cc89af5"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-ff62331c-5cf1-4be2-9243-694f8f27ebd1",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "MS-053",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SS-3a700a2d-86f8-4d08-ab14-659677c60a8c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CL-49fb4817-9f1c-43dd-b03f-683cd4437c15"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-6a90b181-31e9-4de3-8379-cd62e125b200",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "MS-054",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SS-3a700a2d-86f8-4d08-ab14-659677c60a8c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MS-51c5260b-276c-4fad-958a-7eb48a90f537",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "packing",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CL-49fb4817-9f1c-43dd-b03f-683cd4437c15"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MS-063a6ef9-92ba-4894-a881-16ef48bd5769",
+        "mass_flow": 0.387471410486105,
+        "molar_flow": 21.4954395134496,
+        "tag": "MS-024",
+        "upstream_unit_guids": [
+          "HX-231dca3d-51bb-4ab2-af4e-af981b3a87a3"
+        ]
+      },
+      {
+        "id": "MS-59ba9c3e-0a5b-449b-8a98-75ed1f94efb8",
+        "mass_flow": 0.341173339951441,
+        "molar_flow": 18.9294205873134,
+        "tag": "MS-035",
+        "upstream_unit_guids": [
+          "HX-a68673c9-d356-4276-97d8-130237e52676"
+        ]
+      },
+      {
+        "id": "MS-9b3bdaee-e309-44d9-a6ea-3463d12e6b3f",
+        "mass_flow": 0.176395982792504,
+        "molar_flow": 9.78908465135564,
+        "tag": "MS-037",
+        "upstream_unit_guids": [
+          "V-998d07d5-3cd1-41e0-9b4f-0bda5622e566"
+        ]
+      },
+      {
+        "id": "MS-ff62331c-5cf1-4be2-9243-694f8f27ebd1",
+        "mass_flow": 1.70308450902585,
+        "molar_flow": 49.7362691923242,
+        "tag": "MS-053",
+        "upstream_unit_guids": [
+          "SS-3a700a2d-86f8-4d08-ab14-659677c60a8c"
+        ]
+      },
+      {
+        "id": "MS-51c5260b-276c-4fad-958a-7eb48a90f537",
+        "mass_flow": 0.00170478929832399,
+        "molar_flow": 0.0497860552475662,
+        "tag": "packing",
+        "upstream_unit_guids": [
+          "CL-49fb4817-9f1c-43dd-b03f-683cd4437c15"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.00116791117521221,
+          "mass_fraction": 0.685076552486815,
+          "molar_flow": 0.0199847908147196,
+          "mole_fraction": 0.401413422199111
+        },
+        "Water": {
+          "mass_flow": 0.000536878123111773,
+          "mass_fraction": 0.314923447513185,
+          "molar_flow": 0.0298012644328466,
+          "mole_fraction": 0.598586577800889
+        }
+      },
+      "id": "MS-51c5260b-276c-4fad-958a-7eb48a90f537",
+      "mass_flow": 0.00170478929832399,
+      "molar_flow": 0.0497860552475662,
+      "pressure": 30000,
+      "tag": "packing",
+      "temperature": 298,
+      "total_energy_flow": -16.7333486064889
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 1.16791117521234,
+          "mass_fraction": 0.685076552486815,
+          "molar_flow": 19.9847908147218,
+          "mole_fraction": 0.401413422199111
+        },
+        "Water": {
+          "mass_flow": 0.536878123111833,
+          "mass_fraction": 0.314923447513185,
+          "molar_flow": 29.8012644328499,
+          "mole_fraction": 0.598586577800889
+        }
+      },
+      "id": "MS-1906d181-9171-47e5-97e7-8080c24a479a",
+      "mass_flow": 1.70478929832417,
+      "molar_flow": 49.7860552475717,
+      "pressure": 30000,
+      "tag": "MS-048",
+      "temperature": 342.224710765845,
+      "total_energy_flow": -16595.1384903291
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.659850001042812,
+          "mass_fraction": 0.486183985728264,
+          "molar_flow": 11.2910677796511,
+          "mole_fraction": 0.225821355593023
+        },
+        "Water": {
+          "mass_flow": 0.697352252450606,
+          "mass_fraction": 0.513816014271736,
+          "molar_flow": 38.7089322203488,
+          "mole_fraction": 0.774178644406977
+        }
+      },
+      "id": "MS-eb2d79b3-a507-4287-b834-8f954fc1ba36",
+      "mass_flow": 1.35720225349342,
+      "molar_flow": 50,
+      "pressure": 30000,
+      "tag": "MS-045",
+      "temperature": 313.805046489836,
+      "total_energy_flow": -15659.2237903295
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.262530906781154,
+          "mass_fraction": 0.558760587956366,
+          "molar_flow": 4.49231531110804,
+          "mole_fraction": 0.280769706944253
+        },
+        "Water": {
+          "mass_flow": 0.207314161822102,
+          "mass_fraction": 0.441239412043634,
+          "molar_flow": 11.507684688892,
+          "mole_fraction": 0.719230293055747
+        }
+      },
+      "id": "MS-acfe022c-97a7-4a5f-91ab-ff7735ec9649",
+      "mass_flow": 0.469845068603255,
+      "molar_flow": 16,
+      "pressure": 30000,
+      "tag": "MS-041_CLONE",
+      "temperature": 349.997844249556,
+      "total_energy_flow": -5090.19569471223
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.397257097530085,
+          "mass_fraction": 0.558760587956366,
+          "molar_flow": 6.79769160729098,
+          "mole_fraction": 0.280769706944253
+        },
+        "Water": {
+          "mass_flow": 0.313704101403128,
+          "mass_fraction": 0.441239412043634,
+          "molar_flow": 17.4132237413534,
+          "mole_fraction": 0.719230293055747
+        }
+      },
+      "id": "MS-1f67696e-62ae-46df-8acc-e2292ceb2e10",
+      "mass_flow": 0.710961198933213,
+      "molar_flow": 24.2109153486443,
+      "pressure": 30000,
+      "tag": "MS-042",
+      "temperature": 349.997844249556,
+      "total_energy_flow": -7702.62763849145
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.262530906781154,
+          "mass_fraction": 0.558760587956366,
+          "molar_flow": 4.49231531110804,
+          "mole_fraction": 0.280769706944253
+        },
+        "Water": {
+          "mass_flow": 0.207314161822102,
+          "mass_fraction": 0.441239412043634,
+          "molar_flow": 11.507684688892,
+          "mole_fraction": 0.719230293055747
+        }
+      },
+      "id": "MS-f5251e7e-fdad-4487-967b-0b5465b4688c",
+      "mass_flow": 0.469845068603255,
+      "molar_flow": 16,
+      "pressure": 30000,
+      "tag": "MS-041",
+      "temperature": 349.997844249556,
+      "total_energy_flow": -5090.35038292198
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.659788004311239,
+          "mass_fraction": 0.558760587956366,
+          "molar_flow": 11.290006918399,
+          "mole_fraction": 0.280769706944253
+        },
+        "Water": {
+          "mass_flow": 0.52101826322523,
+          "mass_fraction": 0.441239412043634,
+          "molar_flow": 28.9209084302453,
+          "mole_fraction": 0.719230293055747
+        }
+      },
+      "id": "MS-e2d9ea54-9c00-41af-bfa3-dce1ca74df8f",
+      "mass_flow": 1.18080626753647,
+      "molar_flow": 40.2109153486443,
+      "pressure": 30000,
+      "tag": "MS-038",
+      "temperature": 349.997844249556,
+      "total_energy_flow": -12792.9780214134
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 6.19921568917135e-05,
+          "mass_fraction": 0.000351437464222955,
+          "molar_flow": 0.00106078297213747,
+          "mole_fraction": 0.000108363857287776
+        },
+        "Water": {
+          "mass_flow": 0.176333990635612,
+          "mass_fraction": 0.999648562535777,
+          "molar_flow": 9.7880238683835,
+          "mole_fraction": 0.999891636142712
+        }
+      },
+      "id": "MS-9b3bdaee-e309-44d9-a6ea-3463d12e6b3f",
+      "mass_flow": 0.176395982792504,
+      "molar_flow": 9.78908465135564,
+      "pressure": 30000,
+      "tag": "MS-037",
+      "temperature": 350,
+      "total_energy_flow": -2350.18175383298
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.000223393175605259,
+          "mass_fraction": 0.000654779109167951,
+          "molar_flow": 0.00382260738544249,
+          "mole_fraction": 0.000201940010145077
+        },
+        "Water": {
+          "mass_flow": 0.340949946775836,
+          "mass_fraction": 0.999345220890832,
+          "molar_flow": 18.9255979799279,
+          "mole_fraction": 0.999798059989855
+        }
+      },
+      "id": "MS-59ba9c3e-0a5b-449b-8a98-75ed1f94efb8",
+      "mass_flow": 0.341173339951441,
+      "molar_flow": 18.9294205873134,
+      "pressure": 40000,
+      "tag": "MS-035",
+      "temperature": 348.991484911314,
+      "total_energy_flow": -4582.69777221768
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.659850001042812,
+          "mass_fraction": 0.486183985728264,
+          "molar_flow": 11.2910677796511,
+          "mole_fraction": 0.225821355593023
+        },
+        "Water": {
+          "mass_flow": 0.697352252450606,
+          "mass_fraction": 0.513816014271736,
+          "molar_flow": 38.7089322203488,
+          "mole_fraction": 0.774178644406977
+        }
+      },
+      "id": "MS-1346323b-1041-4e33-b442-db507d1b55ce",
+      "mass_flow": 1.35720225349342,
+      "molar_flow": 50,
+      "pressure": 30000,
+      "tag": "MS-034",
+      "temperature": 330,
+      "total_energy_flow": -15611.7979520879
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.604744382583338,
+          "mass_fraction": 0.522707298293846,
+          "molar_flow": 10.3481242741844,
+          "mole_fraction": 0.252393274980108
+        },
+        "Water": {
+          "mass_flow": 0.552202123725771,
+          "mass_fraction": 0.477292701706155,
+          "molar_flow": 30.6518757258156,
+          "mole_fraction": 0.747606725019892
+        }
+      },
+      "id": "MS-4f68cdec-6834-4edf-b2bb-63eeebb7aabc",
+      "mass_flow": 1.15694650630911,
+      "molar_flow": 41,
+      "pressure": 40000,
+      "tag": "MS-031",
+      "temperature": 307.668025045732,
+      "total_energy_flow": -12992.4861222211
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.219113495646808,
+          "mass_fraction": 0.741025148737206,
+          "molar_flow": 3.74937535329925,
+          "mole_fraction": 0.468671919162406
+        },
+        "Water": {
+          "mass_flow": 0.0765761931852151,
+          "mass_fraction": 0.258974851262794,
+          "molar_flow": 4.25062464670075,
+          "mole_fraction": 0.531328080837594
+        }
+      },
+      "id": "MS-3c9c8fe9-ac4e-444f-8f40-d4134997ef54",
+      "mass_flow": 0.295689688832023,
+      "molar_flow": 8,
+      "pressure": 40000,
+      "tag": "MS-027_CLONE",
+      "temperature": 364.999841089504,
+      "total_energy_flow": -2734.31179444596
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.385381730111223,
+          "mass_fraction": 0.741025148737206,
+          "molar_flow": 6.59448545707089,
+          "mole_fraction": 0.468671919162406
+        },
+        "Water": {
+          "mass_flow": 0.134683925916725,
+          "mass_fraction": 0.258974851262794,
+          "molar_flow": 7.47609395561575,
+          "mole_fraction": 0.531328080837594
+        }
+      },
+      "id": "MS-e8429c22-f711-4365-9d90-759d50e371a4",
+      "mass_flow": 0.520065656027948,
+      "molar_flow": 14.0705794126866,
+      "pressure": 40000,
+      "tag": "MS-028",
+      "temperature": 364.999841089504,
+      "total_energy_flow": -4809.45127142228
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.219113495646808,
+          "mass_fraction": 0.741025148737206,
+          "molar_flow": 3.74937535329925,
+          "mole_fraction": 0.468671919162406
+        },
+        "Water": {
+          "mass_flow": 0.0765761931852151,
+          "mass_fraction": 0.258974851262794,
+          "molar_flow": 4.25062464670075,
+          "mole_fraction": 0.531328080837594
+        }
+      },
+      "id": "MS-3ee1f496-6af7-4c69-ad9d-e698eb9e33a0",
+      "mass_flow": 0.295689688832023,
+      "molar_flow": 8,
+      "pressure": 40000,
+      "tag": "MS-027",
+      "temperature": 364.999841089504,
+      "total_energy_flow": -2734.4723371297
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.604495225758031,
+          "mass_fraction": 0.741025148737206,
+          "molar_flow": 10.3438608103701,
+          "mole_fraction": 0.468671919162406
+        },
+        "Water": {
+          "mass_flow": 0.21126011910194,
+          "mass_fraction": 0.258974851262794,
+          "molar_flow": 11.7267186023165,
+          "mole_fraction": 0.531328080837594
+        }
+      },
+      "id": "MS-e856cc5d-29ba-44b8-a9f9-45875ea96a03",
+      "mass_flow": 0.815755344859971,
+      "molar_flow": 22.0705794126866,
+      "pressure": 40000,
+      "tag": "MS-025",
+      "temperature": 364.999841089504,
+      "total_energy_flow": -7543.92360855198
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.000325342002782468,
+          "mass_fraction": 0.000839654214421413,
+          "molar_flow": 0.00556711161503196,
+          "mole_fraction": 0.000258990359864409
+        },
+        "Water": {
+          "mass_flow": 0.387146068483323,
+          "mass_fraction": 0.999160345785579,
+          "molar_flow": 21.4898724018346,
+          "mole_fraction": 0.999741009640136
+        }
+      },
+      "id": "MS-063a6ef9-92ba-4894-a881-16ef48bd5769",
+      "mass_flow": 0.387471410486105,
+      "molar_flow": 21.4954395134496,
+      "pressure": 55000,
+      "tag": "MS-024",
+      "temperature": 356.85085527271,
+      "total_energy_flow": -5238.1506048598
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.604744382583338,
+          "mass_fraction": 0.522707298293846,
+          "molar_flow": 10.3481242741844,
+          "mole_fraction": 0.252393274980108
+        },
+        "Water": {
+          "mass_flow": 0.552202123725771,
+          "mass_fraction": 0.477292701706155,
+          "molar_flow": 30.6518757258156,
+          "mole_fraction": 0.747606725019892
+        }
+      },
+      "id": "MS-acdfdd9c-9eb6-47f4-a1de-0a707d969c98",
+      "mass_flow": 1.15694650630911,
+      "molar_flow": 41,
+      "pressure": 40000,
+      "tag": "MS-023",
+      "temperature": 350,
+      "total_energy_flow": -12893.6261650535
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.000223393175605259,
+          "mass_fraction": 0.000654779109167951,
+          "molar_flow": 0.00382260738544249,
+          "mole_fraction": 0.000201940010145077
+        },
+        "Water": {
+          "mass_flow": 0.340949946775836,
+          "mass_fraction": 0.999345220890832,
+          "molar_flow": 18.9255979799279,
+          "mole_fraction": 0.999798059989855
+        }
+      },
+      "id": "MS-705f899c-edda-47f8-a422-b83ef9f26e1e",
+      "mass_flow": 0.341173339951441,
+      "molar_flow": 18.9294205873134,
+      "pressure": 40000,
+      "tag": "MS-024",
+      "temperature": 365,
+      "total_energy_flow": -4535.27193396414
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.385704,
+          "mass_fraction": 0.447812248661161,
+          "molar_flow": 6.6,
+          "mole_fraction": 0.2
+        },
+        "Water": {
+          "mass_flow": 0.475603392,
+          "mass_fraction": 0.552187751338839,
+          "molar_flow": 26.4,
+          "mole_fraction": 0.8
+        }
+      },
+      "id": "MS-2315849c-674a-41e1-aa54-11a118cce878",
+      "mass_flow": 0.861307392,
+      "molar_flow": 33,
+      "pressure": 101325,
+      "tag": "MS-015",
+      "temperature": 298.15,
+      "total_energy_flow": -10258.1743281167
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.385704,
+          "mass_fraction": 0.447812248661161,
+          "molar_flow": 6.6,
+          "mole_fraction": 0.2
+        },
+        "Water": {
+          "mass_flow": 0.475603392,
+          "mass_fraction": 0.552187751338839,
+          "molar_flow": 26.4,
+          "mole_fraction": 0.8
+        }
+      },
+      "id": "MS-ecb726f1-07bb-414b-876d-ac17fdc31ca8",
+      "mass_flow": 0.861307392,
+      "molar_flow": 33,
+      "pressure": 101325,
+      "tag": "MS-013",
+      "temperature": 298.15,
+      "total_energy_flow": -10258.1743281167
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.907092717295892,
+          "mass_fraction": 0.6037201366326,
+          "molar_flow": 15.5217781878147,
+          "mole_fraction": 0.319560946136137
+        },
+        "Water": {
+          "mass_flow": 0.595412603059047,
+          "mass_fraction": 0.3962798633674,
+          "molar_flow": 33.0504218118756,
+          "mole_fraction": 0.680439053863863
+        }
+      },
+      "id": "MS-5b2380db-51f3-4128-a6f6-bbcea656e61b",
+      "mass_flow": 1.50250532035494,
+      "molar_flow": 48.5721999996904,
+      "pressure": 55000,
+      "tag": "MS-003",
+      "temperature": 350,
+      "total_energy_flow": -15696.6278387856
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 1.1688,
+          "mass_fraction": 0.447812248661161,
+          "molar_flow": 20,
+          "mole_fraction": 0.2
+        },
+        "Water": {
+          "mass_flow": 1.4412224,
+          "mass_fraction": 0.552187751338839,
+          "molar_flow": 80,
+          "mole_fraction": 0.8
+        }
+      },
+      "id": "MS-a37aab79-f1a4-4da1-8a30-c9fb4705cf7c",
+      "mass_flow": 2.6100224,
+      "molar_flow": 100,
+      "pressure": 101325,
+      "tag": "MS-001",
+      "temperature": 298.15,
+      "total_energy_flow": -31085.3767518687
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.000325342002782468,
+          "mass_fraction": 0.000839654214421413,
+          "molar_flow": 0.00556711161503196,
+          "mole_fraction": 0.000258990359864409
+        },
+        "Water": {
+          "mass_flow": 0.387146068483323,
+          "mass_fraction": 0.999160345785579,
+          "molar_flow": 21.4898724018346,
+          "mole_fraction": 0.999741009640136
+        }
+      },
+      "id": "MS-b4992008-2187-44f1-9a17-6d9030c79b59",
+      "mass_flow": 0.387471410486105,
+      "molar_flow": 21.4954395134496,
+      "pressure": 55000,
+      "tag": "MS-008",
+      "temperature": 380,
+      "total_energy_flow": -5139.29064767804
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.906764503487898,
+          "mass_fraction": 0.81321842406116,
+          "molar_flow": 15.5161619351112,
+          "mole_fraction": 0.573043512461391
+        },
+        "Water": {
+          "mass_flow": 0.208267419866193,
+          "mass_fraction": 0.18678157593884,
+          "molar_flow": 11.5605985511295,
+          "mole_fraction": 0.426956487538609
+        }
+      },
+      "id": "MS-4e019937-061a-410a-bbdb-b0565569aca2",
+      "mass_flow": 1.11503192335409,
+      "molar_flow": 27.0767604862407,
+      "pressure": 55000,
+      "tag": "MS-007",
+      "temperature": 379.997423637237,
+      "total_energy_flow": -9609.75628746309
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.385272347571034,
+          "mass_fraction": 0.81321842406116,
+          "molar_flow": 6.59261375035992,
+          "mole_fraction": 0.573043512461391
+        },
+        "Water": {
+          "mass_flow": 0.088490095791979,
+          "mass_fraction": 0.18678157593884,
+          "molar_flow": 4.91194673588082,
+          "mole_fraction": 0.426956487538609
+        }
+      },
+      "id": "MS-e7ae885d-2d20-4362-a498-660d9db6ae04",
+      "mass_flow": 0.473762443363013,
+      "molar_flow": 11.5045604862407,
+      "pressure": 55000,
+      "tag": "MS-012",
+      "temperature": 379.997423637237,
+      "total_energy_flow": -4083.0594384927
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.521492155916864,
+          "mass_fraction": 0.81321842406116,
+          "molar_flow": 8.92354818475127,
+          "mole_fraction": 0.573043512461391
+        },
+        "Water": {
+          "mass_flow": 0.119777324074214,
+          "mass_fraction": 0.18678157593884,
+          "molar_flow": 6.64865181524873,
+          "mole_fraction": 0.426956487538609
+        }
+      },
+      "id": "MS-facdbc5c-a12c-4af5-a0cf-e3321ea3ca4f",
+      "mass_flow": 0.641269479991079,
+      "molar_flow": 15.5722,
+      "pressure": 55000,
+      "tag": "MS-011",
+      "temperature": 379.997423637237,
+      "total_energy_flow": -5526.69684897039
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.907092717295892,
+          "mass_fraction": 0.6037201366326,
+          "molar_flow": 15.5217781878147,
+          "mole_fraction": 0.319560946136137
+        },
+        "Water": {
+          "mass_flow": 0.595412603059047,
+          "mass_fraction": 0.3962798633674,
+          "molar_flow": 33.0504218118756,
+          "mole_fraction": 0.680439053863863
+        }
+      },
+      "id": "MS-581e03cc-57bd-4a55-adb6-42a1f7419199",
+      "mass_flow": 1.50250532035494,
+      "molar_flow": 48.5721999996904,
+      "pressure": 55000,
+      "tag": "MS-014",
+      "temperature": 315.161123475895,
+      "total_energy_flow": -15784.6312177395
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.521388717295892,
+          "mass_fraction": 0.813147850670026,
+          "molar_flow": 8.92177818781472,
+          "mole_fraction": 0.572929848575803
+        },
+        "Water": {
+          "mass_flow": 0.119809211059047,
+          "mass_fraction": 0.186852149329974,
+          "molar_flow": 6.65042181187564,
+          "mole_fraction": 0.427070151424197
+        }
+      },
+      "id": "MS-5308326a-cbe0-4502-b6af-ab2864550cb8",
+      "mass_flow": 0.641197928354939,
+      "molar_flow": 15.5721999996904,
+      "pressure": 55000,
+      "tag": "MS-011_CLONE",
+      "temperature": 379.99031437066,
+      "total_energy_flow": -5526.4569078487
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.397392,
+          "mass_fraction": 0.447812248661161,
+          "molar_flow": 6.8,
+          "mole_fraction": 0.2
+        },
+        "Water": {
+          "mass_flow": 0.490015616,
+          "mass_fraction": 0.552187751338839,
+          "molar_flow": 27.2,
+          "mole_fraction": 0.8
+        }
+      },
+      "id": "MS-b30865b1-bd76-44b1-8ce9-b6f4129a262a",
+      "mass_flow": 0.887407616,
+      "molar_flow": 34,
+      "pressure": 101325,
+      "tag": "MS-018",
+      "temperature": 298.15,
+      "total_energy_flow": -10569.0280956354
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 1.16791117521234,
+          "mass_fraction": 0.685076552486815,
+          "molar_flow": 19.9847908147218,
+          "mole_fraction": 0.401413422199111
+        },
+        "Water": {
+          "mass_flow": 0.536878123111833,
+          "mass_fraction": 0.314923447513185,
+          "molar_flow": 29.8012644328499,
+          "mole_fraction": 0.598586577800889
+        }
+      },
+      "id": "MS-ad7a58c5-67a4-4598-b514-0cfb02163590",
+      "mass_flow": 1.70478929832417,
+      "molar_flow": 49.7860552475717,
+      "pressure": 30000,
+      "tag": "MS-050",
+      "temperature": 330,
+      "total_energy_flow": -16661.5829990512
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 1.16674326403713,
+          "mass_fraction": 0.685076552486815,
+          "molar_flow": 19.9648060239071,
+          "mole_fraction": 0.401413422199111
+        },
+        "Water": {
+          "mass_flow": 0.536341244988721,
+          "mass_fraction": 0.314923447513185,
+          "molar_flow": 29.7714631684171,
+          "mole_fraction": 0.598586577800889
+        }
+      },
+      "id": "MS-ff62331c-5cf1-4be2-9243-694f8f27ebd1",
+      "mass_flow": 1.70308450902585,
+      "molar_flow": 49.7362691923242,
+      "pressure": 30000,
+      "tag": "MS-053",
+      "temperature": 330,
+      "total_energy_flow": -16644.9214160522
+    },
+    {
+      "compounds": {
+        "Sodium Chloride": {
+          "mass_flow": 0.00116791117521221,
+          "mass_fraction": 0.685076552486815,
+          "molar_flow": 0.0199847908147196,
+          "mole_fraction": 0.401413422199111
+        },
+        "Water": {
+          "mass_flow": 0.000536878123111773,
+          "mass_fraction": 0.314923447513185,
+          "molar_flow": 0.0298012644328466,
+          "mole_fraction": 0.598586577800889
+        }
+      },
+      "id": "MS-6a90b181-31e9-4de3-8379-cd62e125b200",
+      "mass_flow": 0.00170478929832399,
+      "molar_flow": 0.0497860552475662,
+      "pressure": 30000,
+      "tag": "MS-054",
+      "temperature": 330,
+      "total_energy_flow": -16.6615829990494
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "delta_p": null,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "CL-49fb4817-9f1c-43dd-b03f-683cd4437c15",
+    "outlet_pressure": null,
+    "outlet_temperature": 298,
+    "override_p": null,
+    "override_t": null,
+    "p_out": null,
+    "pout": null,
+    "tag": "CL-055",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MS-063a6ef9-92ba-4894-a881-16ef48bd5769",
+      "mass_flow": 0.387471410486105,
+      "molar_flow": 21.4954395134496,
+      "tag": "MS-024",
+      "upstream_unit_guids": [
+        "HX-231dca3d-51bb-4ab2-af4e-af981b3a87a3"
+      ]
+    },
+    {
+      "id": "MS-59ba9c3e-0a5b-449b-8a98-75ed1f94efb8",
+      "mass_flow": 0.341173339951441,
+      "molar_flow": 18.9294205873134,
+      "tag": "MS-035",
+      "upstream_unit_guids": [
+        "HX-a68673c9-d356-4276-97d8-130237e52676"
+      ]
+    },
+    {
+      "id": "MS-9b3bdaee-e309-44d9-a6ea-3463d12e6b3f",
+      "mass_flow": 0.176395982792504,
+      "molar_flow": 9.78908465135564,
+      "tag": "MS-037",
+      "upstream_unit_guids": [
+        "V-998d07d5-3cd1-41e0-9b4f-0bda5622e566"
+      ]
+    },
+    {
+      "id": "MS-ff62331c-5cf1-4be2-9243-694f8f27ebd1",
+      "mass_flow": 1.70308450902585,
+      "molar_flow": 49.7362691923242,
+      "tag": "MS-053",
+      "upstream_unit_guids": [
+        "SS-3a700a2d-86f8-4d08-ab14-659677c60a8c"
+      ]
+    },
+    {
+      "id": "MS-51c5260b-276c-4fad-958a-7eb48a90f537",
+      "mass_flow": 0.00170478929832399,
+      "molar_flow": 0.0497860552475662,
+      "tag": "packing",
+      "upstream_unit_guids": [
+        "CL-49fb4817-9f1c-43dd-b03f-683cd4437c15"
+      ]
+    }
+  ]
+}

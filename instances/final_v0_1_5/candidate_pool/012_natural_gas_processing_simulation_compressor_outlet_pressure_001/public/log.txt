@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: Lean Gas
+Target metric: temperature
+Observed target value: 288.432944493952
+Required target value: >= 333.75504775390016

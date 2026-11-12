@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: Reactor Output 2
+Target metric: temperature
+Observed target value: 325.750562992088
+Required target value: >= 337.0381433739567

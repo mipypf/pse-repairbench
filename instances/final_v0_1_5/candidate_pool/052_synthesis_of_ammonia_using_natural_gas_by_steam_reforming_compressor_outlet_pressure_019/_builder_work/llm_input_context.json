@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-181f7c8c-f438-487a-ab56-baa6020266c9",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "052_synthesis_of_ammonia_using_natural_gas_by_steam_reforming_compressor_outlet_pressure_019",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_pressure",
+      "metric": "pressure",
+      "min": 11999995.423868593,
+      "stream": "vap",
+      "stream_id": "MAT-cfbdd730-ea83-4d3c-8150-a22373248a17",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "vap",
+      "threshold": 11999995.423868593
+    },
+    "target_stream_tag": "vap"
+  }
+}

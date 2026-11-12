@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pse-repairbench.local/schemas/instance.schema.json",
+  "title": "PSE-RepairBench Instance",
+  "type": "object",
+  "required": [
+    "id",
+    "process_category",
+    "reasoning_class",
+    "fault_type",
+    "fault_count",
+    "source",
+    "reproducibility",
+    "faulty_flowsheet",
+    "observations",
+    "gold_repair_actions",
+    "success_criteria"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_\\-]+$"
+    },
+    "process_category": {
+      "type": "string",
+      "enum": ["flash_separator", "distillation", "reaction_recycle", "other_candidate"]
+    },
+    "reasoning_class": {
+      "type": "string",
+      "enum": ["T_topology", "P_parameter", "M_model", "C_convergence", "E_performance"]
+    },
+    "base_flowsheet": {
+      "type": "string"
+    },
+    "faulty_flowsheet": {
+      "type": "string"
+    },
+    "problem_statement": {
+      "type": "string"
+    },
+    "llm_input": {
+      "type": "string"
+    },
+    "mock_llm_output": {
+      "type": "string"
+    },
+    "fault_type": {
+      "type": "string"
+    },
+    "fault_severity": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "fault_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "leakage_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "source_format",
+        "dwsim_build_version",
+        "internal_archive_entries",
+        "object_count",
+        "unsupported_sections"
+      ],
+      "properties": {
+        "source_format": {
+          "type": "string",
+          "enum": ["dwxmz", "dwxml"]
+        },
+        "source_name": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "fallback_reason": {
+          "type": "string"
+        },
+        "curated_archive": {
+          "type": "string"
+        },
+        "curated_source_entry": {
+          "type": "string"
+        },
+        "source_category": {
+          "type": "string"
+        },
+        "detected_process_category": {
+          "type": "string"
+        },
+        "detected_unit_family": {
+          "type": "string"
+        },
+        "dwsim_build_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "internal_archive_entries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contains_database": {
+          "type": "boolean"
+        },
+        "root_element": {
+          "type": "string"
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "object_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unsupported_sections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "reproducibility": {
+      "type": "object",
+      "required": [
+        "base_flowsheet_sha256",
+        "faulty_flowsheet_sha256",
+        "fault_injector_version",
+        "observation_extractor_version",
+        "executor_version",
+        "dwsim_runner_version",
+        "evaluator_version"
+      ],
+      "properties": {
+        "base_flowsheet_sha256": {
+          "type": "string",
+          "pattern": "^(pending|[a-fA-F0-9]{64})$"
+        },
+        "faulty_flowsheet_sha256": {
+          "type": "string",
+          "pattern": "^(pending|[a-fA-F0-9]{64})$"
+        },
+        "fault_injector_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observation_extractor_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "executor_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dwsim_runner_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evaluator_version": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "observations": {
+      "type": "object",
+      "required": ["topology", "parameters", "simulator_log", "stream_table"],
+      "properties": {
+        "topology": { "type": "string" },
+        "parameters": { "type": "string" },
+        "simulator_log": { "type": "string" },
+        "stream_table": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "run_artifacts": {
+      "type": "object",
+      "required": ["base_run", "faulty_run", "repaired_run", "metrics_report"],
+      "properties": {
+        "base_run": { "type": "string" },
+        "faulty_run": { "type": "string" },
+        "repaired_run": { "type": "string" },
+        "metrics_report": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "gold_repair_actions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "./repair_action.schema.json"
+      }
+    },
+    "hints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["level", "type", "message"],
+        "properties": {
+          "level": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "success_criteria": {
+      "type": "object",
+      "required": ["converged", "no_fatal_error"],
+      "properties": {
+        "converged": { "type": "boolean" },
+        "no_fatal_error": { "type": "boolean" },
+        "distillate_purity_min": { "type": "number" },
+        "bottoms_purity_min": { "type": "number" },
+        "recovery_min": { "type": "number" },
+        "conversion_min": { "type": "number" },
+        "max_material_balance_residual": { "type": "number" },
+        "max_energy_balance_residual": { "type": "number" },
+        "max_reboiler_duty_relative_to_base": { "type": "number" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

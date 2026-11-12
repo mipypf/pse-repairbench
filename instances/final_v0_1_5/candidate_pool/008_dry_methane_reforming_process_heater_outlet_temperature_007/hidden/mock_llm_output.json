@@ -1,0 +1,20 @@
+{
+  "diagnosis": "The selected target metric is degraded by an incorrect unit outlet temperature setting.",
+  "rationale": "Restoring the discovered scalar unit parameter to the base value recovers the selected process target.",
+  "repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "AQ-169baed2-3697-4a5a-b20b-5aa520b605cc",
+        "kind": "unit_operation",
+        "tag": "Heater"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 1100.0
+    }
+  ]
+}

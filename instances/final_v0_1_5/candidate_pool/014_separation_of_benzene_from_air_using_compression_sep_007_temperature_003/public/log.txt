@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: liquid benzene
+Target metric: temperature
+Observed target value: 269.149893974011
+Required target value: >= 290.1499681922033

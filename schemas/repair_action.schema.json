@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pse-repairbench.local/schemas/repair_action.schema.json",
+  "title": "PSE-RepairBench Canonical Repair Action v0.1",
+  "type": "object",
+  "required": ["type", "target", "parameter", "value", "unit"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "set_unit_parameter"
+    },
+    "target": {
+      "$ref": "#/$defs/object_ref"
+    },
+    "parameter": {
+      "$ref": "#/$defs/unit_parameter_ref"
+    },
+    "value": {
+      "type": ["number", "integer"]
+    },
+    "unit": {
+      "type": ["string", "null"]
+    },
+    "rationale": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "parameter": {
+            "properties": {
+              "namespace": { "const": "column_specification" },
+              "name": { "const": "reflux_ratio" }
+            },
+            "required": ["namespace", "name"]
+          }
+        },
+        "required": ["parameter"]
+      },
+      "then": {
+        "properties": {
+          "value": { "type": "number" },
+          "unit": { "type": "null" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "parameter": {
+            "properties": {
+              "namespace": { "const": "column_configuration" },
+              "name": { "const": "feed_stage" }
+            },
+            "required": ["namespace", "name"]
+          }
+        },
+        "required": ["parameter"]
+      },
+      "then": {
+        "properties": {
+          "value": { "type": "integer", "minimum": 1 },
+          "unit": { "type": "null" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "parameter": {
+            "properties": {
+              "namespace": { "const": "pressure_specification" },
+              "name": { "const": "outlet_pressure" }
+            },
+            "required": ["namespace", "name"]
+          }
+        },
+        "required": ["parameter"]
+      },
+      "then": {
+        "properties": {
+          "value": { "type": "number", "exclusiveMinimum": 0 },
+          "unit": { "const": "Pa" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "parameter": {
+            "properties": {
+              "namespace": { "const": "thermal_specification" },
+              "name": { "const": "outlet_temperature" }
+            },
+            "required": ["namespace", "name"]
+          }
+        },
+        "required": ["parameter"]
+      },
+      "then": {
+        "properties": {
+          "value": { "type": "number", "exclusiveMinimum": 0 },
+          "unit": { "const": "K" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "parameter": {
+            "properties": {
+              "namespace": { "const": "separator_specification" },
+              "name": { "const": "pressure" }
+            },
+            "required": ["namespace", "name"]
+          }
+        },
+        "required": ["parameter"]
+      },
+      "then": {
+        "properties": {
+          "value": { "type": "number", "exclusiveMinimum": 0 },
+          "unit": { "const": "Pa" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "parameter": {
+            "properties": {
+              "namespace": { "const": "separator_specification" },
+              "name": { "const": "temperature" }
+            },
+            "required": ["namespace", "name"]
+          }
+        },
+        "required": ["parameter"]
+      },
+      "then": {
+        "properties": {
+          "value": { "type": "number", "exclusiveMinimum": 0 },
+          "unit": { "const": "K" }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "object_ref": {
+      "type": "object",
+      "description": "DWSIM object reference. Final v0.1.5 submissions must identify the target by GUID.",
+      "required": ["kind", "guid"],
+      "properties": {
+        "kind": { "type": "string", "enum": ["unit_operation"] },
+        "guid": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "tag": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "unit_parameter_ref": {
+      "type": "object",
+      "required": ["namespace", "name"],
+      "properties": {
+        "namespace": {
+          "type": "string",
+          "enum": ["column_specification", "column_configuration", "pressure_specification", "thermal_specification", "separator_specification"]
+        },
+        "name": {
+          "type": "string",
+          "enum": ["reflux_ratio", "feed_stage", "outlet_pressure", "outlet_temperature", "pressure", "temperature"]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "namespace": { "const": "column_specification" }
+            },
+            "required": ["namespace"]
+          },
+          "then": {
+            "properties": {
+              "name": { "const": "reflux_ratio" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "namespace": { "const": "column_configuration" }
+            },
+            "required": ["namespace"]
+          },
+          "then": {
+            "properties": {
+              "name": { "const": "feed_stage" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "namespace": { "const": "pressure_specification" }
+            },
+            "required": ["namespace"]
+          },
+          "then": {
+            "properties": {
+              "name": { "const": "outlet_pressure" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "namespace": { "const": "thermal_specification" }
+            },
+            "required": ["namespace"]
+          },
+          "then": {
+            "properties": {
+              "name": { "const": "outlet_temperature" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "namespace": { "const": "separator_specification" }
+            },
+            "required": ["namespace"]
+          },
+          "then": {
+            "properties": {
+              "name": { "enum": ["pressure", "temperature"] }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    }
+  }
+}

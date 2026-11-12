@@ -1,0 +1,141 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_outlet_temperature_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "rationale": "Restore the unit outlet temperature to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "RESF-f854ee52-fae5-4b12-a1ca-719708f90d71",
+        "kind": "unit_operation",
+        "tag": "CL-3"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 341.87
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit outlet temperature is consistent with the requested process target.",
+      "target": "RESF-f854ee52-fae5-4b12-a1ca-719708f90d71",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the outlet temperature of CL-3 to 341.87.",
+      "target": "RESF-f854ee52-fae5-4b12-a1ca-719708f90d71",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "018_extractive_distillation_for_separating_n_hexane_and_ethyl_acetate_using_nmp_cl_3_outlet_temperature_001",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "00d2f62188fb7c773b7f438e5b552398a73060f1715b83a9a737bff0094ef000",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "7d9698e038b8031f676186a0a2a4a931c1574f2129f19c3d4ed920b5a610de9a",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": true,
+    "curated_archive": "curated_data/dwsim_headless_successes/distillation/018_extractive_distillation_for_separating_n_hexane_and_ethyl_acetate_using_nmp.zip",
+    "curated_source_entry": "Extractive_Distillation_For_Separating_N-Hexane_And_Ethyl_Acetate_Using_Nmp_By_Ms_Denisse_Yajaira_Chicaiza_Sagal_And_Daniel_Antonio_Chuquin_Vasco/Flowsheet.dwxmz",
+    "detected_process_category": "distillation",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Cooler",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "6bb443c8-d8b7-4d22-afa6-078c5a97412c.xml",
+      "0b663ffd-fcfe-426e-9d54-4859678ba5e2.db"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 34,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "distillation",
+    "source_format": "dwxmz",
+    "source_name": "018_extractive_distillation_for_separating_n_hexane_and_ethyl_acetate_using_nmp.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 332.87,
+      "stream": "S-12",
+      "stream_id": "MAT-c3c8477b-7053-46b5-864e-cd65633d0555",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-12",
+      "threshold": 332.87
+    },
+    "target_stream_tag": "S-12"
+  }
+}

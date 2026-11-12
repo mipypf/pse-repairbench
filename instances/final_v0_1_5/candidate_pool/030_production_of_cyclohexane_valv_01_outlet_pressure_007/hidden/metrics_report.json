@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 103421.17238241,
+    "target_mole_fraction": null,
+    "target_value": 0.00792848950114992
+  },
+  "faulty": {
+    "outlet_pressure": 51710.586191205,
+    "target_mole_fraction": null,
+    "target_value": 0.0221159108624362
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "VALV-6e5cc788-25f4-4553-8f65-bed06e770fa3",
+      "kind": "unit_operation",
+      "tag": "VALV-01"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 103421.17238241
+  },
+  "instance_id": "030_production_of_cyclohexane_valv_01_outlet_pressure_007",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 103421.17238241,
+    "target_mole_fraction": null,
+    "target_value": 0.00792848950114992
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/reaction_recycle/030_production_of_cyclohexane.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_flow",
+    "max": 0.012184715909535805,
+    "metric": "mass_flow",
+    "product_mole_fraction_min": null,
+    "stream": "S15",
+    "stream_id": "MAT-a9c9deac-5cd1-4cf8-af86-0b3d5f91ecf4",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S15",
+    "threshold": 0.012184715909535805
+  },
+  "target_delta": -0.01418742136128628
+}

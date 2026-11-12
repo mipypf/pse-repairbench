@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "048_pressure_swing_distillation_of_isobutanol_and_n_heptane_valv_005_outlet_pressure_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_flow",
+      "metric": "mass_flow",
+      "min": 0.6658994180720914,
+      "stream": "N-heptane",
+      "stream_id": "MAT-0600d28e-d1ae-49c5-9383-a1c13f0ddaa9",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "N-heptane",
+      "threshold": 0.6658994180720914
+    },
+    "target_stream_tag": "N-heptane"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-19b6a047-bcbb-4345-96ee-6101b58cd9e4",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "005_glucose_syrup_three_effect_evaporation_system_sep_03_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 344.15,
+      "stream": "S-11 - Glucose 60%",
+      "stream_id": "MAT-895dbee3-da82-4769-b87e-60ae0e7cef94",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-11 - Glucose 60%",
+      "threshold": 344.15
+    },
+    "target_stream_tag": "S-11 - Glucose 60%"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "HEAT-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-b1ad48b4-14bc-4124-9613-8bd2749e8f81",
+        "kind": "unit_operation",
+        "tag": "HEAT-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "COOL-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-b0ef157f-5158-44c0-b074-f9c30892db7a",
+        "kind": "unit_operation",
+        "tag": "COOL-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-01: separator_specification/pressure",
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072",
+        "kind": "unit_operation",
+        "tag": "SEP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "SEP-01: separator_specification/temperature",
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072",
+        "kind": "unit_operation",
+        "tag": "SEP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-b1ad48b4-14bc-4124-9613-8bd2749e8f81",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 353.15
+      },
+      "outlet_temperature": 353.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HEAT-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-b0ef157f-5158-44c0-b074-f9c30892db7a",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 353.15
+      },
+      "outlet_temperature": 353.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "COOL-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "flash_pressure": 354637.5,
+      "flash_temperature": 313.15,
+      "guid": "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072",
+      "kind": "unit_operation",
+      "observed_values": {
+        "separator_specification/pressure": 354637.5,
+        "separator_specification/temperature": 313.15
+      },
+      "override_p": "true",
+      "override_t": "true",
+      "supported_parameters": [
+        "separator_specification/pressure",
+        "separator_specification/temperature"
+      ],
+      "tag": "SEP-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    }
+  ],
+  "product_target": {
+    "direction": "max",
+    "metric": "temperature",
+    "stream_tag": "S-08",
+    "threshold": 292.15
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 292.15,
+    "metric": "temperature",
+    "stream": "S-08",
+    "stream_id": "MAT-27bed7d7-b5f6-4a15-bc01-1e9665d4d83d",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-08",
+    "threshold": 292.15
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-27bed7d7-b5f6-4a15-bc01-1e9665d4d83d",
+      "mass_flow": 0.0573577459826916,
+      "molar_flow": 8.60717466700828,
+      "tag": "S-08",
+      "upstream_unit_guids": [
+        "SEP-8fb4f430-3460-4b7c-88be-67a243a7a072"
+      ]
+    },
+    {
+      "id": "MAT-324e6e14-76ab-49b2-9291-2293b59316be",
+      "mass_flow": 0.544010615679273,
+      "molar_flow": 7.5435743329918,
+      "tag": "S-13",
+      "upstream_unit_guids": [
+        "COUO-575a8d38-7ba7-49ac-9f52-daaf981d81a8"
+      ]
+    },
+    {
+      "id": "MAT-e3fe516b-2883-4eb9-80c2-d803b78a3584",
+      "mass_flow": 0.0605673950465552,
+      "molar_flow": 0.817201,
+      "tag": "S-12",
+      "upstream_unit_guids": [
+        "COUO-575a8d38-7ba7-49ac-9f52-daaf981d81a8"
+      ]
+    }
+  ]
+}

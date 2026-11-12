@@ -1,0 +1,20 @@
+{
+  "diagnosis": "The selected target metric is degraded by an incorrect unit temperature setting.",
+  "rationale": "Restoring the discovered scalar unit parameter to the base value recovers the selected process target.",
+  "repair_actions": [
+    {
+      "parameter": {
+        "name": "temperature",
+        "namespace": "separator_specification"
+      },
+      "target": {
+        "guid": "SEP-47cfeb93-74c6-42d1-a9ee-4821b7eb45b4",
+        "kind": "unit_operation",
+        "tag": "Gas-liq Seperator"
+      },
+      "type": "set_unit_parameter",
+      "unit": "K",
+      "value": 298.15
+    }
+  ]
+}

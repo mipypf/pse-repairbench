@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_pressure": 100000,
+    "target_mole_fraction": null,
+    "target_value": 24.9880414373121
+  },
+  "faulty": {
+    "outlet_pressure": 90000,
+    "target_mole_fraction": null,
+    "target_value": 0.0
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_pressure",
+      "namespace": "pressure_specification"
+    },
+    "target": {
+      "guid": "VALV-7af8423d-387f-4378-bba3-8950218c85d2",
+      "kind": "unit_operation",
+      "tag": "VALVE-1"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 100000.0
+  },
+  "instance_id": "004_claude_cycle_for_nitrogen_liquefaction_valve_1_outlet_pressure_011",
+  "repairable": true,
+  "repaired": {
+    "outlet_pressure": 100000,
+    "target_mole_fraction": null,
+    "target_value": 24.9880414373121
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/004_claude_cycle_for_nitrogen_liquefaction.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_flow",
+    "metric": "molar_flow",
+    "min": 17.49162900611847,
+    "product_mole_fraction_min": null,
+    "stream": "S-11",
+    "stream_id": "MAT-4df43a66-f1e6-4d1e-b506-f7a79dccaedb",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-11",
+    "threshold": 17.49162900611847
+  },
+  "target_delta": 24.9880414373121
+}

@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: valve outlet
+Target metric: pressure
+Observed target value: 7346062.5
+Required target value: <= 2274746.25

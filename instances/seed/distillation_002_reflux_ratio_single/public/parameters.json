@@ -1,0 +1,46 @@
+{
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "product_target": {
+    "component": "Oxygen",
+    "product_mole_fraction_min": 0.99,
+    "stream_tag": "S-08"
+  },
+  "schema_version": "draft-0",
+  "target_column": {
+    "condenser_duty": 1013.2356026579,
+    "condenser_pressure": null,
+    "feed_stage": 3,
+    "feed_stage_id": "56be37b7-af75-450c-9eea-5977893b4256",
+    "feed_stage_name": "Stage3",
+    "feed_stream_id": "MAT-3b08d703-49be-433a-bf6d-9e8019f65a38",
+    "guid": "DC-84eedf9c-acf3-4dfc-8675-2245dc73de75",
+    "number_of_stages": 7,
+    "reboiler_duty": -844.808196171864,
+    "reboiler_pressure": null,
+    "reflux_ratio": 0.00999999999999429,
+    "specs": [
+      {
+        "calculated_value": 0.01,
+        "component_id": "",
+        "spec_unit": "",
+        "spec_value": 0.01,
+        "stage_number": 0,
+        "stype": "Stream_Ratio"
+      },
+      {
+        "calculated_value": 25,
+        "component_id": "Oxygen",
+        "spec_unit": "kmol/h",
+        "spec_value": 90,
+        "stage_number": -1,
+        "stype": "Product_Molar_Flow_Rate"
+      }
+    ],
+    "tag": "DC-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+  },
+  "target_parameter": {
+    "name": "reflux_ratio",
+    "namespace": "column_specification"
+  }
+}

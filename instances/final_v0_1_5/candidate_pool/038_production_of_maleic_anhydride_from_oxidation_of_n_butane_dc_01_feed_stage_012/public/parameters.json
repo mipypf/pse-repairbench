@@ -1,0 +1,317 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "CL-02: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "CL-9000d0c9-dc58-4f43-b8fc-b410fa0bd6d3",
+        "kind": "unit_operation",
+        "tag": "CL-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HT-02: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "HT-7cdf3c8e-6c03-4d4f-b778-18955980201a",
+        "kind": "unit_operation",
+        "tag": "HT-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "C-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "C-60f4215d-18f0-478f-89cd-52c57676bc7d",
+        "kind": "unit_operation",
+        "tag": "C-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "CL-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "CL-aea23b3b-cb6a-4643-b147-41acc81054c7",
+        "kind": "unit_operation",
+        "tag": "CL-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "HT-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "HT-7d9516ac-0f88-4b70-abea-2d9df13a31fd",
+        "kind": "unit_operation",
+        "tag": "HT-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "DC-01: column_specification/reflux_ratio",
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+        "kind": "unit_operation",
+        "tag": "DC-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "number"
+    },
+    {
+      "label": "DC-01: column_configuration/feed_stage",
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+        "kind": "unit_operation",
+        "tag": "DC-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "integer"
+    },
+    {
+      "label": "HT-03: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "HT-8a10ec1a-7da3-42cb-8207-3de8049666a9",
+        "kind": "unit_operation",
+        "tag": "HT-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "CL-03: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "CL-5ce1a542-c24d-40a8-9e24-90fd9a9f15a0",
+        "kind": "unit_operation",
+        "tag": "CL-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 180000,
+      "guid": "CL-9000d0c9-dc58-4f43-b8fc-b410fa0bd6d3",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 405.15
+      },
+      "outlet_temperature": 405.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "CL-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 5000,
+      "guid": "HT-7cdf3c8e-6c03-4d4f-b778-18955980201a",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 673.437
+      },
+      "outlet_temperature": 673.437,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 183675,
+      "guid": "C-60f4215d-18f0-478f-89cd-52c57676bc7d",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 285000
+      },
+      "outlet_temperature": 433.483259624499,
+      "p_out": 285000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "C-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 15000,
+      "guid": "CL-aea23b3b-cb6a-4643-b147-41acc81054c7",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 312.15
+      },
+      "outlet_temperature": 312.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "CL-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": 30000,
+      "guid": "HT-7d9516ac-0f88-4b70-abea-2d9df13a31fd",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 363.15
+      },
+      "outlet_temperature": 363.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "condenser_duty": 2567.93167213174,
+      "feed_stage": 2,
+      "feed_stage_name": "Stage2",
+      "feed_stream_id": "MS-76293854-baba-4342-b425-d0b1877ae2c6",
+      "guid": "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd",
+      "kind": "unit_operation",
+      "number_of_stages": 12,
+      "observed_values": {
+        "column_specification/reflux_ratio": 0.8
+      },
+      "reboiler_duty": -572.24741108805,
+      "reflux_ratio": 0.8,
+      "supported_parameters": [
+        "column_configuration/feed_stage",
+        "column_specification/reflux_ratio"
+      ],
+      "tag": "DC-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": -23000,
+      "guid": "HT-8a10ec1a-7da3-42cb-8207-3de8049666a9",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 573.15
+      },
+      "outlet_temperature": 573.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "HT-03",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "delta_p": -10000,
+      "guid": "CL-5ce1a542-c24d-40a8-9e24-90fd9a9f15a0",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 303.15
+      },
+      "outlet_temperature": 303.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "CL-03",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    }
+  ],
+  "product_target": {
+    "component": "Di ButylPhthalate",
+    "direction": "max",
+    "metric": "mole_fraction",
+    "stream_tag": "S-23",
+    "threshold": 0.8133960901896149
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "component": "Di ButylPhthalate",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.8133960901896149,
+    "metric": "mole_fraction",
+    "stream": "S-23",
+    "stream_id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-23",
+    "threshold": 0.8133960901896149
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MS-9a739e88-e84b-4e34-86a2-2e94e6f3a7e0",
+      "mass_flow": 96.1245891835774,
+      "molar_flow": 2627.51575046482,
+      "tag": "S-20",
+      "upstream_unit_guids": [
+        "ABS-36ccb52a-e3c6-4df2-b4f1-c09d2a0d9bef"
+      ]
+    },
+    {
+      "id": "MS-167bfa3e-a801-400e-9031-805e970b63f2",
+      "mass_flow": 22.060325079651,
+      "molar_flow": 90.8333333332335,
+      "tag": "S-23",
+      "upstream_unit_guids": [
+        "DC-be83e7c7-50c0-4890-9c41-db8c0a3413dd"
+      ]
+    }
+  ]
+}

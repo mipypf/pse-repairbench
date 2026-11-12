@@ -1,0 +1,137 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_reflux_ratio_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "rationale": "Restore the unit reflux ratio to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "DC-a97989ca-ac4b-48d2-9654-2323021b0956",
+        "kind": "unit_operation",
+        "tag": "DC-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": null,
+      "value": 1.20499999994375
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit reflux ratio is consistent with the requested process target.",
+      "target": "DC-a97989ca-ac4b-48d2-9654-2323021b0956",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the reflux ratio of DC-01 to 1.20499999994375.",
+      "target": "DC-a97989ca-ac4b-48d2-9654-2323021b0956",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "029_production_of_chlorobenzene_from_benzene_and_chlorine_dc_01_reflux_ratio_008",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "distillation",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "e19e39c8ec3cb46ba5a33deb2d7e30ead76ac2e387842002527675d086a24c32",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "166f8186ceb30b84840294267771824b28c6cea5d5d9d8b971718bb3e002ce50",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/reaction_recycle/029_production_of_chlorobenzene_from_benzene_and_chlorine.zip",
+    "curated_source_entry": "Production_Of_Chlorobenzene_From_Benzene_And_Chlorine_By_Mr_Kaushal_Kaloo/chlorobenzene01.dwxmz",
+    "detected_process_category": "distillation",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.DistillationColumn",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmp235F.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 27,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "reaction_recycle",
+    "source_format": "dwxmz",
+    "source_name": "Production_of_Chlorobenzene_from_Benzene_and_Chlorine.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": "P-dichlorobenzene",
+    "target_metric": {
+      "component": "P-dichlorobenzene",
+      "direction": "max",
+      "family": "terminal_composition",
+      "max": 0.5235179646638837,
+      "metric": "mass_fraction",
+      "stream": "S-10",
+      "stream_id": "MAT-c5d3a2d6-1af4-4330-8ad7-d4b484a09ef3",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-10",
+      "threshold": 0.5235179646638837
+    },
+    "target_stream_tag": "S-10"
+  }
+}

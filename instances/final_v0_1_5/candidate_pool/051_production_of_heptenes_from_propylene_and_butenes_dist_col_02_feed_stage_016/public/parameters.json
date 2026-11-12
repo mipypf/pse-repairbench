@@ -1,0 +1,426 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "VALVE-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-c3ab6bc0-ff99-4253-9ec0-aab0e9321ce9",
+        "kind": "unit_operation",
+        "tag": "VALVE-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "PUMP-01: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "BB-87f11aa5-974a-4589-8f31-86072e37d826",
+        "kind": "unit_operation",
+        "tag": "PUMP-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "DIST COL-01: column_specification/reflux_ratio",
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-c2ced87f-8428-4cd9-89b6-b131eeaebdce",
+        "kind": "unit_operation",
+        "tag": "DIST COL-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "number"
+    },
+    {
+      "label": "DIST COL-01: column_configuration/feed_stage",
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-c2ced87f-8428-4cd9-89b6-b131eeaebdce",
+        "kind": "unit_operation",
+        "tag": "DIST COL-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "integer"
+    },
+    {
+      "label": "VALVE-02: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-ae5d8e4a-6a21-41cd-8578-675f14db9b01",
+        "kind": "unit_operation",
+        "tag": "VALVE-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "DIST COL-02: column_specification/reflux_ratio",
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-6e29fea9-223d-4eca-b1a1-e08bd9d5d274",
+        "kind": "unit_operation",
+        "tag": "DIST COL-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "number"
+    },
+    {
+      "label": "DIST COL-02: column_configuration/feed_stage",
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-6e29fea9-223d-4eca-b1a1-e08bd9d5d274",
+        "kind": "unit_operation",
+        "tag": "DIST COL-02",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "integer"
+    },
+    {
+      "label": "VALVE-03: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-b0ecaacd-693e-42ee-aa70-2222db056d74",
+        "kind": "unit_operation",
+        "tag": "VALVE-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "VALVE-04: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-3ef29fa6-59e4-47a5-a4e8-a49fd0b7dda5",
+        "kind": "unit_operation",
+        "tag": "VALVE-04",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "DIST COL-03: column_specification/reflux_ratio",
+      "parameter": {
+        "name": "reflux_ratio",
+        "namespace": "column_specification"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-c7e44877-4c8e-4517-b077-217903a243cc",
+        "kind": "unit_operation",
+        "tag": "DIST COL-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "number"
+    },
+    {
+      "label": "DIST COL-03: column_configuration/feed_stage",
+      "parameter": {
+        "name": "feed_stage",
+        "namespace": "column_configuration"
+      },
+      "support_level": "release-supported",
+      "target": {
+        "guid": "DC-c7e44877-4c8e-4517-b077-217903a243cc",
+        "kind": "unit_operation",
+        "tag": "DIST COL-03",
+        "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+      },
+      "unit": null,
+      "value_type": "integer"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 190000,
+      "guid": "VALV-c3ab6bc0-ff99-4253-9ec0-aab0e9321ce9",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 580000
+      },
+      "outlet_pressure": 580000,
+      "outlet_temperature": 367.365744526907,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALVE-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 70000,
+      "guid": "BB-87f11aa5-974a-4589-8f31-86072e37d826",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 800000
+      },
+      "outlet_temperature": 298.526679738917,
+      "pout": 800000,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "PUMP-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Pump"
+    },
+    {
+      "condenser_duty": 1153.32639770339,
+      "feed_stage": 7,
+      "feed_stage_name": "Stage7",
+      "feed_stream_id": "MAT-075b2761-8e9b-4b92-8e28-93b689849469",
+      "guid": "DC-c2ced87f-8428-4cd9-89b6-b131eeaebdce",
+      "kind": "unit_operation",
+      "number_of_stages": 14,
+      "observed_values": {
+        "column_specification/reflux_ratio": 0.799999999997587
+      },
+      "reboiler_duty": -505.212203469492,
+      "reflux_ratio": 0.799999999997587,
+      "supported_parameters": [
+        "column_configuration/feed_stage",
+        "column_specification/reflux_ratio"
+      ],
+      "tag": "DIST COL-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 130000,
+      "guid": "VALV-ae5d8e4a-6a21-41cd-8578-675f14db9b01",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 450000
+      },
+      "outlet_pressure": 450000,
+      "outlet_temperature": 412.727044893377,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALVE-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "condenser_duty": 832.656011970138,
+      "feed_stage": 20,
+      "feed_stage_name": "Stage_20",
+      "feed_stream_id": "MAT-24b1af6c-cb86-433c-81ee-f696893604df",
+      "guid": "DC-6e29fea9-223d-4eca-b1a1-e08bd9d5d274",
+      "kind": "unit_operation",
+      "number_of_stages": 27,
+      "observed_values": {
+        "column_specification/reflux_ratio": 3.74999999993983
+      },
+      "reboiler_duty": -778.11313259242,
+      "reflux_ratio": 3.74999999993983,
+      "supported_parameters": [
+        "column_configuration/feed_stage",
+        "column_specification/reflux_ratio"
+      ],
+      "tag": "DIST COL-02",
+      "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 80000,
+      "guid": "VALV-b0ecaacd-693e-42ee-aa70-2222db056d74",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 170000
+      },
+      "outlet_pressure": 170000,
+      "outlet_temperature": 346.688008342044,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALVE-03",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 200000,
+      "guid": "VALV-3ef29fa6-59e4-47a5-a4e8-a49fd0b7dda5",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 250000
+      },
+      "outlet_pressure": 250000,
+      "outlet_temperature": 409.32072147699,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALVE-04",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "condenser_duty": 560.194204759472,
+      "feed_stage": 18,
+      "feed_stage_name": "Stage_18",
+      "feed_stream_id": "MAT-8f15f580-7cd5-4605-a657-31c7021cfba2",
+      "guid": "DC-c7e44877-4c8e-4517-b077-217903a243cc",
+      "kind": "unit_operation",
+      "number_of_stages": 35,
+      "observed_values": {
+        "column_specification/reflux_ratio": 1.49999999997903
+      },
+      "reboiler_duty": -450.824154915072,
+      "reflux_ratio": 1.49999999997903,
+      "supported_parameters": [
+        "column_configuration/feed_stage",
+        "column_specification/reflux_ratio"
+      ],
+      "tag": "DIST COL-03",
+      "type": "DWSIM.UnitOperations.UnitOperations.DistillationColumn"
+    }
+  ],
+  "product_target": {
+    "component": "1-heptene",
+    "direction": "max",
+    "metric": "mass_fraction",
+    "stream_tag": "S-22 ( HEXENES )",
+    "threshold": 0.02847395125241857
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "component": "1-heptene",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.02847395125241857,
+    "metric": "mass_fraction",
+    "stream": "S-22 ( HEXENES )",
+    "stream_id": "MAT-77ae95b7-1f41-4bdd-b49f-574530cb5c83",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-22 ( HEXENES )",
+    "threshold": 0.02847395125241857
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-c5e23106-e5b0-4edf-81dc-863a99744cb8",
+      "mass_flow": 0.600509333333333,
+      "molar_flow": 33.3333333333333,
+      "tag": "S-08 ( LPS OUT )",
+      "upstream_unit_guids": [
+        "HE-8a41ec8f-0229-4ed9-ab4d-4ccc6796df0c"
+      ]
+    },
+    {
+      "id": "MAT-136505d1-cb11-46c4-8541-24cd0eec227d",
+      "mass_flow": 0.0367422034505306,
+      "molar_flow": 0.833239297928698,
+      "tag": "S-13 ( C3 FUEL GAS )",
+      "upstream_unit_guids": [
+        "CS-3b2f8f1d-d9fe-4b87-af92-ea454f500d3e"
+      ]
+    },
+    {
+      "id": "MAT-4d6b3a17-8e01-4d63-9a04-c17d08be80fb",
+      "mass_flow": 1.84842900478747,
+      "molar_flow": 32.3197891077649,
+      "tag": "S-15 ( C4 TO LPG )",
+      "upstream_unit_guids": [
+        "BB-afe1ddc3-edc4-4b7b-98ef-08831ce594f9"
+      ]
+    },
+    {
+      "id": "MAT-77ae95b7-1f41-4bdd-b49f-574530cb5c83",
+      "mass_flow": 0.518691461600275,
+      "molar_flow": 6.23222222212223,
+      "tag": "S-22 ( HEXENES )",
+      "upstream_unit_guids": [
+        "HE-7399ccda-1edf-460a-8efe-2bf63d9e76d3"
+      ]
+    },
+    {
+      "id": "MAT-d6604b19-10dc-4d0f-b827-d91906c3804d",
+      "mass_flow": 0.969444444444444,
+      "molar_flow": 53.8123439904594,
+      "tag": "S-21 ( CW OUT )",
+      "upstream_unit_guids": [
+        "HE-7399ccda-1edf-460a-8efe-2bf63d9e76d3"
+      ]
+    },
+    {
+      "id": "MAT-17a2d5d7-e8ec-4a4b-ba44-e4567178660f",
+      "mass_flow": 0.698349533313823,
+      "molar_flow": 7.15388888878889,
+      "tag": "S-30 ( HEPTENES )",
+      "upstream_unit_guids": [
+        "HE-03d37ae7-5aff-41a5-b9db-e4f8364b7c12"
+      ]
+    },
+    {
+      "id": "MAT-6474c339-584f-4400-a8e4-b3dd7c4f4790",
+      "mass_flow": 2.47222222222222,
+      "molar_flow": 28.2789115761093,
+      "tag": "S-29 ( CW OUT )",
+      "upstream_unit_guids": [
+        "HE-03d37ae7-5aff-41a5-b9db-e4f8364b7c12"
+      ]
+    },
+    {
+      "id": "MAT-ffe80dd4-57f5-46ca-b1ad-0e377046ed60",
+      "mass_flow": 0.352487111453191,
+      "molar_flow": 2.91944444444444,
+      "tag": "S-33 ( C8 + HEAVIES )",
+      "upstream_unit_guids": [
+        "HE-3138341a-b35b-4708-8952-82d41b9a360f"
+      ]
+    },
+    {
+      "id": "MAT-59b30a1b-06fc-4c85-9d1e-af80093b04cd",
+      "mass_flow": 2.19166666666667,
+      "molar_flow": 25.0697317230902,
+      "tag": "S-32 ( CW OUT )",
+      "upstream_unit_guids": [
+        "HE-3138341a-b35b-4708-8952-82d41b9a360f"
+      ]
+    }
+  ]
+}

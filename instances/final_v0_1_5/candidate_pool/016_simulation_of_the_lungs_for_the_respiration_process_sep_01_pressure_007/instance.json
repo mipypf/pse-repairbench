@@ -1,0 +1,140 @@
+{
+  "base_flowsheet": "hidden/base.dwxmz",
+  "fault_count": 1,
+  "fault_severity": "medium",
+  "fault_type": "discovered_pressure_error",
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "pressure",
+        "namespace": "separator_specification"
+      },
+      "rationale": "Restore the unit separator pressure to the validated setting that satisfies the selected process target.",
+      "target": {
+        "guid": "SEP-10480f7f-3284-43c8-80b3-2d8d426a6f6e",
+        "kind": "unit_operation",
+        "tag": "SEP-01"
+      },
+      "type": "set_unit_parameter",
+      "unit": "Pa",
+      "value": 101300.0
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "message": "The abnormal behavior is localized in an existing unit operation.",
+      "type": "subsystem"
+    },
+    {
+      "level": 3,
+      "message": "Check whether the unit separator pressure is consistent with the requested process target.",
+      "target": "SEP-10480f7f-3284-43c8-80b3-2d8d426a6f6e",
+      "type": "target_object"
+    },
+    {
+      "level": 5,
+      "message": "Set the separator pressure of SEP-01 to 101300.0.",
+      "target": "SEP-10480f7f-3284-43c8-80b3-2d8d426a6f6e",
+      "type": "direct_repair"
+    }
+  ],
+  "id": "016_simulation_of_the_lungs_for_the_respiration_process_sep_01_pressure_007",
+  "leakage_flags": [],
+  "llm_input": "public/llm_input.md",
+  "mock_llm_output": "hidden/mock_llm_output.json",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "flash_separator",
+  "reasoning_class": "P_parameter",
+  "reproducibility": {
+    "base_flowsheet_sha256": "3c17e6c99d2a9a9349edceaebcf89f3455f7f415a25dbaf2a93401b94d29fb24",
+    "dwsim_runner_version": "dwsim_metrics_worker.ps1:2",
+    "evaluator_version": "builder_common.py:1",
+    "executor_version": "apply_repair_actions.py:2",
+    "fault_injector_version": "build_from_fault_spec.py:1",
+    "faulty_flowsheet_sha256": "b5e98c09550b8526d0ebe179a450449731b3c7c91bdaee0ac0a22cbc9a813751",
+    "observation_extractor_version": "builder_common.py:1;generate_llm_input.py:1"
+  },
+  "run_artifacts": {
+    "base_run": "hidden/base_run.json",
+    "faulty_run": "hidden/faulty_run.json",
+    "metrics_report": "hidden/metrics_report.json",
+    "repaired_run": "hidden/repaired_run.json"
+  },
+  "source": {
+    "contains_database": false,
+    "curated_archive": "curated_data/dwsim_headless_successes/flash_separator/016_simulation_of_the_lungs_for_the_respiration_process.zip",
+    "curated_source_entry": "Simulation_Of_The_Lungs_For_The_Respiration_Process_By_Mr_Chellaboyina_Bharath_Mathaji/Flowsheet.dwxmz",
+    "detected_process_category": "flash_separator",
+    "detected_unit_family": "DWSIM.UnitOperations.UnitOperations.Vessel",
+    "dwsim_build_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+    "internal_archive_entries": [
+      "tmpFC91.xml"
+    ],
+    "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "object_count": 14,
+    "retrieved_at": "2026-06-05",
+    "root_element": "DWSIM_Simulation_Data",
+    "sections": [
+      "GeneralInfo",
+      "SimulationObjects",
+      "Settings",
+      "DynamicProperties",
+      "GraphicObjects",
+      "PropertyPackages",
+      "Compounds",
+      "ReactionSets",
+      "Reactions",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "Spreadsheet",
+      "PanelLayout"
+    ],
+    "source_category": "flash_separator",
+    "source_format": "dwxmz",
+    "source_name": "Simulation_of_the_Lungs_for_the_Respiration_Process.zip",
+    "unsupported_sections": [
+      "DynamicProperties",
+      "StoredSolutions",
+      "DynamicsManager",
+      "OptimizationCases",
+      "SensitivityAnalysis",
+      "PetroleumAssays",
+      "WatchItems",
+      "ScriptItems",
+      "ChartItems",
+      "PanelLayout"
+    ]
+  },
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_flow",
+      "max": 9.045955676003961e-07,
+      "metric": "mass_flow",
+      "stream": "S-06 ",
+      "stream_id": "MAT-4a38bc35-78ad-4611-a6ef-f50474126d09",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S-06 ",
+      "threshold": 9.045955676003961e-07
+    },
+    "target_stream_tag": "S-06 "
+  }
+}

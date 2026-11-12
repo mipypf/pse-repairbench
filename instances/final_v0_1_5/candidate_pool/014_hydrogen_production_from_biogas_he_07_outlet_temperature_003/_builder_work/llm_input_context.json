@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-e1b6072f-490a-4b81-85d6-b37ef3960d37",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "014_hydrogen_production_from_biogas_he_07_outlet_temperature_003",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "min",
+      "family": "terminal_temperature",
+      "metric": "temperature",
+      "min": 464.15,
+      "stream": "FLUE GAS",
+      "stream_id": "MAT-84e56672-46f2-45f5-aebf-90cb4ec96a8f",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "FLUE GAS",
+      "threshold": 464.15
+    },
+    "target_stream_tag": "FLUE GAS"
+  }
+}

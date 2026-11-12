@@ -1,0 +1,98 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "H-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "AQ-cafc70c6-94a8-40f5-9440-f5c00ace4170",
+        "kind": "unit_operation",
+        "tag": "H-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+      },
+      "unit": "K",
+      "value_type": "number"
+    },
+    {
+      "label": "C-01: thermal_specification/outlet_temperature",
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "RESF-c246df5a-2e3c-4719-b208-61f141d21d91",
+        "kind": "unit_operation",
+        "tag": "C-01",
+        "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+      },
+      "unit": "K",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "AQ-cafc70c6-94a8-40f5-9440-f5c00ace4170",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 843.15
+      },
+      "outlet_temperature": 843.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "H-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "calc_mode": "OutletTemperature",
+      "guid": "RESF-c246df5a-2e3c-4719-b208-61f141d21d91",
+      "kind": "unit_operation",
+      "observed_values": {
+        "thermal_specification/outlet_temperature": 298.15
+      },
+      "outlet_temperature": 298.15,
+      "supported_parameters": [
+        "thermal_specification/outlet_temperature"
+      ],
+      "tag": "C-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    }
+  ],
+  "product_target": {
+    "component": "Carbon monoxide",
+    "direction": "min",
+    "metric": "mass_fraction",
+    "stream_tag": "S-09",
+    "threshold": 0.13170751597274938
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "component": "Carbon monoxide",
+    "direction": "min",
+    "family": "terminal_composition",
+    "metric": "mass_fraction",
+    "min": 0.13170751597274938,
+    "stream": "S-09",
+    "stream_id": "MAT-894b5dd9-f5a5-4822-9a02-2785a00a74b8",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "S-09",
+    "threshold": 0.13170751597274938
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-894b5dd9-f5a5-4822-9a02-2785a00a74b8",
+      "mass_flow": 0.0364631267626601,
+      "molar_flow": 2.39997901571989,
+      "tag": "S-09",
+      "upstream_unit_guids": [
+        "SEP-78518b5d-c08d-4b28-a40e-63618e83d64a"
+      ]
+    }
+  ]
+}

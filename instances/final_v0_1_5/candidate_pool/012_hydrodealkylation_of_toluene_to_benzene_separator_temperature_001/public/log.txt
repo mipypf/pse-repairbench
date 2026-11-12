@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: PURGE STREAM
+Target metric: temperature
+Observed target value: 279.24980673018
+Required target value: >= 301.3257752309375

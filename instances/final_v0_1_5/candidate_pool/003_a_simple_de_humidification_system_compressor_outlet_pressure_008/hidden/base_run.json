@@ -1,0 +1,342 @@
+{
+  "column": null,
+  "duration_sec": 2.196,
+  "dwsim_version": "DWSIM version 9.0.5.0 (2025/10/28 10:42:38)",
+  "error_message": "",
+  "exception_count": 0,
+  "exceptions": [],
+  "loaded_objects": 14,
+  "messages_log_count": 0,
+  "saved_flowsheet": "_builder_work/base_calculated.dwxmz",
+  "simulation_path": "hidden/base.dwxmz",
+  "solved_after": true,
+  "solved_before": false,
+  "status": "success",
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": false,
+        "id": "MAT-9cce4842-de99-4d92-9cdb-6c37a91f10e0",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "Feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-199b68dd-42bf-40b7-9c4f-068753b12ee2",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "compressed humid air",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-eaa4b644-d703-4bcd-9871-65999ed88cfd",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "cooled air",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-e74a87cd-e036-442f-bfba-e6c8fd6f22dd"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6"
+        ],
+        "has_downstream_unit": true,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-59aee98e-86db-4c60-b2c2-5d462ce8958c",
+        "is_terminal_material_stream": false,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "gas stream",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "removed water",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": false,
+        "has_upstream_unit": true,
+        "id": "MAT-b0b3121f-16a8-481b-af4d-9a6d426994ab",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": false,
+        "tag": "heavy liquid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_nonzero_flow": true,
+        "has_upstream_unit": true,
+        "id": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+        "is_terminal_material_stream": true,
+        "is_terminal_material_stream_with_flow": true,
+        "tag": "dehumidified air",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+        "mass_flow": 0.00471723850625351,
+        "molar_flow": 0.261408179085806,
+        "tag": "removed water",
+        "upstream_unit_guids": [
+          "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+        ]
+      },
+      {
+        "id": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+        "mass_flow": 0.995282783031731,
+        "molar_flow": 34.4781300402968,
+        "tag": "dehumidified air",
+        "upstream_unit_guids": [
+          "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6"
+        ]
+      }
+    ]
+  },
+  "streams": [
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.99000936222051,
+          "mass_fraction": 0.994701585417606,
+          "molar_flow": 34.1854061540231,
+          "mole_fraction": 0.991509867677522
+        },
+        "Water": {
+          "mass_flow": 0.00527342081122109,
+          "mass_fraction": 0.00529841458239408,
+          "molar_flow": 0.292723886273721,
+          "mole_fraction": 0.00849013232247793
+        }
+      },
+      "id": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+      "mass_flow": 0.995282783031731,
+      "molar_flow": 34.4781300402968,
+      "pressure": 100000.026040658,
+      "tag": "dehumidified air",
+      "temperature": 293.15,
+      "total_energy_flow": -75.7900526003634
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        },
+        "Water": {
+          "mass_flow": 0,
+          "mass_fraction": 0,
+          "molar_flow": 0,
+          "mole_fraction": 0
+        }
+      },
+      "id": "MAT-b0b3121f-16a8-481b-af4d-9a6d426994ab",
+      "mass_flow": 0,
+      "molar_flow": 0,
+      "pressure": 274999.973523717,
+      "tag": "heavy liquid",
+      "temperature": 293.15,
+      "total_energy_flow": 0
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 2.10887011656354e-05,
+          "mass_fraction": 0.00447056071845396,
+          "molar_flow": 0.000728201007100668,
+          "mole_fraction": 0.00278568562639213
+        },
+        "Water": {
+          "mass_flow": 0.00469614980508787,
+          "mass_fraction": 0.995529439281546,
+          "molar_flow": 0.260679978078705,
+          "mole_fraction": 0.997214314373608
+        }
+      },
+      "id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+      "mass_flow": 0.00471723850625351,
+      "molar_flow": 0.261408179085806,
+      "pressure": 274999.973523717,
+      "tag": "removed water",
+      "temperature": 293.15,
+      "total_energy_flow": -74.5956799357064
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.99000936222051,
+          "mass_fraction": 0.994701585417606,
+          "molar_flow": 34.1854061540231,
+          "mole_fraction": 0.991509867677522
+        },
+        "Water": {
+          "mass_flow": 0.00527342081122109,
+          "mass_fraction": 0.00529841458239408,
+          "molar_flow": 0.292723886273721,
+          "mole_fraction": 0.00849013232247793
+        }
+      },
+      "id": "MAT-59aee98e-86db-4c60-b2c2-5d462ce8958c",
+      "mass_flow": 0.995282783031731,
+      "molar_flow": 34.4781300402968,
+      "pressure": 274999.973523717,
+      "tag": "gas stream",
+      "temperature": 293.15,
+      "total_energy_flow": -75.7900526003634
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.990030393933094,
+          "mass_fraction": 0.990030393933094,
+          "molar_flow": 34.1861323871925,
+          "mole_fraction": 0.984069856406974
+        },
+        "Water": {
+          "mass_flow": 0.00996960606690622,
+          "mass_fraction": 0.00996960606690622,
+          "molar_flow": 0.553405832190187,
+          "mole_fraction": 0.0159301435930262
+        }
+      },
+      "id": "MAT-199b68dd-42bf-40b7-9c4f-068753b12ee2",
+      "mass_flow": 1,
+      "molar_flow": 34.7395382193826,
+      "pressure": 274999.973523717,
+      "tag": "compressed humid air",
+      "temperature": 423.371448613701,
+      "total_energy_flow": -6.47870308697836
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.990030393933094,
+          "mass_fraction": 0.990030393933094,
+          "molar_flow": 34.1861323871925,
+          "mole_fraction": 0.984069856406974
+        },
+        "Water": {
+          "mass_flow": 0.00996960606690622,
+          "mass_fraction": 0.00996960606690622,
+          "molar_flow": 0.553405832190187,
+          "mole_fraction": 0.0159301435930262
+        }
+      },
+      "id": "MAT-9cce4842-de99-4d92-9cdb-6c37a91f10e0",
+      "mass_flow": 1,
+      "molar_flow": 34.7395382193826,
+      "pressure": 100000.026040658,
+      "tag": "Feed",
+      "temperature": 293.15,
+      "total_energy_flow": -138.870512462441
+    },
+    {
+      "compounds": {
+        "Air": {
+          "mass_flow": 0.990030393933094,
+          "mass_fraction": 0.990030393933094,
+          "molar_flow": 34.1861323871925,
+          "mole_fraction": 0.984069856406974
+        },
+        "Water": {
+          "mass_flow": 0.00996960606690622,
+          "mass_fraction": 0.00996960606690622,
+          "molar_flow": 0.553405832190187,
+          "mole_fraction": 0.0159301435930262
+        }
+      },
+      "id": "MAT-eaa4b644-d703-4bcd-9871-65999ed88cfd",
+      "mass_flow": 1,
+      "molar_flow": 34.7395382193826,
+      "pressure": 274999.973523717,
+      "tag": "cooled air",
+      "temperature": 293.15,
+      "total_energy_flow": -150.386208030015
+    }
+  ],
+  "success": true,
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "delta_p": 174999.947483059,
+    "flash_pressure": null,
+    "flash_temperature": null,
+    "guid": "COMP-b56262ab-52c8-45e2-8bd6-a98b7d39362c",
+    "outlet_pressure": null,
+    "outlet_temperature": 423.371448613701,
+    "override_p": null,
+    "override_t": null,
+    "p_out": 274999.973523717,
+    "pout": 274999.973523717,
+    "tag": "compressor",
+    "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-46d048d4-755a-4fb7-98aa-d4b4c22af3eb",
+      "mass_flow": 0.00471723850625351,
+      "molar_flow": 0.261408179085806,
+      "tag": "removed water",
+      "upstream_unit_guids": [
+        "SEP-9fc4dbf1-0fae-4767-9e62-2a46855a6604"
+      ]
+    },
+    {
+      "id": "MAT-dab6b1b5-b92b-4f29-be0e-d24315e02e67",
+      "mass_flow": 0.995282783031731,
+      "molar_flow": 34.4781300402968,
+      "tag": "dehumidified air",
+      "upstream_unit_guids": [
+        "VALV-49ce35e1-cadd-4096-b355-b7c6420e2da6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 330,
+    "target_mole_fraction": null,
+    "target_value": 330.0
+  },
+  "faulty": {
+    "outlet_temperature": 300,
+    "target_mole_fraction": null,
+    "target_value": 300.0
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "CL-137acbff-a2e7-43aa-8ca9-aec17cc89af5",
+      "kind": "unit_operation",
+      "tag": "CL-049"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 330.0
+  },
+  "instance_id": "018_vaccum_salt_production_using_multi_effect_evaporator_cl_049_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 330,
+    "target_mole_fraction": null,
+    "target_value": 330.0
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/018_vaccum_salt_production_using_multi_effect_evaporator.zip",
+  "target": {
+    "component": null,
+    "direction": "min",
+    "family": "terminal_temperature",
+    "metric": "temperature",
+    "min": 321.0,
+    "product_mole_fraction_min": null,
+    "stream": "MS-053",
+    "stream_id": "MS-ff62331c-5cf1-4be2-9243-694f8f27ebd1",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "MS-053",
+    "threshold": 321.0
+  },
+  "target_delta": 30.0
+}

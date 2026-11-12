@@ -1,0 +1,56 @@
+{
+  "base": {
+    "outlet_temperature": 328,
+    "target_mole_fraction": null,
+    "target_value": 339.642788550339
+  },
+  "faulty": {
+    "outlet_temperature": 298,
+    "target_mole_fraction": null,
+    "target_value": 535.863862919442
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "outlet_temperature",
+      "namespace": "thermal_specification"
+    },
+    "target": {
+      "guid": "RESF-05d097ea-80fe-4ce6-9956-6d6f699fd155",
+      "kind": "unit_operation",
+      "tag": "lean amine cooler"
+    },
+    "type": "set_unit_parameter",
+    "unit": "K",
+    "value": 328.0
+  },
+  "instance_id": "017_recovery_of_h2s_from_refinery_off_gas_with_diethanolamine_lean_amine_cooler_outlet_temperature_001",
+  "repairable": true,
+  "repaired": {
+    "outlet_temperature": 328,
+    "target_mole_fraction": null,
+    "target_value": 339.642788550339
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/other_candidate/017_recovery_of_h2s_from_refinery_off_gas_with_diethanolamine.zip",
+  "target": {
+    "component": null,
+    "direction": "max",
+    "family": "terminal_temperature",
+    "max": 398.50911086106987,
+    "metric": "temperature",
+    "product_mole_fraction_min": null,
+    "stream": "treated off gas",
+    "stream_id": "MAT-26501171-ba14-4428-8d1d-5f3ce19469b8",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "treated off gas",
+    "threshold": 398.50911086106987
+  },
+  "target_delta": -196.221074369103
+}

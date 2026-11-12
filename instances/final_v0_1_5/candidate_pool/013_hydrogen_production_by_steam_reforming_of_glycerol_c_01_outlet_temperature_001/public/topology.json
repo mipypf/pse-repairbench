@@ -1,0 +1,425 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after outlet temperature injection.",
+  "graphic_object_count": 20,
+  "graphic_objects": [
+    {
+      "name": "MAT-cb9c1196-6c79-4789-b210-2d1ed9a6ce10",
+      "object_type": "MaterialStream",
+      "tag": "S-01"
+    },
+    {
+      "name": "MAT-3da5339c-bc0e-45b9-b4b3-64bbba7daacc",
+      "object_type": "MaterialStream",
+      "tag": "S-03"
+    },
+    {
+      "name": "MIST-0bfeabf4-4d52-43e4-9d15-de5d4f32afcf",
+      "object_type": "NodeIn",
+      "tag": "MIX-1"
+    },
+    {
+      "name": "MAT-5879b00b-79ec-4439-aed7-4682246e5a69",
+      "object_type": "MaterialStream",
+      "tag": "S-04"
+    },
+    {
+      "name": "RG-38d3f105-4749-4130-818f-000a50cd73c9",
+      "object_type": "RCT_Gibbs",
+      "tag": "RC-01"
+    },
+    {
+      "name": "EN-3418b782-79a9-40e7-bc37-242eef81ba6e",
+      "object_type": "EnergyStream",
+      "tag": "E-02"
+    },
+    {
+      "name": "MAT-bbdffa7b-d3ad-4e1c-8769-23d0da09fc41",
+      "object_type": "MaterialStream",
+      "tag": "S-06"
+    },
+    {
+      "name": "MAT-82d75533-10cc-41ea-baea-19f95ccb5f69",
+      "object_type": "MaterialStream",
+      "tag": "S-07"
+    },
+    {
+      "name": "AQ-cafc70c6-94a8-40f5-9440-f5c00ace4170",
+      "object_type": "Heater",
+      "tag": "H-01"
+    },
+    {
+      "name": "MAT-d96237b7-56a8-4a6c-b4f6-2e6885dfee21",
+      "object_type": "MaterialStream",
+      "tag": "S-05"
+    },
+    {
+      "name": "EN-ffed1497-4505-49d2-b69e-e620baa8b29c",
+      "object_type": "EnergyStream",
+      "tag": "E-01"
+    },
+    {
+      "name": "RESF-c246df5a-2e3c-4719-b208-61f141d21d91",
+      "object_type": "Cooler",
+      "tag": "C-01"
+    },
+    {
+      "name": "MAT-c0ebc1a8-87ab-4143-9b9e-2654514127bf",
+      "object_type": "MaterialStream",
+      "tag": "S-08"
+    },
+    {
+      "name": "EN-d46195fb-6edd-4d2c-9c3d-5e898c5e9244",
+      "object_type": "EnergyStream",
+      "tag": "E-03"
+    },
+    {
+      "name": "SEP-78518b5d-c08d-4b28-a40e-63618e83d64a",
+      "object_type": "Vessel",
+      "tag": "GL-01"
+    },
+    {
+      "name": "MAT-894b5dd9-f5a5-4822-9a02-2785a00a74b8",
+      "object_type": "MaterialStream",
+      "tag": "S-09"
+    },
+    {
+      "name": "MAT-b6201f13-782f-407a-a47d-e3cbcbfbcd44",
+      "object_type": "MaterialStream",
+      "tag": "S-10"
+    },
+    {
+      "name": "REC-be8b7f39-e0ac-415e-97c6-e2a802ce4f24",
+      "object_type": "OT_Recycle",
+      "tag": "B-01"
+    },
+    {
+      "name": "MAT-6896f5ae-bd8c-4ad9-84b1-4e93e83201db",
+      "object_type": "MaterialStream",
+      "tag": "S-02"
+    },
+    {
+      "name": "MASTERTABLE-9cab2897-d73a-4288-89b8-3999db9a53f4",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-6896f5ae-bd8c-4ad9-84b1-4e93e83201db",
+      "object_class": "Streams",
+      "tag": "S-02",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Reciclo",
+      "guid": "REC-be8b7f39-e0ac-415e-97c6-e2a802ce4f24",
+      "object_class": "Logical",
+      "tag": "B-01",
+      "type": "DWSIM.UnitOperations.SpecialOps.Recycle"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-cb9c1196-6c79-4789-b210-2d1ed9a6ce10",
+      "object_class": "Streams",
+      "tag": "S-01",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-3da5339c-bc0e-45b9-b4b3-64bbba7daacc",
+      "object_class": "Streams",
+      "tag": "S-03",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Misturador",
+      "guid": "MIST-0bfeabf4-4d52-43e4-9d15-de5d4f32afcf",
+      "object_class": "MixersSplitters",
+      "tag": "MIX-1",
+      "type": "DWSIM.UnitOperations.UnitOperations.Mixer"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-3418b782-79a9-40e7-bc37-242eef81ba6e",
+      "object_class": "Streams",
+      "tag": "E-02",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "ReatorGibbs",
+      "guid": "RG-38d3f105-4749-4130-818f-000a50cd73c9",
+      "object_class": "Reactors",
+      "tag": "RC-01",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_Gibbs"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-5879b00b-79ec-4439-aed7-4682246e5a69",
+      "object_class": "Streams",
+      "tag": "S-04",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Aquecedor",
+      "guid": "AQ-cafc70c6-94a8-40f5-9440-f5c00ace4170",
+      "object_class": "Exchangers",
+      "tag": "H-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-bbdffa7b-d3ad-4e1c-8769-23d0da09fc41",
+      "object_class": "Streams",
+      "tag": "S-06",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-82d75533-10cc-41ea-baea-19f95ccb5f69",
+      "object_class": "Streams",
+      "tag": "S-07",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-ffed1497-4505-49d2-b69e-e620baa8b29c",
+      "object_class": "Streams",
+      "tag": "E-01",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-d96237b7-56a8-4a6c-b4f6-2e6885dfee21",
+      "object_class": "Streams",
+      "tag": "S-05",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-c246df5a-2e3c-4719-b208-61f141d21d91",
+      "object_class": "Exchangers",
+      "tag": "C-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-d46195fb-6edd-4d2c-9c3d-5e898c5e9244",
+      "object_class": "Streams",
+      "tag": "E-03",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-c0ebc1a8-87ab-4143-9b9e-2654514127bf",
+      "object_class": "Streams",
+      "tag": "S-08",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "VasoSeparadorGL",
+      "guid": "SEP-78518b5d-c08d-4b28-a40e-63618e83d64a",
+      "object_class": "Separators",
+      "tag": "GL-01",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-894b5dd9-f5a5-4822-9a02-2785a00a74b8",
+      "object_class": "Streams",
+      "tag": "S-09",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-b6201f13-782f-407a-a47d-e3cbcbfbcd44",
+      "object_class": "Streams",
+      "tag": "S-10",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 19,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-0bfeabf4-4d52-43e4-9d15-de5d4f32afcf"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-cb9c1196-6c79-4789-b210-2d1ed9a6ce10",
+        "is_terminal_material_stream": false,
+        "tag": "S-01",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-0bfeabf4-4d52-43e4-9d15-de5d4f32afcf"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-3da5339c-bc0e-45b9-b4b3-64bbba7daacc",
+        "is_terminal_material_stream": false,
+        "tag": "S-03",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-cafc70c6-94a8-40f5-9440-f5c00ace4170"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-5879b00b-79ec-4439-aed7-4682246e5a69",
+        "is_terminal_material_stream": false,
+        "tag": "S-04",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-0bfeabf4-4d52-43e4-9d15-de5d4f32afcf"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-c246df5a-2e3c-4719-b208-61f141d21d91"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-bbdffa7b-d3ad-4e1c-8769-23d0da09fc41",
+        "is_terminal_material_stream": false,
+        "tag": "S-06",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RG-38d3f105-4749-4130-818f-000a50cd73c9"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-82d75533-10cc-41ea-baea-19f95ccb5f69",
+        "is_terminal_material_stream": true,
+        "tag": "S-07",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RG-38d3f105-4749-4130-818f-000a50cd73c9"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RG-38d3f105-4749-4130-818f-000a50cd73c9"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-d96237b7-56a8-4a6c-b4f6-2e6885dfee21",
+        "is_terminal_material_stream": false,
+        "tag": "S-05",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-cafc70c6-94a8-40f5-9440-f5c00ace4170"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-78518b5d-c08d-4b28-a40e-63618e83d64a"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-c0ebc1a8-87ab-4143-9b9e-2654514127bf",
+        "is_terminal_material_stream": false,
+        "tag": "S-08",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-c246df5a-2e3c-4719-b208-61f141d21d91"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-894b5dd9-f5a5-4822-9a02-2785a00a74b8",
+        "is_terminal_material_stream": true,
+        "tag": "S-09",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-78518b5d-c08d-4b28-a40e-63618e83d64a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "REC-be8b7f39-e0ac-415e-97c6-e2a802ce4f24"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-b6201f13-782f-407a-a47d-e3cbcbfbcd44",
+        "is_terminal_material_stream": false,
+        "tag": "S-10",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-78518b5d-c08d-4b28-a40e-63618e83d64a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-0bfeabf4-4d52-43e4-9d15-de5d4f32afcf"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-6896f5ae-bd8c-4ad9-84b1-4e93e83201db",
+        "is_terminal_material_stream": false,
+        "tag": "S-02",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "REC-be8b7f39-e0ac-415e-97c6-e2a802ce4f24"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-82d75533-10cc-41ea-baea-19f95ccb5f69",
+        "tag": "S-07",
+        "upstream_unit_guids": [
+          "RG-38d3f105-4749-4130-818f-000a50cd73c9"
+        ]
+      },
+      {
+        "id": "MAT-894b5dd9-f5a5-4822-9a02-2785a00a74b8",
+        "tag": "S-09",
+        "upstream_unit_guids": [
+          "SEP-78518b5d-c08d-4b28-a40e-63618e83d64a"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": "OutletTemperature",
+    "guid": "RESF-c246df5a-2e3c-4719-b208-61f141d21d91",
+    "kind": "unit_operation",
+    "tag": "C-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  "target_unit": {
+    "calc_mode": "OutletTemperature",
+    "guid": "RESF-c246df5a-2e3c-4719-b208-61f141d21d91",
+    "kind": "unit_operation",
+    "tag": "C-01",
+    "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-82d75533-10cc-41ea-baea-19f95ccb5f69",
+      "tag": "S-07",
+      "upstream_unit_guids": [
+        "RG-38d3f105-4749-4130-818f-000a50cd73c9"
+      ]
+    },
+    {
+      "id": "MAT-894b5dd9-f5a5-4822-9a02-2785a00a74b8",
+      "tag": "S-09",
+      "upstream_unit_guids": [
+        "SEP-78518b5d-c08d-4b28-a40e-63618e83d64a"
+      ]
+    }
+  ]
+}

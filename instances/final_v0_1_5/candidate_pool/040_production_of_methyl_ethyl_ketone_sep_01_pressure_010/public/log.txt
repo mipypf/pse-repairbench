@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-08
+Target metric: pressure
+Observed target value: 177318.75
+Required target value: >= 301441.875

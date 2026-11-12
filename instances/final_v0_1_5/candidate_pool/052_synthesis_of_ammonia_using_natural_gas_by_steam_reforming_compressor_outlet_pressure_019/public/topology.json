@@ -1,0 +1,1275 @@
+{
+  "extraction_note": "Topology extracted from the faulty flowsheet after outlet pressure injection.",
+  "graphic_object_count": 63,
+  "graphic_objects": [
+    {
+      "name": "MAT-e7220329-25bb-49c2-a3b9-9929c005ad17",
+      "object_type": "MaterialStream",
+      "tag": "Natural gas"
+    },
+    {
+      "name": "MAT-45fbfbc4-e6fc-4c8f-a8a4-a275e9b51393",
+      "object_type": "MaterialStream",
+      "tag": "Steam"
+    },
+    {
+      "name": "MIST-9f4277ce-1a85-4d8a-9afb-cd8b0eeac427",
+      "object_type": "NodeIn",
+      "tag": "MIX-002"
+    },
+    {
+      "name": "MAT-465625a0-090b-49c3-9b44-5e48e9c4f44b",
+      "object_type": "MaterialStream",
+      "tag": "Feed"
+    },
+    {
+      "name": "PFR-2a2af8ea-69b2-488d-99cb-ced11ed43440",
+      "object_type": "RCT_PFR",
+      "tag": "Steam reformer"
+    },
+    {
+      "name": "EN-1c4d5a86-a958-4b04-bb26-ecb7e2f0caac",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-005"
+    },
+    {
+      "name": "MAT-a127dc45-72fa-4e89-af07-68931fb8cbaa",
+      "object_type": "MaterialStream",
+      "tag": "Reformed feed"
+    },
+    {
+      "name": "PFR-a54876f7-004f-42dd-b7e0-0fe15f8a0dc0",
+      "object_type": "RCT_PFR",
+      "tag": "HTS (High T shift reactor)"
+    },
+    {
+      "name": "EN-00d817a0-d931-468c-99a4-0cf2c34ae588",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-008"
+    },
+    {
+      "name": "MAT-4e7cb9d1-a9b2-4563-bb4b-3d85d8c98a88",
+      "object_type": "MaterialStream",
+      "tag": "HTS output"
+    },
+    {
+      "name": "RESF-88487018-55c7-43a8-8cca-acd5a71d2207",
+      "object_type": "Cooler",
+      "tag": "COOL-010"
+    },
+    {
+      "name": "EN-5c6269fc-b0b6-41bf-9a24-092db971ccfe",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-011"
+    },
+    {
+      "name": "MAT-4d112b90-a217-45fb-a838-4d544a3863d3",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-012"
+    },
+    {
+      "name": "MAT-faa184c8-8018-4035-86a5-e4343a400893",
+      "object_type": "MaterialStream",
+      "tag": "Extra steam"
+    },
+    {
+      "name": "MIST-80e083ec-f3b7-415e-a414-bab53d1a8c24",
+      "object_type": "NodeIn",
+      "tag": "MIX-014"
+    },
+    {
+      "name": "MAT-e49a4ea8-70b5-46e2-b0ef-7616fe39d627",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-015"
+    },
+    {
+      "name": "RESF-0ba4d0ac-b20d-4bf6-b6cf-96ea7681a47a",
+      "object_type": "Cooler",
+      "tag": "COOL-016"
+    },
+    {
+      "name": "EN-aa1a46aa-401f-4984-a9ac-7a6e769826f5",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-017"
+    },
+    {
+      "name": "MAT-22aec4c1-a430-41e7-9195-95fd14440c3f",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-018"
+    },
+    {
+      "name": "PFR-5453716f-3342-48c5-8aae-84db211995fa",
+      "object_type": "RCT_PFR",
+      "tag": "LTS(Low T shift reactor)"
+    },
+    {
+      "name": "EN-6d372657-18a7-48eb-8950-3b2e8000450b",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-020"
+    },
+    {
+      "name": "MAT-4c9fbc52-9750-44bf-92a8-9eb2739056f4",
+      "object_type": "MaterialStream",
+      "tag": "LTS output"
+    },
+    {
+      "name": "RESF-ca7b2589-683d-472d-8e54-13e39c112cca",
+      "object_type": "Cooler",
+      "tag": "COOL-022"
+    },
+    {
+      "name": "EN-59aa2a57-a17a-4057-a4d7-0885ed63cac6",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-023"
+    },
+    {
+      "name": "MAT-8b07d878-8934-4746-b5ce-0ade07a68c31",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-024"
+    },
+    {
+      "name": "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4",
+      "object_type": "Vessel",
+      "tag": "Flash"
+    },
+    {
+      "name": "EN-679e52e7-0d57-488e-b08b-66618c4d59ae",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-026"
+    },
+    {
+      "name": "MAT-38a2deb2-9ce9-4647-adc5-7dbbd5361c07",
+      "object_type": "MaterialStream",
+      "tag": "De humidified feed"
+    },
+    {
+      "name": "MAT-f77159c9-86ec-42c6-8327-4089c0998140",
+      "object_type": "MaterialStream",
+      "tag": "Lean rectisol"
+    },
+    {
+      "name": "MAT-1c5c38ad-9c08-4580-b08a-6a2be849f8a4",
+      "object_type": "MaterialStream",
+      "tag": "Light liq"
+    },
+    {
+      "name": "MAT-d7f5f7a8-525f-42ab-97ab-3d90f2a561bc",
+      "object_type": "MaterialStream",
+      "tag": "Heavy liquid"
+    },
+    {
+      "name": "COUO-af31f276-7528-4e6d-85f9-62fa7fbb602b",
+      "object_type": "CapeOpenUO",
+      "tag": "Absorption column"
+    },
+    {
+      "name": "MAT-241e9b5c-7867-4789-beb9-c05dee28c3d9",
+      "object_type": "MaterialStream",
+      "tag": "Rich rectisol"
+    },
+    {
+      "name": "CS-88afaaaa-58b3-4dd8-b7af-259dd24d1227",
+      "object_type": "ComponentSeparator",
+      "tag": "PSA"
+    },
+    {
+      "name": "MAT-d9039668-4681-4f5d-af4f-814075aef613",
+      "object_type": "MaterialStream",
+      "tag": "Pure H_2"
+    },
+    {
+      "name": "MAT-9568c649-8d27-41f7-af90-a391600b8503",
+      "object_type": "MaterialStream",
+      "tag": "Off gas"
+    },
+    {
+      "name": "EN-e1a4d2b5-8ff9-4c2a-8b87-8f93ef11f0ea",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-037"
+    },
+    {
+      "name": "MAT-aad70e77-3b51-484b-b33b-c39a5b379980",
+      "object_type": "MaterialStream",
+      "tag": "Washed feed"
+    },
+    {
+      "name": "AQ-5d23e811-dafa-4437-acfc-f70f203afc0e",
+      "object_type": "Heater",
+      "tag": "HEAT-039"
+    },
+    {
+      "name": "MAT-369456c5-04a7-4be2-a6df-1fe167b7db11",
+      "object_type": "MaterialStream",
+      "tag": "Preheated wash feed"
+    },
+    {
+      "name": "EN-203e9515-e1d0-4e36-8b44-716ba3e9006d",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-041"
+    },
+    {
+      "name": "MAT-e76e13b1-8050-4a65-b0db-79fb95542266",
+      "object_type": "MaterialStream",
+      "tag": "Pure N_2"
+    },
+    {
+      "name": "MIST-862d9083-7f90-4b91-b308-30cf39329f33",
+      "object_type": "NodeIn",
+      "tag": "MIX-043"
+    },
+    {
+      "name": "MAT-5c40c497-b9e2-4559-8546-3a39dae6f697",
+      "object_type": "MaterialStream",
+      "tag": "Synthesis feed"
+    },
+    {
+      "name": "COMP-181f7c8c-f438-487a-ab56-baa6020266c9",
+      "object_type": "Compressor",
+      "tag": "Compressor"
+    },
+    {
+      "name": "EN-2c342a64-b2a1-4524-8634-552de8b91a6c",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-046"
+    },
+    {
+      "name": "MAT-26aeee92-5409-4b83-8b84-a3d0ac560087",
+      "object_type": "MaterialStream",
+      "tag": "Pressurised feed"
+    },
+    {
+      "name": "RESF-06141908-aea2-469d-a7f9-fc53165d032d",
+      "object_type": "Cooler",
+      "tag": "COOL-048"
+    },
+    {
+      "name": "EN-8dd65d1c-cffe-4f3e-b477-e2e5147dbed2",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-049"
+    },
+    {
+      "name": "MAT-9737a754-ee13-4819-a2e6-8ff12909fdd2",
+      "object_type": "MaterialStream",
+      "tag": "Syn feed"
+    },
+    {
+      "name": "PFR-cc3f7c24-f516-4710-b831-e2df50db1e21",
+      "object_type": "RCT_PFR",
+      "tag": "Ammonia reactor"
+    },
+    {
+      "name": "MAT-576f31ac-d0a1-4c06-9dff-32ad25494f1d",
+      "object_type": "MaterialStream",
+      "tag": "Reactor outlet"
+    },
+    {
+      "name": "EN-97ef6906-4db0-48bf-a120-26341bbbc7d0",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-053"
+    },
+    {
+      "name": "SEP-03e60839-dd21-477b-8939-5422276243d4",
+      "object_type": "Vessel",
+      "tag": "Flash sep"
+    },
+    {
+      "name": "RESF-51ad5054-8bec-42e3-8847-30b2697be831",
+      "object_type": "Cooler",
+      "tag": "COOL-055"
+    },
+    {
+      "name": "MAT-88e9816f-d2be-47dc-918b-24c57d85cc51",
+      "object_type": "MaterialStream",
+      "tag": "MSTR-056"
+    },
+    {
+      "name": "EN-8889d5b1-fdb1-447e-8fc3-f7dac28bf022",
+      "object_type": "EnergyStream",
+      "tag": "ESTR-057"
+    },
+    {
+      "name": "MAT-cfbdd730-ea83-4d3c-8150-a22373248a17",
+      "object_type": "MaterialStream",
+      "tag": "vap"
+    },
+    {
+      "name": "MAT-93be667f-f5bf-4127-9ac6-f0f28d812e27",
+      "object_type": "MaterialStream",
+      "tag": "Final ammonia"
+    },
+    {
+      "name": "MAT-9ab4655d-4b8b-438f-b3ee-86f2fc428b7e",
+      "object_type": "MaterialStream",
+      "tag": "Heavy Liq"
+    },
+    {
+      "name": "TQ-3040187e-4adf-4e76-a150-816bb8eacedb",
+      "object_type": "Tank",
+      "tag": "Ammonia storage"
+    },
+    {
+      "name": "MAT-be980e3b-c6d6-47ee-8355-cdc7e0ad3b89",
+      "object_type": "MaterialStream",
+      "tag": "Tank outlet"
+    },
+    {
+      "name": "MASTERTABLE-57edd9de-4c1f-468e-bde0-feec0cd41952",
+      "object_type": "GO_MasterTable",
+      "tag": null
+    }
+  ],
+  "objects": [
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-241e9b5c-7867-4789-beb9-c05dee28c3d9",
+      "object_class": "Streams",
+      "tag": "Rich rectisol",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CapeOpenUnitOperation",
+      "guid": "COUO-af31f276-7528-4e6d-85f9-62fa7fbb602b",
+      "object_class": "CAPEOPEN",
+      "tag": "Absorption column",
+      "type": "DWSIM.UnitOperations.UnitOperations.CapeOpenUO"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-f77159c9-86ec-42c6-8327-4089c0998140",
+      "object_class": "Streams",
+      "tag": "Lean rectisol",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-1c5c38ad-9c08-4580-b08a-6a2be849f8a4",
+      "object_class": "Streams",
+      "tag": "Light liq",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-d7f5f7a8-525f-42ab-97ab-3d90f2a561bc",
+      "object_class": "Streams",
+      "tag": "Heavy liquid",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-38a2deb2-9ce9-4647-adc5-7dbbd5361c07",
+      "object_class": "Streams",
+      "tag": "De humidified feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-679e52e7-0d57-488e-b08b-66618c4d59ae",
+      "object_class": "Streams",
+      "tag": "ESTR-026",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "VasoSeparadorGL",
+      "guid": "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4",
+      "object_class": "Separators",
+      "tag": "Flash",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-8b07d878-8934-4746-b5ce-0ade07a68c31",
+      "object_class": "Streams",
+      "tag": "MSTR-024",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-59aa2a57-a17a-4057-a4d7-0885ed63cac6",
+      "object_class": "Streams",
+      "tag": "ESTR-023",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-ca7b2589-683d-472d-8e54-13e39c112cca",
+      "object_class": "Exchangers",
+      "tag": "COOL-022",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-e49a4ea8-70b5-46e2-b0ef-7616fe39d627",
+      "object_class": "Streams",
+      "tag": "MSTR-015",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Misturador",
+      "guid": "MIST-80e083ec-f3b7-415e-a414-bab53d1a8c24",
+      "object_class": "MixersSplitters",
+      "tag": "MIX-014",
+      "type": "DWSIM.UnitOperations.UnitOperations.Mixer"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-faa184c8-8018-4035-86a5-e4343a400893",
+      "object_class": "Streams",
+      "tag": "Extra steam",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-e7220329-25bb-49c2-a3b9-9929c005ad17",
+      "object_class": "Streams",
+      "tag": "Natural gas",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-45fbfbc4-e6fc-4c8f-a8a4-a275e9b51393",
+      "object_class": "Streams",
+      "tag": "Steam",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Misturador",
+      "guid": "MIST-9f4277ce-1a85-4d8a-9afb-cd8b0eeac427",
+      "object_class": "MixersSplitters",
+      "tag": "MIX-002",
+      "type": "DWSIM.UnitOperations.UnitOperations.Mixer"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-465625a0-090b-49c3-9b44-5e48e9c4f44b",
+      "object_class": "Streams",
+      "tag": "Feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "ReatorPFR",
+      "guid": "PFR-2a2af8ea-69b2-488d-99cb-ced11ed43440",
+      "object_class": "Reactors",
+      "tag": "Steam reformer",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_PFR"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-1c4d5a86-a958-4b04-bb26-ecb7e2f0caac",
+      "object_class": "Streams",
+      "tag": "ESTR-005",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-a127dc45-72fa-4e89-af07-68931fb8cbaa",
+      "object_class": "Streams",
+      "tag": "Reformed feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "ReatorPFR",
+      "guid": "PFR-a54876f7-004f-42dd-b7e0-0fe15f8a0dc0",
+      "object_class": "Reactors",
+      "tag": "HTS (High T shift reactor)",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_PFR"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-00d817a0-d931-468c-99a4-0cf2c34ae588",
+      "object_class": "Streams",
+      "tag": "ESTR-008",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-4e7cb9d1-a9b2-4563-bb4b-3d85d8c98a88",
+      "object_class": "Streams",
+      "tag": "HTS output",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-88487018-55c7-43a8-8cca-acd5a71d2207",
+      "object_class": "Exchangers",
+      "tag": "COOL-010",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-5c6269fc-b0b6-41bf-9a24-092db971ccfe",
+      "object_class": "Streams",
+      "tag": "ESTR-011",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-4d112b90-a217-45fb-a838-4d544a3863d3",
+      "object_class": "Streams",
+      "tag": "MSTR-012",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-0ba4d0ac-b20d-4bf6-b6cf-96ea7681a47a",
+      "object_class": "Exchangers",
+      "tag": "COOL-016",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-aa1a46aa-401f-4984-a9ac-7a6e769826f5",
+      "object_class": "Streams",
+      "tag": "ESTR-017",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-22aec4c1-a430-41e7-9195-95fd14440c3f",
+      "object_class": "Streams",
+      "tag": "MSTR-018",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-4c9fbc52-9750-44bf-92a8-9eb2739056f4",
+      "object_class": "Streams",
+      "tag": "LTS output",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "ReatorPFR",
+      "guid": "PFR-5453716f-3342-48c5-8aae-84db211995fa",
+      "object_class": "Reactors",
+      "tag": "LTS(Low T shift reactor)",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_PFR"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-6d372657-18a7-48eb-8950-3b2e8000450b",
+      "object_class": "Streams",
+      "tag": "ESTR-020",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "ComponentSeparator",
+      "guid": "CS-88afaaaa-58b3-4dd8-b7af-259dd24d1227",
+      "object_class": "Separators",
+      "tag": "PSA",
+      "type": "DWSIM.UnitOperations.UnitOperations.ComponentSeparator"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-d9039668-4681-4f5d-af4f-814075aef613",
+      "object_class": "Streams",
+      "tag": "Pure H_2",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-9568c649-8d27-41f7-af90-a391600b8503",
+      "object_class": "Streams",
+      "tag": "Off gas",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-e1a4d2b5-8ff9-4c2a-8b87-8f93ef11f0ea",
+      "object_class": "Streams",
+      "tag": "ESTR-037",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-aad70e77-3b51-484b-b33b-c39a5b379980",
+      "object_class": "Streams",
+      "tag": "Washed feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Aquecedor",
+      "guid": "AQ-5d23e811-dafa-4437-acfc-f70f203afc0e",
+      "object_class": "Exchangers",
+      "tag": "HEAT-039",
+      "type": "DWSIM.UnitOperations.UnitOperations.Heater"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-369456c5-04a7-4be2-a6df-1fe167b7db11",
+      "object_class": "Streams",
+      "tag": "Preheated wash feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-203e9515-e1d0-4e36-8b44-716ba3e9006d",
+      "object_class": "Streams",
+      "tag": "ESTR-041",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-e76e13b1-8050-4a65-b0db-79fb95542266",
+      "object_class": "Streams",
+      "tag": "Pure N_2",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Misturador",
+      "guid": "MIST-862d9083-7f90-4b91-b308-30cf39329f33",
+      "object_class": "MixersSplitters",
+      "tag": "MIX-043",
+      "type": "DWSIM.UnitOperations.UnitOperations.Mixer"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-5c40c497-b9e2-4559-8546-3a39dae6f697",
+      "object_class": "Streams",
+      "tag": "Synthesis feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CompressorAdiabtico",
+      "guid": "COMP-181f7c8c-f438-487a-ab56-baa6020266c9",
+      "object_class": "PressureChangers",
+      "tag": "Compressor",
+      "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-2c342a64-b2a1-4524-8634-552de8b91a6c",
+      "object_class": "Streams",
+      "tag": "ESTR-046",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-26aeee92-5409-4b83-8b84-a3d0ac560087",
+      "object_class": "Streams",
+      "tag": "Pressurised feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-06141908-aea2-469d-a7f9-fc53165d032d",
+      "object_class": "Exchangers",
+      "tag": "COOL-048",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-8dd65d1c-cffe-4f3e-b477-e2e5147dbed2",
+      "object_class": "Streams",
+      "tag": "ESTR-049",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-9737a754-ee13-4819-a2e6-8ff12909fdd2",
+      "object_class": "Streams",
+      "tag": "Syn feed",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "ReatorPFR",
+      "guid": "PFR-cc3f7c24-f516-4710-b831-e2df50db1e21",
+      "object_class": "Reactors",
+      "tag": "Ammonia reactor",
+      "type": "DWSIM.UnitOperations.Reactors.Reactor_PFR"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-576f31ac-d0a1-4c06-9dff-32ad25494f1d",
+      "object_class": "Streams",
+      "tag": "Reactor outlet",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-97ef6906-4db0-48bf-a120-26341bbbc7d0",
+      "object_class": "Streams",
+      "tag": "ESTR-053",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "VasoSeparadorGL",
+      "guid": "SEP-03e60839-dd21-477b-8939-5422276243d4",
+      "object_class": "Separators",
+      "tag": "Flash sep",
+      "type": "DWSIM.UnitOperations.UnitOperations.Vessel"
+    },
+    {
+      "component_description": "Resfriador",
+      "guid": "RESF-51ad5054-8bec-42e3-8847-30b2697be831",
+      "object_class": "Exchangers",
+      "tag": "COOL-055",
+      "type": "DWSIM.UnitOperations.UnitOperations.Cooler"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-88e9816f-d2be-47dc-918b-24c57d85cc51",
+      "object_class": "Streams",
+      "tag": "MSTR-056",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeEnergia",
+      "guid": "EN-8889d5b1-fdb1-447e-8fc3-f7dac28bf022",
+      "object_class": "Streams",
+      "tag": "ESTR-057",
+      "type": "DWSIM.UnitOperations.Streams.EnergyStream"
+    },
+    {
+      "component_description": "Tanque",
+      "guid": "TQ-3040187e-4adf-4e76-a150-816bb8eacedb",
+      "object_class": "Separators",
+      "tag": "Ammonia storage",
+      "type": "DWSIM.UnitOperations.UnitOperations.Tank"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-cfbdd730-ea83-4d3c-8150-a22373248a17",
+      "object_class": "Streams",
+      "tag": "vap",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-93be667f-f5bf-4127-9ac6-f0f28d812e27",
+      "object_class": "Streams",
+      "tag": "Final ammonia",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-9ab4655d-4b8b-438f-b3ee-86f2fc428b7e",
+      "object_class": "Streams",
+      "tag": "Heavy Liq",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    },
+    {
+      "component_description": "CorrentedeMatria",
+      "guid": "MAT-be980e3b-c6d6-47ee-8355-cdc7e0ad3b89",
+      "object_class": "Streams",
+      "tag": "Tank outlet",
+      "type": "DWSIM.Thermodynamics.Streams.MaterialStream"
+    }
+  ],
+  "schema_version": "draft-0",
+  "simulation_object_count": 62,
+  "stream_graph": {
+    "streams": [
+      {
+        "downstream_unit_guids": [
+          "MIST-9f4277ce-1a85-4d8a-9afb-cd8b0eeac427"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-e7220329-25bb-49c2-a3b9-9929c005ad17",
+        "is_terminal_material_stream": false,
+        "tag": "Natural gas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-9f4277ce-1a85-4d8a-9afb-cd8b0eeac427"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-45fbfbc4-e6fc-4c8f-a8a4-a275e9b51393",
+        "is_terminal_material_stream": false,
+        "tag": "Steam",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "PFR-2a2af8ea-69b2-488d-99cb-ced11ed43440"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-465625a0-090b-49c3-9b44-5e48e9c4f44b",
+        "is_terminal_material_stream": false,
+        "tag": "Feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-9f4277ce-1a85-4d8a-9afb-cd8b0eeac427"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-88487018-55c7-43a8-8cca-acd5a71d2207"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-a127dc45-72fa-4e89-af07-68931fb8cbaa",
+        "is_terminal_material_stream": false,
+        "tag": "Reformed feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "PFR-2a2af8ea-69b2-488d-99cb-ced11ed43440"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-0ba4d0ac-b20d-4bf6-b6cf-96ea7681a47a"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4e7cb9d1-a9b2-4563-bb4b-3d85d8c98a88",
+        "is_terminal_material_stream": false,
+        "tag": "HTS output",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "PFR-a54876f7-004f-42dd-b7e0-0fe15f8a0dc0"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-80e083ec-f3b7-415e-a414-bab53d1a8c24"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4d112b90-a217-45fb-a838-4d544a3863d3",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-012",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-88487018-55c7-43a8-8cca-acd5a71d2207"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-80e083ec-f3b7-415e-a414-bab53d1a8c24"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-faa184c8-8018-4035-86a5-e4343a400893",
+        "is_terminal_material_stream": false,
+        "tag": "Extra steam",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "PFR-a54876f7-004f-42dd-b7e0-0fe15f8a0dc0"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-e49a4ea8-70b5-46e2-b0ef-7616fe39d627",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-015",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-80e083ec-f3b7-415e-a414-bab53d1a8c24"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "PFR-5453716f-3342-48c5-8aae-84db211995fa"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-22aec4c1-a430-41e7-9195-95fd14440c3f",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-018",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-0ba4d0ac-b20d-4bf6-b6cf-96ea7681a47a"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-ca7b2589-683d-472d-8e54-13e39c112cca"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-4c9fbc52-9750-44bf-92a8-9eb2739056f4",
+        "is_terminal_material_stream": false,
+        "tag": "LTS output",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "PFR-5453716f-3342-48c5-8aae-84db211995fa"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-8b07d878-8934-4746-b5ce-0ade07a68c31",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-024",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-ca7b2589-683d-472d-8e54-13e39c112cca"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-af31f276-7528-4e6d-85f9-62fa7fbb602b"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-38a2deb2-9ce9-4647-adc5-7dbbd5361c07",
+        "is_terminal_material_stream": false,
+        "tag": "De humidified feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "COUO-af31f276-7528-4e6d-85f9-62fa7fbb602b"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-f77159c9-86ec-42c6-8327-4089c0998140",
+        "is_terminal_material_stream": false,
+        "tag": "Lean rectisol",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-1c5c38ad-9c08-4580-b08a-6a2be849f8a4",
+        "is_terminal_material_stream": true,
+        "tag": "Light liq",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-d7f5f7a8-525f-42ab-97ab-3d90f2a561bc",
+        "is_terminal_material_stream": true,
+        "tag": "Heavy liquid",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-241e9b5c-7867-4789-beb9-c05dee28c3d9",
+        "is_terminal_material_stream": true,
+        "tag": "Rich rectisol",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-af31f276-7528-4e6d-85f9-62fa7fbb602b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-862d9083-7f90-4b91-b308-30cf39329f33"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-d9039668-4681-4f5d-af4f-814075aef613",
+        "is_terminal_material_stream": false,
+        "tag": "Pure H_2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-88afaaaa-58b3-4dd8-b7af-259dd24d1227"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-9568c649-8d27-41f7-af90-a391600b8503",
+        "is_terminal_material_stream": true,
+        "tag": "Off gas",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "CS-88afaaaa-58b3-4dd8-b7af-259dd24d1227"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "AQ-5d23e811-dafa-4437-acfc-f70f203afc0e"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-aad70e77-3b51-484b-b33b-c39a5b379980",
+        "is_terminal_material_stream": false,
+        "tag": "Washed feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COUO-af31f276-7528-4e6d-85f9-62fa7fbb602b"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "CS-88afaaaa-58b3-4dd8-b7af-259dd24d1227"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-369456c5-04a7-4be2-a6df-1fe167b7db11",
+        "is_terminal_material_stream": false,
+        "tag": "Preheated wash feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "AQ-5d23e811-dafa-4437-acfc-f70f203afc0e"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "MIST-862d9083-7f90-4b91-b308-30cf39329f33"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": false,
+        "id": "MAT-e76e13b1-8050-4a65-b0db-79fb95542266",
+        "is_terminal_material_stream": false,
+        "tag": "Pure N_2",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": []
+      },
+      {
+        "downstream_unit_guids": [
+          "COMP-181f7c8c-f438-487a-ab56-baa6020266c9"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-5c40c497-b9e2-4559-8546-3a39dae6f697",
+        "is_terminal_material_stream": false,
+        "tag": "Synthesis feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "MIST-862d9083-7f90-4b91-b308-30cf39329f33"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-06141908-aea2-469d-a7f9-fc53165d032d"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-26aeee92-5409-4b83-8b84-a3d0ac560087",
+        "is_terminal_material_stream": false,
+        "tag": "Pressurised feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "COMP-181f7c8c-f438-487a-ab56-baa6020266c9"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "PFR-cc3f7c24-f516-4710-b831-e2df50db1e21"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-9737a754-ee13-4819-a2e6-8ff12909fdd2",
+        "is_terminal_material_stream": false,
+        "tag": "Syn feed",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-06141908-aea2-469d-a7f9-fc53165d032d"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "RESF-51ad5054-8bec-42e3-8847-30b2697be831"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-576f31ac-d0a1-4c06-9dff-32ad25494f1d",
+        "is_terminal_material_stream": false,
+        "tag": "Reactor outlet",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "PFR-cc3f7c24-f516-4710-b831-e2df50db1e21"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "SEP-03e60839-dd21-477b-8939-5422276243d4"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-88e9816f-d2be-47dc-918b-24c57d85cc51",
+        "is_terminal_material_stream": false,
+        "tag": "MSTR-056",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "RESF-51ad5054-8bec-42e3-8847-30b2697be831"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-cfbdd730-ea83-4d3c-8150-a22373248a17",
+        "is_terminal_material_stream": true,
+        "tag": "vap",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-03e60839-dd21-477b-8939-5422276243d4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [
+          "TQ-3040187e-4adf-4e76-a150-816bb8eacedb"
+        ],
+        "has_downstream_unit": true,
+        "has_upstream_unit": true,
+        "id": "MAT-93be667f-f5bf-4127-9ac6-f0f28d812e27",
+        "is_terminal_material_stream": false,
+        "tag": "Final ammonia",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-03e60839-dd21-477b-8939-5422276243d4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-9ab4655d-4b8b-438f-b3ee-86f2fc428b7e",
+        "is_terminal_material_stream": true,
+        "tag": "Heavy Liq",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "SEP-03e60839-dd21-477b-8939-5422276243d4"
+        ]
+      },
+      {
+        "downstream_unit_guids": [],
+        "has_downstream_unit": false,
+        "has_upstream_unit": true,
+        "id": "MAT-be980e3b-c6d6-47ee-8355-cdc7e0ad3b89",
+        "is_terminal_material_stream": true,
+        "tag": "Tank outlet",
+        "type": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "upstream_unit_guids": [
+          "TQ-3040187e-4adf-4e76-a150-816bb8eacedb"
+        ]
+      }
+    ],
+    "terminal_material_streams": [
+      {
+        "id": "MAT-1c5c38ad-9c08-4580-b08a-6a2be849f8a4",
+        "tag": "Light liq",
+        "upstream_unit_guids": [
+          "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4"
+        ]
+      },
+      {
+        "id": "MAT-d7f5f7a8-525f-42ab-97ab-3d90f2a561bc",
+        "tag": "Heavy liquid",
+        "upstream_unit_guids": [
+          "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4"
+        ]
+      },
+      {
+        "id": "MAT-241e9b5c-7867-4789-beb9-c05dee28c3d9",
+        "tag": "Rich rectisol",
+        "upstream_unit_guids": [
+          "COUO-af31f276-7528-4e6d-85f9-62fa7fbb602b"
+        ]
+      },
+      {
+        "id": "MAT-9568c649-8d27-41f7-af90-a391600b8503",
+        "tag": "Off gas",
+        "upstream_unit_guids": [
+          "CS-88afaaaa-58b3-4dd8-b7af-259dd24d1227"
+        ]
+      },
+      {
+        "id": "MAT-cfbdd730-ea83-4d3c-8150-a22373248a17",
+        "tag": "vap",
+        "upstream_unit_guids": [
+          "SEP-03e60839-dd21-477b-8939-5422276243d4"
+        ]
+      },
+      {
+        "id": "MAT-9ab4655d-4b8b-438f-b3ee-86f2fc428b7e",
+        "tag": "Heavy Liq",
+        "upstream_unit_guids": [
+          "SEP-03e60839-dd21-477b-8939-5422276243d4"
+        ]
+      },
+      {
+        "id": "MAT-be980e3b-c6d6-47ee-8355-cdc7e0ad3b89",
+        "tag": "Tank outlet",
+        "upstream_unit_guids": [
+          "TQ-3040187e-4adf-4e76-a150-816bb8eacedb"
+        ]
+      }
+    ]
+  },
+  "target_column": {
+    "calc_mode": "OutletPressure",
+    "guid": "COMP-181f7c8c-f438-487a-ab56-baa6020266c9",
+    "kind": "unit_operation",
+    "tag": "Compressor",
+    "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+  },
+  "target_unit": {
+    "calc_mode": "OutletPressure",
+    "guid": "COMP-181f7c8c-f438-487a-ab56-baa6020266c9",
+    "kind": "unit_operation",
+    "tag": "Compressor",
+    "type": "DWSIM.UnitOperations.UnitOperations.Compressor"
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-1c5c38ad-9c08-4580-b08a-6a2be849f8a4",
+      "tag": "Light liq",
+      "upstream_unit_guids": [
+        "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4"
+      ]
+    },
+    {
+      "id": "MAT-d7f5f7a8-525f-42ab-97ab-3d90f2a561bc",
+      "tag": "Heavy liquid",
+      "upstream_unit_guids": [
+        "SEP-f8fd38c7-f8ed-49a9-81a5-c0754c19aec4"
+      ]
+    },
+    {
+      "id": "MAT-241e9b5c-7867-4789-beb9-c05dee28c3d9",
+      "tag": "Rich rectisol",
+      "upstream_unit_guids": [
+        "COUO-af31f276-7528-4e6d-85f9-62fa7fbb602b"
+      ]
+    },
+    {
+      "id": "MAT-9568c649-8d27-41f7-af90-a391600b8503",
+      "tag": "Off gas",
+      "upstream_unit_guids": [
+        "CS-88afaaaa-58b3-4dd8-b7af-259dd24d1227"
+      ]
+    },
+    {
+      "id": "MAT-cfbdd730-ea83-4d3c-8150-a22373248a17",
+      "tag": "vap",
+      "upstream_unit_guids": [
+        "SEP-03e60839-dd21-477b-8939-5422276243d4"
+      ]
+    },
+    {
+      "id": "MAT-9ab4655d-4b8b-438f-b3ee-86f2fc428b7e",
+      "tag": "Heavy Liq",
+      "upstream_unit_guids": [
+        "SEP-03e60839-dd21-477b-8939-5422276243d4"
+      ]
+    },
+    {
+      "id": "MAT-be980e3b-c6d6-47ee-8355-cdc7e0ad3b89",
+      "tag": "Tank outlet",
+      "upstream_unit_guids": [
+        "TQ-3040187e-4adf-4e76-a150-816bb8eacedb"
+      ]
+    }
+  ]
+}

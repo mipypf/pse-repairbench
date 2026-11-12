@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: S-08
+Target metric: Dimethyl ether mole_fraction
+Observed target value: 0.97141792432898
+Required target value: >= 0.991248601079697

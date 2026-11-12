@@ -1,0 +1,8 @@
+DWSIM headless status: success
+Solved after calculation: True
+Exception count: 0
+Messages log count: 0
+Target stream: dehumidified air
+Target metric: pressure
+Observed target value: 50000.013020329
+Required target value: >= 85000.0221345593

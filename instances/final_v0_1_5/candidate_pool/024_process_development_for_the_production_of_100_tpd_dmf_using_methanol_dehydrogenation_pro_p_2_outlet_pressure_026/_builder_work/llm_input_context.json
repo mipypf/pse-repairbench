@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "target": {
+        "guid": "COMP-fa6d0bb1-f8bc-440d-9d23-610deb58b70d",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "024_process_development_for_the_production_of_100_tpd_dmf_using_methanol_dehydrogenation_pro_p_2_outlet_pressure_026",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_flow",
+      "max": 16.15829985908596,
+      "metric": "molar_flow",
+      "stream": "S19",
+      "stream_id": "MAT-e38b7663-c341-46d6-bfa7-21fe81dd21b3",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "S19",
+      "threshold": 16.15829985908596
+    },
+    "target_stream_tag": "S19"
+  }
+}

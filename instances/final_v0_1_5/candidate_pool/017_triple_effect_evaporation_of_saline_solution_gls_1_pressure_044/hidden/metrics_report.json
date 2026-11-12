@@ -1,0 +1,57 @@
+{
+  "base": {
+    "separator_pressure": 55000,
+    "target_mole_fraction": 0.401406588172321,
+    "target_value": 0.401406588172321
+  },
+  "faulty": {
+    "separator_pressure": 38500,
+    "target_mole_fraction": 0.41906322918805,
+    "target_value": 0.41906322918805
+  },
+  "gold_proximity": {
+    "parameter_match": true,
+    "target_match": true,
+    "unit_match": true,
+    "value_abs_error": 0.0,
+    "value_rel_error": 0.0
+  },
+  "gold_repair_action": {
+    "parameter": {
+      "name": "pressure",
+      "namespace": "separator_specification"
+    },
+    "target": {
+      "guid": "V-1ed3d67d-176d-45e5-8957-9a3b8d9a7b51",
+      "kind": "unit_operation",
+      "tag": "GLS-1"
+    },
+    "type": "set_unit_parameter",
+    "unit": "Pa",
+    "value": 55000.0
+  },
+  "instance_id": "017_triple_effect_evaporation_of_saline_solution_gls_1_pressure_044",
+  "purity_drop": -0.017656641015729002,
+  "repairable": true,
+  "repaired": {
+    "separator_pressure": 55000,
+    "target_mole_fraction": 0.401406588172321,
+    "target_value": 0.401406588172321
+  },
+  "selection_rule": "fixed fault spec; no sweep performed by the general builder",
+  "source_flowsheet": "curated_data/dwsim_headless_successes/flash_separator/017_triple_effect_evaporation_of_saline_solution.zip",
+  "target": {
+    "component": "Sodium Chloride",
+    "direction": "max",
+    "family": "terminal_composition",
+    "max": 0.4067035804770397,
+    "metric": "mole_fraction",
+    "product_mole_fraction_min": null,
+    "stream": "M-13",
+    "stream_id": "MS-ad7a58c5-67a4-4598-b514-0cfb02163590",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "M-13",
+    "threshold": 0.4067035804770397
+  },
+  "target_delta": -0.017656641015729002
+}

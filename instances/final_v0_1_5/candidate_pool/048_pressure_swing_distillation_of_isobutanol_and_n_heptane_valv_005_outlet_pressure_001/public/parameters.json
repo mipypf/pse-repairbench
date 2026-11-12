@@ -1,0 +1,159 @@
+{
+  "allowed_repair_actions": [
+    {
+      "label": "VALV-010: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-42381f53-f1a9-496e-b234-65aa1e9846e2",
+        "kind": "unit_operation",
+        "tag": "VALV-010",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "VALV-005: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0",
+        "kind": "unit_operation",
+        "tag": "VALV-005",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    },
+    {
+      "label": "VALV-018: pressure_specification/outlet_pressure",
+      "parameter": {
+        "name": "outlet_pressure",
+        "namespace": "pressure_specification"
+      },
+      "support_level": "pilot-supported",
+      "target": {
+        "guid": "VALV-41032154-7329-4ed4-91c5-02a2695c7a98",
+        "kind": "unit_operation",
+        "tag": "VALV-018",
+        "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "unit": "Pa",
+      "value_type": "number"
+    }
+  ],
+  "extraction_note": "Parameters extracted from the calculated faulty flowsheet.",
+  "observed_candidate_units": [
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": 303975,
+      "guid": "VALV-42381f53-f1a9-496e-b234-65aa1e9846e2",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 101325
+      },
+      "outlet_pressure": 101325,
+      "outlet_temperature": 376.185885301826,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-010",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": -303975,
+      "guid": "VALV-3bf55fc6-fa83-49f8-81b0-71e82f87b6b0",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 607950
+      },
+      "outlet_pressure": 607950,
+      "outlet_temperature": 374.766487414927,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-005",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    },
+    {
+      "calc_mode": "OutletPressure",
+      "delta_p": -1114575,
+      "guid": "VALV-41032154-7329-4ed4-91c5-02a2695c7a98",
+      "kind": "unit_operation",
+      "observed_values": {
+        "pressure_specification/outlet_pressure": 1215900
+      },
+      "outlet_pressure": 1215900,
+      "outlet_temperature": 374.766306363664,
+      "supported_parameters": [
+        "pressure_specification/outlet_pressure"
+      ],
+      "tag": "VALV-018",
+      "type": "DWSIM.UnitOperations.UnitOperations.Valve"
+    }
+  ],
+  "product_target": {
+    "direction": "min",
+    "metric": "mass_flow",
+    "stream_tag": "N-heptane",
+    "threshold": 0.6658994180720914
+  },
+  "schema_version": "draft-0",
+  "target_metric": {
+    "direction": "min",
+    "family": "terminal_flow",
+    "metric": "mass_flow",
+    "min": 0.6658994180720914,
+    "stream": "N-heptane",
+    "stream_id": "MAT-0600d28e-d1ae-49c5-9383-a1c13f0ddaa9",
+    "stream_role": "terminal_material_stream",
+    "stream_tag": "N-heptane",
+    "threshold": 0.6658994180720914
+  },
+  "terminal_material_streams": [
+    {
+      "id": "MAT-839610a3-b7ec-440a-abb0-e6d4fdaef187",
+      "mass_flow": 1.60484674025919,
+      "molar_flow": 21.643514910983,
+      "tag": "Isobutanol",
+      "upstream_unit_guids": [
+        "COUO-92297909-ae1d-4ab1-8f5e-93785858e6f1"
+      ]
+    },
+    {
+      "id": "MAT-0600d28e-d1ae-49c5-9383-a1c13f0ddaa9",
+      "mass_flow": 0.605408994313477,
+      "molar_flow": 6.0433376971374,
+      "tag": "N-heptane",
+      "upstream_unit_guids": [
+        "COUO-c3a8d7c2-9db0-42c5-a580-21d98fbf1284"
+      ]
+    },
+    {
+      "id": "MAT-079b0cb0-78bf-426e-9188-1df25a4174e3",
+      "mass_flow": 1.64830881992442,
+      "molar_flow": 22.229659460303,
+      "tag": "ISOBUTANOL",
+      "upstream_unit_guids": [
+        "COUO-73105f5e-bf44-4352-9d47-54efc2f2d58b"
+      ]
+    },
+    {
+      "id": "MAT-3d924e79-a036-4601-94db-0a610718142a",
+      "mass_flow": 0.555773454703496,
+      "molar_flow": 5.5480934426546,
+      "tag": "N-HEPTANE",
+      "upstream_unit_guids": [
+        "COUO-72448039-2072-4a88-bea0-842833867b87"
+      ]
+    }
+  ]
+}

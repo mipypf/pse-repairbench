@@ -1,0 +1,159 @@
+{
+  "candidate_pool": "../candidate_pool",
+  "candidate_pool_instance_count": 123,
+  "id": "final_v0_1_5_source_stratified_v1",
+  "overall_distributions": {
+    "parameter": {
+      "column_configuration/feed_stage": 5,
+      "column_specification/reflux_ratio": 6,
+      "pressure_specification/outlet_pressure": 33,
+      "separator_specification/pressure": 16,
+      "separator_specification/temperature": 13,
+      "thermal_specification/outlet_temperature": 50
+    },
+    "source_category": {
+      "distillation": 9,
+      "flash_separator": 31,
+      "other_candidate": 23,
+      "reaction_recycle": 60
+    },
+    "target_family": {
+      "terminal_composition": 21,
+      "terminal_flow": 27,
+      "terminal_pressure": 21,
+      "terminal_temperature": 54
+    }
+  },
+  "provenance": {
+    "hidden_mock_eval_aggregate": "local_generation_artifacts/final_v0_1_5/candidate_pool_thermocs_rescued_mps4_hidden_mock_eval/aggregate.json",
+    "hidden_mock_eval_success_count": 123,
+    "promoted_from": "local_generation_artifacts/final_v0_1_5/candidate_pool_thermocs_rescued_mps4",
+    "provenance_path_policy": "local_generation_artifacts paths are historical local-generation workspace references retained as provenance labels; they are not expected to exist in a fresh repository checkout.",
+    "repository_checkout_contains_provenance_artifacts": false,
+    "selection_aggregate": "local_generation_artifacts/final_v0_1_5/discovery_thermocs_rescued_mps4/bulk_discovery_aggregate.json"
+  },
+  "source_level_split": true,
+  "split_rule": {
+    "dev_instance_count": 23,
+    "method": "deterministic beam search over source groups",
+    "selection_score": 0.1039,
+    "source_overlap_allowed": false,
+    "stratification_targets": [
+      "parameter",
+      "target_family",
+      "source_category"
+    ],
+    "test_instance_count": 100
+  },
+  "splits": {
+    "dev": {
+      "distributions": {
+        "parameter": {
+          "column_configuration/feed_stage": 1,
+          "column_specification/reflux_ratio": 1,
+          "pressure_specification/outlet_pressure": 6,
+          "separator_specification/pressure": 3,
+          "separator_specification/temperature": 3,
+          "thermal_specification/outlet_temperature": 9
+        },
+        "source_category": {
+          "distillation": 2,
+          "flash_separator": 6,
+          "other_candidate": 4,
+          "reaction_recycle": 11
+        },
+        "target_family": {
+          "terminal_composition": 4,
+          "terminal_flow": 5,
+          "terminal_pressure": 4,
+          "terminal_temperature": 10
+        }
+      },
+      "instance_count": 23,
+      "path": "dev.txt",
+      "source_count": 14,
+      "source_ids": [
+        "002_air_liquefaction_using_linde_single_column_system",
+        "003_dehydration_of_reservoir_fluid_using_methanol",
+        "004_extractive_distillation_for_ethanol_toluene_water_separation_using_glycerol",
+        "006_improvement_of_the_monochlorobenzene_separation_process_through_heat_integration",
+        "011_ethylene_oxide_production_from_styrene",
+        "012_hydrodealkylation_of_toluene_to_benzene",
+        "013_nitrogen_liquefaction_using_linde_cycle",
+        "016_simulation_of_the_lungs_for_the_respiration_process",
+        "017_isomerization_of_n_butane_to_isobutane_and_isopentane",
+        "019_isopropyl_alcohol_synthesis_from_propylene_and_water",
+        "021_tealarc_lng_refrigeration_cycle_for_natural_gas",
+        "027_production_of_allyl_chloride_from_propylene_and_chlorine",
+        "034_production_of_dinitrotoluene_from_toluene",
+        "040_production_of_methyl_ethyl_ketone"
+      ]
+    },
+    "test": {
+      "distributions": {
+        "parameter": {
+          "column_configuration/feed_stage": 4,
+          "column_specification/reflux_ratio": 5,
+          "pressure_specification/outlet_pressure": 27,
+          "separator_specification/pressure": 13,
+          "separator_specification/temperature": 10,
+          "thermal_specification/outlet_temperature": 41
+        },
+        "source_category": {
+          "distillation": 7,
+          "flash_separator": 25,
+          "other_candidate": 19,
+          "reaction_recycle": 49
+        },
+        "target_family": {
+          "terminal_composition": 17,
+          "terminal_flow": 22,
+          "terminal_pressure": 17,
+          "terminal_temperature": 44
+        }
+      },
+      "instance_count": 100,
+      "path": "test.txt",
+      "source_count": 36,
+      "source_ids": [
+        "001_4_step_refrigeration_cycle_with_propylene_ethylene_methane_and_nitrogen",
+        "003_a_simple_de_humidification_system",
+        "004_camere_process",
+        "004_claude_cycle_for_nitrogen_liquefaction",
+        "005_glucose_syrup_three_effect_evaporation_system",
+        "007_lts_low_temperature_separator",
+        "008_dry_methane_reforming_process",
+        "009_monochlorobenzene_separation_process",
+        "010_liquefaction_of_biogas",
+        "010_production_of_liquid_carbon_dioxide_from_2_tph_of_raw_gas",
+        "011_rectisol_process_for_syngas_with_co2_for_enhanced_oil_recovery",
+        "012_natural_gas_processing_simulation",
+        "013_hydrogen_production_by_steam_reforming_of_glycerol",
+        "014_hydrogen_production_from_biogas",
+        "014_separation_of_benzene_from_air_using_compression",
+        "017_recovery_of_h2s_from_refinery_off_gas_with_diethanolamine",
+        "017_triple_effect_evaporation_of_saline_solution",
+        "018_extractive_distillation_for_separating_n_hexane_and_ethyl_acetate_using_nmp",
+        "018_vaccum_salt_production_using_multi_effect_evaporator",
+        "019_separation_of_diisopropyl_ether_and_isopropanol_using_psd_with_vapor_recompression",
+        "020_manufacture_of_n_n_dimethylformamide_by_the_methyl_formate_route",
+        "024_process_development_for_the_production_of_100_tpd_dmf_using_methanol_dehydrogenation_pro",
+        "026_production_of_acetic_acid_from_acetaldehyde",
+        "029_production_of_chlorobenzene_from_benzene_and_chlorine",
+        "030_production_of_cyclohexane",
+        "032_production_of_diethylene_glycol_using_ethylene_as_raw_material",
+        "033_production_of_dimethyl_ether_from_methanol",
+        "037_production_of_hydrogen_using_water_gas_shift_reaction",
+        "038_production_of_maleic_anhydride_from_oxidation_of_n_butane",
+        "039_production_of_methane_from_carbon_monoxide_and_hydrogen_using_recycle",
+        "041_production_of_sulfur_trioxide_from_sulfur_dioxide",
+        "042_production_of_toluene_by_dehydrogenation_of_normal_heptane",
+        "048_pressure_swing_distillation_of_isobutanol_and_n_heptane",
+        "051_production_of_heptenes_from_propylene_and_butenes",
+        "051_synthesis_of_ammonia_in_cryogenic_process",
+        "052_synthesis_of_ammonia_using_natural_gas_by_steam_reforming"
+      ]
+    }
+  },
+  "version": "v0.1.5"
+}

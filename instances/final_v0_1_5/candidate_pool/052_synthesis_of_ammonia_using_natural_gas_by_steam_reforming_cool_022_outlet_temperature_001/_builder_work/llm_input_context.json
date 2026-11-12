@@ -1,0 +1,44 @@
+{
+  "faulty_flowsheet": "public/faulty.dwxmz",
+  "gold_repair_actions": [
+    {
+      "parameter": {
+        "name": "outlet_temperature",
+        "namespace": "thermal_specification"
+      },
+      "target": {
+        "guid": "RESF-ca7b2589-683d-472d-8e54-13e39c112cca",
+        "kind": "unit_operation"
+      },
+      "type": "set_unit_parameter"
+    }
+  ],
+  "id": "052_synthesis_of_ammonia_using_natural_gas_by_steam_reforming_cool_022_outlet_temperature_001",
+  "observations": {
+    "parameters": "public/parameters.json",
+    "simulator_log": "public/log.txt",
+    "stream_table": "public/streams.csv",
+    "topology": "public/topology.json"
+  },
+  "problem_statement": "public/problem.md",
+  "process_category": "reaction_recycle",
+  "reasoning_class": "P_parameter",
+  "success_criteria": {
+    "converged": true,
+    "no_fatal_error": true,
+    "product_mole_fraction_min": null,
+    "target_component": null,
+    "target_metric": {
+      "direction": "max",
+      "family": "terminal_temperature",
+      "max": 332.15062682940277,
+      "metric": "temperature",
+      "stream": "Light liq",
+      "stream_id": "MAT-1c5c38ad-9c08-4580-b08a-6a2be849f8a4",
+      "stream_role": "terminal_material_stream",
+      "stream_tag": "Light liq",
+      "threshold": 332.15062682940277
+    },
+    "target_stream_tag": "Light liq"
+  }
+}
